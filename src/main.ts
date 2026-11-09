@@ -231,7 +231,7 @@ function readOptions(form:HTMLFormElement,changedName?:string){
   const regionChanged=changedName==='regionGroups';
   filter={mode:f.get('mode') as StudyFilter['mode'],level:f.get('level')==='all'?'all':Number(f.get('level')) as Level,levelMode:f.get('levelMode') as StudyFilter['levelMode'],
     regions:regionChanged?[]:f.getAll('regions') as string[],eras:regionChanged||changedName==='eraGroups'?[]:f.getAll('eras') as string[],
-    fields:f.getAll('fields') as string[],cardType:f.get('cardType') as StudyFilter['cardType'],regionGroups,eraGroups:(f.getAll('eraGroups') as string[]).filter(id=>allowed.has(id))};
+    fields:f.getAll('fields') as string[],cardType:f.get('cardType') as StudyFilter['cardType'],regionGroups,eraGroups:regionChanged&&!regionGroups.length?[]:(f.getAll('eraGroups') as string[]).filter(id=>allowed.has(id))};
   detailScopeOpen=form.querySelector<HTMLDetailsElement>('#detail-scope')?.open??false;
   fieldScopeOpen=form.querySelector<HTMLDetailsElement>('#field-scope')?.open??false;
   sessionLimit=String(f.get('limit'));

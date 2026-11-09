@@ -1,11 +1,24 @@
 import {describe,expect,it} from 'vitest';
 import {DEFAULT_FILTER, type Catalog} from '../src/types';
-import {selectCards} from '../src/core';
+import {mergeCatalog,selectCards} from '../src/core';
+import {readFileSync} from 'node:fs';
 import {seedCatalog} from '../src/seed';
 import {REGION_GROUPS,UNCLASSIFIED_ERA,eraGroupsForRegions,itemEraGroups,regionGroup} from '../src/culture-scope';
 import {makeCard,makeItem,TIME} from './fixtures';
+const publishedDelta=JSON.parse(readFileSync(new URL('../public/catalog-delta.json',import.meta.url),'utf8'));
 
 describe('broad culture display groups',()=>{
+  it('keeps the newly published Oriental catalogue reachable without changing any records',()=>{
+    const catalog=mergeCatalog(seedCatalog,publishedDelta),before=JSON.stringify(catalog);
+    const cards=selectCards(catalog,[],structuredClone(DEFAULT_FILTER));
+    expect(new Set(cards.map(card=>card.id)).size).toBe(cards.length);
+    for(const item of catalog.items.filter(i=>!i.deleted)){
+      expect(itemEraGroups(item),item.id).not.toContain(UNCLASSIFIED_ERA);
+      expect(REGION_GROUPS.some(group=>group.id===regionGroup(item))).toBe(true);
+    }
+    expect(selectCards(catalog,[],{...DEFAULT_FILTER,regionGroups:['china'],eraGroups:['china-ancient-middle']}).length).toBeGreaterThan(0);
+    expect(JSON.stringify(catalog)).toBe(before);
+  });
   it('offers six European periods and keeps the regional period options separate',()=>{
     expect(eraGroupsForRegions(['europe']).map(x=>x.label)).toEqual(['古代','中世','ルネサンス・宗教改革','17〜18世紀','19世紀','20世紀以降']);
     expect(eraGroupsForRegions(['china']).map(x=>x.label)).toEqual(['古代・中世','近世','近現代']);

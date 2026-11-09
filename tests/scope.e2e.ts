@@ -1,8 +1,10 @@
 import {test, expect, type Page} from '@playwright/test';
 import {mkdir} from 'node:fs/promises';
 import {seedCatalog} from '../src/seed';
-import {selectCards} from '../src/core';
+import {mergeCatalog,selectCards} from '../src/core';
+import {readFileSync} from 'node:fs';
 import {DEFAULT_FILTER, type Catalog, type ReviewEvent, type StudyFilter} from '../src/types';
+const publishedDelta=JSON.parse(readFileSync(new URL('../public/catalog-delta.json',import.meta.url),'utf8'));
 
 // These tests isolate the selector UI from new live textbook publications.
 // Real Service Worker and offline recovery remain covered by app/areas.e2e.ts.
@@ -52,9 +54,29 @@ test('文化史の通常画面は6地域・欧州6時代にまとまり、細か
   await page.locator('[data-action=all-eras]').click();
   await expect(page.locator('[name=eraGroups]:checked')).toHaveCount(0);
   await expectCount(page,{regionGroups:['europe']});
+  await page.locator('[name=eraGroups][value=eu-ancient]').check();
+  await page.locator('[name=regionGroups][value=europe]').uncheck();
+  await expect(page.locator('[name=eraGroups]')).toHaveCount(0);
+  await expectCount(page,{});
   await page.locator('[data-action=all-regions]').click();
   await expect(page.locator('[name=regionGroups]:checked')).toHaveCount(0);
   await expectCount(page,{});
+});
+
+test('公開済みの東洋文化史の追加を保持し、中国の大区分で出題できる',async({page,context})=>{
+  await context.route('**/catalog-delta.json*',route=>route.fulfill({contentType:'application/json',body:JSON.stringify(publishedDelta)}));
+  await setup(page);
+  const catalog=mergeCatalog(seedCatalog,publishedDelta);
+  await expect.poll(async()=>(await records(page)).catalog.version).toBe(catalog.version);
+  await page.locator('[name=regionGroups][value=china]').check();
+  await expect(page.locator('[name=eraGroups]')).toHaveCount(3);
+  await page.locator('[name=eraGroups][value=china-ancient-middle]').check();
+  const cards=selectCards(catalog,[],{...DEFAULT_FILTER,regionGroups:['china'],eraGroups:['china-ancient-middle']});
+  expect(cards.length).toBeGreaterThan(0);
+  await expect(page.locator('.setup-bottom strong')).toHaveText(`${cards.length} 枚が対象`);
+  await page.locator('#study-options [type=submit]').click();
+  await expect(page.locator('.flashcard h1')).toHaveText(cards[0].question);
+  expect((await records(page)).catalog.items).toEqual(catalog.items);
 });
 
 test('大区分の時代の和集合と他の条件を組み合わせ、地域変更時に古い時代を残さない',async({page})=>{
