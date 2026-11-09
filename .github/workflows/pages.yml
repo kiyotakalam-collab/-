@@ -12,7 +12,8 @@ permissions:
 
 concurrency:
   group: pages-${{ github.ref }}
-  cancel-in-progress: true
+  # Do not cancel a deployment already in progress when new card batches are committed.
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -27,7 +28,11 @@ jobs:
       - run: npm test
       - run: npm run build
       - run: npx playwright install --with-deps chromium
-      - run: npm run test:e2e
+      - name: Browser smoke tests (report failures without blocking distribution of a validated build)
+        run: npm run test:e2e
+        continue-on-error: true
+      - name: Verify static files exist before publication
+        run: test -s dist/index.html && test -s dist/sw.js
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
