@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 3,
-  "updatedAt": "2026-11-09T08:22:15.000Z",
+  "version": 4,
+  "updatedAt": "2026-11-09T08:34:38.000Z",
   "items": [
     {
       "id": "gr-homer",
@@ -1508,6 +1508,842 @@
       "updatedAt": "2026-11-09T08:22:15.000Z",
       "version": 1,
       "deleted": false
+    },
+    {
+      "id": "ro-polybius",
+      "canonicalName": "ポリビオス",
+      "aliases": [
+        "ポリュビオス",
+        "Polybius"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "歴史学",
+      "level": 3,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ギリシア出身の歴史家。ローマの地中海世界での興隆を『歴史』に記した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真6／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-caesar",
+      "canonicalName": "カエサル",
+      "aliases": [
+        "ガイウス・ユリウス・カエサル",
+        "Julius Caesar"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "歴史学",
+      "level": 1,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマ共和政末期の政治家。『ガリア戦記』を記した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真6／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-livy",
+      "canonicalName": "リウィウス",
+      "aliases": [
+        "リーウィウス",
+        "Livy"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "歴史学",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマの歴史家。『ローマ建国史』を記した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真6／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-plutarch",
+      "canonicalName": "プルタルコス",
+      "aliases": [
+        "プルターク",
+        "Plutarch"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "歴史学",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ギリシア出身の著述家。『対比列伝』でギリシアとローマの人物を対比した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真6／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-strabo",
+      "canonicalName": "ストラボン",
+      "aliases": [
+        "ストラボ",
+        "Strabo"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "地理学",
+      "level": 3,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "小アジア出身の地理学者。『地理誌』を著した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真6／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-pliny-elder",
+      "canonicalName": "プリニウス",
+      "aliases": [
+        "大プリニウス",
+        "Pliny the Elder"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "科学",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマの著述家。博物学を集成した『博物誌』で知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真6／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-ptolemy",
+      "canonicalName": "プトレマイオス",
+      "aliases": [
+        "クラウディオス・プトレマイオス",
+        "Ptolemy"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "科学",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマ帝政期の天文学者。『天文学大全』を著した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真6／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-galen",
+      "canonicalName": "ガレノス",
+      "aliases": [
+        "ガレヌス",
+        "Galen"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "科学",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマ帝政期の医学者。マルクス・アウレリウス帝の侍医を務めた。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真6／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-twelve-tables",
+      "canonicalName": "十二表法",
+      "aliases": [
+        "十二表の法",
+        "Law of the Twelve Tables"
+      ],
+      "kind": "concept",
+      "era": "古代ローマ",
+      "field": "法律",
+      "level": 1,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "共和政ローマ初期に成文化された法。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真6／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-law-of-nations",
+      "canonicalName": "万民法",
+      "aliases": [
+        "ius gentium"
+      ],
+      "kind": "concept",
+      "era": "古代ローマ",
+      "field": "法律",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマ帝国の発展とともに、市民以外を含む人々にも関わる法。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真6／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-corpus-juris",
+      "canonicalName": "ローマ法大全",
+      "aliases": [
+        "ユスティニアヌス法典",
+        "Corpus Juris Civilis"
+      ],
+      "kind": "work",
+      "era": "古代ローマ",
+      "field": "法律",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "東ローマ皇帝ユスティニアヌスの命で編纂された法集成。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真6／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-colosseum",
+      "canonicalName": "コロッセウム",
+      "aliases": [
+        "コロセウム",
+        "Colosseum"
+      ],
+      "kind": "building",
+      "era": "古代ローマ",
+      "field": "建築",
+      "level": 1,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマにある円形闘技場。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真7／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-forum",
+      "canonicalName": "フォロ＝ロマーノ",
+      "aliases": [
+        "フォロ・ロマーノ",
+        "フォルム・ロマヌム",
+        "Roman Forum"
+      ],
+      "kind": "building",
+      "era": "古代ローマ",
+      "field": "建築",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代ローマの政治や市民生活の中心となった広場。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真7／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-pont-du-gard",
+      "canonicalName": "ガール水道橋",
+      "aliases": [
+        "ポン・デュ・ガール",
+        "Pont du Gard"
+      ],
+      "kind": "building",
+      "era": "古代ローマ",
+      "field": "建築",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "現在のフランス南部に残る古代ローマの水道橋。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真7／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-appian-way",
+      "canonicalName": "アッピア街道",
+      "aliases": [
+        "アピア街道",
+        "Appian Way"
+      ],
+      "kind": "building",
+      "era": "古代ローマ",
+      "field": "建築",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代ローマの代表的な道路。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真7／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-triumphal-arch",
+      "canonicalName": "凱旋門",
+      "aliases": [
+        "古代ローマの凱旋門",
+        "triumphal arch"
+      ],
+      "kind": "concept",
+      "era": "古代ローマ",
+      "field": "建築",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "軍事的勝利などを記念して造られた門形の建造物。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真7／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-carolingian-renaissance",
+      "canonicalName": "カロリング＝ルネサンス",
+      "aliases": [
+        "カロリング・ルネサンス",
+        "Carolingian Renaissance"
+      ],
+      "kind": "concept",
+      "era": "中世ヨーロッパ",
+      "field": "文化運動",
+      "level": 2,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "カール大帝の保護のもとで進んだ古代ラテン文化の復興運動。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真8／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-alcuin",
+      "canonicalName": "アルクイン",
+      "aliases": [
+        "アルクイヌス",
+        "Alcuin"
+      ],
+      "kind": "person",
+      "era": "中世ヨーロッパ",
+      "field": "教育",
+      "level": 3,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イギリス出身の学者。カール大帝に招かれ、学芸の振興に携わった。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真8／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-twelfth-renaissance",
+      "canonicalName": "12世紀ルネサンス",
+      "aliases": [
+        "十二世紀ルネサンス",
+        "Twelfth-Century Renaissance"
+      ],
+      "kind": "concept",
+      "era": "中世ヨーロッパ",
+      "field": "文化運動",
+      "level": 3,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "12世紀の西欧で、古典文献の翻訳や学問の発展が進んだ文化的動き。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真8／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-scholasticism",
+      "canonicalName": "スコラ学",
+      "aliases": [
+        "スコラ哲学",
+        "Scholasticism"
+      ],
+      "kind": "concept",
+      "era": "中世ヨーロッパ",
+      "field": "哲学・思想",
+      "level": 2,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中世西欧の学校や大学で発達した、信仰と理性の関係を論じる学問。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真9／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-anselm",
+      "canonicalName": "アンセルムス",
+      "aliases": [
+        "アンセルム",
+        "Anselm of Canterbury"
+      ],
+      "kind": "person",
+      "era": "中世ヨーロッパ",
+      "field": "哲学・思想",
+      "level": 3,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "カンタベリ大司教。スコラ学の初期に影響した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真9／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-abelard",
+      "canonicalName": "アベラール",
+      "aliases": [
+        "ピエール・アベラール",
+        "Peter Abelard"
+      ],
+      "kind": "person",
+      "era": "中世ヨーロッパ",
+      "field": "哲学・思想",
+      "level": 3,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中世フランスの哲学者・神学者。普遍論争に関わった。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真9／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-aquinas",
+      "canonicalName": "トマス＝アクィナス",
+      "aliases": [
+        "トマス・アクィナス",
+        "Thomas Aquinas"
+      ],
+      "kind": "person",
+      "era": "中世ヨーロッパ",
+      "field": "哲学・思想",
+      "level": 2,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中世の神学者。『神学大全』でアリストテレス哲学とキリスト教神学を結び付けた。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真9／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-ockham",
+      "canonicalName": "ウィリアム＝オブ＝オッカム",
+      "aliases": [
+        "オッカム",
+        "William of Ockham"
+      ],
+      "kind": "person",
+      "era": "中世ヨーロッパ",
+      "field": "哲学・思想",
+      "level": 3,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中世イングランドの哲学者・神学者。後期スコラ学の唯名論で知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真9／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-roger-bacon",
+      "canonicalName": "ロジャー＝ベーコン",
+      "aliases": [
+        "ロジャー・ベーコン",
+        "Roger Bacon"
+      ],
+      "kind": "person",
+      "era": "中世ヨーロッパ",
+      "field": "科学",
+      "level": 3,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中世イングランドの学者。経験・観察を重視した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真9／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-bologna-university",
+      "canonicalName": "ボローニャ大学",
+      "aliases": [
+        "University of Bologna"
+      ],
+      "kind": "building",
+      "era": "中世ヨーロッパ",
+      "field": "教育",
+      "level": 2,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北イタリアに成立し、法学で知られた中世大学。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真10／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-paris-university",
+      "canonicalName": "パリ大学",
+      "aliases": [
+        "University of Paris"
+      ],
+      "kind": "building",
+      "era": "中世ヨーロッパ",
+      "field": "教育",
+      "level": 2,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "神学で知られた中世大学。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真10／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-oxford-university",
+      "canonicalName": "オクスフォード大学",
+      "aliases": [
+        "オックスフォード大学",
+        "University of Oxford"
+      ],
+      "kind": "building",
+      "era": "中世ヨーロッパ",
+      "field": "教育",
+      "level": 2,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イングランドに成立した中世大学。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真10／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-cambridge-university",
+      "canonicalName": "ケンブリッジ大学",
+      "aliases": [
+        "University of Cambridge"
+      ],
+      "kind": "building",
+      "era": "中世ヨーロッパ",
+      "field": "教育",
+      "level": 3,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イングランドに成立した中世大学。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真10／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-salerno-university",
+      "canonicalName": "サレルノ大学",
+      "aliases": [
+        "University of Salerno"
+      ],
+      "kind": "building",
+      "era": "中世ヨーロッパ",
+      "field": "教育",
+      "level": 3,
+      "region": "ヨーロッパ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "南イタリアに成立し、医学で知られた中世の学問拠点。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真10／10、該当箇所を目視で確認。公開URLなし。教材の文章・写真は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真の掲載は確認したが、教科書・用語集での重要度や大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
     }
   ],
   "cards": [
@@ -2280,6 +3116,369 @@
       "answer": "転身譜",
       "explanation": "『変身物語』とも呼ばれる。",
       "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-polybius-histories-author",
+      "knowledgeId": "ro-polybius",
+      "type": "work-author",
+      "question": "ローマの興隆を記したポリビオスの著作は？",
+      "answer": "歴史",
+      "explanation": "ヘロドトスの同名の著作と区別する。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-polybius-histories-person",
+      "knowledgeId": "ro-polybius",
+      "type": "achievement-person",
+      "question": "共和政ローマの興隆を『歴史』に記したギリシア人は？",
+      "answer": "ポリビオス",
+      "explanation": "ギリシア出身の歴史家。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-caesar-gallic-author",
+      "knowledgeId": "ro-caesar",
+      "type": "work-author",
+      "question": "『ガリア戦記』の著者は？",
+      "answer": "カエサル",
+      "explanation": "ローマ共和政末期の政治家。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-caesar-gallic-work",
+      "knowledgeId": "ro-caesar",
+      "type": "person-work",
+      "question": "カエサルがガリア遠征を記した著作は？",
+      "answer": "ガリア戦記",
+      "explanation": "ラテン語で記された。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-livy-history-author",
+      "knowledgeId": "ro-livy",
+      "type": "work-author",
+      "question": "『ローマ建国史』の著者は？",
+      "answer": "リウィウス",
+      "explanation": "ローマの建国からの歴史を叙述した。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-plutarch-lives-author",
+      "knowledgeId": "ro-plutarch",
+      "type": "work-author",
+      "question": "『対比列伝』の著者は？",
+      "answer": "プルタルコス",
+      "explanation": "『英雄伝』とも呼ばれる。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-strabo-geography-author",
+      "knowledgeId": "ro-strabo",
+      "type": "work-author",
+      "question": "『地理誌』の著者は？",
+      "answer": "ストラボン",
+      "explanation": "小アジア出身の地理学者。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-pliny-natural-history-author",
+      "knowledgeId": "ro-pliny-elder",
+      "type": "work-author",
+      "question": "『博物誌』の著者は？",
+      "answer": "プリニウス",
+      "explanation": "大プリニウスの著作。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-ptolemy-almagest-author",
+      "knowledgeId": "ro-ptolemy",
+      "type": "work-author",
+      "question": "『天文学大全』の著者は？",
+      "answer": "プトレマイオス",
+      "explanation": "『アルマゲスト』とも呼ばれる。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-galen-emperor",
+      "knowledgeId": "ro-galen",
+      "type": "achievement-person",
+      "question": "マルクス・アウレリウス帝の侍医を務めた医学者は？",
+      "answer": "ガレノス",
+      "explanation": "古代ローマの医学者。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-twelve-tables-law",
+      "knowledgeId": "ro-twelve-tables",
+      "type": "context",
+      "question": "共和政ローマ初期に成文化された法は？",
+      "answer": "十二表法",
+      "explanation": "古代ローマ法の基礎の一つ。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-law-of-nations-name",
+      "knowledgeId": "ro-law-of-nations",
+      "type": "context",
+      "question": "ローマ市民以外にも関わるようになった法は？",
+      "answer": "万民法",
+      "explanation": "ローマ市民に限る市民法と区別する。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-corpus-juris-justinian",
+      "knowledgeId": "ro-corpus-juris",
+      "type": "context",
+      "question": "ユスティニアヌス帝の命で編纂された法集成は？",
+      "answer": "ローマ法大全",
+      "explanation": "東ローマ帝国で編纂された。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-colosseum-amphitheatre",
+      "knowledgeId": "ro-colosseum",
+      "type": "context",
+      "question": "ローマの代表的な円形闘技場は？",
+      "answer": "コロッセウム",
+      "explanation": "剣闘士の試合などが行われた。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-forum-square",
+      "knowledgeId": "ro-forum",
+      "type": "context",
+      "question": "古代ローマの政治や市民生活の中心となった広場は？",
+      "answer": "フォロ＝ロマーノ",
+      "explanation": "現在も遺跡が残る。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-pont-du-gard-aqueduct",
+      "knowledgeId": "ro-pont-du-gard",
+      "type": "context",
+      "question": "南フランスに残る古代ローマの水道橋は？",
+      "answer": "ガール水道橋",
+      "explanation": "ローマの土木建築の例。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-appian-way-road",
+      "knowledgeId": "ro-appian-way",
+      "type": "context",
+      "question": "古代ローマの代表的な街道は？",
+      "answer": "アッピア街道",
+      "explanation": "ローマから南へ延びる道路。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-triumphal-arch-name",
+      "knowledgeId": "ro-triumphal-arch",
+      "type": "context",
+      "question": "古代ローマで勝利を記念して造られた門形の建造物は？",
+      "answer": "凱旋門",
+      "explanation": "軍事的勝利などを顕彰した。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-carolingian-renaissance-name",
+      "knowledgeId": "me-carolingian-renaissance",
+      "type": "context",
+      "question": "カール大帝が保護した古代ラテン文化の復興運動は？",
+      "answer": "カロリング＝ルネサンス",
+      "explanation": "中世初期の学芸復興。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-alcuin-charlemagne",
+      "knowledgeId": "me-alcuin",
+      "type": "achievement-person",
+      "question": "カール大帝に招かれ学芸を振興したイギリス出身の学者は？",
+      "answer": "アルクイン",
+      "explanation": "カロリング＝ルネサンスに関わった。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-twelfth-renaissance-name",
+      "knowledgeId": "me-twelfth-renaissance",
+      "type": "context",
+      "question": "古典文献の翻訳などが進んだ中世西欧の文化的動きを何という？",
+      "answer": "12世紀ルネサンス",
+      "explanation": "12世紀に広がった学問の発展。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-scholasticism-name",
+      "knowledgeId": "me-scholasticism",
+      "type": "context",
+      "question": "中世西欧で信仰と理性の関係を論じた学問は？",
+      "answer": "スコラ学",
+      "explanation": "学校や大学で発達した。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-anselm-canterbury",
+      "knowledgeId": "me-anselm",
+      "type": "achievement-person",
+      "question": "スコラ学初期のカンタベリ大司教は？",
+      "answer": "アンセルムス",
+      "explanation": "信仰と理性の関係を論じた。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-abelard-universals",
+      "knowledgeId": "me-abelard",
+      "type": "achievement-person",
+      "question": "普遍論争に関わった中世フランスの哲学者は？",
+      "answer": "アベラール",
+      "explanation": "中世の神学者でもある。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-aquinas-summa-author",
+      "knowledgeId": "me-aquinas",
+      "type": "work-author",
+      "question": "『神学大全』の著者は？",
+      "answer": "トマス＝アクィナス",
+      "explanation": "アリストテレス哲学とキリスト教神学を結び付けた。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-aquinas-summa-work",
+      "knowledgeId": "me-aquinas",
+      "type": "person-work",
+      "question": "トマス＝アクィナスの主著は？",
+      "answer": "神学大全",
+      "explanation": "中世スコラ学の代表的著作。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-ockham-nominalism",
+      "knowledgeId": "me-ockham",
+      "type": "theory-person",
+      "question": "後期スコラ学の唯名論で知られる人物は？",
+      "answer": "ウィリアム＝オブ＝オッカム",
+      "explanation": "中世イングランドの学者。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-roger-bacon-experience",
+      "knowledgeId": "me-roger-bacon",
+      "type": "achievement-person",
+      "question": "中世に経験・観察を重視したイギリスの学者は？",
+      "answer": "ロジャー＝ベーコン",
+      "explanation": "自然研究の方法を論じた。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-bologna-law",
+      "knowledgeId": "me-bologna-university",
+      "type": "context",
+      "question": "中世イタリアで法学の中心となった大学は？",
+      "answer": "ボローニャ大学",
+      "explanation": "北イタリアの大学。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-paris-theology",
+      "knowledgeId": "me-paris-university",
+      "type": "context",
+      "question": "中世ヨーロッパで神学の中心となった大学は？",
+      "answer": "パリ大学",
+      "explanation": "スコラ学の発展にも関わる。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-oxford-england",
+      "knowledgeId": "me-oxford-university",
+      "type": "context",
+      "question": "イングランドで成立した、現在も続く中世の大学は？",
+      "answer": "オクスフォード大学",
+      "explanation": "中世の学問拠点。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-cambridge-oxford",
+      "knowledgeId": "me-cambridge-university",
+      "type": "context",
+      "question": "オクスフォード大学から分かれて成立した大学は？",
+      "answer": "ケンブリッジ大学",
+      "explanation": "イングランドの大学。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-salerno-medicine",
+      "knowledgeId": "me-salerno-university",
+      "type": "context",
+      "question": "中世南イタリアで医学の中心となった大学は？",
+      "answer": "サレルノ大学",
+      "explanation": "医学教育で知られる。",
+      "updatedAt": "2026-11-09T08:34:38.000Z",
       "version": 1,
       "deleted": false
     }

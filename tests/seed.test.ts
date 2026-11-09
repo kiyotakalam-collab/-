@@ -1,23 +1,51 @@
 import 'fake-indexeddb/auto';
 import { afterEach, describe, expect, it } from 'vitest';
-import { getProgress, validateCatalog } from '../src/core';
+import { getProgress, selectCards, validateCatalog } from '../src/core';
 import { openDatabase, type HistoryDB } from '../src/db';
 import { seedCatalog } from '../src/seed';
-import type { Catalog } from '../src/types';
+import { secondPhotoItems } from '../src/seed-photos-2';
+import { DEFAULT_FILTER, type Catalog } from '../src/types';
 
 const opened: HistoryDB[] = [];
 afterEach(() => { for (const db of opened.splice(0)) db.close(); });
 
 describe('reviewed introductory questions', () => {
-  it('adds all five photographed sections without reassigning an existing card or duplicating a term', () => {
+  it('adds ten photographed sections without reassigning an existing card or duplicating a term', () => {
     const catalog = validateCatalog(seedCatalog);
-    expect(catalog.version).toBe(3);
-    expect(catalog.items).toHaveLength(53);
-    expect(catalog.cards).toHaveLength(70);
+    expect(catalog.version).toBe(4);
+    expect(catalog.items).toHaveLength(83);
+    expect(catalog.cards).toHaveLength(103);
     expect(catalog.cards.find(card => card.id === 'gr-homer-iliad-author')).toMatchObject({knowledgeId: 'gr-homer', version: 2});
     expect(catalog.cards.find(card => card.id === 'gr-homer-odyssey-author')).toMatchObject({knowledgeId: 'gr-homer', version: 1});
     expect(catalog.items.find(item => item.id === 'gr-sophocles')?.sources[0]).toMatchObject({title: expect.stringContaining('スタンダード世界史探究')});
     expect(catalog.items.find(item => item.id === 'gr-sophocles')?.sources[0].url).toBeUndefined();
+  });
+
+  it('keeps v3 review events and existing question IDs when the medieval pages arrive', async () => {
+    const db = await openDatabase(`medieval-upgrade-${crypto.randomUUID()}`); opened.push(db);
+    const v3 = structuredClone(seedCatalog);
+    v3.version = 3;
+    v3.updatedAt = '2026-11-09T08:22:15.000Z';
+    const newIds = new Set(secondPhotoItems.map(item => item.id));
+    v3.items = v3.items.filter(item => !newIds.has(item.id));
+    v3.cards = v3.cards.filter(card => !newIds.has(card.knowledgeId));
+    await db.applyCatalog(v3);
+    const wrong = await db.recordReview('ro-tacitus-germania-author', false, 'v3-session');
+    await db.applyCatalog(seedCatalog);
+    const state = await db.load();
+    expect(state.events).toEqual([wrong]);
+    expect(getProgress(state.events).get(wrong.cardId)?.wrong).toBe(1);
+    expect(state.catalog.cards.find(card => card.id === wrong.cardId)?.knowledgeId).toBe('ro-tacitus');
+    expect(state.catalog.cards.some(card => card.id === 'me-aquinas-summa-author')).toBe(true);
+  });
+
+  it('filters the new medieval education cards independently from Roman law', () => {
+    const medieval = selectCards(seedCatalog, [], {...DEFAULT_FILTER, regions: ['ヨーロッパ'], eras: ['中世ヨーロッパ'], fields: ['教育']});
+    const roman = selectCards(seedCatalog, [], {...DEFAULT_FILTER, regions: ['ローマ'], eras: ['古代ローマ'], fields: ['法律']});
+    expect(medieval).toHaveLength(6);
+    expect(medieval.map(card => card.id)).toContain('me-bologna-law');
+    expect(roman).toHaveLength(3);
+    expect(roman.map(card => card.id)).toContain('ro-corpus-juris-justinian');
   });
 
   it('preserves v2 mistakes when photo cards are installed', async () => {

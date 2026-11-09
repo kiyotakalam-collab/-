@@ -130,9 +130,9 @@ test('大きなレベル選択で累積・単独を切り替え、他条件の�
   await expect(page.locator('[name=level][value="2"]')).toBeFocused();
   await page.locator('[name=level][value="1"]').check();
   await page.locator('[name=levelMode][value=single]').check();
-  await expect(page.locator('.setup-bottom strong')).toHaveText('19 枚が対象');
+  await expect(page.locator('.setup-bottom strong')).toHaveText('23 枚が対象');
   await page.locator('[name=levelMode][value=cumulative]').check();
-  await expect(page.locator('.setup-bottom strong')).toHaveText('19 枚が対象');
+  await expect(page.locator('.setup-bottom strong')).toHaveText('23 枚が対象');
   await page.locator('[name=level][value="4"]').check();
   await expect(page.locator('.setup-bottom strong')).toHaveText(`${seedCatalog.cards.length} 枚が対象`);
   await page.locator('[name=levelMode][value=single]').check();

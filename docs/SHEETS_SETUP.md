@@ -67,7 +67,7 @@ Lv.1〜3の問題は「『国家』の著者は？」「ストア派を創始し
 
 ### Metaタブ
 
-`key,value` の2列です。`schemaVersion=1`、カタログ全体の `version`、UTCの `updatedAt`、`status=draft` または `published` を持ちます。アプリ同梱カタログはversion 3です。新しいマスターはMeta.version=3から初期化し、初回の `publishCatalog` でversion 4へ上げます。既存マスターを使う場合も、その最新カタログとアプリ同梱教材の両方より大きいバージョンで公開します。
+`key,value` の2列です。`schemaVersion=1`、カタログ全体の `version`、UTCの `updatedAt`、`status=draft` または `published` を持ちます。アプリ同梱カタログはversion 4です。新しいマスターはMeta.version=4から初期化し、初回の `publishCatalog` でversion 5へ上げます。既存マスターを使う場合も、その最新カタログとアプリ同梱教材の両方より大きいバージョンで公開します。
 
 ## 編集・公開の手順
 
