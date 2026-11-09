@@ -8,8 +8,9 @@ const CARD_HEADERS = ['id', 'knowledgeId', 'type', 'question', 'answer', 'explan
 
 /** Run once in the bound script editor. Never overwrites existing content. */
 function initializeMaster() {
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
-  if (!ss) throw new Error('Run initializeMaster from the spreadsheet-bound editor.');
+  // Also support standalone Apps Script projects opened on mobile.
+  // The explicit ID points to the dedicated culture-history Sheets master.
+  const ss = SpreadsheetApp.openById('1RYkYvk82hqNEIgNGx-xd5B64byQbVaXw087-8F-C78U');
   PropertiesService.getScriptProperties().setProperty('MASTER_SPREADSHEET_ID', ss.getId());
   ensureSheet_(ss, 'Knowledge', KNOWLEDGE_HEADERS);
   ensureSheet_(ss, 'Cards', CARD_HEADERS);
