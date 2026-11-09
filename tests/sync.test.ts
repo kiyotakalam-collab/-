@@ -54,6 +54,27 @@ describe('catalog synchronization', () => {
     state = await db.load(); expect(state.events).toHaveLength(1);
   });
 
+  it('accepts a Sheets delta card referencing a bundled item and preserves its mistake history', async () => {
+    const db = await makeDb();
+    const old = await db.load();
+    const delta: Catalog = {
+      schemaVersion: 1, version: 12, updatedAt: '2026-11-09T11:00:00.000Z',
+      items: [],
+      cards: [{
+        id: 'from-sheet-1', knowledgeId: 'test-person', type: 'context',
+        question: '既存用語に追加した質問は？', answer: '既存のまま',
+        explanation: 'Sheets側には新規カードだけを格納する。',
+        updatedAt: '2026-11-09T11:00:00.000Z', version: 1, deleted: false,
+      }],
+    };
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValueOnce(respond(delta)));
+    expect(await synchronize(db, 'https://example.org/catalog')).toEqual({version: 12, itemCount: 1, cardCount: 2});
+    const state = await db.load();
+    expect(state.events).toEqual(old.events);
+    expect(state.catalog.items).toEqual(old.catalog.items);
+    expect(state.catalog.cards.some(card => card.id === 'from-sheet-1')).toBe(true);
+  });
+
   it('keeps data on HTTP/network/invalid JSON/invalid catalog failures and recovers online', async () => {
     const db = await makeDb();
     const fetchMock = vi.fn()
