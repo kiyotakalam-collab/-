@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 15,
-  "updatedAt": "2026-11-09T14:11:04.826Z",
+  "version": 16,
+  "updatedAt": "2026-11-09T14:19:58.519Z",
   "items": [
     {
       "id": "eg-ra",
@@ -4160,6 +4160,4359 @@
       "updatedAt": "2026-11-09T14:11:04.826Z",
       "version": 1,
       "deleted": false
+    },
+    {
+      "id": "ch-song-learning",
+      "canonicalName": "宋学",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐代の訓詁中心の儒学に反発し、宋代に成立した新しい儒学。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhou-dunyi",
+      "canonicalName": "周敦頤",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北宋の儒学者で『太極図説』を著し、宋学の祖とされる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-taijitu-shuo",
+      "canonicalName": "太極図説",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北宋の周敦頤が著した宇宙論の書物。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-cheng-hao",
+      "canonicalName": "程顥",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北宋の二程の兄で、弟の程頤とともに宋学を発展させた。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-cheng-yi",
+      "canonicalName": "程頤",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北宋の二程の弟で、兄の程顥とともに宋学を発展させた。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-two-cheng",
+      "canonicalName": "二程",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "宋学を発展させた程顥と程頤の兄弟の総称。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhu-xi",
+      "canonicalName": "朱熹",
+      "aliases": [
+        "朱子"
+      ],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "宋学を大成し、朱子学を確立した南宋の儒学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhu-xi-learning",
+      "canonicalName": "朱子学",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "朱熹が大成し、性即理・格物致知を重視した儒学。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xing-ji-li",
+      "canonicalName": "性即理",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "朱子学で人間の本性は天理そのものであるとする思想。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gewu-zhizhi",
+      "canonicalName": "格物致知",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "朱子学で物事の理を究めて知識を完成させるという修養方法。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-four-books",
+      "canonicalName": "四書",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "朱子学で重視された『大学』『中庸』『論語』『孟子』の総称。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-four-books-commentary",
+      "canonicalName": "四書集注",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "朱熹が四書に施した注釈をまとめた書物。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-outline-general-mirror",
+      "canonicalName": "資治通鑑綱目",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "朱熹が『資治通鑑』をもとに編纂した歴史書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-taigi-meibun",
+      "canonicalName": "大義名分論",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "朱子学で君臣の正統な身分秩序を明らかにする政治思想。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kaii-distinction",
+      "canonicalName": "華夷の別",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "朱子学にみられる中華と夷狄の区別を重視する考え方。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-lu-jiuyuan",
+      "canonicalName": "陸九淵",
+      "aliases": [
+        "陸象山"
+      ],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "南宋で心即理を説き、陽明学に影響を与えた儒学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xin-ji-li",
+      "canonicalName": "心即理",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "陸九淵や王陽明が唱えた、心そのものが理だとする思想。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hongwu-emperor",
+      "canonicalName": "洪武帝",
+      "aliases": [
+        "朱元璋"
+      ],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明の建国者で朱子学を官学として重視した初代皇帝。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yongle-emperor",
+      "canonicalName": "永楽帝",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明代に『四書大全』『五経大全』『性理大全』の編纂を命じた皇帝。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-four-books-daquan",
+      "canonicalName": "四書大全",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明の永楽帝の命で編纂された四書の注釈を集めた書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-five-classics-daquan",
+      "canonicalName": "五経大全",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "永楽帝の命で編纂された五経の解釈を集めた書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xingli-daquan",
+      "canonicalName": "性理大全",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "永楽帝の命で編纂された宋学の性理論に関する書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yangming-learning",
+      "canonicalName": "陽明学",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "王陽明が大成し、知行合一・致良知を唱える儒学。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-yangming",
+      "canonicalName": "王陽明",
+      "aliases": [
+        "王守仁"
+      ],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明代に心即理・知行合一・致良知を唱えた儒学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhixing-heyi",
+      "canonicalName": "知行合一",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "陽明学で知識と行動は不可分だとする原理。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhi-liangzhi",
+      "canonicalName": "致良知",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "陽明学で心に本来備わる善悪判断を発揮するという修養方法。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-li-zhi",
+      "canonicalName": "李贄",
+      "aliases": [
+        "李卓吾"
+      ],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "儒教の礼教を偽善として批判し、男女平等などを論じた明末の思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-evidential-research",
+      "canonicalName": "考証学",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清代に発展した古典を客観的・実証的に研究する学問。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-huang-zongxi",
+      "canonicalName": "黄宗羲",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清初に『明夷待訪録』を著し、君主専制を批判した思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-mingyi-daifanglu",
+      "canonicalName": "明夷待訪録",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "黄宗羲が著した君主専制批判を含む政治思想書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gu-yanwu",
+      "canonicalName": "顧炎武",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "『日知録』を著し、実証的な学問を重視した清初の思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-rizhilu",
+      "canonicalName": "日知録",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "考証学の先駆者・顧炎武の学術随筆。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-qian-daxin",
+      "canonicalName": "銭大昕",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清代に史学研究などで業績を残した考証学の大成者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gongyang-learning",
+      "canonicalName": "公羊学",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "『春秋』の公羊伝を正統とし、清末の政治改革論にも結びついた学問。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kang-youwei",
+      "canonicalName": "康有為",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "公羊学の立場から変法自強を主張し戊戌政変で失脚した思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hundred-schools",
+      "canonicalName": "諸子百家",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "春秋末から戦国時代に現れた多様な思想家・学派の総称。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-mohism",
+      "canonicalName": "墨家",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "兼愛・非攻を唱えた墨子に始まる思想の学派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-mozi",
+      "canonicalName": "墨子",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "兼愛と非攻を唱え、孔子の差別的な仁を批判した思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jianai",
+      "canonicalName": "兼愛",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "墨子が唱えた差別なくすべての人を愛する思想。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-feigong",
+      "canonicalName": "非攻",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "墨子が唱えた侵略戦争を否定する思想。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-daojia",
+      "canonicalName": "道家",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "老子や荘子を代表者とし無為自然を理想とした学派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-laozi",
+      "canonicalName": "老子",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "『道徳経』の著者と伝えられ、無為自然を唱えた思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-daodejing",
+      "canonicalName": "道徳経",
+      "aliases": [],
+      "kind": "work",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "老子の思想を伝える道家の代表的典籍。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wuwei-ziran",
+      "canonicalName": "無為自然",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "人為を排し、自然の道に従うことを重視する道家の理想。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhuangzi",
+      "canonicalName": "荘子",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "老子の思想を継承した戦国時代の道家思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-legalists",
+      "canonicalName": "法家",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "礼より法による統治を重視し、商鞅・韓非・李斯らを代表とする学派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shang-yang",
+      "canonicalName": "商鞅",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "秦の孝公に仕え郡県制や什伍制などの変法を推進した法家の政治家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-han-fei",
+      "canonicalName": "韓非",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "荀子に学び法家の思想を大成して『韓非子』を著した思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-li-si",
+      "canonicalName": "李斯",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "荀子に学び秦の始皇帝に丞相として仕えた法家の政治家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hanfeizi",
+      "canonicalName": "韓非子",
+      "aliases": [],
+      "kind": "work",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "戦国末の法家思想家・韓非の思想を伝える著作。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yinyang-school",
+      "canonicalName": "陰陽家",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "陰陽五行の原理を重視し鄒衍を代表者とする学派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zou-yan",
+      "canonicalName": "鄒衍",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "陰陽五行説を唱えた戦国時代の思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yinyang-wuxing",
+      "canonicalName": "陰陽五行説",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "陰陽の二原理と木・火・土・金・水の五行の相互関係を説く思想。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-military-school",
+      "canonicalName": "兵家",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "戦術・兵法や国家経営を論じた諸子百家の一派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-sun-wu",
+      "canonicalName": "孫武",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "春秋末の兵法家で兵書『孫子』の著者と伝えられる人物。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-art-war",
+      "canonicalName": "孫子の兵法",
+      "aliases": [],
+      "kind": "work",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "孫武の著作と伝えられる戦術・戦略に関する兵書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wu-qi",
+      "canonicalName": "呉起",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "戦国時代の兵法家で兵書『呉子』と関係する人物。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wuzi",
+      "canonicalName": "呉子",
+      "aliases": [],
+      "kind": "work",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "戦国期の兵法家・呉起と結びつく兵書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-names-school",
+      "canonicalName": "名家",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "名と実の関係を追究した戦国時代の論理学的思想の学派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gongsun-long",
+      "canonicalName": "公孫龍",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "名と実の関係を論じ『公孫龍子』を著したとされる思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gongsunlongzi",
+      "canonicalName": "公孫龍子",
+      "aliases": [],
+      "kind": "work",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "戦国期の名家・公孫龍の議論を伝える書物。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-farming-school",
+      "canonicalName": "農家",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "農本主義の立場から万民の平等や自給自足を説いた学派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xu-xing",
+      "canonicalName": "許行",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "農本主義を説いた戦国時代の農家思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-diplomacy-school",
+      "canonicalName": "縦横家",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "合従策や連衡策など外交戦略を説いた戦国期の思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-su-qin",
+      "canonicalName": "蘇秦",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "戦国時代に反秦同盟の合従策を説いた縦横家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hezhong",
+      "canonicalName": "合従策",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "秦に対抗するため戦国六国の同盟を説く外交戦略。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhang-yi",
+      "canonicalName": "張儀",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "秦と各国の個別同盟である連衡策を説いた縦横家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-lianheng",
+      "canonicalName": "連衡策",
+      "aliases": [],
+      "kind": "concept",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "秦と六国を個別に結び、六国連合を崩す外交戦略。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-chuci",
+      "canonicalName": "楚辞",
+      "aliases": [],
+      "kind": "work",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "楚の詩人・屈原らの韻文を含む南方の文学作品集。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-qu-yuan",
+      "canonicalName": "屈原",
+      "aliases": [],
+      "kind": "person",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "戦国時代の楚に仕え『楚辞』で知られる詩人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shijing",
+      "canonicalName": "詩経",
+      "aliases": [],
+      "kind": "work",
+      "field": "諸子百家・文学",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中国最古の詩集であり、儒家の五経の一つ。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shujing",
+      "canonicalName": "書経",
+      "aliases": [],
+      "kind": "work",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "堯・舜や夏・殷・周の王の言行などを記す儒家の五経の一つ。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yijing",
+      "canonicalName": "易経",
+      "aliases": [],
+      "kind": "work",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "周初に成立したとされる占いの典籍で五経の一つ。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-liji",
+      "canonicalName": "礼記",
+      "aliases": [],
+      "kind": "work",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代中国の礼制や儀礼に関する記録を集めた五経の一つ。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-sima-qian",
+      "canonicalName": "司馬遷",
+      "aliases": [],
+      "kind": "person",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "前漢に紀伝体の通史『史記』を著した歴史家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shiji",
+      "canonicalName": "史記",
+      "aliases": [],
+      "kind": "work",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "司馬遷が著した中国最初の紀伝体の通史。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kidentai",
+      "canonicalName": "紀伝体",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "本紀と列伝を中心に歴史を記述する中国史書の基本形式。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ban-gu",
+      "canonicalName": "班固",
+      "aliases": [],
+      "kind": "person",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "後漢に前漢一代の歴史書『漢書』を著した歴史家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hanshu",
+      "canonicalName": "漢書",
+      "aliases": [],
+      "kind": "work",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "班固が著した前漢一代の紀伝体の史書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-taipingdao",
+      "canonicalName": "太平道",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "後漢末に張角が創始し、黄巾の乱を起こした道教系教団。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhang-jiao",
+      "canonicalName": "張角",
+      "aliases": [],
+      "kind": "person",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "太平道を創始し184年に黄巾の乱を起こした人物。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-five-pecks",
+      "canonicalName": "五斗米道",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "後漢後期に張陵が創始し、四川・陝西地方に普及した道教系教団。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhang-ling",
+      "canonicalName": "張陵",
+      "aliases": [],
+      "kind": "person",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "後漢後期に五斗米道を創始したとされる人物。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-senjin",
+      "canonicalName": "神仙思想",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "神仙術を通じて不老長寿を求める中国古代の宗教思想。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xiaozhuan",
+      "canonicalName": "小篆",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "秦の始皇帝の時代に統一された篆書の字体。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-lishu",
+      "canonicalName": "隷書",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "秦・漢の時代に普及した漢字の簡略な書体。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xu-shen",
+      "canonicalName": "許慎",
+      "aliases": [],
+      "kind": "person",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "後漢に漢字の字義を説明する『説文解字』を著した学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shuowen",
+      "canonicalName": "説文解字",
+      "aliases": [],
+      "kind": "work",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "後漢の許慎が著した漢字の形と意味を説明する字書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-cai-lun",
+      "canonicalName": "蔡倫",
+      "aliases": [],
+      "kind": "person",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "後漢に製紙法を改良して紙の普及に寄与した人物。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-paper-making",
+      "canonicalName": "製紙法",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "後漢の蔡倫が改良したことで知られる紙を製造する技術。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-silk",
+      "canonicalName": "絹",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の学問・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "殷代に中国で生産され、漢代には貿易品として輸出された織物。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kaishu",
+      "canonicalName": "楷書",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の文字・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "隷書から発達した筆画を整えた漢字の標準的な書体。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第6枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xingshu",
+      "canonicalName": "行書",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の文字・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "楷書と草書の中間の性格を持つ漢字の書体。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第6枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-caoshu",
+      "canonicalName": "草書",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の文字・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "漢字の筆画を省略し流れるように書く書体。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第6枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wood-bamboo-slips",
+      "canonicalName": "木簡・竹簡",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の文字・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "紙の普及以前の中国で文字を記した木や竹の細長い札。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第6枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-silk-scroll",
+      "canonicalName": "帛",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の文字・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代中国で文字を記すのに使われた絹布。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第6枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-taiping-revolt",
+      "canonicalName": "黄巾の乱",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の文字・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "184年に張角が太平道を率いて起こした後漢末の大反乱。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第6枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-daoxiao-thinking",
+      "canonicalName": "老荘思想",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の文字・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "老子と荘子の思想をあわせた呼び名。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第6枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-prophecy",
+      "canonicalName": "讖緯思想",
+      "aliases": [],
+      "kind": "concept",
+      "field": "漢代の文字・宗教",
+      "region": "中国",
+      "era": "古代〜漢",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "天変地異や人間の運命などを予言し、儒学や陰陽思想と結びついた思想。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第6枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-six-dynasties",
+      "canonicalName": "六朝",
+      "aliases": [],
+      "kind": "concept",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "建業・建康を都とする呉・東晋・宋・斉・梁・陳の総称。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-six-dynasties-culture",
+      "canonicalName": "六朝文化",
+      "aliases": [],
+      "kind": "concept",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "貴族社会を基盤に清談・詩文・書画などが栄えた魏晋南北朝期の文化。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-qingtan",
+      "canonicalName": "清談",
+      "aliases": [],
+      "kind": "concept",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "老荘思想に基づき、世俗を超越した哲学的な議論を楽しむ六朝時代の風潮。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-seven-sages",
+      "canonicalName": "竹林の七賢",
+      "aliases": [],
+      "kind": "concept",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "阮籍ら清談で知られる魏晋期の七人の知識人の総称。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ruan-ji",
+      "canonicalName": "阮籍",
+      "aliases": [],
+      "kind": "person",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "竹林の七賢の一人で清談や詩文で知られる魏晋期の知識人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-fotucheng",
+      "canonicalName": "仏図澄",
+      "aliases": [],
+      "kind": "person",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "五胡十六国期に洛陽などで仏教を広めた西域出身の僧。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kumarajiva",
+      "canonicalName": "鳩摩羅什",
+      "aliases": [
+        "クマーラジーヴァ"
+      ],
+      "kind": "person",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "長安で仏教経典の漢訳と布教に尽力した西域出身の僧。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-mogao-caves",
+      "canonicalName": "莫高窟",
+      "aliases": [],
+      "kind": "building",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "敦煌にある仏教壁画と石窟寺院で知られる仏教遺跡。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yungang-caves",
+      "canonicalName": "雲岡石窟",
+      "aliases": [],
+      "kind": "building",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北魏の平城近郊で大同に造営された石窟寺院。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-longmen-caves",
+      "canonicalName": "龍門石窟",
+      "aliases": [],
+      "kind": "building",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北魏の洛陽遷都後に造営が始まった洛陽近郊の石窟寺院。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-three-wu-one-zong",
+      "canonicalName": "三武一宗の法難",
+      "aliases": [],
+      "kind": "concept",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北魏太武帝・北周武帝・唐武宗・後周世宗による仏教弾圧の総称。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kou-qianzhi",
+      "canonicalName": "寇謙之",
+      "aliases": [],
+      "kind": "person",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北魏で五斗米道を改革し新天師道を開いた道教指導者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-new-celestial-masters",
+      "canonicalName": "新天師道",
+      "aliases": [],
+      "kind": "concept",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北魏の寇謙之が改革して成立させた道教の一派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-daoist-priest",
+      "canonicalName": "道士",
+      "aliases": [],
+      "kind": "concept",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "道教の儀礼をつかさどる宗教者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-daoist-canon",
+      "canonicalName": "道蔵",
+      "aliases": [],
+      "kind": "work",
+      "field": "魏晋南北朝の文化",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "道教の経典を集成した総集。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第7枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-parallel-prose",
+      "canonicalName": "四六駢儷体",
+      "aliases": [
+        "四六駢儷文"
+      ],
+      "kind": "concept",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "対句と韻を用いる華麗な文章形式で六朝時代に流行した文体。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tao-yuanming",
+      "canonicalName": "陶潜",
+      "aliases": [
+        "陶淵明"
+      ],
+      "kind": "person",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "東晋末の田園詩人で『帰去来辞』『桃花源記』を著した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-return-home",
+      "canonicalName": "帰去来辞",
+      "aliases": [],
+      "kind": "work",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "田園生活へ帰る決意を歌った陶淵明の作品。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-peach-blossom",
+      "canonicalName": "桃花源記",
+      "aliases": [],
+      "kind": "work",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "桃源郷という理想郷を描く陶淵明の作品。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xie-lingyun",
+      "canonicalName": "謝霊運",
+      "aliases": [],
+      "kind": "person",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "六朝時代の山水詩で知られる南朝宋の詩人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xiao-tong",
+      "canonicalName": "昭明太子",
+      "aliases": [
+        "蕭統"
+      ],
+      "kind": "person",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "梁の皇太子で『文選』を編纂した人物。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wenxuan",
+      "canonicalName": "文選",
+      "aliases": [],
+      "kind": "work",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "梁の昭明太子が編纂した古代中国の詩文集。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gu-kaizhi",
+      "canonicalName": "顧愷之",
+      "aliases": [],
+      "kind": "person",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "『女史箴図』の作者と伝えられ画聖と呼ばれた東晋の画家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-admonitions-scroll",
+      "canonicalName": "女史箴図",
+      "aliases": [],
+      "kind": "work",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "東晋の画家顧愷之の作と伝えられる絵画。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-xizhi",
+      "canonicalName": "王羲之",
+      "aliases": [],
+      "kind": "person",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "『蘭亭序』で知られ書聖と呼ばれる東晋の書家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-lantingxu",
+      "canonicalName": "蘭亭序",
+      "aliases": [],
+      "kind": "work",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "東晋の王羲之による行書の代表的書作品。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-li-daoyuan",
+      "canonicalName": "酈道元",
+      "aliases": [],
+      "kind": "person",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北魏で地理書『水経注』を著した学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shuijingzhu",
+      "canonicalName": "水経注",
+      "aliases": [],
+      "kind": "work",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北魏の酈道元が著した河川を中心とする地理書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jia-sixie",
+      "canonicalName": "賈思勰",
+      "aliases": [],
+      "kind": "person",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北魏で農業技術書『斉民要術』を著した学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-qimin-yaoshu",
+      "canonicalName": "斉民要術",
+      "aliases": [],
+      "kind": "work",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北魏の賈思勰が著した中国古代の農業技術書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-shuhe",
+      "canonicalName": "王叔和",
+      "aliases": [],
+      "kind": "person",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "晋代に『傷寒論』の伝本を編纂整理したとされる医学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shanghanlun",
+      "canonicalName": "傷寒論",
+      "aliases": [],
+      "kind": "work",
+      "field": "六朝の文学・美術・学術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "張仲景に由来し王叔和が整理したとされる古代中国の医学書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-abe-no-nakamaro",
+      "canonicalName": "阿倍仲麻呂",
+      "aliases": [
+        "晁衡"
+      ],
+      "kind": "person",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐に留学して玄宗に重用され、安南節度使に任じられた日本人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-han-yu",
+      "canonicalName": "韓愈",
+      "aliases": [
+        "韓退之"
+      ],
+      "kind": "person",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐代に古文復興を提唱し儒学の復興を主張した唐宋八大家の文人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xuanzang",
+      "canonicalName": "玄奘",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ナーランダー僧院に学び『大唐西域記』を残した唐の求法僧。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-great-tang-western-regions",
+      "canonicalName": "大唐西域記",
+      "aliases": [],
+      "kind": "work",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "玄奘のインド留学について記された唐代の西域旅行・地理書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yijing-monk",
+      "canonicalName": "義浄",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "海路でインドに渡り『南海寄帰内法伝』を著した唐の求法僧。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-nanhai-jigui",
+      "canonicalName": "南海寄帰内法伝",
+      "aliases": [],
+      "kind": "work",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐の義浄がインドなどの仏教儀礼や僧院生活を記録した書物。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tiantai-school",
+      "canonicalName": "天台宗",
+      "aliases": [],
+      "kind": "concept",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中国に成立し日本では最澄によって伝えられた仏教宗派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-saicho",
+      "canonicalName": "最澄",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐から天台宗を日本へ伝えた平安初期の僧。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shingon-school",
+      "canonicalName": "真言宗",
+      "aliases": [],
+      "kind": "concept",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "空海が唐から日本へ伝えた密教系の仏教宗派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kukai",
+      "canonicalName": "空海",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐で学んだ密教を日本に伝えて真言宗を開いた僧。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zen-school",
+      "canonicalName": "禅宗",
+      "aliases": [],
+      "kind": "concept",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "達磨を中国の初祖と伝え、坐禅や悟りの実践を重視する仏教宗派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-bodhidharma",
+      "canonicalName": "達磨",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中国禅宗の初祖と伝えられるインド出身の僧。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-pure-land-school",
+      "canonicalName": "浄土宗",
+      "aliases": [],
+      "kind": "concept",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "阿弥陀仏の救済と極楽往生を重視する仏教の伝統。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-huiyuan",
+      "canonicalName": "慧遠",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "東晋期に阿弥陀浄土への信仰を推進した僧。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-alopen",
+      "canonicalName": "阿羅本",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐代の中国に来訪し景教の布教を許されたペルシア出身の宣教師。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-manichaeism-tang",
+      "canonicalName": "摩尼教",
+      "aliases": [],
+      "kind": "concept",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "マニが創始し唐代に中国へ伝わった宗教の呼び名。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-islam-huijiao",
+      "canonicalName": "回教",
+      "aliases": [],
+      "kind": "concept",
+      "field": "唐の儒学・宗教",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐代に海路で中国へ伝わったイスラーム教の旧称。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第9枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tang-poetry",
+      "canonicalName": "唐詩",
+      "aliases": [],
+      "kind": "concept",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "律詩・絶句が完成し李白・杜甫らが活躍した唐代の詩。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-wei",
+      "canonicalName": "王維",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "自然詩と山水画で知られる盛唐の詩人・画家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-li-bai",
+      "canonicalName": "李白",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "詩仙と呼ばれる自由奔放な詩風の盛唐の詩人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shisen",
+      "canonicalName": "詩仙",
+      "aliases": [],
+      "kind": "concept",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "盛唐の詩人李白に与えられた称号。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-du-fu",
+      "canonicalName": "杜甫",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "『春望』などで知られ詩聖と呼ばれる唐代の詩人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shisei",
+      "canonicalName": "詩聖",
+      "aliases": [],
+      "kind": "concept",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐代の詩人杜甫に与えられた称号。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-chunwang",
+      "canonicalName": "春望",
+      "aliases": [],
+      "kind": "work",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "安史の乱を背景に杜甫が国と家族を思って詠んだ詩。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-bai-juyi",
+      "canonicalName": "白居易",
+      "aliases": [
+        "白楽天"
+      ],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中唐の詩人で『長恨歌』を著し白楽天とも呼ばれた。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-changhenge",
+      "canonicalName": "長恨歌",
+      "aliases": [],
+      "kind": "work",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "玄宗と楊貴妃の悲恋を題材にした白居易の長編詩。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tang-song-eight",
+      "canonicalName": "唐宋八大家",
+      "aliases": [],
+      "kind": "concept",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐の韓愈・柳宗元と宋の欧陽脩ら6人を合わせた8人の文章家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-liu-zongyuan",
+      "canonicalName": "柳宗元",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "韓愈とともに古文復興を唱えた唐宋八大家の文人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ouyang-xiu",
+      "canonicalName": "欧陽脩",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北宋の文人で唐宋八大家の一人に数えられる文章家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-su-xun",
+      "canonicalName": "蘇洵",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "蘇軾と蘇轍の父で唐宋八大家の一人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-su-shi",
+      "canonicalName": "蘇軾",
+      "aliases": [
+        "蘇東坡"
+      ],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "詩文・書画に秀でた北宋の文人で唐宋八大家の一人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-su-zhe",
+      "canonicalName": "蘇轍",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "蘇軾の弟で唐宋八大家の一人に数えられる文人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-anshi",
+      "canonicalName": "王安石",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北宋で新法を推進し唐宋八大家の一人でもある政治家・文章家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zeng-gong",
+      "canonicalName": "曾鞏",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐宋八大家の一人に数えられる北宋の文章家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-early-tang-calligraphers",
+      "canonicalName": "初唐三大家",
+      "aliases": [],
+      "kind": "concept",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "欧陽詢・褚遂良・虞世南の三人を指す唐初の書家の総称。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ouyang-xun",
+      "canonicalName": "欧陽詢",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "褚遂良・虞世南と並ぶ初唐三大家の書家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-chu-suiliang",
+      "canonicalName": "褚遂良",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "欧陽詢・虞世南と並ぶ初唐三大家の書家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yu-shinan",
+      "canonicalName": "虞世南",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "欧陽詢・褚遂良と並ぶ初唐三大家の書家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yan-zhenqing",
+      "canonicalName": "顔真卿",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "力強い書風で知られ安史の乱でも唐を支援した書家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yan-liben",
+      "canonicalName": "閻立本",
+      "aliases": [],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐の太宗・高宗に仕え人物画を描いた宮廷画家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wu-daozi",
+      "canonicalName": "呉道玄",
+      "aliases": [
+        "呉道子"
+      ],
+      "kind": "person",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "玄宗に仕え人物・鬼神・山水画に秀でた唐の画家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tang-sancai",
+      "canonicalName": "唐三彩",
+      "aliases": [],
+      "kind": "concept",
+      "field": "唐の文学・芸術",
+      "region": "中国",
+      "era": "魏晋南北朝〜唐",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "緑・褐色・白などの釉薬で彩色された唐代の陶器。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材記載の基本度・知識の細かさを基準に仮置き。大学別出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
     }
   ],
   "cards": [
@@ -5953,6 +10306,1909 @@
       "answer": "ゾロアスター教",
       "explanation": "古代イランで成立した宗教。",
       "updatedAt": "2026-11-09T14:11:04.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-song-learning::core",
+      "knowledgeId": "ch-song-learning",
+      "type": "context",
+      "question": "唐代の訓詁中心の儒学に反発し、宋代に成立した新しい儒学。この用語・思想は何か？",
+      "answer": "宋学",
+      "explanation": "唐代の訓詁中心の儒学に反発し、宋代に成立した新しい儒学。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhou-dunyi::core",
+      "knowledgeId": "ch-zhou-dunyi",
+      "type": "achievement-person",
+      "question": "北宋の儒学者で『太極図説』を著し、宋学の祖とされる。この人物は何か？",
+      "answer": "周敦頤",
+      "explanation": "北宋の儒学者で『太極図説』を著し、宋学の祖とされる。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-taijitu-shuo::core",
+      "knowledgeId": "ch-taijitu-shuo",
+      "type": "context",
+      "question": "北宋の周敦頤が著した宇宙論の書物。この作品・文献は何か？",
+      "answer": "太極図説",
+      "explanation": "北宋の周敦頤が著した宇宙論の書物。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-cheng-hao::core",
+      "knowledgeId": "ch-cheng-hao",
+      "type": "achievement-person",
+      "question": "北宋の二程の兄で、弟の程頤とともに宋学を発展させた。この人物は何か？",
+      "answer": "程顥",
+      "explanation": "北宋の二程の兄で、弟の程頤とともに宋学を発展させた。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-cheng-yi::core",
+      "knowledgeId": "ch-cheng-yi",
+      "type": "achievement-person",
+      "question": "北宋の二程の弟で、兄の程顥とともに宋学を発展させた。この人物は何か？",
+      "answer": "程頤",
+      "explanation": "北宋の二程の弟で、兄の程顥とともに宋学を発展させた。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-two-cheng::core",
+      "knowledgeId": "ch-two-cheng",
+      "type": "context",
+      "question": "宋学を発展させた程顥と程頤の兄弟の総称。この用語・思想は何か？",
+      "answer": "二程",
+      "explanation": "宋学を発展させた程顥と程頤の兄弟の総称。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhu-xi::core",
+      "knowledgeId": "ch-zhu-xi",
+      "type": "achievement-person",
+      "question": "宋学を大成し、朱子学を確立した南宋の儒学者。この人物は何か？",
+      "answer": "朱熹",
+      "explanation": "宋学を大成し、朱子学を確立した南宋の儒学者。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhu-xi-learning::core",
+      "knowledgeId": "ch-zhu-xi-learning",
+      "type": "context",
+      "question": "朱熹が大成し、性即理・格物致知を重視した儒学。この用語・思想は何か？",
+      "answer": "朱子学",
+      "explanation": "朱熹が大成し、性即理・格物致知を重視した儒学。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xing-ji-li::core",
+      "knowledgeId": "ch-xing-ji-li",
+      "type": "context",
+      "question": "朱子学で人間の本性は天理そのものであるとする思想。この用語・思想は何か？",
+      "answer": "性即理",
+      "explanation": "朱子学で人間の本性は天理そのものであるとする思想。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gewu-zhizhi::core",
+      "knowledgeId": "ch-gewu-zhizhi",
+      "type": "context",
+      "question": "朱子学で物事の理を究めて知識を完成させるという修養方法。この用語・思想は何か？",
+      "answer": "格物致知",
+      "explanation": "朱子学で物事の理を究めて知識を完成させるという修養方法。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-four-books::core",
+      "knowledgeId": "ch-four-books",
+      "type": "context",
+      "question": "朱子学で重視された『大学』『中庸』『論語』『孟子』の総称。この作品・文献は何か？",
+      "answer": "四書",
+      "explanation": "朱子学で重視された『大学』『中庸』『論語』『孟子』の総称。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-four-books-commentary::core",
+      "knowledgeId": "ch-four-books-commentary",
+      "type": "context",
+      "question": "朱熹が四書に施した注釈をまとめた書物。この作品・文献は何か？",
+      "answer": "四書集注",
+      "explanation": "朱熹が四書に施した注釈をまとめた書物。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-outline-general-mirror::core",
+      "knowledgeId": "ch-outline-general-mirror",
+      "type": "context",
+      "question": "朱熹が『資治通鑑』をもとに編纂した歴史書。この作品・文献は何か？",
+      "answer": "資治通鑑綱目",
+      "explanation": "朱熹が『資治通鑑』をもとに編纂した歴史書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-taigi-meibun::core",
+      "knowledgeId": "ch-taigi-meibun",
+      "type": "context",
+      "question": "朱子学で君臣の正統な身分秩序を明らかにする政治思想。この用語・思想は何か？",
+      "answer": "大義名分論",
+      "explanation": "朱子学で君臣の正統な身分秩序を明らかにする政治思想。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kaii-distinction::core",
+      "knowledgeId": "ch-kaii-distinction",
+      "type": "context",
+      "question": "朱子学にみられる中華と夷狄の区別を重視する考え方。この用語・思想は何か？",
+      "answer": "華夷の別",
+      "explanation": "朱子学にみられる中華と夷狄の区別を重視する考え方。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-lu-jiuyuan::core",
+      "knowledgeId": "ch-lu-jiuyuan",
+      "type": "achievement-person",
+      "question": "南宋で心即理を説き、陽明学に影響を与えた儒学者。この人物は何か？",
+      "answer": "陸九淵",
+      "explanation": "南宋で心即理を説き、陽明学に影響を与えた儒学者。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xin-ji-li::core",
+      "knowledgeId": "ch-xin-ji-li",
+      "type": "context",
+      "question": "陸九淵や王陽明が唱えた、心そのものが理だとする思想。この用語・思想は何か？",
+      "answer": "心即理",
+      "explanation": "陸九淵や王陽明が唱えた、心そのものが理だとする思想。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hongwu-emperor::core",
+      "knowledgeId": "ch-hongwu-emperor",
+      "type": "achievement-person",
+      "question": "明の建国者で朱子学を官学として重視した初代皇帝。この人物は何か？",
+      "answer": "洪武帝",
+      "explanation": "明の建国者で朱子学を官学として重視した初代皇帝。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yongle-emperor::core",
+      "knowledgeId": "ch-yongle-emperor",
+      "type": "achievement-person",
+      "question": "明代に『四書大全』『五経大全』『性理大全』の編纂を命じた皇帝。この人物は何か？",
+      "answer": "永楽帝",
+      "explanation": "明代に『四書大全』『五経大全』『性理大全』の編纂を命じた皇帝。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-four-books-daquan::core",
+      "knowledgeId": "ch-four-books-daquan",
+      "type": "context",
+      "question": "明の永楽帝の命で編纂された四書の注釈を集めた書。この作品・文献は何か？",
+      "answer": "四書大全",
+      "explanation": "明の永楽帝の命で編纂された四書の注釈を集めた書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-five-classics-daquan::core",
+      "knowledgeId": "ch-five-classics-daquan",
+      "type": "context",
+      "question": "永楽帝の命で編纂された五経の解釈を集めた書。この作品・文献は何か？",
+      "answer": "五経大全",
+      "explanation": "永楽帝の命で編纂された五経の解釈を集めた書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xingli-daquan::core",
+      "knowledgeId": "ch-xingli-daquan",
+      "type": "context",
+      "question": "永楽帝の命で編纂された宋学の性理論に関する書。この作品・文献は何か？",
+      "answer": "性理大全",
+      "explanation": "永楽帝の命で編纂された宋学の性理論に関する書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yangming-learning::core",
+      "knowledgeId": "ch-yangming-learning",
+      "type": "context",
+      "question": "王陽明が大成し、知行合一・致良知を唱える儒学。この用語・思想は何か？",
+      "answer": "陽明学",
+      "explanation": "王陽明が大成し、知行合一・致良知を唱える儒学。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-yangming::core",
+      "knowledgeId": "ch-wang-yangming",
+      "type": "achievement-person",
+      "question": "明代に心即理・知行合一・致良知を唱えた儒学者。この人物は何か？",
+      "answer": "王陽明",
+      "explanation": "明代に心即理・知行合一・致良知を唱えた儒学者。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhixing-heyi::core",
+      "knowledgeId": "ch-zhixing-heyi",
+      "type": "context",
+      "question": "陽明学で知識と行動は不可分だとする原理。この用語・思想は何か？",
+      "answer": "知行合一",
+      "explanation": "陽明学で知識と行動は不可分だとする原理。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhi-liangzhi::core",
+      "knowledgeId": "ch-zhi-liangzhi",
+      "type": "context",
+      "question": "陽明学で心に本来備わる善悪判断を発揮するという修養方法。この用語・思想は何か？",
+      "answer": "致良知",
+      "explanation": "陽明学で心に本来備わる善悪判断を発揮するという修養方法。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-li-zhi::core",
+      "knowledgeId": "ch-li-zhi",
+      "type": "achievement-person",
+      "question": "儒教の礼教を偽善として批判し、男女平等などを論じた明末の思想家。この人物は何か？",
+      "answer": "李贄",
+      "explanation": "儒教の礼教を偽善として批判し、男女平等などを論じた明末の思想家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-evidential-research::core",
+      "knowledgeId": "ch-evidential-research",
+      "type": "context",
+      "question": "清代に発展した古典を客観的・実証的に研究する学問。この用語・思想は何か？",
+      "answer": "考証学",
+      "explanation": "清代に発展した古典を客観的・実証的に研究する学問。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-huang-zongxi::core",
+      "knowledgeId": "ch-huang-zongxi",
+      "type": "achievement-person",
+      "question": "清初に『明夷待訪録』を著し、君主専制を批判した思想家。この人物は何か？",
+      "answer": "黄宗羲",
+      "explanation": "清初に『明夷待訪録』を著し、君主専制を批判した思想家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-mingyi-daifanglu::core",
+      "knowledgeId": "ch-mingyi-daifanglu",
+      "type": "context",
+      "question": "黄宗羲が著した君主専制批判を含む政治思想書。この作品・文献は何か？",
+      "answer": "明夷待訪録",
+      "explanation": "黄宗羲が著した君主専制批判を含む政治思想書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gu-yanwu::core",
+      "knowledgeId": "ch-gu-yanwu",
+      "type": "achievement-person",
+      "question": "『日知録』を著し、実証的な学問を重視した清初の思想家。この人物は何か？",
+      "answer": "顧炎武",
+      "explanation": "『日知録』を著し、実証的な学問を重視した清初の思想家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-rizhilu::core",
+      "knowledgeId": "ch-rizhilu",
+      "type": "context",
+      "question": "考証学の先駆者・顧炎武の学術随筆。この作品・文献は何か？",
+      "answer": "日知録",
+      "explanation": "考証学の先駆者・顧炎武の学術随筆。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-qian-daxin::core",
+      "knowledgeId": "ch-qian-daxin",
+      "type": "achievement-person",
+      "question": "清代に史学研究などで業績を残した考証学の大成者。この人物は何か？",
+      "answer": "銭大昕",
+      "explanation": "清代に史学研究などで業績を残した考証学の大成者。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gongyang-learning::core",
+      "knowledgeId": "ch-gongyang-learning",
+      "type": "context",
+      "question": "『春秋』の公羊伝を正統とし、清末の政治改革論にも結びついた学問。この用語・思想は何か？",
+      "answer": "公羊学",
+      "explanation": "『春秋』の公羊伝を正統とし、清末の政治改革論にも結びついた学問。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kang-youwei::core",
+      "knowledgeId": "ch-kang-youwei",
+      "type": "achievement-person",
+      "question": "公羊学の立場から変法自強を主張し戊戌政変で失脚した思想家。この人物は何か？",
+      "answer": "康有為",
+      "explanation": "公羊学の立場から変法自強を主張し戊戌政変で失脚した思想家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hundred-schools::core",
+      "knowledgeId": "ch-hundred-schools",
+      "type": "context",
+      "question": "春秋末から戦国時代に現れた多様な思想家・学派の総称。この用語・思想は何か？",
+      "answer": "諸子百家",
+      "explanation": "春秋末から戦国時代に現れた多様な思想家・学派の総称。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-mohism::core",
+      "knowledgeId": "ch-mohism",
+      "type": "context",
+      "question": "兼愛・非攻を唱えた墨子に始まる思想の学派。この用語・思想は何か？",
+      "answer": "墨家",
+      "explanation": "兼愛・非攻を唱えた墨子に始まる思想の学派。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-mozi::core",
+      "knowledgeId": "ch-mozi",
+      "type": "achievement-person",
+      "question": "兼愛と非攻を唱え、孔子の差別的な仁を批判した思想家。この人物は何か？",
+      "answer": "墨子",
+      "explanation": "兼愛と非攻を唱え、孔子の差別的な仁を批判した思想家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jianai::core",
+      "knowledgeId": "ch-jianai",
+      "type": "context",
+      "question": "墨子が唱えた差別なくすべての人を愛する思想。この用語・思想は何か？",
+      "answer": "兼愛",
+      "explanation": "墨子が唱えた差別なくすべての人を愛する思想。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-feigong::core",
+      "knowledgeId": "ch-feigong",
+      "type": "context",
+      "question": "墨子が唱えた侵略戦争を否定する思想。この用語・思想は何か？",
+      "answer": "非攻",
+      "explanation": "墨子が唱えた侵略戦争を否定する思想。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-daojia::core",
+      "knowledgeId": "ch-daojia",
+      "type": "context",
+      "question": "老子や荘子を代表者とし無為自然を理想とした学派。この用語・思想は何か？",
+      "answer": "道家",
+      "explanation": "老子や荘子を代表者とし無為自然を理想とした学派。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-laozi::core",
+      "knowledgeId": "ch-laozi",
+      "type": "achievement-person",
+      "question": "『道徳経』の著者と伝えられ、無為自然を唱えた思想家。この人物は何か？",
+      "answer": "老子",
+      "explanation": "『道徳経』の著者と伝えられ、無為自然を唱えた思想家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-daodejing::core",
+      "knowledgeId": "ch-daodejing",
+      "type": "context",
+      "question": "老子の思想を伝える道家の代表的典籍。この作品・文献は何か？",
+      "answer": "道徳経",
+      "explanation": "老子の思想を伝える道家の代表的典籍。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wuwei-ziran::core",
+      "knowledgeId": "ch-wuwei-ziran",
+      "type": "context",
+      "question": "人為を排し、自然の道に従うことを重視する道家の理想。この用語・思想は何か？",
+      "answer": "無為自然",
+      "explanation": "人為を排し、自然の道に従うことを重視する道家の理想。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhuangzi::core",
+      "knowledgeId": "ch-zhuangzi",
+      "type": "achievement-person",
+      "question": "老子の思想を継承した戦国時代の道家思想家。この人物は何か？",
+      "answer": "荘子",
+      "explanation": "老子の思想を継承した戦国時代の道家思想家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-legalists::core",
+      "knowledgeId": "ch-legalists",
+      "type": "context",
+      "question": "礼より法による統治を重視し、商鞅・韓非・李斯らを代表とする学派。この用語・思想は何か？",
+      "answer": "法家",
+      "explanation": "礼より法による統治を重視し、商鞅・韓非・李斯らを代表とする学派。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shang-yang::core",
+      "knowledgeId": "ch-shang-yang",
+      "type": "achievement-person",
+      "question": "秦の孝公に仕え郡県制や什伍制などの変法を推進した法家の政治家。この人物は何か？",
+      "answer": "商鞅",
+      "explanation": "秦の孝公に仕え郡県制や什伍制などの変法を推進した法家の政治家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-han-fei::core",
+      "knowledgeId": "ch-han-fei",
+      "type": "achievement-person",
+      "question": "荀子に学び法家の思想を大成して『韓非子』を著した思想家。この人物は何か？",
+      "answer": "韓非",
+      "explanation": "荀子に学び法家の思想を大成して『韓非子』を著した思想家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-li-si::core",
+      "knowledgeId": "ch-li-si",
+      "type": "achievement-person",
+      "question": "荀子に学び秦の始皇帝に丞相として仕えた法家の政治家。この人物は何か？",
+      "answer": "李斯",
+      "explanation": "荀子に学び秦の始皇帝に丞相として仕えた法家の政治家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hanfeizi::core",
+      "knowledgeId": "ch-hanfeizi",
+      "type": "context",
+      "question": "戦国末の法家思想家・韓非の思想を伝える著作。この作品・文献は何か？",
+      "answer": "韓非子",
+      "explanation": "戦国末の法家思想家・韓非の思想を伝える著作。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yinyang-school::core",
+      "knowledgeId": "ch-yinyang-school",
+      "type": "context",
+      "question": "陰陽五行の原理を重視し鄒衍を代表者とする学派。この用語・思想は何か？",
+      "answer": "陰陽家",
+      "explanation": "陰陽五行の原理を重視し鄒衍を代表者とする学派。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zou-yan::core",
+      "knowledgeId": "ch-zou-yan",
+      "type": "achievement-person",
+      "question": "陰陽五行説を唱えた戦国時代の思想家。この人物は何か？",
+      "answer": "鄒衍",
+      "explanation": "陰陽五行説を唱えた戦国時代の思想家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yinyang-wuxing::core",
+      "knowledgeId": "ch-yinyang-wuxing",
+      "type": "context",
+      "question": "陰陽の二原理と木・火・土・金・水の五行の相互関係を説く思想。この用語・思想は何か？",
+      "answer": "陰陽五行説",
+      "explanation": "陰陽の二原理と木・火・土・金・水の五行の相互関係を説く思想。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-military-school::core",
+      "knowledgeId": "ch-military-school",
+      "type": "context",
+      "question": "戦術・兵法や国家経営を論じた諸子百家の一派。この用語・思想は何か？",
+      "answer": "兵家",
+      "explanation": "戦術・兵法や国家経営を論じた諸子百家の一派。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-sun-wu::core",
+      "knowledgeId": "ch-sun-wu",
+      "type": "achievement-person",
+      "question": "春秋末の兵法家で兵書『孫子』の著者と伝えられる人物。この人物は何か？",
+      "answer": "孫武",
+      "explanation": "春秋末の兵法家で兵書『孫子』の著者と伝えられる人物。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-art-war::core",
+      "knowledgeId": "ch-art-war",
+      "type": "context",
+      "question": "孫武の著作と伝えられる戦術・戦略に関する兵書。この作品・文献は何か？",
+      "answer": "孫子の兵法",
+      "explanation": "孫武の著作と伝えられる戦術・戦略に関する兵書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wu-qi::core",
+      "knowledgeId": "ch-wu-qi",
+      "type": "achievement-person",
+      "question": "戦国時代の兵法家で兵書『呉子』と関係する人物。この人物は何か？",
+      "answer": "呉起",
+      "explanation": "戦国時代の兵法家で兵書『呉子』と関係する人物。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wuzi::core",
+      "knowledgeId": "ch-wuzi",
+      "type": "context",
+      "question": "戦国期の兵法家・呉起と結びつく兵書。この作品・文献は何か？",
+      "answer": "呉子",
+      "explanation": "戦国期の兵法家・呉起と結びつく兵書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-names-school::core",
+      "knowledgeId": "ch-names-school",
+      "type": "context",
+      "question": "名と実の関係を追究した戦国時代の論理学的思想の学派。この用語・思想は何か？",
+      "answer": "名家",
+      "explanation": "名と実の関係を追究した戦国時代の論理学的思想の学派。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gongsun-long::core",
+      "knowledgeId": "ch-gongsun-long",
+      "type": "achievement-person",
+      "question": "名と実の関係を論じ『公孫龍子』を著したとされる思想家。この人物は何か？",
+      "answer": "公孫龍",
+      "explanation": "名と実の関係を論じ『公孫龍子』を著したとされる思想家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gongsunlongzi::core",
+      "knowledgeId": "ch-gongsunlongzi",
+      "type": "context",
+      "question": "戦国期の名家・公孫龍の議論を伝える書物。この作品・文献は何か？",
+      "answer": "公孫龍子",
+      "explanation": "戦国期の名家・公孫龍の議論を伝える書物。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-farming-school::core",
+      "knowledgeId": "ch-farming-school",
+      "type": "context",
+      "question": "農本主義の立場から万民の平等や自給自足を説いた学派。この用語・思想は何か？",
+      "answer": "農家",
+      "explanation": "農本主義の立場から万民の平等や自給自足を説いた学派。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xu-xing::core",
+      "knowledgeId": "ch-xu-xing",
+      "type": "achievement-person",
+      "question": "農本主義を説いた戦国時代の農家思想家。この人物は何か？",
+      "answer": "許行",
+      "explanation": "農本主義を説いた戦国時代の農家思想家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-diplomacy-school::core",
+      "knowledgeId": "ch-diplomacy-school",
+      "type": "context",
+      "question": "合従策や連衡策など外交戦略を説いた戦国期の思想家。この用語・思想は何か？",
+      "answer": "縦横家",
+      "explanation": "合従策や連衡策など外交戦略を説いた戦国期の思想家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-su-qin::core",
+      "knowledgeId": "ch-su-qin",
+      "type": "achievement-person",
+      "question": "戦国時代に反秦同盟の合従策を説いた縦横家。この人物は何か？",
+      "answer": "蘇秦",
+      "explanation": "戦国時代に反秦同盟の合従策を説いた縦横家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hezhong::core",
+      "knowledgeId": "ch-hezhong",
+      "type": "context",
+      "question": "秦に対抗するため戦国六国の同盟を説く外交戦略。この用語・思想は何か？",
+      "answer": "合従策",
+      "explanation": "秦に対抗するため戦国六国の同盟を説く外交戦略。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhang-yi::core",
+      "knowledgeId": "ch-zhang-yi",
+      "type": "achievement-person",
+      "question": "秦と各国の個別同盟である連衡策を説いた縦横家。この人物は何か？",
+      "answer": "張儀",
+      "explanation": "秦と各国の個別同盟である連衡策を説いた縦横家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-lianheng::core",
+      "knowledgeId": "ch-lianheng",
+      "type": "context",
+      "question": "秦と六国を個別に結び、六国連合を崩す外交戦略。この用語・思想は何か？",
+      "answer": "連衡策",
+      "explanation": "秦と六国を個別に結び、六国連合を崩す外交戦略。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-chuci::core",
+      "knowledgeId": "ch-chuci",
+      "type": "context",
+      "question": "楚の詩人・屈原らの韻文を含む南方の文学作品集。この作品・文献は何か？",
+      "answer": "楚辞",
+      "explanation": "楚の詩人・屈原らの韻文を含む南方の文学作品集。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-qu-yuan::core",
+      "knowledgeId": "ch-qu-yuan",
+      "type": "achievement-person",
+      "question": "戦国時代の楚に仕え『楚辞』で知られる詩人。この人物は何か？",
+      "answer": "屈原",
+      "explanation": "戦国時代の楚に仕え『楚辞』で知られる詩人。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shijing::core",
+      "knowledgeId": "ch-shijing",
+      "type": "context",
+      "question": "中国最古の詩集であり、儒家の五経の一つ。この作品・文献は何か？",
+      "answer": "詩経",
+      "explanation": "中国最古の詩集であり、儒家の五経の一つ。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shujing::core",
+      "knowledgeId": "ch-shujing",
+      "type": "context",
+      "question": "堯・舜や夏・殷・周の王の言行などを記す儒家の五経の一つ。この作品・文献は何か？",
+      "answer": "書経",
+      "explanation": "堯・舜や夏・殷・周の王の言行などを記す儒家の五経の一つ。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yijing::core",
+      "knowledgeId": "ch-yijing",
+      "type": "context",
+      "question": "周初に成立したとされる占いの典籍で五経の一つ。この作品・文献は何か？",
+      "answer": "易経",
+      "explanation": "周初に成立したとされる占いの典籍で五経の一つ。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-liji::core",
+      "knowledgeId": "ch-liji",
+      "type": "context",
+      "question": "古代中国の礼制や儀礼に関する記録を集めた五経の一つ。この作品・文献は何か？",
+      "answer": "礼記",
+      "explanation": "古代中国の礼制や儀礼に関する記録を集めた五経の一つ。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-sima-qian::core",
+      "knowledgeId": "ch-sima-qian",
+      "type": "achievement-person",
+      "question": "前漢に紀伝体の通史『史記』を著した歴史家。この人物は何か？",
+      "answer": "司馬遷",
+      "explanation": "前漢に紀伝体の通史『史記』を著した歴史家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shiji::core",
+      "knowledgeId": "ch-shiji",
+      "type": "context",
+      "question": "司馬遷が著した中国最初の紀伝体の通史。この作品・文献は何か？",
+      "answer": "史記",
+      "explanation": "司馬遷が著した中国最初の紀伝体の通史。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kidentai::core",
+      "knowledgeId": "ch-kidentai",
+      "type": "context",
+      "question": "本紀と列伝を中心に歴史を記述する中国史書の基本形式。この用語・思想は何か？",
+      "answer": "紀伝体",
+      "explanation": "本紀と列伝を中心に歴史を記述する中国史書の基本形式。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ban-gu::core",
+      "knowledgeId": "ch-ban-gu",
+      "type": "achievement-person",
+      "question": "後漢に前漢一代の歴史書『漢書』を著した歴史家。この人物は何か？",
+      "answer": "班固",
+      "explanation": "後漢に前漢一代の歴史書『漢書』を著した歴史家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hanshu::core",
+      "knowledgeId": "ch-hanshu",
+      "type": "context",
+      "question": "班固が著した前漢一代の紀伝体の史書。この作品・文献は何か？",
+      "answer": "漢書",
+      "explanation": "班固が著した前漢一代の紀伝体の史書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-taipingdao::core",
+      "knowledgeId": "ch-taipingdao",
+      "type": "context",
+      "question": "後漢末に張角が創始し、黄巾の乱を起こした道教系教団。この用語・思想は何か？",
+      "answer": "太平道",
+      "explanation": "後漢末に張角が創始し、黄巾の乱を起こした道教系教団。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhang-jiao::core",
+      "knowledgeId": "ch-zhang-jiao",
+      "type": "achievement-person",
+      "question": "太平道を創始し184年に黄巾の乱を起こした人物。この人物は何か？",
+      "answer": "張角",
+      "explanation": "太平道を創始し184年に黄巾の乱を起こした人物。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-five-pecks::core",
+      "knowledgeId": "ch-five-pecks",
+      "type": "context",
+      "question": "後漢後期に張陵が創始し、四川・陝西地方に普及した道教系教団。この用語・思想は何か？",
+      "answer": "五斗米道",
+      "explanation": "後漢後期に張陵が創始し、四川・陝西地方に普及した道教系教団。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhang-ling::core",
+      "knowledgeId": "ch-zhang-ling",
+      "type": "achievement-person",
+      "question": "後漢後期に五斗米道を創始したとされる人物。この人物は何か？",
+      "answer": "張陵",
+      "explanation": "後漢後期に五斗米道を創始したとされる人物。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-senjin::core",
+      "knowledgeId": "ch-senjin",
+      "type": "context",
+      "question": "神仙術を通じて不老長寿を求める中国古代の宗教思想。この用語・思想は何か？",
+      "answer": "神仙思想",
+      "explanation": "神仙術を通じて不老長寿を求める中国古代の宗教思想。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xiaozhuan::core",
+      "knowledgeId": "ch-xiaozhuan",
+      "type": "context",
+      "question": "秦の始皇帝の時代に統一された篆書の字体。この用語・思想は何か？",
+      "answer": "小篆",
+      "explanation": "秦の始皇帝の時代に統一された篆書の字体。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-lishu::core",
+      "knowledgeId": "ch-lishu",
+      "type": "context",
+      "question": "秦・漢の時代に普及した漢字の簡略な書体。この用語・思想は何か？",
+      "answer": "隷書",
+      "explanation": "秦・漢の時代に普及した漢字の簡略な書体。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xu-shen::core",
+      "knowledgeId": "ch-xu-shen",
+      "type": "achievement-person",
+      "question": "後漢に漢字の字義を説明する『説文解字』を著した学者。この人物は何か？",
+      "answer": "許慎",
+      "explanation": "後漢に漢字の字義を説明する『説文解字』を著した学者。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shuowen::core",
+      "knowledgeId": "ch-shuowen",
+      "type": "context",
+      "question": "後漢の許慎が著した漢字の形と意味を説明する字書。この作品・文献は何か？",
+      "answer": "説文解字",
+      "explanation": "後漢の許慎が著した漢字の形と意味を説明する字書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-cai-lun::core",
+      "knowledgeId": "ch-cai-lun",
+      "type": "achievement-person",
+      "question": "後漢に製紙法を改良して紙の普及に寄与した人物。この人物は何か？",
+      "answer": "蔡倫",
+      "explanation": "後漢に製紙法を改良して紙の普及に寄与した人物。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-paper-making::core",
+      "knowledgeId": "ch-paper-making",
+      "type": "context",
+      "question": "後漢の蔡倫が改良したことで知られる紙を製造する技術。この用語・思想は何か？",
+      "answer": "製紙法",
+      "explanation": "後漢の蔡倫が改良したことで知られる紙を製造する技術。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-silk::core",
+      "knowledgeId": "ch-silk",
+      "type": "context",
+      "question": "殷代に中国で生産され、漢代には貿易品として輸出された織物。この用語・思想は何か？",
+      "answer": "絹",
+      "explanation": "殷代に中国で生産され、漢代には貿易品として輸出された織物。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kaishu::core",
+      "knowledgeId": "ch-kaishu",
+      "type": "context",
+      "question": "隷書から発達した筆画を整えた漢字の標準的な書体。この用語・思想は何か？",
+      "answer": "楷書",
+      "explanation": "隷書から発達した筆画を整えた漢字の標準的な書体。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xingshu::core",
+      "knowledgeId": "ch-xingshu",
+      "type": "context",
+      "question": "楷書と草書の中間の性格を持つ漢字の書体。この用語・思想は何か？",
+      "answer": "行書",
+      "explanation": "楷書と草書の中間の性格を持つ漢字の書体。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-caoshu::core",
+      "knowledgeId": "ch-caoshu",
+      "type": "context",
+      "question": "漢字の筆画を省略し流れるように書く書体。この用語・思想は何か？",
+      "answer": "草書",
+      "explanation": "漢字の筆画を省略し流れるように書く書体。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wood-bamboo-slips::core",
+      "knowledgeId": "ch-wood-bamboo-slips",
+      "type": "context",
+      "question": "紙の普及以前の中国で文字を記した木や竹の細長い札。この用語・思想は何か？",
+      "answer": "木簡・竹簡",
+      "explanation": "紙の普及以前の中国で文字を記した木や竹の細長い札。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-silk-scroll::core",
+      "knowledgeId": "ch-silk-scroll",
+      "type": "context",
+      "question": "古代中国で文字を記すのに使われた絹布。この用語・思想は何か？",
+      "answer": "帛",
+      "explanation": "古代中国で文字を記すのに使われた絹布。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-taiping-revolt::core",
+      "knowledgeId": "ch-taiping-revolt",
+      "type": "context",
+      "question": "184年に張角が太平道を率いて起こした後漢末の大反乱。この用語・思想は何か？",
+      "answer": "黄巾の乱",
+      "explanation": "184年に張角が太平道を率いて起こした後漢末の大反乱。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-daoxiao-thinking::core",
+      "knowledgeId": "ch-daoxiao-thinking",
+      "type": "context",
+      "question": "老子と荘子の思想をあわせた呼び名。この用語・思想は何か？",
+      "answer": "老荘思想",
+      "explanation": "老子と荘子の思想をあわせた呼び名。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-prophecy::core",
+      "knowledgeId": "ch-prophecy",
+      "type": "context",
+      "question": "天変地異や人間の運命などを予言し、儒学や陰陽思想と結びついた思想。この用語・思想は何か？",
+      "answer": "讖緯思想",
+      "explanation": "天変地異や人間の運命などを予言し、儒学や陰陽思想と結びついた思想。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-six-dynasties::core",
+      "knowledgeId": "ch-six-dynasties",
+      "type": "context",
+      "question": "建業・建康を都とする呉・東晋・宋・斉・梁・陳の総称。この用語・思想は何か？",
+      "answer": "六朝",
+      "explanation": "建業・建康を都とする呉・東晋・宋・斉・梁・陳の総称。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-six-dynasties-culture::core",
+      "knowledgeId": "ch-six-dynasties-culture",
+      "type": "context",
+      "question": "貴族社会を基盤に清談・詩文・書画などが栄えた魏晋南北朝期の文化。この用語・思想は何か？",
+      "answer": "六朝文化",
+      "explanation": "貴族社会を基盤に清談・詩文・書画などが栄えた魏晋南北朝期の文化。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-qingtan::core",
+      "knowledgeId": "ch-qingtan",
+      "type": "context",
+      "question": "老荘思想に基づき、世俗を超越した哲学的な議論を楽しむ六朝時代の風潮。この用語・思想は何か？",
+      "answer": "清談",
+      "explanation": "老荘思想に基づき、世俗を超越した哲学的な議論を楽しむ六朝時代の風潮。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-seven-sages::core",
+      "knowledgeId": "ch-seven-sages",
+      "type": "context",
+      "question": "阮籍ら清談で知られる魏晋期の七人の知識人の総称。この用語・思想は何か？",
+      "answer": "竹林の七賢",
+      "explanation": "阮籍ら清談で知られる魏晋期の七人の知識人の総称。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ruan-ji::core",
+      "knowledgeId": "ch-ruan-ji",
+      "type": "achievement-person",
+      "question": "竹林の七賢の一人で清談や詩文で知られる魏晋期の知識人。この人物は何か？",
+      "answer": "阮籍",
+      "explanation": "竹林の七賢の一人で清談や詩文で知られる魏晋期の知識人。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-fotucheng::core",
+      "knowledgeId": "ch-fotucheng",
+      "type": "achievement-person",
+      "question": "五胡十六国期に洛陽などで仏教を広めた西域出身の僧。この人物は何か？",
+      "answer": "仏図澄",
+      "explanation": "五胡十六国期に洛陽などで仏教を広めた西域出身の僧。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kumarajiva::core",
+      "knowledgeId": "ch-kumarajiva",
+      "type": "achievement-person",
+      "question": "長安で仏教経典の漢訳と布教に尽力した西域出身の僧。この人物は何か？",
+      "answer": "鳩摩羅什",
+      "explanation": "長安で仏教経典の漢訳と布教に尽力した西域出身の僧。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-mogao-caves::core",
+      "knowledgeId": "ch-mogao-caves",
+      "type": "context",
+      "question": "敦煌にある仏教壁画と石窟寺院で知られる仏教遺跡。この建造物・施設は何か？",
+      "answer": "莫高窟",
+      "explanation": "敦煌にある仏教壁画と石窟寺院で知られる仏教遺跡。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yungang-caves::core",
+      "knowledgeId": "ch-yungang-caves",
+      "type": "context",
+      "question": "北魏の平城近郊で大同に造営された石窟寺院。この建造物・施設は何か？",
+      "answer": "雲岡石窟",
+      "explanation": "北魏の平城近郊で大同に造営された石窟寺院。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-longmen-caves::core",
+      "knowledgeId": "ch-longmen-caves",
+      "type": "context",
+      "question": "北魏の洛陽遷都後に造営が始まった洛陽近郊の石窟寺院。この建造物・施設は何か？",
+      "answer": "龍門石窟",
+      "explanation": "北魏の洛陽遷都後に造営が始まった洛陽近郊の石窟寺院。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-three-wu-one-zong::core",
+      "knowledgeId": "ch-three-wu-one-zong",
+      "type": "context",
+      "question": "北魏太武帝・北周武帝・唐武宗・後周世宗による仏教弾圧の総称。この用語・思想は何か？",
+      "answer": "三武一宗の法難",
+      "explanation": "北魏太武帝・北周武帝・唐武宗・後周世宗による仏教弾圧の総称。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kou-qianzhi::core",
+      "knowledgeId": "ch-kou-qianzhi",
+      "type": "achievement-person",
+      "question": "北魏で五斗米道を改革し新天師道を開いた道教指導者。この人物は何か？",
+      "answer": "寇謙之",
+      "explanation": "北魏で五斗米道を改革し新天師道を開いた道教指導者。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-new-celestial-masters::core",
+      "knowledgeId": "ch-new-celestial-masters",
+      "type": "context",
+      "question": "北魏の寇謙之が改革して成立させた道教の一派。この用語・思想は何か？",
+      "answer": "新天師道",
+      "explanation": "北魏の寇謙之が改革して成立させた道教の一派。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-daoist-priest::core",
+      "knowledgeId": "ch-daoist-priest",
+      "type": "context",
+      "question": "道教の儀礼をつかさどる宗教者。この用語・思想は何か？",
+      "answer": "道士",
+      "explanation": "道教の儀礼をつかさどる宗教者。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-daoist-canon::core",
+      "knowledgeId": "ch-daoist-canon",
+      "type": "context",
+      "question": "道教の経典を集成した総集。この作品・文献は何か？",
+      "answer": "道蔵",
+      "explanation": "道教の経典を集成した総集。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-parallel-prose::core",
+      "knowledgeId": "ch-parallel-prose",
+      "type": "context",
+      "question": "対句と韻を用いる華麗な文章形式で六朝時代に流行した文体。この用語・思想は何か？",
+      "answer": "四六駢儷体",
+      "explanation": "対句と韻を用いる華麗な文章形式で六朝時代に流行した文体。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tao-yuanming::core",
+      "knowledgeId": "ch-tao-yuanming",
+      "type": "achievement-person",
+      "question": "東晋末の田園詩人で『帰去来辞』『桃花源記』を著した。この人物は何か？",
+      "answer": "陶潜",
+      "explanation": "東晋末の田園詩人で『帰去来辞』『桃花源記』を著した。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-return-home::core",
+      "knowledgeId": "ch-return-home",
+      "type": "context",
+      "question": "田園生活へ帰る決意を歌った陶淵明の作品。この作品・文献は何か？",
+      "answer": "帰去来辞",
+      "explanation": "田園生活へ帰る決意を歌った陶淵明の作品。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-peach-blossom::core",
+      "knowledgeId": "ch-peach-blossom",
+      "type": "context",
+      "question": "桃源郷という理想郷を描く陶淵明の作品。この作品・文献は何か？",
+      "answer": "桃花源記",
+      "explanation": "桃源郷という理想郷を描く陶淵明の作品。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xie-lingyun::core",
+      "knowledgeId": "ch-xie-lingyun",
+      "type": "achievement-person",
+      "question": "六朝時代の山水詩で知られる南朝宋の詩人。この人物は何か？",
+      "answer": "謝霊運",
+      "explanation": "六朝時代の山水詩で知られる南朝宋の詩人。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xiao-tong::core",
+      "knowledgeId": "ch-xiao-tong",
+      "type": "achievement-person",
+      "question": "梁の皇太子で『文選』を編纂した人物。この人物は何か？",
+      "answer": "昭明太子",
+      "explanation": "梁の皇太子で『文選』を編纂した人物。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wenxuan::core",
+      "knowledgeId": "ch-wenxuan",
+      "type": "context",
+      "question": "梁の昭明太子が編纂した古代中国の詩文集。この作品・文献は何か？",
+      "answer": "文選",
+      "explanation": "梁の昭明太子が編纂した古代中国の詩文集。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gu-kaizhi::core",
+      "knowledgeId": "ch-gu-kaizhi",
+      "type": "achievement-person",
+      "question": "『女史箴図』の作者と伝えられ画聖と呼ばれた東晋の画家。この人物は何か？",
+      "answer": "顧愷之",
+      "explanation": "『女史箴図』の作者と伝えられ画聖と呼ばれた東晋の画家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-admonitions-scroll::core",
+      "knowledgeId": "ch-admonitions-scroll",
+      "type": "context",
+      "question": "東晋の画家顧愷之の作と伝えられる絵画。この作品・文献は何か？",
+      "answer": "女史箴図",
+      "explanation": "東晋の画家顧愷之の作と伝えられる絵画。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-xizhi::core",
+      "knowledgeId": "ch-wang-xizhi",
+      "type": "achievement-person",
+      "question": "『蘭亭序』で知られ書聖と呼ばれる東晋の書家。この人物は何か？",
+      "answer": "王羲之",
+      "explanation": "『蘭亭序』で知られ書聖と呼ばれる東晋の書家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-lantingxu::core",
+      "knowledgeId": "ch-lantingxu",
+      "type": "context",
+      "question": "東晋の王羲之による行書の代表的書作品。この作品・文献は何か？",
+      "answer": "蘭亭序",
+      "explanation": "東晋の王羲之による行書の代表的書作品。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-li-daoyuan::core",
+      "knowledgeId": "ch-li-daoyuan",
+      "type": "achievement-person",
+      "question": "北魏で地理書『水経注』を著した学者。この人物は何か？",
+      "answer": "酈道元",
+      "explanation": "北魏で地理書『水経注』を著した学者。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shuijingzhu::core",
+      "knowledgeId": "ch-shuijingzhu",
+      "type": "context",
+      "question": "北魏の酈道元が著した河川を中心とする地理書。この作品・文献は何か？",
+      "answer": "水経注",
+      "explanation": "北魏の酈道元が著した河川を中心とする地理書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jia-sixie::core",
+      "knowledgeId": "ch-jia-sixie",
+      "type": "achievement-person",
+      "question": "北魏で農業技術書『斉民要術』を著した学者。この人物は何か？",
+      "answer": "賈思勰",
+      "explanation": "北魏で農業技術書『斉民要術』を著した学者。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-qimin-yaoshu::core",
+      "knowledgeId": "ch-qimin-yaoshu",
+      "type": "context",
+      "question": "北魏の賈思勰が著した中国古代の農業技術書。この作品・文献は何か？",
+      "answer": "斉民要術",
+      "explanation": "北魏の賈思勰が著した中国古代の農業技術書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-shuhe::core",
+      "knowledgeId": "ch-wang-shuhe",
+      "type": "achievement-person",
+      "question": "晋代に『傷寒論』の伝本を編纂整理したとされる医学者。この人物は何か？",
+      "answer": "王叔和",
+      "explanation": "晋代に『傷寒論』の伝本を編纂整理したとされる医学者。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shanghanlun::core",
+      "knowledgeId": "ch-shanghanlun",
+      "type": "context",
+      "question": "張仲景に由来し王叔和が整理したとされる古代中国の医学書。この作品・文献は何か？",
+      "answer": "傷寒論",
+      "explanation": "張仲景に由来し王叔和が整理したとされる古代中国の医学書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-abe-no-nakamaro::core",
+      "knowledgeId": "ch-abe-no-nakamaro",
+      "type": "achievement-person",
+      "question": "唐に留学して玄宗に重用され、安南節度使に任じられた日本人。この人物は何か？",
+      "answer": "阿倍仲麻呂",
+      "explanation": "唐に留学して玄宗に重用され、安南節度使に任じられた日本人。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-han-yu::core",
+      "knowledgeId": "ch-han-yu",
+      "type": "achievement-person",
+      "question": "唐代に古文復興を提唱し儒学の復興を主張した唐宋八大家の文人。この人物は何か？",
+      "answer": "韓愈",
+      "explanation": "唐代に古文復興を提唱し儒学の復興を主張した唐宋八大家の文人。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xuanzang::core",
+      "knowledgeId": "ch-xuanzang",
+      "type": "achievement-person",
+      "question": "ナーランダー僧院に学び『大唐西域記』を残した唐の求法僧。この人物は何か？",
+      "answer": "玄奘",
+      "explanation": "ナーランダー僧院に学び『大唐西域記』を残した唐の求法僧。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-great-tang-western-regions::core",
+      "knowledgeId": "ch-great-tang-western-regions",
+      "type": "context",
+      "question": "玄奘のインド留学について記された唐代の西域旅行・地理書。この作品・文献は何か？",
+      "answer": "大唐西域記",
+      "explanation": "玄奘のインド留学について記された唐代の西域旅行・地理書。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yijing-monk::core",
+      "knowledgeId": "ch-yijing-monk",
+      "type": "achievement-person",
+      "question": "海路でインドに渡り『南海寄帰内法伝』を著した唐の求法僧。この人物は何か？",
+      "answer": "義浄",
+      "explanation": "海路でインドに渡り『南海寄帰内法伝』を著した唐の求法僧。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-nanhai-jigui::core",
+      "knowledgeId": "ch-nanhai-jigui",
+      "type": "context",
+      "question": "唐の義浄がインドなどの仏教儀礼や僧院生活を記録した書物。この作品・文献は何か？",
+      "answer": "南海寄帰内法伝",
+      "explanation": "唐の義浄がインドなどの仏教儀礼や僧院生活を記録した書物。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tiantai-school::core",
+      "knowledgeId": "ch-tiantai-school",
+      "type": "context",
+      "question": "中国に成立し日本では最澄によって伝えられた仏教宗派。この用語・思想は何か？",
+      "answer": "天台宗",
+      "explanation": "中国に成立し日本では最澄によって伝えられた仏教宗派。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-saicho::core",
+      "knowledgeId": "ch-saicho",
+      "type": "achievement-person",
+      "question": "唐から天台宗を日本へ伝えた平安初期の僧。この人物は何か？",
+      "answer": "最澄",
+      "explanation": "唐から天台宗を日本へ伝えた平安初期の僧。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shingon-school::core",
+      "knowledgeId": "ch-shingon-school",
+      "type": "context",
+      "question": "空海が唐から日本へ伝えた密教系の仏教宗派。この用語・思想は何か？",
+      "answer": "真言宗",
+      "explanation": "空海が唐から日本へ伝えた密教系の仏教宗派。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kukai::core",
+      "knowledgeId": "ch-kukai",
+      "type": "achievement-person",
+      "question": "唐で学んだ密教を日本に伝えて真言宗を開いた僧。この人物は何か？",
+      "answer": "空海",
+      "explanation": "唐で学んだ密教を日本に伝えて真言宗を開いた僧。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zen-school::core",
+      "knowledgeId": "ch-zen-school",
+      "type": "context",
+      "question": "達磨を中国の初祖と伝え、坐禅や悟りの実践を重視する仏教宗派。この用語・思想は何か？",
+      "answer": "禅宗",
+      "explanation": "達磨を中国の初祖と伝え、坐禅や悟りの実践を重視する仏教宗派。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-bodhidharma::core",
+      "knowledgeId": "ch-bodhidharma",
+      "type": "achievement-person",
+      "question": "中国禅宗の初祖と伝えられるインド出身の僧。この人物は何か？",
+      "answer": "達磨",
+      "explanation": "中国禅宗の初祖と伝えられるインド出身の僧。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-pure-land-school::core",
+      "knowledgeId": "ch-pure-land-school",
+      "type": "context",
+      "question": "阿弥陀仏の救済と極楽往生を重視する仏教の伝統。この用語・思想は何か？",
+      "answer": "浄土宗",
+      "explanation": "阿弥陀仏の救済と極楽往生を重視する仏教の伝統。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-huiyuan::core",
+      "knowledgeId": "ch-huiyuan",
+      "type": "achievement-person",
+      "question": "東晋期に阿弥陀浄土への信仰を推進した僧。この人物は何か？",
+      "answer": "慧遠",
+      "explanation": "東晋期に阿弥陀浄土への信仰を推進した僧。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-alopen::core",
+      "knowledgeId": "ch-alopen",
+      "type": "achievement-person",
+      "question": "唐代の中国に来訪し景教の布教を許されたペルシア出身の宣教師。この人物は何か？",
+      "answer": "阿羅本",
+      "explanation": "唐代の中国に来訪し景教の布教を許されたペルシア出身の宣教師。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-manichaeism-tang::core",
+      "knowledgeId": "ch-manichaeism-tang",
+      "type": "context",
+      "question": "マニが創始し唐代に中国へ伝わった宗教の呼び名。この用語・思想は何か？",
+      "answer": "摩尼教",
+      "explanation": "マニが創始し唐代に中国へ伝わった宗教の呼び名。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-islam-huijiao::core",
+      "knowledgeId": "ch-islam-huijiao",
+      "type": "context",
+      "question": "唐代に海路で中国へ伝わったイスラーム教の旧称。この用語・思想は何か？",
+      "answer": "回教",
+      "explanation": "唐代に海路で中国へ伝わったイスラーム教の旧称。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tang-poetry::core",
+      "knowledgeId": "ch-tang-poetry",
+      "type": "context",
+      "question": "律詩・絶句が完成し李白・杜甫らが活躍した唐代の詩。この用語・思想は何か？",
+      "answer": "唐詩",
+      "explanation": "律詩・絶句が完成し李白・杜甫らが活躍した唐代の詩。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-wei::core",
+      "knowledgeId": "ch-wang-wei",
+      "type": "achievement-person",
+      "question": "自然詩と山水画で知られる盛唐の詩人・画家。この人物は何か？",
+      "answer": "王維",
+      "explanation": "自然詩と山水画で知られる盛唐の詩人・画家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-li-bai::core",
+      "knowledgeId": "ch-li-bai",
+      "type": "achievement-person",
+      "question": "詩仙と呼ばれる自由奔放な詩風の盛唐の詩人。この人物は何か？",
+      "answer": "李白",
+      "explanation": "詩仙と呼ばれる自由奔放な詩風の盛唐の詩人。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shisen::core",
+      "knowledgeId": "ch-shisen",
+      "type": "context",
+      "question": "盛唐の詩人李白に与えられた称号。この用語・思想は何か？",
+      "answer": "詩仙",
+      "explanation": "盛唐の詩人李白に与えられた称号。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-du-fu::core",
+      "knowledgeId": "ch-du-fu",
+      "type": "achievement-person",
+      "question": "『春望』などで知られ詩聖と呼ばれる唐代の詩人。この人物は何か？",
+      "answer": "杜甫",
+      "explanation": "『春望』などで知られ詩聖と呼ばれる唐代の詩人。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shisei::core",
+      "knowledgeId": "ch-shisei",
+      "type": "context",
+      "question": "唐代の詩人杜甫に与えられた称号。この用語・思想は何か？",
+      "answer": "詩聖",
+      "explanation": "唐代の詩人杜甫に与えられた称号。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-chunwang::core",
+      "knowledgeId": "ch-chunwang",
+      "type": "context",
+      "question": "安史の乱を背景に杜甫が国と家族を思って詠んだ詩。この作品・文献は何か？",
+      "answer": "春望",
+      "explanation": "安史の乱を背景に杜甫が国と家族を思って詠んだ詩。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-bai-juyi::core",
+      "knowledgeId": "ch-bai-juyi",
+      "type": "achievement-person",
+      "question": "中唐の詩人で『長恨歌』を著し白楽天とも呼ばれた。この人物は何か？",
+      "answer": "白居易",
+      "explanation": "中唐の詩人で『長恨歌』を著し白楽天とも呼ばれた。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-changhenge::core",
+      "knowledgeId": "ch-changhenge",
+      "type": "context",
+      "question": "玄宗と楊貴妃の悲恋を題材にした白居易の長編詩。この作品・文献は何か？",
+      "answer": "長恨歌",
+      "explanation": "玄宗と楊貴妃の悲恋を題材にした白居易の長編詩。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tang-song-eight::core",
+      "knowledgeId": "ch-tang-song-eight",
+      "type": "context",
+      "question": "唐の韓愈・柳宗元と宋の欧陽脩ら6人を合わせた8人の文章家。この用語・思想は何か？",
+      "answer": "唐宋八大家",
+      "explanation": "唐の韓愈・柳宗元と宋の欧陽脩ら6人を合わせた8人の文章家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-liu-zongyuan::core",
+      "knowledgeId": "ch-liu-zongyuan",
+      "type": "achievement-person",
+      "question": "韓愈とともに古文復興を唱えた唐宋八大家の文人。この人物は何か？",
+      "answer": "柳宗元",
+      "explanation": "韓愈とともに古文復興を唱えた唐宋八大家の文人。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ouyang-xiu::core",
+      "knowledgeId": "ch-ouyang-xiu",
+      "type": "achievement-person",
+      "question": "北宋の文人で唐宋八大家の一人に数えられる文章家。この人物は何か？",
+      "answer": "欧陽脩",
+      "explanation": "北宋の文人で唐宋八大家の一人に数えられる文章家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-su-xun::core",
+      "knowledgeId": "ch-su-xun",
+      "type": "achievement-person",
+      "question": "蘇軾と蘇轍の父で唐宋八大家の一人。この人物は何か？",
+      "answer": "蘇洵",
+      "explanation": "蘇軾と蘇轍の父で唐宋八大家の一人。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-su-shi::core",
+      "knowledgeId": "ch-su-shi",
+      "type": "achievement-person",
+      "question": "詩文・書画に秀でた北宋の文人で唐宋八大家の一人。この人物は何か？",
+      "answer": "蘇軾",
+      "explanation": "詩文・書画に秀でた北宋の文人で唐宋八大家の一人。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-su-zhe::core",
+      "knowledgeId": "ch-su-zhe",
+      "type": "achievement-person",
+      "question": "蘇軾の弟で唐宋八大家の一人に数えられる文人。この人物は何か？",
+      "answer": "蘇轍",
+      "explanation": "蘇軾の弟で唐宋八大家の一人に数えられる文人。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-anshi::core",
+      "knowledgeId": "ch-wang-anshi",
+      "type": "achievement-person",
+      "question": "北宋で新法を推進し唐宋八大家の一人でもある政治家・文章家。この人物は何か？",
+      "answer": "王安石",
+      "explanation": "北宋で新法を推進し唐宋八大家の一人でもある政治家・文章家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zeng-gong::core",
+      "knowledgeId": "ch-zeng-gong",
+      "type": "achievement-person",
+      "question": "唐宋八大家の一人に数えられる北宋の文章家。この人物は何か？",
+      "answer": "曾鞏",
+      "explanation": "唐宋八大家の一人に数えられる北宋の文章家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-early-tang-calligraphers::core",
+      "knowledgeId": "ch-early-tang-calligraphers",
+      "type": "context",
+      "question": "欧陽詢・褚遂良・虞世南の三人を指す唐初の書家の総称。この用語・思想は何か？",
+      "answer": "初唐三大家",
+      "explanation": "欧陽詢・褚遂良・虞世南の三人を指す唐初の書家の総称。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ouyang-xun::core",
+      "knowledgeId": "ch-ouyang-xun",
+      "type": "achievement-person",
+      "question": "褚遂良・虞世南と並ぶ初唐三大家の書家。この人物は何か？",
+      "answer": "欧陽詢",
+      "explanation": "褚遂良・虞世南と並ぶ初唐三大家の書家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-chu-suiliang::core",
+      "knowledgeId": "ch-chu-suiliang",
+      "type": "achievement-person",
+      "question": "欧陽詢・虞世南と並ぶ初唐三大家の書家。この人物は何か？",
+      "answer": "褚遂良",
+      "explanation": "欧陽詢・虞世南と並ぶ初唐三大家の書家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yu-shinan::core",
+      "knowledgeId": "ch-yu-shinan",
+      "type": "achievement-person",
+      "question": "欧陽詢・褚遂良と並ぶ初唐三大家の書家。この人物は何か？",
+      "answer": "虞世南",
+      "explanation": "欧陽詢・褚遂良と並ぶ初唐三大家の書家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yan-zhenqing::core",
+      "knowledgeId": "ch-yan-zhenqing",
+      "type": "achievement-person",
+      "question": "力強い書風で知られ安史の乱でも唐を支援した書家。この人物は何か？",
+      "answer": "顔真卿",
+      "explanation": "力強い書風で知られ安史の乱でも唐を支援した書家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yan-liben::core",
+      "knowledgeId": "ch-yan-liben",
+      "type": "achievement-person",
+      "question": "唐の太宗・高宗に仕え人物画を描いた宮廷画家。この人物は何か？",
+      "answer": "閻立本",
+      "explanation": "唐の太宗・高宗に仕え人物画を描いた宮廷画家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wu-daozi::core",
+      "knowledgeId": "ch-wu-daozi",
+      "type": "achievement-person",
+      "question": "玄宗に仕え人物・鬼神・山水画に秀でた唐の画家。この人物は何か？",
+      "answer": "呉道玄",
+      "explanation": "玄宗に仕え人物・鬼神・山水画に秀でた唐の画家。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tang-sancai::core",
+      "knowledgeId": "ch-tang-sancai",
+      "type": "context",
+      "question": "緑・褐色・白などの釉薬で彩色された唐代の陶器。この用語・思想は何か？",
+      "answer": "唐三彩",
+      "explanation": "緑・褐色・白などの釉薬で彩色された唐代の陶器。",
+      "updatedAt": "2026-11-09T14:19:58.519Z",
       "version": 1,
       "deleted": false
     }
