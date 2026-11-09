@@ -3,7 +3,7 @@ import type { Card, KnowledgeItem } from './types';
 // Extracted from 10 user photographs of the Renaissance, the Scientific Revolution,
 // Enlightenment, literature and 17th-18th century art. Photos/text are not distributed.
 // Difficulty levels remain provisional until exam evidence has been checked.
-export const modernUpdatedAt = "2026-11-09T09:31:32.489Z";
+export const modernUpdatedAt = "2026-11-09T09:39:04.831Z";
 export const modernItems: KnowledgeItem[] = [
   {
     "id": "nr-erasmus",
@@ -82,7 +82,7 @@ export const modernItems: KnowledgeItem[] = [
         "id": "img-nr-bruegel",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/The_Peasant_Dance_%28Bruegel%29.jpg/960px-The_Peasant_Dance_%28Bruegel%29.jpg",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Peasant_Dance_(Bruegel).jpg",
-        "author": "作品作者による原作・パブリックドメインの忠実な複製",
+        "author": "原作品：ピーテル＝ブリューゲル（父）。画像：Wikimedia Commons収録のパブリックドメイン複製",
         "license": "Public Domain Mark 1.0",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
         "caption": "農民の踊り（Wikimedia Commons、パブリックドメイン。原作品とファイル詳細は出典リンク参照）"
@@ -101,8 +101,8 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:31:32.489Z",
-    "version": 1,
+    "updatedAt": "2026-11-09T09:39:04.831Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -122,7 +122,7 @@ export const modernItems: KnowledgeItem[] = [
         "id": "img-nr-durer",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Albrecht_D%C3%BCrer_-_The_Four_Apostles%2C_Saints_John%2C_Peter%2C_Mark_and_Paul.jpg/960px-Albrecht_D%C3%BCrer_-_The_Four_Apostles%2C_Saints_John%2C_Peter%2C_Mark_and_Paul.jpg",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_The_Four_Apostles%2C_Saints_John%2C_Peter%2C_Mark_and_Paul.jpg",
-        "author": "作品作者による原作・パブリックドメインの忠実な複製",
+        "author": "原作品：アルブレヒト＝デューラー。画像：Wikimedia Commons収録のパブリックドメイン複製",
         "license": "Public Domain Mark 1.0",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
         "caption": "四人の使徒（Wikimedia Commons、パブリックドメイン。原作品とファイル詳細は出典リンク参照）"
@@ -141,8 +141,8 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:31:32.489Z",
-    "version": 1,
+    "updatedAt": "2026-11-09T09:39:04.831Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -182,7 +182,7 @@ export const modernItems: KnowledgeItem[] = [
     "kind": "person",
     "field": "文化保護",
     "region": "ヨーロッパ",
-    "era": "北方ルネサンス",
+    "era": "西欧各国のルネサンス",
     "level": 3,
     "relatedPeople": [],
     "relatedWorks": [],
@@ -196,8 +196,8 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:31:32.489Z",
-    "version": 1,
+    "updatedAt": "2026-11-09T09:39:04.831Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -207,7 +207,7 @@ export const modernItems: KnowledgeItem[] = [
     "kind": "person",
     "field": "文学",
     "region": "ヨーロッパ",
-    "era": "北方ルネサンス",
+    "era": "西欧各国のルネサンス",
     "level": 2,
     "relatedPeople": [],
     "relatedWorks": [],
@@ -221,8 +221,8 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:31:32.489Z",
-    "version": 1,
+    "updatedAt": "2026-11-09T09:39:04.831Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -232,7 +232,7 @@ export const modernItems: KnowledgeItem[] = [
     "kind": "person",
     "field": "文学",
     "region": "ヨーロッパ",
-    "era": "北方ルネサンス",
+    "era": "西欧各国のルネサンス",
     "level": 2,
     "relatedPeople": [],
     "relatedWorks": [],
@@ -246,8 +246,8 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:31:32.489Z",
-    "version": 1,
+    "updatedAt": "2026-11-09T09:39:04.831Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -257,7 +257,7 @@ export const modernItems: KnowledgeItem[] = [
     "kind": "person",
     "field": "文学",
     "region": "ヨーロッパ",
-    "era": "北方ルネサンス",
+    "era": "西欧各国のルネサンス",
     "level": 1,
     "relatedPeople": [],
     "relatedWorks": [],
@@ -271,8 +271,8 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:31:32.489Z",
-    "version": 1,
+    "updatedAt": "2026-11-09T09:39:04.831Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -307,7 +307,7 @@ export const modernItems: KnowledgeItem[] = [
     "kind": "person",
     "field": "文学・思想",
     "region": "ヨーロッパ",
-    "era": "北方ルネサンス",
+    "era": "西欧各国のルネサンス",
     "level": 2,
     "relatedPeople": [],
     "relatedWorks": [],
@@ -321,8 +321,8 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:31:32.489Z",
-    "version": 1,
+    "updatedAt": "2026-11-09T09:39:04.831Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -332,7 +332,7 @@ export const modernItems: KnowledgeItem[] = [
     "kind": "person",
     "field": "文学",
     "region": "ヨーロッパ",
-    "era": "北方ルネサンス",
+    "era": "西欧各国のルネサンス",
     "level": 1,
     "relatedPeople": [],
     "relatedWorks": [],
@@ -346,8 +346,8 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:31:32.489Z",
-    "version": 1,
+    "updatedAt": "2026-11-09T09:39:04.831Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -2482,7 +2482,7 @@ export const modernItems: KnowledgeItem[] = [
         "id": "img-ar-rembrandt",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/The_Night_Watch.jpg/1280px-The_Night_Watch.jpg",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Night_Watch.jpg",
-        "author": "作品作者による原作・パブリックドメインの忠実な複製",
+        "author": "原作品：レンブラント＝ファン＝レイン。画像：Wikimedia Commons収録のパブリックドメイン複製",
         "license": "Public Domain Mark 1.0",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
         "caption": "夜警（Wikimedia Commons、パブリックドメイン。原作品とファイル詳細は出典リンク参照）"
@@ -2501,8 +2501,8 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:31:32.489Z",
-    "version": 1,
+    "updatedAt": "2026-11-09T09:39:04.831Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -2522,7 +2522,7 @@ export const modernItems: KnowledgeItem[] = [
         "id": "img-ar-vermeer",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Girl_with_a_Pearl_Earring.jpg/960px-Girl_with_a_Pearl_Earring.jpg",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Girl_with_a_Pearl_Earring.jpg",
-        "author": "作品作者による原作・パブリックドメインの忠実な複製",
+        "author": "原作品：ヨハネス＝フェルメール。画像：Geheugen van Nederland由来のパブリックドメイン複製",
         "license": "Public Domain Mark 1.0",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
         "caption": "真珠の耳飾りの少女（Wikimedia Commons、パブリックドメイン。原作品とファイル詳細は出典リンク参照）"
@@ -2541,8 +2541,8 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:31:32.489Z",
-    "version": 1,
+    "updatedAt": "2026-11-09T09:39:04.831Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -2727,7 +2727,7 @@ export const modernItems: KnowledgeItem[] = [
         "id": "img-ar-watteau",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Antoine_Watteau_-_Embarkation_for_Cythera.jpg/960px-Antoine_Watteau_-_Embarkation_for_Cythera.jpg",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_Embarkation_for_Cythera.jpg",
-        "author": "作品作者による原作・パブリックドメインの忠実な複製",
+        "author": "原作品：アントワーヌ＝ヴァトー。画像：Wikimedia Commons収録のパブリックドメイン複製",
         "license": "Public Domain Mark 1.0",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
         "caption": "シテール島への船出（Wikimedia Commons、パブリックドメイン。原作品とファイル詳細は出典リンク参照）"
@@ -2746,8 +2746,8 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:31:32.489Z",
-    "version": 1,
+    "updatedAt": "2026-11-09T09:39:04.831Z",
+    "version": 2,
     "deleted": false
   },
   {
