@@ -34,9 +34,15 @@ async function records(page: Page): Promise<{catalog: Catalog; events: ReviewEve
     db.close(); return {catalog, events};
   });
 }
+async function detailScope(page: Page) {
+  const detail=page.locator('#detail-scope');
+  if(!await detail.evaluate(el=>(el as HTMLDetailsElement).open))await detail.locator('summary').click();
+}
 async function imageSession(page: Page) {
   await nav(page, 'setup');
+  await detailScope(page);
   await page.locator('[name=regions][value="ギリシア"]').check();
+  await page.locator('#field-scope').evaluate(el=>{(el as HTMLDetailsElement).open=true;});
   await page.locator('[name=fields][value="建築"]').check();
   await page.locator('[name=cardType]').selectOption('image');
   await page.locator('#study-options [type=submit]').click();
@@ -64,7 +70,9 @@ test('Android相当の全画面・絞り込み・正誤履歴・二重タップ�
   await expect(page.locator('.setup-bottom strong')).toHaveText(`${seedCatalog.cards.length} 枚が対象`);
   await page.locator('[name=levelMode][value=single]').check();
   await expect(page.locator('.setup-bottom strong')).toHaveText(`${totalFor({level: 4,levelMode: 'single'})} 枚が対象`);
+  await detailScope(page);
   await page.locator('[name=regions][value="東地中海"]').check();
+  await page.locator('#field-scope').evaluate(el=>{(el as HTMLDetailsElement).open=true;});
   await page.locator('[name=fields][value="科学"]').check();
   await expect(page.locator('.setup-bottom strong')).toHaveText('2 枚が対象');
   await page.locator('[name=eras][value="古代ローマ"]').check();
@@ -111,7 +119,9 @@ test('文字問題のみの1枚を表示・解答・正答記録できる', asyn
   await boot(page);await nav(page,'setup');
   await page.locator('[name=level][value="4"]').check();
   await page.locator('[name=levelMode][value=single]').check();
+  await detailScope(page);
   await page.locator('[name=regions][value="ローマ"]').check();
+  await page.locator('#field-scope').evaluate(el=>{(el as HTMLDetailsElement).open=true;});
   await page.locator('[name=fields][value="哲学・思想"]').check();
   await page.locator('[name=cardType]').selectOption('text');
   await expect(page.locator('.setup-bottom strong')).toHaveText('1 枚が対象');
@@ -153,6 +163,7 @@ test('大きなレベル選択で累積・単独を切り替え、他条件の�
   await expect(page.locator('.setup-bottom strong')).toHaveText(`${seedCatalog.cards.length} 枚が対象`);
   await page.locator('[name=levelMode][value=single]').check();
   await expect(page.locator('.setup-bottom strong')).toHaveText(`${totalFor({level: 4,levelMode: 'single'})} 枚が対象`);
+  await detailScope(page);
   await page.locator('[name=regions][value="東地中海"]').check();
   await expect(page.locator('[name=level][value="4"]')).toBeChecked();
   await expect(page.locator('[name=levelMode][value=single]')).toBeChecked();

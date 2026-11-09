@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 16,
-  "updatedAt": "2026-11-09T14:19:58.519Z",
+  "version": 17,
+  "updatedAt": "2026-11-09T14:21:00.000Z",
   "items": [
     {
       "id": "eg-ra",
@@ -3463,7 +3463,7 @@
     },
     {
       "id": "is-papermaking",
-      "canonicalName": "製紙法の西伝",
+      "canonicalName": "製紙法のイスラーム世界への伝来",
       "aliases": [],
       "kind": "concept",
       "field": "科学・文化交流",
@@ -3482,8 +3482,8 @@
       ],
       "difficultyEvidence": "暫定Lv.2：教材掲載の知識を基に整理。大学別の出題頻度は未検証。",
       "verification": "provisional",
-      "updatedAt": "2026-11-09T14:09:51.032Z",
-      "version": 1,
+      "updatedAt": "2026-11-09T14:19:14.000Z",
+      "version": 2,
       "deleted": false
     },
     {
