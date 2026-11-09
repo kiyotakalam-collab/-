@@ -40,6 +40,24 @@ describe('separate year quiz scaffolding',()=>{
     expect(selectYearQuestions(fixture,reviews,{...filter,region:'別地域'})).toHaveLength(0);
     expect(selectYearQuestions(fixture,reviews,{...filter,mode:'due'},Date.parse('2026-11-12T00:00:00.000Z'))).toHaveLength(1);
   });
+  it('schedules a failed direction soon and keeps the reverse direction unlearned',()=>{
+    const at='2026-11-09T01:00:00.000Z';
+    const reviews=[{id:'wrong',questionId:questionId('fixture-a','event-year'),correct:false,at,sessionId:'one'}];
+    const progress=yearProgress(reviews).get(reviews[0].questionId)!;
+    expect(progress).toMatchObject({attempts:1,wrong:1,streak:0,recent:[false]});
+    expect(progress.dueAt).toBe(Date.parse(at)+600000);
+    const unseen=selectYearQuestions(fixture,reviews,{...filter,direction:'both',mode:'unseen'});
+    expect(unseen.map(q=>q.direction)).toEqual(['year-event']);
+  });
+  it('prioritizes a recent failure over a recovered question with more lifetime mistakes',()=>{
+    const catalog={...fixture,items:[fixture.items[0],{...fixture.items[0],id:'fixture-b',event:'架空の出来事B'}]};
+    const at=Date.parse('2026-11-09T12:00:00.000Z');
+    const reviews=Array.from({length:20},(_,i)=>({id:'old-'+i,questionId:questionId('fixture-a','event-year'),correct:false,at:new Date(at-86400000-i*1000).toISOString(),sessionId:'one'}));
+    reviews.push(...Array.from({length:5},(_,i)=>({id:'right-'+i,questionId:questionId('fixture-a','event-year'),correct:true,at:new Date(at-5000+i*1000).toISOString(),sessionId:'two'})));
+    reviews.push({id:'recent-wrong',questionId:questionId('fixture-b','event-year'),correct:false,at:new Date(at).toISOString(),sessionId:'three'});
+    expect(selectYearQuestions(catalog,reviews,{...filter,mode:'weak'},at)[0].item.id).toBe('fixture-b');
+    expect(yearProgress(reviews).get(questionId('fixture-a','event-year'))).toMatchObject({wrong:20,correct:5,streak:5});
+  });
   it('rejects duplicate IDs and only merges newer entries; preserves previously registered years',()=>{
     const valid=validateYearCatalog(fixture);
     expect(valid.items).toHaveLength(1);
@@ -59,6 +77,42 @@ describe('separate year quiz scaffolding',()=>{
     expect((await db.load()).catalog.items).toHaveLength(1);
     expect((await db.load()).events).toHaveLength(0);
     db.close();
+  });
+  it('keeps both direction histories, timestamps and cumulative mistakes after repeated backup restore',async()=>{
+    viStub();const db=await openYearDatabase('years-directions-'+crypto.randomUUID());
+    try{
+      await db.applyCatalog(fixture);
+      await Promise.all([db.addReview(questionId('fixture-a','event-year'),false,'one'),db.addReview(questionId('fixture-a','year-event'),true,'two')]);
+      const before=await db.load(), backup=await db.exportBackup();
+      expect(before.events.map(e=>e.at).sort()[0]).not.toBe(before.events.map(e=>e.at).sort()[1]);
+      await db.restoreBackup(backup);await db.restoreBackup(backup);
+      const after=await db.load();expect(after.events).toEqual(before.events);
+      expect(yearProgress(after.events).get(questionId('fixture-a','event-year'))?.wrong).toBe(1);
+      expect(yearProgress(after.events).get(questionId('fixture-a','year-event'))?.correct).toBe(1);
+      await expect(db.addReview(questionId('missing','event-year'),true,'three')).rejects.toThrow(/見つかりません/);
+    }finally{db.close();}
+  });
+  it('rolls back the entire restore when a later imported event conflicts',async()=>{
+    viStub();const db=await openYearDatabase('years-rollback-'+crypto.randomUUID());
+    try{
+      await db.applyCatalog(fixture);await db.addReview(questionId('fixture-a','event-year'),false,'one');
+      const before=await db.load(), backup=JSON.parse(await db.exportBackup());
+      backup.catalog.version++;
+      backup.catalog.items.push({...fixture.items[0],id:'fixture-new',event:'新しい架空の出来事'});
+      backup.events=[{...before.events[0],id:'new-event'}, {...before.events[0],correct:true}];
+      await expect(db.restoreBackup(JSON.stringify(backup))).rejects.toThrow(/競合/);
+      expect(await db.load()).toEqual(before);
+    }finally{db.close();}
+  });
+  it('rejects malformed direction IDs and foreign backup formats before changing saved data',async()=>{
+    viStub();const db=await openYearDatabase('years-validation-'+crypto.randomUUID());
+    try{
+      await db.applyCatalog(fixture);const before=await db.load(),backup=JSON.parse(await db.exportBackup());
+      backup.events=[{id:'bad-id',questionId:'fixture-a::wrong',correct:true,at:'2026-11-09T01:00:00.000Z',sessionId:'one'}];
+      await expect(db.restoreBackup(JSON.stringify(backup))).rejects.toThrow(/問題ID/);
+      await expect(db.restoreBackup(JSON.stringify({...backup,format:'cultural-history-master'}))).rejects.toThrow(/バックアップではありません/);
+      expect(await db.load()).toEqual(before);
+    }finally{db.close();}
   });
 });
 function viStub(){

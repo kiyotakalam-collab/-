@@ -10,9 +10,21 @@ import { seedCatalog } from '../src/seed';
 
 async function boot(page: Page) {
   await page.goto('/');
+  await enterCulture(page);
+}
+async function enterCulture(page: Page) {
+  await expect(page.getByRole('heading', { name: '世界史学習マスター', exact: true })).toBeVisible();
+  await page.locator('[data-enter-area="culture"]').click();
   await expect(page.getByRole('heading', { name: '今日も、ひとつ先の知識へ。' })).toBeVisible();
 }
-async function nav(page: Page, view: string) { await page.locator(`.mobile-nav [data-nav="${view}"]`).click(); }
+async function nav(page: Page, view: string) {
+  if (await page.locator('[data-enter-area="culture"]').isVisible()) await enterCulture(page);
+  if (view !== 'settings' && !await page.locator('.mobile-nav').count()) {
+    await page.locator('header [data-nav="portal"]').click();
+    await enterCulture(page);
+  }
+  await page.locator(view === 'settings' ? 'header [data-nav="settings"]' : `.mobile-nav [data-nav="${view}"]`).click();
+}
 async function records(page: Page): Promise<{catalog: Catalog; events: ReviewEvent[]}> {
   return page.evaluate(async () => {
     const db = await new Promise<IDBDatabase>((resolve, reject) => { const r = indexedDB.open('cultural-history-master'); r.onsuccess = () => resolve(r.result); r.onerror = () => reject(r.error); });
@@ -239,7 +251,12 @@ test('JSONダウンロードを別端末相当の空DBに復元して全回答�
   await fresh.close();
 });
 
+test.describe('公開JSON同期の通信フィクスチャ',()=>{
+// Playwright network routes cannot intercept requests owned by an installed SW.
+// Worker/offline behavior is covered separately below using the real worker.
+test.use({serviceWorkers:'block'});
 test('同期失敗時は学習を続行し、再接続・起動時に同期しても学習履歴を保持', async ({page,context}) => {
+  await context.route('**/catalog-delta.json*',route=>route.abort());
   await boot(page); await imageSession(page); await grade(page,false);
   const original=await records(page);
   const incoming=structuredClone(original.catalog);
@@ -252,7 +269,7 @@ test('同期失敗時は学習を続行し、再接続・起動時に同期し�
   await nav(page,'settings');
   await page.locator('[name=syncUrl]').fill('http://127.0.0.1:4173/test-catalog.json');
   await page.locator('#sync-form [type=submit]').click();
-  await expect(page.locator('.sync-state')).toContainText('同期できませんでした');
+  await expect(page.locator('#sync-form + .sync-state')).toContainText('同期できませんでした');
   expect((await records(page)).catalog).toEqual(original.catalog);
   await imageSession(page); await grade(page,true);
   const learned=await records(page);
@@ -268,10 +285,11 @@ test('同期失敗時は学習を続行し、再接続・起動時に同期し�
   await expect.poll(()=>requests).toBeGreaterThan(count);
   await expect.poll(async()=>(await records(page)).events.length).toBe(2);
   await nav(page,'settings');
-  await expect(page.locator('.sync-state')).toContainText('同期完了');
+  await expect(page.locator('#sync-form + .sync-state')).toContainText('同期完了');
 });
 
 test('学習途中の再接続同期を終了まで待ち、出題停止後も回答履歴を保持', async ({page,context}) => {
+  await context.route('**/catalog-delta.json*',route=>route.abort());
   await boot(page);
   const original=(await records(page)).catalog;
   const incoming=structuredClone(original);
@@ -283,7 +301,7 @@ test('学習途中の再接続同期を終了まで待ち、出題停止後も�
   await nav(page,'settings');
   await page.locator('[name=syncUrl]').fill('http://127.0.0.1:4173/deferred-catalog.json');
   await page.locator('#sync-form [type=submit]').click();
-  await expect(page.locator('.sync-state')).toContainText('同期完了');
+  await expect(page.locator('#sync-form + .sync-state')).toContainText('同期完了');
   await imageSession(page);
   const count=requests;publishDeletion=true;
   await context.setOffline(true);await page.waitForFunction(()=>!navigator.onLine);
@@ -304,6 +322,7 @@ test('学習途中の再接続同期を終了まで待ち、出題停止後も�
   await expect(page.locator('.history-card')).toContainText('出題停止');
   await expect(page.locator('.wrong-count')).toHaveText('1');
 });
+});
 
 test('Service Workerによる完全オフライン再起動・画像表示とManifestの構文確認', async ({page,context}) => {
   await boot(page); await readyWorker(page);
@@ -315,7 +334,7 @@ test('Service Workerによる完全オフライン再起動・画像表示とMan
   const before=await records(page);
   await context.setOffline(true);
   await page.reload();
-  await expect(page.getByRole('heading',{name:'今日も、ひとつ先の知識へ。'})).toBeVisible();
+  await enterCulture(page);
   await imageSession(page);
   await expect(page.locator('#question-image')).toBeVisible();
   await expect.poll(()=>page.locator('#question-image').evaluate(el=>(el as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
@@ -376,11 +395,11 @@ test('GitHub Pages相当のサブディレクトリで起動・SWスコープ・
   try{
     const page=await context.newPage();
     await page.goto(`http://127.0.0.1:${address.port}/culture/`);
-    await expect(page.getByRole('heading',{name:'今日も、ひとつ先の知識へ。'})).toBeVisible();
+    await enterCulture(page);
     await readyWorker(page);
     expect(await page.evaluate(async()=> (await navigator.serviceWorker.ready).scope)).toBe(`http://127.0.0.1:${address.port}/culture/`);
     await context.setOffline(true);await page.reload();
-    await expect(page.getByRole('heading',{name:'今日も、ひとつ先の知識へ。'})).toBeVisible();
+    await enterCulture(page);
     await imageSession(page);
     await expect.poll(()=>page.locator('#question-image').evaluate(el=>(el as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
     await grade(page,true);
