@@ -108,7 +108,9 @@ test.describe('二つの独立した学習エリア',()=>{
     expect(stored.catalog.cards.filter(x=>!x.deleted)).toHaveLength(506);
     expect((await years(page)).catalog.items).toHaveLength(0);
     const production=JSON.parse(await readFile('public/year-events.json','utf8'));
-    expect(production.items).toEqual([]);
+    // The real catalog now contains user-requested years; only the test fixture stays empty here.
+    expect(production.items.length).toBeGreaterThan(0);
+    expect(production.items.some((item:{id:string})=>item.id.startsWith('fixture-'))).toBe(false);
   });
 
   test('文化史と年号の出題条件・成績を混ぜず、年号の累積誤答を正答後も保持する',async({page,context})=>{
