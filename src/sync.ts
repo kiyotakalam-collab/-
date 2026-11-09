@@ -8,12 +8,15 @@ export interface SyncDatabase {
 }
 export interface SyncResult { version: number; itemCount: number; cardCount: number }
 
+/** Public JSON mirror maintained together with the Google Sheet. No Apps Script deployment. */
+export const DEFAULT_CATALOG_URL = 'https://raw.githubusercontent.com/kiyotakalam-collab/-/main/public/catalog-delta.json';
+
 const pending = new WeakMap<SyncDatabase, Map<string, Promise<SyncResult>>>();
 const MAX_BYTES = 15 * 1024 * 1024;
 
 /** Only public read endpoints belong here. OAuth tokens and write keys never do. */
 export function normalizeSyncUrl(value: string, origin = globalThis.location?.origin ?? 'http://localhost'): string {
-  if (!value.trim()) throw new Error('Google Sheetsの公開読み取りURLを設定してください。');
+  if (!value.trim()) throw new Error('公開JSONのURLを指定してください。');
   let url: URL;
   try { url = new URL(value.trim(), origin); }
   catch { throw new Error('同期URLの形式を確認してください。'); }
@@ -51,7 +54,11 @@ async function runSync(db: SyncDatabase, url: string): Promise<SyncResult> {
   const timer = setTimeout(() => abort.abort(), 12_000);
   let catalog: Catalog;
   try {
-    const response = await fetch(url, {
+    // Avoid stale CDN responses when the GitHub mirror has just been updated.
+    const requestUrl = url.startsWith('https://raw.githubusercontent.com/kiyotakalam-collab/-/')
+      ? url + (url.includes('?') ? '&' : '?') + 't=' + Date.now()
+      : url;
+    const response = await fetch(requestUrl, {
       signal: abort.signal, cache: 'no-store', credentials: 'omit',
       referrerPolicy: 'no-referrer', headers: { Accept: 'application/json' },
     });
@@ -61,7 +68,7 @@ async function runSync(db: SyncDatabase, url: string): Promise<SyncResult> {
     if (new TextEncoder().encode(body).byteLength > MAX_BYTES) throw new Error('同期データが15MBを超えています。');
     let parsed: unknown;
     try { parsed = JSON.parse(body); }
-    catch { throw new Error('同期先がJSONを返していません。公開設定とApps Scriptの実行URLを確認してください。'); }
+    catch { throw new Error('同期先がJSONを返していません。公開URLの設定を確認してください。'); }
     // A Sheets publication is a versioned delta, not necessarily all seed rows.
     // The final combined catalog is checked atomically in HistoryDB.applyCatalog().
     catalog = validateCatalog(parsed, true);
