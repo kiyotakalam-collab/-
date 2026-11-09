@@ -11,7 +11,7 @@ afterEach(() => { for (const db of opened.splice(0)) db.close(); });
 describe('reviewed introductory questions', () => {
   it('includes every registered photo section without reassigning existing cards or duplicating terms', () => {
     const catalog = validateCatalog(seedCatalog);
-    expect(catalog.version).toBe(5);
+    expect(catalog.version).toBe(6);
     expect(catalog.items).toHaveLength(227);
     expect(catalog.cards).toHaveLength(279);
     expect(catalog.cards.find(card => card.id === 'gr-homer-iliad-author')).toMatchObject({knowledgeId: 'gr-homer', version: 2});
