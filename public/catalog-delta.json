@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 17,
-  "updatedAt": "2026-11-09T14:21:00.000Z",
+  "version": 18,
+  "updatedAt": "2026-11-09T14:27:31.871Z",
   "items": [
     {
       "id": "eg-ra",
@@ -8513,6 +8513,2456 @@
       "updatedAt": "2026-11-09T14:19:58.519Z",
       "version": 1,
       "deleted": false
+    },
+    {
+      "id": "ch-quanzhen-jiao",
+      "canonicalName": "全真教",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教・文学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "金代に成立した新道教の一派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第2枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-chongyang",
+      "canonicalName": "王重陽",
+      "aliases": [],
+      "kind": "person",
+      "field": "宗教・文学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "12世紀の道教指導者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第2枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhengyi-jiao",
+      "canonicalName": "正一教",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教・文学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "全真教と並ぶ道教の一派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第2枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ci-poetry",
+      "canonicalName": "詞",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教・文学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "宋代に発達した音楽的韻文形式。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第2枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zaju",
+      "canonicalName": "雑劇",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教・文学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "元曲として発展した古典劇。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第2枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xin-tang-shu",
+      "canonicalName": "新唐書",
+      "aliases": [],
+      "kind": "work",
+      "field": "宗教・文学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "欧陽脩らが北宋で編纂した歴史書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第2枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-sima-guang",
+      "canonicalName": "司馬光",
+      "aliases": [],
+      "kind": "person",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北宋の歴史家で王安石の新法に反対した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zizhi-tongjian",
+      "canonicalName": "資治通鑑",
+      "aliases": [],
+      "kind": "work",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "戦国時代から五代までの中国史を記す。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hennentai",
+      "canonicalName": "編年体",
+      "aliases": [],
+      "kind": "concept",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "『春秋』『資治通鑑』などの歴史叙述方式。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-academy-painting",
+      "canonicalName": "院体画",
+      "aliases": [],
+      "kind": "concept",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "宮廷画家による花鳥・山水・人物画。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-northern-painting",
+      "canonicalName": "北宗画",
+      "aliases": [],
+      "kind": "concept",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "宮廷の画風と結びつく伝統的な区分。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-huizong",
+      "canonicalName": "徽宗",
+      "aliases": [],
+      "kind": "person",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北宋の皇帝で文化を愛好した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-peach-dove",
+      "canonicalName": "桃鳩図",
+      "aliases": [],
+      "kind": "work",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "徽宗の作と伝えられる絵画。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-literati-painting",
+      "canonicalName": "文人画",
+      "aliases": [],
+      "kind": "concept",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "南宗画とも結びつく文人の絵画。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-southern-painting",
+      "canonicalName": "南宗画",
+      "aliases": [],
+      "kind": "concept",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "元末以降に発展した文人山水画の呼称。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-song-porcelain",
+      "canonicalName": "宋磁",
+      "aliases": [],
+      "kind": "concept",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "宋代に発達した陶磁器。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-celadon",
+      "canonicalName": "青磁",
+      "aliases": [],
+      "kind": "concept",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "宋代に各地で製造された。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-white-porcelain",
+      "canonicalName": "白磁",
+      "aliases": [],
+      "kind": "concept",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "宋代に製造が発達した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jingdezhen",
+      "canonicalName": "景徳鎮",
+      "aliases": [],
+      "kind": "concept",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "江南に位置する代表的陶磁器生産地。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-qingming-shanghe-tu",
+      "canonicalName": "清明上河図",
+      "aliases": [],
+      "kind": "work",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北宋の都市生活を描いた名画。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhang-zeduan",
+      "canonicalName": "張択端",
+      "aliases": [],
+      "kind": "person",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北宋の画家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gunpowder-china",
+      "canonicalName": "火薬",
+      "aliases": [],
+      "kind": "concept",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中国で開発され西方にも伝わった技術。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-luopan",
+      "canonicalName": "羅針盤",
+      "aliases": [],
+      "kind": "concept",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "方角を指示する道具。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-woodblock-printing",
+      "canonicalName": "木版印刷術",
+      "aliases": [],
+      "kind": "concept",
+      "field": "史学・美術・技術",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中国で発達した印刷技術。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yuanqu",
+      "canonicalName": "元曲",
+      "aliases": [],
+      "kind": "concept",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "歌・台詞・演技を用いた古典劇。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xixiangji",
+      "canonicalName": "西廂記",
+      "aliases": [],
+      "kind": "work",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北曲の代表的な戯曲。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-shifu",
+      "canonicalName": "王実甫",
+      "aliases": [],
+      "kind": "person",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "元代の劇作家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hangongqiu",
+      "canonicalName": "漢宮秋",
+      "aliases": [],
+      "kind": "work",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "元代の北曲。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ma-zhiyuan",
+      "canonicalName": "馬致遠",
+      "aliases": [],
+      "kind": "person",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "元代の劇作家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-pipaji",
+      "canonicalName": "琵琶記",
+      "aliases": [],
+      "kind": "work",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "元末に作られた南曲。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gao-ming",
+      "canonicalName": "高則誠",
+      "aliases": [],
+      "kind": "person",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "高明とも呼ばれる元末の劇作家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shuihuzhuan",
+      "canonicalName": "水滸伝",
+      "aliases": [],
+      "kind": "work",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "元代に原型が成立し明代に完成した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-sanguozhiyanyi",
+      "canonicalName": "三国志演義",
+      "aliases": [],
+      "kind": "work",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "元代に原型が成立し明代に完成した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xiyouji",
+      "canonicalName": "西遊記",
+      "aliases": [],
+      "kind": "work",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "元代に原型が成立し明代に完成した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-blue-white-porcelain",
+      "canonicalName": "染付",
+      "aliases": [],
+      "kind": "concept",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "青花磁器とも呼ばれる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shoushili",
+      "canonicalName": "授時暦",
+      "aliases": [],
+      "kind": "work",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イスラーム天文学の影響を受けた暦法。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-guo-shoujing",
+      "canonicalName": "郭守敬",
+      "aliases": [],
+      "kind": "person",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "元の天文学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jokyoreki",
+      "canonicalName": "貞享暦",
+      "aliases": [],
+      "kind": "work",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "江戸時代の暦法。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shibukawa-shunkai",
+      "canonicalName": "渋川春海",
+      "aliases": [],
+      "kind": "person",
+      "field": "元代文学・工芸・科学",
+      "region": "中国",
+      "era": "宋・元",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "日本の暦学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yongle-dadian",
+      "canonicalName": "永楽大典",
+      "aliases": [],
+      "kind": "work",
+      "field": "大編纂事業",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明代の大類書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第6枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kangxi-zidian",
+      "canonicalName": "康熙字典",
+      "aliases": [],
+      "kind": "work",
+      "field": "大編纂事業",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清代の字書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第6枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kangxi-emperor",
+      "canonicalName": "康熙帝",
+      "aliases": [],
+      "kind": "person",
+      "field": "大編纂事業",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清の皇帝。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第6枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gujin-tushu-jicheng",
+      "canonicalName": "古今図書集成",
+      "aliases": [],
+      "kind": "work",
+      "field": "大編纂事業",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清代の大百科事典。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第6枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yongzheng-emperor",
+      "canonicalName": "雍正帝",
+      "aliases": [],
+      "kind": "person",
+      "field": "大編纂事業",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清の皇帝。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第6枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-siku-quanshu",
+      "canonicalName": "四庫全書",
+      "aliases": [],
+      "kind": "work",
+      "field": "大編纂事業",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清代の大規模な書物集成。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第6枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-qianlong-emperor",
+      "canonicalName": "乾隆帝",
+      "aliases": [],
+      "kind": "person",
+      "field": "大編纂事業",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清の皇帝。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第6枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shi-naian",
+      "canonicalName": "施耐庵",
+      "aliases": [],
+      "kind": "person",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "『水滸伝』の成立に関わるとされる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-luo-guanzhong",
+      "canonicalName": "羅貫中",
+      "aliases": [],
+      "kind": "person",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明代の小説家とされる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wu-chengen",
+      "canonicalName": "呉承恩",
+      "aliases": [],
+      "kind": "person",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中国の明代に活動した文人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jinpingmei",
+      "canonicalName": "金瓶梅",
+      "aliases": [],
+      "kind": "work",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明代の世相小説。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hongloumeng",
+      "canonicalName": "紅楼夢",
+      "aliases": [],
+      "kind": "work",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清代の長編小説。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-cao-xueqin",
+      "canonicalName": "曹雪芹",
+      "aliases": [],
+      "kind": "person",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清代の小説家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-rulin-waishi",
+      "canonicalName": "儒林外史",
+      "aliases": [],
+      "kind": "work",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清代の風刺小説。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wu-jingzi",
+      "canonicalName": "呉敬梓",
+      "aliases": [],
+      "kind": "person",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清代の小説家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-liaozhai-zhiyi",
+      "canonicalName": "聊斎志異",
+      "aliases": [],
+      "kind": "work",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清代の怪異文学。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-pu-songling",
+      "canonicalName": "蒲松齢",
+      "aliases": [],
+      "kind": "person",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清代の作家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-nongzheng-quanshu",
+      "canonicalName": "農政全書",
+      "aliases": [],
+      "kind": "work",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明末の農学書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xu-guangqi",
+      "canonicalName": "徐光啓",
+      "aliases": [],
+      "kind": "person",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明末の儒学者・科学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-bencao-gangmu",
+      "canonicalName": "本草綱目",
+      "aliases": [],
+      "kind": "work",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明代の薬物学の書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-li-shizhen",
+      "canonicalName": "李時珍",
+      "aliases": [],
+      "kind": "person",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明代の本草学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tiangong-kaiwu",
+      "canonicalName": "天工開物",
+      "aliases": [],
+      "kind": "work",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明末の産業技術書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-song-yingxing",
+      "canonicalName": "宋応星",
+      "aliases": [],
+      "kind": "person",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明末の技術学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-chongzhen-lishu",
+      "canonicalName": "崇禎暦書",
+      "aliases": [],
+      "kind": "work",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明末の暦学書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-dong-qichang",
+      "canonicalName": "董其昌",
+      "aliases": [],
+      "kind": "person",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明末の文人画家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-akae",
+      "canonicalName": "赤絵",
+      "aliases": [],
+      "kind": "concept",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明代の色絵陶磁器。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-forbidden-city",
+      "canonicalName": "紫禁城",
+      "aliases": [],
+      "kind": "building",
+      "field": "小説・実学・美術",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "明・清の皇帝の宮殿。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-francis-xavier",
+      "canonicalName": "フランシスコ＝ザビエル",
+      "aliases": [],
+      "kind": "person",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "インド・東南アジアを経て来日した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-matteo-ricci",
+      "canonicalName": "マテオ＝リッチ",
+      "aliases": [],
+      "kind": "person",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イタリア出身の宣教師。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kunyu-wanguo-quantu",
+      "canonicalName": "坤輿万国全図",
+      "aliases": [],
+      "kind": "work",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "17世紀初めに作られた世界地図。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jihe-yuanben",
+      "canonicalName": "幾何原本",
+      "aliases": [],
+      "kind": "work",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "西洋数学を中国へ伝えた漢訳書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-adam-schall",
+      "canonicalName": "アダム＝シャール",
+      "aliases": [],
+      "kind": "person",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ドイツ出身のイエズス会宣教師。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ferdinand-verbiest",
+      "canonicalName": "フェルビースト",
+      "aliases": [],
+      "kind": "person",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アダム＝シャールに続いて清朝に仕えた。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-bouvet",
+      "canonicalName": "ブーヴェ",
+      "aliases": [],
+      "kind": "person",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "フランス出身の宣教師。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-regis",
+      "canonicalName": "レジス",
+      "aliases": [],
+      "kind": "person",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "フランス出身の宣教師。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-huangyu-quanlantu",
+      "canonicalName": "皇輿全覧図",
+      "aliases": [],
+      "kind": "work",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清代の実測地図。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-castiglione",
+      "canonicalName": "カスティリオーネ",
+      "aliases": [],
+      "kind": "person",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "郎世寧の名でも知られる宮廷画家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yuanmingyuan",
+      "canonicalName": "円明園",
+      "aliases": [],
+      "kind": "building",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北京郊外にある清朝の離宮跡。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-rites-controversy",
+      "canonicalName": "典礼問題",
+      "aliases": [],
+      "kind": "concept",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "中国での儀礼を巡るイエズス会と他会派の論争。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-clement-xi",
+      "canonicalName": "クレメンス11世",
+      "aliases": [],
+      "kind": "person",
+      "field": "東西文化交流",
+      "region": "中国",
+      "era": "明・清",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "典礼問題に関与した教皇。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第8枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-oracle-bone-script",
+      "canonicalName": "甲骨文字",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "漢字の古い字体。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-bronze-script",
+      "canonicalName": "金文",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代中国の金属器の銘文。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-seal-script",
+      "canonicalName": "篆書",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "漢字の古い字形。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-khitan-script",
+      "canonicalName": "契丹文字",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "契丹人の文字。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yelu-abaoji",
+      "canonicalName": "耶律阿保機",
+      "aliases": [],
+      "kind": "person",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "遼の太祖。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tangut-script",
+      "canonicalName": "西夏文字",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "西夏の文字。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-li-yuanhao",
+      "canonicalName": "李元昊",
+      "aliases": [],
+      "kind": "person",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "西夏の景宗。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jurchen-script",
+      "canonicalName": "女真文字",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "女真族の文字。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-chu-nom",
+      "canonicalName": "チュノム（字喃）",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ベトナム語を表記する漢字系の文字。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hunminjeongeum",
+      "canonicalName": "訓民正音（ハングル）",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "朝鮮語を表記する文字。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-king-sejong",
+      "canonicalName": "世宗",
+      "aliases": [],
+      "kind": "person",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "朝鮮王朝第4代の国王。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-orkhon-script",
+      "canonicalName": "突厥文字",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代トルコ語の文字。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-orkhon-inscriptions",
+      "canonicalName": "オルホン碑文",
+      "aliases": [],
+      "kind": "work",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代トルコ系遊牧民の碑文。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-uyghur-script",
+      "canonicalName": "ウイグル文字",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ウイグル人の文字。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-mongolian-script",
+      "canonicalName": "モンゴル文字",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "モンゴル語の文字。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-phags-pa-script",
+      "canonicalName": "パスパ文字",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "元代に作られた文字。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kublai",
+      "canonicalName": "フビライ",
+      "aliases": [],
+      "kind": "person",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "モンゴル帝国の大ハンで元の世祖。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-manchu-script",
+      "canonicalName": "満州文字",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "満州語の文字。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-nurhaci",
+      "canonicalName": "ヌルハチ",
+      "aliases": [],
+      "kind": "person",
+      "field": "文字・言語",
+      "region": "東アジア",
+      "era": "中国周辺史",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "清の前身の後金を建国した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第9枚目。原文を転載せず暗記問題として独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
     }
   ],
   "cards": [
@@ -12209,6 +14659,1084 @@
       "answer": "唐三彩",
       "explanation": "緑・褐色・白などの釉薬で彩色された唐代の陶器。",
       "updatedAt": "2026-11-09T14:19:58.519Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-quanzhen-jiao::core",
+      "knowledgeId": "ch-quanzhen-jiao",
+      "type": "context",
+      "question": "金代に王重陽が開き、儒・仏・道の調和を説いた道教の一派は？",
+      "answer": "全真教",
+      "explanation": "金代に成立した新道教の一派。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-chongyang::core",
+      "knowledgeId": "ch-wang-chongyang",
+      "type": "achievement-person",
+      "question": "金代に全真教を創始した道士は？",
+      "answer": "王重陽",
+      "explanation": "12世紀の道教指導者。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhengyi-jiao::core",
+      "knowledgeId": "ch-zhengyi-jiao",
+      "type": "context",
+      "question": "天師道を改称し、江南を中心に広まった道教の一派は？",
+      "answer": "正一教",
+      "explanation": "全真教と並ぶ道教の一派。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ci-poetry::core",
+      "knowledgeId": "ch-ci-poetry",
+      "type": "context",
+      "question": "宋代に流行した、楽曲に合わせて歌う韻文は？",
+      "answer": "詞",
+      "explanation": "宋代に発達した音楽的韻文形式。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zaju::core",
+      "knowledgeId": "ch-zaju",
+      "type": "context",
+      "question": "歌・せりふ・しぐさを組み合わせた元代の古典劇は？",
+      "answer": "雑劇",
+      "explanation": "元曲として発展した古典劇。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xin-tang-shu::core",
+      "knowledgeId": "ch-xin-tang-shu",
+      "type": "context",
+      "question": "北宋の欧陽脩や宋祁らが編纂した唐代の正史は？",
+      "answer": "新唐書",
+      "explanation": "欧陽脩らが北宋で編纂した歴史書。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-sima-guang::core",
+      "knowledgeId": "ch-sima-guang",
+      "type": "achievement-person",
+      "question": "『資治通鑑』を編纂した北宋の政治家・歴史家は？",
+      "answer": "司馬光",
+      "explanation": "北宋の歴史家で王安石の新法に反対した。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zizhi-tongjian::core",
+      "knowledgeId": "ch-zizhi-tongjian",
+      "type": "context",
+      "question": "司馬光が編纂した編年体の通史は？",
+      "answer": "資治通鑑",
+      "explanation": "戦国時代から五代までの中国史を記す。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hennentai::core",
+      "knowledgeId": "ch-hennentai",
+      "type": "context",
+      "question": "歴史上の事件を年月順に記述する史書の編纂形式は？",
+      "answer": "編年体",
+      "explanation": "『春秋』『資治通鑑』などの歴史叙述方式。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-academy-painting::core",
+      "knowledgeId": "ch-academy-painting",
+      "type": "context",
+      "question": "宋代に宮廷の画院に属する画家が描いた写実的な絵画は？",
+      "answer": "院体画",
+      "explanation": "宮廷画家による花鳥・山水・人物画。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-northern-painting::core",
+      "knowledgeId": "ch-northern-painting",
+      "type": "context",
+      "question": "職業画家が描く院体画などの画風を南宗画と対比して何と呼ぶ？",
+      "answer": "北宗画",
+      "explanation": "宮廷の画風と結びつく伝統的な区分。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-huizong::core",
+      "knowledgeId": "ch-huizong",
+      "type": "achievement-person",
+      "question": "「風流天子」と呼ばれ『桃鳩図』を描いたと伝わる北宋の皇帝は？",
+      "answer": "徽宗",
+      "explanation": "北宋の皇帝で文化を愛好した。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-peach-dove::core",
+      "knowledgeId": "ch-peach-dove",
+      "type": "context",
+      "question": "北宋の徽宗が描いたと伝わる花鳥画は？",
+      "answer": "桃鳩図",
+      "explanation": "徽宗の作と伝えられる絵画。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-literati-painting::core",
+      "knowledgeId": "ch-literati-painting",
+      "type": "context",
+      "question": "士大夫など職業画家ではない文人が描いた絵画は？",
+      "answer": "文人画",
+      "explanation": "南宗画とも結びつく文人の絵画。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-southern-painting::core",
+      "knowledgeId": "ch-southern-painting",
+      "type": "context",
+      "question": "文人画と結びつき、柔らかな筆線を重ねる山水画を何という？",
+      "answer": "南宗画",
+      "explanation": "元末以降に発展した文人山水画の呼称。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-song-porcelain::core",
+      "knowledgeId": "ch-song-porcelain",
+      "type": "context",
+      "question": "青磁・白磁が発達した宋代の陶磁器は？",
+      "answer": "宋磁",
+      "explanation": "宋代に発達した陶磁器。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-celadon::core",
+      "knowledgeId": "ch-celadon",
+      "type": "context",
+      "question": "青緑色の釉薬を用いる中国の陶磁器は？",
+      "answer": "青磁",
+      "explanation": "宋代に各地で製造された。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-white-porcelain::core",
+      "knowledgeId": "ch-white-porcelain",
+      "type": "context",
+      "question": "白色の釉薬を用いて作られる中国の陶磁器は？",
+      "answer": "白磁",
+      "explanation": "宋代に製造が発達した。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jingdezhen::core",
+      "knowledgeId": "ch-jingdezhen",
+      "type": "context",
+      "question": "江西省にあり宋代以降中国陶磁器の生産中心となった都市は？",
+      "answer": "景徳鎮",
+      "explanation": "江南に位置する代表的陶磁器生産地。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-qingming-shanghe-tu::core",
+      "knowledgeId": "ch-qingming-shanghe-tu",
+      "type": "context",
+      "question": "北宋の都開封のにぎわいを描いた張択端の絵巻は？",
+      "answer": "清明上河図",
+      "explanation": "北宋の都市生活を描いた名画。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zhang-zeduan::core",
+      "knowledgeId": "ch-zhang-zeduan",
+      "type": "achievement-person",
+      "question": "北宋の開封を描いた『清明上河図』の作者は？",
+      "answer": "張択端",
+      "explanation": "北宋の画家。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gunpowder-china::core",
+      "knowledgeId": "ch-gunpowder-china",
+      "type": "context",
+      "question": "南宋では点火・威嚇などに使用され、金・元に実用的な軍事技術となった中国の発明は？",
+      "answer": "火薬",
+      "explanation": "中国で開発され西方にも伝わった技術。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-luopan::core",
+      "knowledgeId": "ch-luopan",
+      "type": "context",
+      "question": "方位を知るために用い、航海術に大きく影響した磁石の器具は？",
+      "answer": "羅針盤",
+      "explanation": "方角を指示する道具。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-woodblock-printing::core",
+      "knowledgeId": "ch-woodblock-printing",
+      "type": "context",
+      "question": "唐代に発明され宋代に広く普及した、彫った版木を用いる印刷技術は？",
+      "answer": "木版印刷術",
+      "explanation": "中国で発達した印刷技術。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yuanqu::core",
+      "knowledgeId": "ch-yuanqu",
+      "type": "context",
+      "question": "元代に完成した中国の雑劇などの古典演劇の総称は？",
+      "answer": "元曲",
+      "explanation": "歌・台詞・演技を用いた古典劇。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xixiangji::core",
+      "knowledgeId": "ch-xixiangji",
+      "type": "context",
+      "question": "王実甫が著した、封建的な身分秩序に抗う男女の恋愛を描く元曲は？",
+      "answer": "西廂記",
+      "explanation": "北曲の代表的な戯曲。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wang-shifu::core",
+      "knowledgeId": "ch-wang-shifu",
+      "type": "achievement-person",
+      "question": "元曲『西廂記』の作者は？",
+      "answer": "王実甫",
+      "explanation": "元代の劇作家。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hangongqiu::core",
+      "knowledgeId": "ch-hangongqiu",
+      "type": "context",
+      "question": "王昭君が匈奴に嫁ぐ悲劇を描いた馬致遠の元曲は？",
+      "answer": "漢宮秋",
+      "explanation": "元代の北曲。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ma-zhiyuan::core",
+      "knowledgeId": "ch-ma-zhiyuan",
+      "type": "achievement-person",
+      "question": "元曲『漢宮秋』の作者は？",
+      "answer": "馬致遠",
+      "explanation": "元代の劇作家。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-pipaji::core",
+      "knowledgeId": "ch-pipaji",
+      "type": "context",
+      "question": "高則誠が著した、出世した夫と故郷の妻を描く南曲は？",
+      "answer": "琵琶記",
+      "explanation": "元末に作られた南曲。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gao-ming::core",
+      "knowledgeId": "ch-gao-ming",
+      "type": "achievement-person",
+      "question": "南曲『琵琶記』の作者は？",
+      "answer": "高則誠",
+      "explanation": "高明とも呼ばれる元末の劇作家。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shuihuzhuan::core",
+      "knowledgeId": "ch-shuihuzhuan",
+      "type": "context",
+      "question": "宋江ら梁山泊の豪傑を描いた中国の長編小説は？",
+      "answer": "水滸伝",
+      "explanation": "元代に原型が成立し明代に完成した。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-sanguozhiyanyi::core",
+      "knowledgeId": "ch-sanguozhiyanyi",
+      "type": "context",
+      "question": "三国時代の抗争を描いた中国の長編歴史小説は？",
+      "answer": "三国志演義",
+      "explanation": "元代に原型が成立し明代に完成した。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xiyouji::core",
+      "knowledgeId": "ch-xiyouji",
+      "type": "context",
+      "question": "玄奘のインドへの旅を孫悟空らの冒険とともに描いた小説は？",
+      "answer": "西遊記",
+      "explanation": "元代に原型が成立し明代に完成した。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-blue-white-porcelain::core",
+      "knowledgeId": "ch-blue-white-porcelain",
+      "type": "context",
+      "question": "白磁にコバルトブルーで模様を描く、元代から発達した陶磁器は？",
+      "answer": "染付",
+      "explanation": "青花磁器とも呼ばれる。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shoushili::core",
+      "knowledgeId": "ch-shoushili",
+      "type": "context",
+      "question": "郭守敬が1280年に制定した元代の暦は？",
+      "answer": "授時暦",
+      "explanation": "イスラーム天文学の影響を受けた暦法。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-guo-shoujing::core",
+      "knowledgeId": "ch-guo-shoujing",
+      "type": "achievement-person",
+      "question": "元代に『授時暦』を作成した天文学者は？",
+      "answer": "郭守敬",
+      "explanation": "元の天文学者。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jokyoreki::core",
+      "knowledgeId": "ch-jokyoreki",
+      "type": "context",
+      "question": "渋川春海が『授時暦』を基に江戸時代に編纂した暦は？",
+      "answer": "貞享暦",
+      "explanation": "江戸時代の暦法。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shibukawa-shunkai::core",
+      "knowledgeId": "ch-shibukawa-shunkai",
+      "type": "achievement-person",
+      "question": "江戸時代に『授時暦』を基に貞享暦を作成した天文学者は？",
+      "answer": "渋川春海",
+      "explanation": "日本の暦学者。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yongle-dadian::core",
+      "knowledgeId": "ch-yongle-dadian",
+      "type": "context",
+      "question": "明の永楽帝の命で1408年に完成した大百科事典は？",
+      "answer": "永楽大典",
+      "explanation": "明代の大類書。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kangxi-zidian::core",
+      "knowledgeId": "ch-kangxi-zidian",
+      "type": "context",
+      "question": "清の康熙帝の命で編纂された漢字字典は？",
+      "answer": "康熙字典",
+      "explanation": "清代の字書。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kangxi-emperor::core",
+      "knowledgeId": "ch-kangxi-emperor",
+      "type": "achievement-person",
+      "question": "『康熙字典』の編纂を命じた清の皇帝は？",
+      "answer": "康熙帝",
+      "explanation": "清の皇帝。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-gujin-tushu-jicheng::core",
+      "knowledgeId": "ch-gujin-tushu-jicheng",
+      "type": "context",
+      "question": "康熙・雍正期に編纂された中国最大級の百科事典は？",
+      "answer": "古今図書集成",
+      "explanation": "清代の大百科事典。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yongzheng-emperor::core",
+      "knowledgeId": "ch-yongzheng-emperor",
+      "type": "achievement-person",
+      "question": "1724年にキリスト教の布教を禁止した清の皇帝は？",
+      "answer": "雍正帝",
+      "explanation": "清の皇帝。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-siku-quanshu::core",
+      "knowledgeId": "ch-siku-quanshu",
+      "type": "context",
+      "question": "乾隆帝の命で経・史・子・集に分けて編纂された大叢書は？",
+      "answer": "四庫全書",
+      "explanation": "清代の大規模な書物集成。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-qianlong-emperor::core",
+      "knowledgeId": "ch-qianlong-emperor",
+      "type": "achievement-person",
+      "question": "『四庫全書』の編纂を命じた清の皇帝は？",
+      "answer": "乾隆帝",
+      "explanation": "清の皇帝。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-shi-naian::core",
+      "knowledgeId": "ch-shi-naian",
+      "type": "achievement-person",
+      "question": "『水滸伝』の原作者と伝えられる人物は？",
+      "answer": "施耐庵",
+      "explanation": "『水滸伝』の成立に関わるとされる。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-luo-guanzhong::core",
+      "knowledgeId": "ch-luo-guanzhong",
+      "type": "achievement-person",
+      "question": "『三国志演義』の作者と伝えられる作家は？",
+      "answer": "羅貫中",
+      "explanation": "明代の小説家とされる。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wu-chengen::core",
+      "knowledgeId": "ch-wu-chengen",
+      "type": "achievement-person",
+      "question": "『西遊記』の作者と伝えられる明代の作家は？",
+      "answer": "呉承恩",
+      "explanation": "中国の明代に活動した文人。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jinpingmei::core",
+      "knowledgeId": "ch-jinpingmei",
+      "type": "context",
+      "question": "豪族の裏面生活を描いた作者不詳の明代長編小説は？",
+      "answer": "金瓶梅",
+      "explanation": "明代の世相小説。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hongloumeng::core",
+      "knowledgeId": "ch-hongloumeng",
+      "type": "context",
+      "question": "曹雪芹が著した清代貴族の栄枯盛衰を描く小説は？",
+      "answer": "紅楼夢",
+      "explanation": "清代の長編小説。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-cao-xueqin::core",
+      "knowledgeId": "ch-cao-xueqin",
+      "type": "achievement-person",
+      "question": "清代の小説『紅楼夢』の作者は？",
+      "answer": "曹雪芹",
+      "explanation": "清代の小説家。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-rulin-waishi::core",
+      "knowledgeId": "ch-rulin-waishi",
+      "type": "context",
+      "question": "呉敬梓が科挙制度や官吏の腐敗を風刺した小説は？",
+      "answer": "儒林外史",
+      "explanation": "清代の風刺小説。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-wu-jingzi::core",
+      "knowledgeId": "ch-wu-jingzi",
+      "type": "achievement-person",
+      "question": "『儒林外史』で科挙を風刺した清代の作家は？",
+      "answer": "呉敬梓",
+      "explanation": "清代の小説家。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-liaozhai-zhiyi::core",
+      "knowledgeId": "ch-liaozhai-zhiyi",
+      "type": "context",
+      "question": "蒲松齢が著した妖怪などの短編怪異小説集は？",
+      "answer": "聊斎志異",
+      "explanation": "清代の怪異文学。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-pu-songling::core",
+      "knowledgeId": "ch-pu-songling",
+      "type": "achievement-person",
+      "question": "清代の怪異小説集『聊斎志異』を書いた人物は？",
+      "answer": "蒲松齢",
+      "explanation": "清代の作家。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-nongzheng-quanshu::core",
+      "knowledgeId": "ch-nongzheng-quanshu",
+      "type": "context",
+      "question": "徐光啓が西洋技術も参考に農業技術をまとめた書物は？",
+      "answer": "農政全書",
+      "explanation": "明末の農学書。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xu-guangqi::core",
+      "knowledgeId": "ch-xu-guangqi",
+      "type": "achievement-person",
+      "question": "『農政全書』を著し、イエズス会宣教師と数学・暦法にも取り組んだ学者は？",
+      "answer": "徐光啓",
+      "explanation": "明末の儒学者・科学者。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-bencao-gangmu::core",
+      "knowledgeId": "ch-bencao-gangmu",
+      "type": "context",
+      "question": "李時珍が編纂した中国の薬物に関する総合書は？",
+      "answer": "本草綱目",
+      "explanation": "明代の薬物学の書。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-li-shizhen::core",
+      "knowledgeId": "ch-li-shizhen",
+      "type": "achievement-person",
+      "question": "薬物学の書『本草綱目』の著者は？",
+      "answer": "李時珍",
+      "explanation": "明代の本草学者。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tiangong-kaiwu::core",
+      "knowledgeId": "ch-tiangong-kaiwu",
+      "type": "context",
+      "question": "宋応星が著した産業技術の図版入り解説書は？",
+      "answer": "天工開物",
+      "explanation": "明末の産業技術書。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-song-yingxing::core",
+      "knowledgeId": "ch-song-yingxing",
+      "type": "achievement-person",
+      "question": "産業技術書『天工開物』を著した明末の学者は？",
+      "answer": "宋応星",
+      "explanation": "明末の技術学者。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-chongzhen-lishu::core",
+      "knowledgeId": "ch-chongzhen-lishu",
+      "type": "context",
+      "question": "徐光啓とアダム＝シャールらが西洋暦法を取り入れ編纂した書は？",
+      "answer": "崇禎暦書",
+      "explanation": "明末の暦学書。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-dong-qichang::core",
+      "knowledgeId": "ch-dong-qichang",
+      "type": "achievement-person",
+      "question": "明末に南宗画を大成した政治家・書家・画家は？",
+      "answer": "董其昌",
+      "explanation": "明末の文人画家。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-akae::core",
+      "knowledgeId": "ch-akae",
+      "type": "context",
+      "question": "赤・緑・黄などの彩色で文様を描き明代に発達した陶磁器は？",
+      "answer": "赤絵",
+      "explanation": "明代の色絵陶磁器。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-forbidden-city::core",
+      "knowledgeId": "ch-forbidden-city",
+      "type": "context",
+      "question": "明の永楽帝が北京に築き、現代では故宮博物院にあたる宮殿は？",
+      "answer": "紫禁城",
+      "explanation": "明・清の皇帝の宮殿。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-francis-xavier::core",
+      "knowledgeId": "ch-francis-xavier",
+      "type": "achievement-person",
+      "question": "1549年に日本へ到来して布教したスペイン出身のイエズス会宣教師は？",
+      "answer": "フランシスコ＝ザビエル",
+      "explanation": "インド・東南アジアを経て来日した。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-matteo-ricci::core",
+      "knowledgeId": "ch-matteo-ricci",
+      "type": "achievement-person",
+      "question": "『坤輿万国全図』を作成し徐光啓と『幾何原本』を漢訳した宣教師は？",
+      "answer": "マテオ＝リッチ",
+      "explanation": "イタリア出身の宣教師。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kunyu-wanguo-quantu::core",
+      "knowledgeId": "ch-kunyu-wanguo-quantu",
+      "type": "context",
+      "question": "マテオ＝リッチが中国で作成した漢語の世界地図は？",
+      "answer": "坤輿万国全図",
+      "explanation": "17世紀初めに作られた世界地図。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jihe-yuanben::core",
+      "knowledgeId": "ch-jihe-yuanben",
+      "type": "context",
+      "question": "マテオ＝リッチと徐光啓がエウクレイデスの著作を漢訳した書物は？",
+      "answer": "幾何原本",
+      "explanation": "西洋数学を中国へ伝えた漢訳書。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-adam-schall::core",
+      "knowledgeId": "ch-adam-schall",
+      "type": "achievement-person",
+      "question": "徐光啓と『崇禎暦書』編纂に携わり、清で欽天監正を務めた宣教師は？",
+      "answer": "アダム＝シャール",
+      "explanation": "ドイツ出身のイエズス会宣教師。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ferdinand-verbiest::core",
+      "knowledgeId": "ch-ferdinand-verbiest",
+      "type": "achievement-person",
+      "question": "清代に西洋の暦法と大砲鋳造技術を紹介したベルギー出身の宣教師は？",
+      "answer": "フェルビースト",
+      "explanation": "アダム＝シャールに続いて清朝に仕えた。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-bouvet::core",
+      "knowledgeId": "ch-bouvet",
+      "type": "achievement-person",
+      "question": "清の康熙帝の時期に来朝し『皇輿全覧図』の作成に関与した宣教師は？",
+      "answer": "ブーヴェ",
+      "explanation": "フランス出身の宣教師。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-regis::core",
+      "knowledgeId": "ch-regis",
+      "type": "achievement-person",
+      "question": "清代にブーヴェらと実測地図『皇輿全覧図』を作った宣教師は？",
+      "answer": "レジス",
+      "explanation": "フランス出身の宣教師。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-huangyu-quanlantu::core",
+      "knowledgeId": "ch-huangyu-quanlantu",
+      "type": "context",
+      "question": "康熙帝の時代にブーヴェ・レジスらが測量して作成した中国の地図は？",
+      "answer": "皇輿全覧図",
+      "explanation": "清代の実測地図。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-castiglione::core",
+      "knowledgeId": "ch-castiglione",
+      "type": "achievement-person",
+      "question": "清の雍正帝・乾隆帝に仕え、円明園の洋風建築を設計したイタリア人宣教師は？",
+      "answer": "カスティリオーネ",
+      "explanation": "郎世寧の名でも知られる宮廷画家。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yuanmingyuan::core",
+      "knowledgeId": "ch-yuanmingyuan",
+      "type": "context",
+      "question": "清の離宮でアロー戦争の1860年に破壊された宮殿群は？",
+      "answer": "円明園",
+      "explanation": "北京郊外にある清朝の離宮跡。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-rites-controversy::core",
+      "knowledgeId": "ch-rites-controversy",
+      "type": "context",
+      "question": "中国の孔子崇拝や祖先祭祀をキリスト教が認めるかで争った問題は？",
+      "answer": "典礼問題",
+      "explanation": "中国での儀礼を巡るイエズス会と他会派の論争。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-clement-xi::core",
+      "knowledgeId": "ch-clement-xi",
+      "type": "achievement-person",
+      "question": "18世紀初めに中国の典礼を禁止したローマ教皇は？",
+      "answer": "クレメンス11世",
+      "explanation": "典礼問題に関与した教皇。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-oracle-bone-script::core",
+      "knowledgeId": "ch-oracle-bone-script",
+      "type": "context",
+      "question": "殷代の亀甲や獣骨に占いを記録するため刻まれた文字は？",
+      "answer": "甲骨文字",
+      "explanation": "漢字の古い字体。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-bronze-script::core",
+      "knowledgeId": "ch-bronze-script",
+      "type": "context",
+      "question": "殷・周の青銅器に鋳込まれた文字は？",
+      "answer": "金文",
+      "explanation": "古代中国の金属器の銘文。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-seal-script::core",
+      "knowledgeId": "ch-seal-script",
+      "type": "context",
+      "question": "甲骨文字・金文から発達し秦の小篆につながった古い漢字の書体は？",
+      "answer": "篆書",
+      "explanation": "漢字の古い字形。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-khitan-script::core",
+      "knowledgeId": "ch-khitan-script",
+      "type": "context",
+      "question": "10世紀の遼で耶律阿保機の時代に作られた文字は？",
+      "answer": "契丹文字",
+      "explanation": "契丹人の文字。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-yelu-abaoji::core",
+      "knowledgeId": "ch-yelu-abaoji",
+      "type": "achievement-person",
+      "question": "契丹文字の創製を進めた遼の建国者は？",
+      "answer": "耶律阿保機",
+      "explanation": "遼の太祖。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-tangut-script::core",
+      "knowledgeId": "ch-tangut-script",
+      "type": "context",
+      "question": "11世紀に李元昊の時代に漢字を模して作られた複雑な文字は？",
+      "answer": "西夏文字",
+      "explanation": "西夏の文字。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-li-yuanhao::core",
+      "knowledgeId": "ch-li-yuanhao",
+      "type": "achievement-person",
+      "question": "西夏文字の制定を進めた西夏の建国者は？",
+      "answer": "李元昊",
+      "explanation": "西夏の景宗。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-jurchen-script::core",
+      "knowledgeId": "ch-jurchen-script",
+      "type": "context",
+      "question": "金で漢字や契丹文字をもとに作られた文字は？",
+      "answer": "女真文字",
+      "explanation": "女真族の文字。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-chu-nom::core",
+      "knowledgeId": "ch-chu-nom",
+      "type": "context",
+      "question": "ベトナムで漢字を母体に成立した独自の文字は？",
+      "answer": "チュノム（字喃）",
+      "explanation": "ベトナム語を表記する漢字系の文字。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-hunminjeongeum::core",
+      "knowledgeId": "ch-hunminjeongeum",
+      "type": "context",
+      "question": "15世紀に朝鮮王朝の世宗が制定した表音文字は？",
+      "answer": "訓民正音（ハングル）",
+      "explanation": "朝鮮語を表記する文字。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-king-sejong::core",
+      "knowledgeId": "ch-king-sejong",
+      "type": "achievement-person",
+      "question": "1446年に訓民正音を公布した朝鮮王朝の国王は？",
+      "answer": "世宗",
+      "explanation": "朝鮮王朝第4代の国王。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-orkhon-script::core",
+      "knowledgeId": "ch-orkhon-script",
+      "type": "context",
+      "question": "オルホン碑文に使われた古代トルコ系遊牧民の文字は？",
+      "answer": "突厥文字",
+      "explanation": "古代トルコ語の文字。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-orkhon-inscriptions::core",
+      "knowledgeId": "ch-orkhon-inscriptions",
+      "type": "context",
+      "question": "突厥文字で記された、北アジアの遊牧民の記念碑文は？",
+      "answer": "オルホン碑文",
+      "explanation": "古代トルコ系遊牧民の碑文。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-uyghur-script::core",
+      "knowledgeId": "ch-uyghur-script",
+      "type": "context",
+      "question": "ソグド文字から発達しモンゴル文字などの母体となった文字は？",
+      "answer": "ウイグル文字",
+      "explanation": "ウイグル人の文字。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-mongolian-script::core",
+      "knowledgeId": "ch-mongolian-script",
+      "type": "context",
+      "question": "13世紀にウイグル文字を母体にモンゴル語の表記に用いられた文字は？",
+      "answer": "モンゴル文字",
+      "explanation": "モンゴル語の文字。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-phags-pa-script::core",
+      "knowledgeId": "ch-phags-pa-script",
+      "type": "context",
+      "question": "フビライの命令でチベット文字をもとに作られた文字は？",
+      "answer": "パスパ文字",
+      "explanation": "元代に作られた文字。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kublai::core",
+      "knowledgeId": "ch-kublai",
+      "type": "achievement-person",
+      "question": "パスパ文字の制定を命じた元の初代皇帝は？",
+      "answer": "フビライ",
+      "explanation": "モンゴル帝国の大ハンで元の世祖。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-manchu-script::core",
+      "knowledgeId": "ch-manchu-script",
+      "type": "context",
+      "question": "ヌルハチの時代にモンゴル文字をもとに制定された文字は？",
+      "answer": "満州文字",
+      "explanation": "満州語の文字。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-nurhaci::core",
+      "knowledgeId": "ch-nurhaci",
+      "type": "achievement-person",
+      "question": "満州文字の制定を命じた後金の建国者は？",
+      "answer": "ヌルハチ",
+      "explanation": "清の前身の後金を建国した。",
+      "updatedAt": "2026-11-09T14:27:31.871Z",
       "version": 1,
       "deleted": false
     }
