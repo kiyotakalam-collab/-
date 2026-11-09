@@ -115,18 +115,46 @@ export function yearPriority(progress:YearProgress|undefined, at=Date.now()):num
   const idle=progress.lastAt?Math.max(0,(at-Date.parse(progress.lastAt))/86400000):0;
   return recentFailure*10+Math.min(20,overdue)+Math.min(5,idle/14)+Math.min(1,progress.wrong/20)-Math.min(3,progress.streak*.4);
 }
+function regionId(region:string):string {
+  // Stable ASCII identifier for a geographic group; never depends on array order.
+  return [...new TextEncoder().encode(region)].map(byte=>byte.toString(16).padStart(2,'0')).join('');
+}
 export function selectYearQuestions(catalog:YearCatalog, reviews:YearReview[], filter:YearFilter, at=Date.now()):YearQuestion[] {
   const progress=yearProgress(reviews);
+  const available=catalog.items.filter(item=>!item.deleted
+    && (filter.level==='all'||item.level===filter.level)
+    && (filter.region==='all'||item.region===filter.region)
+    && (filter.era==='all'||item.era===filter.era));
   const questions:YearQuestion[]=[];
-  for(const item of catalog.items){
-    if(item.deleted || (filter.level!=='all' && item.level!==filter.level) || (filter.region!=='all' && item.region!==filter.region) || (filter.era!=='all' && item.era!==filter.era))continue;
-    for(const direction of (filter.direction==='both'?['event-year','year-event']:[filter.direction]) as YearDirection[]){
-      const id=questionId(item.id,direction),p=progress.get(id);
-      if(filter.mode==='unseen'&&p||filter.mode==='mistakes'&&(!p||!p.wrong)||filter.mode==='due'&&(!p||p.dueAt>at))continue;
-      questions.push({id,item,direction,prompt:direction==='event-year'?item.event+' は何年？':item.year+'：'+item.region+'・'+item.era+'で起きた出来事は？',answer:direction==='event-year'?item.year:item.event});
+  const include=(id:string)=>{
+    const p=progress.get(id);
+    return !(filter.mode==='unseen'&&p || filter.mode==='mistakes'&&(!p||!p.wrong) || filter.mode==='due'&&(!p||p.dueAt>at));
+  };
+  if(filter.direction==='event-year'||filter.direction==='both'){
+    for(const item of available){
+      const id=questionId(item.id,'event-year');
+      if(include(id))questions.push({id,item,direction:'event-year',prompt:item.event+' は何年？',answer:item.year});
     }
   }
-  return filter.mode==='weak'?questions.sort((a,b)=>yearPriority(progress.get(b.id),at)-yearPriority(progress.get(a.id),at)||a.id.localeCompare(b.id)):questions;
+  if(filter.direction==='year-event'||filter.direction==='both'){
+    // A date can have many valid events. Group by year + region to avoid
+    // identical questions claiming one of multiple equally correct answers.
+    const groups=new Map<string,YearItem[]>();
+    for(const item of available) {
+      const key=item.year+'|'+item.region;
+      const group=groups.get(key)||[];
+      group.push(item);
+      groups.set(key,group);
+    }
+    for(const members of groups.values()){
+      const item=members[0];
+      const id=questionId('group-'+item.year+'-'+regionId(item.region),'year-event');
+      if(!include(id))continue;
+      const answers=[...new Set(members.map(x=>x.event))];
+      questions.push({id,item,direction:'year-event',prompt:item.year+'年（'+item.region+'）に起きた出来事を1つ答えよ',answer:answers.join(' ／ ')});
+    }
+  }
+  return questions;
 }
 const DB_NAME='world-history-year-test'; // separate from cultural-history-master
 export class YearDB {
