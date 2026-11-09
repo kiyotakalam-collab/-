@@ -10,4 +10,67 @@
 :root{--muted:#6e7f71}
 .page-heading p,.stat-note,.panel-note,.history-question>span:last-child,.study-hint,.card-past,.library-item small,.settings-panel p,.data-summary,.source-details{color:#6d7e6c}
 .load-more,[data-history-more]{margin-top:20px}
+/* Large radio cards make levels and their included range visible together. */
+.level-picker,.level-range-picker{border:0;padding:0;margin:0;min-width:0}
+.level-picker>legend,.level-range-picker>legend{font-size:15px;font-weight:650;color:#3f5d4b;padding:0;margin-bottom:7px}
+.level-picker-help{font-size:12px;color:#6e7f71;margin:0 0 17px;line-height:1.8}
+.level-option-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:12px}
+.level-option{display:block;position:relative;cursor:pointer;min-width:0}
+.level-option>input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;z-index:1;cursor:pointer}
+.level-option-body{display:flex;flex-direction:column;gap:9px;min-height:153px;background:#fff;border:1px solid #dce4d8;border-radius:7px;padding:16px;color:#4c6652;transition:background .15s,border-color .15s}
+.level-option-heading{display:flex;align-items:center;justify-content:space-between;gap:7px;min-height:23px}
+.level-option-heading>strong{font-size:14px;font-weight:600}
+.level-option .level-tag{font-size:12px;padding:3px 9px}
+.selection-check{height:20px;width:20px;flex:0 0 20px;display:grid;place-items:center;border-radius:50%;border:1px solid #cad5c4;background:#fff;color:transparent}
+.selection-check>.icon{width:14px;height:14px}
+.level-option-name{font-size:16px;font-weight:600;line-height:1.6}
+.level-option-caption{font-size:12px;line-height:1.7;color:#6d7f6e}
+.level-option-count{font-size:12px;color:#74866b;margin-top:auto}
+.level-option>input:checked+.level-option-body{background:#edf4e9;border:2px solid #64865a;padding:15px;box-shadow:0 0 0 1px #64865a12}
+.level-option>input:checked+.level-option-body .selection-check{color:#fff;background:#4e7544;border-color:#4e7544}
+.level-option>input:focus-visible+.level-option-body{outline:3px solid #8ca77d;outline-offset:3px}
+.level-option:hover>.level-option-body{border-color:#94ab87}
+.level-option-all .level-option-body{min-height:76px;display:grid;grid-template-columns:1fr auto;gap:3px 15px;padding:14px 17px}
+.level-option-all .level-option-heading{grid-column:1;grid-row:1}
+.level-option-all .level-option-caption{grid-column:1;grid-row:2}
+.level-option-all .level-option-count{grid-column:2;grid-row:1 / 3;align-self:center;margin:0;font-size:14px;min-width:38px;text-align:right}
+.level-option-all>input:checked+.level-option-body{padding:13px 16px}
+.level-classification-note{font-size:11px;line-height:1.8;color:#7a8872;margin:14px 0 0}
+.level-range-picker{padding-top:24px;margin-top:23px;border-top:1px solid #e7ecdf}
+.level-range-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.range-option .level-option-body{min-height:117px;padding:16px}
+.range-option>input:checked+.level-option-body{padding:15px}
+.range-option-target{font-size:15px;font-weight:600;color:#3f6341}
+.level-range-help{font-size:12px;color:#6e7f71;line-height:1.9;margin:14px 0 0}
+.selected-scope{display:flex;align-items:center;gap:15px;flex-wrap:wrap;border-radius:5px;padding:14px 16px;background:#f5f7f0;margin:21px 0 24px;line-height:1.7}
+.selected-scope>span{font-size:11px;color:#7e8c75}
+.selected-scope>strong{font-size:13px;font-weight:550;color:#47633f}
+.study-mode-field{max-width:340px}
+@media(max-width:1120px){.level-option-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+  .level-picker>legend,.level-range-picker>legend{font-size:15px}
+  .level-picker-help{font-size:12px;margin-bottom:14px}
+  .level-option-grid{gap:10px;margin-top:10px}
+  .level-option-body{min-height:162px;padding:13px;gap:8px}
+  .level-option>input:checked+.level-option-body{padding:12px}
+  .level-option-name{font-size:15px}
+  .level-option-caption,.level-option-count{font-size:12px}
+  .level-option-heading>strong{font-size:13px}
+  .level-option .level-tag{font-size:12px;padding:3px 8px}
+  .level-option-all .level-option-body{min-height:81px;padding:14px}
+  .level-option-all>input:checked+.level-option-body{padding:13px}
+  .level-option-all .level-option-heading>strong{font-size:14px}
+  .level-classification-note{font-size:11px;margin-top:13px}
+  .level-range-picker{margin-top:20px;padding-top:22px}
+  .level-range-grid{gap:10px}
+  .range-option .level-option-body{min-height:137px;padding:13px}
+  .range-option>input:checked+.level-option-body{padding:12px}
+  .range-option-target{font-size:14px}
+  .range-option .level-option-heading{align-items:flex-start;gap:4px}
+  .range-option .level-option-heading>strong{font-size:12px;line-height:1.8}
+  .level-range-help{font-size:12px}
+  .selected-scope{gap:3px 11px;padding:13px;margin:18px 0 23px}
+  .selected-scope>strong{font-size:13px}
+  .study-mode-field{max-width:none}
+}
 @media(max-width:760px){.page-heading p{font-size:11px}.stat-title{font-size:11px}.stat-note{font-size:10px}.section-title .small,.panel-note,.today-panel>.small,.hero-note{font-size:10px}.level-name,.quick-row>span{font-size:12px}.level-count>span,.quick-row small{font-size:10px}.form-field,input:not([type=radio]):not([type=checkbox]):not([type=file]),select{font-size:13px}.choice-chip>span{font-size:12px;min-height:42px}.filter-field legend{font-size:13px}.filter-field legend span,.filter-field .small{font-size:10px}.setup-bottom .small{font-size:10px}.flashcard h1{font-size:22px}.answer-area p{font-size:13px;line-height:1.9}.source-details{font-size:11px}.grade{font-size:12px}.study-hint,.card-past,.study-meta{font-size:10px}.library-item small{font-size:10px}.history-question>span:last-child{font-size:11px}.settings-panel p{font-size:12px}.settings-panel .small{font-size:11px}.settings-panel .button{font-size:12px}.empty-inline p{font-size:11px}.empty-inline p>span{font-size:10px}.notice{font-size:11px}}

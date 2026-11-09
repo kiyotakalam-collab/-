@@ -50,7 +50,7 @@ function harness() {
 describe('Apps Script exporter (local service stubs)', () => {
   it('publishes typed Catalog compatible with frontend validation', () => {
     const {context} = harness();
-    expect(context.publishCatalog().version).toBe(2);
+    expect(context.publishCatalog().version).toBe(3);
     const catalog = JSON.parse(context.doGet().text);
     expect(validateCatalog(catalog).items[0].deleted).toBe(false);
     expect(catalog.items[0].level).toBe(1);
@@ -87,8 +87,8 @@ describe('Apps Script exporter (local service stubs)', () => {
   it('supports tombstones and version publication, and beginEdit stops serving', () => {
     const {context, item, card} = harness();
     item[17] = 'TRUE'; card[10] = 'TRUE';
-    expect(context.publishCatalog().version).toBe(2);
     expect(context.publishCatalog().version).toBe(3);
+    expect(context.publishCatalog().version).toBe(4);
     expect(JSON.parse(context.doGet().text).cards[0].deleted).toBe(true);
     context.beginEdit();
     expect(JSON.parse(context.doGet().text).error).toBe('catalog_unavailable');

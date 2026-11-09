@@ -2,7 +2,7 @@
 
 ## GitHub Pages
 
-接続先は [`kiyotakalam-collab/-`](https://github.com/kiyotakalam-collab/-) です。2026年11月9日にPrivate・書き込み可能・Pages未設定を確認しました。この連携ではPages設定APIの読み取りが403となるため、管理者が [Settings → Pages](https://github.com/kiyotakalam-collab/-/settings/pages) でSourceを **GitHub Actions** に設定してください。アップグレード表示が出る場合は、現在のプランでPrivateリポジトリのPagesを利用できません。リポジトリの公開範囲や契約プランは変更していません。
+接続先は [`kiyotakalam-collab/-`](https://github.com/kiyotakalam-collab/-) です。ユーザーがPublic化とSourceのGitHub Actions設定を行い、2026年11月9日に[初回公開](https://github.com/kiyotakalam-collab/-/actions/runs/42582010094)が成功しました。公開URLは https://kiyotakalam-collab.github.io/-/ です。以後はmainへの変更で自動公開します。
 
 このプロジェクトは静的ファイルだけで動作し、`npm run build` の出力先は `dist/` です。Viteの `base: './'` と相対Manifest・Service Workerにより、GitHub Pagesのリポジトリ配下のURLにも配置できます。認証情報や独自バックエンドは必要ありません。
 
