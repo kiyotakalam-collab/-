@@ -1,6 +1,6 @@
 import {
-  EMPTY_YEARS, fetchYearCatalog, openYearDatabase, questionId,
-  selectYearQuestions, yearProgress, type YearDB, type YearDirection,
+  EMPTY_YEARS, fetchYearCatalog, openYearDatabase,
+  selectYearQuestions, yearProgress, type YearDB,
   type YearFilter, type YearQuestion, type YearSnapshot, type YearStudyMode,
 } from './years';
 
@@ -58,7 +58,7 @@ export class YearTestUI {
   }
   private setup(){
     const items=this.liveItems(), count=this.questions().length;
-    const options=(values:[string,string][],name:string,current:string)=>values.map(([value,label])=>`<option value="${h(value)}" ${current===value?'selected':''}>${h(label)}</option>`).join('');
+    const options=(values:[string,string][],current:string)=>values.map(([value,label])=>`<option value="${h(value)}" ${current===value?'selected':''}>${h(label)}</option>`).join('');
     const regions=[...new Set(items.map(x=>x.region))].sort();
     const eras=[...new Set(items.map(x=>x.era))].sort();
     const filters=`<form id="year-options" class="panel year-setup">
