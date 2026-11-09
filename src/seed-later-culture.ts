@@ -3,7 +3,7 @@ import type { Card, KnowledgeItem } from './types';
 /** 2026-11-09提出画像10枚（西洋美術・音楽・哲学・経済・科学）。
  * 史実・難易度の検証状態は各項目に記録。写真の著作物は再配布しない。
  */
-export const laterCultureUpdatedAt = "2026-11-09T09:52:12.332Z";
+export const laterCultureUpdatedAt = "2026-11-09T09:54:16.876Z";
 export const laterCultureItems: KnowledgeItem[] = [
   {
     "id": "a-neoclassical",
@@ -951,7 +951,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     "level": 2,
     "relatedPeople": [],
     "relatedWorks": [],
-    "description": "フランスの作曲家。交響詩『海』や組曲『子供の領分』で知られる。",
+    "description": "フランスの作曲家。管弦楽作品『海』や組曲『子供の領分』で知られる。",
     "images": [],
     "sources": [
       {
@@ -961,8 +961,8 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:52:12.332Z",
-    "version": 1,
+    "updatedAt": "2026-11-09T09:54:16.876Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -3355,11 +3355,11 @@ export const laterCultureCards: Card[] = [
     "id": "ph4-mu-debussy-01",
     "knowledgeId": "mu-debussy",
     "type": "achievement-person",
-    "question": "交響詩『海』を作曲した人物は？",
+    "question": "管弦楽作品『海』を作曲した人物は？",
     "answer": "ドビュッシー",
-    "explanation": "フランスの作曲家。交響詩『海』や組曲『子供の領分』で知られる。",
-    "updatedAt": "2026-11-09T09:52:12.332Z",
-    "version": 1,
+    "explanation": "フランスの作曲家。管弦楽作品『海』や組曲『子供の領分』で知られる。",
+    "updatedAt": "2026-11-09T09:54:16.876Z",
+    "version": 2,
     "deleted": false
   },
   {
