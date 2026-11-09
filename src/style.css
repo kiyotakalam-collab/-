@@ -74,3 +74,78 @@
   .study-mode-field{max-width:none}
 }
 @media(max-width:760px){.page-heading p{font-size:11px}.stat-title{font-size:11px}.stat-note{font-size:10px}.section-title .small,.panel-note,.today-panel>.small,.hero-note{font-size:10px}.level-name,.quick-row>span{font-size:12px}.level-count>span,.quick-row small{font-size:10px}.form-field,input:not([type=radio]):not([type=checkbox]):not([type=file]),select{font-size:13px}.choice-chip>span{font-size:12px;min-height:42px}.filter-field legend{font-size:13px}.filter-field legend span,.filter-field .small{font-size:10px}.setup-bottom .small{font-size:10px}.flashcard h1{font-size:22px}.answer-area p{font-size:13px;line-height:1.9}.source-details{font-size:11px}.grade{font-size:12px}.study-hint,.card-past,.study-meta{font-size:10px}.library-item small{font-size:10px}.history-question>span:last-child{font-size:11px}.settings-panel p{font-size:12px}.settings-panel .small{font-size:11px}.settings-panel .button{font-size:12px}.empty-inline p{font-size:11px}.empty-inline p>span{font-size:10px}.notice{font-size:11px}}
+
+/* Independent chronology quiz: its stats, catalog, and answers never mix with culture cards. */
+.year-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0 20px}
+.year-stats>div{background:#fff;border:1px solid #e5e8df;border-radius:10px;padding:19px 20px;display:flex;flex-direction:column;gap:8px}
+.year-stats span{font-size:12px;color:#869084}
+.year-stats strong{font-family:var(--serif);font-weight:550;font-size:29px;color:#284d43}
+.year-stats small{font-family:Inter,sans-serif;font-size:12px;font-weight:400;margin-left:5px;color:#89938c}
+.year-tabs{display:flex;gap:10px;margin-bottom:19px;border-bottom:1px solid #e0e5dc}
+.year-tabs button{background:transparent;padding:10px 16px 12px;border-bottom:2px solid transparent;font-weight:500;color:#7b897d}
+.year-tabs button.active{border-color:#335b47;color:#315a42}
+.year-setup,.year-list,.year-empty,.year-sync,.year-finished{border-radius:10px;padding:27px;margin-bottom:19px}
+.year-empty{background:#f4f6f1;border:1px solid #e4e9e1}
+.year-empty h2{font-size:18px;color:#3a6147;margin-bottom:7px}
+.year-empty p{font-size:13px;max-width:680px;line-height:1.9;margin:0 0 7px}
+.year-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px 25px}
+.year-form-grid .form-field{font-size:13px}
+.year-setup-bottom{margin-top:25px;border-top:1px solid #e6eae4;padding-top:20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.year-setup-bottom span{color:#778579;font-size:13px}
+.year-setup-bottom span strong{font-size:24px;color:#305942;margin:0 6px}
+.year-sync{display:flex;align-items:center;justify-content:space-between;gap:25px}
+.year-sync strong{font-size:15px}
+.year-sync p{margin:7px 0 4px;max-width:600px}
+.year-tools{display:flex;gap:8px;flex-wrap:wrap}
+.year-import{position:relative;cursor:pointer}
+.year-import input{position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}
+.year-session-head{display:flex;align-items:center;justify-content:space-between;margin:15px 0;color:#7c8b80;font-size:13px}
+.year-track{height:5px;background:#e5ece2;border-radius:9px;margin:0 0 22px;overflow:hidden}
+.year-track>span{display:block;height:100%;background:#799779;transition:width .15s}
+.year-flashcard{border-radius:12px;text-align:center;min-height:335px;padding:35px;display:flex;flex-direction:column;align-items:stretch}
+.year-meta{font-size:12px;color:#78887b;text-align:left;display:flex;align-items:center;gap:7px;margin:8px 0 31px}
+.year-prompt{font-family:var(--serif);font-size:27px;font-weight:550;line-height:1.7;margin:0 auto 45px;max-width:740px}
+.year-reveal{display:block;max-width:750px;width:100%;border:1px solid #e4e9dc;border-radius:7px;padding:28px 12px;background:#f2f6ee;color:#547453;font-size:14px;margin:auto auto 0}
+.year-reveal:hover{background:#e8efe2}
+.year-answer{border-top:1px solid #e3e9e0;padding:30px 0 10px;text-align:center}
+.year-answer>strong{font-family:var(--serif);font-size:33px;font-weight:550;color:#416a4e;display:block;margin:11px 0 16px}
+.year-answer p{font-size:13px;line-height:1.9}
+.year-answer details{text-align:left;font-size:12px;color:#647468;margin-top:19px}
+.year-answer details a{color:#355e48;text-decoration:underline}
+.year-past{margin:19px 0 25px;padding:17px 0;border-top:1px solid #e2e8e0;font-size:12px;color:#78867a;text-align:center}
+.year-finished{text-align:center;padding:46px 20px}
+.year-finished h2{font-family:var(--serif);font-size:24px;margin:13px 0 24px}
+.year-result{display:flex;justify-content:center;gap:23px;margin-bottom:23px}
+.year-result strong{font-size:19px;color:#335940}
+.year-list .section-title{margin-bottom:18px}
+.year-list #year-search{width:100%;margin-bottom:16px}
+.year-list-item{border-bottom:1px solid #e4eae0;padding:13px 2px}
+.year-list-item summary{display:flex;gap:12px;align-items:center;cursor:pointer;flex-wrap:wrap}
+.year-list-item summary span{color:#386b4e;font-size:14px;font-weight:650;min-width:80px}
+.year-list-item summary strong{flex:1;font-size:13px}
+.year-list-item summary small{font-size:11px;color:#7b887c}
+.year-list-item p{margin:10px 0 6px;font-size:12px}
+.year-empty-inline{text-align:center;padding:42px 10px;color:#839087}
+.year-history-row{border-top:1px solid #e6eae4;display:flex;align-items:center;gap:12px;padding:14px 0}
+.year-history-row span{flex:1}
+.year-history-row small{color:#7b897d}
+.year-history-row strong{white-space:nowrap;color:#41624b}
+@media(max-width:760px){
+ .mobile-nav .nav-item{font-size:7px;gap:3px;padding:7px 1px 5px}
+ .year-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .year-stats>div{padding:13px}
+ .year-stats strong{font-size:24px}
+ .year-tabs{gap:2px}.year-tabs button{flex:1;padding:10px 4px;font-size:11px}
+ .year-setup,.year-list,.year-empty,.year-sync{padding:19px}
+ .year-form-grid{grid-template-columns:1fr;gap:13px}
+ .year-setup-bottom{flex-direction:column;align-items:stretch}
+ .year-sync{flex-direction:column;align-items:stretch}
+ .year-tools{flex-direction:column}
+ .year-flashcard{min-height:300px;padding:21px 18px}
+ .year-meta{font-size:10px;flex-wrap:wrap}
+ .year-prompt{font-size:21px;margin:6px auto 35px}
+ .year-answer>strong{font-size:26px}
+ .year-result{gap:13px;flex-wrap:wrap}
+ .year-result strong{font-size:15px}
+ .year-history-row{font-size:11px}
+}
