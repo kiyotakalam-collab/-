@@ -108,7 +108,9 @@ export function validateCatalog(input: unknown, allowMissingReferences = false):
       if (!owner) fail(`カードの参照先がありません: ${entry.id}`);
       if (!entry.deleted && !owner.deleted && entry.imageId && !owner.images.some(x => x.id === entry.imageId)) fail(`カードの画像がありません: ${entry.id}`);
       if (!entry.deleted && !owner.deleted) {
-        const signature = `${entry.knowledgeId}|${entry.type}|${normalizeName(entry.question)}|${normalizeName(entry.answer)}`;
+        // Distinct works can legitimately share the same 'Who painted this?' question.
+        // Use the image ID for visual card identity; still reject duplicates for the same image.
+        const signature = `${entry.knowledgeId}|${entry.type}|${entry.type === 'image' ? entry.imageId : ''}|${normalizeName(entry.question)}|${normalizeName(entry.answer)}`;
         if (signatures.has(signature)) fail(`同じ内容のカードが重複しています: ${entry.id}`);
         signatures.add(signature);
       }
