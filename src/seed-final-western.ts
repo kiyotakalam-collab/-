@@ -4,7 +4,7 @@ import type { Card, KnowledgeItem } from './types';
  * 不正確だったアインシュタインの原爆計画参加説・ピアリの初到達断定は修正。
  * 過去問を用いた難易度検証は未実施のため全件暫定。
  */
-export const finalWesternUpdatedAt = "2026-11-09T09:58:42.967Z";
+export const finalWesternUpdatedAt = "2026-11-09T10:00:23.069Z";
 export const finalWesternItems: KnowledgeItem[] = [
   {
     "id": "s-faraday",
@@ -23,12 +23,17 @@ export const finalWesternItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史／科学・探検",
         "note": "2026年11月9日送付写真1/2。公開用に独立した問題文・説明を作成。"
+      },
+      {
+        "title": "スミソニアン図書館：ファラデーの電磁誘導の原論文",
+        "url": "https://library.si.edu/digital-library/book/oninductionofele00fara",
+        "note": "原典・専門機関の説明で主要な業績を照合。"
       }
     ],
     "difficultyEvidence": "暫定分類：大学別2026年度出題実績の比較検証は未実施。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:58:42.967Z",
-    "version": 1,
+    "verification": "verified",
+    "updatedAt": "2026-11-09T10:00:23.069Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -48,12 +53,17 @@ export const finalWesternItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史／科学・探検",
         "note": "2026年11月9日送付写真1/2。公開用に独立した問題文・説明を作成。"
+      },
+      {
+        "title": "英国物理学会：エネルギー保存則の歴史",
+        "url": "https://spark.iop.org/collections/law-conservation-energy",
+        "note": "原典・専門機関の説明で主要な業績を照合。"
       }
     ],
     "difficultyEvidence": "暫定分類：大学別2026年度出題実績の比較検証は未実施。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:58:42.967Z",
-    "version": 1,
+    "verification": "verified",
+    "updatedAt": "2026-11-09T10:00:23.069Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -73,12 +83,17 @@ export const finalWesternItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史／科学・探検",
         "note": "2026年11月9日送付写真1/2。公開用に独立した問題文・説明を作成。"
+      },
+      {
+        "title": "スタンフォード哲学百科：ヘルムホルツ",
+        "url": "https://plato.stanford.edu/entries/hermann-helmholtz/",
+        "note": "原典・専門機関の説明で主要な業績を照合。"
       }
     ],
     "difficultyEvidence": "暫定分類：大学別2026年度出題実績の比較検証は未実施。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:58:42.967Z",
-    "version": 1,
+    "verification": "verified",
+    "updatedAt": "2026-11-09T10:00:23.069Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -268,12 +283,17 @@ export const finalWesternItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史／科学・探検",
         "note": "2026年11月9日送付写真1/2。公開用に独立した問題文・説明を作成。"
+      },
+      {
+        "title": "パスツール研究所公式：1885年の狂犬病ワクチン",
+        "url": "https://www.pasteur.fr/en/taxonomy/term/115/history-first-rabies-vaccination-1885",
+        "note": "原典・専門機関の説明で主要な業績を照合。"
       }
     ],
     "difficultyEvidence": "暫定分類：大学別2026年度出題実績の比較検証は未実施。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:58:42.967Z",
-    "version": 1,
+    "verification": "verified",
+    "updatedAt": "2026-11-09T10:00:23.069Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -293,12 +313,17 @@ export const finalWesternItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史／科学・探検",
         "note": "2026年11月9日送付写真1/2。公開用に独立した問題文・説明を作成。"
+      },
+      {
+        "title": "ノーベル賞公式：コッホの結核研究",
+        "url": "https://www.nobelprize.org/prizes/medicine/1905/summary/",
+        "note": "原典・専門機関の説明で主要な業績を照合。"
       }
     ],
     "difficultyEvidence": "暫定分類：大学別2026年度出題実績の比較検証は未実施。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:58:42.967Z",
-    "version": 1,
+    "verification": "verified",
+    "updatedAt": "2026-11-09T10:00:23.069Z",
+    "version": 2,
     "deleted": false
   },
   {
@@ -408,12 +433,17 @@ export const finalWesternItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史／科学・探検",
         "note": "2026年11月9日送付写真1/2。公開用に独立した問題文・説明を作成。"
+      },
+      {
+        "title": "メルセデス・ベンツ公式：ゴットリープ・ダイムラー",
+        "url": "https://group.mercedes-benz.com/company/tradition/founders-pioneers/gottlieb-daimler.html",
+        "note": "原典・専門機関の説明で主要な業績を照合。"
       }
     ],
     "difficultyEvidence": "暫定分類：大学別2026年度出題実績の比較検証は未実施。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:58:42.967Z",
-    "version": 1,
+    "verification": "verified",
+    "updatedAt": "2026-11-09T10:00:23.069Z",
+    "version": 2,
     "deleted": false
   },
   {
