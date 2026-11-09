@@ -174,6 +174,8 @@ test('大きなレベル選択で累積・単独を切り替え、他条件の�
 });
 
 test('旧版で学習済みの端末でも問題文だけを更新し、累積誤答と全回答を保持する', async ({page}) => {
+  // Isolate the bundled-data migration from a newer live mirror publication.
+  await page.route('**/catalog-delta.json*',route=>route.fulfill({contentType:'application/json',body:JSON.stringify({schemaVersion:1,version:seedCatalog.version,updatedAt:seedCatalog.updatedAt,items:[],cards:[]})}));
   const originalQuestion='叙事詩『イリアス』の作者と伝統的にされる古代ギリシアの詩人は？';
   const homer=structuredClone(seedCatalog.items.find(item=>item.id==='gr-homer')!);
   const oldCard={...structuredClone(seedCatalog.cards.find(card=>card.id==='gr-homer-iliad-author')!),question:originalQuestion,version:1,updatedAt:'2026-11-09T00:00:00.000Z'};
