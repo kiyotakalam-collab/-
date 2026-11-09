@@ -1,5 +1,26 @@
 # Google Sheets・ChatGPT連携
 
+
+## 現行の接続方式：GitHub JSONミラー（Apps Scriptは不要）
+
+2026年11月9日から、次の構成を使用する。以前のApps Scriptによる`initializeMaster`・`publishCatalog`・`/exec`の作業は行わなくてよい。
+
+- **Google Sheets**：[世界史文化史マスター｜追加・修正用データ](https://docs.google.com/spreadsheets/d/1RYkYvk82hqNEIgNGx-xd5B64byQbVaXw087-8F-C78U/edit)。タブは `Knowledge`, `Cards`, `Meta`, `使い方`。
+- **公開差分データ**：`public/catalog-delta.json`。2026-11-09時点でv12、`items:[]`, `cards:[]`。
+- **アプリ**：v1.4.0で`https://raw.githubusercontent.com/kiyotakalam-collab/-/main/public/catalog-delta.json`を標準同期先として自動取得する。
+- **写真登録時**：ChatGPTが写真から用語候補を抽出し、出典・著作権・既存ID・難易度を検証してSheetsの対象行を編集する。次に同内容を公開JSONへ反映する。JSONのカタログ全体versionを1ずつ上げる。途中の未検証行は公開しない。
+- **履歴保全**：公開JSONは差分だけ。アプリはIndexedDBでマージし、過去の回答履歴を消さず、公開JSONへも送らない。
+- **重要な制限**：Sheetsの直接編集だけではGitHub JSONは自動更新されない。「文化史シートの変更をアプリに反映」とチャットで依頼して更新すること。これはApps Script不要な**ChatGPT経由の同期**であり、Google Sheetsの変更を常時監視するリアルタイム連携ではない。
+
+シート自体は非公開でよい。用語・問題文・画像出典の**公開JSON**は誰でも閲覧可能なので、個人情報、学習履歴、教材の紙面画像や無断転載した原文は入れない。アプリ更新後は、データ管理から同期結果がv12以上になり、既存365項目・506カードが保持されることを確認する。
+
+---
+
+## 旧方式：Apps Script公開手順（現行構成では使用しない）
+
+以下は過去の構成の参考資料。現在の運用では実施不要。
+
+
 ## 2026-11-09：文化史専用の差分マスターを接続する最短手順
 
 現行アプリは **教材v11（365項目・506カード）**。新規作成済みのSheetsは、この既存データをコピーして上書きするのではなく、今後の追加・訂正行だけを持つ **差分マスター** として運用する。3タブの列構成は、`Knowledge` 18列・`Cards` 11列・`Meta` 2列（`使い方`は参考用）。
