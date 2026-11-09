@@ -198,4 +198,4 @@ const cards: Card[] = [
     '現存する建物はハドリアヌス帝時代に完成した。アテネのパルテノン神殿と区別する。'),
 ];
 
-export const seedCatalog: Catalog = { schemaVersion: 1, version: 9, updatedAt: finalWesternUpdatedAt, items: [...items, ...photoItems, ...additionalPhotoItems, ...modernItems, ...laterCultureItems, ...finalWesternItems], cards: [...cards, ...photoCards, ...additionalPhotoCards, ...modernCards, ...laterCultureCards, ...finalWesternCards] };
+export const seedCatalog: Catalog = { schemaVersion: 1, version: 10, updatedAt: finalWesternUpdatedAt, items: [...items, ...photoItems, ...additionalPhotoItems, ...modernItems, ...laterCultureItems, ...finalWesternItems], cards: [...cards, ...photoCards, ...additionalPhotoCards, ...modernCards, ...laterCultureCards, ...finalWesternCards] };
