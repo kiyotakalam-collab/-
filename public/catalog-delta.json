@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 14,
-  "updatedAt": "2026-11-09T14:09:51.032Z",
+  "version": 15,
+  "updatedAt": "2026-11-09T14:11:04.826Z",
   "items": [
     {
       "id": "eg-ra",
@@ -4060,6 +4060,106 @@
       "updatedAt": "2026-11-09T14:09:51.032Z",
       "version": 1,
       "deleted": false
+    },
+    {
+      "id": "me-grotefend",
+      "canonicalName": "グローテフェント",
+      "aliases": [],
+      "kind": "person",
+      "field": "文字・言語",
+      "region": "メソポタミア",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代ペルシア楔形文字解読を進めた研究者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（10枚中、第2枚目）。要点を独自の問題文に再構成。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：写真に掲載された事項。出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:11:04.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-persepolis",
+      "canonicalName": "ペルセポリス碑文",
+      "aliases": [],
+      "kind": "work",
+      "field": "文字・言語",
+      "region": "イラン",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アケメネス朝の古代ペルシア語碑文。",
+      "images": [],
+      "sources": [
+        {
+          "title": "『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（10枚中、第2枚目）。要点を独自の問題文に再構成。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：写真に掲載された事項。出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:11:04.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-babylonian-captivity",
+      "canonicalName": "バビロン捕囚",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教・歴史",
+      "region": "メソポタミア",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "前6世紀のユダ王国征服に関連する事件。",
+      "images": [],
+      "sources": [
+        {
+          "title": "『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（10枚中、第2枚目）。要点を独自の問題文に再構成。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：写真に掲載された事項。出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:11:04.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-zoroastrianism",
+      "canonicalName": "ゾロアスター教",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "イラン",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代イランで成立した宗教。",
+      "images": [],
+      "sources": [
+        {
+          "title": "『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（10枚中、第3枚目）。要点を独自の問題文に再構成。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：写真に掲載された事項。出題実績は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:11:04.826Z",
+      "version": 1,
+      "deleted": false
     }
   ],
   "cards": [
@@ -5809,6 +5909,50 @@
       "answer": "易姓革命",
       "explanation": "孟子などの思想に見られる王朝交替の正当化。",
       "updatedAt": "2026-11-09T14:09:51.032Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-grotefend::core",
+      "knowledgeId": "me-grotefend",
+      "type": "achievement-person",
+      "question": "ペルセポリス碑文の研究を通じて古代ペルシア楔形文字解読の端緒を開いたドイツ人は？",
+      "answer": "グローテフェント",
+      "explanation": "古代ペルシア楔形文字解読を進めた研究者。",
+      "updatedAt": "2026-11-09T14:11:04.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-persepolis::core",
+      "knowledgeId": "me-persepolis",
+      "type": "context",
+      "question": "グローテフェントが解読の端緒を開く際に研究した古代ペルシアの碑文は？",
+      "answer": "ペルセポリス碑文",
+      "explanation": "アケメネス朝の古代ペルシア語碑文。",
+      "updatedAt": "2026-11-09T14:11:04.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-babylonian-captivity::core",
+      "knowledgeId": "me-babylonian-captivity",
+      "type": "context",
+      "question": "新バビロニア王ネブカドネザル2世がユダ王国の人々をバビロンへ連行した出来事は？",
+      "answer": "バビロン捕囚",
+      "explanation": "前6世紀のユダ王国征服に関連する事件。",
+      "updatedAt": "2026-11-09T14:11:04.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-zoroastrianism::core",
+      "knowledgeId": "ir-zoroastrianism",
+      "type": "context",
+      "question": "アフラ＝マズダを善の神とし、善悪の対立や最後の審判を説く古代イランの宗教は？",
+      "answer": "ゾロアスター教",
+      "explanation": "古代イランで成立した宗教。",
+      "updatedAt": "2026-11-09T14:11:04.826Z",
       "version": 1,
       "deleted": false
     }
