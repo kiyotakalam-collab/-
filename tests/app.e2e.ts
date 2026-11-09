@@ -1,4 +1,4 @@
-import { test, expect, chromium, type Page } from '@playwright/test';
+import { test, expect, chromium, type Page, type BrowserContext } from '@playwright/test';
 import { readFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { createServer } from 'node:http';
@@ -7,6 +7,13 @@ import { DEFAULT_FILTER, type Catalog, type ReviewEvent, type StudyFilter } from
 import { selectCards } from '../src/core';
 const totalFor = (patch: Partial<StudyFilter>) => selectCards(seedCatalog, [], {...DEFAULT_FILTER, ...patch}).length;
 import { seedCatalog } from '../src/seed';
+
+async function stableCultureFixture(context:BrowserContext){
+  // These regressions exercise the bundled curriculum, independently of live
+  // publications. scope.e2e.ts separately loads the actual published delta.
+  await context.route('**/catalog-delta.json*',route=>route.fulfill({contentType:'application/json',body:JSON.stringify({schemaVersion:1,version:seedCatalog.version,updatedAt:seedCatalog.updatedAt,items:[],cards:[]})}));
+}
+test.beforeEach(async({context})=>{await stableCultureFixture(context);});
 
 async function boot(page: Page) {
   await page.goto('/');
@@ -248,6 +255,7 @@ test('JSONダウンロードを別端末相当の空DBに復元して全回答�
   const backup = JSON.parse(bytes.toString());
   expect(backup.events).toEqual(original.events);
   const fresh = await browser.newContext({viewport:{width:393,height:851}, isMobile:true,hasTouch:true});
+  await stableCultureFixture(fresh);
   const other=await fresh.newPage();
   await boot(other); await nav(other,'settings');
   await other.locator('#restore-file').setInputFiles({name:'backup.json',mimeType:'application/json',buffer:bytes});
@@ -405,6 +413,7 @@ test('GitHub Pages相当のサブディレクトリで起動・SWスコープ・
   await new Promise<void>(resolve=>server.listen(0,'127.0.0.1',resolve));
   const address=server.address();if(!address||typeof address==='string')throw new Error('local server address unavailable');
   const context=await browser.newContext({viewport:{width:393,height:851},isMobile:true,hasTouch:true});
+  await stableCultureFixture(context);
   try{
     const page=await context.newPage();
     await page.goto(`http://127.0.0.1:${address.port}/culture/`);
