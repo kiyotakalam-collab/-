@@ -1,6 +1,9 @@
 import './style.css';
 import './study-areas.css';
 import './year-area.css';
+import './culture-scope.css';
+import { renderCultureScope, availableRegionGroups } from './culture-picker';
+import { REGION_GROUPS, eraGroupsForRegions } from './culture-scope';
 import { version as appVersion } from '../package.json';
 import { openDatabase, type HistoryDB } from './db';
 import { getProgress, selectCards } from './core';
@@ -20,6 +23,8 @@ let db: HistoryDB;
 let state: AppState;
 let view: View = 'portal';
 let filter: StudyFilter = structuredClone(DEFAULT_FILTER);
+let detailScopeOpen = false;
+let fieldScopeOpen = false;
 let queue: Card[] = [];
 let position = 0;
 let revealed = false;
@@ -147,9 +152,12 @@ function setup(){
   const levelCounts=new Map<Level,number>(([1,2,3,4] as Level[]).map(level=>[level,0]));
   for(const card of activeCards()){const level=itemById.get(card.knowledgeId)!.level;levelCounts.set(level,levelCounts.get(level)!+1);}
   const range=filter.level==='all'?'Lv.1〜4 すべて':filter.levelMode==='single'?`Lv.${filter.level} ${levelNames[filter.level-1]}のみ`:`Lv.1〜${filter.level}まで`;
+  const regionLabels=(filter.regionGroups??[]).map(id=>REGION_GROUPS.find(g=>g.id===id)?.label).filter(Boolean);
+  const eraLabels=eraGroupsForRegions(availableRegionGroups(items,filter.regionGroups??[])).filter(o=>filter.eraGroups?.includes(o.id)).map(o=>o.label);
+  const scopeSummary=[regionLabels.join('・')||'全地域',eraLabels.join('・')||'全時代',range].join(' ／ ');
   const levelPicker=`<fieldset class="level-picker"><legend>難易度を選ぶ</legend><p class="level-picker-help">学びたい用語のレベルを選択してください。</p><label class="level-option level-option-all"><input type="radio" name="level" value="all" ${filter.level==='all'?'checked':''}><span class="level-option-body"><span class="level-option-heading"><strong>すべてのレベル</strong><span class="selection-check">${icon('check')}</span></span><span class="level-option-caption">Lv.1〜4をまとめて学習</span><span class="level-option-count">${activeCards().length}枚</span></span></label><div class="level-option-grid">${([1,2,3,4] as Level[]).map(level=>`<label class="level-option"><input type="radio" name="level" value="${level}" ${filter.level===level?'checked':''}><span class="level-option-body"><span class="level-option-heading"><span class="level-tag l${level}">Lv.${level}</span><span class="selection-check">${icon('check')}</span></span><strong class="level-option-name">${levelNames[level-1]}</strong><span class="level-option-caption">${level===4?'細かな用語・複数の手がかり':'人物・著作・用語を直接確認'}</span><span class="level-option-count">このレベル ${levelCounts.get(level)}枚</span></span></label>`).join('')}</div><p class="level-classification-note">難易度は用語の重要度・細かさで分類しています。初期教材は暫定分類です。</p></fieldset>`;
   const levelRange=`<fieldset class="level-range-picker ${filter.level==='all'?'hidden':''}"><legend>出題するレベルの範囲</legend><div class="level-range-grid"><label class="level-option range-option"><input type="radio" name="levelMode" value="cumulative" ${filter.levelMode==='cumulative'?'checked':''}><span class="level-option-body"><span class="level-option-heading"><strong>基礎からまとめて</strong><span class="selection-check">${icon('check')}</span></span><span class="range-option-target">Lv.1〜${filter.level==='all'?4:filter.level}から出題</span><span class="level-option-caption">累積モード</span></span></label><label class="level-option range-option"><input type="radio" name="levelMode" value="single" ${filter.levelMode==='single'?'checked':''}><span class="level-option-body"><span class="level-option-heading"><strong>このレベルだけ</strong><span class="selection-check">${icon('check')}</span></span><span class="range-option-target">Lv.${filter.level==='all'?4:filter.level}だけを出題</span><span class="level-option-caption">単独モード</span></span></label></div><p class="level-range-help">${filter.level===4?'Lv.1〜3は人物・著作・用語の直接確認、Lv.4は複数の手がかりからの確認も含みます。':'人物・著作・用語の対応を、短い問題で確認します。'}</p></fieldset>`;
-  return `<section class="page-heading"><div><div class="eyebrow">MAKE IT YOUR OWN</div><h1>学習する</h1><p>今日学びたい範囲を選びましょう。</p></div><button class="text-button" data-action="reset-filter">条件をリセット</button></section><form id="study-options" class="panel setup-panel">${levelPicker}${levelRange}<div class="selected-scope" role="status"><span>選択中の範囲</span><strong>${range}</strong></div><label class="form-field study-mode-field">出題モード<select name="mode">${Object.entries(modeNames).map(([v,t])=>`<option value="${v}" ${filter.mode===v?'selected':''}>${t}</option>`).join('')}</select></label>${choices('地域','regions',[...new Set(items.map(i=>i.region))])}${choices('時代','eras',[...new Set(items.map(i=>i.era))])}${choices('分野','fields',[...new Set(items.map(i=>i.field))])}<div class="form-columns"><label class="form-field">カードの種類<select name="cardType"><option value="all" ${filter.cardType==='all'?'selected':''}>文字・画像を混在</option><option value="text" ${filter.cardType==='text'?'selected':''}>文字問題のみ</option><option value="image" ${filter.cardType==='image'?'selected':''}>画像問題のみ</option></select></label><label class="form-field">1回の学習枚数<select name="limit">${['10','20','all'].map(n=>`<option value="${n}" ${sessionLimit===n?'selected':''}>${n==='all'?'対象すべて':n+'枚'}</option>`).join('')}</select></label></div><div class="setup-bottom"><div><strong>${count}<small> 枚が対象</small></strong><span class="small muted">未収録の地域・分野は、データ追加後に表示されます。</span></div><button type="submit" class="button primary" ${count?'':'disabled'}>この範囲で学習する${icon('arrow')}</button></div></form>`;
+  return `<section class="page-heading"><div><div class="eyebrow">MAKE IT YOUR OWN</div><h1>学習する</h1><p>今日学びたい範囲を選びましょう。</p></div><button class="text-button" data-action="reset-filter">条件をリセット</button></section><form id="study-options" class="panel setup-panel">${renderCultureScope(items,filter)}<details id="field-scope" class="scope-extra-fields" ${fieldScopeOpen?"open":""}><summary>分野で絞り込む（任意）${filter.fields.length?`<small>${filter.fields.length}分野を選択中</small>`:""}</summary>${choices("分野","fields",[...new Set(items.map(i=>i.field))])}</details><div class="scope-levels-label">難易度・出題方法</div>${levelPicker}${levelRange}<div class="selected-scope" role="status"><span>選択中の範囲</span><strong>${esc(scopeSummary)}</strong></div><label class="form-field study-mode-field">出題モード<select name="mode">${Object.entries(modeNames).map(([v,t])=>`<option value="${v}" ${filter.mode===v?'selected':''}>${t}</option>`).join('')}</select></label><details id="detail-scope" class="detail-scope" ${detailScopeOpen?'open':''}><summary>細かいテーマで絞る（任意）${filter.regions.length||filter.eras.length?' · 選択中':''}</summary><p>通常は上の大きな時代区分で選べます。教材の元の地域・テーマを指定したい場合だけ使います。</p>${choices('詳細な地域','regions',[...new Set(items.map(i=>i.region))])}${choices('教材のテーマ','eras',[...new Set(items.map(i=>i.era))])}</details><div class="form-columns"><label class="form-field">カードの種類<select name="cardType"><option value="all" ${filter.cardType==='all'?'selected':''}>文字・画像を混在</option><option value="text" ${filter.cardType==='text'?'selected':''}>文字問題のみ</option><option value="image" ${filter.cardType==='image'?'selected':''}>画像問題のみ</option></select></label><label class="form-field">1回の学習枚数<select name="limit">${['10','20','all'].map(n=>`<option value="${n}" ${sessionLimit===n?'selected':''}>${n==='all'?'対象すべて':n+'枚'}</option>`).join('')}</select></label></div><div class="setup-bottom"><div><strong>${count}<small> 枚が対象</small></strong><span class="small muted">${count?"選択した条件を組み合わせて出題します。":"この条件に合うカードはありません。地域・時代・分野などの条件を変更してください。"}</span></div><button type="submit" class="button primary" ${count?'':'disabled'}>この範囲で学習する${icon('arrow')}</button></div></form>`;
 }
 function study(){
   if(position>=queue.length){return `<div class="session-finished panel"><div class="finished-icon">${icon('check')}</div><div class="eyebrow">SESSION COMPLETE</div><h1>おつかれさまでした。</h1><p>今日の積み重ねが、明日の自信に。</p><div class="result-grid"><div><strong>${queue.length}</strong><span>回答したカード</span></div><div><strong>${pct(sessionCorrect,queue.length)}<small>%</small></strong><span>今回の正答率</span></div></div><p class="small muted">すべての回答を端末内に保存しました。</p><button class="button primary" data-nav="home">ホームに戻る${icon('arrow')}</button><button class="text-button" data-nav="setup">範囲を変えて学習する</button></div>`;}
@@ -217,7 +225,17 @@ async function start(mode?:StudyFilter['mode']) {
   if(!queue.length){toast('この条件に合うカードはありません。範囲を変更してください。');go('setup');return;}
   position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
 }
-function readOptions(form:HTMLFormElement){const f=new FormData(form);filter={mode:f.get('mode') as StudyFilter['mode'],level:f.get('level')==='all'?'all':Number(f.get('level')) as Level,levelMode:f.get('levelMode') as StudyFilter['levelMode'],regions:f.getAll('regions') as string[],eras:f.getAll('eras') as string[],fields:f.getAll('fields') as string[],cardType:f.get('cardType') as StudyFilter['cardType']};sessionLimit=String(f.get('limit'));}
+function readOptions(form:HTMLFormElement,changedName?:string){
+  const f=new FormData(form),regionGroups=f.getAll('regionGroups') as string[];
+  const allowed=new Set([...eraGroupsForRegions(availableRegionGroups(activeItems(),regionGroups)).map(o=>o.id),'unclassified']);
+  const regionChanged=changedName==='regionGroups';
+  filter={mode:f.get('mode') as StudyFilter['mode'],level:f.get('level')==='all'?'all':Number(f.get('level')) as Level,levelMode:f.get('levelMode') as StudyFilter['levelMode'],
+    regions:regionChanged?[]:f.getAll('regions') as string[],eras:regionChanged||changedName==='eraGroups'?[]:f.getAll('eras') as string[],
+    fields:f.getAll('fields') as string[],cardType:f.get('cardType') as StudyFilter['cardType'],regionGroups,eraGroups:(f.getAll('eraGroups') as string[]).filter(id=>allowed.has(id))};
+  detailScopeOpen=form.querySelector<HTMLDetailsElement>('#detail-scope')?.open??false;
+  fieldScopeOpen=form.querySelector<HTMLDetailsElement>('#field-scope')?.open??false;
+  sessionLimit=String(f.get('limit'));
+}
 function sync():Promise<void>{
   if(currentSync)return currentSync;
   // Built-in mirrored catalog is used unless the owner supplies a custom JSON source.
@@ -257,7 +275,7 @@ function bind(){
     form.onchange=event=>{
       const control=event.target;
       const focused=control instanceof HTMLInputElement||control instanceof HTMLSelectElement?{name:control.name,value:control.value}:null;
-      readOptions(form);render();
+      readOptions(form,focused?.name);render();
       if(focused){
         const next=[...document.querySelectorAll<HTMLInputElement|HTMLSelectElement>('#study-options input, #study-options select')].find(el=>el.name===focused.name&&el.value===focused.value);
         next?.focus({preventScroll:true});
@@ -265,6 +283,10 @@ function bind(){
     };
     form.onsubmit=e=>{e.preventDefault();readOptions(form);void start();};
   }
+  const scopeDetails=document.querySelector<HTMLDetailsElement>('#detail-scope');
+  if(scopeDetails)scopeDetails.ontoggle=()=>{if(scopeDetails.isConnected)detailScopeOpen=scopeDetails.open;};
+  const fieldDetails=document.querySelector<HTMLDetailsElement>('#field-scope');
+  if(fieldDetails)fieldDetails.ontoggle=()=>{if(fieldDetails.isConnected)fieldScopeOpen=fieldDetails.open;};
   document.querySelectorAll<HTMLElement>('[data-action]').forEach(el=>el.onclick=()=>{void action(el.dataset.action!);});
   document.querySelectorAll<HTMLButtonElement>('[data-grade]').forEach(el=>el.onclick=()=>{void grade(el.dataset.grade==='correct');});
   const image=document.querySelector<HTMLImageElement>('#question-image');if(image){image.onerror=()=>{image.parentElement!.classList.add('hidden');document.querySelector('#image-fallback')?.classList.remove('hidden');};if(image.complete&&image.naturalWidth===0)image.dispatchEvent(new Event('error'));}
@@ -289,7 +311,9 @@ async function action(name:string){try{
   if(name==='reveal'){revealed=true;render();document.querySelector<HTMLElement>('.answer-area')?.scrollIntoView({block:'nearest',behavior:'smooth'});}
   if(name==='end-session'){go('home');}
   if(name==='library-more'){libraryLimit+=50;render();}
-  if(name==='reset-filter'){filter=structuredClone(DEFAULT_FILTER);render();}
+  if(name==='reset-filter'){filter=structuredClone(DEFAULT_FILTER);detailScopeOpen=false;fieldScopeOpen=false;render();}
+  if(name==='all-regions'){filter={...filter,regionGroups:[],eraGroups:[],regions:[],eras:[]};render();}
+  if(name==='all-eras'){filter={...filter,eraGroups:[],eras:[]};render();}
   if(name==='zoom-image'){const c=queue[position];const im=state.catalog.items.find(i=>i.id===c.knowledgeId)?.images.find(i=>i.id===c.imageId);if(im)zoom(im);}
   if(name==='close-image')(document.querySelector('#image-dialog') as HTMLDialogElement).close();
   if(name==='backup'){const backup=await db.exportBackup();const url=URL.createObjectURL(new Blob([JSON.stringify(backup,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=`culture-history-backup-${todayKey(new Date())}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);await db.updateSettings({lastBackupAt:new Date().toISOString()});state=await db.load();toast('バックアップファイルを保存しました。');render();}

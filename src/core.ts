@@ -1,4 +1,5 @@
 import { DEFAULT_SETTINGS, type Backup, type Card, type CardProgress, type Catalog, type ImageAsset, type KnowledgeItem, type ReviewEvent, type Settings, type StudyFilter } from './types';
+import { matchesCultureScope } from './culture-scope';
 
 const DAY = 86_400_000;
 const CARD_TYPES = ['achievement-person', 'person-work', 'work-author', 'theory-person', 'image', 'context'];
@@ -211,6 +212,7 @@ export function selectCards(catalog: Catalog, events: ReviewEvent[], filter: Stu
     if (filter.level !== 'all' && (filter.levelMode === 'single' ? owner.level !== filter.level : owner.level > filter.level)) return false;
     if (filter.regions.length && !filter.regions.includes(owner.region)) return false;
     if (filter.eras.length && !filter.eras.includes(owner.era)) return false;
+    if (!matchesCultureScope(owner, filter)) return false;
     if (filter.fields.length && !filter.fields.includes(owner.field)) return false;
     if (filter.cardType !== 'all' && (filter.cardType === 'image' ? entry.type !== 'image' : entry.type === 'image')) return false;
     const p = progress.get(entry.id);

@@ -61,7 +61,10 @@ async function oneYear(page:Page,correct:boolean){
 }
 async function cultureReview(page:Page){
   await cultureNav(page,'setup');
+  const detail=page.locator('#detail-scope');
+  if(!await detail.evaluate(el=>(el as HTMLDetailsElement).open))await detail.locator('summary').click();
   await page.locator('[name=regions][value="ギリシア"]').check();
+  await page.locator('#field-scope').evaluate(el=>{(el as HTMLDetailsElement).open=true;});
   await page.locator('[name=fields][value="建築"]').check();
   await page.locator('[name=cardType]').selectOption('image');
   await page.locator('#study-options [type=submit]').click();

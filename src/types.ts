@@ -36,6 +36,7 @@ export type StudyMode = 'all' | 'unseen' | 'mistakes' | 'due' | 'weak' | 'random
 export interface StudyFilter {
   mode: StudyMode; level: Level | 'all'; levelMode: 'cumulative' | 'single';
   regions: string[]; eras: string[]; fields: string[];
+  regionGroups?: string[]; eraGroups?: string[];
   cardType: 'all' | 'text' | 'image';
 }
 export interface Settings {
