@@ -1,7 +1,7 @@
 import 'fake-indexeddb/auto';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { openDatabase, type HistoryDB } from '../src/db';
-import { normalizeSyncUrl, synchronize } from '../src/sync';
+import { DEFAULT_CATALOG_URL, normalizeSyncUrl, synchronize } from '../src/sync';
 import type { Catalog } from '../src/types';
 
 function sample(version = 1): Catalog {
@@ -27,6 +27,8 @@ afterEach(() => { databases.forEach(db => db.close()); databases.length = 0; vi.
 describe('public sync endpoint safety', () => {
   it('accepts HTTPS Apps Script and same localhost only', () => {
     expect(normalizeSyncUrl('https://script.google.com/macros/s/example/exec')).toContain('https://');
+    expect(DEFAULT_CATALOG_URL).toBe('https://raw.githubusercontent.com/kiyotakalam-collab/-/main/public/catalog-delta.json');
+    expect(normalizeSyncUrl(DEFAULT_CATALOG_URL)).toBe(DEFAULT_CATALOG_URL);
     expect(normalizeSyncUrl('/catalog.json', 'http://localhost:4173')).toBe('http://localhost:4173/catalog.json');
     expect(() => normalizeSyncUrl('http://example.org/a')).toThrow('HTTPS');
     expect(() => normalizeSyncUrl('https://user:key@example.org/')).toThrow('認証情報');
@@ -52,6 +54,22 @@ describe('catalog synchronization', () => {
     fetchMock.mockResolvedValueOnce(respond(deleted));
     expect(await synchronize(db, 'https://example.org/catalog')).toEqual({version: 3, itemCount: 1, cardCount: 1});
     state = await db.load(); expect(state.events).toHaveLength(1);
+  });
+
+  it('applies an empty published v12 mirror without deleting prior cards or mistakes', async () => {
+    const db = await makeDb();
+    const before = await db.load();
+    const delta: Catalog = {
+      schemaVersion: 1, version: 12,
+      updatedAt: '2026-11-09T11:27:10.092Z', items: [], cards: [],
+    };
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValueOnce(respond(delta)));
+    const result = await synchronize(db, DEFAULT_CATALOG_URL);
+    expect(result).toMatchObject({version: 12, itemCount: 1, cardCount: 1});
+    const after = await db.load();
+    expect(after.events).toEqual(before.events);
+    expect(after.catalog.items).toEqual(before.catalog.items);
+    expect(after.catalog.cards).toEqual(before.catalog.cards);
   });
 
   it('accepts a Sheets delta card referencing a bundled item and preserves its mistake history', async () => {
