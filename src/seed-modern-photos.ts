@@ -3,7 +3,7 @@ import type { Card, KnowledgeItem } from './types';
 // Extracted from 10 user photographs of the Renaissance, the Scientific Revolution,
 // Enlightenment, literature and 17th-18th century art. Photos/text are not distributed.
 // Difficulty levels remain provisional until exam evidence has been checked.
-export const modernUpdatedAt = "2026-11-09T10:30:00.000Z";
+export const modernUpdatedAt = "2026-11-09T09:31:32.489Z";
 export const modernItems: KnowledgeItem[] = [
   {
     "id": "nr-erasmus",
@@ -31,7 +31,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -61,7 +61,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -101,7 +101,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -141,7 +141,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -171,7 +171,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -196,7 +196,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -221,7 +221,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -246,7 +246,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -271,7 +271,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -296,7 +296,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -321,7 +321,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -346,7 +346,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -371,7 +371,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -396,7 +396,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -421,7 +421,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -446,7 +446,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -476,7 +476,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -501,7 +501,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -531,7 +531,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -561,7 +561,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -586,7 +586,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -611,7 +611,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -636,7 +636,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -661,7 +661,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -686,7 +686,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -711,7 +711,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -736,7 +736,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -761,7 +761,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -786,7 +786,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -811,7 +811,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -836,7 +836,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -861,7 +861,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -886,7 +886,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -916,7 +916,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -946,7 +946,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -971,7 +971,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1001,7 +1001,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1031,7 +1031,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1056,7 +1056,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1086,7 +1086,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1116,7 +1116,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1146,7 +1146,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1171,7 +1171,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1196,7 +1196,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1221,7 +1221,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1246,7 +1246,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1271,7 +1271,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1296,7 +1296,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1321,7 +1321,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1346,7 +1346,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1371,7 +1371,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1396,7 +1396,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1421,7 +1421,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1446,7 +1446,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1471,7 +1471,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1496,7 +1496,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1526,7 +1526,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1551,7 +1551,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1576,7 +1576,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1601,7 +1601,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1626,7 +1626,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1656,7 +1656,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1686,7 +1686,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1711,7 +1711,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1736,7 +1736,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1761,7 +1761,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1786,7 +1786,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1811,7 +1811,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1836,7 +1836,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1861,7 +1861,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1886,7 +1886,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1911,7 +1911,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1936,7 +1936,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1961,7 +1961,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -1986,7 +1986,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2011,7 +2011,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2036,7 +2036,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2061,7 +2061,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2086,7 +2086,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2111,7 +2111,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2136,7 +2136,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2161,7 +2161,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2186,7 +2186,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2211,7 +2211,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2236,7 +2236,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2261,7 +2261,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2286,7 +2286,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2311,7 +2311,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2341,7 +2341,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2371,7 +2371,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2401,7 +2401,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2431,7 +2431,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2461,7 +2461,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2501,7 +2501,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2541,7 +2541,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2571,7 +2571,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2601,7 +2601,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2631,7 +2631,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2656,7 +2656,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2681,7 +2681,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2706,7 +2706,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2746,7 +2746,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2771,7 +2771,7 @@ export const modernItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "暫定分類。大学別2026年度過去問での出題実績・教科書掲載頻度は未照合。作品・人物の文化史上の基本度に基づく仮置き。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   }
@@ -2784,7 +2784,7 @@ export const modernCards: Card[] = [
     "question": "『愚神礼賛』の著者は？",
     "answer": "エラスムス",
     "explanation": "『愚神礼賛』で教会や社会の問題を風刺したネーデルラントの人文主義者。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2795,7 +2795,7 @@ export const modernCards: Card[] = [
     "question": "油彩技法を発展させたフランドルの画家は？",
     "answer": "ヤン＝ファン＝エイク",
     "explanation": "フランドル絵画の代表的画家。油彩技法の発展に重要な役割を果たした。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2806,7 +2806,7 @@ export const modernCards: Card[] = [
     "question": "『農民の踊り』の作者は？",
     "answer": "ブリューゲル（父）",
     "explanation": "『農民の踊り』など、農民の生活や風俗を描いたフランドルの画家。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2817,7 +2817,7 @@ export const modernCards: Card[] = [
     "question": "『四人の使徒』の作者は？",
     "answer": "デューラー",
     "explanation": "ドイツの画家・版画家。『四人の使徒』などを制作した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2828,7 +2828,7 @@ export const modernCards: Card[] = [
     "question": "エラスムスやヘンリ8世の肖像を描いた画家は？",
     "answer": "ホルバイン（子）",
     "explanation": "エラスムスやイングランド王ヘンリ8世の肖像を描いた画家。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2839,7 +2839,7 @@ export const modernCards: Card[] = [
     "question": "レオナルド＝ダ＝ヴィンチを招いたフランス王は？",
     "answer": "フランソワ1世",
     "explanation": "ルネサンス芸術を保護し、レオナルド＝ダ＝ヴィンチをフランスに招いた国王。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2850,7 +2850,7 @@ export const modernCards: Card[] = [
     "question": "『ガルガンチュアとパンタグリュエル』の作者は？",
     "answer": "ラブレー",
     "explanation": "フランスの人文主義者・作家。『ガルガンチュアとパンタグリュエル』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2861,7 +2861,7 @@ export const modernCards: Card[] = [
     "question": "『随想録（エセー）』の著者は？",
     "answer": "モンテーニュ",
     "explanation": "フランスの思想家・随筆家。『随想録（エセー）』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2872,7 +2872,7 @@ export const modernCards: Card[] = [
     "question": "『ドン＝キホーテ』の作者は？",
     "answer": "セルバンテス",
     "explanation": "スペインの作家。『ドン＝キホーテ』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2883,7 +2883,7 @@ export const modernCards: Card[] = [
     "question": "『カンタベリ物語』の作者は？",
     "answer": "チョーサー",
     "explanation": "中世イングランドの詩人。『カンタベリ物語』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2894,7 +2894,7 @@ export const modernCards: Card[] = [
     "question": "『ユートピア』の作者は？",
     "answer": "トマス＝モア",
     "explanation": "イングランドの人文主義者。架空の理想社会を描いた『ユートピア』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2905,7 +2905,7 @@ export const modernCards: Card[] = [
     "question": "『ハムレット』の作者は？",
     "answer": "シェークスピア",
     "explanation": "イングランドの劇作家・詩人。『ハムレット』『ヴェニスの商人』などで知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2916,7 +2916,7 @@ export const modernCards: Card[] = [
     "question": "三大発明のうちヨーロッパの火器発展につながったものは？",
     "answer": "火薬",
     "explanation": "東アジアで利用され、イスラーム世界を経由してヨーロッパに伝わった火薬。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2927,7 +2927,7 @@ export const modernCards: Card[] = [
     "question": "大航海時代の遠洋航海を支えた中国起源の方位測定具は？",
     "answer": "羅針盤",
     "explanation": "中国の方位磁針の技術を起源に、航海技術の発展に寄与した道具。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2938,7 +2938,7 @@ export const modernCards: Card[] = [
     "question": "グーテンベルクが15世紀ヨーロッパで発展させた印刷技術は？",
     "answer": "活版印刷術",
     "explanation": "可動式活字を使う印刷技術。15世紀ヨーロッパでグーテンベルクが改良・普及させた。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2949,7 +2949,7 @@ export const modernCards: Card[] = [
     "question": "中国起源でイスラーム世界を経て西欧へ伝わった技術は？",
     "answer": "製紙法",
     "explanation": "中国からイスラーム世界を経てヨーロッパに伝わった製紙技術。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2960,7 +2960,7 @@ export const modernCards: Card[] = [
     "question": "『天球回転論』の著者は？",
     "answer": "コペルニクス",
     "explanation": "ポーランド出身の天文学者。『天球回転論』で太陽中心の惑星体系を論じた。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2971,7 +2971,7 @@ export const modernCards: Card[] = [
     "question": "宇宙の無限性を主張し1600年にローマで処刑された思想家は？",
     "answer": "ジョルダーノ＝ブルーノ",
     "explanation": "イタリアの思想家。宇宙の無限性などを主張し、ローマで異端として処刑された。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2982,7 +2982,7 @@ export const modernCards: Card[] = [
     "question": "木星の衛星を観測して太陽中心説を支持したイタリアの科学者は？",
     "answer": "ガリレオ＝ガリレイ",
     "explanation": "イタリアの科学者。木星の衛星などを観測し、コペルニクス説を支持した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -2993,7 +2993,7 @@ export const modernCards: Card[] = [
     "question": "惑星運動の三法則を発見した天文学者は？",
     "answer": "ケプラー",
     "explanation": "ドイツの天文学者。惑星運動に関する三法則を明らかにした。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3004,7 +3004,7 @@ export const modernCards: Card[] = [
     "question": "15世紀ヨーロッパの金属活字による印刷を普及させた人物は？",
     "answer": "グーテンベルク",
     "explanation": "15世紀のドイツで金属活字による活版印刷術の実用化を進めた人物。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3015,7 +3015,7 @@ export const modernCards: Card[] = [
     "question": "1582年に導入された暦は？",
     "answer": "グレゴリウス暦",
     "explanation": "1582年に教皇グレゴリウス13世が導入した暦。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3026,7 +3026,7 @@ export const modernCards: Card[] = [
     "question": "西航によるアジア到達構想に影響を与えたフィレンツェの学者は？",
     "answer": "トスカネリ",
     "explanation": "15世紀フィレンツェの学者。西航によるアジア到達構想に関わった。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3037,7 +3037,7 @@ export const modernCards: Card[] = [
     "question": "18世紀ヨーロッパに流行した中国趣味の美術・工芸を何という？",
     "answer": "シノワズリ",
     "explanation": "17〜18世紀ヨーロッパで流行した中国趣味の美術・工芸・室内装飾。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3048,7 +3048,7 @@ export const modernCards: Card[] = [
     "question": "定期刊行物が普及し、政治・社会情報が広く流通するようになった現象は？",
     "answer": "新聞・ジャーナリズムの発達",
     "explanation": "定期刊行物の普及によって政治・社会情報の流通が拡大した現象。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3059,7 +3059,7 @@ export const modernCards: Card[] = [
     "question": "フランスで啓蒙思想などの議論の場となった軽食店は？",
     "answer": "カフェ",
     "explanation": "フランスなどで議論・交流の場になった飲食店。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3070,7 +3070,7 @@ export const modernCards: Card[] = [
     "question": "18世紀フランスの上流階級の社交・文化交流の場は？",
     "answer": "サロン",
     "explanation": "フランスの上流社会で文学・思想などを語り合った社交の場。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3081,7 +3081,7 @@ export const modernCards: Card[] = [
     "question": "ロンドンで政治・商業情報の交換の場になった飲食店は？",
     "answer": "コーヒーハウス",
     "explanation": "イングランドなどで新聞や政治・商業の情報を交換した場。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3092,7 +3092,7 @@ export const modernCards: Card[] = [
     "question": "リシュリューの保護で1635年に公認されたフランス語の学術団体は？",
     "answer": "アカデミー＝フランセーズ",
     "explanation": "1635年にリシュリューのもとで公的に成立したフランス語・文学の学術団体。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3103,7 +3103,7 @@ export const modernCards: Card[] = [
     "question": "王の権威は神から与えられたとする思想は？",
     "answer": "王権神授説",
     "explanation": "国王の権威を神に由来するものとして正当化する思想。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3114,7 +3114,7 @@ export const modernCards: Card[] = [
     "question": "ステュアート朝初代のイングランド王で王権神授説を擁護した人物は？",
     "answer": "ジェームズ1世",
     "explanation": "スコットランド王兼イングランド王。王権神授説の擁護で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3125,7 +3125,7 @@ export const modernCards: Card[] = [
     "question": "『国家論（共和政六書）』で主権論を説いたフランスの思想家は？",
     "answer": "ボーダン",
     "explanation": "フランスの政治思想家。『国家論（共和政六書）』で主権概念を論じた。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3136,7 +3136,7 @@ export const modernCards: Card[] = [
     "question": "ルイ14世の時代に王権神授説を擁護した聖職者は？",
     "answer": "ボシュエ",
     "explanation": "フランスの聖職者。王権神授説を擁護しルイ14世の王権を支持した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3147,7 +3147,7 @@ export const modernCards: Card[] = [
     "question": "国家の制定法とは別に人間の本性や理性に根ざすとされた法は？",
     "answer": "自然法",
     "explanation": "人間の理性や本性に根ざす、国家の制定法に先立つ普遍的な法の考え方。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3158,7 +3158,7 @@ export const modernCards: Card[] = [
     "question": "『戦争と平和の法』の著者は？",
     "answer": "グロティウス",
     "explanation": "オランダの法学者。『海洋自由論』『戦争と平和の法』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3169,7 +3169,7 @@ export const modernCards: Card[] = [
     "question": "政府の正当性を人々の同意や契約に求める政治思想は？",
     "answer": "社会契約説",
     "explanation": "国家や政府の正当性を人々の契約・合意に求める政治思想。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3180,7 +3180,7 @@ export const modernCards: Card[] = [
     "question": "『リヴァイアサン』の著者は？",
     "answer": "ホッブズ",
     "explanation": "イングランドの政治思想家。『リヴァイアサン』で強力な主権者を論じた。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3191,7 +3191,7 @@ export const modernCards: Card[] = [
     "question": "『統治二論』の著者は？",
     "answer": "ロック",
     "explanation": "イングランドの政治思想家。『統治二論』で自然権・政府への信託・抵抗権を論じた。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3202,7 +3202,7 @@ export const modernCards: Card[] = [
     "question": "理性を重視し、旧来の権威や制度を批判した思想は？",
     "answer": "啓蒙思想",
     "explanation": "理性を重視し、旧来の制度や権威を批判した思想潮流。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3213,7 +3213,7 @@ export const modernCards: Card[] = [
     "question": "『法の精神』の著者は？",
     "answer": "モンテスキュー",
     "explanation": "フランスの政治思想家。『法の精神』で権力分立を論じた。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3224,7 +3224,7 @@ export const modernCards: Card[] = [
     "question": "『哲学書簡（イギリスだより）』の著者は？",
     "answer": "ヴォルテール",
     "explanation": "フランスの啓蒙思想家。『哲学書簡』でイギリス社会を論じ、宗教的不寛容を批判した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3235,7 +3235,7 @@ export const modernCards: Card[] = [
     "question": "『社会契約論』の著者は？",
     "answer": "ルソー",
     "explanation": "フランス語圏の思想家。『社会契約論』『人間不平等起源論』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3246,7 +3246,7 @@ export const modernCards: Card[] = [
     "question": "『百科全書』の編集を主導した啓蒙思想家は？",
     "answer": "ディドロ",
     "explanation": "フランスの啓蒙思想家。ダランベールらと『百科全書』の編集を主導した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3257,7 +3257,7 @@ export const modernCards: Card[] = [
     "question": "ディドロと『百科全書』を共同編集した数学者は？",
     "answer": "ダランベール",
     "explanation": "フランスの数学者・啓蒙思想家。ディドロとともに『百科全書』を編集した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3268,7 +3268,7 @@ export const modernCards: Card[] = [
     "question": "ディドロらが編纂した啓蒙思想の百科事典は？",
     "answer": "百科全書",
     "explanation": "ディドロとダランベールらが編集した啓蒙思想の大規模な百科事典。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3279,7 +3279,7 @@ export const modernCards: Card[] = [
     "question": "古代ギリシア・ローマを模範とした17世紀フランスの文学潮流は？",
     "answer": "古典主義文学",
     "explanation": "古代ギリシア・ローマを模範として秩序や均整を重んじた文学潮流。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3290,7 +3290,7 @@ export const modernCards: Card[] = [
     "question": "『ル＝シッド』を著した劇作家は？",
     "answer": "コルネイユ",
     "explanation": "フランスの劇作家。悲劇『ル＝シッド』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3301,7 +3301,7 @@ export const modernCards: Card[] = [
     "question": "『アンドロマック』を著した劇作家は？",
     "answer": "ラシーヌ",
     "explanation": "フランス古典主義悲劇の代表作家。『アンドロマック』などを著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3312,7 +3312,7 @@ export const modernCards: Card[] = [
     "question": "『タルチュフ』『人間嫌い』の作者は？",
     "answer": "モリエール",
     "explanation": "フランスの喜劇作家。『人間嫌い』『タルチュフ』などで知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3323,7 +3323,7 @@ export const modernCards: Card[] = [
     "question": "『失楽園』の作者は？",
     "answer": "ミルトン",
     "explanation": "イングランドの詩人。叙事詩『失楽園』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3334,7 +3334,7 @@ export const modernCards: Card[] = [
     "question": "『天路歴程』の作者は？",
     "answer": "バニヤン",
     "explanation": "イングランドの著述家。宗教的寓意小説『天路歴程』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3345,7 +3345,7 @@ export const modernCards: Card[] = [
     "question": "『ロビンソン＝クルーソー』の作者は？",
     "answer": "デフォー",
     "explanation": "イングランドの作家。『ロビンソン＝クルーソー』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3356,7 +3356,7 @@ export const modernCards: Card[] = [
     "question": "『ガリヴァー旅行記』の作者は？",
     "answer": "スウィフト",
     "explanation": "アイルランド出身の作家。『ガリヴァー旅行記』で社会を風刺した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3367,7 +3367,7 @@ export const modernCards: Card[] = [
     "question": "18世紀後半ドイツで感情・個性を強調した「疾風怒濤」の文学運動は？",
     "answer": "シュトゥルム＝ウント＝ドラング",
     "explanation": "18世紀後半ドイツで広がった、感情や個性を重視する文学運動（疾風怒濤）。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3378,7 +3378,7 @@ export const modernCards: Card[] = [
     "question": "『ファウスト』の作者は？",
     "answer": "ゲーテ",
     "explanation": "ドイツの文豪。『若きウェルテルの悩み』『ファウスト』などを著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3389,7 +3389,7 @@ export const modernCards: Card[] = [
     "question": "『ヴィルヘルム＝テル』の作者は？",
     "answer": "シラー",
     "explanation": "ドイツの劇作家・詩人。『群盗』『ヴィルヘルム＝テル』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3400,7 +3400,7 @@ export const modernCards: Card[] = [
     "question": "想像力・感情・個性を重視した文学思潮は？",
     "answer": "ロマン主義",
     "explanation": "理性一辺倒の見方に対して感情・想像力・個性などを重視した文学潮流。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3411,7 +3411,7 @@ export const modernCards: Card[] = [
     "question": "『青い花』の作者は？",
     "answer": "ノヴァーリス",
     "explanation": "ドイツ初期ロマン主義の詩人。未完の小説『青い花』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3422,7 +3422,7 @@ export const modernCards: Card[] = [
     "question": "『グリム童話』を編纂したのは？",
     "answer": "グリム兄弟",
     "explanation": "ヤーコプとヴィルヘルムの兄弟。民話集『グリム童話』を編纂した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3433,7 +3433,7 @@ export const modernCards: Card[] = [
     "question": "『歌の本』の作者は？",
     "answer": "ハイネ",
     "explanation": "ドイツ語で詩作した作家。『歌の本』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3444,7 +3444,7 @@ export const modernCards: Card[] = [
     "question": "『レ＝ミゼラブル』の作者は？",
     "answer": "ヴィクトル＝ユゴー",
     "explanation": "フランスのロマン主義作家。『レ＝ミゼラブル』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3455,7 +3455,7 @@ export const modernCards: Card[] = [
     "question": "コールリッジと『抒情詩集』を共同刊行した詩人は？",
     "answer": "ワーズワース",
     "explanation": "イギリスのロマン派詩人。コールリッジと『抒情詩集』を共同で刊行した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3466,7 +3466,7 @@ export const modernCards: Card[] = [
     "question": "『チャイルド＝ハロルドの巡礼』の作者は？",
     "answer": "バイロン",
     "explanation": "イギリスのロマン派詩人。『チャイルド＝ハロルドの巡礼』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3477,7 +3477,7 @@ export const modernCards: Card[] = [
     "question": "『エヴゲーニイ＝オネーギン』の作者は？",
     "answer": "プーシキン",
     "explanation": "ロシアの作家・詩人。『エヴゲーニイ＝オネーギン』『大尉の娘』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3488,7 +3488,7 @@ export const modernCards: Card[] = [
     "question": "『草の葉』の作者は？",
     "answer": "ホイットマン",
     "explanation": "アメリカの詩人。『草の葉』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3499,7 +3499,7 @@ export const modernCards: Card[] = [
     "question": "現実社会や人間を理想化せずに描こうとした19世紀の文学潮流は？",
     "answer": "写実主義",
     "explanation": "理想化よりも現実の社会や人間を描こうとした文学潮流。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3510,7 +3510,7 @@ export const modernCards: Card[] = [
     "question": "『赤と黒』の作者は？",
     "answer": "スタンダール",
     "explanation": "フランスの小説家。『赤と黒』の著者。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3521,7 +3521,7 @@ export const modernCards: Card[] = [
     "question": "『人間喜劇』『ゴリオ爺さん』で知られる作家は？",
     "answer": "バルザック",
     "explanation": "フランスの小説家。連作小説群『人間喜劇』に『ゴリオ爺さん』などを含む。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3532,7 +3532,7 @@ export const modernCards: Card[] = [
     "question": "『ボヴァリー夫人』の作者は？",
     "answer": "フロベール",
     "explanation": "フランスの小説家。『ボヴァリー夫人』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3543,7 +3543,7 @@ export const modernCards: Card[] = [
     "question": "『虚栄の市』の作者は？",
     "answer": "サッカレー",
     "explanation": "イギリスの作家。小説『虚栄の市』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3554,7 +3554,7 @@ export const modernCards: Card[] = [
     "question": "『二都物語』の作者は？",
     "answer": "ディケンズ",
     "explanation": "イギリスの小説家。『二都物語』などを著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3565,7 +3565,7 @@ export const modernCards: Card[] = [
     "question": "『父と子』の作者は？",
     "answer": "ツルゲーネフ",
     "explanation": "ロシアの小説家。『父と子』の著者。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3576,7 +3576,7 @@ export const modernCards: Card[] = [
     "question": "『罪と罰』の作者は？",
     "answer": "ドストエフスキー",
     "explanation": "ロシアの小説家。『罪と罰』『カラマーゾフの兄弟』などを著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3587,7 +3587,7 @@ export const modernCards: Card[] = [
     "question": "『戦争と平和』の作者は？",
     "answer": "トルストイ",
     "explanation": "ロシアの小説家。『戦争と平和』などを著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3598,7 +3598,7 @@ export const modernCards: Card[] = [
     "question": "遺伝・環境などの影響を重視して現実を描く文学潮流は？",
     "answer": "自然主義",
     "explanation": "社会環境や遺伝などの作用を重視し、現実を観察して描こうとした文学潮流。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3609,7 +3609,7 @@ export const modernCards: Card[] = [
     "question": "『居酒屋』の作者は？",
     "answer": "ゾラ",
     "explanation": "フランスの自然主義作家。『居酒屋』を著し、ドレフュス事件でも発言した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3620,7 +3620,7 @@ export const modernCards: Card[] = [
     "question": "『女の一生』の作者は？",
     "answer": "モーパッサン",
     "explanation": "フランスの小説家。『女の一生』などで知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3631,7 +3631,7 @@ export const modernCards: Card[] = [
     "question": "『人形の家』の作者は？",
     "answer": "イプセン",
     "explanation": "ノルウェーの劇作家。『人形の家』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3642,7 +3642,7 @@ export const modernCards: Card[] = [
     "question": "『令嬢ジュリー』の作者は？",
     "answer": "ストリンドベリ",
     "explanation": "スウェーデンの劇作家。『令嬢ジュリー』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3653,7 +3653,7 @@ export const modernCards: Card[] = [
     "question": "芸術と美そのものの価値を重視する思想は？",
     "answer": "唯美主義",
     "explanation": "道徳的教訓よりも芸術・美そのものの価値を重んじた潮流。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3664,7 +3664,7 @@ export const modernCards: Card[] = [
     "question": "『悪の華』の作者は？",
     "answer": "ボードレール",
     "explanation": "フランスの詩人。『悪の華』の著者。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3675,7 +3675,7 @@ export const modernCards: Card[] = [
     "question": "象徴や暗示による表現を重視する19世紀後半の文学潮流は？",
     "answer": "象徴主義",
     "explanation": "直截な描写より暗示・象徴を重視する19世紀後半の文学潮流。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3686,7 +3686,7 @@ export const modernCards: Card[] = [
     "question": "『地獄の季節』の作者は？",
     "answer": "ランボー",
     "explanation": "フランスの詩人。『地獄の季節』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3697,7 +3697,7 @@ export const modernCards: Card[] = [
     "question": "『ジャン＝クリストフ』の作者は？",
     "answer": "ロマン＝ロラン",
     "explanation": "フランスの作家。反戦・平和思想でも知られ、『ジャン＝クリストフ』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3708,7 +3708,7 @@ export const modernCards: Card[] = [
     "question": "『嘔吐』の作者は？",
     "answer": "サルトル",
     "explanation": "フランスの哲学者・作家。実存主義思想と小説『嘔吐』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3719,7 +3719,7 @@ export const modernCards: Card[] = [
     "question": "『魔の山』の作者は？",
     "answer": "トーマス＝マン",
     "explanation": "ドイツの小説家。『魔の山』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3730,7 +3730,7 @@ export const modernCards: Card[] = [
     "question": "スペイン内戦への参加を記した『カタロニア讃歌』の作者は？",
     "answer": "オーウェル",
     "explanation": "イギリスの作家。スペイン内戦に参加し『カタロニア讃歌』を書いた。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3741,7 +3741,7 @@ export const modernCards: Card[] = [
     "question": "『誰がために鐘は鳴る』の作者は？",
     "answer": "ヘミングウェー",
     "explanation": "アメリカの作家。『武器よさらば』『誰がために鐘は鳴る』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3752,7 +3752,7 @@ export const modernCards: Card[] = [
     "question": "光と影の対比・劇的な表現を重視した17世紀の美術様式は？",
     "answer": "バロック美術",
     "explanation": "劇的な光と影、運動感、壮麗さなどを特徴とする美術様式。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3763,7 +3763,7 @@ export const modernCards: Card[] = [
     "question": "ルーベンスを代表とするフランドル地方の絵画の流派は？",
     "answer": "フランドル派",
     "explanation": "フランドル地方で発展した絵画の伝統。ルーベンスらが代表的な画家。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3774,7 +3774,7 @@ export const modernCards: Card[] = [
     "question": "レンブラント・フェルメールらを輩出した17世紀の絵画の流派は？",
     "answer": "オランダ画派",
     "explanation": "17世紀のオランダ共和国で市民生活・風景・集団肖像などを発展させた絵画。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3785,7 +3785,7 @@ export const modernCards: Card[] = [
     "question": "『キリスト降架』の作者は？",
     "answer": "ルーベンス",
     "explanation": "フランドルの画家。『キリスト降架』やマリー＝ド＝メディシスの連作で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3796,7 +3796,7 @@ export const modernCards: Card[] = [
     "question": "チャールズ1世の宮廷画家になったフランドルの画家は？",
     "answer": "ファン＝ダイク",
     "explanation": "フランドル出身の画家。イングランド王チャールズ1世の宮廷画家。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3807,7 +3807,7 @@ export const modernCards: Card[] = [
     "question": "『夜警』の作者は？",
     "answer": "レンブラント",
     "explanation": "オランダの画家。『夜警』で知られ、光と影の表現に優れた。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3818,7 +3818,7 @@ export const modernCards: Card[] = [
     "question": "『真珠の耳飾りの少女』を描いた画家は？",
     "answer": "フェルメール",
     "explanation": "オランダの画家。『真珠の耳飾りの少女（青いターバンの少女）』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3829,7 +3829,7 @@ export const modernCards: Card[] = [
     "question": "スペイン・トレドで『受胎告知』などを描いた画家は？",
     "answer": "エル＝グレコ",
     "explanation": "クレタ島出身でスペイン・トレドで活躍した画家。『受胎告知』などを制作した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3840,7 +3840,7 @@ export const modernCards: Card[] = [
     "question": "『ラス＝メニーナス（女官たち）』を描いた画家は？",
     "answer": "ベラスケス",
     "explanation": "スペインの宮廷画家。『ラス＝メニーナス（女官たち）』や王族の肖像で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3851,7 +3851,7 @@ export const modernCards: Card[] = [
     "question": "『乞食の少年』を描いたスペインの画家は？",
     "answer": "ムリーリョ",
     "explanation": "スペインの画家。『乞食の少年』など、宗教画や風俗画を描いた。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3862,7 +3862,7 @@ export const modernCards: Card[] = [
     "question": "ルイ14世が整備したフランス王権の象徴的宮殿は？",
     "answer": "ヴェルサイユ宮殿",
     "explanation": "ルイ14世のもとで壮麗に整備されたフランス王権の象徴的宮殿。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3873,7 +3873,7 @@ export const modernCards: Card[] = [
     "question": "マリア＝テレジア時代に整備されたウィーンの宮殿は？",
     "answer": "シェーンブルン宮殿",
     "explanation": "ウィーンのハプスブルク家の離宮。マリア＝テレジア時代に大規模に整備された。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3884,7 +3884,7 @@ export const modernCards: Card[] = [
     "question": "18世紀ヨーロッパで優美な装飾を特徴とした美術様式は？",
     "answer": "ロココ美術",
     "explanation": "繊細・優美で曲線的な装飾を特色とする18世紀ヨーロッパの美術。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3895,7 +3895,7 @@ export const modernCards: Card[] = [
     "question": "『シテール島への船出』の作者は？",
     "answer": "ヴァトー",
     "explanation": "フランスの画家。雅宴画を発展させ『シテール島への船出』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3906,7 +3906,7 @@ export const modernCards: Card[] = [
     "question": "フリードリヒ2世がポツダムに建てた宮殿は？",
     "answer": "サンスーシ宮殿",
     "explanation": "プロイセン王フリードリヒ2世がポツダムに建てたロココ様式の宮殿。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3917,7 +3917,7 @@ export const modernCards: Card[] = [
     "question": "『若きウェルテルの悩み』の作者は？",
     "answer": "ゲーテ",
     "explanation": "ドイツの文豪。『若きウェルテルの悩み』『ファウスト』などを著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3928,7 +3928,7 @@ export const modernCards: Card[] = [
     "question": "『群盗』の作者は？",
     "answer": "シラー",
     "explanation": "ドイツの劇作家・詩人。『群盗』『ヴィルヘルム＝テル』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3939,7 +3939,7 @@ export const modernCards: Card[] = [
     "question": "『ヴァレンシュタイン』の作者は？",
     "answer": "シラー",
     "explanation": "ドイツの劇作家・詩人。『群盗』『ヴィルヘルム＝テル』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3950,7 +3950,7 @@ export const modernCards: Card[] = [
     "question": "『レ＝ミゼラブル』を著したフランスの文学思潮は？",
     "answer": "ロマン主義",
     "explanation": "フランスのロマン主義作家。『レ＝ミゼラブル』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3961,7 +3961,7 @@ export const modernCards: Card[] = [
     "question": "『大尉の娘』の作者は？",
     "answer": "プーシキン",
     "explanation": "ロシアの作家・詩人。『エヴゲーニイ＝オネーギン』『大尉の娘』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3972,7 +3972,7 @@ export const modernCards: Card[] = [
     "question": "『カラマーゾフの兄弟』の作者は？",
     "answer": "ドストエフスキー",
     "explanation": "ロシアの小説家。『罪と罰』『カラマーゾフの兄弟』などを著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3983,7 +3983,7 @@ export const modernCards: Card[] = [
     "question": "『ゴリオ爺さん』を含む連作小説群は？",
     "answer": "人間喜劇",
     "explanation": "フランスの小説家。連作小説群『人間喜劇』に『ゴリオ爺さん』などを含む。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -3994,7 +3994,7 @@ export const modernCards: Card[] = [
     "question": "ドレフュス事件で「私は弾劾する」を公表した作家は？",
     "answer": "ゾラ",
     "explanation": "フランスの自然主義作家。『居酒屋』を著し、ドレフュス事件でも発言した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4005,7 +4005,7 @@ export const modernCards: Card[] = [
     "question": "ロマン＝ロランの長編小説の題名は？",
     "answer": "ジャン＝クリストフ",
     "explanation": "フランスの作家。反戦・平和思想でも知られ、『ジャン＝クリストフ』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4016,7 +4016,7 @@ export const modernCards: Card[] = [
     "question": "『武器よさらば』の作者は？",
     "answer": "ヘミングウェー",
     "explanation": "アメリカの作家。『武器よさらば』『誰がために鐘は鳴る』で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4027,7 +4027,7 @@ export const modernCards: Card[] = [
     "question": "『海洋自由論』の著者は？",
     "answer": "グロティウス",
     "explanation": "オランダの法学者。『海洋自由論』『戦争と平和の法』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4038,7 +4038,7 @@ export const modernCards: Card[] = [
     "question": "『人間不平等起源論』の著者は？",
     "answer": "ルソー",
     "explanation": "フランス語圏の思想家。『社会契約論』『人間不平等起源論』を著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4049,7 +4049,7 @@ export const modernCards: Card[] = [
     "question": "三権分立を説いた啓蒙思想家は？",
     "answer": "モンテスキュー",
     "explanation": "フランスの政治思想家。『法の精神』で権力分立を論じた。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4060,7 +4060,7 @@ export const modernCards: Card[] = [
     "question": "『ヴェニスの商人』の作者は？",
     "answer": "シェークスピア",
     "explanation": "イングランドの劇作家・詩人。『ハムレット』『ヴェニスの商人』などで知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4071,7 +4071,7 @@ export const modernCards: Card[] = [
     "question": "『人間嫌い』の作者は？",
     "answer": "モリエール",
     "explanation": "フランスの喜劇作家。『人間嫌い』『タルチュフ』などで知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4082,7 +4082,7 @@ export const modernCards: Card[] = [
     "question": "『フェードル』の作者は？",
     "answer": "ラシーヌ",
     "explanation": "フランス古典主義悲劇の代表作家。『アンドロマック』などを著した。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4093,7 +4093,7 @@ export const modernCards: Card[] = [
     "question": "マリー＝ド＝メディシスの生涯を題材にした連作を描いた画家は？",
     "answer": "ルーベンス",
     "explanation": "フランドルの画家。『キリスト降架』やマリー＝ド＝メディシスの連作で知られる。",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4106,7 +4106,7 @@ export const modernCards: Card[] = [
     "explanation": "ピーテル＝ブリューゲル（父）の作品。画像の出典・利用条件は「出典・分類の根拠を見る」に記載。",
     "imageId": "img-nr-bruegel",
     "fallbackPrompt": "ブリューゲル（父）が描いた農民の踊りを題材にした絵画は？",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4119,7 +4119,7 @@ export const modernCards: Card[] = [
     "explanation": "デューラーの作品。画像の出典・利用条件は「出典・分類の根拠を見る」に記載。",
     "imageId": "img-nr-durer",
     "fallbackPrompt": "デューラーが描いた、四人の使徒を題材にした絵画は？",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4132,7 +4132,7 @@ export const modernCards: Card[] = [
     "explanation": "レンブラントの作品。画像の出典・利用条件は「出典・分類の根拠を見る」に記載。",
     "imageId": "img-ar-rembrandt",
     "fallbackPrompt": "レンブラントが描いたアムステルダムの市民軍の集団肖像画は？",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4145,7 +4145,7 @@ export const modernCards: Card[] = [
     "explanation": "フェルメールの作品。画像の出典・利用条件は「出典・分類の根拠を見る」に記載。",
     "imageId": "img-ar-vermeer",
     "fallbackPrompt": "フェルメールが描いた、耳飾りと青いターバンで知られる絵画は？",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   },
@@ -4158,7 +4158,7 @@ export const modernCards: Card[] = [
     "explanation": "ヴァトーの作品。画像の出典・利用条件は「出典・分類の根拠を見る」に記載。",
     "imageId": "img-ar-watteau",
     "fallbackPrompt": "ヴァトーの雅宴画で、愛の島への船出を題材とする絵画は？",
-    "updatedAt": "2026-11-09T10:30:00.000Z",
+    "updatedAt": "2026-11-09T09:31:32.489Z",
     "version": 1,
     "deleted": false
   }
