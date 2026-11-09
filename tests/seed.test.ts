@@ -38,6 +38,14 @@ describe('reviewed introductory questions', () => {
     expect(catalog.items.find(item => item.id === 'ro-strabo')?.level).toBe(4);
     expect(catalog.items.find(item => item.id === 'he-venus-milo')?.level).toBe(1);
     expect(catalog.cards.some(card => card.id === 'visual-verified-img-1-work')).toBe(true);
+    // Multiple images of different works by the same artist legitimately have
+    // identical generic prompts: identity depends on the image as well.
+    const leonardo = imageCards.filter(card => card.knowledgeId === 'rn-leonardo' && card.question === '画像の絵画の作者は？');
+    expect(leonardo).toHaveLength(2);
+    expect(new Set(leonardo.map(card => card.imageId)).size).toBe(2);
+    const michelangelo = imageCards.filter(card => card.knowledgeId === 'rn-michelangelo' && card.question === '画像の絵画の作者は？');
+    expect(michelangelo).toHaveLength(2);
+    expect(new Set(michelangelo.map(card => card.imageId)).size).toBe(2);
   });
 
   it('preserves v2 mistakes when photo cards are installed', async () => {
