@@ -1,7 +1,8 @@
 import type { Card, Catalog, KnowledgeItem, Level, Source } from './types';
 import { photoCards, photoItems } from './seed-photos.ts';
 import { additionalPhotoItems, additionalPhotoCards } from './seed-new-photos.ts';
-import { modernItems, modernCards, modernUpdatedAt } from './seed-modern-photos.ts';
+import { modernItems, modernCards } from './seed-modern-photos.ts';
+import { laterCultureItems, laterCultureCards, laterCultureUpdatedAt } from './seed-later-culture.ts';
 
 // Facts checked against the linked sources on 2026-11-09. Difficulty remains provisional.
 const updatedAt = '2026-11-09T00:00:00.000Z';
@@ -196,4 +197,4 @@ const cards: Card[] = [
     '現存する建物はハドリアヌス帝時代に完成した。アテネのパルテノン神殿と区別する。'),
 ];
 
-export const seedCatalog: Catalog = { schemaVersion: 1, version: 6, updatedAt: modernUpdatedAt, items: [...items, ...photoItems, ...additionalPhotoItems, ...modernItems], cards: [...cards, ...photoCards, ...additionalPhotoCards, ...modernCards] };
+export const seedCatalog: Catalog = { schemaVersion: 1, version: 7, updatedAt: laterCultureUpdatedAt, items: [...items, ...photoItems, ...additionalPhotoItems, ...modernItems, ...laterCultureItems], cards: [...cards, ...photoCards, ...additionalPhotoCards, ...modernCards, ...laterCultureCards] };
