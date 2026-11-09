@@ -169,7 +169,21 @@ function sync():Promise<void>{
   // Built-in mirrored catalog is used unless the owner supplies a custom JSON source.
   if(view==='study'&&position<queue.length){syncPending=true;return Promise.resolve();}
   syncing=true;syncPending=false;syncMessage='教材を取得しています…';if(view==='settings')render();
-  currentSync=(async()=>{try{const r=await synchronize(db,state.settings.syncUrl||DEFAULT_CATALOG_URL);state=await db.load();syncMessage=`同期完了：v${r.version} · ${r.itemCount}項目`;toast('教材を同期しました。学習履歴は保持されています。');}catch(e){syncMessage=`同期できませんでした：${message(e)} 保存済み教材で学習できます。`;toast(syncMessage,true);}finally{syncing=false;currentSync=null;if(view!=='study')render();}})();
+  currentSync=(async()=>{try{
+    const preferred=state.settings.syncUrl||DEFAULT_CATALOG_URL;
+    let fallback=false;
+    let r;
+    try{r=await synchronize(db,preferred);}
+    catch(error){
+      if(preferred===DEFAULT_CATALOG_URL)throw error;
+      // Older CSV / incomplete Apps Script settings must not block the standard source.
+      r=await synchronize(db,DEFAULT_CATALOG_URL);
+      fallback=true;
+    }
+    state=await db.load();
+    syncMessage=`同期完了：v${r.version} · ${r.itemCount}項目${fallback?'（独自URLが利用できず標準データに切替）':''}`;
+    toast('教材を同期しました。学習履歴は保持されています。');
+  }catch(e){syncMessage=`同期できませんでした：${message(e)} 保存済み教材で学習できます。`;toast(syncMessage,true);}finally{syncing=false;currentSync=null;if(view!=='study')render();}})();
   return currentSync;
 }
 
