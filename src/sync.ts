@@ -62,7 +62,9 @@ async function runSync(db: SyncDatabase, url: string): Promise<SyncResult> {
     let parsed: unknown;
     try { parsed = JSON.parse(body); }
     catch { throw new Error('同期先がJSONを返していません。公開設定とApps Scriptの実行URLを確認してください。'); }
-    catalog = validateCatalog(parsed);
+    // A Sheets publication is a versioned delta, not necessarily all seed rows.
+    // The final combined catalog is checked atomically in HistoryDB.applyCatalog().
+    catalog = validateCatalog(parsed, true);
   } catch (error) {
     if (abort.signal.aborted) throw new Error('同期がタイムアウトしました。保存済みのデータで学習できます。');
     if (error instanceof TypeError) throw new Error('同期先に接続できません。通信・公開設定・CORSを確認してください。保存済みデータは保持しています。');
