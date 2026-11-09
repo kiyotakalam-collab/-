@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 2,
-  "updatedAt": "2026-11-09T08:02:29.000Z",
+  "version": 3,
+  "updatedAt": "2026-11-09T08:22:15.000Z",
   "items": [
     {
       "id": "gr-homer",
@@ -540,6 +540,974 @@
       "updatedAt": "2026-11-09T00:00:00.000Z",
       "version": 1,
       "deleted": false
+    },
+    {
+      "id": "gr-zeus",
+      "canonicalName": "ゼウス",
+      "aliases": [
+        "Zeus"
+      ],
+      "kind": "concept",
+      "era": "古代ギリシア",
+      "field": "宗教",
+      "level": 1,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ギリシア神話の主神。天と雷を司る。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真1／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-apollo",
+      "canonicalName": "アポロン",
+      "aliases": [
+        "アポローン",
+        "Apollo"
+      ],
+      "kind": "concept",
+      "era": "古代ギリシア",
+      "field": "宗教",
+      "level": 1,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ギリシア神話の神。デルフォイの神託で知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真1／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-aphrodite",
+      "canonicalName": "アフロディテ",
+      "aliases": [
+        "アプロディテ",
+        "Aphrodite"
+      ],
+      "kind": "concept",
+      "era": "古代ギリシア",
+      "field": "宗教",
+      "level": 2,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ギリシア神話の愛と美の女神。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真1／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-athena",
+      "canonicalName": "アテナ",
+      "aliases": [
+        "アテーナー",
+        "Athena"
+      ],
+      "kind": "concept",
+      "era": "古代ギリシア",
+      "field": "宗教",
+      "level": 1,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "知恵と戦いに関わる女神。アテネの守護神。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真1／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-hesiod",
+      "canonicalName": "ヘシオドス",
+      "aliases": [
+        "ヘーシオドス",
+        "Hesiod"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "文学",
+      "level": 2,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代ギリシアの詩人。『労働と日々』『神統記』が伝わる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真1／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-sappho",
+      "canonicalName": "サッフォー",
+      "aliases": [
+        "サッポー",
+        "Sappho"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "文学",
+      "level": 3,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "レスボス島出身の叙情詩人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真1／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-pindar",
+      "canonicalName": "ピンダロス",
+      "aliases": [
+        "ピンダール",
+        "Pindar"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "文学",
+      "level": 3,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "競技の勝者をたたえる頌歌で知られる叙情詩人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真1／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-aeschylus",
+      "canonicalName": "アイスキュロス",
+      "aliases": [
+        "Aeschylus"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "文学",
+      "level": 2,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代ギリシアの悲劇作家。『アガメムノン』などを著した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真1／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-sophocles",
+      "canonicalName": "ソフォクレス",
+      "aliases": [
+        "Sophocles"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "文学",
+      "level": 1,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代ギリシアの悲劇作家。『オイディプス王』で知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真1／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-euripides",
+      "canonicalName": "エウリピデス",
+      "aliases": [
+        "Euripides"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "文学",
+      "level": 2,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代ギリシアの悲劇作家。『メデイア』で知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真1／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-aristophanes",
+      "canonicalName": "アリストファネス",
+      "aliases": [
+        "Aristophanes"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "文学",
+      "level": 2,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代ギリシアの喜劇作家。『女の平和』を著した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真1／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-thales",
+      "canonicalName": "タレス",
+      "aliases": [
+        "Thales"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "哲学・思想",
+      "level": 2,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ミレトス出身の自然哲学者。万物の根源を水と考えた。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真2／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-pythagoras",
+      "canonicalName": "ピタゴラス",
+      "aliases": [
+        "Pythagoras"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "哲学・思想",
+      "level": 2,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "サモス島出身。数に基づく世界理解で知られ、ピタゴラスの定理に名を残す。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真2／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-heraclitus",
+      "canonicalName": "ヘラクレイトス",
+      "aliases": [
+        "Heraclitus"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "哲学・思想",
+      "level": 3,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "エフェソス出身の自然哲学者。「万物は流転する」という考えで知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真2／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-democritus",
+      "canonicalName": "デモクリトス",
+      "aliases": [
+        "Democritus"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "哲学・思想",
+      "level": 3,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "原子論で知られる古代ギリシアの哲学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真2／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-protagoras",
+      "canonicalName": "プロタゴラス",
+      "aliases": [
+        "Protagoras"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "哲学・思想",
+      "level": 3,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ソフィストの一人。「万物の尺度は人間」と説いた。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真2／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-hippocrates",
+      "canonicalName": "ヒッポクラテス",
+      "aliases": [
+        "Hippocrates"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "科学",
+      "level": 2,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "コス島出身。古代ギリシアの医学に関わる人物で「医学の父」と呼ばれる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真3／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-phidias",
+      "canonicalName": "フェイディアス",
+      "aliases": [
+        "ペイディアス",
+        "Phidias"
+      ],
+      "kind": "person",
+      "era": "古代ギリシア",
+      "field": "美術",
+      "level": 3,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "パルテノン神殿の彫刻事業を監督した彫刻家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真3／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-doric",
+      "canonicalName": "ドーリア式",
+      "aliases": [
+        "ドリス式",
+        "Doric order"
+      ],
+      "kind": "concept",
+      "era": "古代ギリシア",
+      "field": "建築",
+      "level": 1,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代ギリシア建築の柱の様式の一つ。柱頭は比較的簡素。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真3／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-ionic",
+      "canonicalName": "イオニア式",
+      "aliases": [
+        "イオニア様式",
+        "Ionic order"
+      ],
+      "kind": "concept",
+      "era": "古代ギリシア",
+      "field": "建築",
+      "level": 2,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代ギリシア建築の柱の様式の一つ。柱頭の渦巻装飾が特徴。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真3／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-corinthian",
+      "canonicalName": "コリント式",
+      "aliases": [
+        "コリント様式",
+        "Corinthian order"
+      ],
+      "kind": "concept",
+      "era": "古代ギリシア",
+      "field": "建築",
+      "level": 2,
+      "region": "ギリシア",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代ギリシア建築の柱の様式の一つ。柱頭に植物文様の装飾がある。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真3／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-koine",
+      "canonicalName": "コイネー",
+      "aliases": [
+        "コイネー・ギリシア語",
+        "Koine"
+      ],
+      "kind": "concept",
+      "era": "ヘレニズム",
+      "field": "言語",
+      "level": 2,
+      "region": "東地中海",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ヘレニズム世界で広く用いられた共通ギリシア語。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真4／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-cosmopolitanism",
+      "canonicalName": "世界市民主義",
+      "aliases": [
+        "コスモポリタニズム",
+        "cosmopolitanism"
+      ],
+      "kind": "concept",
+      "era": "ヘレニズム",
+      "field": "哲学・思想",
+      "level": 2,
+      "region": "東地中海",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "都市国家の枠を越えた、世界の一員としての考え方。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真4／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-stoicism",
+      "canonicalName": "ストア派",
+      "aliases": [
+        "ストア学派",
+        "Stoicism"
+      ],
+      "kind": "concept",
+      "era": "ヘレニズム",
+      "field": "哲学・思想",
+      "level": 2,
+      "region": "東地中海",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ゼノン（キティオン）が創始した哲学の一派。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真4／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-epicureanism",
+      "canonicalName": "エピクロス派",
+      "aliases": [
+        "エピクロス学派",
+        "Epicureanism"
+      ],
+      "kind": "concept",
+      "era": "ヘレニズム",
+      "field": "哲学・思想",
+      "level": 2,
+      "region": "東地中海",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "エピクロスに始まる哲学の一派。精神の平静を重視する。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真4／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-mouseion",
+      "canonicalName": "ムセイオン",
+      "aliases": [
+        "ムーセイオン",
+        "Mouseion"
+      ],
+      "kind": "concept",
+      "era": "ヘレニズム",
+      "field": "科学",
+      "level": 3,
+      "region": "東地中海",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アレクサンドリアの学術研究施設。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真4／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-venus-milo",
+      "canonicalName": "ミロのヴィーナス",
+      "aliases": [
+        "ミロのアフロディテ",
+        "Venus de Milo"
+      ],
+      "kind": "work",
+      "era": "ヘレニズム",
+      "field": "美術",
+      "level": 2,
+      "region": "東地中海",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ミロ島で発見された、アフロディテ像として知られる大理石彫刻。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真4／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-laocoon",
+      "canonicalName": "ラオコーン",
+      "aliases": [
+        "ラオコーン群像",
+        "Laocoön"
+      ],
+      "kind": "work",
+      "era": "ヘレニズム",
+      "field": "美術",
+      "level": 3,
+      "region": "東地中海",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ラオコーンと息子たちを表した彫刻群。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真4／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-samothrace-nike",
+      "canonicalName": "サモトラケのニケ",
+      "aliases": [
+        "サモトラケのニケ像",
+        "Winged Victory of Samothrace"
+      ],
+      "kind": "work",
+      "era": "ヘレニズム",
+      "field": "美術",
+      "level": 3,
+      "region": "東地中海",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "サモトラケ島で発見された勝利の女神ニケの彫刻。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真4／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-mithraism",
+      "canonicalName": "ミトラ教",
+      "aliases": [
+        "ミスラ教",
+        "Mithraism"
+      ],
+      "kind": "concept",
+      "era": "ヘレニズム",
+      "field": "宗教",
+      "level": 3,
+      "region": "東地中海",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イラン起源のミトラ神を中心とする密儀宗教。ローマ世界にも広まった。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真4／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-seneca",
+      "canonicalName": "セネカ",
+      "aliases": [
+        "Seneca"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "哲学・思想",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマのストア派哲学者。ネロの師としても知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真5／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-epictetus",
+      "canonicalName": "エピクテトス",
+      "aliases": [
+        "Epictetus"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "哲学・思想",
+      "level": 3,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマ時代のストア派哲学者。教えは『語録』などに伝わる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真5／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-marcus-aurelius",
+      "canonicalName": "マルクス・アウレリウス・アントニヌス",
+      "aliases": [
+        "マルクス・アウレリウス",
+        "Marcus Aurelius"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "哲学・思想",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマ皇帝でストア派哲学者。ギリシア語で『自省録』を記した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真5／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-horace",
+      "canonicalName": "ホラティウス",
+      "aliases": [
+        "ホラティウス",
+        "Horace"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "文学",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アウグストゥス時代の詩人。『歌集』で知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真5／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-ovid",
+      "canonicalName": "オウィディウス",
+      "aliases": [
+        "オウィディウス",
+        "オヴィディウス",
+        "Ovid"
+      ],
+      "kind": "person",
+      "era": "古代ローマ",
+      "field": "文学",
+      "level": 2,
+      "region": "ローマ",
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマの詩人。『転身譜』で知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真5／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。提供写真で掲載を確認したが、教科書・用語集全体の重要度および大学別出題頻度は未照合。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
     }
   ],
   "cards": [
@@ -818,6 +1786,501 @@
       "explanation": "現存する建物はハドリアヌス帝時代に完成した。アテネのパルテノン神殿と区別する。",
       "updatedAt": "2026-11-09T08:02:29.000Z",
       "version": 2,
+      "deleted": false
+    },
+    {
+      "id": "gr-zeus-chief",
+      "knowledgeId": "gr-zeus",
+      "type": "context",
+      "question": "ギリシア神話の主神は？",
+      "answer": "ゼウス",
+      "explanation": "天と雷を司る。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-apollo-delphi",
+      "knowledgeId": "gr-apollo",
+      "type": "context",
+      "question": "デルフォイの神託で知られる神は？",
+      "answer": "アポロン",
+      "explanation": "ギリシア神話の神。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-aphrodite-love",
+      "knowledgeId": "gr-aphrodite",
+      "type": "context",
+      "question": "ギリシア神話の愛と美の女神は？",
+      "answer": "アフロディテ",
+      "explanation": "ローマ神話のウェヌスに対応する。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-athena-wisdom",
+      "knowledgeId": "gr-athena",
+      "type": "context",
+      "question": "アテネの守護神で、知恵に関わる女神は？",
+      "answer": "アテナ",
+      "explanation": "パルテノン神殿はアテナに捧げられた。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-homer-iliad-work",
+      "knowledgeId": "gr-homer",
+      "type": "person-work",
+      "question": "ホメロスの叙事詩で、トロイア戦争を題材とするものは？",
+      "answer": "イリアス",
+      "explanation": "『オデュッセイア』はオデュッセウスの帰郷を描く。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-homer-odyssey-author",
+      "knowledgeId": "gr-homer",
+      "type": "work-author",
+      "question": "『オデュッセイア』の作者とされる人物は？",
+      "answer": "ホメロス",
+      "explanation": "古代ギリシアの叙事詩人。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-hesiod-works-days-author",
+      "knowledgeId": "gr-hesiod",
+      "type": "work-author",
+      "question": "『労働と日々』の作者は？",
+      "answer": "ヘシオドス",
+      "explanation": "古代ギリシアの詩人。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-hesiod-theogony-author",
+      "knowledgeId": "gr-hesiod",
+      "type": "work-author",
+      "question": "『神統記』の作者は？",
+      "answer": "ヘシオドス",
+      "explanation": "神々の系譜を扱う叙事詩。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-sappho-lesbos",
+      "knowledgeId": "gr-sappho",
+      "type": "achievement-person",
+      "question": "レスボス島出身の女性叙情詩人は？",
+      "answer": "サッフォー",
+      "explanation": "古代ギリシアの叙情詩人。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-pindar-odes",
+      "knowledgeId": "gr-pindar",
+      "type": "achievement-person",
+      "question": "競技の勝者をたたえる頌歌で知られる詩人は？",
+      "answer": "ピンダロス",
+      "explanation": "古代ギリシアの叙情詩人。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-aeschylus-agamemnon-author",
+      "knowledgeId": "gr-aeschylus",
+      "type": "work-author",
+      "question": "悲劇『アガメムノン』の作者は？",
+      "answer": "アイスキュロス",
+      "explanation": "古代ギリシアの三大悲劇作家の一人。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-sophocles-oedipus-author",
+      "knowledgeId": "gr-sophocles",
+      "type": "work-author",
+      "question": "悲劇『オイディプス王』の作者は？",
+      "answer": "ソフォクレス",
+      "explanation": "古代ギリシアの三大悲劇作家の一人。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-sophocles-oedipus-work",
+      "knowledgeId": "gr-sophocles",
+      "type": "person-work",
+      "question": "ソフォクレスの代表的な悲劇は？",
+      "answer": "オイディプス王",
+      "explanation": "王の運命を描いた悲劇。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-euripides-medea-author",
+      "knowledgeId": "gr-euripides",
+      "type": "work-author",
+      "question": "悲劇『メデイア』の作者は？",
+      "answer": "エウリピデス",
+      "explanation": "古代ギリシアの三大悲劇作家の一人。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-aristophanes-lysistrata-author",
+      "knowledgeId": "gr-aristophanes",
+      "type": "work-author",
+      "question": "喜劇『女の平和』の作者は？",
+      "answer": "アリストファネス",
+      "explanation": "ペロポネソス戦争を背景とする作品。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-thales-water",
+      "knowledgeId": "gr-thales",
+      "type": "theory-person",
+      "question": "万物の根源を水と考えた人物は？",
+      "answer": "タレス",
+      "explanation": "ミレトス出身の自然哲学者。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-pythagoras-number",
+      "knowledgeId": "gr-pythagoras",
+      "type": "theory-person",
+      "question": "万物の根源を数に求めた人物は？",
+      "answer": "ピタゴラス",
+      "explanation": "数に基づく世界理解で知られる。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-heraclitus-flux",
+      "knowledgeId": "gr-heraclitus",
+      "type": "theory-person",
+      "question": "「万物は流転する」と考えた人物は？",
+      "answer": "ヘラクレイトス",
+      "explanation": "エフェソス出身の自然哲学者。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-democritus-atom",
+      "knowledgeId": "gr-democritus",
+      "type": "theory-person",
+      "question": "原子論で知られる古代ギリシアの哲学者は？",
+      "answer": "デモクリトス",
+      "explanation": "自然を原子と空虚によって説明した。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-protagoras-measure",
+      "knowledgeId": "gr-protagoras",
+      "type": "theory-person",
+      "question": "「万物の尺度は人間」と説いたソフィストは？",
+      "answer": "プロタゴラス",
+      "explanation": "古代ギリシアのソフィスト。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-socrates-ignorance",
+      "knowledgeId": "gr-socrates",
+      "type": "theory-person",
+      "question": "「無知の知」で知られる人物は？",
+      "answer": "ソクラテス",
+      "explanation": "自分が知らないことを自覚する姿勢として説明される。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-plato-academy",
+      "knowledgeId": "gr-plato",
+      "type": "achievement-person",
+      "question": "アカデメイアを開いた人物は？",
+      "answer": "プラトン",
+      "explanation": "アテネに開いた学園。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-hippocrates-medicine",
+      "knowledgeId": "gr-hippocrates",
+      "type": "achievement-person",
+      "question": "「医学の父」と呼ばれる古代ギリシアの人物は？",
+      "answer": "ヒッポクラテス",
+      "explanation": "コス島出身。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-phidias-parthenon",
+      "knowledgeId": "gr-phidias",
+      "type": "achievement-person",
+      "question": "パルテノン神殿の彫刻事業を監督した人物は？",
+      "answer": "フェイディアス",
+      "explanation": "『アテナ女神像』などに関わった。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-doric-capital",
+      "knowledgeId": "gr-doric",
+      "type": "context",
+      "question": "柱頭の装飾が簡素なギリシア建築の様式は？",
+      "answer": "ドーリア式",
+      "explanation": "パルテノン神殿の外周の列柱にも使われた。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-ionic-capital",
+      "knowledgeId": "gr-ionic",
+      "type": "context",
+      "question": "柱頭の渦巻装飾が特徴のギリシア建築の様式は？",
+      "answer": "イオニア式",
+      "explanation": "ギリシア建築の柱の様式の一つ。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-corinthian-capital",
+      "knowledgeId": "gr-corinthian",
+      "type": "context",
+      "question": "柱頭に植物文様の装飾があるギリシア建築の様式は？",
+      "answer": "コリント式",
+      "explanation": "ギリシア建築の柱の様式の一つ。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-koine-language",
+      "knowledgeId": "he-koine",
+      "type": "context",
+      "question": "ヘレニズム世界で広まった共通ギリシア語は？",
+      "answer": "コイネー",
+      "explanation": "地域を越えた交流に用いられた。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-cosmopolitanism-name",
+      "knowledgeId": "he-cosmopolitanism",
+      "type": "context",
+      "question": "都市国家を越えて世界の一員と考える思想は？",
+      "answer": "世界市民主義",
+      "explanation": "コスモポリタニズムともいう。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-stoicism-zeno",
+      "knowledgeId": "he-stoicism",
+      "type": "context",
+      "question": "ゼノン（キティオン）が創始した学派は？",
+      "answer": "ストア派",
+      "explanation": "同名のエレアのゼノンと区別する。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-epicureanism-epicurus",
+      "knowledgeId": "he-epicureanism",
+      "type": "context",
+      "question": "エピクロスが創始した学派は？",
+      "answer": "エピクロス派",
+      "explanation": "精神の平静を重視する。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-mouseion-alexandria",
+      "knowledgeId": "he-mouseion",
+      "type": "context",
+      "question": "アレクサンドリアの学術研究施設は？",
+      "answer": "ムセイオン",
+      "explanation": "ヘレニズム時代の研究拠点。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-euclid-elements-work",
+      "knowledgeId": "he-euclid",
+      "type": "person-work",
+      "question": "エウクレイデスの幾何学書は？",
+      "answer": "原論",
+      "explanation": "『幾何学原本』とも呼ばれる。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-aristarchus-heliocentric-term",
+      "knowledgeId": "he-aristarchus",
+      "type": "context",
+      "question": "アリスタルコスが唱えた、太陽を中心に考える説は？",
+      "answer": "太陽中心説",
+      "explanation": "地球の公転を考えた。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-venus-milo-name",
+      "knowledgeId": "he-venus-milo",
+      "type": "context",
+      "question": "ミロ島で発見されたアフロディテ像の通称は？",
+      "answer": "ミロのヴィーナス",
+      "explanation": "古代ギリシアの大理石彫刻。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-laocoon-name",
+      "knowledgeId": "he-laocoon",
+      "type": "context",
+      "question": "父子が大蛇に襲われる姿を表した彫刻群は？",
+      "answer": "ラオコーン",
+      "explanation": "ラオコーン群像とも呼ばれる。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-samothrace-nike-name",
+      "knowledgeId": "he-samothrace-nike",
+      "type": "context",
+      "question": "サモトラケ島で発見された勝利の女神の彫刻は？",
+      "answer": "サモトラケのニケ",
+      "explanation": "ニケは勝利の女神。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-mithraism-name",
+      "knowledgeId": "he-mithraism",
+      "type": "context",
+      "question": "イラン起源でローマ世界にも広まった密儀宗教は？",
+      "answer": "ミトラ教",
+      "explanation": "ミトラ神を中心とする。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-seneca-nero",
+      "knowledgeId": "ro-seneca",
+      "type": "achievement-person",
+      "question": "ネロの師として知られるストア派哲学者は？",
+      "answer": "セネカ",
+      "explanation": "ローマの哲学者。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-epictetus-discourses",
+      "knowledgeId": "ro-epictetus",
+      "type": "achievement-person",
+      "question": "『語録』に教えが伝わるストア派哲学者は？",
+      "answer": "エピクテトス",
+      "explanation": "弟子が教えを書き留めた。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-marcus-meditations-author",
+      "knowledgeId": "ro-marcus-aurelius",
+      "type": "work-author",
+      "question": "『自省録』を記したローマ皇帝は？",
+      "answer": "マルクス・アウレリウス・アントニヌス",
+      "explanation": "ストア派哲学の影響を受けた。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-marcus-meditations-work",
+      "knowledgeId": "ro-marcus-aurelius",
+      "type": "person-work",
+      "question": "マルクス・アウレリウス・アントニヌスの著作は？",
+      "answer": "自省録",
+      "explanation": "ギリシア語で記された。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-horace-odes-author",
+      "knowledgeId": "ro-horace",
+      "type": "work-author",
+      "question": "『歌集』の著者は？",
+      "answer": "ホラティウス",
+      "explanation": "アウグストゥス時代の詩人。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-ovid-metamorphoses-author",
+      "knowledgeId": "ro-ovid",
+      "type": "work-author",
+      "question": "『転身譜』の著者は？",
+      "answer": "オウィディウス",
+      "explanation": "『変身物語』とも呼ばれる。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-ovid-metamorphoses-work",
+      "knowledgeId": "ro-ovid",
+      "type": "person-work",
+      "question": "オウィディウスの代表的な長編詩は？",
+      "answer": "転身譜",
+      "explanation": "『変身物語』とも呼ばれる。",
+      "updatedAt": "2026-11-09T08:22:15.000Z",
+      "version": 1,
       "deleted": false
     }
   ]

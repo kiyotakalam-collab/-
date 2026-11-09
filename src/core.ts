@@ -60,7 +60,7 @@ function item(value: unknown, name: string): KnowledgeItem {
     field: string(v.field, `${name}.field`), region: string(v.region, `${name}.region`), era: string(v.era, `${name}.era`), level: v.level as KnowledgeItem['level'],
     relatedPeople: array(v.relatedPeople, `${name}.relatedPeople`, id, 1000), relatedWorks: array(v.relatedWorks, `${name}.relatedWorks`, id, 1000), description: string(v.description, `${name}.description`, true),
     images: array(v.images, `${name}.images`, image, 100),
-    sources: array(v.sources, `${name}.sources`, (entry, label) => { const s = object(entry, label); return { title: string(s.title, `${label}.title`), url: url(s.url, `${label}.url`), ...(s.note === undefined ? {} : {note: string(s.note, `${label}.note`, true)}) }; }, 100),
+    sources: array(v.sources, `${name}.sources`, (entry, label) => { const s = object(entry, label); return { title: string(s.title, `${label}.title`), ...(s.url === undefined ? {} : {url: url(s.url, `${label}.url`)}), ...(s.note === undefined ? {} : {note: string(s.note, `${label}.note`, true)}) }; }, 100),
     difficultyEvidence: string(v.difficultyEvidence, `${name}.difficultyEvidence`), verification: v.verification as KnowledgeItem['verification'], updatedAt: date(v.updatedAt, `${name}.updatedAt`), version: integer(v.version, `${name}.version`), deleted: bool(v.deleted, `${name}.deleted`),
   };
   if (!result.sources.length) fail(`${name}には知識の出典が必要です。`);

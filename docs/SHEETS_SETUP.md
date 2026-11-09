@@ -44,7 +44,7 @@ CSV取り込み時は「テキストを数値、日付、数式に変換する�
 | `relatedPeople`, `relatedWorks` | 同じKnowledgeタブに存在するIDのJSON配列 |
 | `description` | 日本語の補足 |
 | `images` | `ImageAsset`オブジェクトのJSON配列 |
-| `sources` | `{ "title": "確認した資料名", "url": "実際の出典URL" }` のJSON配列。最低1件 |
+| `sources` | `{ "title": "確認した資料名", "url": "実際の出典URL" }` のJSON配列。最低1件。ユーザー提供の紙教材など公開URLがない資料は `url` を省略し、`note` に写真・範囲を記録する |
 | `difficultyEvidence` | 掲載・出題根拠。不足する場合は「暫定分類」とその理由 |
 | `verification` | `verified` / `provisional` / `needs-review`。事実確認の状態 |
 | `updatedAt`, `version`, `deleted` | UTCのISO日時、行バージョン（整数1以上）、`TRUE` / `FALSE` |
@@ -67,7 +67,7 @@ Lv.1〜3の問題は「『国家』の著者は？」「ストア派を創始し
 
 ### Metaタブ
 
-`key,value` の2列です。`schemaVersion=1`、カタログ全体の `version`、UTCの `updatedAt`、`status=draft` または `published` を持ちます。アプリ同梱カタログはversion 2です。新しいマスターはMeta.version=2から初期化し、初回の `publishCatalog` でversion 3へ上げます。既存マスターを使う場合も、その最新カタログとアプリ同梱教材の両方より大きいバージョンで公開します。
+`key,value` の2列です。`schemaVersion=1`、カタログ全体の `version`、UTCの `updatedAt`、`status=draft` または `published` を持ちます。アプリ同梱カタログはversion 3です。新しいマスターはMeta.version=3から初期化し、初回の `publishCatalog` でversion 4へ上げます。既存マスターを使う場合も、その最新カタログとアプリ同梱教材の両方より大きいバージョンで公開します。
 
 ## 編集・公開の手順
 
