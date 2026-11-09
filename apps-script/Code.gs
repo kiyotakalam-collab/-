@@ -16,7 +16,7 @@ function initializeMaster() {
   const meta = ensureSheet_(ss, 'Meta', ['key', 'value']);
   if (meta.getLastRow() === 1) {
     meta.getRange(2, 1, 4, 2).setValues([
-      ['schemaVersion', '1'], ['version', '1'],
+      ['schemaVersion', '1'], ['version', '2'],
       ['updatedAt', new Date().toISOString()], ['status', 'draft']
     ]);
   }
@@ -33,7 +33,7 @@ function beginEdit() {
 /**
  * Validate all working rows, bump catalog version and publish.
  * Set each changed row's version and updatedAt before this call.
- * The first published version is 2, above the bundled initial catalog's version 1.
+ * The first published version is 3, above the bundled initial catalog's version 2.
  */
 function publishCatalog() {
   const lock = LockService.getScriptLock();

@@ -4,6 +4,7 @@ import { existsSync } from 'node:fs';
 import { createServer } from 'node:http';
 import { resolve, extname } from 'node:path';
 import type { Catalog, ReviewEvent } from '../src/types';
+import { seedCatalog } from '../src/seed';
 
 async function boot(page: Page) {
   await page.goto('/');
@@ -43,8 +44,8 @@ test('Android相当の全画面・絞り込み・正誤履歴・二重タップ�
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }
   await nav(page, 'setup');
-  await page.locator('[name=level]').selectOption('4');
-  await expect(page.locator('.setup-bottom strong')).toHaveText('24 枚が対象');
+  await page.locator('[name=level][value="4"]').check();
+  await expect(page.locator('.setup-bottom strong')).toHaveText(`${seedCatalog.cards.length} 枚が対象`);
   await page.locator('[name=levelMode][value=single]').check();
   await expect(page.locator('.setup-bottom strong')).toHaveText('2 枚が対象');
   await page.locator('[name=regions][value="東地中海"]').check();
@@ -92,7 +93,7 @@ test('画像を拡大しても問題面で解答を表示しない', async ({pag
 
 test('文字問題のみの1枚を表示・解答・正答記録できる', async ({page}) => {
   await boot(page);await nav(page,'setup');
-  await page.locator('[name=level]').selectOption('4');
+  await page.locator('[name=level][value="4"]').check();
   await page.locator('[name=levelMode][value=single]').check();
   await page.locator('[name=regions][value="東地中海"]').check();
   await page.locator('[name=fields][value="科学"]').check();
@@ -107,6 +108,101 @@ test('文字問題のみの1枚を表示・解答・正答記録できる', asyn
   await expect(page.getByRole('heading',{name:'おつかれさまでした。'})).toBeVisible();
   const saved=await records(page);expect(saved.events).toHaveLength(1);
   expect(saved.events[0]).toMatchObject({cardId:'he-aristarchus-heliocentric-person',correct:true});
+});
+
+test('大きなレベル選択で累積・単独を切り替え、他条件の変更後も選択を維持する', async ({page}) => {
+  await boot(page);await nav(page,'setup');
+  await expect(page.locator('input[name=level]')).toHaveCount(5);
+  await expect(page.locator('[name=level][value=all]')).toBeChecked();
+  for(const input of await page.locator('input[name=level]').all()){
+    const size=await input.evaluate(el=>{
+      const label=el.closest('label');
+      if(!label)throw new Error('Level control has no associated tile label');
+      const r=label.getBoundingClientRect();return {width:r.width,height:r.height};
+    });
+    expect(size.height).toBeGreaterThanOrEqual(48);
+    expect(size.width).toBeGreaterThanOrEqual(48);
+  }
+  await page.locator('[name=level][value="1"]').check();
+  await expect(page.locator('[name=level][value="1"]')).toBeFocused();
+  await page.locator('[name=level][value="1"]').press('ArrowRight');
+  await expect(page.locator('[name=level][value="2"]')).toBeChecked();
+  await expect(page.locator('[name=level][value="2"]')).toBeFocused();
+  await page.locator('[name=level][value="1"]').check();
+  await page.locator('[name=levelMode][value=single]').check();
+  await expect(page.locator('.setup-bottom strong')).toHaveText('9 枚が対象');
+  await page.locator('[name=levelMode][value=cumulative]').check();
+  await expect(page.locator('.setup-bottom strong')).toHaveText('9 枚が対象');
+  await page.locator('[name=level][value="4"]').check();
+  await expect(page.locator('.setup-bottom strong')).toHaveText(`${seedCatalog.cards.length} 枚が対象`);
+  await page.locator('[name=levelMode][value=single]').check();
+  await expect(page.locator('.setup-bottom strong')).toHaveText('2 枚が対象');
+  await page.locator('[name=regions][value="東地中海"]').check();
+  await expect(page.locator('[name=level][value="4"]')).toBeChecked();
+  await expect(page.locator('[name=levelMode][value=single]')).toBeChecked();
+  await expect(page.locator('.setup-bottom strong')).toHaveText('1 枚が対象');
+  await page.locator('[data-action=reset-filter]').click();
+  await expect(page.locator('[name=level][value=all]')).toBeChecked();
+  await expect(page.locator('.setup-bottom strong')).toHaveText(`${seedCatalog.cards.length} 枚が対象`);
+  await page.locator('[name=level][value="4"]').check();
+  await mkdir('artifacts',{recursive:true});
+  for(const width of [393,360]){
+    await page.setViewportSize({width,height:851});
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  }
+  await page.setViewportSize({width:393,height:851});
+  await page.screenshot({path:'artifacts/levels-mobile.png',fullPage:true});
+  await page.setViewportSize({width:1440,height:1000});
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  await page.screenshot({path:'artifacts/levels-desktop.png',fullPage:true});
+});
+
+test('旧版で学習済みの端末でも問題文だけを更新し、累積誤答と全回答を保持する', async ({page}) => {
+  const originalQuestion='叙事詩『イリアス』の作者と伝統的にされる古代ギリシアの詩人は？';
+  const homer=structuredClone(seedCatalog.items.find(item=>item.id==='gr-homer')!);
+  const oldCard={...structuredClone(seedCatalog.cards.find(card=>card.id==='gr-homer-iliad-author')!),question:originalQuestion,version:1,updatedAt:'2026-11-09T00:00:00.000Z'};
+  const oldCatalog:Catalog={schemaVersion:1,version:1,updatedAt:'2026-11-09T00:00:00.000Z',items:[homer],cards:[oldCard]};
+  const oldEvents:ReviewEvent[]=[
+    {id:'old-wrong',cardId:oldCard.id,correct:false,reviewedAt:'2026-11-09T01:00:00.000Z',sessionId:'old-session'},
+    {id:'old-correct',cardId:oldCard.id,correct:true,reviewedAt:'2026-11-09T01:01:00.000Z',sessionId:'old-session'},
+  ];
+  // Establish the same origin without loading app scripts, then seed a real v1 DB.
+  await page.goto('/manifest.webmanifest');
+  await page.evaluate(async({catalog,events})=>{
+    await new Promise<void>((resolve,reject)=>{
+      const request=indexedDB.open('cultural-history-master',1);
+      request.onupgradeneeded=()=>{
+        request.result.createObjectStore('meta');
+        request.result.createObjectStore('events',{keyPath:'id'});
+      };
+      request.onerror=()=>reject(request.error);
+      request.onsuccess=()=>{
+        const db=request.result,tx=db.transaction(['meta','events'],'readwrite');
+        tx.objectStore('meta').put(catalog,'catalog');
+        tx.objectStore('meta').put({syncUrl:'',lastSyncAt:null,lastBackupAt:null,dailyGoal:20},'settings');
+        events.forEach(event=>tx.objectStore('events').add(event));
+        tx.oncomplete=()=>{db.close();resolve();};
+        tx.onabort=()=>{db.close();reject(tx.error);};
+      };
+    });
+  },{catalog:oldCatalog,events:oldEvents});
+  await boot(page);
+  const upgraded=await records(page);
+  expect(upgraded.catalog.version).toBe(seedCatalog.version);
+  expect(upgraded.catalog.cards.find(card=>card.id===oldCard.id)?.question).toBe('『イリアス』の作者とされる人物は？');
+  expect(upgraded.events.slice().sort((a,b)=>a.reviewedAt.localeCompare(b.reviewedAt))).toEqual(oldEvents);
+  await nav(page,'history');
+  await expect(page.locator('.wrong-count')).toHaveText('1');
+  await page.locator('.history-card summary').click();
+  await expect(page.locator('.history-summary')).toContainText('累積正答 1回');
+  await expect(page.locator('.event-list li')).toHaveCount(2);
+  await nav(page,'setup');
+  await page.locator('[name=cardType]').selectOption('text');
+  await page.locator('#study-options [type=submit]').click();
+  await expect(page.locator('.flashcard h1')).toHaveText('『イリアス』の作者とされる人物は？');
+  await page.locator('[data-action=reveal]').click();
+  await expect(page.locator('.answer-area h2')).toHaveText('ホメロス');
+  await expect(page.locator('.card-past')).toContainText('誤答 1');
 });
 
 test('JSONダウンロードを別端末相当の空DBに復元して全回答を復旧・再復元で重複しない', async ({page,browser}) => {
@@ -143,7 +239,7 @@ test('同期失敗時は学習を続行し、再接続・起動時に同期し�
   await boot(page); await imageSession(page); await grade(page,false);
   const original=await records(page);
   const incoming=structuredClone(original.catalog);
-  incoming.version=2;
+  incoming.version=original.catalog.version+1;
   incoming.updatedAt='2026-11-10T00:00:00.000Z';
   incoming.items.push({...incoming.items[0],id:'test-extra',canonicalName:'試験用追加項目',aliases:[],version:1});
   incoming.cards.push({...incoming.cards[0],id:'test-extra-card',knowledgeId:'test-extra',question:'テスト用の追加カード',version:1});
@@ -160,9 +256,9 @@ test('同期失敗時は学習を続行し、再接続・起動時に同期し�
   await context.setOffline(true);
   await page.waitForFunction(()=>!navigator.onLine);
   await context.setOffline(false);
-  await expect.poll(async()=>(await records(page)).catalog.version).toBe(2);
+  await expect.poll(async()=>(await records(page)).catalog.version).toBe(incoming.version);
   expect((await records(page)).events).toEqual(learned.events);
-  expect((await records(page)).catalog.items).toHaveLength(19);
+  expect((await records(page)).catalog.items).toHaveLength(original.catalog.items.length+1);
   const count=requests;
   await page.reload();
   await expect.poll(()=>requests).toBeGreaterThan(count);
@@ -175,9 +271,9 @@ test('学習途中の再接続同期を終了まで待ち、出題停止後も�
   await boot(page);
   const original=(await records(page)).catalog;
   const incoming=structuredClone(original);
-  incoming.version=2;incoming.updatedAt='2026-11-10T00:00:00.000Z';
+  incoming.version=original.version+1;incoming.updatedAt='2026-11-10T00:00:00.000Z';
   const target=incoming.cards.find(c=>c.type==='image')!;
-  target.deleted=true;target.version=2;target.updatedAt=incoming.updatedAt;
+  target.deleted=true;target.version++;target.updatedAt=incoming.updatedAt;
   let publishDeletion=false,requests=0;
   await context.route('**/deferred-catalog.json',async route=>{requests++;await route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(publishDeletion?incoming:original)});});
   await nav(page,'settings');
@@ -190,10 +286,10 @@ test('学習途中の再接続同期を終了まで待ち、出題停止後も�
   await context.setOffline(false);await page.waitForFunction(()=>navigator.onLine);
   await page.evaluate(()=>new Promise(requestAnimationFrame));
   expect(requests).toBe(count);
-  expect((await records(page)).catalog.version).toBe(1);
+  expect((await records(page)).catalog.version).toBe(original.version);
   await grade(page,false);
   await nav(page,'home');
-  await expect.poll(async()=>(await records(page)).catalog.version).toBe(2);
+  await expect.poll(async()=>(await records(page)).catalog.version).toBe(incoming.version);
   const saved=await records(page);
   expect(saved.events).toHaveLength(1);
   expect(saved.events[0].cardId).toBe(target.id);
