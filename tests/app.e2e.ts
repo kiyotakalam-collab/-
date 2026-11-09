@@ -47,10 +47,10 @@ test('Android相当の全画面・絞り込み・正誤履歴・二重タップ�
   await page.locator('[name=level][value="4"]').check();
   await expect(page.locator('.setup-bottom strong')).toHaveText(`${seedCatalog.cards.length} 枚が対象`);
   await page.locator('[name=levelMode][value=single]').check();
-  await expect(page.locator('.setup-bottom strong')).toHaveText('2 枚が対象');
+  await expect(page.locator('.setup-bottom strong')).toHaveText('3 枚が対象');
   await page.locator('[name=regions][value="東地中海"]').check();
   await page.locator('[name=fields][value="科学"]').check();
-  await expect(page.locator('.setup-bottom strong')).toHaveText('1 枚が対象');
+  await expect(page.locator('.setup-bottom strong')).toHaveText('2 枚が対象');
   await page.locator('[name=eras][value="古代ローマ"]').check();
   await expect(page.locator('.setup-bottom strong')).toHaveText('0 枚が対象');
   await expect(page.locator('#study-options [type=submit]')).toBeDisabled();
@@ -95,19 +95,19 @@ test('文字問題のみの1枚を表示・解答・正答記録できる', asyn
   await boot(page);await nav(page,'setup');
   await page.locator('[name=level][value="4"]').check();
   await page.locator('[name=levelMode][value=single]').check();
-  await page.locator('[name=regions][value="東地中海"]').check();
-  await page.locator('[name=fields][value="科学"]').check();
+  await page.locator('[name=regions][value="ローマ"]').check();
+  await page.locator('[name=fields][value="哲学・思想"]').check();
   await page.locator('[name=cardType]').selectOption('text');
   await expect(page.locator('.setup-bottom strong')).toHaveText('1 枚が対象');
   await page.locator('#study-options [type=submit]').click();
   await expect(page.locator('.flashcard')).toBeVisible();
   await expect(page.locator('#question-image')).toHaveCount(0);
   await page.locator('[data-action=reveal]').click();
-  await expect(page.locator('.answer-area h2')).toHaveText('アリスタルコス');
+  await expect(page.locator('.answer-area h2')).toHaveText('ルクレティウス');
   await page.locator('[data-grade=correct]').click();
   await expect(page.getByRole('heading',{name:'おつかれさまでした。'})).toBeVisible();
   const saved=await records(page);expect(saved.events).toHaveLength(1);
-  expect(saved.events[0]).toMatchObject({cardId:'he-aristarchus-heliocentric-person',correct:true});
+  expect(saved.events[0]).toMatchObject({cardId:'ro-lucretius-nature-author',correct:true});
 });
 
 test('大きなレベル選択で累積・単独を切り替え、他条件の変更後も選択を維持する', async ({page}) => {
@@ -130,17 +130,17 @@ test('大きなレベル選択で累積・単独を切り替え、他条件の�
   await expect(page.locator('[name=level][value="2"]')).toBeFocused();
   await page.locator('[name=level][value="1"]').check();
   await page.locator('[name=levelMode][value=single]').check();
-  await expect(page.locator('.setup-bottom strong')).toHaveText('9 枚が対象');
+  await expect(page.locator('.setup-bottom strong')).toHaveText('19 枚が対象');
   await page.locator('[name=levelMode][value=cumulative]').check();
-  await expect(page.locator('.setup-bottom strong')).toHaveText('9 枚が対象');
+  await expect(page.locator('.setup-bottom strong')).toHaveText('19 枚が対象');
   await page.locator('[name=level][value="4"]').check();
   await expect(page.locator('.setup-bottom strong')).toHaveText(`${seedCatalog.cards.length} 枚が対象`);
   await page.locator('[name=levelMode][value=single]').check();
-  await expect(page.locator('.setup-bottom strong')).toHaveText('2 枚が対象');
+  await expect(page.locator('.setup-bottom strong')).toHaveText('3 枚が対象');
   await page.locator('[name=regions][value="東地中海"]').check();
   await expect(page.locator('[name=level][value="4"]')).toBeChecked();
   await expect(page.locator('[name=levelMode][value=single]')).toBeChecked();
-  await expect(page.locator('.setup-bottom strong')).toHaveText('1 枚が対象');
+  await expect(page.locator('.setup-bottom strong')).toHaveText('2 枚が対象');
   await page.locator('[data-action=reset-filter]').click();
   await expect(page.locator('[name=level][value=all]')).toBeChecked();
   await expect(page.locator('.setup-bottom strong')).toHaveText(`${seedCatalog.cards.length} 枚が対象`);

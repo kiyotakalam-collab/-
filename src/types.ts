@@ -1,5 +1,5 @@
 export type Level = 1 | 2 | 3 | 4;
-export interface Source { title: string; url: string; note?: string }
+export interface Source { title: string; url?: string; note?: string }
 export interface ImageAsset {
   id: string; url: string; sourceUrl: string; author: string;
   license: string; licenseUrl: string; caption: string;

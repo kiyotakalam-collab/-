@@ -16,7 +16,7 @@ function initializeMaster() {
   const meta = ensureSheet_(ss, 'Meta', ['key', 'value']);
   if (meta.getLastRow() === 1) {
     meta.getRange(2, 1, 4, 2).setValues([
-      ['schemaVersion', '1'], ['version', '2'],
+      ['schemaVersion', '1'], ['version', '3'],
       ['updatedAt', new Date().toISOString()], ['status', 'draft']
     ]);
   }
@@ -33,7 +33,7 @@ function beginEdit() {
 /**
  * Validate all working rows, bump catalog version and publish.
  * Set each changed row's version and updatedAt before this call.
- * The first published version is 3, above the bundled initial catalog's version 2.
+ * The first published version is 4, above the bundled initial catalog's version 3.
  */
 function publishCatalog() {
   const lock = LockService.getScriptLock();
@@ -130,7 +130,7 @@ function validateCatalog_(catalog) {
       names.set(normalized, item.id);
     });
     if (!item.sources.length) throw new Error('Knowledge sources required');
-    item.sources.forEach(function(source) { text_(source.title, 'source title'); url_(source.url, false); });
+    item.sources.forEach(function(source) { text_(source.title, 'source title'); if (source.url !== undefined) url_(source.url, false); });
     const imageIds = new Set();
     item.images.forEach(function(image) {
       id_(image.id);
