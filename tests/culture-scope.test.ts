@@ -13,7 +13,8 @@ describe('broad culture display groups',()=>{
     const cards=selectCards(catalog,[],structuredClone(DEFAULT_FILTER));
     expect(new Set(cards.map(card=>card.id)).size).toBe(cards.length);
     for(const item of catalog.items.filter(i=>!i.deleted)){
-      expect(itemEraGroups(item),item.id).not.toContain(UNCLASSIFIED_ERA);
+      const validIds=[...eraGroupsForRegions([regionGroup(item)]).map(option=>option.id),UNCLASSIFIED_ERA];
+      expect(itemEraGroups(item).every(id=>validIds.includes(id)),item.id).toBe(true);
       expect(REGION_GROUPS.some(group=>group.id===regionGroup(item))).toBe(true);
     }
     expect(selectCards(catalog,[],{...DEFAULT_FILTER,regionGroups:['china'],eraGroups:['china-ancient-middle']}).length).toBeGreaterThan(0);
