@@ -26,6 +26,8 @@ export class YearTestUI {
   private syncMessage='';
   private search='';
   constructor(private rerender:()=>void,private notify:(message:string,error?:boolean)=>void){}
+  getTab():Tab{return this.tab;}
+  setTab(next:Tab){this.tab=next;this.stage='setup';this.revealed=false;this.rerender();}
   async initialize(){
     try{
       this.database=await openYearDatabase();
@@ -51,10 +53,9 @@ export class YearTestUI {
     const items=this.liveItems(), total=this.state.events.length, correct=this.state.events.filter(x=>x.correct).length, due=selectYearQuestions(this.state.catalog,this.state.events,{direction:'both',mode:'due',level:'all',era:'all',region:'all'}).length;
     const common=`<section class="page-heading"><div><div class="eyebrow">CHRONOLOGY PRACTICE</div><h1>年号テスト</h1><p>文化史とは独立した年号の暗記・復習。年号は指定されたものだけ登録します。</p></div></section>
     <div class="year-stats"><div><span>登録年号</span><strong>${items.length}<small>件</small></strong></div><div><span>回答履歴</span><strong>${total}<small>回</small></strong></div><div><span>累計正答率</span><strong>${percent(correct,total)}<small>%</small></strong></div><div><span>復習対象</span><strong>${due}<small>問</small></strong></div></div>`;
-    const tabs=`<div class="year-tabs" role="tablist" aria-label="年号テストメニュー">${([['quiz','年号を学習'],['list','登録一覧'],['history','回答履歴']] as [Tab,string][]).map(([key,label])=>`<button type="button" role="tab" aria-selected="${this.tab===key}" data-year-tab="${key}" class="${this.tab===key?'active':''}">${label}</button>`).join('')}</div>`;
-    if(this.tab==='list')return common+tabs+this.list();
-    if(this.tab==='history')return common+tabs+this.history();
-    return common+tabs+(this.stage==='setup'?this.setup():this.stage==='studying'?this.question():this.finished());
+    if(this.tab==='list')return common+this.list();
+    if(this.tab==='history')return common+this.history();
+    return common+(this.stage==='setup'?this.setup():this.stage==='studying'?this.question():this.finished());
   }
   private setup(){
     const items=this.liveItems(), count=this.questions().length;
@@ -99,7 +100,7 @@ export class YearTestUI {
     return `<section class="panel year-list"><div class="section-title"><h2>年号の回答履歴</h2><span class="small muted">${this.state.events.length}回答</span></div>${rows.length?rows.map(([id,p])=>{const entry=this.liveItems().find(x=>x.id===id.split('::')[0]);return `<div class="year-history-row"><span>${h(entry?.event||id)}</span><small>${id.endsWith('year-event')?'年号→出来事':'出来事→年号'}</small><strong>正 ${p.correct} ／ 誤 ${p.wrong}</strong></div>`}).join(''):'<div class="year-empty-inline">学習履歴はまだありません。</div>'}</section>`;
   }
   bind(){
-    document.querySelectorAll<HTMLElement>('[data-year-tab]').forEach(el=>el.onclick=()=>{this.tab=el.dataset.yearTab as Tab;this.stage='setup';this.rerender();});
+    document.querySelectorAll<HTMLElement>('[data-year-tab]').forEach(el=>el.onclick=()=>{this.setTab(el.dataset.yearTab as Tab);});
     const form=document.querySelector<HTMLFormElement>('#year-options');
     if(form){
       form.onchange=()=>{
