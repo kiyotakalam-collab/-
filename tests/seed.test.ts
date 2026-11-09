@@ -24,7 +24,7 @@ describe('reviewed introductory questions', () => {
   it('keeps image sources, licenses and reverse recognition aligned after image expansion', () => {
     const catalog = validateCatalog(seedCatalog);
     const imageCards = catalog.cards.filter(card => card.type === 'image');
-    expect(imageCards).toHaveLength(71);
+    expect(imageCards).toHaveLength(72);
     for (const card of imageCards) {
       const item = catalog.items.find(entry => entry.id === card.knowledgeId);
       expect(item).toBeDefined();
