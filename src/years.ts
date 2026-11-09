@@ -155,7 +155,9 @@ export function selectYearQuestions(catalog:YearCatalog, reviews:YearReview[], f
     }
   }
   if(filter.mode==='weak')questions.sort((a,b)=>yearPriority(progress.get(b.id),at)-yearPriority(progress.get(a.id),at));
-  return questions;
+  return filter.mode==='weak'
+    ? questions.sort((a,b)=>yearPriority(progress.get(b.id),at)-yearPriority(progress.get(a.id),at)||a.id.localeCompare(b.id))
+    : questions;
 }
 const DB_NAME='world-history-year-test'; // separate from cultural-history-master
 export class YearDB {
