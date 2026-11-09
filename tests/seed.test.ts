@@ -11,13 +11,33 @@ afterEach(() => { for (const db of opened.splice(0)) db.close(); });
 describe('reviewed introductory questions', () => {
   it('includes every registered photo section without reassigning existing cards or duplicating terms', () => {
     const catalog = validateCatalog(seedCatalog);
-    expect(catalog.version).toBe(10);
+    expect(catalog.version).toBe(11);
     expect(catalog.items).toHaveLength(365);
-    expect(catalog.cards).toHaveLength(450);
+    expect(catalog.cards).toHaveLength(506);
     expect(catalog.cards.find(card => card.id === 'gr-homer-iliad-author')).toMatchObject({knowledgeId: 'gr-homer', version: 2});
     expect(catalog.cards.find(card => card.id === 'gr-homer-odyssey-author')).toMatchObject({knowledgeId: 'gr-homer', version: 1});
     expect(catalog.items.find(item => item.id === 'gr-sophocles')?.sources[0]).toMatchObject({title: expect.stringContaining('スタンダード世界史探究')});
     expect(catalog.items.find(item => item.id === 'gr-sophocles')?.sources[0].url).toBeUndefined();
+  });
+
+
+  it('keeps image sources, licenses and reverse recognition aligned after image expansion', () => {
+    const catalog = validateCatalog(seedCatalog);
+    const imageCards = catalog.cards.filter(card => card.type === 'image');
+    expect(imageCards).toHaveLength(71);
+    for (const card of imageCards) {
+      const item = catalog.items.find(entry => entry.id === card.knowledgeId);
+      expect(item).toBeDefined();
+      const asset = item?.images.find(image => image.id === card.imageId);
+      expect(asset).toBeDefined();
+      expect(asset?.sourceUrl).toMatch(/^https:\/\//);
+      expect(asset?.license).toBeTruthy();
+      expect(asset?.author).toBeTruthy();
+      expect(card.fallbackPrompt).toBeTruthy();
+    }
+    expect(catalog.items.find(item => item.id === 'ro-strabo')?.level).toBe(4);
+    expect(catalog.items.find(item => item.id === 'he-venus-milo')?.level).toBe(1);
+    expect(catalog.cards.some(card => card.id === 'visual-verified-img-1-work')).toBe(true);
   });
 
   it('preserves v2 mistakes when photo cards are installed', async () => {
