@@ -50,7 +50,7 @@ function harness() {
 describe('Apps Script exporter (local service stubs)', () => {
   it('publishes typed Catalog compatible with frontend validation', () => {
     const {context} = harness();
-    expect(context.publishCatalog().version).toBe(4);
+    expect(context.publishCatalog().version).toBe(12);
     const catalog = JSON.parse(context.doGet().text);
     expect(validateCatalog(catalog).items[0].deleted).toBe(false);
     expect(catalog.items[0].level).toBe(1);
@@ -64,14 +64,18 @@ describe('Apps Script exporter (local service stubs)', () => {
     expect(() => context.publishCatalog()).toThrow();
     expect(JSON.parse(context.doGet().text).schemaVersion).toBeUndefined();
   });
-  it('rejects duplicate normalized names and unresolved references', () => {
+  it('rejects duplicate names and invalid related references, but supports a bundled-item card delta', () => {
     const {context, sheets, item, card} = harness();
     sheets.get('Knowledge').rows.push([...item]);
     sheets.get('Knowledge').rows[2][0] = 'other-person';
     expect(() => context.publishCatalog()).toThrow(/Duplicate name/);
     sheets.get('Knowledge').rows.pop();
-    card[1] = 'missing-person';
-    expect(() => context.publishCatalog()).toThrow(/Unknown knowledgeId/);
+    // Cards may refer to an item already bundled in the PWA but absent from this
+    // delta; its reference is checked when merging the final catalog on-device.
+    card[1] = 'bundled-person';
+    const published = context.publishCatalog();
+    expect(published.version).toBe(12);
+    expect(validateCatalog(JSON.parse(context.doGet().text), true).cards[0].knowledgeId).toBe('bundled-person');
     card[1] = 'test-person';
     item[8] = '["missing-related"]';
     expect(() => context.publishCatalog()).toThrow(/Unknown related item/);
@@ -87,8 +91,8 @@ describe('Apps Script exporter (local service stubs)', () => {
   it('supports tombstones and version publication, and beginEdit stops serving', () => {
     const {context, item, card} = harness();
     item[17] = 'TRUE'; card[10] = 'TRUE';
-    expect(context.publishCatalog().version).toBe(4);
-    expect(context.publishCatalog().version).toBe(5);
+    expect(context.publishCatalog().version).toBe(12);
+    expect(context.publishCatalog().version).toBe(13);
     expect(JSON.parse(context.doGet().text).cards[0].deleted).toBe(true);
     context.beginEdit();
     expect(JSON.parse(context.doGet().text).error).toBe('catalog_unavailable');
