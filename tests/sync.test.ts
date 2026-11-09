@@ -33,7 +33,7 @@ describe('public sync endpoint safety', () => {
     expect(() => normalizeSyncUrl('http://example.org/a')).toThrow('HTTPS');
     expect(() => normalizeSyncUrl('https://user:key@example.org/')).toThrow('認証情報');
     expect(() => normalizeSyncUrl('javascript:alert(1)')).toThrow('HTTPS');
-    expect(() => normalizeSyncUrl('')).toThrow('設定');
+    expect(() => normalizeSyncUrl('')).toThrow('指定してください');
   });
 });
 
