@@ -1288,7 +1288,15 @@ export function applyVisualPatches(items: KnowledgeItem[]): KnowledgeItem[] {
   return items.map(item => {
     const images = visualImagePatches[item.id] ?? [];
     const difficulty = difficultyPatches[item.id];
-    if (!images.length && (!difficulty || difficulty.level === item.level)) return item;
+    // Earlier thumbnail URLs contained fixed hashes that can become stale.
+    // Link those verified Commons files by their canonical file names instead.
+    const existingImages = item.images.map(asset => {
+      const prefix = 'https://commons.wikimedia.org/wiki/File:';
+      if (!asset.url.startsWith('https://upload.wikimedia.org/') || !asset.sourceUrl.startsWith(prefix)) return asset;
+      return {...asset, url: 'https://commons.wikimedia.org/wiki/Special:FilePath/' + asset.sourceUrl.slice(prefix.length) + '?width=960'};
+    });
+    const legacyImageChanged = existingImages.some((asset, index) => asset !== item.images[index]);
+    if (!images.length && !legacyImageChanged && (!difficulty || difficulty.level === item.level)) return item;
     const officialRecords: Record<string, {title:string;url:string}[]> = {
       'rn-leonardo': [{title:'ルーヴル美術館：モナ＝リザ',url:'https://collections.louvre.fr/en/ark:/53355/cl010062370'}],
       'rn-michelangelo': [{title:'ヴァチカン美術館：最後の審判',url:'https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/cappella-sistina/giudizio-universale.html'}],
@@ -1296,7 +1304,7 @@ export function applyVisualPatches(items: KnowledgeItem[]): KnowledgeItem[] {
     };
     const updatedSources = images.map(asset => ({title: 'Wikimedia Commons：' + asset.caption.split('。')[0], url: asset.sourceUrl, note: '画像の作品名・作者または建築物、原資料とライセンスをファイルページで確認。'}));
     return {...item,
-      images: [...item.images, ...images], sources: [...item.sources, ...updatedSources, ...(officialRecords[item.id] ?? [])],
+      images: [...existingImages, ...images], sources: [...item.sources, ...updatedSources, ...(officialRecords[item.id] ?? [])],
       ...(difficulty && difficulty.level !== item.level ? {level: difficulty.level} : {}),
       difficultyEvidence: difficulty ? '暫定Lv.' + difficulty.level + '：' + difficulty.why + ' 2026年度大学別過去問での網羅的照合は未了。' : item.difficultyEvidence,
       version: item.version + 1, updatedAt: expansionUpdatedAt,
