@@ -5,10 +5,11 @@ import { getProgress, selectCards } from './core';
 import { seedCatalog } from './seed';
 import { synchronize, normalizeSyncUrl, DEFAULT_CATALOG_URL } from './sync';
 import { setupPwa, activateUpdate, checkPwaUpdate } from './pwa';
+import { YearTestUI } from './year-ui';
 import { DEFAULT_FILTER, type AppState, type Card, type StudyFilter, type Level, type ImageAsset } from './types';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
-type View = 'home' | 'setup' | 'study' | 'library' | 'history' | 'settings';
+type View = 'home' | 'setup' | 'study' | 'years' | 'library' | 'history' | 'settings';
 let db: HistoryDB;
 let state: AppState;
 let view: View = 'home';
@@ -39,6 +40,7 @@ let installPrompt: (Event & {prompt(): Promise<void>; userChoice: Promise<{outco
 const icons: Record<string, string> = {
   home: '<path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/>',
   study: '<rect x="4" y="6" width="16" height="15" rx="2"/><path d="M8 3h11a2 2 0 0 1 2 2M9 11l5 3-5 3"/>',
+  calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 11h18M8 15h3M8 18h3"/>',
   book: '<path d="M12 5v16M3 4h5a4 4 0 0 1 4 3 4 4 0 0 1 4-3h5v15h-5a4 4 0 0 0-4 2 4 4 0 0 0-4-2H3Z"/>',
   history: '<path d="M3 11a9 9 0 1 1 2 7M3 4v7h7M12 7v5l3 2"/>',
   settings: '<path d="M4 7h16M4 17h16M8 4v6M16 14v6"/>',
@@ -65,15 +67,16 @@ function toast(message: string, error = false) {
   el.textContent=message; el.className=error?'toast error':'toast';
   window.setTimeout(()=>{if(el?.textContent===message)el.className='toast hidden';},5500);
 }
+const yearFeature = new YearTestUI(()=>{if(view==='years')render();},toast);
 function nav() {
-  const links: [View,string,string][] = [['home','ホーム','home'],['setup','学習する','study'],['library','用語一覧','book'],['history','学習履歴','history'],['settings','データ管理','settings']];
+  const links: [View,string,string][] = [['home','ホーム','home'],['setup','学習する','study'],['years','年号テスト','calendar'],['library','用語一覧','book'],['history','学習履歴','history'],['settings','データ管理','settings']];
   return links.map(([v,t,i])=>`<button class="nav-item ${view===v || (v==='setup' && view==='study')?'active':''}" data-nav="${v}" ${view===v?'aria-current="page"':''}>${icon(i)}<span>${t}</span></button>`).join('');
 }
 function render() {
   const date = new Date();
   app.innerHTML=`<aside class="sidebar"><a href="#" class="brand" data-nav="home"><span class="brand-mark">${icon('book')}</span><span>世界史文化史<span class="brand-sub">MASTER</span></span></a><div class="nav-label">LEARNING SPACE</div><nav aria-label="メインメニュー">${nav()}</nav><div class="sidebar-bottom"><div class="goal-label">YOUR GOAL</div><strong>慶應義塾大学 文学部</strong><span>2027年2月15日 入試</span><div class="sidebar-divider"></div><span class="local-status"><i class="status-dot ${navigator.onLine?'':'offline'}"></i>${navigator.onLine?'端末内に学習記録を保存':'オフラインで学習できます'}</span><small>一つずつ、確かな知識に。</small></div></aside>
-  <div class="main-shell"><header class="topbar"><a class="mobile-brand" href="#" data-nav="home">${icon('book')}<span>世界史文化史マスター</span></a><span class="breadcrumb">文化史の学習ノート <span>/</span> ${{home:'ホーム',setup:'学習する',study:'フラッシュカード',library:'用語一覧',history:'学習履歴',settings:'データ管理'}[view]}</span><span class="top-date">${date.toLocaleDateString('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'short'})}</span><span class="mobile-status"><i class="status-dot ${navigator.onLine?'':'offline'}"></i>${navigator.onLine?'保存中の履歴は端末内':'オフライン'}</span></header>
-  <main id="main" tabindex="-1">${view==='home'?home():view==='setup'?setup():view==='study'?study():view==='history'?history():view==='library'?library():settings()}</main><footer class="page-footer"><span>世界史文化史マスター</span><span>知識を積み重ねて、志望校へ。</span></footer></div><nav class="mobile-nav" aria-label="モバイルメニュー">${nav()}</nav><dialog id="image-dialog"><button class="icon-button dialog-close" aria-label="画像を閉じる" data-action="close-image">${icon('close')}</button><div id="image-dialog-content"></div></dialog>`;
+  <div class="main-shell"><header class="topbar"><a class="mobile-brand" href="#" data-nav="home">${icon('book')}<span>世界史文化史マスター</span></a><span class="breadcrumb">文化史の学習ノート <span>/</span> ${{home:'ホーム',setup:'学習する',study:'フラッシュカード',library:'用語一覧',history:'学習履歴',settings:'データ管理',years:'年号テスト'}[view]}</span><span class="top-date">${date.toLocaleDateString('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'short'})}</span><span class="mobile-status"><i class="status-dot ${navigator.onLine?'':'offline'}"></i>${navigator.onLine?'保存中の履歴は端末内':'オフライン'}</span></header>
+  <main id="main" tabindex="-1">${view==='home'?home():view==='setup'?setup():view==='study'?study():view==='history'?history():view==='library'?library():view==='years'?yearFeature.render():settings()}</main><footer class="page-footer"><span>世界史文化史マスター</span><span>知識を積み重ねて、志望校へ。</span></footer></div><nav class="mobile-nav" aria-label="モバイルメニュー">${nav()}</nav><dialog id="image-dialog"><button class="icon-button dialog-close" aria-label="画像を閉じる" data-action="close-image">${icon('close')}</button><div id="image-dialog-content"></div></dialog>`;
   bind();
 }
 function home() {
@@ -105,7 +108,7 @@ function home() {
   <section class="hero"><div class="hero-content"><span class="hero-label">${icon('leaf')} DAILY REVIEW</span><h2>${due?'覚えた知識を、確かな記憶に。':'文化史のつながりを、少しずつ。'}</h2><p>${due?`復習のタイミングを迎えたカードが <strong>${due}枚</strong> あります。`:'人物、作品、思想。今日の学習を始めましょう。'}<br>短い時間の積み重ねが、合格への一歩に。</p><button class="button white" data-start="${due?'due':'all'}">${due?'今日の復習をはじめる':'今日の学習をはじめる'}${icon('arrow')}</button><span class="hero-note">${due?`${due}枚の復習カード`:`${cards.length}枚の初期カード`} · 1問ずつ、自分のペースで</span></div><div class="hero-art" aria-hidden="true"><svg viewBox="0 0 260 230" fill="none"><circle cx="150" cy="108" r="91" stroke="currentColor" stroke-opacity=".25"/><circle cx="150" cy="108" r="76" stroke="currentColor" stroke-opacity=".12"/><path d="m47 77 103-48 103 48H47Zm8 9h190M57 184h187M47 194h207M39 205h223M72 91v87m18-87v87m30-87v87m18-87v87m30-87v87m18-87v87m30-87v87m18-87v87M67 91h28m20 0h28m20 0h28m20 0h28M67 178h28m20 0h28m20 0h28m20 0h28" stroke="currentColor" stroke-width="2"/><path d="m118 65 32-15 32 15h-64Z" stroke="currentColor" stroke-opacity=".5"/></svg><span>ARS LONGA, VITA BREVIS</span></div></section>
   <section class="stats-grid" aria-label="学習の統計">${stat('総収録項目',items.length,'項目',`${cards.length}枚のフラッシュカード`,'book')}${stat('学習済みカード',studied,'枚',`全カードの ${pct(studied,cards.length)}%`,'check')}${stat('全体の正答率',events.length?pct(correct,events.length):'—',events.length?'%':'',`${events.length}回の回答から集計`,'grid')}${stat('復習期限到来',due,'枚',due?'今が復習のタイミング':'自分のペースで進めましょう','refresh')}</section>
   <div class="dashboard-grid"><section class="panel level-panel"><div class="section-title"><h2>難易度別の学習進捗</h2><span class="muted small">学習済み / カード数</span></div>${([1,2,3,4] as Level[]).map(l=>{const {total,studied:n}=levels.get(l)!;return `<button class="level-row" data-level="${l}"><span class="level-tag l${l}">Lv.${l}</span><span class="level-detail"><span class="level-name">${levelNames[l-1]}</span><span class="progress-track"><span style="width:${pct(n,total)}%"></span></span></span><span class="level-count">${n}<span> / ${total}</span></span>${icon('arrow')}</button>`;}).join('')}<p class="panel-note">初期データの難易度は暫定分類です。</p></section><section class="panel today-panel"><div class="section-title"><h2>今日の学習</h2><span class="subtle-chip">${dateLabel()}</span></div><div class="daily-ring" style="--progress:${Math.min(100,pct(today.length,state.settings.dailyGoal))}%"><div><strong>${today.length}<small> / ${state.settings.dailyGoal}</small></strong><span>回答回数</span></div></div><p class="today-message">${today.length>=state.settings.dailyGoal?'今日の目標を達成しました。':today.length?'いいペースです。その調子で。':'最初の1問から、始めましょう。'}</p><span class="small muted">今日の正答率 ${today.length?`${pct(today.filter(e=>e.correct).length,today.length)}%`:'—'}</span></section></div>
-  <div class="dashboard-grid lower"><section class="panel"><div class="section-title"><h2>苦手分野</h2><button class="text-button" data-start="weak">復習する ${icon('arrow')}</button></div>${weakList.length?weakList.map(([field,v])=>`<div class="weak-row"><span>${esc(field)}</span><span class="muted">正答率 <strong>${pct(v.total-v.wrong,v.total)}%</strong></span></div>`).join(''):`<div class="empty-inline">${icon('leaf')}<p>学習を進めると、苦手分野が見えてきます。<br><span>正答と誤答を記録して、復習に役立てましょう。</span></p></div>`}</section><section class="panel quick-panel"><div class="section-title"><h2>学び方を選ぶ</h2></div><button class="quick-row" data-start="unseen">${icon('book')}<span>未学習のカード<small>新しい知識に出会う</small></span>${icon('arrow')}</button><button class="quick-row" data-nav="setup">${icon('settings')}<span>範囲を指定して学習<small>地域・時代・分野から選ぶ</small></span>${icon('arrow')}</button></section></div>`;
+  <div class="dashboard-grid lower"><section class="panel"><div class="section-title"><h2>苦手分野</h2><button class="text-button" data-start="weak">復習する ${icon('arrow')}</button></div>${weakList.length?weakList.map(([field,v])=>`<div class="weak-row"><span>${esc(field)}</span><span class="muted">正答率 <strong>${pct(v.total-v.wrong,v.total)}%</strong></span></div>`).join(''):`<div class="empty-inline">${icon('leaf')}<p>学習を進めると、苦手分野が見えてきます。<br><span>正答と誤答を記録して、復習に役立てましょう。</span></p></div>`}</section><section class="panel quick-panel"><div class="section-title"><h2>学び方を選ぶ</h2></div><button class="quick-row" data-start="unseen">${icon('book')}<span>未学習のカード<small>新しい知識に出会う</small></span>${icon('arrow')}</button><button class="quick-row" data-nav="setup">${icon('settings')}<span>範囲を指定して学習<small>地域・時代・分野から選ぶ</small></span>${icon('arrow')}</button><button class="quick-row" data-nav="years">${icon('calendar')}<span>年号テスト<small>年号と出来事を別枠で暗記</small></span>${icon('arrow')}</button></section></div>`;
 }
 function dateLabel(){return new Date().toLocaleDateString('ja-JP',{month:'numeric',day:'numeric'});}
 function stat(title:string,value:number|string,unit:string,note:string,i:string){return `<article class="stat-card"><div class="stat-title">${title}${icon(i)}</div><div class="stat-value">${value}<small>${unit}</small></div><span class="stat-note">${note}</span></article>`;}
@@ -189,6 +192,7 @@ function sync():Promise<void>{
 
 function message(e:unknown){return e instanceof Error?e.message:String(e);}
 function bind(){
+  if(view==='years')yearFeature.bind();
   document.querySelectorAll<HTMLElement>('[data-nav]').forEach(el=>el.onclick=e=>{e.preventDefault();go(el.dataset.nav as View);});
   document.querySelectorAll<HTMLElement>('[data-start]').forEach(el=>el.onclick=()=>{void start(el.dataset.start as StudyFilter['mode']);});
   document.querySelectorAll<HTMLElement>('[data-level]').forEach(el=>el.onclick=()=>{filter={...structuredClone(DEFAULT_FILTER),level:Number(el.dataset.level) as Level,levelMode:'single'};go('setup');});
@@ -257,11 +261,11 @@ async function action(name:string){try{
 function zoom(im:ImageAsset){const d=document.querySelector<HTMLDialogElement>('#image-dialog')!;document.querySelector('#image-dialog-content')!.innerHTML=`<img src="${esc(safeUrl(im.url))}" alt="拡大した問題画像"><p>${revealed?esc(im.caption):'問題の画像'}</p><p class="small">${esc(im.author)} / <a href="${esc(safeUrl(im.licenseUrl))}" target="_blank" rel="noopener noreferrer">${esc(im.license)}</a> / <a href="${esc(safeUrl(im.sourceUrl))}" target="_blank" rel="noopener noreferrer">出典</a></p>`;d.showModal();}
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e as typeof installPrompt;if(view==='settings')render();});
 window.addEventListener('offline',()=>{toast('オフラインになりました。保存済み教材で学習できます。');if(state&&view!=='study')render();});
-window.addEventListener('online',()=>{if(state){if(view!=='study')render();void sync();}});
+window.addEventListener('online',()=>{if(state){if(view!=='study')render();void sync();void yearFeature.onOnline();}});
 window.addEventListener('keydown',e=>{if(view==='study' && !document.querySelector('dialog[open]') && !(e.target instanceof HTMLInputElement)){if(e.key===' '&&!revealed){e.preventDefault();void action('reveal');}else if(revealed&&e.key==='ArrowRight'){e.preventDefault();void grade(true);}else if(revealed&&e.key==='ArrowLeft'){e.preventDefault();void grade(false);}}});
 async function boot(){
   app.innerHTML='<div class="loading-state">学習ノートを開いています…</div>';
-  try{db=await openDatabase();state=await db.load();if(state.catalog.version<seedCatalog.version){await db.applyCatalog(seedCatalog);state=await db.load();}render();void setupPwa({onUpdate:r=>{updateRegistration=r;updateStatus='新しい公開版が見つかりました。「新しいバージョンに更新」を押してください。';toast('新しいバージョンがあります。データ管理から更新できます。');if(view==='settings')render();},onError:()=>{updateStatus='更新確認で通信エラーが発生しました。';if(view==='settings')render();}}).then(r=>{pwaRegistration=r;});void sync();}
+  try{db=await openDatabase();state=await db.load();if(state.catalog.version<seedCatalog.version){await db.applyCatalog(seedCatalog);state=await db.load();}render();void yearFeature.initialize();void setupPwa({onUpdate:r=>{updateRegistration=r;updateStatus='新しい公開版が見つかりました。「新しいバージョンに更新」を押してください。';toast('新しいバージョンがあります。データ管理から更新できます。');if(view==='settings')render();},onError:()=>{updateStatus='更新確認で通信エラーが発生しました。';if(view==='settings')render();}}).then(r=>{pwaRegistration=r;});void sync();}
   catch(e){app.innerHTML=`<div class="loading-state"><h1>学習データを開けませんでした</h1><p>${esc(message(e))}</p><p>ブラウザの保存容量やプライベートモードの設定をご確認ください。データは削除せず、再読み込みしてください。</p><button class="button primary" onclick="location.reload()">もう一度開く</button></div>`;}
 }
 void boot();
