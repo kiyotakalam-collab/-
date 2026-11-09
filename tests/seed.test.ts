@@ -9,11 +9,11 @@ const opened: HistoryDB[] = [];
 afterEach(() => { for (const db of opened.splice(0)) db.close(); });
 
 describe('reviewed introductory questions', () => {
-  it('adds all five photographed sections without reassigning an existing card or duplicating a term', () => {
+  it('includes every registered photo section without reassigning existing cards or duplicating terms', () => {
     const catalog = validateCatalog(seedCatalog);
-    expect(catalog.version).toBe(3);
-    expect(catalog.items).toHaveLength(53);
-    expect(catalog.cards).toHaveLength(70);
+    expect(catalog.version).toBe(5);
+    expect(catalog.items).toHaveLength(227);
+    expect(catalog.cards).toHaveLength(279);
     expect(catalog.cards.find(card => card.id === 'gr-homer-iliad-author')).toMatchObject({knowledgeId: 'gr-homer', version: 2});
     expect(catalog.cards.find(card => card.id === 'gr-homer-odyssey-author')).toMatchObject({knowledgeId: 'gr-homer', version: 1});
     expect(catalog.items.find(item => item.id === 'gr-sophocles')?.sources[0]).toMatchObject({title: expect.stringContaining('スタンダード世界史探究')});
