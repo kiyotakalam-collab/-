@@ -80,7 +80,7 @@ export const modernItems: KnowledgeItem[] = [
     "images": [
       {
         "id": "img-nr-bruegel",
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Peasant_Dance_(Bruegel).jpg?width=960",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/The_Peasant_Dance_%28Bruegel%29.jpg/960px-The_Peasant_Dance_%28Bruegel%29.jpg",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Peasant_Dance_(Bruegel).jpg",
         "author": "作品作者による原作・パブリックドメインの忠実な複製",
         "license": "Public Domain Mark 1.0",
@@ -120,7 +120,7 @@ export const modernItems: KnowledgeItem[] = [
     "images": [
       {
         "id": "img-nr-durer",
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Albrecht_D%C3%BCrer_-_The_Four_Apostles%2C_Saints_John%2C_Peter%2C_Mark_and_Paul.jpg?width=960",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Albrecht_D%C3%BCrer_-_The_Four_Apostles%2C_Saints_John%2C_Peter%2C_Mark_and_Paul.jpg/960px-Albrecht_D%C3%BCrer_-_The_Four_Apostles%2C_Saints_John%2C_Peter%2C_Mark_and_Paul.jpg",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_The_Four_Apostles%2C_Saints_John%2C_Peter%2C_Mark_and_Paul.jpg",
         "author": "作品作者による原作・パブリックドメインの忠実な複製",
         "license": "Public Domain Mark 1.0",
@@ -2480,7 +2480,7 @@ export const modernItems: KnowledgeItem[] = [
     "images": [
       {
         "id": "img-ar-rembrandt",
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Night_Watch.jpg?width=960",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/The_Night_Watch.jpg/1280px-The_Night_Watch.jpg",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Night_Watch.jpg",
         "author": "作品作者による原作・パブリックドメインの忠実な複製",
         "license": "Public Domain Mark 1.0",
@@ -2520,7 +2520,7 @@ export const modernItems: KnowledgeItem[] = [
     "images": [
       {
         "id": "img-ar-vermeer",
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Girl_with_a_Pearl_Earring.jpg?width=960",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Girl_with_a_Pearl_Earring.jpg/960px-Girl_with_a_Pearl_Earring.jpg",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Girl_with_a_Pearl_Earring.jpg",
         "author": "作品作者による原作・パブリックドメインの忠実な複製",
         "license": "Public Domain Mark 1.0",
@@ -2725,7 +2725,7 @@ export const modernItems: KnowledgeItem[] = [
     "images": [
       {
         "id": "img-ar-watteau",
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antoine_Watteau_-_Embarkation_for_Cythera.jpg?width=960",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Antoine_Watteau_-_Embarkation_for_Cythera.jpg/960px-Antoine_Watteau_-_Embarkation_for_Cythera.jpg",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_Embarkation_for_Cythera.jpg",
         "author": "作品作者による原作・パブリックドメインの忠実な複製",
         "license": "Public Domain Mark 1.0",
