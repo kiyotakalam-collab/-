@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 18,
-  "updatedAt": "2026-11-09T14:27:31.871Z",
+  "version": 19,
+  "updatedAt": "2026-11-09T14:29:18.980Z",
   "items": [
     {
       "id": "eg-ra",
@@ -9060,9 +9060,9 @@
       ],
       "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
       "verification": "provisional",
-      "updatedAt": "2026-11-09T14:27:31.871Z",
-      "version": 1,
-      "deleted": false
+      "updatedAt": "2026-11-09T14:29:18.980Z",
+      "version": 2,
+      "deleted": true
     },
     {
       "id": "ch-luopan",
@@ -9085,9 +9085,9 @@
       ],
       "difficultyEvidence": "暫定Lv.1：教材掲載知識を基準に重要度・細かさで分類。大学別過去問の出題実績は未検証。",
       "verification": "provisional",
-      "updatedAt": "2026-11-09T14:27:31.871Z",
-      "version": 1,
-      "deleted": false
+      "updatedAt": "2026-11-09T14:29:18.980Z",
+      "version": 2,
+      "deleted": true
     },
     {
       "id": "ch-woodblock-printing",
@@ -14900,9 +14900,9 @@
       "question": "南宋では点火・威嚇などに使用され、金・元に実用的な軍事技術となった中国の発明は？",
       "answer": "火薬",
       "explanation": "中国で開発され西方にも伝わった技術。",
-      "updatedAt": "2026-11-09T14:27:31.871Z",
-      "version": 1,
-      "deleted": false
+      "updatedAt": "2026-11-09T14:29:18.980Z",
+      "version": 2,
+      "deleted": true
     },
     {
       "id": "ch-luopan::core",
@@ -14911,9 +14911,9 @@
       "question": "方位を知るために用い、航海術に大きく影響した磁石の器具は？",
       "answer": "羅針盤",
       "explanation": "方角を指示する道具。",
-      "updatedAt": "2026-11-09T14:27:31.871Z",
-      "version": 1,
-      "deleted": false
+      "updatedAt": "2026-11-09T14:29:18.980Z",
+      "version": 2,
+      "deleted": true
     },
     {
       "id": "ch-woodblock-printing::core",
