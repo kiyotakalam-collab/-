@@ -3,7 +3,8 @@ import { photoCards, photoItems } from './seed-photos.ts';
 import { additionalPhotoItems, additionalPhotoCards } from './seed-new-photos.ts';
 import { modernItems, modernCards } from './seed-modern-photos.ts';
 import { laterCultureItems, laterCultureCards } from './seed-later-culture.ts';
-import { finalWesternItems, finalWesternCards, finalWesternUpdatedAt } from './seed-final-western.ts';
+import { finalWesternItems, finalWesternCards } from './seed-final-western.ts';
+import { applyVisualPatches, visualCards, expansionUpdatedAt } from './seed-visual-expansion.ts';
 
 // Facts checked against the linked sources on 2026-11-09. Difficulty remains provisional.
 const updatedAt = '2026-11-09T00:00:00.000Z';
@@ -198,4 +199,4 @@ const cards: Card[] = [
     '現存する建物はハドリアヌス帝時代に完成した。アテネのパルテノン神殿と区別する。'),
 ];
 
-export const seedCatalog: Catalog = { schemaVersion: 1, version: 10, updatedAt: finalWesternUpdatedAt, items: [...items, ...photoItems, ...additionalPhotoItems, ...modernItems, ...laterCultureItems, ...finalWesternItems], cards: [...cards, ...photoCards, ...additionalPhotoCards, ...modernCards, ...laterCultureCards, ...finalWesternCards] };
+export const seedCatalog: Catalog = { schemaVersion: 1, version: 11, updatedAt: expansionUpdatedAt, items: applyVisualPatches([...items, ...photoItems, ...additionalPhotoItems, ...modernItems, ...laterCultureItems, ...finalWesternItems]), cards: [...cards, ...photoCards, ...additionalPhotoCards, ...modernCards, ...laterCultureCards, ...finalWesternCards, ...visualCards] };
