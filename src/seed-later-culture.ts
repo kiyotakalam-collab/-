@@ -3,7 +3,7 @@ import type { Card, KnowledgeItem } from './types';
 /** 2026-11-09提出画像10枚（西洋美術・音楽・哲学・経済・科学）。
  * 史実・難易度の検証状態は各項目に記録。写真の著作物は再配布しない。
  */
-export const laterCultureUpdatedAt = "2026-11-09T09:45:00.000Z";
+export const laterCultureUpdatedAt = "2026-11-09T09:52:12.332Z";
 export const laterCultureItems: KnowledgeItem[] = [
   {
     "id": "a-neoclassical",
@@ -26,7 +26,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -51,7 +51,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -91,7 +91,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -131,7 +131,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -171,7 +171,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -196,7 +196,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -221,7 +221,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -246,7 +246,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -286,7 +286,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -311,7 +311,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -336,7 +336,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -376,7 +376,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -401,7 +401,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -441,7 +441,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -481,7 +481,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -506,7 +506,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -531,7 +531,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -556,7 +556,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -581,7 +581,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -606,7 +606,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -631,7 +631,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -656,7 +656,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -681,7 +681,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -706,7 +706,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -731,7 +731,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -756,7 +756,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -781,7 +781,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -806,7 +806,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -831,7 +831,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -856,7 +856,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -877,11 +877,16 @@ export const laterCultureItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
         "note": "2026-11-09提供写真3/10。本文写真の転載ではなく、独自の問いと短い説明に編集。"
+      },
+      {
+        "title": "全日本ピアノ指導者協会：ショパン練習曲作品10（革命）",
+        "url": "https://enc.piano.or.jp/en/musics/460",
+        "note": "本文から該当人物・作品・活動を確認。"
       }
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "verification": "verified",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -906,7 +911,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -931,7 +936,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -956,7 +961,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -981,7 +986,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1006,7 +1011,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1031,7 +1036,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1052,11 +1057,16 @@ export const laterCultureItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
         "note": "2026-11-09提供写真4/10。本文写真の転載ではなく、独自の問いと短い説明に編集。"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy: Francis Bacon",
+        "url": "https://plato.stanford.edu/entries/francis-bacon/",
+        "note": "本文から該当人物・作品・活動を確認。"
       }
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "verification": "verified",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1077,11 +1087,16 @@ export const laterCultureItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
         "note": "2026-11-09提供写真4/10。本文写真の転載ではなく、独自の問いと短い説明に編集。"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy: David Hume",
+        "url": "https://plato.stanford.edu/entries/hume/",
+        "note": "本文から該当人物・作品・活動を確認。"
       }
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "verification": "verified",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1106,7 +1121,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1131,7 +1146,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1161,7 +1176,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1186,7 +1201,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1211,7 +1226,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1236,7 +1251,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1266,7 +1281,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1296,7 +1311,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1321,7 +1336,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1351,7 +1366,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1372,11 +1387,16 @@ export const laterCultureItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
         "note": "2026-11-09提供写真5/10。本文写真の転載ではなく、独自の問いと短い説明に編集。"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy: Karl Marx",
+        "url": "https://plato.stanford.edu/entries/marx/",
+        "note": "本文から該当人物・作品・活動を確認。"
       }
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "verification": "verified",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1406,7 +1426,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1436,7 +1456,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1466,7 +1486,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1496,7 +1516,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1526,7 +1546,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1551,7 +1571,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1581,7 +1601,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1611,7 +1631,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1641,7 +1661,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1671,7 +1691,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1701,7 +1721,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1726,7 +1746,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1751,7 +1771,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1776,7 +1796,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1801,7 +1821,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1826,7 +1846,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1851,7 +1871,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1876,7 +1896,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1901,7 +1921,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1922,11 +1942,16 @@ export const laterCultureItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
         "note": "2026-11-09提供写真7/10。本文写真の転載ではなく、独自の問いと短い説明に編集。"
+      },
+      {
+        "title": "東京大学デジタルアーカイブ：『国富論』1776年初版",
+        "url": "https://da.dl.itc.u-tokyo.ac.jp/portal/en/assets/32eb0213ac562e00c26a998d9d630511",
+        "note": "本文から該当人物・作品・活動を確認。"
       }
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "verification": "verified",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1951,7 +1976,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -1976,7 +2001,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2001,7 +2026,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2026,7 +2051,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2051,7 +2076,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2076,7 +2101,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2101,7 +2126,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2126,7 +2151,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2151,7 +2176,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2176,7 +2201,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2201,7 +2226,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2222,11 +2247,16 @@ export const laterCultureItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
         "note": "2026-11-09提供写真9/10。本文写真の転載ではなく、独自の問いと短い説明に編集。"
+      },
+      {
+        "title": "UNESCO: New Lanark（ロバート・オーウェンの工場改革）",
+        "url": "https://whc.unesco.org/en/list/429",
+        "note": "本文から該当人物・作品・活動を確認。"
       }
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "verification": "verified",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2247,11 +2277,16 @@ export const laterCultureItems: KnowledgeItem[] = [
       {
         "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
         "note": "2026-11-09提供写真9/10。本文写真の転載ではなく、独自の問いと短い説明に編集。"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy: Auguste Comte（サン＝シモンとの関係）",
+        "url": "https://plato.stanford.edu/entries/comte/",
+        "note": "本文から該当人物・作品・活動を確認。"
       }
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
-    "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "verification": "verified",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2276,7 +2311,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2301,7 +2336,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2326,7 +2361,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2351,7 +2386,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2376,7 +2411,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2401,7 +2436,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2426,7 +2461,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2451,7 +2486,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2476,7 +2511,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2501,7 +2536,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2526,7 +2561,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2551,7 +2586,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2576,7 +2611,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2601,7 +2636,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2626,7 +2661,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2651,7 +2686,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2676,7 +2711,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2706,7 +2741,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "verified",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2731,7 +2766,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2756,7 +2791,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2781,7 +2816,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2806,7 +2841,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2831,7 +2866,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2856,7 +2891,7 @@ export const laterCultureItems: KnowledgeItem[] = [
     ],
     "difficultyEvidence": "大学別2026年度入試の調査は未実施。Lv.は基本用語か細部用語かによる暫定分類であり、過去問出題実績を意味しない。",
     "verification": "provisional",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   }
@@ -2869,7 +2904,7 @@ export const laterCultureCards: Card[] = [
     "question": "古代ギリシア・ローマの造形を模範とする美術運動は？",
     "answer": "新古典主義",
     "explanation": "古代ギリシア・ローマ美術の秩序や均衡を重視した美術運動。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2880,7 +2915,7 @@ export const laterCultureCards: Card[] = [
     "question": "『ナポレオン1世の戴冠式』を描いた画家は？",
     "answer": "ダヴィド",
     "explanation": "『ナポレオン1世の戴冠式』『マラーの死』で知られるフランス新古典主義画家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2891,7 +2926,7 @@ export const laterCultureCards: Card[] = [
     "question": "『民衆を導く自由の女神』の作者は？",
     "answer": "ドラクロワ",
     "explanation": "『民衆を導く自由の女神』『キオス島の虐殺』を描いたフランスのロマン主義画家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2903,8 +2938,8 @@ export const laterCultureCards: Card[] = [
     "answer": "民衆を導く自由の女神",
     "explanation": "ドラクロワの作品。画像の出典と利用条件は詳細欄を参照。",
     "imageId": "img-a-delacroix",
-    "fallbackPrompt": "ドラクロワが制作した代表作品の一つを答えよ。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "fallbackPrompt": "ドラクロワが七月革命を背景に描いた、自由の擬人像が旗を掲げる絵画は？",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2915,7 +2950,7 @@ export const laterCultureCards: Card[] = [
     "question": "『1808年5月3日』を描いたスペインの画家は？",
     "answer": "ゴヤ",
     "explanation": "スペインの画家。『1808年5月3日』など、戦争や社会の姿を描いた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2927,8 +2962,8 @@ export const laterCultureCards: Card[] = [
     "answer": "1808年5月3日",
     "explanation": "ゴヤの作品。画像の出典と利用条件は詳細欄を参照。",
     "imageId": "img-a-goya",
-    "fallbackPrompt": "ゴヤが制作した代表作品の一つを答えよ。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "fallbackPrompt": "ゴヤがナポレオン軍によるマドリード市民の銃殺を描いた絵画は？",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2939,7 +2974,7 @@ export const laterCultureCards: Card[] = [
     "question": "『落穂拾い』を描いた画家は？",
     "answer": "ミレー",
     "explanation": "バルビゾン派の画家。『落穂拾い』『晩鐘』に農民の暮らしを描いた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2951,8 +2986,8 @@ export const laterCultureCards: Card[] = [
     "answer": "落穂拾い",
     "explanation": "ミレーの作品。画像の出典と利用条件は詳細欄を参照。",
     "imageId": "img-a-millet",
-    "fallbackPrompt": "ミレーが制作した代表作品の一つを答えよ。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "fallbackPrompt": "ミレーが収穫後に麦の穂を拾う農民の姿を描いた絵画は？",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2963,7 +2998,7 @@ export const laterCultureCards: Card[] = [
     "question": "『石割り』を描いたフランス写実主義の画家は？",
     "answer": "クールベ",
     "explanation": "フランス写実主義の画家。『石割り』で労働者の姿を描いた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2974,7 +3009,7 @@ export const laterCultureCards: Card[] = [
     "question": "光や色彩の瞬間的な印象を重視した19世紀の絵画運動は？",
     "answer": "印象派",
     "explanation": "自然の光や色彩による瞬間的な印象を重視した画家たち。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2985,7 +3020,7 @@ export const laterCultureCards: Card[] = [
     "question": "『草上の昼食』の作者は？",
     "answer": "マネ",
     "explanation": "『草上の昼食』で知られるフランスの画家。印象派に影響を与えた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -2996,7 +3031,7 @@ export const laterCultureCards: Card[] = [
     "question": "『印象・日の出』の作者は？",
     "answer": "モネ",
     "explanation": "『印象・日の出』『睡蓮』を描いた印象派の代表画家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3008,8 +3043,8 @@ export const laterCultureCards: Card[] = [
     "answer": "印象・日の出",
     "explanation": "モネの作品。画像の出典と利用条件は詳細欄を参照。",
     "imageId": "img-a-monet",
-    "fallbackPrompt": "モネが制作した代表作品の一つを答えよ。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "fallbackPrompt": "モネがル＝アーヴルの港の日の出を描き印象派の名の由来となった絵画は？",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3020,7 +3055,7 @@ export const laterCultureCards: Card[] = [
     "question": "『ムーラン＝ド＝ラ＝ギャレット』の作者は？",
     "answer": "ルノワール",
     "explanation": "印象派の画家。『ムーラン＝ド＝ラ＝ギャレット』で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3031,7 +3066,7 @@ export const laterCultureCards: Card[] = [
     "question": "セザンヌやゴーガンなどを含む印象派後の芸術動向は？",
     "answer": "後期印象派",
     "explanation": "印象派を出発点とし、より独自の構成や色彩表現を追求した画家たち。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3042,7 +3077,7 @@ export const laterCultureCards: Card[] = [
     "question": "『サン＝ヴィクトワール山』を繰り返し描いた画家は？",
     "answer": "セザンヌ",
     "explanation": "構成的な形態表現で知られる画家。『サン＝ヴィクトワール山』を繰り返し描いた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3054,8 +3089,8 @@ export const laterCultureCards: Card[] = [
     "answer": "サン＝ヴィクトワール山",
     "explanation": "セザンヌの作品。画像の出典と利用条件は詳細欄を参照。",
     "imageId": "img-a-cezanne",
-    "fallbackPrompt": "セザンヌが制作した代表作品の一つを答えよ。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "fallbackPrompt": "セザンヌが繰り返し描いたフランスの山の名を冠した作品は？",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3066,7 +3101,7 @@ export const laterCultureCards: Card[] = [
     "question": "『タヒチの女』を描いた画家は？",
     "answer": "ゴーガン",
     "explanation": "タヒチなどに滞在し『タヒチの女』などを描いた画家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3077,7 +3112,7 @@ export const laterCultureCards: Card[] = [
     "question": "『ひまわり』を描いた画家は？",
     "answer": "ゴッホ",
     "explanation": "『ひまわり』『自画像』などで知られるオランダ出身の画家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3089,8 +3124,8 @@ export const laterCultureCards: Card[] = [
     "answer": "ひまわり（ロンドン・ナショナル・ギャラリー所蔵版）",
     "explanation": "ゴッホの作品。画像の出典と利用条件は詳細欄を参照。",
     "imageId": "img-a-vangogh",
-    "fallbackPrompt": "ゴッホが制作した代表作品の一つを答えよ。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "fallbackPrompt": "ゴッホが花瓶に挿した黄色い花を描いた代表作は？",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3101,7 +3136,7 @@ export const laterCultureCards: Card[] = [
     "question": "『考える人』を制作した彫刻家は？",
     "answer": "ロダン",
     "explanation": "『考える人』『カレーの市民』で知られるフランスの彫刻家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3113,8 +3148,8 @@ export const laterCultureCards: Card[] = [
     "answer": "考える人",
     "explanation": "ロダンの作品。画像の出典と利用条件は詳細欄を参照。",
     "imageId": "img-a-rodin",
-    "fallbackPrompt": "ロダンが制作した代表作品の一つを答えよ。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "fallbackPrompt": "ロダンの、顎に手を当てて思索する人物像の彫刻は？",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3125,7 +3160,7 @@ export const laterCultureCards: Card[] = [
     "question": "19世紀末に流行した植物的曲線の装飾様式は？",
     "answer": "アール＝ヌーヴォー",
     "explanation": "植物の形を思わせる曲線などを用いた装飾芸術の動向。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3136,7 +3171,7 @@ export const laterCultureCards: Card[] = [
     "question": "マティスが代表する20世紀初頭の鮮烈な色彩を用いた絵画運動は？",
     "answer": "野獣派",
     "explanation": "強烈な色彩を用いる20世紀初頭の絵画運動。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3147,7 +3182,7 @@ export const laterCultureCards: Card[] = [
     "question": "フォーヴィスムの代表的なフランスの画家は？",
     "answer": "マティス",
     "explanation": "フォーヴィスムの代表的画家。大胆な色彩と簡潔な形態を追求した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3158,7 +3193,7 @@ export const laterCultureCards: Card[] = [
     "question": "ピカソらが発展させた幾何学的な形態を特徴とする絵画運動は？",
     "answer": "立体派",
     "explanation": "対象を幾何学的な面に分解して再構成する絵画運動。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3169,7 +3204,7 @@ export const laterCultureCards: Card[] = [
     "question": "『ゲルニカ』を描いた画家は？",
     "answer": "ピカソ",
     "explanation": "スペイン出身の画家。キュビスムを展開し、スペイン内戦の空爆を主題に『ゲルニカ』を描いた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3180,7 +3215,7 @@ export const laterCultureCards: Card[] = [
     "question": "夢や無意識の表現を重視する芸術運動は？",
     "answer": "シュルレアリスム",
     "explanation": "夢や無意識を表現しようとした20世紀の芸術運動。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3191,7 +3226,7 @@ export const laterCultureCards: Card[] = [
     "question": "スペインのシュルレアリスムを代表する画家は？",
     "answer": "ダリ",
     "explanation": "スペインの画家。夢や無意識を表すシュルレアリスムの代表人物。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3202,7 +3237,7 @@ export const laterCultureCards: Card[] = [
     "question": "メキシコの壁画運動を代表した画家の一人は？",
     "answer": "シケイロス",
     "explanation": "メキシコの壁画運動を代表する画家。社会的・政治的主題を描いた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3213,7 +3248,7 @@ export const laterCultureCards: Card[] = [
     "question": "『マタイ受難曲』を作曲した人物は？",
     "answer": "バッハ",
     "explanation": "ドイツのバロック期の作曲家。『マタイ受難曲』などで知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3224,7 +3259,7 @@ export const laterCultureCards: Card[] = [
     "question": "オラトリオ『メサイア』の作曲者は？",
     "answer": "ヘンデル",
     "explanation": "ドイツ出身でイギリスを中心に活躍した作曲家。オラトリオ『メサイア』で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3235,7 +3270,7 @@ export const laterCultureCards: Card[] = [
     "question": "古典派音楽で「交響曲の父」と呼ばれる作曲家は？",
     "answer": "ハイドン",
     "explanation": "古典派音楽の作曲家。交響曲や弦楽四重奏曲を多数作曲した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3246,7 +3281,7 @@ export const laterCultureCards: Card[] = [
     "question": "『フィガロの結婚』の作曲者は？",
     "answer": "モーツァルト",
     "explanation": "古典派の作曲家。オペラ『フィガロの結婚』『魔笛』などで知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3257,7 +3292,7 @@ export const laterCultureCards: Card[] = [
     "question": "交響曲第3番『英雄』で知られる作曲家は？",
     "answer": "ベートーヴェン",
     "explanation": "ドイツの作曲家。交響曲第3番『英雄』、第5番『運命』などを作曲した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3268,7 +3303,7 @@ export const laterCultureCards: Card[] = [
     "question": "歌曲集『美しき水車小屋の娘』の作曲者は？",
     "answer": "シューベルト",
     "explanation": "オーストリアの作曲家。歌曲集『美しき水車小屋の娘』などで知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3279,7 +3314,7 @@ export const laterCultureCards: Card[] = [
     "question": "楽劇『タンホイザー』の作曲者は？",
     "answer": "ワーグナー",
     "explanation": "ドイツの作曲家。楽劇『タンホイザー』『ニーベルングの指環』で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3290,7 +3325,7 @@ export const laterCultureCards: Card[] = [
     "question": "練習曲『革命』の作曲者は？",
     "answer": "ショパン",
     "explanation": "ポーランド出身の作曲家・ピアニスト。ピアノ曲『革命』などで知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3301,7 +3336,7 @@ export const laterCultureCards: Card[] = [
     "question": "バレエ『白鳥の湖』の作曲者は？",
     "answer": "チャイコフスキー",
     "explanation": "ロシアの作曲家。バレエ『白鳥の湖』『くるみ割り人形』で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3312,7 +3347,7 @@ export const laterCultureCards: Card[] = [
     "question": "交響詩集『わが祖国』の作曲者は？",
     "answer": "スメタナ",
     "explanation": "チェコの作曲家。連作交響詩『わが祖国』で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3323,7 +3358,7 @@ export const laterCultureCards: Card[] = [
     "question": "交響詩『海』を作曲した人物は？",
     "answer": "ドビュッシー",
     "explanation": "フランスの作曲家。交響詩『海』や組曲『子供の領分』で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3334,7 +3369,7 @@ export const laterCultureCards: Card[] = [
     "question": "十二音技法の創始者として知られる作曲家は？",
     "answer": "シェーンベルク",
     "explanation": "オーストリア出身の作曲家。無調や十二音技法の発展に寄与した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3345,7 +3380,7 @@ export const laterCultureCards: Card[] = [
     "question": "経験や観察を知識の源泉として重視する哲学の立場は？",
     "answer": "経験論",
     "explanation": "知識の獲得で感覚経験や観察を重視した近世哲学の立場。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3356,7 +3391,7 @@ export const laterCultureCards: Card[] = [
     "question": "個別事実から一般的法則を導く方法は？",
     "answer": "帰納法",
     "explanation": "個々の事実や観察から一般的な法則を導く推論法。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3367,7 +3402,7 @@ export const laterCultureCards: Card[] = [
     "question": "『新オルガヌム』を著した近世哲学者は？",
     "answer": "フランシス＝ベーコン",
     "explanation": "イングランドの思想家。『新オルガヌム』を著し、経験と帰納を重視した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3378,7 +3413,7 @@ export const laterCultureCards: Card[] = [
     "question": "懐疑論的な経験論を展開したスコットランドの哲学者は？",
     "answer": "ヒューム",
     "explanation": "スコットランドの経験論哲学者。因果性や帰納の根拠を批判的に考察した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3389,7 +3424,7 @@ export const laterCultureCards: Card[] = [
     "question": "デカルトらに代表される、理性を重視する近世哲学の立場は？",
     "answer": "合理論",
     "explanation": "感覚経験だけでなく理性を認識の重要な根拠とする近世哲学の立場。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3400,7 +3435,7 @@ export const laterCultureCards: Card[] = [
     "question": "一般原理から個別の結論を導く推論法は？",
     "answer": "演繹法",
     "explanation": "一般的な原理や前提から具体的な結論を導く推論法。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3411,7 +3446,7 @@ export const laterCultureCards: Card[] = [
     "question": "『方法序説』の著者は？",
     "answer": "デカルト",
     "explanation": "フランスの哲学者。『方法序説』で体系的な懐疑と理性的な方法を論じた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3422,7 +3457,7 @@ export const laterCultureCards: Card[] = [
     "question": "『エチカ（倫理学）』を著した哲学者は？",
     "answer": "スピノザ",
     "explanation": "オランダで活動した哲学者。『エチカ』で独自の一元論を展開した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3433,7 +3468,7 @@ export const laterCultureCards: Card[] = [
     "question": "モナド（単子）論を唱えた哲学者は？",
     "answer": "ライプニッツ",
     "explanation": "ドイツの哲学者・数学者。モナド論で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3444,7 +3479,7 @@ export const laterCultureCards: Card[] = [
     "question": "『パンセ』を著した思想家は？",
     "answer": "パスカル",
     "explanation": "フランスの数学者・思想家。断章集『パンセ』の著者。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3455,7 +3490,7 @@ export const laterCultureCards: Card[] = [
     "question": "カント・フィヒテ・ヘーゲルらに関わる哲学的潮流は？",
     "answer": "ドイツ観念論",
     "explanation": "カント以降にドイツで発展した、認識や精神・理性を重視する哲学的潮流。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3466,7 +3501,7 @@ export const laterCultureCards: Card[] = [
     "question": "『純粋理性批判』の著者は？",
     "answer": "カント",
     "explanation": "『純粋理性批判』で人間の認識の条件と限界を論じた哲学者。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3477,7 +3512,7 @@ export const laterCultureCards: Card[] = [
     "question": "『ドイツ国民に告ぐ』を講演した哲学者は？",
     "answer": "フィヒテ",
     "explanation": "ドイツ観念論の哲学者。ナポレオン占領下のベルリンで『ドイツ国民に告ぐ』を講演した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3488,7 +3523,7 @@ export const laterCultureCards: Card[] = [
     "question": "弁証法を哲学体系の中心に据えたドイツの哲学者は？",
     "answer": "ヘーゲル",
     "explanation": "ドイツ観念論を展開し、対立・矛盾を通じた概念の展開を扱う弁証法で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3499,7 +3534,7 @@ export const laterCultureCards: Card[] = [
     "question": "エンゲルスと『共産党宣言』を著した人物は？",
     "answer": "マルクス",
     "explanation": "エンゲルスと『共産党宣言』を著し、史的唯物論を展開した思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3510,7 +3545,7 @@ export const laterCultureCards: Card[] = [
     "question": "「最大多数の最大幸福」を掲げた思想は？",
     "answer": "功利主義",
     "explanation": "行為や制度の評価で幸福・効用という帰結を重視する思想。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3521,7 +3556,7 @@ export const laterCultureCards: Card[] = [
     "question": "功利主義を体系化した「最大多数の最大幸福」の思想家は？",
     "answer": "ベンサム",
     "explanation": "近代功利主義の体系化に大きく寄与し、快楽と苦痛を重視したイギリスの思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3532,7 +3567,7 @@ export const laterCultureCards: Card[] = [
     "question": "ベンサムの功利主義を発展させ、幸福の質を論じた思想家は？",
     "answer": "ジョン＝ステュアート＝ミル",
     "explanation": "功利主義を発展させ、快楽の質の違いを重視したイギリスの思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3543,7 +3578,7 @@ export const laterCultureCards: Card[] = [
     "question": "コントが提唱した、実証的事実を重視する思想は？",
     "answer": "実証主義",
     "explanation": "観察・実証に基づく知識を重んじる思想。コントが中心的な人物。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3554,7 +3589,7 @@ export const laterCultureCards: Card[] = [
     "question": "社会学と実証主義の創始に重要な役割を果たした思想家は？",
     "answer": "コント",
     "explanation": "実証主義を提唱し、社会学の成立に重要な役割を果たしたフランスの思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3565,7 +3600,7 @@ export const laterCultureCards: Card[] = [
     "question": "19世紀に社会進化論を展開したイギリスの思想家は？",
     "answer": "ハーバート＝スペンサー",
     "explanation": "イギリスの思想家・社会学者。社会進化論を展開した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3576,7 +3611,7 @@ export const laterCultureCards: Card[] = [
     "question": "個人の主体的な選択や存在を重視する哲学思想は？",
     "answer": "実存主義",
     "explanation": "抽象体系よりも個人の実存・選択・自由を重視する哲学的潮流。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3587,7 +3622,7 @@ export const laterCultureCards: Card[] = [
     "question": "実存主義の先駆とされるデンマークの哲学者は？",
     "answer": "キェルケゴール",
     "explanation": "デンマークの思想家。実存主義の先駆とされ、信仰と個人の実存を論じた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3598,7 +3633,7 @@ export const laterCultureCards: Card[] = [
     "question": "『ツァラトゥストラはかく語りき』の著者は？",
     "answer": "ニーチェ",
     "explanation": "『ツァラトゥストラはかく語りき』などを著したドイツの思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3609,7 +3644,7 @@ export const laterCultureCards: Card[] = [
     "question": "デューイらが展開した実践と経験を重視する思想は？",
     "answer": "プラグマティズム",
     "explanation": "概念の意味・真理を実践上の働きや経験との関係で考える思想。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3620,7 +3655,7 @@ export const laterCultureCards: Card[] = [
     "question": "シカゴの実験学校を設けたプラグマティズムの哲学者は？",
     "answer": "デューイ",
     "explanation": "アメリカの哲学者・教育思想家。プラグマティズムと教育の実践で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3631,7 +3666,7 @@ export const laterCultureCards: Card[] = [
     "question": "レヴィ＝ストロースの文化人類学と関連する思想は？",
     "answer": "構造主義",
     "explanation": "個々の要素を相互の関係・構造の中で捉える方法・思潮。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3642,7 +3677,7 @@ export const laterCultureCards: Card[] = [
     "question": "構造主義人類学の代表者は？",
     "answer": "レヴィ＝ストロース",
     "explanation": "フランスの文化人類学者。親族や神話を構造的に分析した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3653,7 +3688,7 @@ export const laterCultureCards: Card[] = [
     "question": "国家が貿易や産業に介入して国富の増大をめざした思想は？",
     "answer": "重商主義",
     "explanation": "国家が貿易・産業へ介入して国富の増大を図る近世の政策・思想。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3664,7 +3699,7 @@ export const laterCultureCards: Card[] = [
     "question": "ルイ14世のもとで重商主義政策を推進した人物は？",
     "answer": "コルベール",
     "explanation": "ルイ14世の財務担当者として保護貿易や王立マニュファクチュアを推進した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3675,7 +3710,7 @@ export const laterCultureCards: Card[] = [
     "question": "ケネーが代表する、農業を富の源泉とみなす経済思想は？",
     "answer": "重農主義",
     "explanation": "富の源泉を農業生産に求め、経済活動の自由を重んじた思想。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3686,7 +3721,7 @@ export const laterCultureCards: Card[] = [
     "question": "『経済表』の著者は？",
     "answer": "ケネー",
     "explanation": "重農主義の代表者。『経済表』を作成した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3697,7 +3732,7 @@ export const laterCultureCards: Card[] = [
     "question": "重農主義に影響され、ルイ16世の財務総監を務めた人物は？",
     "answer": "テュルゴー",
     "explanation": "ケネーの影響を受けた改革派経済思想家。ルイ16世の財務総監を務めた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3708,7 +3743,7 @@ export const laterCultureCards: Card[] = [
     "question": "スミスやリカードが代表する経済学の潮流は？",
     "answer": "古典派経済学",
     "explanation": "アダム＝スミスやリカードに代表される経済学の潮流。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3719,7 +3754,7 @@ export const laterCultureCards: Card[] = [
     "question": "『国富論』の著者は？",
     "answer": "アダム＝スミス",
     "explanation": "『諸国民の富（国富論）』を著したスコットランドの経済思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3730,7 +3765,7 @@ export const laterCultureCards: Card[] = [
     "question": "『人口論』の著者は？",
     "answer": "マルサス",
     "explanation": "人口と食料生産の関係を論じた『人口論』を著した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3741,7 +3776,7 @@ export const laterCultureCards: Card[] = [
     "question": "比較生産費説を唱えたイギリスの経済学者は？",
     "answer": "リカード",
     "explanation": "比較優位に基づく国際分業の説明や労働価値論で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3752,7 +3787,7 @@ export const laterCultureCards: Card[] = [
     "question": "ドイツ関税同盟の形成を支持した経済学者は？",
     "answer": "リスト",
     "explanation": "ドイツの経済学者。産業発展段階を重視し、保護関税を論じた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3763,7 +3798,7 @@ export const laterCultureCards: Card[] = [
     "question": "『雇用・利子および貨幣の一般理論』の著者は？",
     "answer": "ケインズ",
     "explanation": "有効需要や失業の問題を分析したイギリスの経済学者。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3774,7 +3809,7 @@ export const laterCultureCards: Card[] = [
     "question": "精神分析の創始者は？",
     "answer": "フロイト",
     "explanation": "オーストリアの神経科医。無意識の作用を重視した精神分析の創始者。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3785,7 +3820,7 @@ export const laterCultureCards: Card[] = [
     "question": "『プロテスタンティズムの倫理と資本主義の精神』の著者は？",
     "answer": "マックス＝ヴェーバー",
     "explanation": "ドイツの社会学者。『プロテスタンティズムの倫理と資本主義の精神』で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3796,7 +3831,7 @@ export const laterCultureCards: Card[] = [
     "question": "近代実証史学の確立に大きく寄与したドイツの歴史家は？",
     "answer": "ランケ",
     "explanation": "史料批判を重視したドイツの歴史学者。近代実証史学に大きな影響を与えた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3807,7 +3842,7 @@ export const laterCultureCards: Card[] = [
     "question": "歴史法学派を代表するドイツの法学者は？",
     "answer": "サヴィニー",
     "explanation": "法を民族の歴史的発展と結び付けた歴史法学派の法学者。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3818,7 +3853,7 @@ export const laterCultureCards: Card[] = [
     "question": "『西洋の没落』を著した人物は？",
     "answer": "シュペングラー",
     "explanation": "『西洋の没落』を著したドイツの歴史哲学者。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3829,7 +3864,7 @@ export const laterCultureCards: Card[] = [
     "question": "『オリエンタリズム』の著者は？",
     "answer": "サイード",
     "explanation": "パレスチナ系アメリカ人の批評家。『オリエンタリズム』で西洋の東洋像を批判した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3840,7 +3875,7 @@ export const laterCultureCards: Card[] = [
     "question": "サン＝シモンやオーウェンらに代表される初期の社会主義は？",
     "answer": "空想的社会主義",
     "explanation": "マルクスら以前に理想的共同体や協同社会を構想した社会主義の総称。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3851,7 +3886,7 @@ export const laterCultureCards: Card[] = [
     "question": "ニューラナークの工場経営と協同社会の構想で知られる人物は？",
     "answer": "オーウェン",
     "explanation": "スコットランドのニューラナークで工場経営を改善し協同社会を構想した改革者。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3859,10 +3894,10 @@ export const laterCultureCards: Card[] = [
     "id": "ph4-so-saint-simon-01",
     "knowledgeId": "so-saint-simon",
     "type": "context",
-    "question": "空想的社会主義の代表的思想家でフランスの人物は？",
+    "question": "コントが一時秘書を務めた、産業社会の組織化を論じたフランスの社会思想家は？",
     "answer": "サン＝シモン",
     "explanation": "産業と社会の組織化を重んじたフランスの社会思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3873,7 +3908,7 @@ export const laterCultureCards: Card[] = [
     "question": "共同生活の「ファランステール」を構想した思想家は？",
     "answer": "フーリエ",
     "explanation": "協同的な共同生活を行うファランステールを構想したフランスの思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3884,7 +3919,7 @@ export const laterCultureCards: Card[] = [
     "question": "1848年のフランス臨時政府に参加した社会主義者は？",
     "answer": "ルイ＝ブラン",
     "explanation": "労働の組織化を唱え、1848年フランスの臨時政府に参加した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3895,7 +3930,7 @@ export const laterCultureCards: Card[] = [
     "question": "マルクスとエンゲルスが展開した社会主義は？",
     "answer": "科学的社会主義",
     "explanation": "マルクスとエンゲルスの史的唯物論・資本主義分析に結び付いた社会主義思想。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3906,7 +3941,7 @@ export const laterCultureCards: Card[] = [
     "question": "マルクスと『共産党宣言』を共著した人物は？",
     "answer": "エンゲルス",
     "explanation": "マルクスと『共産党宣言』を共著したドイツの社会主義思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3917,7 +3952,7 @@ export const laterCultureCards: Card[] = [
     "question": "プルードンやバクーニンが代表する思想は？",
     "answer": "無政府主義",
     "explanation": "国家による支配・強制に批判的な政治・社会思想の総称。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3928,7 +3963,7 @@ export const laterCultureCards: Card[] = [
     "question": "『所有とは何か』の著者は？",
     "answer": "プルードン",
     "explanation": "『所有とは何か』を著し私有財産の不平等を批判したフランスの思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3939,7 +3974,7 @@ export const laterCultureCards: Card[] = [
     "question": "第一インターナショナルでマルクスと対立した無政府主義者は？",
     "answer": "バクーニン",
     "explanation": "ロシア出身の無政府主義者。第一インターナショナルでマルクスと対立した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3950,7 +3985,7 @@ export const laterCultureCards: Card[] = [
     "question": "17世紀以降に近代自然科学の方法が大きく発展した変革は？",
     "answer": "科学革命",
     "explanation": "観察と実験や数学を重視し近代自然科学の方法が発展した過程。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3961,7 +3996,7 @@ export const laterCultureCards: Card[] = [
     "question": "1662年にチャールズ2世が勅許を与えた学術団体は？",
     "answer": "王立協会",
     "explanation": "1662年に勅許を得たイングランドの学術団体。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3972,7 +4007,7 @@ export const laterCultureCards: Card[] = [
     "question": "1666年に設立されたフランスの科学研究機関は？",
     "answer": "フランス科学アカデミー",
     "explanation": "1666年に設立されたフランスの科学者の研究機関。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3983,7 +4018,7 @@ export const laterCultureCards: Card[] = [
     "question": "気体の圧力と体積の関係を示す法則に名を残す科学者は？",
     "answer": "ボイル",
     "explanation": "気体の圧力と体積の関係を示すボイルの法則で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -3994,7 +4029,7 @@ export const laterCultureCards: Card[] = [
     "question": "振り子時計と光の波動説で知られるオランダの科学者は？",
     "answer": "ホイヘンス",
     "explanation": "オランダの物理学者。振り子時計の改良や光の波動説で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4005,7 +4040,7 @@ export const laterCultureCards: Card[] = [
     "question": "『プリンキピア』の著者は？",
     "answer": "ニュートン",
     "explanation": "『プリンキピア』を著し万有引力の法則と運動法則を体系化した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4016,7 +4051,7 @@ export const laterCultureCards: Card[] = [
     "question": "避雷針の発明で知られるアメリカの科学者は？",
     "answer": "フランクリン",
     "explanation": "アメリカの政治家・科学者。電気研究や避雷針の実用化で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4027,7 +4062,7 @@ export const laterCultureCards: Card[] = [
     "question": "質量保存の法則の確立に貢献したフランスの化学者は？",
     "answer": "ラヴォワジエ",
     "explanation": "近代化学の成立に貢献し、質量保存の法則の確立に寄与した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4038,7 +4073,7 @@ export const laterCultureCards: Card[] = [
     "question": "星雲説（宇宙進化論）で知られるフランスの科学者は？",
     "answer": "ラプラス",
     "explanation": "天文学・数学に業績を残し、星雲説を展開したフランスの学者。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4049,7 +4084,7 @@ export const laterCultureCards: Card[] = [
     "question": "血液循環説を発表した医師は？",
     "answer": "ハーヴェー",
     "explanation": "血液循環説を体系的に示したイングランドの医師。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4060,7 +4095,7 @@ export const laterCultureCards: Card[] = [
     "question": "牛痘を用いた天然痘予防接種を行った医師は？",
     "answer": "ジェンナー",
     "explanation": "牛痘を用いた天然痘の予防接種を実施したイングランドの医師。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4071,7 +4106,7 @@ export const laterCultureCards: Card[] = [
     "question": "生物の学名に二名法を普及させた人物は？",
     "answer": "リンネ",
     "explanation": "生物分類に二名法を体系的に導入したスウェーデンの博物学者。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4082,7 +4117,7 @@ export const laterCultureCards: Card[] = [
     "question": "電信の実用化と符号化で知られるアメリカの発明家は？",
     "answer": "モース",
     "explanation": "電信技術の実用化やモールス符号で知られるアメリカの発明家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4093,7 +4128,7 @@ export const laterCultureCards: Card[] = [
     "question": "1901年の大西洋横断無線通信の成功で知られる人物は？",
     "answer": "マルコーニ",
     "explanation": "無線通信の実用化を進めたイタリアの発明家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4104,7 +4139,7 @@ export const laterCultureCards: Card[] = [
     "question": "19世紀後半に大陸間の通信を高速化した海底の設備は？",
     "answer": "海底電信ケーブル",
     "explanation": "大陸間の電気通信を可能にし、国際的な情報の伝達を加速させた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4115,7 +4150,7 @@ export const laterCultureCards: Card[] = [
     "question": "1851年ロンドンで創設された国際通信社は？",
     "answer": "ロイター通信",
     "explanation": "1851年にロンドンで設立された通信社。金融やニュースの情報を配信した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4126,7 +4161,7 @@ export const laterCultureCards: Card[] = [
     "question": "19世紀イギリスで旅行代理業を発展させた人物は？",
     "answer": "トマス＝クック",
     "explanation": "19世紀イギリスで団体旅行を企画し、旅行業の発展に貢献した人物。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4137,7 +4172,7 @@ export const laterCultureCards: Card[] = [
     "question": "『睡蓮』の作者は？",
     "answer": "モネ",
     "explanation": "『印象・日の出』『睡蓮』を描いた印象派の代表画家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4148,7 +4183,7 @@ export const laterCultureCards: Card[] = [
     "question": "『晩鐘』を描いた画家は？",
     "answer": "ミレー",
     "explanation": "バルビゾン派の画家。『落穂拾い』『晩鐘』に農民の暮らしを描いた。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4159,7 +4194,7 @@ export const laterCultureCards: Card[] = [
     "question": "『キオス島の虐殺』の作者は？",
     "answer": "ドラクロワ",
     "explanation": "『民衆を導く自由の女神』『キオス島の虐殺』を描いたフランスのロマン主義画家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4170,7 +4205,7 @@ export const laterCultureCards: Card[] = [
     "question": "『マラーの死』の作者は？",
     "answer": "ダヴィド",
     "explanation": "『ナポレオン1世の戴冠式』『マラーの死』で知られるフランス新古典主義画家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4181,7 +4216,7 @@ export const laterCultureCards: Card[] = [
     "question": "『自画像』を多数描いたオランダ出身の画家は？",
     "answer": "ゴッホ",
     "explanation": "『ひまわり』『自画像』などで知られるオランダ出身の画家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4192,7 +4227,7 @@ export const laterCultureCards: Card[] = [
     "question": "『カレーの市民』を制作した彫刻家は？",
     "answer": "ロダン",
     "explanation": "『考える人』『カレーの市民』で知られるフランスの彫刻家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4203,7 +4238,7 @@ export const laterCultureCards: Card[] = [
     "question": "オペラ『魔笛』の作曲者は？",
     "answer": "モーツァルト",
     "explanation": "古典派の作曲家。オペラ『フィガロの結婚』『魔笛』などで知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4214,7 +4249,7 @@ export const laterCultureCards: Card[] = [
     "question": "交響曲第5番『運命』を作曲した人物は？",
     "answer": "ベートーヴェン",
     "explanation": "ドイツの作曲家。交響曲第3番『英雄』、第5番『運命』などを作曲した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4225,7 +4260,7 @@ export const laterCultureCards: Card[] = [
     "question": "バレエ『くるみ割り人形』の作曲者は？",
     "answer": "チャイコフスキー",
     "explanation": "ロシアの作曲家。バレエ『白鳥の湖』『くるみ割り人形』で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4236,7 +4271,7 @@ export const laterCultureCards: Card[] = [
     "question": "『ニーベルングの指環』の作曲者は？",
     "answer": "ワーグナー",
     "explanation": "ドイツの作曲家。楽劇『タンホイザー』『ニーベルングの指環』で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4247,7 +4282,7 @@ export const laterCultureCards: Card[] = [
     "question": "ピアノ組曲『子供の領分』の作者は？",
     "answer": "ドビュッシー",
     "explanation": "フランスの作曲家。交響詩『海』や組曲『子供の領分』で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4258,7 +4293,7 @@ export const laterCultureCards: Card[] = [
     "question": "『人間は考える葦である』という言葉で知られる思想家は？",
     "answer": "パスカル",
     "explanation": "フランスの数学者・思想家。断章集『パンセ』の著者。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4269,7 +4304,7 @@ export const laterCultureCards: Card[] = [
     "question": "『資本論』を執筆した社会主義思想家は？",
     "answer": "マルクス",
     "explanation": "エンゲルスと『共産党宣言』を著し、史的唯物論を展開した思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4277,10 +4312,10 @@ export const laterCultureCards: Card[] = [
     "id": "ph4-ph-kant-extra-1",
     "knowledgeId": "ph-kant",
     "type": "context",
-    "question": "『純粋理性批判』はどの国の哲学者の著作か？",
+    "question": "『純粋理性批判』を著し認識の条件と限界を考察した哲学者は？",
     "answer": "カント",
     "explanation": "『純粋理性批判』で人間の認識の条件と限界を論じた哲学者。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4291,7 +4326,7 @@ export const laterCultureCards: Card[] = [
     "question": "リカードが説明した、国際分業の根拠となる理論は？",
     "answer": "比較生産費説",
     "explanation": "比較優位に基づく国際分業の説明や労働価値論で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4302,7 +4337,7 @@ export const laterCultureCards: Card[] = [
     "question": "「見えざる手」と結びつけられる経済学者は？",
     "answer": "アダム＝スミス",
     "explanation": "『諸国民の富（国富論）』を著したスコットランドの経済思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4313,7 +4348,7 @@ export const laterCultureCards: Card[] = [
     "question": "ニュートンが示した引力に関する法則は？",
     "answer": "万有引力の法則",
     "explanation": "『プリンキピア』を著し万有引力の法則と運動法則を体系化した。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4324,7 +4359,7 @@ export const laterCultureCards: Card[] = [
     "question": "リンネが普及させた、生物の属名と種小名を用いる命名法は？",
     "answer": "二名法",
     "explanation": "生物分類に二名法を体系的に導入したスウェーデンの博物学者。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4335,7 +4370,7 @@ export const laterCultureCards: Card[] = [
     "question": "『プロテスタンティズムの倫理と資本主義の精神』で扱われる経済体制は？",
     "answer": "資本主義",
     "explanation": "ドイツの社会学者。『プロテスタンティズムの倫理と資本主義の精神』で知られる。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   },
@@ -4346,7 +4381,7 @@ export const laterCultureCards: Card[] = [
     "question": "プルードンの著作の題名は？",
     "answer": "所有とは何か",
     "explanation": "『所有とは何か』を著し私有財産の不平等を批判したフランスの思想家。",
-    "updatedAt": "2026-11-09T09:45:00.000Z",
+    "updatedAt": "2026-11-09T09:52:12.332Z",
     "version": 1,
     "deleted": false
   }
