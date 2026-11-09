@@ -28,9 +28,8 @@ jobs:
       - run: npm test
       - run: npm run build
       - run: npx playwright install --with-deps chromium
-      - name: Browser smoke tests (report failures without blocking distribution of a validated build)
+      - name: Browser regression tests
         run: npm run test:e2e
-        continue-on-error: true
       - name: Verify static files exist before publication
         run: test -s dist/index.html && test -s dist/sw.js
       - uses: actions/upload-artifact@v4

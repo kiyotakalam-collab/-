@@ -1,6 +1,6 @@
 /** Separate year-quiz data and history. The culture database and its cards are never modified. */
 export type YearDirection = 'event-year' | 'year-event';
-export type YearStudyMode = 'all' | 'unseen' | 'mistakes' | 'due';
+export type YearStudyMode = 'all' | 'unseen' | 'mistakes' | 'due' | 'weak';
 export type YearLevel = 1 | 2 | 3 | 4;
 export interface YearItem {
   id: string;
@@ -89,17 +89,31 @@ export function mergeYearCatalog(current: YearCatalog, incoming: YearCatalog): Y
   return {schemaVersion:1, version:incoming.version, updatedAt:incoming.updatedAt,items:[...map.values()]};
 }
 export function questionId(id:string, direction:YearDirection):string {return id + '::' + direction;}
+export interface YearProgress {
+  correct:number; wrong:number; attempts:number; streak:number;
+  lastAt:string|null; dueAt:number; recent:boolean[];
+}
 export function yearProgress(events:YearReview[]) {
-  const map = new Map<string,{correct:number;wrong:number;streak:number;lastAt:string|null;dueAt:number}>();
-  for(const ev of [...events].sort((a,b)=>a.at.localeCompare(b.at))) {
-    const value=map.get(ev.questionId)||{correct:0,wrong:0,streak:0,lastAt:null,dueAt:0};
+  const map = new Map<string,YearProgress>();
+  for(const ev of [...events].sort((a,b)=>Date.parse(a.at)-Date.parse(b.at)||a.id.localeCompare(b.id))) {
+    const value=map.get(ev.questionId)||{correct:0,wrong:0,attempts:0,streak:0,lastAt:null,dueAt:0,recent:[]};
+    value.attempts++;
     if(ev.correct){value.correct++;value.streak++;}else{value.wrong++;value.streak=0;}
-    const intervals=[1,3,7,14,30];
-    value.dueAt=Date.parse(ev.at)+intervals[Math.min(value.streak,intervals.length-1)]*86400000;
+    value.recent=[...value.recent.slice(-4),ev.correct];
+    const intervals=[1,3,7,14,30,60,120,180];
+    value.dueAt=Date.parse(ev.at)+(ev.correct?intervals[Math.min(value.streak-1,intervals.length-1)]*86400000:600000);
     value.lastAt=ev.at;
     map.set(ev.questionId,value);
   }
   return map;
+}
+/** Recent mistakes, overdue time and streak outweigh bounded lifetime errors. */
+export function yearPriority(progress:YearProgress|undefined, at=Date.now()):number {
+  if(!progress)return 2;
+  const recentFailure=1-progress.recent.filter(Boolean).length/Math.max(1,progress.recent.length);
+  const overdue=Math.max(0,(at-progress.dueAt)/86400000);
+  const idle=progress.lastAt?Math.max(0,(at-Date.parse(progress.lastAt))/86400000):0;
+  return recentFailure*10+Math.min(20,overdue)+Math.min(5,idle/14)+Math.min(1,progress.wrong/20)-Math.min(3,progress.streak*.4);
 }
 export function selectYearQuestions(catalog:YearCatalog, reviews:YearReview[], filter:YearFilter, at=Date.now()):YearQuestion[] {
   const progress=yearProgress(reviews);
@@ -112,7 +126,7 @@ export function selectYearQuestions(catalog:YearCatalog, reviews:YearReview[], f
       questions.push({id,item,direction,prompt:direction==='event-year'?item.event+' は何年？':item.year+'：'+item.region+'・'+item.era+'で起きた出来事は？',answer:direction==='event-year'?item.year:item.event});
     }
   }
-  return questions;
+  return filter.mode==='weak'?questions.sort((a,b)=>yearPriority(progress.get(b.id),at)-yearPriority(progress.get(a.id),at)||a.id.localeCompare(b.id)):questions;
 }
 const DB_NAME='world-history-year-test'; // separate from cultural-history-master
 export class YearDB {
@@ -120,6 +134,16 @@ export class YearDB {
   close(){this.database.close();}
   private req<T>(req:IDBRequest<T>):Promise<T> {return new Promise((resolve,reject)=>{req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error||Error('年号データを保存できません。'));});}
   private tx(mode:IDBTransactionMode){return this.database.transaction(['meta','reviews'],mode);}
+  private async write<T>(action:(transaction:IDBTransaction)=>Promise<T>):Promise<T>{
+    const transaction=this.tx('readwrite');
+    const completion=new Promise<void>((resolve,reject)=>{
+      transaction.oncomplete=()=>resolve();
+      transaction.onabort=()=>reject(transaction.error||Error('年号データの変更を取り消しました。'));
+      transaction.onerror=()=>{/* onabort reports the final transaction outcome */};
+    });
+    try{const result=await action(transaction);await completion;return result;}
+    catch(error){try{transaction.abort();}catch{/* already aborted */}await completion.catch(()=>undefined);throw error;}
+  }
   async load():Promise<YearSnapshot>{
     const t=this.tx('readonly');
     const [c,e,at]=await Promise.all([this.req<YearCatalog|undefined>(t.objectStore('meta').get('catalog')),this.req<YearReview[]>(t.objectStore('reviews').getAll()),this.req<string|null|undefined>(t.objectStore('meta').get('lastSyncAt'))]);
@@ -127,17 +151,27 @@ export class YearDB {
   }
   async applyCatalog(input:YearCatalog):Promise<void>{
     const incoming=validateYearCatalog(input);
-    const t=this.tx('readwrite');const store=t.objectStore('meta');
-    const old=await this.req<YearCatalog|undefined>(store.get('catalog'));
-    const merged=mergeYearCatalog(old??structuredClone(EMPTY_YEARS),incoming);
-    await this.req(store.put(merged,'catalog'));
-    await this.req(store.put(new Date().toISOString(),'lastSyncAt'));
+    await this.write(async t=>{
+      const store=t.objectStore('meta');
+      const old=await this.req<YearCatalog|undefined>(store.get('catalog'));
+      const merged=mergeYearCatalog(old??structuredClone(EMPTY_YEARS),incoming);
+      await this.req(store.put(merged,'catalog'));
+      await this.req(store.put(new Date().toISOString(),'lastSyncAt'));
+    });
   }
   async addReview(questionId:string,correct:boolean,sessionId:string):Promise<void>{
-    if(!/^[a-zA-Z0-9_.:-]+::(event-year|year-event)$/.test(questionId))throw Error('年号問題IDが不正です。');
-    const t=this.tx('readwrite'), reviews=t.objectStore('reviews');
-    const id=crypto.randomUUID();
-    await this.req(reviews.put({id,questionId,correct,at:new Date().toISOString(),sessionId} satisfies YearReview));
+    const itemId=questionItemId(questionId);
+    if(typeof correct!=='boolean'||!validId(sessionId))throw Error('年号回答が不正です。');
+    await this.write(async t=>{
+      const meta=t.objectStore('meta'),reviews=t.objectStore('reviews');
+      const catalog=await this.req<YearCatalog|undefined>(meta.get('catalog'));
+      if(!catalog?.items.some(item=>item.id===itemId&&!item.deleted))throw Error('出題できる年号が見つかりません。');
+      let latest=await this.req<string|undefined>(meta.get('lastReviewAt'));
+      if(!latest){const old=await this.req<YearReview[]>(reviews.getAll());latest=old.reduce((max,event)=>event.at>max?event.at:max,'');}
+      const at=new Date(Math.max(Date.now(),latest?Date.parse(latest)+1:0)).toISOString();
+      await this.req(reviews.add({id:crypto.randomUUID(),questionId,correct,at,sessionId} satisfies YearReview));
+      await this.req(meta.put(at,'lastReviewAt'));
+    });
   }
   async exportBackup():Promise<string>{
     const state=await this.load();
@@ -145,22 +179,41 @@ export class YearDB {
   }
   async restoreBackup(text:string):Promise<void>{
     const parsed:unknown=JSON.parse(text);
-    if(!isRecord(parsed)||parsed.format!=='world-history-years'||parsed.schemaVersion!==1||!Array.isArray(parsed.events))throw Error('年号テストのバックアップではありません。');
+    if(!isRecord(parsed)||parsed.format!=='world-history-years'||parsed.schemaVersion!==1||!Array.isArray(parsed.events)||parsed.events.length>1000000)throw Error('年号テストのバックアップではありません。');
     const catalog=validateYearCatalog(parsed.catalog);
+    const itemIds=new Set(catalog.items.map(item=>item.id)),eventIds=new Set<string>();
     const events:YearReview[]=parsed.events.map((v:unknown)=>{
-      if(!isRecord(v)||!validId(v.id)||typeof v.questionId!=='string'||!v.questionId.includes('::')||typeof v.correct!=='boolean'||!isIso(v.at)||typeof v.sessionId!=='string')throw Error('年号履歴が不正です。');
-      return {id:v.id as string,questionId:v.questionId,correct:v.correct,at:v.at as string,sessionId:v.sessionId};
+      if(!isRecord(v)||!validId(v.id)||typeof v.questionId!=='string'||typeof v.correct!=='boolean'||!isIso(v.at)||!validId(v.sessionId))throw Error('年号履歴が不正です。');
+      if(!itemIds.has(questionItemId(v.questionId))||eventIds.has(v.id as string))throw Error('年号履歴の参照先またはIDが不正です。');
+      eventIds.add(v.id as string);
+      return {id:v.id as string,questionId:v.questionId,correct:v.correct,at:v.at as string,sessionId:v.sessionId as string};
     });
     // Merge imported records; never reset counts by overwriting reviews.
-    const t=this.tx('readwrite'),meta=t.objectStore('meta'),reviews=t.objectStore('reviews');
-    const old=await this.req<YearCatalog|undefined>(meta.get('catalog'));
-    await this.req(meta.put(mergeYearCatalog(old??structuredClone(EMPTY_YEARS),catalog),'catalog'));
-    for(const event of events){const existing=await this.req<YearReview|undefined>(reviews.get(event.id));if(!existing)await this.req(reviews.put(event));else if(JSON.stringify(existing)!==JSON.stringify(event))throw Error('年号履歴が競合しています。');}
+    await this.write(async t=>{
+      const meta=t.objectStore('meta'),reviews=t.objectStore('reviews');
+      const old=await this.req<YearCatalog|undefined>(meta.get('catalog'))??structuredClone(EMPTY_YEARS);
+      const merged=mergeYearCatalog(old,{...catalog,version:Math.max(old.version,catalog.version),updatedAt:Date.parse(old.updatedAt)>Date.parse(catalog.updatedAt)?old.updatedAt:catalog.updatedAt});
+      await this.req(meta.put(merged,'catalog'));
+      let latest=await this.req<string|undefined>(meta.get('lastReviewAt'));
+      if(!latest){const saved=await this.req<YearReview[]>(reviews.getAll());latest=saved.reduce((max,event)=>event.at>max?event.at:max,'');}
+      for(const event of events){
+        const existing=await this.req<YearReview|undefined>(reviews.get(event.id));
+        if(!existing)await this.req(reviews.add(event));
+        else if(JSON.stringify(existing)!==JSON.stringify(event))throw Error('年号履歴が競合しています。');
+        if(!latest||Date.parse(event.at)>Date.parse(latest))latest=event.at;
+      }
+      if(latest)await this.req(meta.put(latest,'lastReviewAt'));
+    });
   }
 }
-export function openYearDatabase():Promise<YearDB>{
+function questionItemId(value:string):string{
+  const match=/^([a-zA-Z0-9][a-zA-Z0-9_.:-]{0,199})::(event-year|year-event)$/.exec(value);
+  if(!match)throw Error('年号問題IDが不正です。');
+  return match[1];
+}
+export function openYearDatabase(name=DB_NAME):Promise<YearDB>{
   return new Promise((resolve,reject)=>{
-    const req=indexedDB.open(DB_NAME,1);
+    const req=indexedDB.open(name,1);
     req.onupgradeneeded=()=>{
       const d=req.result;
       if(!d.objectStoreNames.contains('meta'))d.createObjectStore('meta');

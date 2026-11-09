@@ -1,4 +1,6 @@
 import './style.css';
+import './study-areas.css';
+import './year-area.css';
 import { version as appVersion } from '../package.json';
 import { openDatabase, type HistoryDB } from './db';
 import { getProgress, selectCards } from './core';
@@ -9,10 +11,14 @@ import { YearTestUI } from './year-ui';
 import { DEFAULT_FILTER, type AppState, type Card, type StudyFilter, type Level, type ImageAsset } from './types';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
-type View = 'home' | 'setup' | 'study' | 'years' | 'library' | 'history' | 'settings';
+type View = 'portal' | 'home' | 'setup' | 'study' | 'years' | 'library' | 'history' | 'review' | 'settings';
+type YearPage = 'home' | 'quiz' | 'list' | 'history' | 'review';
+let area: 'culture' | 'years' | null = null;
+let yearPage: YearPage = 'home';
+let navigationEpoch = 0;
 let db: HistoryDB;
 let state: AppState;
-let view: View = 'home';
+let view: View = 'portal';
 let filter: StudyFilter = structuredClone(DEFAULT_FILTER);
 let queue: Card[] = [];
 let position = 0;
@@ -67,17 +73,38 @@ function toast(message: string, error = false) {
   el.textContent=message; el.className=error?'toast error':'toast';
   window.setTimeout(()=>{if(el?.textContent===message)el.className='toast hidden';},5500);
 }
-const yearFeature = new YearTestUI(()=>{if(view==='years')render();},toast);
+const yearFeature = new YearTestUI(()=>{if(state&&(view==='years'||view==='portal'||view==='settings'))render();},toast);
 function nav() {
-  const links: [View,string,string][] = [['home','ホーム','home'],['setup','学習する','study'],['years','年号テスト','calendar'],['library','用語一覧','book'],['history','学習履歴','history'],['settings','データ管理','settings']];
+  if(area==='years')return ([['home','ホーム','home'],['quiz','問題演習','calendar'],['list','年号一覧','book'],['history','学習履歴','history'],['review','復習管理','refresh']] as [YearPage,string,string][]).map(([v,t,i])=>`<button class="nav-item ${yearPage===v?'active':''}" data-year-nav="${v}" ${yearPage===v?'aria-current="page"':''}>${icon(i)}<span>${t}</span></button>`).join('');
+  const links: [View,string,string][] = [['home','ホーム','home'],['setup','問題演習','study'],['library','用語一覧','book'],['history','学習履歴','history'],['review','復習管理','refresh']];
   return links.map(([v,t,i])=>`<button class="nav-item ${view===v || (v==='setup' && view==='study')?'active':''}" data-nav="${v}" ${view===v?'aria-current="page"':''}>${icon(i)}<span>${t}</span></button>`).join('');
 }
 function render() {
-  const date = new Date();
-  app.innerHTML=`<aside class="sidebar"><a href="#" class="brand" data-nav="home"><span class="brand-mark">${icon('book')}</span><span>世界史文化史<span class="brand-sub">MASTER</span></span></a><div class="nav-label">LEARNING SPACE</div><nav aria-label="メインメニュー">${nav()}</nav><div class="sidebar-bottom"><div class="goal-label">YOUR GOAL</div><strong>慶應義塾大学 文学部</strong><span>2027年2月15日 入試</span><div class="sidebar-divider"></div><span class="local-status"><i class="status-dot ${navigator.onLine?'':'offline'}"></i>${navigator.onLine?'端末内に学習記録を保存':'オフラインで学習できます'}</span><small>一つずつ、確かな知識に。</small></div></aside>
-  <div class="main-shell"><header class="topbar"><a class="mobile-brand" href="#" data-nav="home">${icon('book')}<span>世界史文化史マスター</span></a><span class="breadcrumb">文化史の学習ノート <span>/</span> ${{home:'ホーム',setup:'学習する',study:'フラッシュカード',library:'用語一覧',history:'学習履歴',settings:'データ管理',years:'年号テスト'}[view]}</span><span class="top-date">${date.toLocaleDateString('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'short'})}</span><span class="mobile-status"><i class="status-dot ${navigator.onLine?'':'offline'}"></i>${navigator.onLine?'保存中の履歴は端末内':'オフライン'}</span></header>
-  <main id="main" tabindex="-1">${view==='home'?home():view==='setup'?setup():view==='study'?study():view==='history'?history():view==='library'?library():view==='years'?yearFeature.render():settings()}</main><footer class="page-footer"><span>世界史文化史マスター</span><span>知識を積み重ねて、志望校へ。</span></footer></div><nav class="mobile-nav" aria-label="モバイルメニュー">${nav()}</nav><dialog id="image-dialog"><button class="icon-button dialog-close" aria-label="画像を閉じる" data-action="close-image">${icon('close')}</button><div id="image-dialog-content"></div></dialog>`;
+  if(view==='years'){
+    const next=yearFeature.currentPage();
+    if(next!==yearPage){yearPage=next;rememberRoute();}
+  }
+  const inArea=view!=='portal'&&view!=='settings';
+  const label=area==='years'?'年号':'文化史';
+  const content=view==='portal'?portal():view==='home'?home():view==='setup'?setup():view==='study'?study():view==='history'?history():view==='review'?cultureReview():view==='library'?library():view==='years'?yearFeature.render():settings()+yearFeature.renderTools();
+  app.innerHTML=`<div class="main-shell area-shell ${inArea?'with-area-nav':''} ${area==='years'&&inArea?'year-area':''}"><header class="topbar area-topbar"><a class="app-brand" href="#/" data-nav="portal">${icon('book')}<span>世界史学習マスター</span></a><button class="area-settings" data-nav="settings" aria-label="データ管理・設定">${icon('settings')}</button></header>
+  ${view!=='portal'?`<div class="area-location"><button class="text-button" data-nav="portal">‹ 総合ホームに戻る</button><span class="area-badge">${view==='settings'?'共通設定':label+'エリア'}</span></div>`:''}
+  <main id="main" tabindex="-1">${content}</main><footer class="page-footer"><span>世界史学習マスター</span><span>${navigator.onLine?'学習記録は端末内に保存':'オフライン · 保存済み教材で学習'}</span></footer></div>${inArea?`<nav class="mobile-nav" aria-label="${label}メニュー">${nav()}</nav>`:''}<dialog id="image-dialog"><button class="icon-button dialog-close" aria-label="画像を閉じる" data-action="close-image">${icon('close')}</button><div id="image-dialog-content"></div></dialog>`;
   bind();
+}
+function portal(){
+  const progress=getProgress(state.events);
+  const due=activeCards().filter(c=>{const p=progress.get(c.id);return p?.nextReviewAt&&Date.parse(p.nextReviewAt)<=Date.now();}).length;
+  const years=yearFeature.summary();
+  return `<section class="portal-heading"><div class="eyebrow">YOUR WORLD HISTORY STUDY</div><h1>世界史学習マスター</h1><p>大学受験に向けて、今日の学びを積み重ねる。<br>学習するエリアを選んで始めましょう。</p></section><div class="area-choices"><section class="area-choice culture-choice"><div class="area-choice-heading"><span class="area-symbol">${icon('book')}</span><div><span class="eyebrow">CULTURAL HISTORY</span><h2>文化史</h2></div></div><p>文化史の問題演習<br><span>人物・作品・思想・画像</span></p><dl><div><dt>登録項目</dt><dd>${activeItems().length}<small>項目</small></dd></div><div><dt>復習対象</dt><dd>${due}<small>枚</small></dd></div></dl><button class="button primary" data-enter-area="culture">文化史を学習する ${icon('arrow')}</button></section><section class="area-choice chronology-choice"><div class="area-choice-heading"><span class="area-symbol">${icon('calendar')}</span><div><span class="eyebrow">CHRONOLOGY</span><h2>年号</h2></div></div><p>年号の暗記・問題演習<br><span>出来事と年号の対応</span></p><dl><div><dt>登録年号</dt><dd>${years.count}<small>件</small></dd></div><div><dt>復習対象</dt><dd>${years.due}<small>問</small></dd></div></dl><button class="button primary" data-enter-area="years">年号を学習する ${icon('arrow')}</button></section></div><p class="portal-note">学習記録と復習は、それぞれのエリアで管理します。</p><button class="button secondary portal-settings" data-nav="settings">${icon('settings')} データ管理・設定</button>`;
+}
+function cultureReview(){
+  const cards=activeCards(), p=getProgress(state.events), now=Date.now();
+  const due=cards.filter(c=>{const row=p.get(c.id);return row?.nextReviewAt&&Date.parse(row.nextReviewAt)<=now;}).length;
+  const mistakes=cards.filter(c=>(p.get(c.id)?.wrong??0)>0).length;
+  const unseen=cards.filter(c=>!p.has(c.id)).length;
+  const weak=selectCards(state.catalog,state.events,{...structuredClone(DEFAULT_FILTER),mode:'weak'}).filter(c=>(p.get(c.id)?.wrong??0)>0).slice(0,8);
+  return `<section class="page-heading"><div><div class="eyebrow">CULTURE REVIEW</div><h1>文化史の復習管理</h1><p>直近の成績と復習のタイミングから、記憶を定着させましょう。</p></div></section><section class="stats-grid">${stat('復習期限到来',due,'枚','今日の復習対象','refresh')}${stat('誤答履歴あり',mistakes,'枚','累積の誤答を保持','history')}</section><div class="review-actions">${([['due','今日の復習',due],['mistakes','間違えたカード',mistakes],['weak','苦手優先で学習',cards.length],['unseen','未学習のカード',unseen]] as [StudyFilter['mode'],string,number][]).map(([mode,title,count])=>`<button class="panel review-action" data-start="${mode}" ${!count?'disabled':''}><span>${title}<small>${count}枚が対象</small></span>${icon('arrow')}</button>`).join('')}</div><section class="panel review-weak"><div class="section-title"><h2>復習したいカード</h2></div>${weak.length?weak.map(c=>`<div class="review-weak-row"><strong>${esc(c.answer)}</strong><span>正答 ${p.get(c.id)!.correct} ／ 誤答 ${p.get(c.id)!.wrong}</span><p>${esc(c.question)}</p></div>`).join(''):'<p class="muted">まだ誤答のあるカードはありません。</p>'}</section>`;
 }
 function home() {
   const cards=activeCards(), items=activeItems(), progress=getProgress(state.events);
@@ -158,10 +185,34 @@ function library(){
   return `<section class="page-heading"><div><div class="eyebrow">CULTURAL HISTORY LIBRARY</div><h1>用語一覧</h1><p>学びのつながりと、知識の出典を確認できます。</p></div><span class="subtle-chip">${all.length}項目 · ${activeCards().length}カード</span></section><div class="toolbar"><input type="search" id="library-search" aria-label="用語を検索" placeholder="人物・作品・地域・分野で検索" value="${esc(libraryQuery)}"></div><p class="notice">少量の初期データを収録しています。初期教材の難易度はすべて暫定分類で、大学別出題頻度は未検証です。</p><p class="small muted">${items.length}項目中 ${Math.min(libraryLimit,items.length)}項目を表示</p><div class="library-list">${items.slice(0,libraryLimit).map(i=>`<details class="panel library-item" data-item-id="${esc(i.id)}"><summary><span class="level-tag l${i.level}">Lv.${i.level}</span><span><strong>${esc(i.canonicalName)}</strong><small>${esc(i.region)} · ${esc(i.era)} · ${esc(i.field)}</small></span>${icon('arrow')}</summary><div class="library-detail" data-lazy-detail="${esc(i.id)}"></div></details>`).join('')||'<div class="panel empty-state"><p>一致する用語がありません。</p></div>'}</div>${items.length>libraryLimit?'<button class="button secondary load-more" data-action="library-more">さらに50項目表示</button>':''}`;
 }
 
-function settings(){return `<section class="page-heading"><div><div class="eyebrow">KEEP YOUR LEARNING SAFE</div><h1>データ管理</h1><p>大切な学習記録を守り、教材を育てる。</p></div></section><div class="settings-grid"><section class="panel settings-panel"><div class="section-title"><h2>${icon('download')} バックアップ・復元</h2><span class="subtle-chip">JSON</span></div><p>学習履歴・用語・設定を、ひとつのファイルに保存します。端末の変更やブラウザデータの削除に備え、定期的に保存してください。</p><div class="data-summary"><span>保存済みの回答<strong>${state.events.length}回</strong></span><span>前回のバックアップ<strong>${fmt(state.settings.lastBackupAt)}</strong></span></div><button class="button primary" data-action="backup">${icon('download')}バックアップを保存</button><label class="button secondary file-label">JSONから復元<input id="restore-file" type="file" accept="application/json,.json"></label><p class="small muted">復元は現在の履歴に統合します。同じ回答は重複せず、過去の誤答は保持されます。</p></section><section class="panel settings-panel"><div class="section-title"><h2>${icon('refresh')} 教材の同期</h2><span class="subtle-chip ${state.settings.lastSyncAt?'':'pending'}">${state.settings.lastSyncAt?'接続履歴あり':'未接続'}</span></div><p>Googleスプレッドシートを教材マスターとして使います。ChatGPTが確認済みの追加データをGitHubへ公開すると、アプリは自動同期します。Apps Scriptの設定・コード貼り付けは不要です。</p><form id="sync-form"><label class="form-field">独自の同期URL（通常は空欄）<input type="url" name="syncUrl" placeholder="標準のGitHub配信を自動利用" value="${esc(state.settings.syncUrl)}"></label><button type="submit" class="button secondary" ${syncing?'disabled':''}>${icon('refresh')}${syncing?'同期中…':'URLを保存して同期'}</button></form><p class="small sync-state" role="status">${esc(syncMessage||`前回の同期：${fmt(state.settings.lastSyncAt)}`)}</p><p class="small muted">起動時・接続復帰時にも取得します。失敗時は保存済み教材を使用します。削除はマスターの出題停止設定で反映します。</p><div class="notice compact">チャットで写真を送ると、ChatGPTが出典と重複を確認してSheetsとGitHubに登録します。Sheetsを手動編集しただけでは公開JSONへ自動反映されないため、このチャットで反映を依頼してください。</div><button class="text-button" data-action="disconnect" ${state.settings.syncUrl?'':'disabled'}>独自URLを解除</button></section><section class="panel settings-panel"><div class="section-title"><h2>${icon('study')} 学習の設定</h2></div><form id="goal-form"><label class="form-field">1日の目標回答数<input type="number" name="dailyGoal" min="1" max="1000" step="1" value="${state.settings.dailyGoal}"></label><button class="button secondary" type="submit">目標を保存</button></form><p class="small muted">目標はホーム画面の今日の学習に反映されます。</p></section><section class="panel settings-panel"><div class="section-title"><h2>${icon('book')} ホーム画面で学習</h2></div><p>AndroidのChromeで開き、メニューから「ホーム画面に追加」または「アプリをインストール」を選択してください。</p>${installPrompt?'<button class="button secondary" data-action="install">アプリをインストール</button>':''}<button class="button secondary" data-action="check-update" ${checkingUpdate?'disabled':''}>${icon('refresh')}${checkingUpdate?'確認中…':'最新版を確認する'}</button>${updateRegistration?'<button class="button primary" data-action="update">新しいバージョンに更新</button>':''}<p class="small sync-state" role="status">${esc(updateStatus||'アプリを開くたびに自動確認します。新しいバージョンが配信されていなければ通知されません。')}</p><p class="small muted">一度オンラインで開くと、保存済み教材と画像をオフラインで利用できます。学習記録はこのブラウザ・端末内に保存されます。</p><div class="data-summary"><span>教材バージョン<strong>v${state.catalog.version}</strong></span><span>アプリ<strong>${esc(appVersion)}</strong></span></div><button class="text-button" data-action="persist">端末内の保存領域を保護する</button><p class="small muted">ブラウザが対応している場合に永続保存をリクエストします。バックアップは引き続き必要です。</p></section></div>`;}
-function go(next:View){view=next;search='';render();window.scrollTo({top:0,behavior:'instant'});document.querySelector<HTMLElement>('#main')?.focus({preventScroll:true});if(next!=='study'&&syncPending)void sync();}
+function settings(){return `<section class="page-heading"><div><div class="eyebrow">KEEP YOUR LEARNING SAFE</div><h1>データ管理・設定</h1><p>文化史と年号、それぞれの学習記録を保管します。</p></div></section><div class="settings-grid"><section class="panel settings-panel"><div class="section-title"><h2>${icon('download')} 文化史のバックアップ・復元</h2><span class="subtle-chip">JSON</span></div><p>文化史の学習履歴・用語・設定を、ひとつのファイルに保存します。端末の変更やブラウザデータの削除に備え、定期的に保存してください。</p><div class="data-summary"><span>保存済みの回答<strong>${state.events.length}回</strong></span><span>前回のバックアップ<strong>${fmt(state.settings.lastBackupAt)}</strong></span></div><button class="button primary" data-action="backup">${icon('download')}バックアップを保存</button><label class="button secondary file-label">JSONから復元<input id="restore-file" type="file" accept="application/json,.json"></label><p class="small muted">復元は現在の履歴に統合します。同じ回答は重複せず、過去の誤答は保持されます。</p></section><section class="panel settings-panel"><div class="section-title"><h2>${icon('refresh')} 文化史教材の同期</h2><span class="subtle-chip ${state.settings.lastSyncAt?'':'pending'}">${state.settings.lastSyncAt?'接続履歴あり':'未接続'}</span></div><p>Googleスプレッドシートを教材マスターとして使います。ChatGPTが確認済みの追加データをGitHubへ公開すると、アプリは自動同期します。Apps Scriptの設定・コード貼り付けは不要です。</p><form id="sync-form"><label class="form-field">独自の同期URL（通常は空欄）<input type="url" name="syncUrl" placeholder="標準のGitHub配信を自動利用" value="${esc(state.settings.syncUrl)}"></label><button type="submit" class="button secondary" ${syncing?'disabled':''}>${icon('refresh')}${syncing?'同期中…':'URLを保存して同期'}</button></form><p class="small sync-state" role="status">${esc(syncMessage||`前回の同期：${fmt(state.settings.lastSyncAt)}`)}</p><p class="small muted">起動時・接続復帰時にも取得します。失敗時は保存済み教材を使用します。削除はマスターの出題停止設定で反映します。</p><div class="notice compact">チャットで写真を送ると、ChatGPTが出典と重複を確認してSheetsとGitHubに登録します。Sheetsを手動編集しただけでは公開JSONへ自動反映されないため、このチャットで反映を依頼してください。</div><button class="text-button" data-action="disconnect" ${state.settings.syncUrl?'':'disabled'}>独自URLを解除</button></section><section class="panel settings-panel"><div class="section-title"><h2>${icon('study')} 文化史の学習設定</h2></div><form id="goal-form"><label class="form-field">1日の目標回答数<input type="number" name="dailyGoal" min="1" max="1000" step="1" value="${state.settings.dailyGoal}"></label><button class="button secondary" type="submit">目標を保存</button></form><p class="small muted">目標はホーム画面の今日の学習に反映されます。</p></section><section class="panel settings-panel"><div class="section-title"><h2>${icon('book')} ホーム画面で学習</h2></div><p>AndroidのChromeで開き、メニューから「ホーム画面に追加」または「アプリをインストール」を選択してください。</p>${installPrompt?'<button class="button secondary" data-action="install">アプリをインストール</button>':''}<button class="button secondary" data-action="check-update" ${checkingUpdate?'disabled':''}>${icon('refresh')}${checkingUpdate?'確認中…':'最新版を確認する'}</button>${updateRegistration?'<button class="button primary" data-action="update">新しいバージョンに更新</button>':''}<p class="small sync-state" role="status">${esc(updateStatus||'アプリを開くたびに自動確認します。新しいバージョンが配信されていなければ通知されません。')}</p><p class="small muted">一度オンラインで開くと、保存済み教材と画像をオフラインで利用できます。学習記録はこのブラウザ・端末内に保存されます。</p><div class="data-summary"><span>教材バージョン<strong>v${state.catalog.version}</strong></span><span>アプリ<strong>${esc(appVersion)}</strong></span></div><button class="text-button" data-action="persist">端末内の保存領域を保護する</button><p class="small muted">ブラウザが対応している場合に永続保存をリクエストします。バックアップは引き続き必要です。</p></section></div>`;}
+function rememberRoute(){
+  const route=view==='portal'?'#/':view==='settings'?'#/settings':view==='years'?`#/years/${yearPage}`:`#/culture/${view==='study'?'setup':view}`;
+  window.history.pushState({view:view==='study'?'setup':view,area,yearPage},'',route);
+}
+function focusPage(){window.scrollTo({top:0,behavior:'instant'});document.querySelector<HTMLElement>('#main')?.focus({preventScroll:true});}
+function go(next:View,push=true){
+  navigationEpoch++;
+  if(view==='years'&&next!=='years')yearFeature.leave();
+  view=next;search='';
+  if(next==='portal')area=null;
+  else if(next==='years'){area='years';yearPage='home';yearFeature.navigate('home');}
+  else if(next!=='settings')area='culture';
+  if(push)rememberRoute();
+  render();focusPage();if(next!=='study'&&syncPending)void sync();
+}
+function goYear(next:YearPage,push=true){navigationEpoch++;area='years';view='years';yearPage=next;yearFeature.navigate(next);if(push)rememberRoute();render();focusPage();}
+window.addEventListener('popstate',event=>{
+  if(!state)return;
+  const route=event.state;
+  if(route?.view==='years')goYear(route.yearPage||'home',false);
+  else go(route?.view&&['portal','home','setup','library','history','review','settings'].includes(route.view)?route.view:'portal',false);
+});
 async function start(mode?:StudyFilter['mode']) {
-  if(currentSync)await currentSync; state=await db.load(); if(mode){filter={...structuredClone(DEFAULT_FILTER),mode};}
+  const epoch=navigationEpoch;
+  if(currentSync)await currentSync; state=await db.load();
+  if(epoch!==navigationEpoch)return;
+  if(mode){filter={...structuredClone(DEFAULT_FILTER),mode};}
   queue=selectCards(state.catalog,state.events,filter);if(sessionLimit!=='all')queue=queue.slice(0,Number(sessionLimit));
   if(!queue.length){toast('この条件に合うカードはありません。範囲を変更してください。');go('setup');return;}
   position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
@@ -192,7 +243,9 @@ function sync():Promise<void>{
 
 function message(e:unknown){return e instanceof Error?e.message:String(e);}
 function bind(){
-  if(view==='years')yearFeature.bind();
+  yearFeature.bind();
+  document.querySelectorAll<HTMLElement>('[data-enter-area]').forEach(el=>el.onclick=()=>go(el.dataset.enterArea==='years'?'years':'home'));
+  document.querySelectorAll<HTMLElement>('[data-year-nav]').forEach(el=>el.onclick=()=>goYear(el.dataset.yearNav as YearPage));
   document.querySelectorAll<HTMLElement>('[data-nav]').forEach(el=>el.onclick=e=>{e.preventDefault();go(el.dataset.nav as View);});
   document.querySelectorAll<HTMLElement>('[data-start]').forEach(el=>el.onclick=()=>{void start(el.dataset.start as StudyFilter['mode']);});
   document.querySelectorAll<HTMLElement>('[data-level]').forEach(el=>el.onclick=()=>{filter={...structuredClone(DEFAULT_FILTER),level:Number(el.dataset.level) as Level,levelMode:'single'};go('setup');});
@@ -265,7 +318,7 @@ window.addEventListener('online',()=>{if(state){if(view!=='study')render();void 
 window.addEventListener('keydown',e=>{if(view==='study' && !document.querySelector('dialog[open]') && !(e.target instanceof HTMLInputElement)){if(e.key===' '&&!revealed){e.preventDefault();void action('reveal');}else if(revealed&&e.key==='ArrowRight'){e.preventDefault();void grade(true);}else if(revealed&&e.key==='ArrowLeft'){e.preventDefault();void grade(false);}}});
 async function boot(){
   app.innerHTML='<div class="loading-state">学習ノートを開いています…</div>';
-  try{db=await openDatabase();state=await db.load();if(state.catalog.version<seedCatalog.version){await db.applyCatalog(seedCatalog);state=await db.load();}render();void yearFeature.initialize();void setupPwa({onUpdate:r=>{updateRegistration=r;updateStatus='新しい公開版が見つかりました。「新しいバージョンに更新」を押してください。';toast('新しいバージョンがあります。データ管理から更新できます。');if(view==='settings')render();},onError:()=>{updateStatus='更新確認で通信エラーが発生しました。';if(view==='settings')render();}}).then(r=>{pwaRegistration=r;});void sync();}
+  try{db=await openDatabase();state=await db.load();if(state.catalog.version<seedCatalog.version){await db.applyCatalog(seedCatalog);state=await db.load();}window.history.replaceState({view:'portal',area:null,yearPage:'home'},'','#/');render();void yearFeature.initialize();void setupPwa({onUpdate:r=>{updateRegistration=r;updateStatus='新しい公開版が見つかりました。「新しいバージョンに更新」を押してください。';toast('新しいバージョンがあります。データ管理から更新できます。');if(view==='settings')render();},onError:()=>{updateStatus='更新確認で通信エラーが発生しました。';if(view==='settings')render();}}).then(r=>{pwaRegistration=r;});void sync();}
   catch(e){app.innerHTML=`<div class="loading-state"><h1>学習データを開けませんでした</h1><p>${esc(message(e))}</p><p>ブラウザの保存容量やプライベートモードの設定をご確認ください。データは削除せず、再読み込みしてください。</p><button class="button primary" onclick="location.reload()">もう一度開く</button></div>`;}
 }
 void boot();
