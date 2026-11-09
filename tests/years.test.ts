@@ -26,6 +26,21 @@ describe('separate year quiz scaffolding',()=>{
     expect(out[1].answer).toBe('架空の出来事');
     expect(out[0].id).not.toBe(out[1].id);
   });
+  it('groups year-to-event answers that share a year and region without ambiguous duplicate prompts',()=>{
+    const catalog={...fixture,items:[
+      fixture.items[0],
+      {...fixture.items[0],id:'fixture-b',event:'同年の別の架空出来事'},
+      {...fixture.items[0],id:'fixture-c',event:'別地域の架空出来事',region:'別地域'},
+    ]};
+    const reverse=selectYearQuestions(catalog,[],{...filter,direction:'year-event'});
+    expect(reverse).toHaveLength(2);
+    const local=reverse.find(q=>q.item.region==='架空地域')!;
+    expect(local.prompt).toContain('架空地域');
+    expect(local.answer).toContain('架空の出来事');
+    expect(local.answer).toContain('同年の別の架空出来事');
+    expect(reverse[0].id).not.toBe(reverse[1].id);
+    expect(selectYearQuestions(catalog,[],{...filter,direction:'event-year'})).toHaveLength(3);
+  });
   it('filters by level, region and modes without resetting cumulative mistakes',()=>{
     const id=questionId('fixture-a','event-year');
     const reviews=[
