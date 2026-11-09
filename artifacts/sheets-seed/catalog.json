@@ -1,0 +1,813 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "updatedAt": "2026-11-09T00:00:00.000Z",
+  "items": [
+    {
+      "id": "gr-homer",
+      "canonicalName": "ホメロス",
+      "aliases": [
+        "ホメーロス",
+        "Homer"
+      ],
+      "kind": "person",
+      "field": "文学",
+      "region": "ギリシア",
+      "era": "古代ギリシア",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "『イリアス』『オデュッセイア』の作者と伝統的にされる叙事詩人。生涯や作品成立には未解明の点がある。",
+      "images": [],
+      "sources": [
+        {
+          "title": "World History Encyclopedia — Homer",
+          "url": "https://www.worldhistory.org/homer/",
+          "note": "2026-11-09 本文で事実関係を確認。本文・掲載画像は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-herodotus",
+      "canonicalName": "ヘロドトス",
+      "aliases": [
+        "Herodotus"
+      ],
+      "kind": "person",
+      "field": "歴史学",
+      "region": "ギリシア",
+      "era": "古代ギリシア",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代ギリシアの歴史家。『歴史』はペルシアとギリシア世界の抗争を扱う。",
+      "images": [],
+      "sources": [
+        {
+          "title": "Encyclopaedia Iranica — HERODOTUS",
+          "url": "https://www.iranicaonline.org/articles/herodotus/",
+          "note": "2026-11-09 著者・著作を確認。"
+        },
+        {
+          "title": "PBS, The Greeks — The Historians",
+          "url": "https://www.pbs.org/empires/thegreeks/background/40b_p1.html",
+          "note": "2026-11-09 本文で扱う時代を確認。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-thucydides",
+      "canonicalName": "トゥキディデス",
+      "aliases": [
+        "ツキディデス",
+        "Thucydides"
+      ],
+      "kind": "person",
+      "field": "歴史学",
+      "region": "ギリシア",
+      "era": "古代ギリシア",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アテネの歴史家。『戦史（ペロポネソス戦争史）』で同時代の戦争を記述した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "Fordham University, Ancient History Sourcebook — Thucydides",
+          "url": "https://sourcebooks.web.fordham.edu/ancient/eb11-thucydides.asp",
+          "note": "2026-11-09 著作との対応を確認。1911年版百科事典の再録のため、細かな年代論の根拠には用いない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-socrates",
+      "canonicalName": "ソクラテス",
+      "aliases": [
+        "Socrates"
+      ],
+      "kind": "person",
+      "field": "哲学・思想",
+      "region": "ギリシア",
+      "era": "古代ギリシア",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代アテネの哲学者。自ら著作を残さず、思想や活動はプラトンなどの記述を通じて伝わる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "Stanford Encyclopedia of Philosophy — Socrates",
+          "url": "https://plato.stanford.edu/entries/socrates/",
+          "note": "2026-11-09 本文で事実関係を確認。日本語の問題・説明は独自に要約。"
+        },
+        {
+          "title": "Stanford Encyclopedia of Philosophy — Plato",
+          "url": "https://plato.stanford.edu/entries/plato/",
+          "note": "2026-11-09 本文で事実関係を確認。日本語の問題・説明は独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-plato",
+      "canonicalName": "プラトン",
+      "aliases": [
+        "Plato"
+      ],
+      "kind": "person",
+      "field": "哲学・思想",
+      "region": "ギリシア",
+      "era": "古代ギリシア",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ソクラテスの影響を受けた哲学者。イデア論で知られ、対話篇『国家』などを著した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "Stanford Encyclopedia of Philosophy — Plato",
+          "url": "https://plato.stanford.edu/entries/plato/",
+          "note": "2026-11-09 本文で事実関係を確認。日本語の問題・説明は独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-aristotle",
+      "canonicalName": "アリストテレス",
+      "aliases": [
+        "Aristotle"
+      ],
+      "kind": "person",
+      "field": "哲学・思想",
+      "region": "ギリシア",
+      "era": "古代ギリシア",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "プラトンのもとで学んだ哲学者。アテネでリュケイオンを開き、論理学・生物学など多分野を研究した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "Stanford Encyclopedia of Philosophy — Aristotle",
+          "url": "https://plato.stanford.edu/entries/aristotle/",
+          "note": "2026-11-09 本文で事実関係を確認。日本語の問題・説明は独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-parthenon",
+      "canonicalName": "パルテノン神殿",
+      "aliases": [
+        "パルテノン",
+        "Parthenon"
+      ],
+      "kind": "building",
+      "field": "建築",
+      "region": "ギリシア",
+      "era": "古代ギリシア",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アテネのアクロポリスにある、アテナ女神に捧げられた神殿。外周の列柱はドーリア式で、イオニア式の要素も取り入れる。",
+      "images": [
+        {
+          "id": "img-parthenon-ktrepas",
+          "url": "./images/parthenon.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Parthenon_of_Acropolis.jpg",
+          "author": "Ktrepas",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "caption": "パルテノン神殿（Wikimedia Commons、Ktrepas撮影）"
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia — Parthenon",
+          "url": "https://www.worldhistory.org/parthenon/",
+          "note": "2026-11-09 本文で事実関係を確認。本文・掲載画像は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.1。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-euclid",
+      "canonicalName": "エウクレイデス",
+      "aliases": [
+        "ユークリッド",
+        "Euclid"
+      ],
+      "kind": "person",
+      "field": "科学",
+      "region": "東地中海",
+      "era": "ヘレニズム",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アレクサンドリアで活動した数学者。幾何学を体系化した『原論』で知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "University of St Andrews, MacTutor — Euclid",
+          "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/",
+          "note": "2026-11-09 本文で業績を確認。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-archimedes",
+      "canonicalName": "アルキメデス",
+      "aliases": [
+        "Archimedes"
+      ],
+      "kind": "person",
+      "field": "科学",
+      "region": "東地中海",
+      "era": "ヘレニズム",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "シラクサの数学者。『浮体について』で静水力学の基本原理を論じた。浮力に関する原理に名を残す。",
+      "images": [],
+      "sources": [
+        {
+          "title": "University of St Andrews, MacTutor — Archimedes",
+          "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/",
+          "note": "2026-11-09 本文で業績を確認。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-aristarchus",
+      "canonicalName": "アリスタルコス",
+      "aliases": [
+        "サモスのアリスタルコス",
+        "Aristarchus"
+      ],
+      "kind": "person",
+      "field": "科学",
+      "region": "東地中海",
+      "era": "ヘレニズム",
+      "level": 4,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "サモス出身の天文学者。地球が太陽の周りを回る説を唱えた。学説はアルキメデスなどの記述から知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "University of St Andrews, MacTutor — Aristarchus",
+          "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Aristarchus/",
+          "note": "2026-11-09 本文で業績を確認。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.4。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-eratosthenes",
+      "canonicalName": "エラトステネス",
+      "aliases": [
+        "Eratosthenes"
+      ],
+      "kind": "person",
+      "field": "科学",
+      "region": "東地中海",
+      "era": "ヘレニズム",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アレクサンドリアとシエネの太陽の高度差などを利用し、地球の周長を求めた学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "University of St Andrews, MacTutor — Eratosthenes",
+          "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Eratosthenes/",
+          "note": "2026-11-09 本文で業績を確認。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-epicurus",
+      "canonicalName": "エピクロス",
+      "aliases": [
+        "エピクーロス",
+        "Epicurus"
+      ],
+      "kind": "person",
+      "field": "哲学・思想",
+      "region": "東地中海",
+      "era": "ヘレニズム",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "苦痛や心の動揺から解放された快楽を幸福の中心に置いた哲学者。単なる放縦を勧めた思想ではない。",
+      "images": [],
+      "sources": [
+        {
+          "title": "Stanford Encyclopedia of Philosophy — Epicurus",
+          "url": "https://plato.stanford.edu/entries/epicurus/",
+          "note": "2026-11-09 本文で事実関係を確認。日本語の問題・説明は独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-zeno-citium",
+      "canonicalName": "ゼノン（キティオン）",
+      "aliases": [
+        "キティオンのゼノン",
+        "ストア派のゼノン",
+        "Zeno of Citium"
+      ],
+      "kind": "person",
+      "field": "哲学・思想",
+      "region": "東地中海",
+      "era": "ヘレニズム",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "紀元前300年頃にアテネでストア派を創始した哲学者。逆説で知られるエレアのゼノンとは別人。",
+      "images": [],
+      "sources": [
+        {
+          "title": "Stanford Encyclopedia of Philosophy — Stoicism",
+          "url": "https://plato.stanford.edu/entries/stoicism/",
+          "note": "2026-11-09 本文で事実関係を確認。日本語の問題・説明は独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-virgil",
+      "canonicalName": "ウェルギリウス",
+      "aliases": [
+        "ヴェルギリウス",
+        "Virgil",
+        "Vergil"
+      ],
+      "kind": "person",
+      "field": "文学",
+      "region": "ローマ",
+      "era": "古代ローマ",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アウグストゥス時代の詩人。叙事詩『アエネイス』、農業を題材とする『農耕詩』などを著した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "World History Encyclopedia — Virgil",
+          "url": "https://www.worldhistory.org/virgil/",
+          "note": "2026-11-09 本文で事実関係を確認。本文・掲載画像は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-cicero",
+      "canonicalName": "キケロ",
+      "aliases": [
+        "キケロー",
+        "Cicero"
+      ],
+      "kind": "person",
+      "field": "哲学・思想",
+      "region": "ローマ",
+      "era": "古代ローマ",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "共和政末期ローマの政治家・弁論家・哲学著述家。『義務について』『老年について』などを著した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "Stanford Encyclopedia of Philosophy — Cicero",
+          "url": "https://plato.stanford.edu/entries/cicero/",
+          "note": "2026-11-09 本文で事実関係を確認。日本語の問題・説明は独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-lucretius",
+      "canonicalName": "ルクレティウス",
+      "aliases": [
+        "ルクレーティウス",
+        "Lucretius"
+      ],
+      "kind": "person",
+      "field": "哲学・思想",
+      "region": "ローマ",
+      "era": "古代ローマ",
+      "level": 4,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "エピクロスの思想をラテン語の詩で説いた『物の本性について』の著者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "Stanford Encyclopedia of Philosophy — Lucretius",
+          "url": "https://plato.stanford.edu/entries/lucretius/",
+          "note": "2026-11-09 本文で事実関係を確認。日本語の問題・説明は独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.4。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-tacitus",
+      "canonicalName": "タキトゥス",
+      "aliases": [
+        "タキツス",
+        "Tacitus"
+      ],
+      "kind": "person",
+      "field": "歴史学",
+      "region": "ローマ",
+      "era": "古代ローマ",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマ帝政期の歴史家。『ゲルマニア』でゲルマン人の社会や習俗を記し、『年代記』なども著した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "World History Encyclopedia — Tacitus",
+          "url": "https://www.worldhistory.org/tacitus/",
+          "note": "2026-11-09 本文で事実関係を確認。本文・掲載画像は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.3。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-pantheon",
+      "canonicalName": "パンテオン",
+      "aliases": [
+        "パンテオン神殿",
+        "Pantheon"
+      ],
+      "kind": "building",
+      "field": "建築",
+      "region": "ローマ",
+      "era": "古代ローマ",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ローマに残る古代建築。現存する建物はハドリアヌス帝時代に完成し、大きなコンクリートのドームを持つ。",
+      "images": [],
+      "sources": [
+        {
+          "title": "World History Encyclopedia — Pantheon",
+          "url": "https://www.worldhistory.org/Pantheon/",
+          "note": "2026-11-09 本文で事実関係を確認。本文・掲載画像は転載していない。"
+        }
+      ],
+      "difficultyEvidence": "暫定分類：Lv.2。初期学習用の配列として用語の細かさを基準に仮置き。教科書・用語集の掲載状況および大学別出題実績は未照合であり、出題頻度を示すものではない。",
+      "verification": "verified",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    }
+  ],
+  "cards": [
+    {
+      "id": "gr-homer-iliad-author",
+      "knowledgeId": "gr-homer",
+      "type": "work-author",
+      "question": "叙事詩『イリアス』の作者と伝統的にされる古代ギリシアの詩人は？",
+      "answer": "ホメロス",
+      "explanation": "作品は口承の伝統から成立した。ホメロス個人の生涯や作者問題には議論がある。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-homer-odyssey-work",
+      "knowledgeId": "gr-homer",
+      "type": "person-work",
+      "question": "ホメロスの作とされ、オデュッセウスの帰郷の旅を描く叙事詩は？",
+      "answer": "オデュッセイア",
+      "explanation": "トロイア戦争後、故郷へ帰ろうとする英雄の旅を描く。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-herodotus-histories-author",
+      "knowledgeId": "gr-herodotus",
+      "type": "work-author",
+      "question": "ペルシアとギリシア世界の抗争を記した『歴史』の著者は？",
+      "answer": "ヘロドトス",
+      "explanation": "古代ギリシアの歴史家で、各地の地理や風俗についても記述した。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-thucydides-war-author",
+      "knowledgeId": "gr-thucydides",
+      "type": "work-author",
+      "question": "ペロポネソス戦争を記した『戦史』の著者は？",
+      "answer": "トゥキディデス",
+      "explanation": "『ペロポネソス戦争史』とも訳される。ヘロドトスの『歴史』と区別する。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-socrates-dialogues-person",
+      "knowledgeId": "gr-socrates",
+      "type": "achievement-person",
+      "question": "自ら著作を残さず、プラトンの多くの対話篇で中心人物として描かれるアテネの哲学者は？",
+      "answer": "ソクラテス",
+      "explanation": "その思想や生涯はプラトン、クセノフォンなどの著作から伝わる。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-plato-forms-person",
+      "knowledgeId": "gr-plato",
+      "type": "theory-person",
+      "question": "感覚で捉える事物を超える真の実在をイデアとして論じた、古代ギリシアの哲学者は？",
+      "answer": "プラトン",
+      "explanation": "アリストテレスの師でもある。イデア論は対話篇によって展開に違いがある。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-plato-republic-work",
+      "knowledgeId": "gr-plato",
+      "type": "person-work",
+      "question": "プラトンが正義や理想の国家について論じた代表的な対話篇は？",
+      "answer": "国家",
+      "explanation": "英語名は Republic。対話篇の中ではソクラテスらが議論する。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-aristotle-lyceum-person",
+      "knowledgeId": "gr-aristotle",
+      "type": "achievement-person",
+      "question": "プラトンのもとで学び、アテネにリュケイオンを開いた哲学者は？",
+      "answer": "アリストテレス",
+      "explanation": "論理学・倫理学・生物学など、幅広い分野を研究した。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "gr-parthenon-image",
+      "knowledgeId": "gr-parthenon",
+      "type": "image",
+      "question": "写真の古代ギリシアの神殿名は？",
+      "answer": "パルテノン神殿",
+      "explanation": "アテネのアクロポリスに立ち、アテナ女神に捧げられた。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false,
+      "imageId": "img-parthenon-ktrepas",
+      "fallbackPrompt": "アテネのアクロポリスにあり、ペリクレス時代に建設された、アテナ女神に捧げる神殿名は？"
+    },
+    {
+      "id": "gr-parthenon-doric-order",
+      "knowledgeId": "gr-parthenon",
+      "type": "context",
+      "question": "パルテノン神殿の外周の列柱に用いられた、簡素な柱頭を持つ建築様式は？",
+      "answer": "ドーリア式",
+      "explanation": "神殿全体にはイオニア式の要素も組み合わされている。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-euclid-elements-author",
+      "knowledgeId": "he-euclid",
+      "type": "work-author",
+      "question": "幾何学を体系化した『原論』で知られる、アレクサンドリアの数学者は？",
+      "answer": "エウクレイデス（ユークリッド）",
+      "explanation": "『原論』はその後の数学に長期にわたって影響を与えた。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-archimedes-buoyancy-person",
+      "knowledgeId": "he-archimedes",
+      "type": "achievement-person",
+      "question": "『浮体について』で静水力学を論じ、浮力の原理に名を残すシラクサの数学者は？",
+      "answer": "アルキメデス",
+      "explanation": "液体中の物体が受ける浮力に関する原理で知られる。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-aristarchus-heliocentric-person",
+      "knowledgeId": "he-aristarchus",
+      "type": "theory-person",
+      "question": "ヘレニズム時代に、地球が太陽の周りを回る説を唱えたサモス出身の天文学者は？",
+      "answer": "アリスタルコス",
+      "explanation": "近代のコペルニクスと時代を区別する。説の内容はアルキメデスなどの記述から知られる。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-eratosthenes-earth-person",
+      "knowledgeId": "he-eratosthenes",
+      "type": "achievement-person",
+      "question": "アレクサンドリアとシエネの太陽の高度差などを利用し、地球の周長を求めた学者は？",
+      "answer": "エラトステネス",
+      "explanation": "同時刻の太陽光線の角度差と、両地点間の距離を利用した。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-epicurus-pleasure-person",
+      "knowledgeId": "he-epicurus",
+      "type": "theory-person",
+      "question": "苦痛や心の動揺がない快楽を幸福の中心に置いた、ヘレニズム時代の哲学者は？",
+      "answer": "エピクロス",
+      "explanation": "快楽主義は、欲望のままに豪遊することを勧める思想ではない。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "he-zeno-stoa-founder",
+      "knowledgeId": "he-zeno-citium",
+      "type": "theory-person",
+      "question": "紀元前300年頃、アテネでストア派を創始したキティオン出身の哲学者は？",
+      "answer": "ゼノン（キティオン）",
+      "explanation": "「アキレスと亀」の逆説で知られるエレアのゼノンとは別人。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-virgil-aeneid-author",
+      "knowledgeId": "ro-virgil",
+      "type": "work-author",
+      "question": "トロイアの英雄アエネアスを描く叙事詩『アエネイス』の著者は？",
+      "answer": "ウェルギリウス",
+      "explanation": "アウグストゥス時代のローマの詩人。英雄の子孫にローマ建国が結び付けられる。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-virgil-georgics-work",
+      "knowledgeId": "ro-virgil",
+      "type": "person-work",
+      "question": "ウェルギリウスが農作業や養蜂などを題材として著した詩は？",
+      "answer": "農耕詩（ゲオルギカ）",
+      "explanation": "英語名は Georgics。『アエネイス』とは別の作品。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-cicero-duties-author",
+      "knowledgeId": "ro-cicero",
+      "type": "work-author",
+      "question": "『義務について』を著した、共和政末期ローマの弁論家・政治家は？",
+      "answer": "キケロ",
+      "explanation": "ギリシア哲学をローマ世界に紹介した哲学著述家でもある。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-cicero-old-age-work",
+      "knowledgeId": "ro-cicero",
+      "type": "person-work",
+      "question": "キケロが老いることを主題に著した、ラテン語名 De Senectute の作品は？",
+      "answer": "老年について",
+      "explanation": "『老年論』とも訳される。『義務について』とは別の作品。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-lucretius-nature-author",
+      "knowledgeId": "ro-lucretius",
+      "type": "work-author",
+      "question": "エピクロスの思想を説くラテン語の哲学詩『物の本性について』の著者は？",
+      "answer": "ルクレティウス",
+      "explanation": "ラテン語名は De rerum natura。『事物の本性について』とも訳される。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-tacitus-germania-author",
+      "knowledgeId": "ro-tacitus",
+      "type": "work-author",
+      "question": "ゲルマン人の社会や習俗を記した『ゲルマニア』の著者は？",
+      "answer": "タキトゥス",
+      "explanation": "ローマ帝政期の歴史家。『年代記』『同時代史』なども著した。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-tacitus-annals-work",
+      "knowledgeId": "ro-tacitus",
+      "type": "person-work",
+      "question": "タキトゥスが著した、ラテン語名 Annales の歴史書は？",
+      "answer": "年代記",
+      "explanation": "ローマ帝政初期を扱う著作。ヘロドトスの『歴史』やトゥキディデスの『戦史』と区別する。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ro-pantheon-building-context",
+      "knowledgeId": "ro-pantheon",
+      "type": "context",
+      "question": "ローマに現存し、巨大なコンクリートのドームを持つ古代建築は？",
+      "answer": "パンテオン",
+      "explanation": "現存する建物はハドリアヌス帝時代に完成した。アテネのパルテノン神殿と区別する。",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
+      "version": 1,
+      "deleted": false
+    }
+  ]
+}

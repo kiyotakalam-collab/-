@@ -1,0 +1,25 @@
+id,knowledgeId,type,question,answer,explanation,imageId,fallbackPrompt,updatedAt,version,deleted
+gr-homer-iliad-author,gr-homer,work-author,叙事詩『イリアス』の作者と伝統的にされる古代ギリシアの詩人は？,ホメロス,作品は口承の伝統から成立した。ホメロス個人の生涯や作者問題には議論がある。,,,2026-11-09T00:00:00.000Z,1,FALSE
+gr-homer-odyssey-work,gr-homer,person-work,ホメロスの作とされ、オデュッセウスの帰郷の旅を描く叙事詩は？,オデュッセイア,トロイア戦争後、故郷へ帰ろうとする英雄の旅を描く。,,,2026-11-09T00:00:00.000Z,1,FALSE
+gr-herodotus-histories-author,gr-herodotus,work-author,ペルシアとギリシア世界の抗争を記した『歴史』の著者は？,ヘロドトス,古代ギリシアの歴史家で、各地の地理や風俗についても記述した。,,,2026-11-09T00:00:00.000Z,1,FALSE
+gr-thucydides-war-author,gr-thucydides,work-author,ペロポネソス戦争を記した『戦史』の著者は？,トゥキディデス,『ペロポネソス戦争史』とも訳される。ヘロドトスの『歴史』と区別する。,,,2026-11-09T00:00:00.000Z,1,FALSE
+gr-socrates-dialogues-person,gr-socrates,achievement-person,自ら著作を残さず、プラトンの多くの対話篇で中心人物として描かれるアテネの哲学者は？,ソクラテス,その思想や生涯はプラトン、クセノフォンなどの著作から伝わる。,,,2026-11-09T00:00:00.000Z,1,FALSE
+gr-plato-forms-person,gr-plato,theory-person,感覚で捉える事物を超える真の実在をイデアとして論じた、古代ギリシアの哲学者は？,プラトン,アリストテレスの師でもある。イデア論は対話篇によって展開に違いがある。,,,2026-11-09T00:00:00.000Z,1,FALSE
+gr-plato-republic-work,gr-plato,person-work,プラトンが正義や理想の国家について論じた代表的な対話篇は？,国家,英語名は Republic。対話篇の中ではソクラテスらが議論する。,,,2026-11-09T00:00:00.000Z,1,FALSE
+gr-aristotle-lyceum-person,gr-aristotle,achievement-person,プラトンのもとで学び、アテネにリュケイオンを開いた哲学者は？,アリストテレス,論理学・倫理学・生物学など、幅広い分野を研究した。,,,2026-11-09T00:00:00.000Z,1,FALSE
+gr-parthenon-image,gr-parthenon,image,写真の古代ギリシアの神殿名は？,パルテノン神殿,アテネのアクロポリスに立ち、アテナ女神に捧げられた。,img-parthenon-ktrepas,アテネのアクロポリスにあり、ペリクレス時代に建設された、アテナ女神に捧げる神殿名は？,2026-11-09T00:00:00.000Z,1,FALSE
+gr-parthenon-doric-order,gr-parthenon,context,パルテノン神殿の外周の列柱に用いられた、簡素な柱頭を持つ建築様式は？,ドーリア式,神殿全体にはイオニア式の要素も組み合わされている。,,,2026-11-09T00:00:00.000Z,1,FALSE
+he-euclid-elements-author,he-euclid,work-author,幾何学を体系化した『原論』で知られる、アレクサンドリアの数学者は？,エウクレイデス（ユークリッド）,『原論』はその後の数学に長期にわたって影響を与えた。,,,2026-11-09T00:00:00.000Z,1,FALSE
+he-archimedes-buoyancy-person,he-archimedes,achievement-person,『浮体について』で静水力学を論じ、浮力の原理に名を残すシラクサの数学者は？,アルキメデス,液体中の物体が受ける浮力に関する原理で知られる。,,,2026-11-09T00:00:00.000Z,1,FALSE
+he-aristarchus-heliocentric-person,he-aristarchus,theory-person,ヘレニズム時代に、地球が太陽の周りを回る説を唱えたサモス出身の天文学者は？,アリスタルコス,近代のコペルニクスと時代を区別する。説の内容はアルキメデスなどの記述から知られる。,,,2026-11-09T00:00:00.000Z,1,FALSE
+he-eratosthenes-earth-person,he-eratosthenes,achievement-person,アレクサンドリアとシエネの太陽の高度差などを利用し、地球の周長を求めた学者は？,エラトステネス,同時刻の太陽光線の角度差と、両地点間の距離を利用した。,,,2026-11-09T00:00:00.000Z,1,FALSE
+he-epicurus-pleasure-person,he-epicurus,theory-person,苦痛や心の動揺がない快楽を幸福の中心に置いた、ヘレニズム時代の哲学者は？,エピクロス,快楽主義は、欲望のままに豪遊することを勧める思想ではない。,,,2026-11-09T00:00:00.000Z,1,FALSE
+he-zeno-stoa-founder,he-zeno-citium,theory-person,紀元前300年頃、アテネでストア派を創始したキティオン出身の哲学者は？,ゼノン（キティオン）,「アキレスと亀」の逆説で知られるエレアのゼノンとは別人。,,,2026-11-09T00:00:00.000Z,1,FALSE
+ro-virgil-aeneid-author,ro-virgil,work-author,トロイアの英雄アエネアスを描く叙事詩『アエネイス』の著者は？,ウェルギリウス,アウグストゥス時代のローマの詩人。英雄の子孫にローマ建国が結び付けられる。,,,2026-11-09T00:00:00.000Z,1,FALSE
+ro-virgil-georgics-work,ro-virgil,person-work,ウェルギリウスが農作業や養蜂などを題材として著した詩は？,農耕詩（ゲオルギカ）,英語名は Georgics。『アエネイス』とは別の作品。,,,2026-11-09T00:00:00.000Z,1,FALSE
+ro-cicero-duties-author,ro-cicero,work-author,『義務について』を著した、共和政末期ローマの弁論家・政治家は？,キケロ,ギリシア哲学をローマ世界に紹介した哲学著述家でもある。,,,2026-11-09T00:00:00.000Z,1,FALSE
+ro-cicero-old-age-work,ro-cicero,person-work,キケロが老いることを主題に著した、ラテン語名 De Senectute の作品は？,老年について,『老年論』とも訳される。『義務について』とは別の作品。,,,2026-11-09T00:00:00.000Z,1,FALSE
+ro-lucretius-nature-author,ro-lucretius,work-author,エピクロスの思想を説くラテン語の哲学詩『物の本性について』の著者は？,ルクレティウス,ラテン語名は De rerum natura。『事物の本性について』とも訳される。,,,2026-11-09T00:00:00.000Z,1,FALSE
+ro-tacitus-germania-author,ro-tacitus,work-author,ゲルマン人の社会や習俗を記した『ゲルマニア』の著者は？,タキトゥス,ローマ帝政期の歴史家。『年代記』『同時代史』なども著した。,,,2026-11-09T00:00:00.000Z,1,FALSE
+ro-tacitus-annals-work,ro-tacitus,person-work,タキトゥスが著した、ラテン語名 Annales の歴史書は？,年代記,ローマ帝政初期を扱う著作。ヘロドトスの『歴史』やトゥキディデスの『戦史』と区別する。,,,2026-11-09T00:00:00.000Z,1,FALSE
+ro-pantheon-building-context,ro-pantheon,context,ローマに現存し、巨大なコンクリートのドームを持つ古代建築は？,パンテオン,現存する建物はハドリアヌス帝時代に完成した。アテネのパルテノン神殿と区別する。,,,2026-11-09T00:00:00.000Z,1,FALSE

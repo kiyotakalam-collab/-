@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "世界史文化史マスター",
+  "short_name": "文化史マスター",
+  "description": "文化史を、ひとつずつ確かな知識に。大学受験のためのオフライン対応フラッシュカード。",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fafbf8",
+  "theme_color": "#284d43",
+  "orientation": "any",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
