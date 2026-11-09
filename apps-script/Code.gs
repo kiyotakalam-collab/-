@@ -16,7 +16,7 @@ function initializeMaster() {
   const meta = ensureSheet_(ss, 'Meta', ['key', 'value']);
   if (meta.getLastRow() === 1) {
     meta.getRange(2, 1, 4, 2).setValues([
-      ['schemaVersion', '1'], ['version', '3'],
+      ['schemaVersion', '1'], ['version', '11'],
       ['updatedAt', new Date().toISOString()], ['status', 'draft']
     ]);
   }
@@ -33,7 +33,7 @@ function beginEdit() {
 /**
  * Validate all working rows, bump catalog version and publish.
  * Set each changed row's version and updatedAt before this call.
- * The first published version is 4, above the bundled initial catalog's version 3.
+ * With the current app bundled at catalog v11, the first published delta is v12.
  */
 function publishCatalog() {
   const lock = LockService.getScriptLock();
@@ -150,18 +150,21 @@ function validateCatalog_(catalog) {
   const signatures = new Set();
   catalog.cards.forEach(function(card) {
     id_(card.id); unique_(cards, card.id, card, 'card id');
+    // Delta catalogs can add a card to an existing bundled item not present
+    // in this sheet. The PWA verifies references again after the merge.
+    id_(card.knowledgeId);
     const item = items.get(card.knowledgeId);
-    if (!item) throw new Error('Unknown knowledgeId: ' + card.knowledgeId);
-    if (!card.deleted && item.deleted) throw new Error('Active card references deleted knowledge');
+    if (item && !card.deleted && item.deleted) throw new Error('Active card references deleted knowledge');
     if (['achievement-person', 'person-work', 'work-author', 'theory-person', 'image', 'context'].indexOf(card.type) < 0) throw new Error('Invalid card type');
     ['question', 'answer'].forEach(function(key) { text_(card[key], key); });
     if (typeof card.explanation !== 'string') throw new Error('Invalid explanation');
     if (card.type === 'image') {
       text_(card.fallbackPrompt, 'fallbackPrompt');
-      if (!item.images.some(function(image) { return image.id === card.imageId; })) throw new Error('Unknown imageId');
+      id_(card.imageId);
+      if (item && !item.images.some(function(image) { return image.id === card.imageId; })) throw new Error('Unknown imageId');
     }
     if (!card.deleted) {
-      const signature = card.knowledgeId + '\n' + card.type + '\n' + normalize_(card.question) + '\n' + normalize_(card.answer);
+      const signature = card.knowledgeId + '\n' + card.type + '\n' + (card.type === 'image' ? card.imageId : '') + '\n' + normalize_(card.question) + '\n' + normalize_(card.answer);
       if (signatures.has(signature)) throw new Error('Duplicate card question');
       signatures.add(signature);
     }
