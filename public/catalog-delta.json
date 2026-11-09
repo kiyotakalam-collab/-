@@ -1,7 +1,4007 @@
 {
   "schemaVersion": 1,
-  "version": 12,
-  "updatedAt": "2026-11-09T11:27:10.092Z",
-  "items": [],
-  "cards": []
+  "version": 13,
+  "updatedAt": "2026-11-09T14:05:27.826Z",
+  "items": [
+    {
+      "id": "eg-ra",
+      "canonicalName": "ラー",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代エジプトの太陽神。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-amon",
+      "canonicalName": "アモン",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "テーベの地方神。ラーとの習合によってアモン＝ラーと呼ばれる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-amon-ra",
+      "canonicalName": "アモン＝ラー",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アモンとラーが習合した神格。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-aten",
+      "canonicalName": "アトン",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アメンホテプ4世（アクエンアテン）が崇拝を推進した太陽神。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-osiris",
+      "canonicalName": "オシリス",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "死後の世界・死者の審判と結びつく神。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-anubis",
+      "canonicalName": "アヌビス",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "死者とミイラ作りに関係する神。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-book-dead",
+      "canonicalName": "死者の書",
+      "aliases": [],
+      "kind": "work",
+      "field": "宗教",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "死後の旅路や審判に備える宗教文書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-hieroglyph",
+      "canonicalName": "神聖文字（ヒエログリフ）",
+      "aliases": [
+        "ヒエログリフ",
+        "神聖文字"
+      ],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代エジプトの文字体系の一つ。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-hieratic",
+      "canonicalName": "神官文字（ヒエラティック）",
+      "aliases": [
+        "ヒエラティック",
+        "神官文字"
+      ],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "神聖文字から発達した筆記体。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-demotic",
+      "canonicalName": "民用文字（デモティック）",
+      "aliases": [
+        "デモティック",
+        "民用文字"
+      ],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "神官文字をさらに簡略化して発達。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-rosetta",
+      "canonicalName": "ロゼッタ＝ストーン",
+      "aliases": [
+        "ロゼッタストーン"
+      ],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "1799年に発見され、古代エジプト文字の解読に重要だった。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-papyrus",
+      "canonicalName": "パピルス",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文字・言語",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ナイル流域で用いられた筆記材料。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-champollion",
+      "canonicalName": "シャンポリオン",
+      "aliases": [],
+      "kind": "person",
+      "field": "科学・技術",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ロゼッタ＝ストーンを手掛かりに解読を進展させた。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-solar-calendar",
+      "canonicalName": "太陽暦",
+      "aliases": [],
+      "kind": "concept",
+      "field": "科学・技術",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代エジプトでは太陽年に基づく暦が発達した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-pyramids",
+      "canonicalName": "ピラミッド",
+      "aliases": [],
+      "kind": "building",
+      "field": "美術・建築",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ギザの三大ピラミッドで知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-sphinx",
+      "canonicalName": "スフィンクス",
+      "aliases": [],
+      "kind": "building",
+      "field": "美術・建築",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ギザの大スフィンクスが有名。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-amarna-art",
+      "canonicalName": "アマルナ美術",
+      "aliases": [],
+      "kind": "concept",
+      "field": "美術・建築",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "王族を自然に表す表現などが特徴。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-amarna-letters",
+      "canonicalName": "アマルナ文書",
+      "aliases": [],
+      "kind": "work",
+      "field": "美術・建築",
+      "region": "エジプト",
+      "era": "古代",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アマルナで発見された外交書簡群。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.2。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-marduk",
+      "canonicalName": "マルドゥク",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "メソポタミア",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "バビロンの主神。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-ziggurat",
+      "canonicalName": "ジッグラト",
+      "aliases": [],
+      "kind": "building",
+      "field": "宗教",
+      "region": "メソポタミア",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "都市の神殿複合施設に建てられた聖塔。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-shamash",
+      "canonicalName": "シャマシュ",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "メソポタミア",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "太陽と正義をつかさどる神。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-enuma-elish",
+      "canonicalName": "エヌマ＝エリシュ",
+      "aliases": [],
+      "kind": "work",
+      "field": "宗教",
+      "region": "メソポタミア",
+      "era": "古代",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "バビロニアの創世神話。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-cuneiform",
+      "canonicalName": "楔形文字",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文学・文字",
+      "region": "メソポタミア",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "粘土板に刻まれた文字体系。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-gilgamesh",
+      "canonicalName": "ギルガメシュ叙事詩",
+      "aliases": [],
+      "kind": "work",
+      "field": "文学・文字",
+      "region": "メソポタミア",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代メソポタミアの代表的叙事詩。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-hammurabi",
+      "canonicalName": "ハンムラビ法典",
+      "aliases": [],
+      "kind": "work",
+      "field": "文学・文字",
+      "region": "メソポタミア",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古バビロニア王ハンムラビの法典。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-sexagesimal",
+      "canonicalName": "六十進法",
+      "aliases": [],
+      "kind": "concept",
+      "field": "科学・技術",
+      "region": "メソポタミア",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "60を基礎とする数の表し方。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-lunar-calendar",
+      "canonicalName": "太陰暦",
+      "aliases": [],
+      "kind": "concept",
+      "field": "科学・技術",
+      "region": "メソポタミア",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "月の運行に基づく暦。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-seven-day",
+      "canonicalName": "七曜制",
+      "aliases": [],
+      "kind": "concept",
+      "field": "科学・技術",
+      "region": "メソポタミア",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "七日を単位とする週の慣行。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-zoroaster",
+      "canonicalName": "ゾロアスター",
+      "aliases": [
+        "ザラスシュトラ"
+      ],
+      "kind": "person",
+      "field": "宗教",
+      "region": "イラン",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ゾロアスター教の開祖。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-ahura-mazda",
+      "canonicalName": "アフラ＝マズダ",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "イラン",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "善を象徴する神。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-angra-mainyu",
+      "canonicalName": "アンラ＝マンユ",
+      "aliases": [
+        "アーリマン"
+      ],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "イラン",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "善の勢力と対立する悪の霊。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-avesta",
+      "canonicalName": "アヴェスター",
+      "aliases": [
+        "アベスター"
+      ],
+      "kind": "work",
+      "field": "宗教",
+      "region": "イラン",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ゾロアスター教の聖典群。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-mani",
+      "canonicalName": "マニ",
+      "aliases": [],
+      "kind": "person",
+      "field": "宗教",
+      "region": "イラン",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ササン朝の時代に活動した宗教家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-manichaeism",
+      "canonicalName": "マニ教",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "イラン",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "マニが創始した宗教で、光と闇の対立を重視した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.3。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-quran",
+      "canonicalName": "クルアーン（コーラン）",
+      "aliases": [
+        "コーラン",
+        "クルアーン"
+      ],
+      "kind": "work",
+      "field": "宗教",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アラビア語で啓示を伝えるイスラームの聖典。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.4。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-hadith",
+      "canonicalName": "ハディース",
+      "aliases": [],
+      "kind": "work",
+      "field": "宗教",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ムハンマドの言行に関する伝承。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.4。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-sharia",
+      "canonicalName": "シャリーア",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イスラームの法規範。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.4。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-ulama",
+      "canonicalName": "ウラマー",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イスラームの宗教学者・法学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.4。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-madrasa",
+      "canonicalName": "マドラサ",
+      "aliases": [],
+      "kind": "building",
+      "field": "宗教",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "主に宗教諸学を学ぶ教育施設。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.4。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-sufism",
+      "canonicalName": "スーフィズム",
+      "aliases": [
+        "スーフィー主義"
+      ],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イスラーム神秘主義。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.4。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-house-wisdom",
+      "canonicalName": "知恵の館",
+      "aliases": [
+        "バイト＝アルヒクマ"
+      ],
+      "kind": "building",
+      "field": "宗教",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ギリシア語などの学術文献の翻訳活動と結びつく施設。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.4。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-tabari",
+      "canonicalName": "タバリー",
+      "aliases": [],
+      "kind": "person",
+      "field": "歴史学・地理学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "9〜10世紀の歴史家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-idrisi",
+      "canonicalName": "イドリースィー",
+      "aliases": [
+        "イドリシ"
+      ],
+      "kind": "person",
+      "field": "歴史学・地理学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "シチリア王国で活動した地理学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-rashid-din",
+      "canonicalName": "ラシード＝アッディーン",
+      "aliases": [],
+      "kind": "person",
+      "field": "歴史学・地理学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イル＝ハン国で活動した政治家・歴史家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-ibn-khaldun",
+      "canonicalName": "イブン＝ハルドゥーン",
+      "aliases": [],
+      "kind": "person",
+      "field": "歴史学・地理学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北アフリカ出身の歴史家・思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-ibn-battuta",
+      "canonicalName": "イブン＝バットゥータ",
+      "aliases": [],
+      "kind": "person",
+      "field": "歴史学・地理学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "14世紀にアフリカ・アジアを広く旅行した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-khwarizmi",
+      "canonicalName": "フワーリズミー",
+      "aliases": [
+        "アル＝フワーリズミー"
+      ],
+      "kind": "person",
+      "field": "科学・医学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アッバース朝期の数学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-ibn-sina",
+      "canonicalName": "イブン＝シーナー",
+      "aliases": [
+        "アヴィケンナ"
+      ],
+      "kind": "person",
+      "field": "科学・医学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ラテン語圏ではアヴィケンナとして知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-razi",
+      "canonicalName": "ラーズィー",
+      "aliases": [
+        "アル＝ラーズィー"
+      ],
+      "kind": "person",
+      "field": "科学・医学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "9〜10世紀の医師・学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-ghazali",
+      "canonicalName": "ガザーリー",
+      "aliases": [
+        "ガザーリー"
+      ],
+      "kind": "person",
+      "field": "哲学・思想",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "11〜12世紀の神学者・思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-ibn-rushd",
+      "canonicalName": "イブン＝ルシュド",
+      "aliases": [
+        "アヴェロエス"
+      ],
+      "kind": "person",
+      "field": "哲学・思想",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イベリア半島出身。ラテン語圏ではアヴェロエスと呼ばれる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-firdawsi",
+      "canonicalName": "フィルドゥスィー",
+      "aliases": [
+        "フィルダウスィー"
+      ],
+      "kind": "person",
+      "field": "文学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イランの民族的伝統を詩にまとめた。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-shahnameh",
+      "canonicalName": "シャー＝ナーメ",
+      "aliases": [
+        "王の書",
+        "シャーナーメ"
+      ],
+      "kind": "work",
+      "field": "文学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "『王の書』とも訳される。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-omar-khayyam",
+      "canonicalName": "ウマル＝ハイヤーム",
+      "aliases": [],
+      "kind": "person",
+      "field": "文学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "セルジューク朝期の詩人・学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-rubaiyat",
+      "canonicalName": "ルバイヤート",
+      "aliases": [],
+      "kind": "work",
+      "field": "文学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ペルシア語の四行詩集。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-arabian-nights",
+      "canonicalName": "千夜一夜物語",
+      "aliases": [
+        "アラビアン＝ナイト",
+        "アラビアンナイト"
+      ],
+      "kind": "work",
+      "field": "文学",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "各地の説話が集成された作品。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.5。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-mosque",
+      "canonicalName": "モスク",
+      "aliases": [],
+      "kind": "building",
+      "field": "建築・美術",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "礼拝・共同体活動の中心となる建築。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.10。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-minaret",
+      "canonicalName": "ミナレット",
+      "aliases": [],
+      "kind": "building",
+      "field": "建築・美術",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "礼拝を呼びかける塔。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.10。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-mihrab",
+      "canonicalName": "ミフラーブ",
+      "aliases": [],
+      "kind": "building",
+      "field": "建築・美術",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "礼拝の方向を示す設備。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.10。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-arabesque",
+      "canonicalName": "アラベスク",
+      "aliases": [],
+      "kind": "concept",
+      "field": "建築・美術",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "反復する抽象的な装飾文様。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.10。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-iwan",
+      "canonicalName": "イーワーン",
+      "aliases": [],
+      "kind": "building",
+      "field": "建築・美術",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イラン系建築で特徴的な空間形式。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.10。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-alhambra",
+      "canonicalName": "アルハンブラ宮殿",
+      "aliases": [],
+      "kind": "building",
+      "field": "建築・美術",
+      "region": "イスラーム世界",
+      "era": "中世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "イベリア半島のイスラーム建築の代表例。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.10。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-taj-mahal",
+      "canonicalName": "タージ＝マハル",
+      "aliases": [
+        "タージマハル"
+      ],
+      "kind": "building",
+      "field": "建築・美術",
+      "region": "イスラーム世界",
+      "era": "近世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "アグラにあるムガル建築の代表例。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-suleymaniye",
+      "canonicalName": "スレイマニエ＝モスク",
+      "aliases": [
+        "スレイマニエモスク"
+      ],
+      "kind": "building",
+      "field": "建築・美術",
+      "region": "イスラーム世界",
+      "era": "近世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "建築家スィナンによる代表的モスク。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-sinan",
+      "canonicalName": "スィナン",
+      "aliases": [
+        "ミマール＝スィナン"
+      ],
+      "kind": "person",
+      "field": "建築・美術",
+      "region": "イスラーム世界",
+      "era": "近世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "オスマン帝国を代表する宮廷建築家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-vedas",
+      "canonicalName": "ヴェーダ",
+      "aliases": [],
+      "kind": "work",
+      "field": "宗教・思想",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "『リグ＝ヴェーダ』などの総称。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-rigveda",
+      "canonicalName": "リグ＝ヴェーダ",
+      "aliases": [],
+      "kind": "work",
+      "field": "宗教・思想",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代インドの祭式に関わる賛歌集。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-upanishads",
+      "canonicalName": "ウパニシャッド",
+      "aliases": [
+        "奥義書"
+      ],
+      "kind": "work",
+      "field": "宗教・思想",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ヴェーダ思想を哲学的に発展させた文献群。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-brahman-atman",
+      "canonicalName": "梵我一如",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教・思想",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ウパニシャッド哲学の基本的な考え。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-karma",
+      "canonicalName": "業（カルマ）",
+      "aliases": [
+        "カルマ"
+      ],
+      "kind": "concept",
+      "field": "宗教・思想",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "行為とその結果に関する宗教思想。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-samsara",
+      "canonicalName": "輪廻",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教・思想",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "生死の循環という考え。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-sanskrit",
+      "canonicalName": "サンスクリット語",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教・思想",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "インドの古典文献で重要な言語。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-mahabharata",
+      "canonicalName": "マハーバーラタ",
+      "aliases": [],
+      "kind": "work",
+      "field": "宗教・思想",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代インドの二大叙事詩の一つ。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-ramayana",
+      "canonicalName": "ラーマーヤナ",
+      "aliases": [],
+      "kind": "work",
+      "field": "宗教・思想",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "古代インドの二大叙事詩の一つ。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-bhagavadgita",
+      "canonicalName": "バガヴァッド＝ギーター",
+      "aliases": [],
+      "kind": "work",
+      "field": "宗教・思想",
+      "region": "インド",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ヒンドゥー教の重要な宗教文献。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-tripitaka",
+      "canonicalName": "三蔵",
+      "aliases": [],
+      "kind": "work",
+      "field": "仏教",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "経蔵・律蔵・論蔵の三つ。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-theravada",
+      "canonicalName": "上座部仏教",
+      "aliases": [
+        "テーラワーダ仏教"
+      ],
+      "kind": "concept",
+      "field": "仏教",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "テーラワーダ仏教とも呼ばれる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-mahayana",
+      "canonicalName": "大乗仏教",
+      "aliases": [],
+      "kind": "concept",
+      "field": "仏教",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "東アジアにも広く普及した。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-nagarjuna",
+      "canonicalName": "ナーガールジュナ（竜樹）",
+      "aliases": [
+        "竜樹",
+        "ナーガールジュナ"
+      ],
+      "kind": "person",
+      "field": "仏教",
+      "region": "インド",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "インドの仏教思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-esoteric",
+      "canonicalName": "密教",
+      "aliases": [],
+      "kind": "concept",
+      "field": "仏教",
+      "region": "インド",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "タントラ的儀礼を重視した仏教。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-gandhara",
+      "canonicalName": "ガンダーラ美術",
+      "aliases": [],
+      "kind": "concept",
+      "field": "美術・建築",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北西インド方面で発展した仏教美術。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-mathura",
+      "canonicalName": "マトゥラー美術",
+      "aliases": [],
+      "kind": "concept",
+      "field": "美術・建築",
+      "region": "インド",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "北インドのマトゥラーを中心に発展。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-ajanta",
+      "canonicalName": "アジャンター石窟寺院",
+      "aliases": [
+        "アジャンター石窟"
+      ],
+      "kind": "building",
+      "field": "美術・建築",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "壁画・石窟寺院で知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-ellora",
+      "canonicalName": "エローラ石窟寺院",
+      "aliases": [
+        "エローラ石窟"
+      ],
+      "kind": "building",
+      "field": "美術・建築",
+      "region": "インド",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "複数宗教の石窟がある。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-sanchi",
+      "canonicalName": "サーンチーのストゥーパ",
+      "aliases": [
+        "サーンチー"
+      ],
+      "kind": "building",
+      "field": "美術・建築",
+      "region": "インド",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "インド中部の仏教遺跡。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-borobudur",
+      "canonicalName": "ボロブドゥール",
+      "aliases": [],
+      "kind": "building",
+      "field": "美術・建築",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "シャイレーンドラ朝期の仏教遺跡。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.12。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-urdu",
+      "canonicalName": "ウルドゥー語",
+      "aliases": [],
+      "kind": "concept",
+      "field": "文化交流・言語",
+      "region": "インド",
+      "era": "中世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ペルシア・アラビア文字系の表記を用いる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.14。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-persian-mughal",
+      "canonicalName": "ムガル細密画",
+      "aliases": [
+        "ムガル絵画"
+      ],
+      "kind": "concept",
+      "field": "文化交流・言語",
+      "region": "インド",
+      "era": "中世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ムガル宮廷で発達した細密な絵画。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.14。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-sikhism",
+      "canonicalName": "シク教",
+      "aliases": [],
+      "kind": "concept",
+      "field": "宗教",
+      "region": "インド",
+      "era": "近世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "ヒンドゥー教・イスラームの影響を受けて成立。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.14。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-nanak",
+      "canonicalName": "ナーナク",
+      "aliases": [],
+      "kind": "person",
+      "field": "宗教",
+      "region": "インド",
+      "era": "近世",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "15〜16世紀に活動した宗教指導者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.14。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-granth-sahib",
+      "canonicalName": "グラント＝サーヒブ",
+      "aliases": [
+        "グル＝グラント＝サーヒブ"
+      ],
+      "kind": "work",
+      "field": "宗教",
+      "region": "インド",
+      "era": "近世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "シク教の聖典。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.14。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-gobind-singh",
+      "canonicalName": "ゴービンド＝シング",
+      "aliases": [],
+      "kind": "person",
+      "field": "宗教",
+      "region": "インド",
+      "era": "近世",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "17〜18世紀のシク教指導者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.14。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-golden-temple",
+      "canonicalName": "黄金寺院（ハリマンディル）",
+      "aliases": [
+        "黄金寺院",
+        "ハリマンディル"
+      ],
+      "kind": "building",
+      "field": "宗教",
+      "region": "インド",
+      "era": "近世",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "シク教の巡礼の中心地。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.14。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-zero",
+      "canonicalName": "ゼロの概念",
+      "aliases": [],
+      "kind": "concept",
+      "field": "科学・数学",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "十進位取り記数法とともに数学史上重要。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.15。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-indian-numerals",
+      "canonicalName": "インド数字",
+      "aliases": [],
+      "kind": "concept",
+      "field": "科学・数学",
+      "region": "インド",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "十進位取り記数法の発展に寄与。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.15。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-aryabhata",
+      "canonicalName": "アーリヤバタ",
+      "aliases": [],
+      "kind": "person",
+      "field": "科学・数学",
+      "region": "インド",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "地球の自転を論じた古代インドの学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.15。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-confucius",
+      "canonicalName": "孔子",
+      "aliases": [
+        "孔丘"
+      ],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "魯の出身。儒家の祖として知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-analects",
+      "canonicalName": "論語",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "孔子の弟子たちが伝えた言行録。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-spring-autumn",
+      "canonicalName": "春秋",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "五経の一つとされる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-mencius",
+      "canonicalName": "孟子",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "孔子の思想を受け継いだ戦国時代の思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xunzi",
+      "canonicalName": "荀子",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "性悪説で知られる儒家思想家。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-five-classics",
+      "canonicalName": "五経",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "伝統的な儒学の五つの経典。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-dong-zhongshu",
+      "canonicalName": "董仲舒",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 1,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "前漢の儒学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.1：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-five-classics-doctors",
+      "canonicalName": "五経博士",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "儒学の官学化に関わった。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-exegetical",
+      "canonicalName": "訓詁学",
+      "aliases": [],
+      "kind": "concept",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "儒学経典の字句を注釈する学問。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ma-rong",
+      "canonicalName": "馬融",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 3,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "後漢の経学者で鄭玄の師として知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.3：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zheng-xuan",
+      "canonicalName": "鄭玄",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "経書の注釈で知られる。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kong-yingda",
+      "canonicalName": "孔穎達",
+      "aliases": [],
+      "kind": "person",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐代の経学者。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-five-classics-justice",
+      "canonicalName": "五経正義",
+      "aliases": [],
+      "kind": "work",
+      "field": "儒学・思想",
+      "region": "中国",
+      "era": "古代",
+      "level": 2,
+      "relatedPeople": [],
+      "relatedWorks": [],
+      "description": "唐代の経学書。",
+      "images": [],
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真 p.22。本文を転載せず要点を独自に要約。"
+        }
+      ],
+      "difficultyEvidence": "暫定Lv.2：教科書掲載の基礎知識から細目までを学習上の目安で分類。大学別出題頻度は未検証。",
+      "verification": "provisional",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    }
+  ],
+  "cards": [
+    {
+      "id": "eg-ra::core",
+      "knowledgeId": "eg-ra",
+      "type": "context",
+      "question": "古代エジプトで太陽神とされた神は？",
+      "answer": "ラー",
+      "explanation": "古代エジプトの太陽神。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-amon::core",
+      "knowledgeId": "eg-amon",
+      "type": "context",
+      "question": "テーベの守護神として信仰されたエジプトの神は？",
+      "answer": "アモン",
+      "explanation": "テーベの地方神。ラーとの習合によってアモン＝ラーと呼ばれる。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-amon-ra::core",
+      "knowledgeId": "eg-amon-ra",
+      "type": "context",
+      "question": "エジプトの太陽神ラーとテーベの神アモンが習合した神は？",
+      "answer": "アモン＝ラー",
+      "explanation": "アモンとラーが習合した神格。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-aten::core",
+      "knowledgeId": "eg-aten",
+      "type": "context",
+      "question": "アメンホテプ4世が特に崇拝した太陽円盤の神は？",
+      "answer": "アトン",
+      "explanation": "アメンホテプ4世（アクエンアテン）が崇拝を推進した太陽神。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-osiris::core",
+      "knowledgeId": "eg-osiris",
+      "type": "context",
+      "question": "古代エジプトの死後の世界をつかさどる神は？",
+      "answer": "オシリス",
+      "explanation": "死後の世界・死者の審判と結びつく神。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-anubis::core",
+      "knowledgeId": "eg-anubis",
+      "type": "context",
+      "question": "古代エジプトのミイラ作りや死者の保護と結びつく神は？",
+      "answer": "アヌビス",
+      "explanation": "死者とミイラ作りに関係する神。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-book-dead::core",
+      "knowledgeId": "eg-book-dead",
+      "type": "context",
+      "question": "古代エジプトで死後の世界の案内や呪文を記した文書は？",
+      "answer": "死者の書",
+      "explanation": "死後の旅路や審判に備える宗教文書。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-hieroglyph::core",
+      "knowledgeId": "eg-hieroglyph",
+      "type": "context",
+      "question": "古代エジプトで神殿や墓碑に刻まれた絵文字系の文字は？",
+      "answer": "神聖文字（ヒエログリフ）",
+      "explanation": "古代エジプトの文字体系の一つ。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-hieratic::core",
+      "knowledgeId": "eg-hieratic",
+      "type": "context",
+      "question": "ヒエログリフを簡略化した古代エジプトの書写用文字は？",
+      "answer": "神官文字（ヒエラティック）",
+      "explanation": "神聖文字から発達した筆記体。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-demotic::core",
+      "knowledgeId": "eg-demotic",
+      "type": "context",
+      "question": "古代エジプトで日常的な文書などに使われた簡略な文字は？",
+      "answer": "民用文字（デモティック）",
+      "explanation": "神官文字をさらに簡略化して発達。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-rosetta::core",
+      "knowledgeId": "eg-rosetta",
+      "type": "context",
+      "question": "エジプトの神聖文字解読の手がかりとなった三種の文字を持つ石碑は？",
+      "answer": "ロゼッタ＝ストーン",
+      "explanation": "1799年に発見され、古代エジプト文字の解読に重要だった。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-papyrus::core",
+      "knowledgeId": "eg-papyrus",
+      "type": "context",
+      "question": "古代エジプトでカヤツリグサ科植物から作られた筆記材料は？",
+      "answer": "パピルス",
+      "explanation": "ナイル流域で用いられた筆記材料。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-champollion::core",
+      "knowledgeId": "eg-champollion",
+      "type": "achievement-person",
+      "question": "1822年に古代エジプトの神聖文字解読を進めたフランス人は？",
+      "answer": "シャンポリオン",
+      "explanation": "ロゼッタ＝ストーンを手掛かりに解読を進展させた。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-solar-calendar::core",
+      "knowledgeId": "eg-solar-calendar",
+      "type": "context",
+      "question": "古代エジプトでナイル川の氾濫周期などと関係して用いられた暦は？",
+      "answer": "太陽暦",
+      "explanation": "古代エジプトでは太陽年に基づく暦が発達した。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-pyramids::core",
+      "knowledgeId": "eg-pyramids",
+      "type": "context",
+      "question": "古王国時代のエジプトで王墓として建設された巨大な石造建造物は？",
+      "answer": "ピラミッド",
+      "explanation": "ギザの三大ピラミッドで知られる。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-sphinx::core",
+      "knowledgeId": "eg-sphinx",
+      "type": "context",
+      "question": "古代エジプトで人頭と獅子の体を組み合わせた像は？",
+      "answer": "スフィンクス",
+      "explanation": "ギザの大スフィンクスが有名。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-amarna-art::core",
+      "knowledgeId": "eg-amarna-art",
+      "type": "context",
+      "question": "アメンホテプ4世の時代に発達した写実的なエジプト美術は？",
+      "answer": "アマルナ美術",
+      "explanation": "王族を自然に表す表現などが特徴。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "eg-amarna-letters::core",
+      "knowledgeId": "eg-amarna-letters",
+      "type": "context",
+      "question": "エジプトで発見された、楔形文字で書かれた古代の外交書簡群は？",
+      "answer": "アマルナ文書",
+      "explanation": "アマルナで発見された外交書簡群。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-marduk::core",
+      "knowledgeId": "me-marduk",
+      "type": "context",
+      "question": "バビロニアの都市神で、主神として崇拝された神は？",
+      "answer": "マルドゥク",
+      "explanation": "バビロンの主神。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-ziggurat::core",
+      "knowledgeId": "me-ziggurat",
+      "type": "context",
+      "question": "古代メソポタミアに建てられた階段状の聖塔は？",
+      "answer": "ジッグラト",
+      "explanation": "都市の神殿複合施設に建てられた聖塔。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-shamash::core",
+      "knowledgeId": "me-shamash",
+      "type": "context",
+      "question": "古代メソポタミアで太陽神・正義の神として知られた神は？",
+      "answer": "シャマシュ",
+      "explanation": "太陽と正義をつかさどる神。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-enuma-elish::core",
+      "knowledgeId": "me-enuma-elish",
+      "type": "context",
+      "question": "バビロニアの天地創造とマルドゥクの勝利を描く神話叙事詩は？",
+      "answer": "エヌマ＝エリシュ",
+      "explanation": "バビロニアの創世神話。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-cuneiform::core",
+      "knowledgeId": "me-cuneiform",
+      "type": "context",
+      "question": "シュメール人が発達させた、粘土板に刻む古代メソポタミアの文字は？",
+      "answer": "楔形文字",
+      "explanation": "粘土板に刻まれた文字体系。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-gilgamesh::core",
+      "knowledgeId": "me-gilgamesh",
+      "type": "context",
+      "question": "古代メソポタミアの英雄王と洪水伝説などを伝える叙事詩は？",
+      "answer": "ギルガメシュ叙事詩",
+      "explanation": "古代メソポタミアの代表的叙事詩。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-hammurabi::core",
+      "knowledgeId": "me-hammurabi",
+      "type": "context",
+      "question": "古バビロニア王が編纂させた、同害復讐の原則でも知られる法典は？",
+      "answer": "ハンムラビ法典",
+      "explanation": "古バビロニア王ハンムラビの法典。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-sexagesimal::core",
+      "knowledgeId": "me-sexagesimal",
+      "type": "context",
+      "question": "古代メソポタミアで発達し、時間や角度にも影響を残した記数法は？",
+      "answer": "六十進法",
+      "explanation": "60を基礎とする数の表し方。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-lunar-calendar::core",
+      "knowledgeId": "me-lunar-calendar",
+      "type": "context",
+      "question": "古代メソポタミアで月の満ち欠けをもとに発達した暦は？",
+      "answer": "太陰暦",
+      "explanation": "月の運行に基づく暦。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "me-seven-day::core",
+      "knowledgeId": "me-seven-day",
+      "type": "context",
+      "question": "古代メソポタミアに起源をたどる、7日を周期とする日付の慣行は？",
+      "answer": "七曜制",
+      "explanation": "七日を単位とする週の慣行。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-zoroaster::core",
+      "knowledgeId": "ir-zoroaster",
+      "type": "achievement-person",
+      "question": "善悪二元論を特色とするゾロアスター教の開祖とされる人物は？",
+      "answer": "ゾロアスター",
+      "explanation": "ゾロアスター教の開祖。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-ahura-mazda::core",
+      "knowledgeId": "ir-ahura-mazda",
+      "type": "context",
+      "question": "ゾロアスター教で最高神・善の神とされる神は？",
+      "answer": "アフラ＝マズダ",
+      "explanation": "善を象徴する神。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-angra-mainyu::core",
+      "knowledgeId": "ir-angra-mainyu",
+      "type": "context",
+      "question": "ゾロアスター教の伝統で悪の霊とされる存在は？",
+      "answer": "アンラ＝マンユ",
+      "explanation": "善の勢力と対立する悪の霊。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-avesta::core",
+      "knowledgeId": "ir-avesta",
+      "type": "context",
+      "question": "ゾロアスター教の聖典は？",
+      "answer": "アヴェスター",
+      "explanation": "ゾロアスター教の聖典群。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-mani::core",
+      "knowledgeId": "ir-mani",
+      "type": "achievement-person",
+      "question": "3世紀にマニ教を創始した宗教家は？",
+      "answer": "マニ",
+      "explanation": "ササン朝の時代に活動した宗教家。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ir-manichaeism::core",
+      "knowledgeId": "ir-manichaeism",
+      "type": "context",
+      "question": "ゾロアスター教・キリスト教・仏教などの影響を受けた宗教は？",
+      "answer": "マニ教",
+      "explanation": "マニが創始した宗教で、光と闇の対立を重視した。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-quran::core",
+      "knowledgeId": "is-quran",
+      "type": "context",
+      "question": "イスラーム教の聖典は？",
+      "answer": "クルアーン（コーラン）",
+      "explanation": "アラビア語で啓示を伝えるイスラームの聖典。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-hadith::core",
+      "knowledgeId": "is-hadith",
+      "type": "context",
+      "question": "預言者ムハンマドの言行を伝えるイスラームの伝承集は？",
+      "answer": "ハディース",
+      "explanation": "ムハンマドの言行に関する伝承。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-sharia::core",
+      "knowledgeId": "is-sharia",
+      "type": "context",
+      "question": "イスラームにおける神の意思に基づく法・規範は？",
+      "answer": "シャリーア",
+      "explanation": "イスラームの法規範。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-ulama::core",
+      "knowledgeId": "is-ulama",
+      "type": "context",
+      "question": "イスラームの法学や宗教諸学に通じた学者たちを指す語は？",
+      "answer": "ウラマー",
+      "explanation": "イスラームの宗教学者・法学者。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-madrasa::core",
+      "knowledgeId": "is-madrasa",
+      "type": "context",
+      "question": "イスラーム世界で法学などを教授した高等教育施設は？",
+      "answer": "マドラサ",
+      "explanation": "主に宗教諸学を学ぶ教育施設。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-sufism::core",
+      "knowledgeId": "is-sufism",
+      "type": "context",
+      "question": "神との直接的な結びつきを求めるイスラームの神秘主義は？",
+      "answer": "スーフィズム",
+      "explanation": "イスラーム神秘主義。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-house-wisdom::core",
+      "knowledgeId": "is-house-wisdom",
+      "type": "context",
+      "question": "アッバース朝バグダードで翻訳・学術活動の中心になった機関は？",
+      "answer": "知恵の館",
+      "explanation": "ギリシア語などの学術文献の翻訳活動と結びつく施設。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-tabari::core",
+      "knowledgeId": "is-tabari",
+      "type": "achievement-person",
+      "question": "『預言者たちと諸王の歴史』を著したイスラームの歴史家は？",
+      "answer": "タバリー",
+      "explanation": "9〜10世紀の歴史家。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-idrisi::core",
+      "knowledgeId": "is-idrisi",
+      "type": "achievement-person",
+      "question": "12世紀に世界地図を制作した地理学者は？",
+      "answer": "イドリースィー",
+      "explanation": "シチリア王国で活動した地理学者。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-rashid-din::core",
+      "knowledgeId": "is-rashid-din",
+      "type": "achievement-person",
+      "question": "モンゴル帝国を含む世界史を扱う『集史』の編纂を主導した人物は？",
+      "answer": "ラシード＝アッディーン",
+      "explanation": "イル＝ハン国で活動した政治家・歴史家。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-ibn-khaldun::core",
+      "knowledgeId": "is-ibn-khaldun",
+      "type": "achievement-person",
+      "question": "『歴史序説』を著し、王朝や社会の発展を論じたイスラームの歴史家は？",
+      "answer": "イブン＝ハルドゥーン",
+      "explanation": "北アフリカ出身の歴史家・思想家。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-ibn-battuta::core",
+      "knowledgeId": "is-ibn-battuta",
+      "type": "achievement-person",
+      "question": "『三大陸周遊記』として知られる広域旅行記の主人公である旅行家は？",
+      "answer": "イブン＝バットゥータ",
+      "explanation": "14世紀にアフリカ・アジアを広く旅行した。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-khwarizmi::core",
+      "knowledgeId": "is-khwarizmi",
+      "type": "achievement-person",
+      "question": "代数学の発展に貢献し、インド数字の普及に関わった学者は？",
+      "answer": "フワーリズミー",
+      "explanation": "アッバース朝期の数学者。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-ibn-sina::core",
+      "knowledgeId": "is-ibn-sina",
+      "type": "achievement-person",
+      "question": "医学書『医学典範』を著したイスラーム世界の医師・哲学者は？",
+      "answer": "イブン＝シーナー",
+      "explanation": "ラテン語圏ではアヴィケンナとして知られる。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-razi::core",
+      "knowledgeId": "is-razi",
+      "type": "achievement-person",
+      "question": "『医学書』などで知られ、化学・医学に業績を残したイスラーム世界の医師は？",
+      "answer": "ラーズィー",
+      "explanation": "9〜10世紀の医師・学者。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-ghazali::core",
+      "knowledgeId": "is-ghazali",
+      "type": "achievement-person",
+      "question": "神学とスーフィズムを結びつけ、イスラーム思想に影響を与えた学者は？",
+      "answer": "ガザーリー",
+      "explanation": "11〜12世紀の神学者・思想家。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-ibn-rushd::core",
+      "knowledgeId": "is-ibn-rushd",
+      "type": "achievement-person",
+      "question": "アリストテレス注釈で知られ、西欧のスコラ哲学に影響を与えた哲学者は？",
+      "answer": "イブン＝ルシュド",
+      "explanation": "イベリア半島出身。ラテン語圏ではアヴェロエスと呼ばれる。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-firdawsi::core",
+      "knowledgeId": "is-firdawsi",
+      "type": "achievement-person",
+      "question": "ペルシア民族叙事詩『シャー＝ナーメ』を著した詩人は？",
+      "answer": "フィルドゥスィー",
+      "explanation": "イランの民族的伝統を詩にまとめた。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-shahnameh::core",
+      "knowledgeId": "is-shahnameh",
+      "type": "context",
+      "question": "フィルドゥスィーが著したペルシアの民族叙事詩は？",
+      "answer": "シャー＝ナーメ",
+      "explanation": "『王の書』とも訳される。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-omar-khayyam::core",
+      "knowledgeId": "is-omar-khayyam",
+      "type": "achievement-person",
+      "question": "四行詩集『ルバイヤート』で知られるペルシアの詩人・数学者は？",
+      "answer": "ウマル＝ハイヤーム",
+      "explanation": "セルジューク朝期の詩人・学者。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-rubaiyat::core",
+      "knowledgeId": "is-rubaiyat",
+      "type": "context",
+      "question": "ウマル＝ハイヤームの四行詩集は？",
+      "answer": "ルバイヤート",
+      "explanation": "ペルシア語の四行詩集。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-arabian-nights::core",
+      "knowledgeId": "is-arabian-nights",
+      "type": "context",
+      "question": "アラビア語文学で知られ、シェヘラザードの語りの形式をとる説話集は？",
+      "answer": "千夜一夜物語",
+      "explanation": "各地の説話が集成された作品。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-mosque::core",
+      "knowledgeId": "is-mosque",
+      "type": "context",
+      "question": "イスラーム教徒が集団礼拝を行う礼拝施設は？",
+      "answer": "モスク",
+      "explanation": "礼拝・共同体活動の中心となる建築。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-minaret::core",
+      "knowledgeId": "is-minaret",
+      "type": "context",
+      "question": "モスクに付属することが多い塔を何と呼ぶ？",
+      "answer": "ミナレット",
+      "explanation": "礼拝を呼びかける塔。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-mihrab::core",
+      "knowledgeId": "is-mihrab",
+      "type": "context",
+      "question": "モスクの礼拝室に設けられた、メッカの方向を示す壁のくぼみは？",
+      "answer": "ミフラーブ",
+      "explanation": "礼拝の方向を示す設備。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-arabesque::core",
+      "knowledgeId": "is-arabesque",
+      "type": "context",
+      "question": "イスラーム美術で発達した幾何学的・植物的な反復装飾文様は？",
+      "answer": "アラベスク",
+      "explanation": "反復する抽象的な装飾文様。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-iwan::core",
+      "knowledgeId": "is-iwan",
+      "type": "context",
+      "question": "イスラーム建築で中庭に向かって大きく開いたヴォールト状の空間は？",
+      "answer": "イーワーン",
+      "explanation": "イラン系建築で特徴的な空間形式。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-alhambra::core",
+      "knowledgeId": "is-alhambra",
+      "type": "context",
+      "question": "グラナダにある、ナスル朝期のイスラーム宮殿建築は？",
+      "answer": "アルハンブラ宮殿",
+      "explanation": "イベリア半島のイスラーム建築の代表例。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-taj-mahal::core",
+      "knowledgeId": "is-taj-mahal",
+      "type": "context",
+      "question": "ムガル帝国のシャー＝ジャハーンが愛妃のために建立した白大理石の霊廟は？",
+      "answer": "タージ＝マハル",
+      "explanation": "アグラにあるムガル建築の代表例。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-suleymaniye::core",
+      "knowledgeId": "is-suleymaniye",
+      "type": "context",
+      "question": "オスマン帝国のスレイマン1世の命でイスタンブルに建てられたモスクは？",
+      "answer": "スレイマニエ＝モスク",
+      "explanation": "建築家スィナンによる代表的モスク。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "is-sinan::core",
+      "knowledgeId": "is-sinan",
+      "type": "achievement-person",
+      "question": "スレイマニエ＝モスクなどを設計したオスマン帝国の建築家は？",
+      "answer": "スィナン",
+      "explanation": "オスマン帝国を代表する宮廷建築家。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-vedas::core",
+      "knowledgeId": "in-vedas",
+      "type": "context",
+      "question": "古代インドで成立したバラモン教の聖典群を総称して何という？",
+      "answer": "ヴェーダ",
+      "explanation": "『リグ＝ヴェーダ』などの総称。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-rigveda::core",
+      "knowledgeId": "in-rigveda",
+      "type": "context",
+      "question": "ヴェーダの中で最古の神々への賛歌を中心とする聖典は？",
+      "answer": "リグ＝ヴェーダ",
+      "explanation": "古代インドの祭式に関わる賛歌集。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-upanishads::core",
+      "knowledgeId": "in-upanishads",
+      "type": "context",
+      "question": "古代インドで梵我一如などの哲学思想が展開された文献群は？",
+      "answer": "ウパニシャッド",
+      "explanation": "ヴェーダ思想を哲学的に発展させた文献群。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-brahman-atman::core",
+      "knowledgeId": "in-brahman-atman",
+      "type": "context",
+      "question": "宇宙の根本原理ブラフマンと自己の本質アートマンの同一性を説く思想は？",
+      "answer": "梵我一如",
+      "explanation": "ウパニシャッド哲学の基本的な考え。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-karma::core",
+      "knowledgeId": "in-karma",
+      "type": "context",
+      "question": "インドの宗教思想で、行為とその結果が輪廻に影響するという考えは？",
+      "answer": "業（カルマ）",
+      "explanation": "行為とその結果に関する宗教思想。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-samsara::core",
+      "knowledgeId": "in-samsara",
+      "type": "context",
+      "question": "インドの宗教思想で、生死を繰り返すことを何という？",
+      "answer": "輪廻",
+      "explanation": "生死の循環という考え。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-sanskrit::core",
+      "knowledgeId": "in-sanskrit",
+      "type": "context",
+      "question": "古代インドの宗教文献や古典文学に広く用いられた言語は？",
+      "answer": "サンスクリット語",
+      "explanation": "インドの古典文献で重要な言語。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-mahabharata::core",
+      "knowledgeId": "in-mahabharata",
+      "type": "context",
+      "question": "バラタ族の戦争を中心とするインドの大叙事詩は？",
+      "answer": "マハーバーラタ",
+      "explanation": "古代インドの二大叙事詩の一つ。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-ramayana::core",
+      "knowledgeId": "in-ramayana",
+      "type": "context",
+      "question": "ラーマ王子とシーターの物語を中心とするインドの大叙事詩は？",
+      "answer": "ラーマーヤナ",
+      "explanation": "古代インドの二大叙事詩の一つ。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-bhagavadgita::core",
+      "knowledgeId": "in-bhagavadgita",
+      "type": "context",
+      "question": "『マハーバーラタ』に含まれる、クリシュナがアルジュナに教えを説く宗教詩は？",
+      "answer": "バガヴァッド＝ギーター",
+      "explanation": "ヒンドゥー教の重要な宗教文献。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-tripitaka::core",
+      "knowledgeId": "in-tripitaka",
+      "type": "context",
+      "question": "仏教経典を経・律・論の三分野に分けた総称は？",
+      "answer": "三蔵",
+      "explanation": "経蔵・律蔵・論蔵の三つ。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-theravada::core",
+      "knowledgeId": "in-theravada",
+      "type": "context",
+      "question": "スリランカや東南アジア大陸部で広まった仏教の主要な系統は？",
+      "answer": "上座部仏教",
+      "explanation": "テーラワーダ仏教とも呼ばれる。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-mahayana::core",
+      "knowledgeId": "in-mahayana",
+      "type": "context",
+      "question": "菩薩の利他行と広範な救済を重視して発展した仏教の系統は？",
+      "answer": "大乗仏教",
+      "explanation": "東アジアにも広く普及した。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-nagarjuna::core",
+      "knowledgeId": "in-nagarjuna",
+      "type": "achievement-person",
+      "question": "大乗仏教の中観派を大成し、空の思想を展開した人物は？",
+      "answer": "ナーガールジュナ（竜樹）",
+      "explanation": "インドの仏教思想家。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-esoteric::core",
+      "knowledgeId": "in-esoteric",
+      "type": "context",
+      "question": "インド仏教の後期に発展した、真言や儀礼を重視する仏教形態は？",
+      "answer": "密教",
+      "explanation": "タントラ的儀礼を重視した仏教。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-gandhara::core",
+      "knowledgeId": "in-gandhara",
+      "type": "context",
+      "question": "ヘレニズム文化の影響を受けた仏像表現で知られるインド周辺の美術は？",
+      "answer": "ガンダーラ美術",
+      "explanation": "北西インド方面で発展した仏教美術。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-mathura::core",
+      "knowledgeId": "in-mathura",
+      "type": "context",
+      "question": "インド固有の造形的伝統が強く見られる初期仏像の流派は？",
+      "answer": "マトゥラー美術",
+      "explanation": "北インドのマトゥラーを中心に発展。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-ajanta::core",
+      "knowledgeId": "in-ajanta",
+      "type": "context",
+      "question": "インドの仏教壁画や石窟寺院で有名な遺跡は？",
+      "answer": "アジャンター石窟寺院",
+      "explanation": "壁画・石窟寺院で知られる。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-ellora::core",
+      "knowledgeId": "in-ellora",
+      "type": "context",
+      "question": "仏教・ヒンドゥー教・ジャイナ教の石窟寺院群があるインドの遺跡は？",
+      "answer": "エローラ石窟寺院",
+      "explanation": "複数宗教の石窟がある。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-sanchi::core",
+      "knowledgeId": "in-sanchi",
+      "type": "context",
+      "question": "古代インドの仏教遺跡で、半球状の仏塔が有名な場所は？",
+      "answer": "サーンチーのストゥーパ",
+      "explanation": "インド中部の仏教遺跡。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-borobudur::core",
+      "knowledgeId": "in-borobudur",
+      "type": "context",
+      "question": "ジャワ島にある大乗仏教系の巨大な仏教遺跡は？",
+      "answer": "ボロブドゥール",
+      "explanation": "シャイレーンドラ朝期の仏教遺跡。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-urdu::core",
+      "knowledgeId": "in-urdu",
+      "type": "context",
+      "question": "北インドでインド系言語を基礎にペルシア語・アラビア語の影響を受けて成立した言語は？",
+      "answer": "ウルドゥー語",
+      "explanation": "ペルシア・アラビア文字系の表記を用いる。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-persian-mughal::core",
+      "knowledgeId": "in-persian-mughal",
+      "type": "context",
+      "question": "ムガル帝国の宮廷でペルシア美術の影響を受けて発達した絵画は？",
+      "answer": "ムガル細密画",
+      "explanation": "ムガル宮廷で発達した細密な絵画。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-sikhism::core",
+      "knowledgeId": "in-sikhism",
+      "type": "context",
+      "question": "16世紀のパンジャーブでナーナクを開祖として形成された宗教は？",
+      "answer": "シク教",
+      "explanation": "ヒンドゥー教・イスラームの影響を受けて成立。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-nanak::core",
+      "knowledgeId": "in-nanak",
+      "type": "achievement-person",
+      "question": "パンジャーブ地方でシク教の開祖となった人物は？",
+      "answer": "ナーナク",
+      "explanation": "15〜16世紀に活動した宗教指導者。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-granth-sahib::core",
+      "knowledgeId": "in-granth-sahib",
+      "type": "context",
+      "question": "シク教の聖典は？",
+      "answer": "グラント＝サーヒブ",
+      "explanation": "シク教の聖典。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-gobind-singh::core",
+      "knowledgeId": "in-gobind-singh",
+      "type": "achievement-person",
+      "question": "シク教の信徒共同体ハールサー（カールサー）を組織した第10代グルは？",
+      "answer": "ゴービンド＝シング",
+      "explanation": "17〜18世紀のシク教指導者。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-golden-temple::core",
+      "knowledgeId": "in-golden-temple",
+      "type": "context",
+      "question": "インドのアムリトサルにあるシク教の重要な聖地・寺院は？",
+      "answer": "黄金寺院（ハリマンディル）",
+      "explanation": "シク教の巡礼の中心地。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-zero::core",
+      "knowledgeId": "in-zero",
+      "type": "context",
+      "question": "インド数学が発展させ、位取り記数法に重要な役割を果たした数の概念は？",
+      "answer": "ゼロの概念",
+      "explanation": "十進位取り記数法とともに数学史上重要。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-indian-numerals::core",
+      "knowledgeId": "in-indian-numerals",
+      "type": "context",
+      "question": "イスラーム世界を通じてヨーロッパに伝わった、現代の数字の系譜につながる数字は？",
+      "answer": "インド数字",
+      "explanation": "十進位取り記数法の発展に寄与。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "in-aryabhata::core",
+      "knowledgeId": "in-aryabhata",
+      "type": "achievement-person",
+      "question": "5〜6世紀に天文学や数学で業績を残したインドの学者は？",
+      "answer": "アーリヤバタ",
+      "explanation": "地球の自転を論じた古代インドの学者。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-confucius::core",
+      "knowledgeId": "ch-confucius",
+      "type": "achievement-person",
+      "question": "春秋時代に儒家の祖となり「仁」を重視した思想家は？",
+      "answer": "孔子",
+      "explanation": "魯の出身。儒家の祖として知られる。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-analects::core",
+      "knowledgeId": "ch-analects",
+      "type": "context",
+      "question": "孔子と弟子たちの言行を伝える儒家の重要典籍は？",
+      "answer": "論語",
+      "explanation": "孔子の弟子たちが伝えた言行録。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-spring-autumn::core",
+      "knowledgeId": "ch-spring-autumn",
+      "type": "context",
+      "question": "孔子が編纂したと伝承される魯の年代記は？",
+      "answer": "春秋",
+      "explanation": "五経の一つとされる。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-mencius::core",
+      "knowledgeId": "ch-mencius",
+      "type": "achievement-person",
+      "question": "性善説と王道政治を唱えた戦国時代の儒家は？",
+      "answer": "孟子",
+      "explanation": "孔子の思想を受け継いだ戦国時代の思想家。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-xunzi::core",
+      "knowledgeId": "ch-xunzi",
+      "type": "achievement-person",
+      "question": "性悪説を唱え、礼による教化を重視した戦国時代の儒家は？",
+      "answer": "荀子",
+      "explanation": "性悪説で知られる儒家思想家。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-five-classics::core",
+      "knowledgeId": "ch-five-classics",
+      "type": "context",
+      "question": "儒学の基本経典である『詩経』『書経』『易経』『礼記』『春秋』の総称は？",
+      "answer": "五経",
+      "explanation": "伝統的な儒学の五つの経典。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-dong-zhongshu::core",
+      "knowledgeId": "ch-dong-zhongshu",
+      "type": "achievement-person",
+      "question": "前漢の武帝に儒学の官学化を進言した思想家は？",
+      "answer": "董仲舒",
+      "explanation": "前漢の儒学者。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-five-classics-doctors::core",
+      "knowledgeId": "ch-five-classics-doctors",
+      "type": "context",
+      "question": "前漢の武帝が設置した、儒学の経典を教授する官職は？",
+      "answer": "五経博士",
+      "explanation": "儒学の官学化に関わった。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-exegetical::core",
+      "knowledgeId": "ch-exegetical",
+      "type": "context",
+      "question": "後漢で発展した、経書の文字・語句の意味を解釈する学問は？",
+      "answer": "訓詁学",
+      "explanation": "儒学経典の字句を注釈する学問。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-ma-rong::core",
+      "knowledgeId": "ch-ma-rong",
+      "type": "achievement-person",
+      "question": "後漢で訓詁学を発展させた儒学者は？",
+      "answer": "馬融",
+      "explanation": "後漢の経学者で鄭玄の師として知られる。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-zheng-xuan::core",
+      "knowledgeId": "ch-zheng-xuan",
+      "type": "achievement-person",
+      "question": "後漢に経書の注釈を集大成した訓詁学者は？",
+      "answer": "鄭玄",
+      "explanation": "経書の注釈で知られる。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-kong-yingda::core",
+      "knowledgeId": "ch-kong-yingda",
+      "type": "achievement-person",
+      "question": "唐の太宗の命を受けて『五経正義』を編纂した儒学者は？",
+      "answer": "孔穎達",
+      "explanation": "唐代の経学者。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    },
+    {
+      "id": "ch-five-classics-justice::core",
+      "knowledgeId": "ch-five-classics-justice",
+      "type": "context",
+      "question": "唐の孔穎達が編纂した、五経解釈の標準を示した書物は？",
+      "answer": "五経正義",
+      "explanation": "唐代の経学書。",
+      "updatedAt": "2026-11-09T14:05:27.826Z",
+      "version": 1,
+      "deleted": false
+    }
+  ]
 }
