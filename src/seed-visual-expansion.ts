@@ -1177,6 +1177,110 @@ export const difficultyPatches: Record<string, {level: Level; why: string}> = {
   "lt-rimbaud": {
     "level": 3,
     "why": "象徴主義の詩人。"
+  },
+  "nr-rabelais": {
+    "level": 3,
+    "why": "フランス人文主義の個別作家と長編作品の対応。"
+  },
+  "en-chinoiserie": {
+    "level": 3,
+    "why": "欧州の中国趣味という装飾用語。汎用的基礎知識より細部。"
+  },
+  "en-academie-francaise": {
+    "level": 3,
+    "why": "特定の学術団体と成立年の対応。"
+  },
+  "po-bodin": {
+    "level": 3,
+    "why": "近世主権論の『国家論』という特定思想家・著作対応。"
+  },
+  "lt-wordsworth": {
+    "level": 3,
+    "why": "イギリス・ロマン派の個別詩人と共同詩集。"
+  },
+  "lt-whitman": {
+    "level": 3,
+    "why": "アメリカ詩の個別人物と詩集。"
+  },
+  "lt-rolland": {
+    "level": 3,
+    "why": "20世紀フランス文学の長編小説と作者。"
+  },
+  "lt-orwell": {
+    "level": 3,
+    "why": "スペイン内戦に関する特定著作と作者。"
+  },
+  "ar-sanssouci": {
+    "level": 3,
+    "why": "ロココ建築の個別宮殿と建設した君主の対応。"
+  },
+  "mu-debussy": {
+    "level": 3,
+    "why": "19〜20世紀の印象主義音楽における個別作曲家。"
+  },
+  "ph-js-mill": {
+    "level": 3,
+    "why": "功利主義の質的区別と思想家の対応。"
+  },
+  "ss-ranke": {
+    "level": 3,
+    "why": "19世紀ドイツ史学・史料批判の学者名。"
+  },
+  "so-proudhon": {
+    "level": 3,
+    "why": "初期無政府主義の特定著作と人物。"
+  },
+  "so-bakunin": {
+    "level": 3,
+    "why": "第一インターナショナル内の思想対立に関わる人物名。"
+  },
+  "sc-huygens": {
+    "level": 3,
+    "why": "振り子時計・光の波動説の個別科学者。"
+  },
+  "s-pierre-curie": {
+    "level": 3,
+    "why": "キュリー夫妻を分離して人物と業績を問う細部。"
+  },
+  "s-liebig": {
+    "level": 3,
+    "why": "有機化学・農芸化学の特定学者名。"
+  },
+  "s-daimler": {
+    "level": 3,
+    "why": "自動車史の個別技術者の識別。"
+  },
+  "s-diesel": {
+    "level": 3,
+    "why": "内燃機関史の個別技術者の識別。"
+  },
+  "s-heisenberg": {
+    "level": 3,
+    "why": "量子力学史の不確定性原理の特定人物。"
+  },
+  "x-tasman": {
+    "level": 3,
+    "why": "17世紀オセアニア探検の個別航海者。"
+  },
+  "x-scott": {
+    "level": 3,
+    "why": "南極点到達競争の探検家の識別。"
+  },
+  "md-nibelungen": {
+    "level": 3,
+    "why": "中世ドイツの特定英雄叙事詩。"
+  },
+  "ro-plutarch": {
+    "level": 3,
+    "why": "帝政ローマ期のギリシア語の人物伝著者。"
+  },
+  "md-anselm": {
+    "level": 3,
+    "why": "中世スコラ学の実在論側の人物名と神の証明。"
+  },
+  "en-coffeehouse": {
+    "level": 3,
+    "why": "17〜18世紀イギリスの社交史の具体的施設区分。"
   }
 };
 
