@@ -225,12 +225,12 @@ export const visualImagePatches: Record<string, ImageAsset[]> = {
   "ar-versailles": [
     {
       "id": "verified-img-21",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama_VersaillesPalace.jpg?width=960",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panorama_VersaillesPalace.jpg",
-      "author": "ヴェルサイユ宮殿の外観、公開者によるパブリックドメイン宣言",
-      "license": "Public domain (dedicated by photographer)",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Panorama_VersaillesPalace.jpg",
-      "caption": "ヴェルサイユ宮殿。ヴェルサイユ宮殿の外観、公開者によるパブリックドメイン宣言。出典・画像ライセンス：Wikimedia Commons。"
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Front_of_the_Palace_of_Versailles.jpg?width=960",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Front_of_the_Palace_of_Versailles.jpg",
+      "author": "撮影：DiscoA340",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "caption": "ヴェルサイユ宮殿。撮影：DiscoA340。建造物・写真利用条件：Wikimedia Commons。"
     }
   ],
   "he-venus-milo": [
@@ -276,7 +276,7 @@ export const visualCards: Card[] = [
     "answer": "モナ＝リザ",
     "explanation": "モナ＝リザ。ルーヴル美術館所蔵。元画像：Musée du Louvre。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-1",
-    "fallbackPrompt": "レオナルド＝ダ＝ヴィンチが制作した「モナ＝リザ」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "レオナルド＝ダ＝ヴィンチが描いた、ルーヴル美術館所蔵の有名な女性肖像画は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -302,7 +302,7 @@ export const visualCards: Card[] = [
     "answer": "最後の晩餐",
     "explanation": "最後の晩餐。サンタ＝マリア＝デッレ＝グラツィエ修道院の壁画。複製写真：Paris Orlando。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-2",
-    "fallbackPrompt": "レオナルド＝ダ＝ヴィンチが制作した「最後の晩餐」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "レオナルド＝ダ＝ヴィンチがミラノの修道院の食堂に描いた壁画は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -328,7 +328,7 @@ export const visualCards: Card[] = [
     "answer": "最後の審判",
     "explanation": "最後の審判。システィナ礼拝堂祭壇壁面の壁画。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-3",
-    "fallbackPrompt": "ミケランジェロが制作した「最後の審判」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "ミケランジェロがシスティナ礼拝堂の祭壇壁面に描いた大作は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -354,7 +354,7 @@ export const visualCards: Card[] = [
     "answer": "アダムの創造",
     "explanation": "アダムの創造。システィナ礼拝堂天井画の一部。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-4",
-    "fallbackPrompt": "ミケランジェロが制作した「アダムの創造」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "ミケランジェロの天井画で神と最初の人間の指先が接近する場面の題名は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -380,7 +380,7 @@ export const visualCards: Card[] = [
     "answer": "春（プリマヴェーラ）",
     "explanation": "春（プリマヴェーラ）。ウフィツィ美術館所蔵。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-5",
-    "fallbackPrompt": "ボッティチェリが制作した「春（プリマヴェーラ）」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "ボッティチェリが描いた、ヴィーナスと春の神々を配したウフィツィ美術館の作品は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -406,7 +406,7 @@ export const visualCards: Card[] = [
     "answer": "アルノルフィーニ夫妻像",
     "explanation": "アルノルフィーニ夫妻像。ロンドン・ナショナル・ギャラリー所蔵。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-6",
-    "fallbackPrompt": "ヤン＝ファン＝エイクが制作した「アルノルフィーニ夫妻像」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "ファン＝エイクが1434年に鏡のある室内で男女を描いた絵は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -432,7 +432,7 @@ export const visualCards: Card[] = [
     "answer": "大使たち",
     "explanation": "大使たち。ロンドン・ナショナル・ギャラリー所蔵。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-7",
-    "fallbackPrompt": "ハンス＝ホルバイン（子）が制作した「大使たち」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "ホルバインが1533年に2人の人物と歪んだ骸骨を描いた絵は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -458,7 +458,7 @@ export const visualCards: Card[] = [
     "answer": "キリスト降架（アントウェルペン大聖堂）",
     "explanation": "キリスト降架（アントウェルペン大聖堂）。アントウェルペン大聖堂の『キリスト降架』三連祭壇画の中央部分。別の同名作と区別。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-8",
-    "fallbackPrompt": "ルーベンスが制作した「キリスト降架（アントウェルペン大聖堂）」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "ルーベンスがアントウェルペンの大聖堂の祭壇に描いたキリストを十字架から降ろす場面は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -484,7 +484,7 @@ export const visualCards: Card[] = [
     "answer": "狩猟姿のチャールズ1世",
     "explanation": "狩猟姿のチャールズ1世。ルーヴル美術館所蔵、所蔵品番号INV 1236。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-9",
-    "fallbackPrompt": "ファン＝ダイクが制作した「狩猟姿のチャールズ1世」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "ファン＝ダイクが狩りをするイングランド王を描いた肖像画は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -510,7 +510,7 @@ export const visualCards: Card[] = [
     "answer": "ラス＝メニーナス（女官たち）",
     "explanation": "ラス＝メニーナス（女官たち）。プラド美術館所蔵。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-10",
-    "fallbackPrompt": "ベラスケスが制作した「ラス＝メニーナス（女官たち）」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "ベラスケスがスペイン王宮の王女や侍女を描いた代表作は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -536,7 +536,7 @@ export const visualCards: Card[] = [
     "answer": "乞食の少年",
     "explanation": "乞食の少年。ルーヴル美術館所蔵。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-11",
-    "fallbackPrompt": "ムリーリョが制作した「乞食の少年」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "ムリーリョが街角の貧しい少年を描いた風俗画は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -562,7 +562,7 @@ export const visualCards: Card[] = [
     "answer": "ナポレオン1世の戴冠式",
     "explanation": "ナポレオン1世の戴冠式。ルーヴル美術館所蔵の原作。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-12",
-    "fallbackPrompt": "ダヴィドが制作した「ナポレオン1世の戴冠式」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "ダヴィドがナポレオン1世と皇妃の儀式を描いた大作の題名は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -588,7 +588,7 @@ export const visualCards: Card[] = [
     "answer": "石割り",
     "explanation": "石割り。1849年頃の作品。1945年のドレスデン爆撃で失われた原画の複製画像。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-13",
-    "fallbackPrompt": "クールベが制作した「石割り」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "クールベが道路工事をする労働者の姿を描いた作品は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -614,7 +614,7 @@ export const visualCards: Card[] = [
     "answer": "草上の昼食",
     "explanation": "草上の昼食。オルセー美術館所蔵。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-14",
-    "fallbackPrompt": "マネが制作した「草上の昼食」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "マネが森の草地で過ごす男女を描いた1863年の作品は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -640,7 +640,7 @@ export const visualCards: Card[] = [
     "answer": "ムーラン＝ド＝ラ＝ギャレット",
     "explanation": "ムーラン＝ド＝ラ＝ギャレット。オルセー美術館所蔵、1876年の絵画。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-15",
-    "fallbackPrompt": "ルノワールが制作した「ムーラン＝ド＝ラ＝ギャレット」と同じ作品を表す日本語名は？",
+    "fallbackPrompt": "ルノワールがモンマルトルの屋外ダンス場のにぎわいを描いた絵は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -666,7 +666,7 @@ export const visualCards: Card[] = [
     "answer": "コロッセウム",
     "explanation": "コロッセウム。撮影：Minimum-herb。ローマのフラウィウス円形闘技場。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-16",
-    "fallbackPrompt": "この写真の対象は「コロッセウム」として知られる。建築物の名称を答えよ。",
+    "fallbackPrompt": "ローマの剣闘士競技などに用いられた巨大な円形闘技場は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -679,7 +679,7 @@ export const visualCards: Card[] = [
     "answer": "パンテオン",
     "explanation": "パンテオン。撮影：Uhooep。古代ローマのパンテオン内陣。パルテノン神殿と異なる。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-17",
-    "fallbackPrompt": "この写真の対象は「パンテオン」として知られる。建築物の名称を答えよ。",
+    "fallbackPrompt": "ローマに現存する巨大なドームと円形の天窓を持つ神殿は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -692,7 +692,7 @@ export const visualCards: Card[] = [
     "answer": "ノートルダム大聖堂（パリ）",
     "explanation": "ノートルダム大聖堂（パリ）。撮影：Yair Haklai。パリのシテ島のゴシック大聖堂の西正面。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-18",
-    "fallbackPrompt": "この写真の対象は「ノートルダム大聖堂（パリ）」として知られる。建築物の名称を答えよ。",
+    "fallbackPrompt": "パリのシテ島にある代表的なゴシック大聖堂は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -718,7 +718,7 @@ export const visualCards: Card[] = [
     "answer": "シャルトル大聖堂",
     "explanation": "シャルトル大聖堂。撮影：Cdiguet。フランス・シャルトルの大聖堂西正面。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-19",
-    "fallbackPrompt": "この写真の対象は「シャルトル大聖堂」として知られる。建築物の名称を答えよ。",
+    "fallbackPrompt": "ステンドグラスで有名なフランスのゴシック大聖堂は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -744,7 +744,7 @@ export const visualCards: Card[] = [
     "answer": "フィレンツェ大聖堂のドーム",
     "explanation": "フィレンツェ大聖堂のドーム。撮影：Thomas Roessler。フィレンツェ大聖堂の大ドーム。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-20",
-    "fallbackPrompt": "この写真の対象は「フィレンツェ大聖堂のドーム」として知られる。建築物の名称を答えよ。",
+    "fallbackPrompt": "ブルネレスキが設計したフィレンツェの大聖堂の特徴的な建築部分は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -770,7 +770,7 @@ export const visualCards: Card[] = [
     "answer": "ヴェルサイユ宮殿",
     "explanation": "ヴェルサイユ宮殿。ヴェルサイユ宮殿の外観、公開者によるパブリックドメイン宣言。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-21",
-    "fallbackPrompt": "この写真の対象は「ヴェルサイユ宮殿」として知られる。建築物の名称を答えよ。",
+    "fallbackPrompt": "ルイ14世の王権を象徴したパリ郊外の壮麗な宮殿は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -783,7 +783,7 @@ export const visualCards: Card[] = [
     "answer": "ミロのヴィーナス",
     "explanation": "ミロのヴィーナス。撮影：Yair Haklai。ルーヴル美術館所蔵。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-22",
-    "fallbackPrompt": "ルーヴル／ヴァチカンに伝わる「ミロのヴィーナス」という彫刻の名称を答えよ。",
+    "fallbackPrompt": "ミロ島で発見された、腕を欠く女性の大理石像は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -796,7 +796,7 @@ export const visualCards: Card[] = [
     "answer": "ラオコーン群像",
     "explanation": "ラオコーン群像。撮影：Vitold Muratov。ヴァチカン美術館の彫刻。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-23",
-    "fallbackPrompt": "ルーヴル／ヴァチカンに伝わる「ラオコーン群像」という彫刻の名称を答えよ。",
+    "fallbackPrompt": "蛇に巻かれた神官と息子たちを表す古代彫刻群は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -809,7 +809,7 @@ export const visualCards: Card[] = [
     "answer": "サモトラケのニケ",
     "explanation": "サモトラケのニケ。撮影：Shonagon。ルーヴル美術館所蔵、CC0指定。画像の特定・撮影条件・出典は項目内の画像リンクを参照。",
     "imageId": "verified-img-24",
-    "fallbackPrompt": "ルーヴル／ヴァチカンに伝わる「サモトラケのニケ」という彫刻の名称を答えよ。",
+    "fallbackPrompt": "サモトラケ島で発見された翼を持つ勝利の女神の大理石像は？",
     "updatedAt": "2026-11-09T10:11:32.471Z",
     "version": 1,
     "deleted": false
@@ -1185,9 +1185,14 @@ export function applyVisualPatches(items: KnowledgeItem[]): KnowledgeItem[] {
     const images = visualImagePatches[item.id] ?? [];
     const difficulty = difficultyPatches[item.id];
     if (!images.length && (!difficulty || difficulty.level === item.level)) return item;
+    const officialRecords: Record<string, {title:string;url:string}[]> = {
+      'rn-leonardo': [{title:'ルーヴル美術館：モナ＝リザ',url:'https://collections.louvre.fr/en/ark:/53355/cl010062370'}],
+      'rn-michelangelo': [{title:'ヴァチカン美術館：最後の審判',url:'https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/cappella-sistina/giudizio-universale.html'}],
+      'rn-botticelli': [{title:'ウフィツィ美術館：春（プリマヴェーラ）',url:'https://www.uffizi.it/en/artworks/botticelli-spring'}],
+    };
     const updatedSources = images.map(asset => ({title: 'Wikimedia Commons：' + asset.caption.split('。')[0], url: asset.sourceUrl, note: '画像の作品名・作者または建築物、原資料とライセンスをファイルページで確認。'}));
     return {...item,
-      images: [...item.images, ...images], sources: [...item.sources, ...updatedSources],
+      images: [...item.images, ...images], sources: [...item.sources, ...updatedSources, ...(officialRecords[item.id] ?? [])],
       ...(difficulty && difficulty.level !== item.level ? {level: difficulty.level} : {}),
       difficultyEvidence: difficulty ? '暫定Lv.' + difficulty.level + '：' + difficulty.why + ' 2026年度大学別過去問での網羅的照合は未了。' : item.difficultyEvidence,
       version: item.version + 1, updatedAt: expansionUpdatedAt,
