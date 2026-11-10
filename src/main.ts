@@ -123,6 +123,7 @@ function nav() {
   return links.map(([v,t,i])=>`<button class="nav-item ${view===v || (v==='setup' && view==='study')||(v==='home'&&['compare','graph'].includes(view))?'active':''}" data-nav="${v}" ${view===v?'aria-current="page"':''}>${icon(i)}<span>${t}</span></button>`).join('');
 }
 function render() {
+  const regionalSearch=view==='maps'&&document.activeElement instanceof HTMLInputElement&&document.activeElement.id==='map-region-search'?{value:document.activeElement.value,start:document.activeElement.selectionStart,end:document.activeElement.selectionEnd}:null;
   if(view==='maps'&&mapRoute!==mapFeature.currentPage()){mapRoute=mapFeature.currentPage();rememberRoute();}
   if(view==='ambiguous'&&ambiguousRoute!==ambiguousFeature.currentRoute()){ambiguousRoute=ambiguousFeature.currentRoute();rememberRoute();}
   if(view==='years'){
@@ -136,6 +137,7 @@ function render() {
   ${view!=='portal'?`<div class="area-location"><button class="text-button" data-nav="portal">‹ 総合ホームに戻る</button><span class="area-badge">${view==='maps'?'地図エリア':view==='settings'?'共通設定':['calendar','mastery'].includes(view)?'共通の学習管理':label+'エリア'}</span></div>`:''}
   <main id="main" tabindex="-1">${causeFeature.html()}${content}</main><footer class="page-footer"><span>世界史学習マスター</span><span>${navigator.onLine?'学習記録は端末内に保存':'オフライン · 保存済み教材で学習'}</span></footer></div>${inArea?`<nav class="mobile-nav ${area==='ambiguous'?'ambiguous-nav':''}" aria-label="${label}メニュー">${nav()}</nav>`:''}<dialog id="image-dialog"><button class="icon-button dialog-close" aria-label="画像を閉じる" data-action="close-image">${icon('close')}</button><div id="image-dialog-content"></div></dialog>`;
   bind();
+  if(regionalSearch){const input=document.querySelector<HTMLInputElement>('#map-region-search');if(input){input.value=regionalSearch.value;input.focus({preventScroll:true});if(regionalSearch.start!==null)input.setSelectionRange(regionalSearch.start,regionalSearch.end);}}
 }
 function portal(){
   const progress=getProgress(state.events);
@@ -503,7 +505,7 @@ async function boot(){
     const requestedYear=location.hash.match(/^#\/years\/(ordering|timeline)$/)?.[1] as YearPage|undefined;
     const requestedInsight=location.hash.match(/^#\/(calendar|mastery)$/)?.[1] as View|undefined;
     const requestedAmbiguous=location.hash.match(/^#\/ambiguous\/(.+)$/)?.[1];
-    const requestedMap=location.hash.match(/^#\/maps\/(map|quiz|review|admin|data)$/)?.[1] as MapPage|undefined;
+    const requestedMap=location.hash.match(/^#\/maps\/(map|region|quiz|review|admin|data)$/)?.[1] as MapPage|undefined;
     if(requestedMap){mapRoute=requestedMap;mapFeature.navigate(mapRoute);}
     view=requestedMap?'maps':requestedAmbiguous?'ambiguous':requestedInsight??(requestedYear?'years':requested??'portal');area=requestedMap?null:requestedAmbiguous?'ambiguous':requestedInsight?null:requestedYear?'years':requested?'culture':null;
     if(requestedAmbiguous){ambiguousFeature.navigate(requestedAmbiguous);ambiguousRoute=ambiguousFeature.currentRoute();}
