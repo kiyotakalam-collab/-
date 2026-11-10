@@ -169,6 +169,23 @@ test('日次推薦は同日固定で続けられ、同じカードへの通常�
   await page.reload();await enterCulture(page);await expect(page.locator('#daily-recommendations')).toContainText(`${completed} / 20`);expect((await snapshot(page)).plans[0].cardIds).toEqual(plan.cardIds);
 });
 
+test('関連図を検索せず一覧から切り替えられ、閲覧で履歴が変わらない',async({page,context})=>{
+  await endpoints(context); await boot(page); await openGraph(page);
+  const before = await snapshot(page);
+  const picker = page.getByLabel(/^関連図のある項目から選ぶ/);
+  const ids = [...new Set(relations.relations.flatMap(relation => [relation.fromId,relation.toId]))];
+  await expect(picker.locator('option:not([disabled])')).toHaveCount(ids.length);
+  for (const id of ['ch-zhu-xi','gr-plato']) {
+    await picker.selectOption(id);
+    const item = catalog.items.find(item => item.id === id)!;
+    await expect(page.getByRole('heading',{name:`選択中：${item.canonicalName}`,exact:true})).toBeVisible();
+    await expect(page.locator('.graph-node.is-center')).toHaveAttribute('data-graph-node',id);
+    await expect(picker).toHaveValue(id);
+  }
+  const after = await snapshot(page);
+  expect(after.events).toEqual(before.events); expect(after.comparisons).toEqual(before.comparisons);
+});
+
 test('関連図の向き・1段階と2段階・一覧・詳細・既存演習への導線を操作できる',async({page,context})=>{
   await endpoints(context);await boot(page);const before=await snapshot(page);await openGraph(page,'ch-zhu-xi');
   const one=buildCultureGraph(catalog,relations.relations,'ch-zhu-xi',1,12),two=buildCultureGraph(catalog,relations.relations,'ch-zhu-xi',2,12);
