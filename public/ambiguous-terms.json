@@ -532,7 +532,7 @@
       "sources": [
         {
           "title": "山川世界史小辞典・各露清国境条約（コトバンク）",
-          "url": "https://kotobank.jp/word/ネルチンスク条約-3162850",
+          "url": "https://kotobank.jp/word/ねるちんすく条約-3162850",
           "note": "1689年ネルチンスク・露清国境の基本比較"
         },
         {
@@ -612,6 +612,11 @@
       "verification": "verified",
       "sources": [
         {
+          "title": "Historist・山川世界史小辞典『北京条約』",
+          "url": "https://www.historist.jp/word_w_he/entry/045312/",
+          "note": "英仏との講和・ロシアへの沿海州割譲"
+        },
+        {
           "title": "マナペディア『欧米の中国侵略・条約のまとめ』",
           "url": "https://manapedia.jp/text/2326",
           "note": "南京・虎門寨・天津・北京条約の内容"
@@ -643,6 +648,11 @@
       "deleted": false,
       "verification": "verified",
       "sources": [
+        {
+          "title": "山川世界史小辞典『イリ条約』",
+          "url": "https://kotobank.jp/word/いり条約-3143442",
+          "note": "1881年、イリ地方返還と境界改定"
+        },
         {
           "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
           "url": "https://manapedia.jp/text/581",
@@ -719,6 +729,11 @@
       "deleted": false,
       "verification": "verified",
       "sources": [
+        {
+          "title": "外務省外交史料館『義和団事変と賠償金』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/meiji_05.html",
+          "note": "1901年最終議定書・4億5000万両"
+        },
         {
           "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
           "url": "https://manapedia.jp/text/581",
@@ -852,6 +867,11 @@
       "verification": "verified",
       "sources": [
         {
+          "title": "コトバンク『ユトレヒト条約』",
+          "url": "https://kotobank.jp/word/ゆとれひと条約-3173999",
+          "note": "1713年スペイン継承戦争の講和"
+        },
+        {
           "title": "世界史リンク工房『18世紀の継承戦争と七年戦争』",
           "url": "https://history-link-bottega.com/archives/38547376.html",
           "note": "継承戦争・七年戦争と講和"
@@ -873,6 +893,11 @@
       "deleted": false,
       "verification": "verified",
       "sources": [
+        {
+          "title": "Historist・山川世界史小辞典『アーヘンの和約』",
+          "url": "https://www.historist.jp/word_w_a/entry/039137/",
+          "note": "1748年オーストリア継承戦争の講和"
+        },
         {
           "title": "世界史リンク工房『18世紀の継承戦争と七年戦争』",
           "url": "https://history-link-bottega.com/archives/38547376.html",
@@ -2116,6 +2141,11 @@
           "title": "マナペディア『欧米の中国侵略・条約のまとめ』",
           "url": "https://manapedia.jp/text/2326",
           "note": "南京・虎門寨・天津・北京条約の内容"
+        },
+        {
+          "title": "山川世界史小辞典『イリ条約』",
+          "url": "https://kotobank.jp/word/いり条約-3143442",
+          "note": "1881年、イリ地方返還と境界改定"
         }
       ],
       "name": "清とロシアの国境・交易条約",
@@ -2177,6 +2207,11 @@
           "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
           "url": "https://manapedia.jp/text/581",
           "note": "各条約の相手と年"
+        },
+        {
+          "title": "外務省外交史料館『義和団事変と賠償金』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/meiji_05.html",
+          "note": "1901年最終議定書・4億5000万両"
         }
       ],
       "name": "清と列強の不平等条約の段階",
@@ -2349,6 +2384,16 @@
           "title": "山川世界史小辞典『パリ条約』",
           "url": "https://kotobank.jp/word/ぱり条約-3164978",
           "note": "1763年・1783年・1814年の同名条約"
+        },
+        {
+          "title": "コトバンク『ユトレヒト条約』",
+          "url": "https://kotobank.jp/word/ゆとれひと条約-3173999",
+          "note": "1713年スペイン継承戦争の講和"
+        },
+        {
+          "title": "Historist・山川世界史小辞典『アーヘンの和約』",
+          "url": "https://www.historist.jp/word_w_a/entry/039137/",
+          "note": "1748年オーストリア継承戦争の講和"
         }
       ],
       "name": "18世紀の欧州戦争と講和条約",
@@ -4647,6 +4692,11 @@
           "title": "マナペディア『欧米の中国侵略・条約のまとめ』",
           "url": "https://manapedia.jp/text/2326",
           "note": "南京・虎門寨・天津・北京条約の内容"
+        },
+        {
+          "title": "山川世界史小辞典『イリ条約』",
+          "url": "https://kotobank.jp/word/いり条約-3143442",
+          "note": "1881年、イリ地方返還と境界改定"
         }
       ],
       "kind": "identify",
@@ -4718,6 +4768,11 @@
               "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
               "url": "https://manapedia.jp/text/581",
               "note": "ネルチンスク・キャフタ・アイグン・北京・イリの条約と年"
+            },
+            {
+              "title": "Historist・山川世界史小辞典『北京条約』",
+              "url": "https://www.historist.jp/word_w_he/entry/045312/",
+              "note": "英仏との講和・ロシアへの沿海州割譲"
             }
           ],
           "verification": "verified"
@@ -4750,6 +4805,11 @@
           "title": "マナペディア『欧米の中国侵略・条約のまとめ』",
           "url": "https://manapedia.jp/text/2326",
           "note": "南京・虎門寨・天津・北京条約の内容"
+        },
+        {
+          "title": "山川世界史小辞典『イリ条約』",
+          "url": "https://kotobank.jp/word/いり条約-3143442",
+          "note": "1881年、イリ地方返還と境界改定"
         }
       ],
       "kind": "identify",
@@ -4775,7 +4835,7 @@
           "sources": [
             {
               "title": "山川世界史小辞典・各露清国境条約（コトバンク）",
-              "url": "https://kotobank.jp/word/ネルチンスク条約-3162850",
+              "url": "https://kotobank.jp/word/ねるちんすく条約-3162850",
               "note": "1689年ネルチンスク・露清国境の基本比較"
             },
             {
@@ -4821,6 +4881,11 @@
               "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
               "url": "https://manapedia.jp/text/581",
               "note": "ネルチンスク・キャフタ・アイグン・北京・イリの条約と年"
+            },
+            {
+              "title": "Historist・山川世界史小辞典『北京条約』",
+              "url": "https://www.historist.jp/word_w_he/entry/045312/",
+              "note": "英仏との講和・ロシアへの沿海州割譲"
             }
           ],
           "verification": "verified"
@@ -4853,6 +4918,11 @@
           "title": "マナペディア『欧米の中国侵略・条約のまとめ』",
           "url": "https://manapedia.jp/text/2326",
           "note": "南京・虎門寨・天津・北京条約の内容"
+        },
+        {
+          "title": "山川世界史小辞典『イリ条約』",
+          "url": "https://kotobank.jp/word/いり条約-3143442",
+          "note": "1881年、イリ地方返還と境界改定"
         }
       ],
       "kind": "identify",
@@ -4878,7 +4948,7 @@
           "sources": [
             {
               "title": "山川世界史小辞典・各露清国境条約（コトバンク）",
-              "url": "https://kotobank.jp/word/ネルチンスク条約-3162850",
+              "url": "https://kotobank.jp/word/ねるちんすく条約-3162850",
               "note": "1689年ネルチンスク・露清国境の基本比較"
             },
             {
@@ -4924,6 +4994,11 @@
               "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
               "url": "https://manapedia.jp/text/581",
               "note": "ネルチンスク・キャフタ・アイグン・北京・イリの条約と年"
+            },
+            {
+              "title": "Historist・山川世界史小辞典『北京条約』",
+              "url": "https://www.historist.jp/word_w_he/entry/045312/",
+              "note": "英仏との講和・ロシアへの沿海州割譲"
             }
           ],
           "verification": "verified"
@@ -4956,6 +5031,11 @@
           "title": "マナペディア『欧米の中国侵略・条約のまとめ』",
           "url": "https://manapedia.jp/text/2326",
           "note": "南京・虎門寨・天津・北京条約の内容"
+        },
+        {
+          "title": "山川世界史小辞典『イリ条約』",
+          "url": "https://kotobank.jp/word/いり条約-3143442",
+          "note": "1881年、イリ地方返還と境界改定"
         }
       ],
       "kind": "identify",
@@ -4981,7 +5061,7 @@
           "sources": [
             {
               "title": "山川世界史小辞典・各露清国境条約（コトバンク）",
-              "url": "https://kotobank.jp/word/ネルチンスク条約-3162850",
+              "url": "https://kotobank.jp/word/ねるちんすく条約-3162850",
               "note": "1689年ネルチンスク・露清国境の基本比較"
             },
             {
@@ -5054,6 +5134,11 @@
           "title": "マナペディア『欧米の中国侵略・条約のまとめ』",
           "url": "https://manapedia.jp/text/2326",
           "note": "南京・虎門寨・天津・北京条約の内容"
+        },
+        {
+          "title": "山川世界史小辞典『イリ条約』",
+          "url": "https://kotobank.jp/word/いり条約-3143442",
+          "note": "1881年、イリ地方返還と境界改定"
         }
       ],
       "kind": "identify",
@@ -5079,7 +5164,7 @@
           "sources": [
             {
               "title": "山川世界史小辞典・各露清国境条約（コトバンク）",
-              "url": "https://kotobank.jp/word/ネルチンスク条約-3162850",
+              "url": "https://kotobank.jp/word/ねるちんすく条約-3162850",
               "note": "1689年ネルチンスク・露清国境の基本比較"
             },
             {
@@ -5152,6 +5237,11 @@
           "title": "マナペディア『欧米の中国侵略・条約のまとめ』",
           "url": "https://manapedia.jp/text/2326",
           "note": "南京・虎門寨・天津・北京条約の内容"
+        },
+        {
+          "title": "山川世界史小辞典『イリ条約』",
+          "url": "https://kotobank.jp/word/いり条約-3143442",
+          "note": "1881年、イリ地方返還と境界改定"
         }
       ],
       "kind": "compare",
@@ -5187,6 +5277,11 @@
           "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
           "url": "https://manapedia.jp/text/581",
           "note": "各条約の相手と年"
+        },
+        {
+          "title": "外務省外交史料館『義和団事変と賠償金』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/meiji_05.html",
+          "note": "1901年最終議定書・4億5000万両"
         }
       ],
       "kind": "identify",
@@ -5248,6 +5343,11 @@
               "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
               "url": "https://manapedia.jp/text/581",
               "note": "ネルチンスク・キャフタ・アイグン・北京・イリの条約と年"
+            },
+            {
+              "title": "Historist・山川世界史小辞典『北京条約』",
+              "url": "https://www.historist.jp/word_w_he/entry/045312/",
+              "note": "英仏との講和・ロシアへの沿海州割譲"
             }
           ],
           "verification": "verified"
@@ -5270,6 +5370,11 @@
           "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
           "url": "https://manapedia.jp/text/581",
           "note": "各条約の相手と年"
+        },
+        {
+          "title": "外務省外交史料館『義和団事変と賠償金』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/meiji_05.html",
+          "note": "1901年最終議定書・4億5000万両"
         }
       ],
       "kind": "identify",
@@ -5336,6 +5441,11 @@
               "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
               "url": "https://manapedia.jp/text/581",
               "note": "ネルチンスク・キャフタ・アイグン・北京・イリの条約と年"
+            },
+            {
+              "title": "Historist・山川世界史小辞典『北京条約』",
+              "url": "https://www.historist.jp/word_w_he/entry/045312/",
+              "note": "英仏との講和・ロシアへの沿海州割譲"
             }
           ],
           "verification": "verified"
@@ -5358,6 +5468,11 @@
           "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
           "url": "https://manapedia.jp/text/581",
           "note": "各条約の相手と年"
+        },
+        {
+          "title": "外務省外交史料館『義和団事変と賠償金』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/meiji_05.html",
+          "note": "1901年最終議定書・4億5000万両"
         }
       ],
       "kind": "identify",
@@ -5424,6 +5539,11 @@
               "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
               "url": "https://manapedia.jp/text/581",
               "note": "ネルチンスク・キャフタ・アイグン・北京・イリの条約と年"
+            },
+            {
+              "title": "Historist・山川世界史小辞典『北京条約』",
+              "url": "https://www.historist.jp/word_w_he/entry/045312/",
+              "note": "英仏との講和・ロシアへの沿海州割譲"
             }
           ],
           "verification": "verified"
@@ -5446,6 +5566,11 @@
           "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
           "url": "https://manapedia.jp/text/581",
           "note": "各条約の相手と年"
+        },
+        {
+          "title": "外務省外交史料館『義和団事変と賠償金』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/meiji_05.html",
+          "note": "1901年最終議定書・4億5000万両"
         }
       ],
       "kind": "identify",
@@ -5524,6 +5649,11 @@
           "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
           "url": "https://manapedia.jp/text/581",
           "note": "各条約の相手と年"
+        },
+        {
+          "title": "外務省外交史料館『義和団事変と賠償金』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/meiji_05.html",
+          "note": "1901年最終議定書・4億5000万両"
         }
       ],
       "kind": "identify",
@@ -5602,6 +5732,11 @@
           "title": "マナペディア『清と列強諸国が結んだ条約のまとめ』",
           "url": "https://manapedia.jp/text/581",
           "note": "各条約の相手と年"
+        },
+        {
+          "title": "外務省外交史料館『義和団事変と賠償金』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/meiji_05.html",
+          "note": "1901年最終議定書・4億5000万両"
         }
       ],
       "kind": "compare",
@@ -5986,6 +6121,16 @@
           "title": "山川世界史小辞典『パリ条約』",
           "url": "https://kotobank.jp/word/ぱり条約-3164978",
           "note": "1763年・1783年・1814年の同名条約"
+        },
+        {
+          "title": "コトバンク『ユトレヒト条約』",
+          "url": "https://kotobank.jp/word/ゆとれひと条約-3173999",
+          "note": "1713年スペイン継承戦争の講和"
+        },
+        {
+          "title": "Historist・山川世界史小辞典『アーヘンの和約』",
+          "url": "https://www.historist.jp/word_w_a/entry/039137/",
+          "note": "1748年オーストリア継承戦争の講和"
         }
       ],
       "kind": "identify",
@@ -6013,6 +6158,11 @@
               "title": "世界史リンク工房『18世紀の継承戦争と七年戦争』",
               "url": "https://history-link-bottega.com/archives/38547376.html",
               "note": "継承戦争・七年戦争と講和"
+            },
+            {
+              "title": "Historist・山川世界史小辞典『アーヘンの和約』",
+              "url": "https://www.historist.jp/word_w_a/entry/039137/",
+              "note": "1748年オーストリア継承戦争の講和"
             }
           ],
           "verification": "verified"
@@ -6074,6 +6224,16 @@
           "title": "山川世界史小辞典『パリ条約』",
           "url": "https://kotobank.jp/word/ぱり条約-3164978",
           "note": "1763年・1783年・1814年の同名条約"
+        },
+        {
+          "title": "コトバンク『ユトレヒト条約』",
+          "url": "https://kotobank.jp/word/ゆとれひと条約-3173999",
+          "note": "1713年スペイン継承戦争の講和"
+        },
+        {
+          "title": "Historist・山川世界史小辞典『アーヘンの和約』",
+          "url": "https://www.historist.jp/word_w_a/entry/039137/",
+          "note": "1748年オーストリア継承戦争の講和"
         }
       ],
       "kind": "identify",
@@ -6101,6 +6261,11 @@
               "title": "世界史リンク工房『18世紀の継承戦争と七年戦争』",
               "url": "https://history-link-bottega.com/archives/38547376.html",
               "note": "継承戦争・七年戦争と講和"
+            },
+            {
+              "title": "コトバンク『ユトレヒト条約』",
+              "url": "https://kotobank.jp/word/ゆとれひと条約-3173999",
+              "note": "1713年スペイン継承戦争の講和"
             }
           ],
           "verification": "verified"
@@ -6162,6 +6327,16 @@
           "title": "山川世界史小辞典『パリ条約』",
           "url": "https://kotobank.jp/word/ぱり条約-3164978",
           "note": "1763年・1783年・1814年の同名条約"
+        },
+        {
+          "title": "コトバンク『ユトレヒト条約』",
+          "url": "https://kotobank.jp/word/ゆとれひと条約-3173999",
+          "note": "1713年スペイン継承戦争の講和"
+        },
+        {
+          "title": "Historist・山川世界史小辞典『アーヘンの和約』",
+          "url": "https://www.historist.jp/word_w_a/entry/039137/",
+          "note": "1748年オーストリア継承戦争の講和"
         }
       ],
       "kind": "identify",
@@ -6189,6 +6364,11 @@
               "title": "世界史リンク工房『18世紀の継承戦争と七年戦争』",
               "url": "https://history-link-bottega.com/archives/38547376.html",
               "note": "継承戦争・七年戦争と講和"
+            },
+            {
+              "title": "コトバンク『ユトレヒト条約』",
+              "url": "https://kotobank.jp/word/ゆとれひと条約-3173999",
+              "note": "1713年スペイン継承戦争の講和"
             }
           ],
           "verification": "verified"
@@ -6201,6 +6381,11 @@
               "title": "世界史リンク工房『18世紀の継承戦争と七年戦争』",
               "url": "https://history-link-bottega.com/archives/38547376.html",
               "note": "継承戦争・七年戦争と講和"
+            },
+            {
+              "title": "Historist・山川世界史小辞典『アーヘンの和約』",
+              "url": "https://www.historist.jp/word_w_a/entry/039137/",
+              "note": "1748年オーストリア継承戦争の講和"
             }
           ],
           "verification": "verified"
@@ -6245,6 +6430,16 @@
           "title": "山川世界史小辞典『パリ条約』",
           "url": "https://kotobank.jp/word/ぱり条約-3164978",
           "note": "1763年・1783年・1814年の同名条約"
+        },
+        {
+          "title": "コトバンク『ユトレヒト条約』",
+          "url": "https://kotobank.jp/word/ゆとれひと条約-3173999",
+          "note": "1713年スペイン継承戦争の講和"
+        },
+        {
+          "title": "Historist・山川世界史小辞典『アーヘンの和約』",
+          "url": "https://www.historist.jp/word_w_a/entry/039137/",
+          "note": "1748年オーストリア継承戦争の講和"
         }
       ],
       "kind": "identify",
@@ -6272,6 +6467,11 @@
               "title": "世界史リンク工房『18世紀の継承戦争と七年戦争』",
               "url": "https://history-link-bottega.com/archives/38547376.html",
               "note": "継承戦争・七年戦争と講和"
+            },
+            {
+              "title": "コトバンク『ユトレヒト条約』",
+              "url": "https://kotobank.jp/word/ゆとれひと条約-3173999",
+              "note": "1713年スペイン継承戦争の講和"
             }
           ],
           "verification": "verified"
@@ -6284,6 +6484,11 @@
               "title": "世界史リンク工房『18世紀の継承戦争と七年戦争』",
               "url": "https://history-link-bottega.com/archives/38547376.html",
               "note": "継承戦争・七年戦争と講和"
+            },
+            {
+              "title": "Historist・山川世界史小辞典『アーヘンの和約』",
+              "url": "https://www.historist.jp/word_w_a/entry/039137/",
+              "note": "1748年オーストリア継承戦争の講和"
             }
           ],
           "verification": "verified"
@@ -6328,6 +6533,16 @@
           "title": "山川世界史小辞典『パリ条約』",
           "url": "https://kotobank.jp/word/ぱり条約-3164978",
           "note": "1763年・1783年・1814年の同名条約"
+        },
+        {
+          "title": "コトバンク『ユトレヒト条約』",
+          "url": "https://kotobank.jp/word/ゆとれひと条約-3173999",
+          "note": "1713年スペイン継承戦争の講和"
+        },
+        {
+          "title": "Historist・山川世界史小辞典『アーヘンの和約』",
+          "url": "https://www.historist.jp/word_w_a/entry/039137/",
+          "note": "1748年オーストリア継承戦争の講和"
         }
       ],
       "kind": "compare",
