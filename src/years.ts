@@ -1,4 +1,5 @@
 /** Separate year-quiz data and history. The culture database and its cards are never modified. */
+import { correctOrdering, orderingKey, validateOrderingReview, type OrderingReview } from './year-chronology';
 export type YearDirection = 'event-year' | 'year-event';
 export type YearStudyMode = 'all' | 'unseen' | 'mistakes' | 'due' | 'weak';
 export type YearLevel = 1 | 2 | 3 | 4;
@@ -31,6 +32,7 @@ export interface YearSnapshot {
   catalog: YearCatalog;
   events: YearReview[];
   lastSyncAt: string | null;
+  orderingEvents: OrderingReview[];
 }
 export interface YearQuestion {
   id: string;
@@ -164,7 +166,7 @@ export class YearDB {
   constructor(private database:IDBDatabase){}
   close(){this.database.close();}
   private req<T>(req:IDBRequest<T>):Promise<T> {return new Promise((resolve,reject)=>{req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error||Error('年号データを保存できません。'));});}
-  private tx(mode:IDBTransactionMode){return this.database.transaction(['meta','reviews'],mode);}
+  private tx(mode:IDBTransactionMode){return this.database.transaction(['meta','reviews','orderingReviews'],mode);}
   private async write<T>(action:(transaction:IDBTransaction)=>Promise<T>):Promise<T>{
     const transaction=this.tx('readwrite');
     const completion=new Promise<void>((resolve,reject)=>{
@@ -177,8 +179,8 @@ export class YearDB {
   }
   async load():Promise<YearSnapshot>{
     const t=this.tx('readonly');
-    const [c,e,at]=await Promise.all([this.req<YearCatalog|undefined>(t.objectStore('meta').get('catalog')),this.req<YearReview[]>(t.objectStore('reviews').getAll()),this.req<string|null|undefined>(t.objectStore('meta').get('lastSyncAt'))]);
-    return {catalog:c??structuredClone(EMPTY_YEARS),events:e,lastSyncAt:at??null};
+    const [c,e,at,orderingEvents]=await Promise.all([this.req<YearCatalog|undefined>(t.objectStore('meta').get('catalog')),this.req<YearReview[]>(t.objectStore('reviews').getAll()),this.req<string|null|undefined>(t.objectStore('meta').get('lastSyncAt')),this.req<OrderingReview[]>(t.objectStore('orderingReviews').getAll())]);
+    return {catalog:c??structuredClone(EMPTY_YEARS),events:e,lastSyncAt:at??null,orderingEvents};
   }
   async applyCatalog(input:YearCatalog):Promise<void>{
     const incoming=validateYearCatalog(input);
@@ -206,11 +208,27 @@ export class YearDB {
   }
   async exportBackup():Promise<string>{
     const state=await this.load();
-    return JSON.stringify({format:'world-history-years',schemaVersion:1,exportedAt:new Date().toISOString(),...state},null,2);
+    return JSON.stringify({format:'world-history-years',schemaVersion:2,exportedAt:new Date().toISOString(),...state},null,2);
+  }
+  async addOrderingReview(id:string, itemIds:string[], submittedIds:string[], sessionId:string):Promise<void>{
+    await this.write(async t=>{
+      const catalog=await this.req<YearCatalog|undefined>(t.objectStore('meta').get('catalog'));
+      const byId=new Map(catalog?.items.filter(item=>!item.deleted).map(item=>[item.id,item]));
+      const items=itemIds.map(itemId=>byId.get(itemId));
+      if(items.some(item=>!item))throw Error('整序に使用する教材を確認できません。');
+      const correctOrderIds=correctOrdering(items as YearItem[]);
+      const latest=await this.req<string|undefined>(t.objectStore('meta').get('lastOrderingAt'));
+      const at=new Date(Math.max(Date.now(),latest?Date.parse(latest)+1:0)).toISOString();
+      const review=validateOrderingReview({id,questionId:orderingKey(itemIds),itemIds:[...itemIds].sort(),submittedIds,correctOrderIds,correct:submittedIds.every((value,i)=>value===correctOrderIds[i]),sessionId,at});
+      const store=t.objectStore('orderingReviews'),old=await this.req<OrderingReview|undefined>(store.get(id));
+      if(old){if(old.questionId!==review.questionId||old.sessionId!==sessionId||JSON.stringify(old.submittedIds)!==JSON.stringify(submittedIds))throw Error('整序履歴が競合しています。');return;}
+      await this.req(store.add(review));
+      await this.req(t.objectStore('meta').put(at,'lastOrderingAt'));
+    });
   }
   async restoreBackup(text:string):Promise<void>{
     const parsed:unknown=JSON.parse(text);
-    if(!isRecord(parsed)||parsed.format!=='world-history-years'||parsed.schemaVersion!==1||!Array.isArray(parsed.events)||parsed.events.length>1000000)throw Error('年号テストのバックアップではありません。');
+    if(!isRecord(parsed)||parsed.format!=='world-history-years'||(parsed.schemaVersion!==1&&parsed.schemaVersion!==2)||!Array.isArray(parsed.events)||parsed.events.length>1000000)throw Error('年号テストのバックアップではありません。');
     const catalog=validateYearCatalog(parsed.catalog);
     const itemIds=new Set(catalog.items.map(item=>item.id)),eventIds=new Set<string>();
     const events:YearReview[]=parsed.events.map((v:unknown)=>{
@@ -219,6 +237,10 @@ export class YearDB {
       eventIds.add(v.id as string);
       return {id:v.id as string,questionId:v.questionId,correct:v.correct,at:v.at as string,sessionId:v.sessionId as string};
     });
+    const orderingInput=parsed.schemaVersion===1?[]:parsed.orderingEvents;
+    if(!Array.isArray(orderingInput)||orderingInput.length>1000000)throw Error('整序履歴が不正です。');
+    const orderingEvents=orderingInput.map(validateOrderingReview), orderingIds=new Set<string>();
+    for(const event of orderingEvents){if(orderingIds.has(event.id)||event.itemIds.some(id=>!itemIds.has(id)))throw Error('整序履歴の参照先またはIDが不正です。');orderingIds.add(event.id);}
     // Merge imported records; never reset counts by overwriting reviews.
     await this.write(async t=>{
       const meta=t.objectStore('meta'),reviews=t.objectStore('reviews');
@@ -234,6 +256,15 @@ export class YearDB {
         if(!latest||Date.parse(event.at)>Date.parse(latest))latest=event.at;
       }
       if(latest)await this.req(meta.put(latest,'lastReviewAt'));
+      const ordering=t.objectStore('orderingReviews');
+      let lastOrdering=await this.req<string|undefined>(meta.get('lastOrderingAt'));
+      for(const event of orderingEvents){
+        const existing=await this.req<OrderingReview|undefined>(ordering.get(event.id));
+        if(!existing)await this.req(ordering.add(event));
+        else if(JSON.stringify(existing)!==JSON.stringify(event))throw Error('整序履歴が競合しています。');
+        if(!lastOrdering||event.at>lastOrdering)lastOrdering=event.at;
+      }
+      if(lastOrdering)await this.req(meta.put(lastOrdering,'lastOrderingAt'));
     });
   }
 }
@@ -244,11 +275,12 @@ function questionItemId(value:string):string{
 }
 export function openYearDatabase(name=DB_NAME):Promise<YearDB>{
   return new Promise((resolve,reject)=>{
-    const req=indexedDB.open(name,1);
+    const req=indexedDB.open(name,2);
     req.onupgradeneeded=()=>{
       const d=req.result;
       if(!d.objectStoreNames.contains('meta'))d.createObjectStore('meta');
       if(!d.objectStoreNames.contains('reviews'))d.createObjectStore('reviews',{keyPath:'id'});
+      if(!d.objectStoreNames.contains('orderingReviews'))d.createObjectStore('orderingReviews',{keyPath:'id'});
     };
     req.onsuccess=()=>{req.result.onversionchange=()=>req.result.close();resolve(new YearDB(req.result));};
     req.onerror=()=>reject(req.error||Error('年号テストの保存領域を開けません。'));
