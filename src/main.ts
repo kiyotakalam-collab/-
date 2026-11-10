@@ -503,7 +503,7 @@ async function boot(){
     const requestedYear=location.hash.match(/^#\/years\/(ordering|timeline)$/)?.[1] as YearPage|undefined;
     const requestedInsight=location.hash.match(/^#\/(calendar|mastery)$/)?.[1] as View|undefined;
     const requestedAmbiguous=location.hash.match(/^#\/ambiguous\/(.+)$/)?.[1];
-    const requestedMap=location.hash.match(/^#\/maps\/(map|quiz|review|admin|data)$/)?.[1] as MapPage|undefined;
+    const requestedMap=location.hash.match(/^#\/maps\/(map|region|quiz|review|admin|data)$/)?.[1] as MapPage|undefined;
     if(requestedMap){mapRoute=requestedMap;mapFeature.navigate(mapRoute);}
     view=requestedMap?'maps':requestedAmbiguous?'ambiguous':requestedInsight??(requestedYear?'years':requested??'portal');area=requestedMap?null:requestedAmbiguous?'ambiguous':requestedInsight?null:requestedYear?'years':requested?'culture':null;
     if(requestedAmbiguous){ambiguousFeature.navigate(requestedAmbiguous);ambiguousRoute=ambiguousFeature.currentRoute();}

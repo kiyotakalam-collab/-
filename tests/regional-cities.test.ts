@@ -1,0 +1,12 @@
+import {readFileSync} from 'node:fs';
+import {describe,it,expect} from 'vitest';
+import {validateRegionalCities,findRegionalCities} from '../src/regional-cities';
+import {activeMapQuestions,validateMapCatalog} from '../src/historical-maps';
+const read=()=>JSON.parse(readFileSync(new URL('../public/map-city-expansion-v1.json',import.meta.url),'utf8'));
+describe('regional modern-city review data',()=>{
+ it('keeps both source copies identical, all 82 stable IDs and declared regional counts',()=>{const raw=read(),c=validateRegionalCities(raw);expect(c.features).toHaveLength(82);expect(Object.fromEntries(c.regions.map(r=>[r.id,c.features.filter(f=>f.region===r.id).length]))).toEqual({'東南アジア':24,'中国・東アジア':22,'ヨーロッパ':36});expect(c).toEqual(JSON.parse(readFileSync(new URL('../data/map-city-expansion-v1.json',import.meta.url),'utf8')));expect(raw).toEqual(c);});
+ it('rejects duplicated IDs, out-of-range coordinates and unsupported historical claims',()=>{const c=read();c.features.push(c.features[0]);expect(()=>validateRegionalCities(c)).toThrow();for(const coordinates of [[181,20],[120,91],[NaN,0]]){const d=read();d.features[0].geometry.coordinates=coordinates;expect(()=>validateRegionalCities(d)).toThrow();}const d=read();d.features[0].historical_affiliations=['unverified claim'];expect(()=>validateRegionalCities(d)).toThrow();const p=read();p.features[0].source_pdf_page=[1];expect(()=>validateRegionalCities(p)).toThrow();});
+ it('validates names, source records and modern-location scope before rendering',()=>{for(const mutate of [(c:any)=>delete c.features[0].name_ja,(c:any)=>c.features[0].source_record.adm0name='wrong',(c:any)=>c.features[0].verification_status='A',(c:any)=>c.source.url='javascript:bad()']){const c=read();mutate(c);expect(()=>validateRegionalCities(c)).toThrow();}});
+ it('searches Japanese, ASCII and accented source names, including full-width input',()=>{const c=validateRegionalCities(read());for(const name of ['南京','Ｎａｎｊｉｎｇ','nanjing'])expect(findRegionalCities(c,'中国・東アジア',name).map(f=>f.name_ja)).toEqual(['南京']);expect(findRegionalCities(c,'ヨーロッパ','Zürich')[0].name_ja).toBe('チューリヒ');expect(findRegionalCities(c,'東南アジア','no-such-city')).toEqual([]);});
+ it('does not add 82 modern browsing records to historical quiz answers',()=>{const c=validateMapCatalog(JSON.parse(readFileSync(new URL('../public/historical-maps.json',import.meta.url),'utf8')));expect(activeMapQuestions(c)).toHaveLength(12);const newIds=new Set(read().features.map((f:any)=>f.id));expect(c.features.some(f=>newIds.has(f.id))).toBe(false);});
+});

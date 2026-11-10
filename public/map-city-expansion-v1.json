@@ -6,10 +6,11 @@
     "title": "Natural Earth 1:50m Populated Places (simple)",
     "url": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_populated_places_simple.geojson",
     "license": "Public domain",
-    "terms": "https://www.naturalearthdata.com/about/terms-of-use/"
+    "terms": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "file_sha256": "8e70756b39fae9bcdc1e332bfc510c024c5edd3a13203ffd20092ee37b61d978"
   },
   "notes": [
-    "Standalone candidate file: current app does not load it yet.",
+    "Read-only regional map browsing data; excluded from historical quiz answers and review histories.",
     "Only modern city centers are verified, not historical affiliations.",
     "Empty source_pdf_page means no claim of extraction from the 28-page PDF.",
     "Do not use these as historical-location quiz questions without additional verification."
@@ -1940,5 +1941,6 @@
       "name": "Shenyang",
       "matches": []
     }
-  ]
+  ],
+  "reviewed_at": "2026-11-10"
 }
