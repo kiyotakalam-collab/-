@@ -1,0 +1,1122 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "updatedAt": "2026-11-09T21:58:34.777Z",
+  "relations": [
+    {
+      "id": "rel-ch-xu-guangqi--ch-nongzheng-quanshu",
+      "fromId": "ch-xu-guangqi",
+      "toId": "ch-nongzheng-quanshu",
+      "type": "authored",
+      "description": "徐光啓は農学書『農政全書』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-xu-guangqi・ch-nongzheng-quanshu の説明、既存カードID ch-nongzheng-quanshu::core・ch-xu-guangqi::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-li-shizhen--ch-bencao-gangmu",
+      "fromId": "ch-li-shizhen",
+      "toId": "ch-bencao-gangmu",
+      "type": "authored",
+      "description": "李時珍は薬物学の総合書『本草綱目』を編纂した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-li-shizhen・ch-bencao-gangmu の説明、既存カードID ch-bencao-gangmu::core・ch-li-shizhen::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-song-yingxing--ch-tiangong-kaiwu",
+      "fromId": "ch-song-yingxing",
+      "toId": "ch-tiangong-kaiwu",
+      "type": "authored",
+      "description": "宋応星は産業技術書『天工開物』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-song-yingxing・ch-tiangong-kaiwu の説明、既存カードID ch-tiangong-kaiwu::core・ch-song-yingxing::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-cao-xueqin--ch-hongloumeng",
+      "fromId": "ch-cao-xueqin",
+      "toId": "ch-hongloumeng",
+      "type": "authored",
+      "description": "曹雪芹は清代の長編小説『紅楼夢』の作者として知られる。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-cao-xueqin・ch-hongloumeng の説明、既存カードID ch-hongloumeng::core・ch-cao-xueqin::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-wu-jingzi--ch-rulin-waishi",
+      "fromId": "ch-wu-jingzi",
+      "toId": "ch-rulin-waishi",
+      "type": "authored",
+      "description": "呉敬梓は風刺小説『儒林外史』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-wu-jingzi・ch-rulin-waishi の説明、既存カードID ch-rulin-waishi::core・ch-wu-jingzi::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-pu-songling--ch-liaozhai-zhiyi",
+      "fromId": "ch-pu-songling",
+      "toId": "ch-liaozhai-zhiyi",
+      "type": "authored",
+      "description": "蒲松齢は怪異文学『聊斎志異』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-pu-songling・ch-liaozhai-zhiyi の説明、既存カードID ch-liaozhai-zhiyi::core・ch-pu-songling::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-shi-naian--ch-shuihuzhuan",
+      "fromId": "ch-shi-naian",
+      "toId": "ch-shuihuzhuan",
+      "type": "authored",
+      "description": "施耐庵は『水滸伝』の原作者と伝えられる。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-shi-naian・ch-shuihuzhuan の説明、既存カードID ch-shi-naian::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-luo-guanzhong--ch-sanguozhiyanyi",
+      "fromId": "ch-luo-guanzhong",
+      "toId": "ch-sanguozhiyanyi",
+      "type": "authored",
+      "description": "羅貫中は『三国志演義』の作者と伝えられる。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-luo-guanzhong・ch-sanguozhiyanyi の説明、既存カードID ch-luo-guanzhong::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-wu-chengen--ch-xiyouji",
+      "fromId": "ch-wu-chengen",
+      "toId": "ch-xiyouji",
+      "type": "authored",
+      "description": "呉承恩は『西遊記』の作者と伝えられる。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第7枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-wu-chengen・ch-xiyouji の説明、既存カードID ch-wu-chengen::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-wang-shifu--ch-xixiangji",
+      "fromId": "ch-wang-shifu",
+      "toId": "ch-xixiangji",
+      "type": "authored",
+      "description": "王実甫は元代の戯曲『西廂記』の作者である。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-wang-shifu・ch-xixiangji の説明、既存カードID ch-xixiangji::core・ch-wang-shifu::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-ma-zhiyuan--ch-hangongqiu",
+      "fromId": "ch-ma-zhiyuan",
+      "toId": "ch-hangongqiu",
+      "type": "authored",
+      "description": "馬致遠は元代の北曲『漢宮秋』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-ma-zhiyuan・ch-hangongqiu の説明、既存カードID ch-hangongqiu::core・ch-ma-zhiyuan::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-gao-ming--ch-pipaji",
+      "fromId": "ch-gao-ming",
+      "toId": "ch-pipaji",
+      "type": "authored",
+      "description": "高則誠（高明）は南曲『琵琶記』の作者である。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第4枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-gao-ming・ch-pipaji の説明、既存カードID ch-pipaji::core・ch-gao-ming::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-sima-qian--ch-shiji",
+      "fromId": "ch-sima-qian",
+      "toId": "ch-shiji",
+      "type": "authored",
+      "description": "司馬遷は紀伝体の通史『史記』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-sima-qian・ch-shiji の説明、既存カードID ch-sima-qian::core・ch-shiji::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-ban-gu--ch-hanshu",
+      "fromId": "ch-ban-gu",
+      "toId": "ch-hanshu",
+      "type": "authored",
+      "description": "班固は前漢一代を扱う『漢書』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-ban-gu・ch-hanshu の説明、既存カードID ch-ban-gu::core・ch-hanshu::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-sima-guang--ch-zizhi-tongjian",
+      "fromId": "ch-sima-guang",
+      "toId": "ch-zizhi-tongjian",
+      "type": "authored",
+      "description": "司馬光は編年体の通史『資治通鑑』を編纂した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザーが提供した写真9枚のうち第3枚目。原文を転載せず暗記問題として独自に要約。 関係の根拠：既存知識ID ch-sima-guang・ch-zizhi-tongjian の説明、既存カードID ch-sima-guang::core・ch-zizhi-tongjian::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-jia-sixie--ch-qimin-yaoshu",
+      "fromId": "ch-jia-sixie",
+      "toId": "ch-qimin-yaoshu",
+      "type": "authored",
+      "description": "賈思勰は農業技術書『斉民要術』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-jia-sixie・ch-qimin-yaoshu の説明、既存カードID ch-jia-sixie::core・ch-qimin-yaoshu::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-li-daoyuan--ch-shuijingzhu",
+      "fromId": "ch-li-daoyuan",
+      "toId": "ch-shuijingzhu",
+      "type": "authored",
+      "description": "酈道元は河川を中心に記す地理書『水経注』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-li-daoyuan・ch-shuijingzhu の説明、既存カードID ch-li-daoyuan::core・ch-shuijingzhu::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-wang-xizhi--ch-lantingxu",
+      "fromId": "ch-wang-xizhi",
+      "toId": "ch-lantingxu",
+      "type": "authored",
+      "description": "王羲之は行書の代表作『蘭亭序』で知られる。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-wang-xizhi・ch-lantingxu の説明、既存カードID ch-wang-xizhi::core・ch-lantingxu::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-qu-yuan--ch-chuci",
+      "fromId": "ch-qu-yuan",
+      "toId": "ch-chuci",
+      "type": "authored",
+      "description": "屈原らの韻文は文学作品集『楚辞』に収められている。単独の編纂者とする意味ではない。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第4枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-qu-yuan・ch-chuci の説明、既存カードID ch-chuci::core・ch-qu-yuan::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-du-fu--ch-chunwang",
+      "fromId": "ch-du-fu",
+      "toId": "ch-chunwang",
+      "type": "authored",
+      "description": "杜甫は安史の乱を背景とする詩『春望』を詠んだ。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-du-fu・ch-chunwang の説明、既存カードID ch-du-fu::core・ch-chunwang::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-bai-juyi--ch-changhenge",
+      "fromId": "ch-bai-juyi",
+      "toId": "ch-changhenge",
+      "type": "authored",
+      "description": "白居易は玄宗と楊貴妃を題材とする長編詩『長恨歌』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第10枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-bai-juyi・ch-changhenge の説明、既存カードID ch-bai-juyi::core・ch-changhenge::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-zhou-dunyi--ch-taijitu-shuo",
+      "fromId": "ch-zhou-dunyi",
+      "toId": "ch-taijitu-shuo",
+      "type": "authored",
+      "description": "周敦頤は宇宙論を論じる『太極図説』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-zhou-dunyi・ch-taijitu-shuo の説明、既存カードID ch-zhou-dunyi::core・ch-taijitu-shuo::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-zhu-xi--ch-four-books-commentary",
+      "fromId": "ch-zhu-xi",
+      "toId": "ch-four-books-commentary",
+      "type": "authored",
+      "description": "朱熹は四書の注釈をまとめた『四書集注』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-zhu-xi・ch-four-books-commentary の説明、既存カードID ch-four-books-commentary::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-gu-yanwu--ch-rizhilu",
+      "fromId": "ch-gu-yanwu",
+      "toId": "ch-rizhilu",
+      "type": "authored",
+      "description": "顧炎武は学術随筆『日知録』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-gu-yanwu・ch-rizhilu の説明、既存カードID ch-gu-yanwu::core・ch-rizhilu::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-huang-zongxi--ch-mingyi-daifanglu",
+      "fromId": "ch-huang-zongxi",
+      "toId": "ch-mingyi-daifanglu",
+      "type": "authored",
+      "description": "黄宗羲は君主専制を批判する『明夷待訪録』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-huang-zongxi・ch-mingyi-daifanglu の説明、既存カードID ch-huang-zongxi::core・ch-mingyi-daifanglu::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-xu-shen--ch-shuowen",
+      "fromId": "ch-xu-shen",
+      "toId": "ch-shuowen",
+      "type": "authored",
+      "description": "許慎は字書『説文解字』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第5枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-xu-shen・ch-shuowen の説明、既存カードID ch-xu-shen::core・ch-shuowen::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-xiao-tong--ch-wenxuan",
+      "fromId": "ch-xiao-tong",
+      "toId": "ch-wenxuan",
+      "type": "authored",
+      "description": "昭明太子は詩文集『文選』を編纂した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-xiao-tong・ch-wenxuan の説明、既存カードID ch-xiao-tong::core・ch-wenxuan::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-tao-yuanming--ch-return-home",
+      "fromId": "ch-tao-yuanming",
+      "toId": "ch-return-home",
+      "type": "authored",
+      "description": "陶潜（陶淵明）は田園生活への帰郷を歌う『帰去来辞』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-tao-yuanming・ch-return-home の説明、既存カードID ch-tao-yuanming::core・ch-return-home::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-tao-yuanming--ch-peach-blossom",
+      "fromId": "ch-tao-yuanming",
+      "toId": "ch-peach-blossom",
+      "type": "authored",
+      "description": "陶潜（陶淵明）は理想郷を描く『桃花源記』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第8枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-tao-yuanming・ch-peach-blossom の説明、既存カードID ch-tao-yuanming::core・ch-peach-blossom::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-kong-yingda--ch-five-classics-justice",
+      "fromId": "ch-kong-yingda",
+      "toId": "ch-five-classics-justice",
+      "type": "authored",
+      "description": "孔穎達は唐代の経学書『五経正義』の編纂に関わった。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供の教材写真（今回の10枚中、第10枚目）。本文を転載せず、知識・設問を独自に要約。 関係の根拠：既存知識ID ch-kong-yingda・ch-five-classics-justice の説明、既存カードID ch-kong-yingda::core・ch-five-classics-justice::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-gr-socrates--gr-plato",
+      "fromId": "gr-socrates",
+      "toId": "gr-plato",
+      "type": "influenced",
+      "description": "プラトンはソクラテスの影響を受けた。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "Stanford Encyclopedia of Philosophy — Socrates",
+          "url": "https://plato.stanford.edu/entries/socrates/",
+          "note": "2026-11-09 本文で事実関係を確認。日本語の問題・説明は独自に要約。 関係の根拠：既存知識ID gr-socrates・gr-plato の説明、既存カードID gr-socrates-dialogues-person・gr-plato-republic-workを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-gr-plato--gr-aristotle",
+      "fromId": "gr-plato",
+      "toId": "gr-aristotle",
+      "type": "associated_with",
+      "description": "アリストテレスはプラトンのもとで学んだ。ここでは学習上の関係を示す。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "Stanford Encyclopedia of Philosophy — Plato",
+          "url": "https://plato.stanford.edu/entries/plato/",
+          "note": "2026-11-09 本文で事実関係を確認。日本語の問題・説明は独自に要約。 関係の根拠：既存知識ID gr-plato・gr-aristotle の説明、既存カードID gr-plato-forms-personを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-he-zeno-citium--he-stoicism",
+      "fromId": "he-zeno-citium",
+      "toId": "he-stoicism",
+      "type": "founded",
+      "description": "キティオンのゼノンはストア派を創始した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "Stanford Encyclopedia of Philosophy — Stoicism",
+          "url": "https://plato.stanford.edu/entries/stoicism/",
+          "note": "2026-11-09 本文で事実関係を確認。日本語の問題・説明は独自に要約。 関係の根拠：既存知識ID he-zeno-citium・he-stoicism の説明、既存カードID he-zeno-stoa-founder・he-stoicism-zenoを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-he-epicurus--he-epicureanism",
+      "fromId": "he-epicurus",
+      "toId": "he-epicureanism",
+      "type": "founded",
+      "description": "エピクロスはエピクロス派の祖である。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "Stanford Encyclopedia of Philosophy — Epicurus",
+          "url": "https://plato.stanford.edu/entries/epicurus/",
+          "note": "2026-11-09 本文で事実関係を確認。日本語の問題・説明は独自に要約。 関係の根拠：既存知識ID he-epicurus・he-epicureanism の説明、既存カードID he-epicureanism-epicurusを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-gr-phidias--gr-parthenon",
+      "fromId": "gr-phidias",
+      "toId": "gr-parthenon",
+      "type": "associated_with",
+      "description": "フェイディアスはパルテノン神殿の彫刻事業を監督した。神殿全体の設計者とする意味ではない。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真3／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。 関係の根拠：既存知識ID gr-phidias・gr-parthenon の説明、既存カードID gr-phidias-parthenonを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-gr-athena--gr-parthenon",
+      "fromId": "gr-athena",
+      "toId": "gr-parthenon",
+      "type": "associated_with",
+      "description": "パルテノン神殿はアテナ女神に捧げられた。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史・テーマ史編",
+          "note": "2026-11-09 提供写真1／5、該当項目を目視で確認。公開URLなし。教材本文・写真は転載せず、問題文は独自に作成。 関係の根拠：既存知識ID gr-athena・gr-parthenon の説明、既存カードID gr-parthenon-image・gr-athena-wisdomを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-gr-parthenon--gr-doric",
+      "fromId": "gr-parthenon",
+      "toId": "gr-doric",
+      "type": "associated_with",
+      "description": "パルテノン神殿の外周の列柱はドーリア式である。神殿全体にはイオニア式の要素もある。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "World History Encyclopedia — Parthenon",
+          "url": "https://www.worldhistory.org/parthenon/",
+          "note": "2026-11-09 本文で事実関係を確認。本文・掲載画像は転載していない。 関係の根拠：既存知識ID gr-parthenon・gr-doric の説明、既存カードID gr-parthenon-doric-order・gr-doric-capitalを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-is-firdawsi--is-shahnameh",
+      "fromId": "is-firdawsi",
+      "toId": "is-shahnameh",
+      "type": "authored",
+      "description": "フィルドゥスィーはペルシアの民族叙事詩『シャー＝ナーメ』を著した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供の教材写真（今回の10枚中、第5枚目）。本文を転載せず、知識・設問を独自に要約。 関係の根拠：既存知識ID is-firdawsi・is-shahnameh の説明、既存カードID is-firdawsi::core・is-shahnameh::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-is-omar-khayyam--is-rubaiyat",
+      "fromId": "is-omar-khayyam",
+      "toId": "is-rubaiyat",
+      "type": "authored",
+      "description": "ウマル＝ハイヤームは四行詩集『ルバイヤート』の詩人として知られる。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供の教材写真（今回の10枚中、第5枚目）。本文を転載せず、知識・設問を独自に要約。 関係の根拠：既存知識ID is-omar-khayyam・is-rubaiyat の説明、既存カードID is-omar-khayyam::core・is-rubaiyat::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-is-sinan--is-suleymaniye",
+      "fromId": "is-sinan",
+      "toId": "is-suleymaniye",
+      "type": "associated_with",
+      "description": "スィナンはスレイマニエ＝モスクを設計した建築家である。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供の教材写真（今回の10枚中、第6枚目）。本文を転載せず、知識・設問を独自に要約。 関係の根拠：既存知識ID is-sinan・is-suleymaniye の説明、既存カードID is-suleymaniye::core・is-sinan::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-is-omar-khayyam--is-jalali-calendar",
+      "fromId": "is-omar-khayyam",
+      "toId": "is-jalali-calendar",
+      "type": "associated_with",
+      "description": "ウマル＝ハイヤームらはジャラリー暦の編纂に参加した。単独の編纂者とする意味ではない。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供の教材写真（今回の10枚中、第5枚目）。本文を転載せず、知識・設問を独自に要約。 関係の根拠：既存知識ID is-omar-khayyam・is-jalali-calendar の説明、既存カードID is-jalali-calendar::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ph-francis-bacon--ph-empiricism",
+      "fromId": "ph-francis-bacon",
+      "toId": "ph-empiricism",
+      "type": "associated_with",
+      "description": "フランシス＝ベーコンは経験を重視する近世哲学と結び付けられる。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
+          "note": "2026-11-09提供写真4/10。本文写真の転載ではなく、独自の問いと短い説明に編集。 関係の根拠：既存知識ID ph-francis-bacon・ph-empiricism の説明を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ph-descartes--ph-rationalism",
+      "fromId": "ph-descartes",
+      "toId": "ph-rationalism",
+      "type": "associated_with",
+      "description": "デカルトは理性を重視する合理論の代表的思想家である。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
+          "note": "2026-11-09提供写真4/10。本文写真の転載ではなく、独自の問いと短い説明に編集。 関係の根拠：既存知識ID ph-descartes・ph-rationalism の説明、既存カードID ph4-ph-rationalism-01を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ph-comte--ph-positivism",
+      "fromId": "ph-comte",
+      "toId": "ph-positivism",
+      "type": "associated_with",
+      "description": "コントは実証主義を提唱した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
+          "note": "2026-11-09提供写真5/10。本文写真の転載ではなく、独自の問いと短い説明に編集。 関係の根拠：既存知識ID ph-comte・ph-positivism の説明、既存カードID ph4-ph-positivism-01・ph4-ph-comte-01を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ph-bentham--ph-utilitarianism",
+      "fromId": "ph-bentham",
+      "toId": "ph-utilitarianism",
+      "type": "associated_with",
+      "description": "ベンサムは近代功利主義の体系化に寄与した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
+          "note": "2026-11-09提供写真5/10。本文写真の転載ではなく、独自の問いと短い説明に編集。 関係の根拠：既存知識ID ph-bentham・ph-utilitarianism の説明、既存カードID ph4-ph-bentham-01を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ph-dewey--ph-pragmatism",
+      "fromId": "ph-dewey",
+      "toId": "ph-pragmatism",
+      "type": "associated_with",
+      "description": "デューイはプラグマティズムの哲学者である。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
+          "note": "2026-11-09提供写真6/10。本文写真の転載ではなく、独自の問いと短い説明に編集。 関係の根拠：既存知識ID ph-dewey・ph-pragmatism の説明、既存カードID ph4-ph-pragmatism-01・ph4-ph-dewey-01を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-lt-sartre--ph-existentialism",
+      "fromId": "lt-sartre",
+      "toId": "ph-existentialism",
+      "type": "associated_with",
+      "description": "サルトルは実存主義思想で知られる哲学者・作家である。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史（ルネサンス〜近代）",
+          "note": "2026-11-09 提供写真 9/10。人物・著作・概念の対応を参照。 関係の根拠：既存知識ID lt-sartre・ph-existentialism の説明、既存カードID ph3-lt-sartre-1を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-md-ockham--md-nominalism",
+      "fromId": "md-ockham",
+      "toId": "md-nominalism",
+      "type": "associated_with",
+      "description": "オッカムは普遍概念より個物を重視する唯名論と結び付けられる。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史②",
+          "note": "2026-11-09 提供写真4/10。教材内容を短い独自問題として整理。 関係の根拠：既存知識ID md-ockham・md-nominalism の説明、既存カードID new-md-ockham-030を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ar-rubens--ar-flemish",
+      "fromId": "ar-rubens",
+      "toId": "ar-flemish",
+      "type": "associated_with",
+      "description": "ルーベンスはフランドル派の代表的な画家である。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史（ルネサンス〜近代）",
+          "note": "2026-11-09 提供写真 10/10。人物・著作・概念の対応を参照。 関係の根拠：既存知識ID ar-rubens・ar-flemish の説明、既存カードID ph3-ar-flemish-1を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-a-manet--a-impressionism",
+      "fromId": "a-manet",
+      "toId": "a-impressionism",
+      "type": "influenced",
+      "description": "マネは印象派に影響を与えた。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
+          "note": "2026-11-09提供写真2/10。本文写真の転載ではなく、独自の問いと短い説明に編集。 関係の根拠：既存知識ID a-manet・a-impressionism の説明、既存カードID ph4-a-manet-01を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-a-picasso--a-cubism",
+      "fromId": "a-picasso",
+      "toId": "a-cubism",
+      "type": "developed",
+      "description": "ピカソはキュビスムを展開した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
+          "note": "2026-11-09提供写真2/10。本文写真の転載ではなく、独自の問いと短い説明に編集。 関係の根拠：既存知識ID a-picasso・a-cubism の説明を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-a-matisse--a-fauvism",
+      "fromId": "a-matisse",
+      "toId": "a-fauvism",
+      "type": "associated_with",
+      "description": "マティスはフォーヴィスムの代表的画家である。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
+          "note": "2026-11-09提供写真2/10。本文写真の転載ではなく、独自の問いと短い説明に編集。 関係の根拠：既存知識ID a-matisse・a-fauvism の説明を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-a-dali--a-surrealism",
+      "fromId": "a-dali",
+      "toId": "a-surrealism",
+      "type": "associated_with",
+      "description": "ダリはシュルレアリスムの代表的画家である。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史③〜④",
+          "note": "2026-11-09提供写真2/10。本文写真の転載ではなく、独自の問いと短い説明に編集。 関係の根拠：既存知識ID a-dali・a-surrealism の説明、既存カードID ph4-a-dali-01を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-md-notredame--md-gothic",
+      "fromId": "md-notredame",
+      "toId": "md-gothic",
+      "type": "associated_with",
+      "description": "パリのノートルダム大聖堂はゴシック建築の代表例である。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史②",
+          "note": "2026-11-09 提供写真6/10。教材内容を短い独自問題として整理。 関係の根拠：既存知識ID md-notredame・md-gothic の説明、既存カードID visual-verified-img-18-styleを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-md-pisa--md-romanesque",
+      "fromId": "md-pisa",
+      "toId": "md-romanesque",
+      "type": "associated_with",
+      "description": "ピサ大聖堂はロマネスク建築の代表例である。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "ユーザー提供：東進『スタンダード世界史探究』西洋文化史②",
+          "note": "2026-11-09 提供写真6/10。教材内容を短い独自問題として整理。 関係の根拠：既存知識ID md-pisa・md-romanesque の説明、既存カードID new-md-pisa-043を照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-confucius--ch-ren",
+      "fromId": "ch-confucius",
+      "toId": "ch-ren",
+      "type": "advocated",
+      "description": "孔子は仁を思想の中心的な徳目として重視した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供の教材写真（今回の10枚中、第10枚目）。本文を転載せず、知識・設問を独自に要約。 関係の根拠：既存知識ID ch-confucius・ch-ren の説明、既存カードID ch-confucius::core・ch-ren::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-mencius--ch-mencius-good",
+      "fromId": "ch-mencius",
+      "toId": "ch-mencius-good",
+      "type": "advocated",
+      "description": "孟子は性善説で知られる。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供の教材写真（今回の10枚中、第10枚目）。本文を転載せず、知識・設問を独自に要約。 関係の根拠：既存知識ID ch-mencius・ch-mencius-good の説明、既存カードID ch-mencius::core・ch-mencius-good::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-xunzi--ch-xunzi-evil",
+      "fromId": "ch-xunzi",
+      "toId": "ch-xunzi-evil",
+      "type": "advocated",
+      "description": "荀子は性悪説で知られる。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供の教材写真（今回の10枚中、第10枚目）。本文を転載せず、知識・設問を独自に要約。 関係の根拠：既存知識ID ch-xunzi・ch-xunzi-evil の説明、既存カードID ch-xunzi::core・ch-xunzi-evil::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-mozi--ch-jianai",
+      "fromId": "ch-mozi",
+      "toId": "ch-jianai",
+      "type": "advocated",
+      "description": "墨子は差別なく人を愛する兼愛を唱えた。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-mozi・ch-jianai の説明、既存カードID ch-mozi::core・ch-jianai::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-mozi--ch-feigong",
+      "fromId": "ch-mozi",
+      "toId": "ch-feigong",
+      "type": "advocated",
+      "description": "墨子は侵略戦争を否定する非攻を唱えた。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第3枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-mozi・ch-feigong の説明、既存カードID ch-mozi::core・ch-feigong::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-zhu-xi--ch-zhu-xi-learning",
+      "fromId": "ch-zhu-xi",
+      "toId": "ch-zhu-xi-learning",
+      "type": "developed",
+      "description": "朱熹は宋学を大成し、朱子学を確立した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-zhu-xi・ch-zhu-xi-learning の説明、既存カードID ch-zhu-xi::core・ch-zhu-xi-learning::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-zhu-xi-learning--ch-xing-ji-li",
+      "fromId": "ch-zhu-xi-learning",
+      "toId": "ch-xing-ji-li",
+      "type": "associated_with",
+      "description": "朱子学は性即理を重視した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-zhu-xi-learning・ch-xing-ji-li の説明、既存カードID ch-zhu-xi-learning::core・ch-xing-ji-li::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-zhu-xi-learning--ch-gewu-zhizhi",
+      "fromId": "ch-zhu-xi-learning",
+      "toId": "ch-gewu-zhizhi",
+      "type": "associated_with",
+      "description": "朱子学は格物致知を修養方法として重視した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-zhu-xi-learning・ch-gewu-zhizhi の説明、既存カードID ch-zhu-xi-learning::core・ch-gewu-zhizhi::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-wang-yangming--ch-yangming-learning",
+      "fromId": "ch-wang-yangming",
+      "toId": "ch-yangming-learning",
+      "type": "developed",
+      "description": "王陽明は陽明学を大成した。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-wang-yangming・ch-yangming-learning の説明、既存カードID ch-yangming-learning::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-wang-yangming--ch-zhixing-heyi",
+      "fromId": "ch-wang-yangming",
+      "toId": "ch-zhixing-heyi",
+      "type": "advocated",
+      "description": "王陽明は知識と行動を不可分とする知行合一を唱えた。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-wang-yangming・ch-zhixing-heyi の説明、既存カードID ch-wang-yangming::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-wang-yangming--ch-zhi-liangzhi",
+      "fromId": "ch-wang-yangming",
+      "toId": "ch-zhi-liangzhi",
+      "type": "advocated",
+      "description": "王陽明は心に備わる善悪判断を発揮する致良知を唱えた。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第2枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-wang-yangming・ch-zhi-liangzhi の説明、既存カードID ch-wang-yangming::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-lu-jiuyuan--ch-xin-ji-li",
+      "fromId": "ch-lu-jiuyuan",
+      "toId": "ch-xin-ji-li",
+      "type": "advocated",
+      "description": "陸九淵は心そのものが理であるとする心即理を説いた。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-lu-jiuyuan・ch-xin-ji-li の説明、既存カードID ch-lu-jiuyuan::core・ch-xin-ji-li::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    },
+    {
+      "id": "rel-ch-lu-jiuyuan--ch-yangming-learning",
+      "fromId": "ch-lu-jiuyuan",
+      "toId": "ch-yangming-learning",
+      "type": "influenced",
+      "description": "陸九淵の思想は陽明学に影響を与えた。",
+      "verification": "provisional",
+      "sources": [
+        {
+          "title": "東進『スタンダード世界史探究 東洋文化史・テーマ史編』",
+          "note": "ユーザー提供教材写真（今回の10枚中、第1枚目）。問題文は独自要約であり紙面本文を転載しない。 関係の根拠：既存知識ID ch-lu-jiuyuan・ch-yangming-learning の説明、既存カードID ch-lu-jiuyuan::coreを照合。関係説明は独自の要約。 照合時の公開教材カタログv20。"
+        }
+      ]
+    }
+  ],
+  "comparisonSets": [
+    {
+      "id": "cmp-ming-practical",
+      "title": "明代の実学：著者と著作",
+      "description": "三つの実学書を、それぞれの著者に対応させてください。",
+      "relationIds": [
+        "rel-ch-xu-guangqi--ch-nongzheng-quanshu",
+        "rel-ch-li-shizhen--ch-bencao-gangmu",
+        "rel-ch-song-yingxing--ch-tiangong-kaiwu"
+      ],
+      "level": 2,
+      "direction": "reverse"
+    },
+    {
+      "id": "cmp-qing-novels",
+      "title": "清代の小説：著者と作品",
+      "description": "清代の小説を、それぞれの作者に対応させてください。",
+      "relationIds": [
+        "rel-ch-cao-xueqin--ch-hongloumeng",
+        "rel-ch-wu-jingzi--ch-rulin-waishi",
+        "rel-ch-pu-songling--ch-liaozhai-zhiyi"
+      ],
+      "level": 2,
+      "direction": "reverse"
+    },
+    {
+      "id": "cmp-ming-novels",
+      "title": "明代の小説：伝統的な作者対応",
+      "description": "教材で伝統的な作者として扱われる人物と作品を対応させてください。作品成立の過程には議論があります。",
+      "relationIds": [
+        "rel-ch-shi-naian--ch-shuihuzhuan",
+        "rel-ch-luo-guanzhong--ch-sanguozhiyanyi",
+        "rel-ch-wu-chengen--ch-xiyouji"
+      ],
+      "level": 2,
+      "direction": "reverse"
+    },
+    {
+      "id": "cmp-yuan-theatre",
+      "title": "元代の戯曲：作者と作品",
+      "description": "北曲・南曲の作品を、それぞれの作者に対応させてください。",
+      "relationIds": [
+        "rel-ch-wang-shifu--ch-xixiangji",
+        "rel-ch-ma-zhiyuan--ch-hangongqiu",
+        "rel-ch-gao-ming--ch-pipaji"
+      ],
+      "level": 3,
+      "direction": "reverse"
+    },
+    {
+      "id": "cmp-chinese-history",
+      "title": "中国の史書：著者・編纂者",
+      "description": "中国の史書を、それぞれの著者・編纂者に対応させてください。",
+      "relationIds": [
+        "rel-ch-sima-qian--ch-shiji",
+        "rel-ch-ban-gu--ch-hanshu",
+        "rel-ch-sima-guang--ch-zizhi-tongjian"
+      ],
+      "level": 2,
+      "direction": "reverse"
+    },
+    {
+      "id": "cmp-chinese-practical-classics",
+      "title": "中国の書物：農業・地理・書",
+      "description": "農業・地理・書の作品を、それぞれの著者に対応させてください。",
+      "relationIds": [
+        "rel-ch-jia-sixie--ch-qimin-yaoshu",
+        "rel-ch-li-daoyuan--ch-shuijingzhu",
+        "rel-ch-wang-xizhi--ch-lantingxu"
+      ],
+      "level": 3,
+      "direction": "reverse"
+    },
+    {
+      "id": "cmp-chinese-poets",
+      "title": "中国の詩人と作品",
+      "description": "詩・作品集に関わる人物を対応させてください。『楚辞』は屈原らの韻文を含む作品集です。",
+      "relationIds": [
+        "rel-ch-qu-yuan--ch-chuci",
+        "rel-ch-du-fu--ch-chunwang",
+        "rel-ch-bai-juyi--ch-changhenge"
+      ],
+      "level": 2,
+      "direction": "reverse"
+    },
+    {
+      "id": "cmp-confucian-books",
+      "title": "中国思想の著作：宋・清",
+      "description": "思想・学術に関する書物を、それぞれの著者に対応させてください。",
+      "relationIds": [
+        "rel-ch-zhou-dunyi--ch-taijitu-shuo",
+        "rel-ch-zhu-xi--ch-four-books-commentary",
+        "rel-ch-gu-yanwu--ch-rizhilu"
+      ],
+      "level": 3,
+      "direction": "reverse"
+    },
+    {
+      "id": "cmp-asian-poets",
+      "title": "アジアの詩人と著作",
+      "description": "ペルシアと中国の詩人の著作を対応させてください。",
+      "relationIds": [
+        "rel-is-firdawsi--is-shahnameh",
+        "rel-is-omar-khayyam--is-rubaiyat",
+        "rel-ch-bai-juyi--ch-changhenge"
+      ],
+      "level": 2,
+      "direction": "reverse"
+    },
+    {
+      "id": "cmp-confucian-ideas",
+      "title": "儒家の人物と思想",
+      "description": "人物ごとに、中心的な徳目・人間観を対応させてください。",
+      "relationIds": [
+        "rel-ch-confucius--ch-ren",
+        "rel-ch-mencius--ch-mencius-good",
+        "rel-ch-xunzi--ch-xunzi-evil"
+      ],
+      "level": 2,
+      "direction": "forward"
+    },
+    {
+      "id": "cmp-european-philosophy",
+      "title": "近世・近代の哲学：人物と思想",
+      "description": "人物と、教材で関係づけられている哲学の立場を対応させてください。",
+      "relationIds": [
+        "rel-ph-francis-bacon--ph-empiricism",
+        "rel-ph-descartes--ph-rationalism",
+        "rel-ph-comte--ph-positivism"
+      ],
+      "level": 2,
+      "direction": "forward"
+    },
+    {
+      "id": "cmp-modern-philosophy",
+      "title": "近代・現代の哲学：人物と思想",
+      "description": "功利主義・プラグマティズム・実存主義の人物を区別してください。",
+      "relationIds": [
+        "rel-ph-bentham--ph-utilitarianism",
+        "rel-ph-dewey--ph-pragmatism",
+        "rel-lt-sartre--ph-existentialism"
+      ],
+      "level": 3,
+      "direction": "forward"
+    },
+    {
+      "id": "cmp-european-art",
+      "title": "ヨーロッパの画家と美術潮流",
+      "description": "画家と、代表的に関係づけられる美術潮流を対応させてください。",
+      "relationIds": [
+        "rel-ar-rubens--ar-flemish",
+        "rel-a-matisse--a-fauvism",
+        "rel-a-dali--a-surrealism"
+      ],
+      "level": 2,
+      "direction": "forward"
+    }
+  ]
+}

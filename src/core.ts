@@ -1,5 +1,7 @@
 import { DEFAULT_SETTINGS, type Backup, type Card, type CardProgress, type Catalog, type ImageAsset, type KnowledgeItem, type ReviewEvent, type Settings, type StudyFilter } from './types';
 import { matchesCultureScope } from './culture-scope';
+import {validateComparisonEvent} from './culture-compare';
+import {validateRelations} from './culture-relations';
 
 const DAY = 86_400_000;
 const CARD_TYPES = ['achievement-person', 'person-work', 'work-author', 'theory-person', 'image', 'context'];
@@ -169,11 +171,16 @@ export function validateSettings(input: unknown): Settings {
 }
 export function validateBackup(input: unknown): Backup {
   const value = object(input, 'バックアップ');
-  if (value.format !== 'cultural-history-master' || value.schemaVersion !== 1) fail('未対応または別アプリのバックアップです。');
-  const result: Backup = {format: 'cultural-history-master', schemaVersion: 1, exportedAt: date(value.exportedAt, '書き出し日時'), catalog: validateCatalog(value.catalog), events: array(value.events, 'events', validateEvent, 1_000_000), settings: validateSettings(value.settings ?? DEFAULT_SETTINGS)};
+  if (value.format !== 'cultural-history-master' || ![1,2].includes(value.schemaVersion as number)) fail('未対応または別アプリのバックアップです。');
+  const result: Backup = {format: 'cultural-history-master', schemaVersion: value.schemaVersion as 1|2, exportedAt: date(value.exportedAt, '書き出し日時'), catalog: validateCatalog(value.catalog), events: array(value.events, 'events', validateEvent, 1_000_000), settings: validateSettings(value.settings ?? DEFAULT_SETTINGS)};
   unique(result.events, event => event.id, '履歴ID');
   const cardIds = new Set(result.catalog.cards.map(entry => entry.id));
   for (const event of result.events) if (!cardIds.has(event.cardId)) fail(`履歴の参照先カードがありません: ${event.cardId}`);
+  result.comparisonEvents=value.schemaVersion===2?array(value.comparisonEvents??[],'comparisonEvents',validateComparisonEvent,1_000_000):[];
+  unique(result.comparisonEvents,event=>event.id,'識別履歴ID');
+  const knowledgeIds=new Set(result.catalog.items.map(item=>item.id));
+  for(const event of result.comparisonEvents)for(const id of [event.sourceKnowledgeId,event.targetKnowledgeId,event.selectedTargetId].filter(Boolean) as string[])if(!knowledgeIds.has(id))fail(`識別履歴の参照先がありません: ${id}`);
+  if(value.schemaVersion===2&&value.relations!==undefined)result.relations=validateRelations(value.relations);
   return result;
 }
 
