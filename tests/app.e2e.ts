@@ -66,6 +66,34 @@ async function readyWorker(page: Page) {
   await page.waitForFunction(() => Boolean(navigator.serviceWorker.controller));
 }
 
+
+test('文化史の出題方向を独立して選択し、同じ作者の連続を避ける', async ({page}) => {
+  await boot(page); await nav(page,'setup');
+  const select=page.locator('[name=cardDirection]');
+  await expect(select).toHaveValue('all');
+  await select.selectOption('person-work');
+  await expect(page.locator('.setup-bottom strong')).toHaveText(`${totalFor({cardDirection:'person-work'})} 枚が対象`);
+  await select.selectOption('work-author');
+  await expect(page.locator('.setup-bottom strong')).toHaveText(`${totalFor({cardDirection:'work-author'})} 枚が対象`);
+  await page.locator('#study-options [type=submit]').click();
+  await expect(page.locator('.flashcard h1')).toContainText('イリアス');
+  await page.locator('[data-action=reveal]').click();
+  await expect(page.locator('.answer-area h2')).toHaveText('ホメロス');
+  await page.locator('[data-grade=correct]').click();
+  await expect(page.locator('.flashcard h1')).toBeVisible();
+  await page.locator('[data-action=reveal]').click();
+  await expect(page.locator('.answer-area h2')).not.toHaveText('ホメロス');
+  const saved=await records(page);
+  expect(saved.events).toHaveLength(1);
+  expect(saved.events[0].cardId).toBe('gr-homer-iliad-author');
+  await page.locator('[data-action=end-session]').click();
+  await nav(page,'setup');
+  await expect(page.locator('[name=cardDirection]')).toHaveValue('work-author');
+  await page.locator('[data-action=reset-filter]').click();
+  await expect(page.locator('[name=cardDirection]')).toHaveValue('all');
+  expect((await records(page)).events).toEqual(saved.events);
+});
+
 test('Android相当の全画面・絞り込み・正誤履歴・二重タップ防止・再起動', async ({page}) => {
   await boot(page);
   for (const view of ['home','setup','library','history','settings']) {

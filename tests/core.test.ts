@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { EMPTY_CATALOG, getProgress, mergeCatalog, normalizeName, priority, selectCards, validateBackup, validateCatalog } from '../src/core';
+import { EMPTY_CATALOG, getProgress, mergeCatalog, normalizeName, priority, selectCards, spreadSessionCards, validateBackup, validateCatalog } from '../src/core';
 import { DEFAULT_FILTER, DEFAULT_SETTINGS } from '../src/types';
 import { makeCard, makeCatalog, makeEvent, makeItem, TIME } from './fixtures';
 
@@ -123,3 +123,48 @@ describe('backup validation', () => {
     expect(() => validateBackup({...backup(), events: [{...makeEvent('event', false), correct: 'false'}]})).toThrow(/正誤/);
   });
 });
+
+
+describe('author/work direction and answer variety', () => {
+  const catalog = makeCatalog();
+  catalog.items.push(makeItem('homer', {canonicalName: 'ホメロス'}));
+  catalog.items.push(makeItem('virgil', {canonicalName: 'ウェルギリウス'}));
+  catalog.cards = [
+    makeCard('aeneid-author', {knowledgeId:'virgil', type:'work-author', question:'『アエネイス』の作者は？', answer:'ウェルギリウス'}),
+    makeCard('georgics-author', {knowledgeId:'virgil', type:'work-author', question:'『農耕詩』の作者は？', answer:'ウェルギリウス'}),
+    makeCard('iliad-author', {knowledgeId:'homer', type:'work-author', question:'『イリアス』の作者は？', answer:'ホメロス'}),
+    makeCard('odyssey-author', {knowledgeId:'homer', type:'work-author', question:'『オデュッセイア』の作者は？', answer:'ホメロス'}),
+    makeCard('virgil-work', {knowledgeId:'virgil', type:'person-work', question:'ウェルギリウスの叙事詩は？', answer:'アエネイス'}),
+    makeCard('homer-work', {knowledgeId:'homer', type:'person-work', question:'ホメロスの叙事詩は？', answer:'オデュッセイア'}),
+    makeCard('method-person', {type:'achievement-person', answer:'ソクラテス'}),
+  ];
+  it('filters the two directions without changing the all-mode dataset', () => {
+    expect(selectCards(catalog, [], {...DEFAULT_FILTER, cardDirection:'work-author'}).map(c=>c.id)).toEqual([
+      'aeneid-author','georgics-author','iliad-author','odyssey-author',
+    ]);
+    expect(selectCards(catalog, [], {...DEFAULT_FILTER, cardDirection:'person-work'}).map(c=>c.id)).toEqual([
+      'virgil-work','homer-work',
+    ]);
+    expect(selectCards(catalog, [], DEFAULT_FILTER)).toHaveLength(7);
+    expect(selectCards(catalog, [], {...DEFAULT_FILTER, cardDirection:'work-author', cardType:'image'})).toEqual([]);
+  });
+  it('spreads repeated authors, preserves every ID and does not mutate the catalog', () => {
+    const original = [...catalog.cards];
+    const arranged = spreadSessionCards(original, 3);
+    expect(arranged.map(c=>c.id)).toEqual(['aeneid-author','iliad-author','virgil-work']);
+    expect(new Set(arranged.map(c=>c.answer)).size).toBe(3);
+    expect(original.map(c=>c.id)).toEqual(catalog.cards.map(c=>c.id));
+    expect(spreadSessionCards(original, 0)).toEqual([]);
+    expect(spreadSessionCards(original, 99)).toHaveLength(original.length);
+    expect(new Set(spreadSessionCards(original, 99).map(c=>c.id)).size).toBe(original.length);
+  });
+  it('does not place both sides of one knowledge item consecutively when alternatives exist', () => {
+    const cards = [
+      makeCard('work-front', {knowledgeId:'virgil', answer:'アエネイス'}),
+      makeCard('author-back', {knowledgeId:'virgil', answer:'ウェルギリウス'}),
+      makeCard('other', {knowledgeId:'homer', answer:'ホメロス'}),
+    ];
+    expect(spreadSessionCards(cards).map(c=>c.id)).toEqual(['work-front','other','author-back']);
+  });
+});
+
