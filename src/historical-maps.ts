@@ -1,0 +1,68 @@
+export type Verification='A'|'B'|'C';
+export type MapGeometry={type:'Point'|'Polygon'|'MultiPolygon'|'LineString'|'MultiLineString';coordinates:any};
+export interface MapSource {id:string;title:string;url:string;license:string;reference:string;checked_at:string}
+export interface HistoricalAffiliation {entity_id:string;name_ja:string;valid_from:number;valid_to:number;source_ids:string[];verification_status:Verification;explanation:string}
+export interface HistoricalFeature {id:string;entity_id:string;name_ja:string;aliases:string[];type:'city'|'territory'|'route'|'site';region:string;historical_period:string;valid_from:number|null;valid_to:number|null;geometry:MapGeometry|null;source_ids:string[];source_pdf_page:number[];confidence:Verification;verification_status:Verification;uncertainty_note:string;importance:'S'|'A'|'B'|'C';importance_status:'provisional'|'verified';importance_evidence:string;historical_affiliations:HistoricalAffiliation[];version:number;updated_at:string;deleted?:boolean;source_record?:unknown}
+export interface HistoricalMapSnapshot {id:string;period_label:string;reference_year:number;source_pdf_page:number[];feature_ids:string[];description:string}
+export interface HistoricalEvent {id:string;name_ja:string;date_or_period:string;related_feature_ids:string[];route_geometry:MapGeometry|null;explanation:string;source_ids:string[]}
+export interface MapQuestion {id:string;question_type:'location'|'territory'|'period'|'association'|'route';question_text:string;target_feature_ids:string[];option_feature_ids:string[];period:number|null;correct_answer:string;accepted_answers:string[];explanation:string;difficulty:1|2|3|4;source_ids:string[];verification_status:Verification;version:number;updated_at:string;deleted?:boolean}
+export interface MapCatalog {schemaVersion:1;version:number;updated_at:string;sources:MapSource[];features:HistoricalFeature[];snapshots:HistoricalMapSnapshot[];events:HistoricalEvent[];questions:MapQuestion[]}
+export interface MapReview {id:string;questionId:string;correct:boolean;at:string;sessionId:string;selectedFeatureId:string|null;confusion:'region'|'period'|'other'|null}
+export interface MapInventory {schemaVersion:1;version:number;source_file:string;requested_filename:string;source_sha256:string;reviewed_at:string;page_count:28;scope_note:string;candidates:{id:string;name_ja:string;type:string;source_pdf_pages:number[];verification_status:Verification;linked_feature_ids:string[]}[];pages:{pdf_page:number;textbook_page:number|null;period:string;reference_year:number;status:string;extraction_status:string;candidate_ids:string[];territory_observation:string;legend:string[];uncertain:string[];categories:Record<string,string[]>}[]}
+export const EMPTY_MAPS:MapCatalog={schemaVersion:1,version:0,updated_at:'2026-11-10T00:00:00.000Z',sources:[],features:[],snapshots:[],events:[],questions:[]};
+const fail=(s:string):never=>{throw Error(s);};
+const object=(v:any)=>v&&typeof v==='object'&&!Array.isArray(v);
+const str=(v:any)=>typeof v==='string'&&v.length>0&&v.length<=20000;
+const id=(v:any)=>typeof v==='string'&&/^[a-zA-Z0-9][a-zA-Z0-9_.:-]{0,199}$/.test(v);
+const iso=(v:any)=>typeof v==='string'&&Number.isFinite(Date.parse(v))&&new Date(v).toISOString()===v;
+const year=(v:any)=>Number.isSafeInteger(v)&&v!==0&&v>=-100000&&v<=100000;
+const ids=(v:any)=>Array.isArray(v)&&v.every(id)&&new Set(v).size===v.length;
+const strings=(v:any)=>Array.isArray(v)&&v.every(str);
+const pages=(v:any)=>Array.isArray(v)&&v.length>0&&v.every((n:any)=>Number.isInteger(n)&&n>=1&&n<=28)&&new Set(v).size===v.length;
+const verification=(v:any)=>['A','B','C'].includes(v);
+const unique=(v:any[],label:string)=>{if(!Array.isArray(v)||v.length>20000||v.some(x=>!object(x)||!id(x.id))||new Set(v.map(x=>x.id)).size!==v.length)fail(label+'のIDが不正・重複です。');};
+export function validateGeometry(input:unknown):MapGeometry{
+ const g=input as MapGeometry;if(!object(g))return fail('地理情報が不正です。');let count=0;
+ const point=(p:any)=>{if(!Array.isArray(p)||p.length!==2||!p.every(Number.isFinite)||Math.abs(p[0])>180||Math.abs(p[1])>90||++count>300000)fail('座標の範囲・点数が不正です。');};
+ const line=(l:any,min=2)=>{if(!Array.isArray(l)||l.length<min)fail('座標列が不正です。');l.forEach(point);};
+ const polygon=(p:any)=>{if(!Array.isArray(p)||!p.length)fail('領域が空です。');p.forEach((r:any)=>{line(r,4);if(r[0][0]!==r.at(-1)[0]||r[0][1]!==r.at(-1)[1])fail('領域が閉じていません。');});};
+ if(g.type==='Point')point(g.coordinates);else if(g.type==='LineString')line(g.coordinates);else if(g.type==='Polygon')polygon(g.coordinates);else if(g.type==='MultiPolygon'||g.type==='MultiLineString'){if(!Array.isArray(g.coordinates)||!g.coordinates.length)fail('地理情報が空です。');g.coordinates.forEach((p:any)=>g.type==='MultiPolygon'?polygon(p):line(p));}else fail('未対応の地理形式です。');return g;
+}
+export function validateMapCatalog(input:unknown):MapCatalog{
+ const c=input as MapCatalog;if(!object(c)||c.schemaVersion!==1||!Number.isSafeInteger(c.version)||c.version<0||!iso(c.updated_at))fail('地図データの形式が不正です。');
+ for(const key of ['sources','features','snapshots','events','questions'] as const)unique(c[key],key);
+ const sourceIds=new Set(c.sources.map(s=>s.id)),featureIds=new Set(c.features.map(f=>f.id));
+ const refs=(a:any,set:Set<string>)=>ids(a)&&a.length>0&&a.every((x:string)=>set.has(x));
+ for(const s of c.sources)if(!str(s.title)||!/^https:\/\//.test(s.url)||!str(s.license)||!str(s.reference)||!iso(s.checked_at))fail('出典情報が不足しています。');
+ for(const f of c.features){
+  if(!id(f.entity_id)||!str(f.name_ja)||!Array.isArray(f.aliases)||!f.aliases.every(str)||!['city','territory','route','site'].includes(f.type)||!str(f.region)||!str(f.historical_period)||!pages(f.source_pdf_page)||!verification(f.confidence)||f.confidence!==f.verification_status||!['S','A','B','C'].includes(f.importance)||!['provisional','verified'].includes(f.importance_status)||!str(f.importance_evidence)||!Array.isArray(f.historical_affiliations)||!Number.isInteger(f.version)||f.version<1||!iso(f.updated_at)||(f.deleted!==undefined&&typeof f.deleted!=='boolean'))fail('歴史地理項目が不正です。');
+  if(f.valid_from!==null&&!year(f.valid_from)||f.valid_to!==null&&!year(f.valid_to)||f.valid_from!==null&&f.valid_to!==null&&f.valid_from>f.valid_to)fail(f.id+'：年代が不正です（0年は不可）。');
+  if(!ids(f.source_ids)||f.source_ids.some(s=>!sourceIds.has(s))||f.verification_status!=='C'&&!f.source_ids.length)fail('地理項目の出典が不足しています。');
+  if(f.verification_status!=='A'&&!str(f.uncertainty_note))fail('不確実性の説明が必要です。');
+  for(const a of f.historical_affiliations)if(!object(a)||!id(a.entity_id)||!str(a.name_ja)||!year(a.valid_from)||!year(a.valid_to)||a.valid_from>a.valid_to||!refs(a.source_ids,sourceIds)||!verification(a.verification_status)||!str(a.explanation))fail(f.id+'：歴史的所属の出典・年代が不正です。');
+  if(f.geometry){validateGeometry(f.geometry);if((f.type==='city'||f.type==='site')&&f.geometry.type!=='Point'||f.type==='territory'&&!['Polygon','MultiPolygon'].includes(f.geometry.type)||f.type==='route'&&!['LineString','MultiLineString'].includes(f.geometry.type))fail('種類と地理形状が一致しません。');}else if(f.verification_status!=='C')fail('検証済み・概略項目には地理情報が必要です。');
+ }
+ const periods=new Set<string>();for(const f of c.features){const key=[f.entity_id,f.type,f.valid_from,f.valid_to].join(':');if(periods.has(key))fail('同一主体・同一時点の地理情報が重複しています。');periods.add(key);}
+ for(const s of c.snapshots)if(!str(s.period_label)||!year(s.reference_year)||!pages(s.source_pdf_page)||!ids(s.feature_ids)||s.feature_ids.some(id=>!featureIds.has(id))||!str(s.description))fail('時代スナップショットが不正です。');
+ for(const e of c.events){if(!str(e.name_ja)||!str(e.date_or_period)||!refs(e.related_feature_ids,featureIds)||!refs(e.source_ids,sourceIds)||!str(e.explanation))fail('歴史事項が不正です。');if(e.route_geometry){validateGeometry(e.route_geometry);if(!['LineString','MultiLineString'].includes(e.route_geometry.type))fail('経路形式が不正です。');}}
+ for(const q of c.questions){if(!['location','territory','period','association','route'].includes(q.question_type)||!str(q.question_text)||!refs(q.target_feature_ids,featureIds)||!ids(q.option_feature_ids)||q.option_feature_ids.some(id=>!featureIds.has(id))||q.period!==null&&!year(q.period)||!str(q.correct_answer)||!strings(q.accepted_answers)||!q.accepted_answers.includes(q.correct_answer)||!str(q.explanation)||![1,2,3,4].includes(q.difficulty)||!refs(q.source_ids,sourceIds)||!verification(q.verification_status)||!Number.isInteger(q.version)||q.version<1||!iso(q.updated_at)||(q.deleted!==undefined&&typeof q.deleted!=='boolean'))fail('地図問題が不正です。');if(['location','territory','route'].includes(q.question_type)&&(!q.option_feature_ids.includes(q.correct_answer)||!q.target_feature_ids.includes(q.correct_answer)||q.option_feature_ids.length<2||q.accepted_answers.length!==1))fail('正答と選択肢が一致しません。');}
+ return structuredClone(c);
+}
+export function validateMapInventory(input:unknown):MapInventory{
+ const i=input as MapInventory;if(!object(i)||i.schemaVersion!==1||!Number.isSafeInteger(i.version)||i.version<1||!str(i.source_file)||!str(i.requested_filename)||!/^[a-f0-9]{64}$/.test(i.source_sha256)||!iso(i.reviewed_at)||i.page_count!==28||!str(i.scope_note)||!Array.isArray(i.pages)||i.pages.length!==28||new Set(i.pages.map(p=>p.pdf_page)).size!==28)fail('PDF棚卸しの形式が不正です。');unique(i.candidates,'抽出候補');const known=new Set(i.candidates.map(c=>c.id));
+ for(const c of i.candidates)if(!str(c.name_ja)||!str(c.type)||!pages(c.source_pdf_pages)||!verification(c.verification_status)||!ids(c.linked_feature_ids))fail('抽出候補が不正です。');
+ for(const p of i.pages)if(!pages([p.pdf_page])||(p.textbook_page!==null&&(!Number.isInteger(p.textbook_page)||p.textbook_page<1))||!str(p.period)||!year(p.reference_year)||!['reviewed','pending'].includes(p.status)||!['partial','complete','pending'].includes(p.extraction_status)||!ids(p.candidate_ids)||p.candidate_ids.some(id=>!known.has(id))||!str(p.territory_observation)||!strings(p.legend)||!strings(p.uncertain)||!object(p.categories)||Object.values(p.categories).some(a=>!ids(a)||(a as string[]).some(id=>!p.candidate_ids.includes(id))))fail('PDFページ管理が不正です。');return structuredClone(i);
+}
+export function activeMapQuestions(c:MapCatalog){const f=new Map(c.features.filter(f=>!f.deleted).map(f=>[f.id,f]));return c.questions.filter(q=>!q.deleted&&q.verification_status==='A'&&[...q.target_feature_ids,...q.option_feature_ids].every(id=>f.get(id)?.verification_status==='A'&&!!f.get(id)?.geometry&&(!['location','territory','route'].includes(q.question_type)||(q.question_type==='location'?['Point']:q.question_type==='territory'?['Polygon','MultiPolygon']:['LineString','MultiLineString']).includes(f.get(id)!.geometry!.type)))&&new Set(q.option_feature_ids.map(id=>JSON.stringify(f.get(id)?.geometry))).size===q.option_feature_ids.length&&q.target_feature_ids.every(id=>{const x=f.get(id)!;return q.period===null||(x.valid_from!==null&&x.valid_to!==null&&q.period>=x.valid_from&&q.period<=x.valid_to);}));}
+export const yearText=(year:number)=>year<0?`前${-year}年`:`${year}年`;
+export function snapshotFeatures(c:MapCatalog,s:HistoricalMapSnapshot){const known=new Set(s.feature_ids);return c.features.filter(f=>known.has(f.id)&&!f.deleted&&f.verification_status!=='C'&&f.geometry&&(f.valid_from===null||s.reference_year>=f.valid_from)&&(f.valid_to===null||s.reference_year<=f.valid_to));}
+
+export function validateMapReview(v:any,c:MapCatalog):MapReview {const q=c.questions.find(q=>q.id===v?.questionId);if(!object(v)||!id(v.id)||!q||typeof v.correct!=='boolean'||!iso(v.at)||!id(v.sessionId)||!(v.selectedFeatureId===null||q.option_feature_ids.includes(v.selectedFeatureId))||![null,'region','period','other'].includes(v.confusion)||v.selectedFeatureId!==null&&v.correct!==q.accepted_answers.includes(v.selectedFeatureId))fail('地図履歴が不正です。');return {id:v.id,questionId:v.questionId,correct:v.correct,at:v.at,sessionId:v.sessionId,selectedFeatureId:v.selectedFeatureId,confusion:v.confusion};}
+export function mapDiagnostics(c:MapCatalog){return {dateIssues:c.features.filter(f=>f.valid_from!==null&&f.valid_to!==null&&f.valid_from>f.valid_to).map(f=>f.id),missingSources:c.features.filter(f=>!f.source_ids.length).map(f=>f.id),verified:c.features.filter(f=>!f.deleted&&f.verification_status==='A').length,approximate:c.features.filter(f=>!f.deleted&&f.verification_status==='B').length,pending:c.features.filter(f=>!f.deleted&&f.verification_status==='C').length,cities:c.features.filter(f=>!f.deleted&&f.type==='city'&&f.geometry).length,polities:new Set(c.features.filter(f=>!f.deleted&&f.type==='territory'&&f.geometry&&f.verification_status!=='C').map(f=>f.entity_id)).size,routes:c.features.filter(f=>!f.deleted&&f.type==='route'&&f.geometry&&f.verification_status!=='C').length,questions:activeMapQuestions(c).length};}
+export function geometryPath(g:MapGeometry):string {
+ const xy=(p:number[])=>`${((p[0]+180)/360*1000).toFixed(3)},${((90-p[1])/180*500).toFixed(3)}`;
+ const line=(l:number[][],closed=false)=>l.map((p,i)=>`${i===0||Math.abs(p[0]-l[i-1][0])>180?'M':'L'}${xy(p)}`).join(' ')+(closed?' Z':'');
+ return g.type==='Point'?'':g.type==='LineString'?line(g.coordinates):g.type==='MultiLineString'?g.coordinates.map((l:number[][])=>line(l)).join(' '):g.type==='Polygon'?g.coordinates.map((l:number[][])=>line(l,true)).join(' '):g.coordinates.flatMap((p:number[][][])=>p.map(l=>line(l,true))).join(' ');
+}
+
+export function geometryBounds(g:MapGeometry):[number,number,number,number]{const b:[number,number,number,number]=[Infinity,Infinity,-Infinity,-Infinity];const visit=(p:any)=>{if(typeof p[0]==='number'){b[0]=Math.min(b[0],p[0]);b[1]=Math.min(b[1],p[1]);b[2]=Math.max(b[2],p[0]);b[3]=Math.max(b[3],p[1]);}else p.forEach(visit);};visit(g.coordinates);return b;}

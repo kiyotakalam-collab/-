@@ -1,0 +1,3 @@
+Natural Earth land and city coordinates: Public domain. Tom Patterson, Nathaniel Vaughn Kelso, and contributors. https://www.naturalearthdata.com/about/terms-of-use/
+Historical territory geometries: André Ourednik and contributors, historical-basemaps, GPL-3.0. https://github.com/aourednik/historical-basemaps . Selected NAME components consolidated without coordinate editing; original properties and per-source SHA256 are in historical-maps.json. License text accompanies this distribution. These approximate geometries are not verified examination answers.
+No textbook map image or traced boundary is distributed.

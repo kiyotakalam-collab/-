@@ -1,0 +1,6446 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "source_file": "history_map_28pages_for_codex.pdf",
+  "requested_filename": "world_history_maps_all_28.pdf",
+  "source_sha256": "658a67535b6fb0f6df9674d3b71b544ef70f3c325804e4fa0d34ea276d1ddaf5",
+  "reviewed_at": "2026-11-10T00:00:00.000Z",
+  "page_count": 28,
+  "scope_note": "全ページ目視確認。主図の判読可能な学習候補を選定した棚卸しであり、全ラベルの転記ではない。画像・境界のトレースは含まない。",
+  "candidates": [
+    {
+      "id": "mc-0001",
+      "name_ja": "アッカド王国",
+      "type": "states",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0002",
+      "name_ja": "エジプト古王国",
+      "type": "states",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0003",
+      "name_ja": "ウル",
+      "type": "cities",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0004",
+      "name_ja": "メンフィス",
+      "type": "cities",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0005",
+      "name_ja": "ハラッパー",
+      "type": "cities",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0006",
+      "name_ja": "モエンジョ=ダーロ",
+      "type": "cities",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0007",
+      "name_ja": "竜山",
+      "type": "cities",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0008",
+      "name_ja": "石家河",
+      "type": "cities",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0009",
+      "name_ja": "良渚",
+      "type": "cities",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0010",
+      "name_ja": "黄河文明",
+      "type": "peoples",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0011",
+      "name_ja": "長江文明",
+      "type": "peoples",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0012",
+      "name_ja": "インダス文明",
+      "type": "peoples",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0013",
+      "name_ja": "メソポタミア文明",
+      "type": "peoples",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0014",
+      "name_ja": "エジプト文明",
+      "type": "peoples",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0015",
+      "name_ja": "大河流域の文明",
+      "type": "events",
+      "source_pdf_pages": [
+        1
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0016",
+      "name_ja": "ヒッタイト王国",
+      "type": "states",
+      "source_pdf_pages": [
+        2
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0017",
+      "name_ja": "ミケーネ王国",
+      "type": "states",
+      "source_pdf_pages": [
+        2
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0018",
+      "name_ja": "カッシート王国",
+      "type": "states",
+      "source_pdf_pages": [
+        2
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0019",
+      "name_ja": "エジプト新王国",
+      "type": "states",
+      "source_pdf_pages": [
+        2
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0020",
+      "name_ja": "殷",
+      "type": "states",
+      "source_pdf_pages": [
+        2
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0021",
+      "name_ja": "ケルト人",
+      "type": "peoples",
+      "source_pdf_pages": [
+        2
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0022",
+      "name_ja": "ラテン人",
+      "type": "peoples",
+      "source_pdf_pages": [
+        2
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0023",
+      "name_ja": "ギリシア人",
+      "type": "peoples",
+      "source_pdf_pages": [
+        2
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0024",
+      "name_ja": "ヘブライ人",
+      "type": "peoples",
+      "source_pdf_pages": [
+        2
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0025",
+      "name_ja": "アーリヤ人",
+      "type": "peoples",
+      "source_pdf_pages": [
+        2
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0026",
+      "name_ja": "インド=ヨーロッパ語族の移動",
+      "type": "movements",
+      "source_pdf_pages": [
+        2
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0027",
+      "name_ja": "戦車を用いた進出",
+      "type": "events",
+      "source_pdf_pages": [
+        2
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0028",
+      "name_ja": "アッシリア王国",
+      "type": "states",
+      "source_pdf_pages": [
+        3
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0029",
+      "name_ja": "東周",
+      "type": "states",
+      "source_pdf_pages": [
+        3
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0030",
+      "name_ja": "クシュ王国",
+      "type": "states",
+      "source_pdf_pages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0031",
+      "name_ja": "コーサラ国",
+      "type": "states",
+      "source_pdf_pages": [
+        3,
+        4
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0032",
+      "name_ja": "マガダ国",
+      "type": "states",
+      "source_pdf_pages": [
+        3,
+        4,
+        5
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0033",
+      "name_ja": "ローマ",
+      "type": "cities",
+      "source_pdf_pages": [
+        3,
+        7,
+        9,
+        10
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mp-rome"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0034",
+      "name_ja": "カルタゴ",
+      "type": "cities",
+      "source_pdf_pages": [
+        3,
+        7
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0035",
+      "name_ja": "ティルス",
+      "type": "cities",
+      "source_pdf_pages": [
+        3
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0036",
+      "name_ja": "洛邑",
+      "type": "cities",
+      "source_pdf_pages": [
+        3
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0037",
+      "name_ja": "ギリシア人居住地",
+      "type": "peoples",
+      "source_pdf_pages": [
+        3
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0038",
+      "name_ja": "フェニキア人居住地",
+      "type": "peoples",
+      "source_pdf_pages": [
+        3
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0039",
+      "name_ja": "アッシリアのオリエント統一",
+      "type": "movements",
+      "source_pdf_pages": [
+        3
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0040",
+      "name_ja": "鉄器の普及",
+      "type": "events",
+      "source_pdf_pages": [
+        3
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0041",
+      "name_ja": "メディア",
+      "type": "states",
+      "source_pdf_pages": [
+        4
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0042",
+      "name_ja": "リディア",
+      "type": "states",
+      "source_pdf_pages": [
+        4
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0043",
+      "name_ja": "新バビロニア",
+      "type": "states",
+      "source_pdf_pages": [
+        4
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0044",
+      "name_ja": "エジプト（前6世紀の図）",
+      "type": "states",
+      "source_pdf_pages": [
+        4
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0045",
+      "name_ja": "バビロン",
+      "type": "cities",
+      "source_pdf_pages": [
+        4,
+        5,
+        6
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0046",
+      "name_ja": "サルデス",
+      "type": "cities",
+      "source_pdf_pages": [
+        4,
+        5
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0047",
+      "name_ja": "イェルサレム",
+      "type": "cities",
+      "source_pdf_pages": [
+        4
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0048",
+      "name_ja": "スキタイ",
+      "type": "peoples",
+      "source_pdf_pages": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0049",
+      "name_ja": "バビロン捕囚",
+      "type": "movements",
+      "source_pdf_pages": [
+        4
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0050",
+      "name_ja": "孔子の活動",
+      "type": "events",
+      "source_pdf_pages": [
+        4
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0051",
+      "name_ja": "仏教の成立",
+      "type": "events",
+      "source_pdf_pages": [
+        4
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0052",
+      "name_ja": "アケメネス朝ペルシア",
+      "type": "states",
+      "source_pdf_pages": [
+        5
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0053",
+      "name_ja": "スサ",
+      "type": "cities",
+      "source_pdf_pages": [
+        5
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0054",
+      "name_ja": "ペルセポリス",
+      "type": "cities",
+      "source_pdf_pages": [
+        5
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0055",
+      "name_ja": "アテネ",
+      "type": "cities",
+      "source_pdf_pages": [
+        5
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0056",
+      "name_ja": "スパルタ",
+      "type": "cities",
+      "source_pdf_pages": [
+        5
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0057",
+      "name_ja": "ペルシア戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        5
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0058",
+      "name_ja": "ペロポネソス戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        5
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0059",
+      "name_ja": "王の道",
+      "type": "routes",
+      "source_pdf_pages": [
+        5
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0060",
+      "name_ja": "ソクラテスの活動",
+      "type": "events",
+      "source_pdf_pages": [
+        5
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0061",
+      "name_ja": "アレクサンドロス大王の帝国",
+      "type": "states",
+      "source_pdf_pages": [
+        6
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0062",
+      "name_ja": "ナンダ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        6
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0063",
+      "name_ja": "アレクサンドリア",
+      "type": "cities",
+      "source_pdf_pages": [
+        6,
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mp-alexandria"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0064",
+      "name_ja": "イッソス",
+      "type": "cities",
+      "source_pdf_pages": [
+        6
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0065",
+      "name_ja": "匈奴",
+      "type": "peoples",
+      "source_pdf_pages": [
+        6,
+        7,
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0066",
+      "name_ja": "アレクサンドロスの東方遠征",
+      "type": "movements",
+      "source_pdf_pages": [
+        6
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0067",
+      "name_ja": "帝国の成立",
+      "type": "events",
+      "source_pdf_pages": [
+        6
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0068",
+      "name_ja": "共和政ローマ",
+      "type": "states",
+      "source_pdf_pages": [
+        7,
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0069",
+      "name_ja": "セレウコス朝",
+      "type": "states",
+      "source_pdf_pages": [
+        7
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0070",
+      "name_ja": "プトレマイオス朝",
+      "type": "states",
+      "source_pdf_pages": [
+        7,
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0071",
+      "name_ja": "パルティア",
+      "type": "states",
+      "source_pdf_pages": [
+        7,
+        8,
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0072",
+      "name_ja": "バクトリア",
+      "type": "states",
+      "source_pdf_pages": [
+        7
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0073",
+      "name_ja": "マウリヤ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        7
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0074",
+      "name_ja": "秦",
+      "type": "states",
+      "source_pdf_pages": [
+        7
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0075",
+      "name_ja": "パータリプトラ",
+      "type": "cities",
+      "source_pdf_pages": [
+        7,
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0076",
+      "name_ja": "咸陽",
+      "type": "cities",
+      "source_pdf_pages": [
+        7
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0077",
+      "name_ja": "第2回ポエニ戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        7
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0078",
+      "name_ja": "ザマの戦い",
+      "type": "movements",
+      "source_pdf_pages": [
+        7
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0079",
+      "name_ja": "ハンニバルの進路",
+      "type": "routes",
+      "source_pdf_pages": [
+        7
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0080",
+      "name_ja": "秦の統一",
+      "type": "events",
+      "source_pdf_pages": [
+        7
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0081",
+      "name_ja": "垓下の戦い",
+      "type": "events",
+      "source_pdf_pages": [
+        7
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0082",
+      "name_ja": "前漢",
+      "type": "states",
+      "source_pdf_pages": [
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0083",
+      "name_ja": "衛氏朝鮮",
+      "type": "states",
+      "source_pdf_pages": [
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0084",
+      "name_ja": "シュンガ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0085",
+      "name_ja": "長安",
+      "type": "cities",
+      "source_pdf_pages": [
+        8,
+        9,
+        13,
+        14,
+        15
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mp-xian"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0086",
+      "name_ja": "メロエ",
+      "type": "cities",
+      "source_pdf_pages": [
+        8,
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0087",
+      "name_ja": "大月氏",
+      "type": "peoples",
+      "source_pdf_pages": [
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0088",
+      "name_ja": "烏孫",
+      "type": "peoples",
+      "source_pdf_pages": [
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0089",
+      "name_ja": "大宛",
+      "type": "peoples",
+      "source_pdf_pages": [
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0090",
+      "name_ja": "匈奴と月氏の移動",
+      "type": "movements",
+      "source_pdf_pages": [
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0091",
+      "name_ja": "ポエニ戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0092",
+      "name_ja": "張騫の西域行路",
+      "type": "routes",
+      "source_pdf_pages": [
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0093",
+      "name_ja": "楽浪郡などの設置",
+      "type": "events",
+      "source_pdf_pages": [
+        8
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0094",
+      "name_ja": "ローマ帝国",
+      "type": "states",
+      "source_pdf_pages": [
+        9,
+        10
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mt-roman-empire-200"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0095",
+      "name_ja": "クシャーナ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        9,
+        10
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0096",
+      "name_ja": "後漢",
+      "type": "states",
+      "source_pdf_pages": [
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0097",
+      "name_ja": "アクスム王国",
+      "type": "states",
+      "source_pdf_pages": [
+        9,
+        10
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0098",
+      "name_ja": "チャンパー",
+      "type": "states",
+      "source_pdf_pages": [
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0099",
+      "name_ja": "サータヴァーハナ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0100",
+      "name_ja": "洛陽",
+      "type": "cities",
+      "source_pdf_pages": [
+        9,
+        10,
+        11,
+        13,
+        15
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0101",
+      "name_ja": "鮮卑",
+      "type": "peoples",
+      "source_pdf_pages": [
+        9,
+        10
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0102",
+      "name_ja": "北匈奴",
+      "type": "peoples",
+      "source_pdf_pages": [
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0103",
+      "name_ja": "南匈奴",
+      "type": "peoples",
+      "source_pdf_pages": [
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0104",
+      "name_ja": "北匈奴の移動",
+      "type": "movements",
+      "source_pdf_pages": [
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0105",
+      "name_ja": "陸上交易路",
+      "type": "routes",
+      "source_pdf_pages": [
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0106",
+      "name_ja": "海上交易路",
+      "type": "routes",
+      "source_pdf_pages": [
+        9,
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0107",
+      "name_ja": "季節風航路",
+      "type": "routes",
+      "source_pdf_pages": [
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0108",
+      "name_ja": "大秦王安敦の使節",
+      "type": "events",
+      "source_pdf_pages": [
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0109",
+      "name_ja": "黄巾の乱",
+      "type": "events",
+      "source_pdf_pages": [
+        9
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0110",
+      "name_ja": "ササン朝ペルシア",
+      "type": "states",
+      "source_pdf_pages": [
+        10,
+        11,
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0111",
+      "name_ja": "魏",
+      "type": "states",
+      "source_pdf_pages": [
+        10
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0112",
+      "name_ja": "蜀",
+      "type": "states",
+      "source_pdf_pages": [
+        10
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0113",
+      "name_ja": "呉",
+      "type": "states",
+      "source_pdf_pages": [
+        10
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0114",
+      "name_ja": "クテシフォン",
+      "type": "cities",
+      "source_pdf_pages": [
+        10,
+        11,
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0115",
+      "name_ja": "建業",
+      "type": "cities",
+      "source_pdf_pages": [
+        10
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0116",
+      "name_ja": "赤壁の戦い",
+      "type": "movements",
+      "source_pdf_pages": [
+        10
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0117",
+      "name_ja": "軍人皇帝時代",
+      "type": "events",
+      "source_pdf_pages": [
+        10
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0118",
+      "name_ja": "卑弥呼の遣使",
+      "type": "events",
+      "source_pdf_pages": [
+        10
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0119",
+      "name_ja": "フランク王国",
+      "type": "states",
+      "source_pdf_pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0120",
+      "name_ja": "西ゴート王国",
+      "type": "states",
+      "source_pdf_pages": [
+        11,
+        12,
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0121",
+      "name_ja": "ヴァンダル王国",
+      "type": "states",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0122",
+      "name_ja": "東ゴート王国",
+      "type": "states",
+      "source_pdf_pages": [
+        11,
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0123",
+      "name_ja": "ビザンツ帝国",
+      "type": "states",
+      "source_pdf_pages": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0124",
+      "name_ja": "グプタ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0125",
+      "name_ja": "北魏",
+      "type": "states",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0126",
+      "name_ja": "宋",
+      "type": "states",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0127",
+      "name_ja": "斉",
+      "type": "states",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0128",
+      "name_ja": "扶南",
+      "type": "states",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0129",
+      "name_ja": "コンスタンティノープル",
+      "type": "cities",
+      "source_pdf_pages": [
+        11,
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0130",
+      "name_ja": "平城",
+      "type": "cities",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0131",
+      "name_ja": "フン人",
+      "type": "peoples",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0132",
+      "name_ja": "柔然",
+      "type": "peoples",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0133",
+      "name_ja": "エフタル",
+      "type": "peoples",
+      "source_pdf_pages": [
+        11,
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0134",
+      "name_ja": "スラヴ諸族",
+      "type": "peoples",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0135",
+      "name_ja": "カタラウヌムの戦い",
+      "type": "movements",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0136",
+      "name_ja": "フン人の移動",
+      "type": "movements",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0137",
+      "name_ja": "法顕の往路",
+      "type": "routes",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0138",
+      "name_ja": "仏図澄・鳩摩羅什の移動",
+      "type": "routes",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0139",
+      "name_ja": "西ローマ帝国滅亡",
+      "type": "events",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0140",
+      "name_ja": "北魏の漢化政策",
+      "type": "events",
+      "source_pdf_pages": [
+        11
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0141",
+      "name_ja": "隋",
+      "type": "states",
+      "source_pdf_pages": [
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0142",
+      "name_ja": "陳",
+      "type": "states",
+      "source_pdf_pages": [
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0143",
+      "name_ja": "高句麗",
+      "type": "states",
+      "source_pdf_pages": [
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0144",
+      "name_ja": "大興城",
+      "type": "cities",
+      "source_pdf_pages": [
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0145",
+      "name_ja": "突厥",
+      "type": "peoples",
+      "source_pdf_pages": [
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0146",
+      "name_ja": "ユスティニアヌスの征服",
+      "type": "movements",
+      "source_pdf_pages": [
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0147",
+      "name_ja": "ローマ法大全の編纂",
+      "type": "events",
+      "source_pdf_pages": [
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0148",
+      "name_ja": "隋の統一",
+      "type": "events",
+      "source_pdf_pages": [
+        12
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0149",
+      "name_ja": "ウマイヤ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0150",
+      "name_ja": "唐",
+      "type": "states",
+      "source_pdf_pages": [
+        13,
+        14,
+        15
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0151",
+      "name_ja": "吐蕃",
+      "type": "states",
+      "source_pdf_pages": [
+        13,
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0152",
+      "name_ja": "ヴァルダナ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0153",
+      "name_ja": "新羅",
+      "type": "states",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0154",
+      "name_ja": "南詔",
+      "type": "states",
+      "source_pdf_pages": [
+        13,
+        15
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0155",
+      "name_ja": "ダマスクス",
+      "type": "cities",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0156",
+      "name_ja": "メディナ",
+      "type": "cities",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0157",
+      "name_ja": "メッカ",
+      "type": "cities",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0158",
+      "name_ja": "西突厥",
+      "type": "peoples",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0159",
+      "name_ja": "東突厥",
+      "type": "peoples",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0160",
+      "name_ja": "アヴァール人",
+      "type": "peoples",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0161",
+      "name_ja": "ニハーヴァンドの戦い",
+      "type": "movements",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0162",
+      "name_ja": "白村江の戦い",
+      "type": "movements",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0163",
+      "name_ja": "イスラーム勢力の拡大",
+      "type": "movements",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0164",
+      "name_ja": "玄奘の旅行路",
+      "type": "routes",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0165",
+      "name_ja": "義浄の旅行路",
+      "type": "routes",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0166",
+      "name_ja": "ヒジュラ",
+      "type": "events",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0167",
+      "name_ja": "大化改新",
+      "type": "events",
+      "source_pdf_pages": [
+        13
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0168",
+      "name_ja": "アッバース朝",
+      "type": "states",
+      "source_pdf_pages": [
+        14,
+        15
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0169",
+      "name_ja": "後ウマイヤ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0170",
+      "name_ja": "ウイグル",
+      "type": "states",
+      "source_pdf_pages": [
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0171",
+      "name_ja": "シュリーヴィジャヤ",
+      "type": "states",
+      "source_pdf_pages": [
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0172",
+      "name_ja": "シャイレンドラ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0173",
+      "name_ja": "バグダード",
+      "type": "cities",
+      "source_pdf_pages": [
+        14,
+        15,
+        16,
+        17,
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mp-baghdad"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0174",
+      "name_ja": "平城京",
+      "type": "cities",
+      "source_pdf_pages": [
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0175",
+      "name_ja": "ウイグル",
+      "type": "peoples",
+      "source_pdf_pages": [
+        14,
+        15
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0176",
+      "name_ja": "トゥール・ポワティエ間の戦い",
+      "type": "movements",
+      "source_pdf_pages": [
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0177",
+      "name_ja": "タラス河畔の戦い",
+      "type": "movements",
+      "source_pdf_pages": [
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0178",
+      "name_ja": "カールの戴冠",
+      "type": "events",
+      "source_pdf_pages": [
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0179",
+      "name_ja": "安史の乱",
+      "type": "events",
+      "source_pdf_pages": [
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0180",
+      "name_ja": "聖像禁止令",
+      "type": "events",
+      "source_pdf_pages": [
+        14
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0181",
+      "name_ja": "西フランク王国",
+      "type": "states",
+      "source_pdf_pages": [
+        15,
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0182",
+      "name_ja": "東フランク王国",
+      "type": "states",
+      "source_pdf_pages": [
+        15,
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0183",
+      "name_ja": "サーマーン朝",
+      "type": "states",
+      "source_pdf_pages": [
+        15,
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0184",
+      "name_ja": "ガーナ王国",
+      "type": "states",
+      "source_pdf_pages": [
+        15
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0185",
+      "name_ja": "カンボジア",
+      "type": "states",
+      "source_pdf_pages": [
+        15,
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0186",
+      "name_ja": "サマルカンド",
+      "type": "cities",
+      "source_pdf_pages": [
+        15,
+        18,
+        20,
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mp-samarkand"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0187",
+      "name_ja": "コルドバ",
+      "type": "cities",
+      "source_pdf_pages": [
+        15,
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0188",
+      "name_ja": "キタイ",
+      "type": "peoples",
+      "source_pdf_pages": [
+        15,
+        17,
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0189",
+      "name_ja": "ウイグルの移動",
+      "type": "movements",
+      "source_pdf_pages": [
+        15
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0190",
+      "name_ja": "ヴェルダン条約",
+      "type": "events",
+      "source_pdf_pages": [
+        15
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0191",
+      "name_ja": "メルセン条約",
+      "type": "events",
+      "source_pdf_pages": [
+        15
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0192",
+      "name_ja": "黄巣の乱",
+      "type": "events",
+      "source_pdf_pages": [
+        15
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0193",
+      "name_ja": "ファーティマ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        16,
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0194",
+      "name_ja": "ブワイフ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0195",
+      "name_ja": "カラハン朝",
+      "type": "states",
+      "source_pdf_pages": [
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0196",
+      "name_ja": "キタイ",
+      "type": "states",
+      "source_pdf_pages": [
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0197",
+      "name_ja": "五代十国",
+      "type": "states",
+      "source_pdf_pages": [
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0198",
+      "name_ja": "大理",
+      "type": "states",
+      "source_pdf_pages": [
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0199",
+      "name_ja": "カイロ",
+      "type": "cities",
+      "source_pdf_pages": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0200",
+      "name_ja": "ブハラ",
+      "type": "cities",
+      "source_pdf_pages": [
+        16,
+        17,
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mp-bukhara"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0201",
+      "name_ja": "ノルマン人",
+      "type": "peoples",
+      "source_pdf_pages": [
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0202",
+      "name_ja": "マジャール人",
+      "type": "peoples",
+      "source_pdf_pages": [
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0203",
+      "name_ja": "ファーティマ朝の進出",
+      "type": "movements",
+      "source_pdf_pages": [
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0204",
+      "name_ja": "ノルマン人の侵入",
+      "type": "movements",
+      "source_pdf_pages": [
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0205",
+      "name_ja": "宋の成立",
+      "type": "events",
+      "source_pdf_pages": [
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0206",
+      "name_ja": "カペー朝成立",
+      "type": "events",
+      "source_pdf_pages": [
+        16
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0207",
+      "name_ja": "神聖ローマ帝国",
+      "type": "states",
+      "source_pdf_pages": [
+        17,
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0208",
+      "name_ja": "フランス王国",
+      "type": "states",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0209",
+      "name_ja": "セルジューク朝",
+      "type": "states",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0210",
+      "name_ja": "ガズナ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0211",
+      "name_ja": "ムラービト朝",
+      "type": "states",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0212",
+      "name_ja": "北宋",
+      "type": "states",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0213",
+      "name_ja": "西夏",
+      "type": "states",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0214",
+      "name_ja": "大越",
+      "type": "states",
+      "source_pdf_pages": [
+        17,
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0215",
+      "name_ja": "チョーラ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0216",
+      "name_ja": "開封",
+      "type": "cities",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0217",
+      "name_ja": "西夏",
+      "type": "peoples",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0218",
+      "name_ja": "チョーラ朝の進出",
+      "type": "movements",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0219",
+      "name_ja": "ノルマン・コンクェスト",
+      "type": "movements",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0220",
+      "name_ja": "クレルモン宗教会議",
+      "type": "events",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0221",
+      "name_ja": "カノッサの屈辱",
+      "type": "events",
+      "source_pdf_pages": [
+        17
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0222",
+      "name_ja": "アイユーブ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0223",
+      "name_ja": "ムワッヒド朝",
+      "type": "states",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0224",
+      "name_ja": "カラキタイ",
+      "type": "states",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0225",
+      "name_ja": "ホラズム=シャー朝",
+      "type": "states",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0226",
+      "name_ja": "ゴール朝",
+      "type": "states",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0227",
+      "name_ja": "金",
+      "type": "states",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0228",
+      "name_ja": "南宋",
+      "type": "states",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0229",
+      "name_ja": "臨安",
+      "type": "cities",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0230",
+      "name_ja": "第3回十字軍",
+      "type": "movements",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0231",
+      "name_ja": "靖康の変",
+      "type": "movements",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0232",
+      "name_ja": "キタイの西遷",
+      "type": "routes",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0233",
+      "name_ja": "紹興の和議",
+      "type": "events",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0234",
+      "name_ja": "鎌倉幕府成立",
+      "type": "events",
+      "source_pdf_pages": [
+        18
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0235",
+      "name_ja": "キプチャク=ハン国",
+      "type": "states",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0236",
+      "name_ja": "チャガタイ=ハン国",
+      "type": "states",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0237",
+      "name_ja": "イル=ハン国",
+      "type": "states",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0238",
+      "name_ja": "元",
+      "type": "states",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0239",
+      "name_ja": "マムルーク朝",
+      "type": "states",
+      "source_pdf_pages": [
+        19,
+        20,
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0240",
+      "name_ja": "マリ王国",
+      "type": "states",
+      "source_pdf_pages": [
+        19,
+        20
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mt-mali-1400"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0241",
+      "name_ja": "パガン朝",
+      "type": "states",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0242",
+      "name_ja": "スコータイ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0243",
+      "name_ja": "カラコルム",
+      "type": "cities",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0244",
+      "name_ja": "大都",
+      "type": "cities",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0245",
+      "name_ja": "トンブクトゥ",
+      "type": "cities",
+      "source_pdf_pages": [
+        19,
+        20
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mp-timbuktu"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0246",
+      "name_ja": "モンゴル諸勢力",
+      "type": "peoples",
+      "source_pdf_pages": [
+        19,
+        20
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0247",
+      "name_ja": "ワールシュタットの戦い",
+      "type": "movements",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0248",
+      "name_ja": "バグダード占領",
+      "type": "movements",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0249",
+      "name_ja": "元寇",
+      "type": "movements",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0250",
+      "name_ja": "チンギス・ハンの遠征",
+      "type": "routes",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0251",
+      "name_ja": "オゴデイの遠征",
+      "type": "routes",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0252",
+      "name_ja": "フビライの遠征",
+      "type": "routes",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0253",
+      "name_ja": "大憲章",
+      "type": "events",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0254",
+      "name_ja": "南宋滅亡",
+      "type": "events",
+      "source_pdf_pages": [
+        19
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0255",
+      "name_ja": "明",
+      "type": "states",
+      "source_pdf_pages": [
+        20,
+        21,
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mt-ming-1500",
+        "mt-ming-1600"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0256",
+      "name_ja": "北元",
+      "type": "states",
+      "source_pdf_pages": [
+        20
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0257",
+      "name_ja": "ティムール朝",
+      "type": "states",
+      "source_pdf_pages": [
+        20,
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0258",
+      "name_ja": "オスマン帝国",
+      "type": "states",
+      "source_pdf_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mt-ottoman-1500",
+        "mt-ottoman-1600",
+        "mt-ottoman-1700"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0259",
+      "name_ja": "ヴィジャヤナガル王国",
+      "type": "states",
+      "source_pdf_pages": [
+        20
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0260",
+      "name_ja": "アユタヤ朝",
+      "type": "states",
+      "source_pdf_pages": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mp-ayutthaya",
+        "mt-ayutthaya-1500",
+        "mt-ayutthaya-1600",
+        "mt-ayutthaya-1700"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0261",
+      "name_ja": "マジャパヒト王国",
+      "type": "states",
+      "source_pdf_pages": [
+        20,
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0262",
+      "name_ja": "南京",
+      "type": "cities",
+      "source_pdf_pages": [
+        20,
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0263",
+      "name_ja": "マラッカ",
+      "type": "cities",
+      "source_pdf_pages": [
+        20,
+        21,
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mp-malacca"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0264",
+      "name_ja": "ティムール朝の進出",
+      "type": "movements",
+      "source_pdf_pages": [
+        20
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0265",
+      "name_ja": "英仏百年戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        20
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0266",
+      "name_ja": "イブン=バットゥータの旅行路",
+      "type": "routes",
+      "source_pdf_pages": [
+        20
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0267",
+      "name_ja": "マンサ=ムーサの巡礼",
+      "type": "routes",
+      "source_pdf_pages": [
+        20
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0268",
+      "name_ja": "明の成立",
+      "type": "events",
+      "source_pdf_pages": [
+        20
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0269",
+      "name_ja": "朝鮮建国",
+      "type": "events",
+      "source_pdf_pages": [
+        20
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0270",
+      "name_ja": "ソンガイ王国",
+      "type": "states",
+      "source_pdf_pages": [
+        21,
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mt-songhai-1500"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0271",
+      "name_ja": "マラッカ王国",
+      "type": "states",
+      "source_pdf_pages": [
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0272",
+      "name_ja": "北京",
+      "type": "cities",
+      "source_pdf_pages": [
+        21,
+        23,
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0273",
+      "name_ja": "オイラト",
+      "type": "peoples",
+      "source_pdf_pages": [
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0274",
+      "name_ja": "モンゴル",
+      "type": "peoples",
+      "source_pdf_pages": [
+        21,
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0275",
+      "name_ja": "アンカラの戦い",
+      "type": "movements",
+      "source_pdf_pages": [
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0276",
+      "name_ja": "コンスタンティノープル陥落",
+      "type": "movements",
+      "source_pdf_pages": [
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0277",
+      "name_ja": "土木の変",
+      "type": "movements",
+      "source_pdf_pages": [
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0278",
+      "name_ja": "鄭和の航路",
+      "type": "routes",
+      "source_pdf_pages": [
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0279",
+      "name_ja": "ヴァスコ=ダ=ガマの航路",
+      "type": "routes",
+      "source_pdf_pages": [
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0280",
+      "name_ja": "グラナダ陥落",
+      "type": "events",
+      "source_pdf_pages": [
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0281",
+      "name_ja": "スペイン王国成立",
+      "type": "events",
+      "source_pdf_pages": [
+        21
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0282",
+      "name_ja": "サファヴィー朝",
+      "type": "states",
+      "source_pdf_pages": [
+        22,
+        23
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0283",
+      "name_ja": "ムガル帝国",
+      "type": "states",
+      "source_pdf_pages": [
+        22,
+        23,
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mt-mughal-1600",
+        "mt-mughal-1700"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0284",
+      "name_ja": "アステカ王国",
+      "type": "states",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0285",
+      "name_ja": "インカ帝国",
+      "type": "states",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0286",
+      "name_ja": "コンゴ王国",
+      "type": "states",
+      "source_pdf_pages": [
+        22,
+        23,
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0287",
+      "name_ja": "イスタンブル",
+      "type": "cities",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mp-istanbul"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0288",
+      "name_ja": "イスファハーン",
+      "type": "cities",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0289",
+      "name_ja": "アグラ",
+      "type": "cities",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0290",
+      "name_ja": "クスコ",
+      "type": "cities",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mp-cusco"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0291",
+      "name_ja": "テノチティトラン",
+      "type": "cities",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [
+        "mp-mexico-city"
+      ],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0292",
+      "name_ja": "女真",
+      "type": "peoples",
+      "source_pdf_pages": [
+        22,
+        23
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0293",
+      "name_ja": "アステカ征服",
+      "type": "movements",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0294",
+      "name_ja": "インカ征服",
+      "type": "movements",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0295",
+      "name_ja": "マラッカ占領",
+      "type": "movements",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0296",
+      "name_ja": "レパントの海戦",
+      "type": "movements",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0297",
+      "name_ja": "マゼランの航路",
+      "type": "routes",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0298",
+      "name_ja": "カブラルの航路",
+      "type": "routes",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0299",
+      "name_ja": "ピサロの進路",
+      "type": "routes",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0300",
+      "name_ja": "コルテスの進路",
+      "type": "routes",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0301",
+      "name_ja": "東インド航路の拡大",
+      "type": "events",
+      "source_pdf_pages": [
+        22
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0302",
+      "name_ja": "清",
+      "type": "states",
+      "source_pdf_pages": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0303",
+      "name_ja": "ロシア帝国",
+      "type": "states",
+      "source_pdf_pages": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0304",
+      "name_ja": "マタラム王国",
+      "type": "states",
+      "source_pdf_pages": [
+        23
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0305",
+      "name_ja": "バタヴィア",
+      "type": "cities",
+      "source_pdf_pages": [
+        23,
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0306",
+      "name_ja": "長崎",
+      "type": "cities",
+      "source_pdf_pages": [
+        23
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0307",
+      "name_ja": "マカオ",
+      "type": "cities",
+      "source_pdf_pages": [
+        23,
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0308",
+      "name_ja": "マニラ",
+      "type": "cities",
+      "source_pdf_pages": [
+        23,
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0309",
+      "name_ja": "ジュンガル",
+      "type": "peoples",
+      "source_pdf_pages": [
+        23,
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0310",
+      "name_ja": "第2次ウィーン包囲",
+      "type": "movements",
+      "source_pdf_pages": [
+        23
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0311",
+      "name_ja": "ステンカ=ラージンの農民反乱",
+      "type": "movements",
+      "source_pdf_pages": [
+        23
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0312",
+      "name_ja": "大西洋の奴隷交易",
+      "type": "routes",
+      "source_pdf_pages": [
+        23
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0313",
+      "name_ja": "オランダの航路",
+      "type": "routes",
+      "source_pdf_pages": [
+        23
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0314",
+      "name_ja": "ネルチンスク条約",
+      "type": "events",
+      "source_pdf_pages": [
+        23
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0315",
+      "name_ja": "カルロヴィッツ条約",
+      "type": "events",
+      "source_pdf_pages": [
+        23
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0316",
+      "name_ja": "アンボイナ事件",
+      "type": "events",
+      "source_pdf_pages": [
+        23
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0317",
+      "name_ja": "アフシャール朝",
+      "type": "states",
+      "source_pdf_pages": [
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0318",
+      "name_ja": "マラーター王国",
+      "type": "states",
+      "source_pdf_pages": [
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0319",
+      "name_ja": "広州",
+      "type": "cities",
+      "source_pdf_pages": [
+        24,
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0320",
+      "name_ja": "カルカッタ",
+      "type": "cities",
+      "source_pdf_pages": [
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0321",
+      "name_ja": "アメリカ独立戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0322",
+      "name_ja": "プラッシーの戦い",
+      "type": "movements",
+      "source_pdf_pages": [
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0323",
+      "name_ja": "北方戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0324",
+      "name_ja": "大西洋三角貿易",
+      "type": "routes",
+      "source_pdf_pages": [
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0325",
+      "name_ja": "パリ条約",
+      "type": "events",
+      "source_pdf_pages": [
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0326",
+      "name_ja": "キャフタ条約",
+      "type": "events",
+      "source_pdf_pages": [
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0327",
+      "name_ja": "広州への来航制限",
+      "type": "events",
+      "source_pdf_pages": [
+        24
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0328",
+      "name_ja": "アメリカ合衆国",
+      "type": "states",
+      "source_pdf_pages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0329",
+      "name_ja": "イギリス領インド",
+      "type": "states",
+      "source_pdf_pages": [
+        25,
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0330",
+      "name_ja": "ブラジル",
+      "type": "states",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0331",
+      "name_ja": "ハイチ",
+      "type": "states",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0332",
+      "name_ja": "アチェ王国",
+      "type": "states",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0333",
+      "name_ja": "ニューヨーク",
+      "type": "cities",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0334",
+      "name_ja": "サンフランシスコ",
+      "type": "cities",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0335",
+      "name_ja": "シンガポール",
+      "type": "cities",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0336",
+      "name_ja": "ケープタウン",
+      "type": "cities",
+      "source_pdf_pages": [
+        25,
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0337",
+      "name_ja": "アヘン戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0338",
+      "name_ja": "アメリカ=イギリス戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0339",
+      "name_ja": "ギリシア独立戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0340",
+      "name_ja": "ペリーの航路",
+      "type": "routes",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0341",
+      "name_ja": "ウィーン会議",
+      "type": "events",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0342",
+      "name_ja": "ラテンアメリカ諸国の独立",
+      "type": "events",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0343",
+      "name_ja": "エチオピア帝国",
+      "type": "states",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0344",
+      "name_ja": "ベルギー領コンゴ",
+      "type": "states",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0345",
+      "name_ja": "ドイツ帝国",
+      "type": "states",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0346",
+      "name_ja": "ベルリン",
+      "type": "cities",
+      "source_pdf_pages": [
+        26,
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0347",
+      "name_ja": "スエズ",
+      "type": "cities",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0348",
+      "name_ja": "ファショダ",
+      "type": "cities",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0349",
+      "name_ja": "欧州諸国の中国勢力範囲",
+      "type": "peoples",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0350",
+      "name_ja": "クリミア戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0351",
+      "name_ja": "南北戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0352",
+      "name_ja": "南アフリカ戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0353",
+      "name_ja": "ファショダ事件",
+      "type": "movements",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0354",
+      "name_ja": "大陸横断鉄道",
+      "type": "routes",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0355",
+      "name_ja": "シベリア鉄道",
+      "type": "routes",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0356",
+      "name_ja": "スエズ運河",
+      "type": "routes",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0357",
+      "name_ja": "アラスカ買収",
+      "type": "events",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0358",
+      "name_ja": "アフリカ分割",
+      "type": "events",
+      "source_pdf_pages": [
+        26
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0359",
+      "name_ja": "ソヴィエト連邦",
+      "type": "states",
+      "source_pdf_pages": [
+        27,
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0360",
+      "name_ja": "中華民国",
+      "type": "states",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0361",
+      "name_ja": "トルコ共和国",
+      "type": "states",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0362",
+      "name_ja": "インド帝国",
+      "type": "states",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0363",
+      "name_ja": "モンゴル人民共和国",
+      "type": "states",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0364",
+      "name_ja": "エチオピア",
+      "type": "states",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0365",
+      "name_ja": "ワシントン",
+      "type": "cities",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0366",
+      "name_ja": "パナマ",
+      "type": "cities",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0367",
+      "name_ja": "モスクワ",
+      "type": "cities",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0368",
+      "name_ja": "ロシア革命",
+      "type": "movements",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0369",
+      "name_ja": "エチオピア侵略",
+      "type": "movements",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0370",
+      "name_ja": "ヴェルサイユ体制",
+      "type": "events",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0371",
+      "name_ja": "ワシントン体制",
+      "type": "events",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0372",
+      "name_ja": "世界恐慌",
+      "type": "events",
+      "source_pdf_pages": [
+        27
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0373",
+      "name_ja": "中華人民共和国",
+      "type": "states",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0374",
+      "name_ja": "インド",
+      "type": "states",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0375",
+      "name_ja": "インドネシア",
+      "type": "states",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0376",
+      "name_ja": "ガーナ",
+      "type": "states",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0377",
+      "name_ja": "コンゴ民主共和国",
+      "type": "states",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0378",
+      "name_ja": "バンドン",
+      "type": "cities",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0379",
+      "name_ja": "アクラ",
+      "type": "cities",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0380",
+      "name_ja": "アルジェ",
+      "type": "cities",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0381",
+      "name_ja": "朝鮮戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0382",
+      "name_ja": "ベトナム戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0383",
+      "name_ja": "アフガニスタン侵攻",
+      "type": "movements",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0384",
+      "name_ja": "イラン=イラク戦争",
+      "type": "movements",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0385",
+      "name_ja": "アフリカの年",
+      "type": "events",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0386",
+      "name_ja": "アジア・アフリカ会議",
+      "type": "events",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0387",
+      "name_ja": "ASEAN発足",
+      "type": "events",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0388",
+      "name_ja": "キューバ危機",
+      "type": "events",
+      "source_pdf_pages": [
+        28
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    },
+    {
+      "id": "mc-0389",
+      "name_ja": "エジプト（19世紀前半の図）",
+      "type": "states",
+      "source_pdf_pages": [
+        25
+      ],
+      "verification_status": "C",
+      "linked_feature_ids": [],
+      "identity_note": "名称と資料上の文脈による抽出候補。政権の同一性・歴史的所属は未検証。"
+    }
+  ],
+  "pages": [
+    {
+      "pdf_page": 1,
+      "textbook_page": null,
+      "period": "前30〜前21世紀",
+      "reference_year": -2500,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0001",
+        "mc-0002",
+        "mc-0003",
+        "mc-0004",
+        "mc-0005",
+        "mc-0006",
+        "mc-0007",
+        "mc-0008",
+        "mc-0009",
+        "mc-0010",
+        "mc-0011",
+        "mc-0012",
+        "mc-0013",
+        "mc-0014",
+        "mc-0015"
+      ],
+      "territory_observation": "アッカド王国、エジプト古王国の色分け。境界線は転写していない。",
+      "legend": [
+        "シュメール都市国家を三角で表示"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する",
+        "印刷ページ番号は判読できずnull"
+      ],
+      "categories": {
+        "states": [
+          "mc-0001",
+          "mc-0002"
+        ],
+        "cities": [
+          "mc-0003",
+          "mc-0004",
+          "mc-0005",
+          "mc-0006",
+          "mc-0007",
+          "mc-0008",
+          "mc-0009"
+        ],
+        "peoples": [
+          "mc-0010",
+          "mc-0011",
+          "mc-0012",
+          "mc-0013",
+          "mc-0014"
+        ],
+        "movements": [],
+        "routes": [],
+        "events": [
+          "mc-0015"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 2,
+      "textbook_page": null,
+      "period": "前20〜前11世紀",
+      "reference_year": -1500,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0016",
+        "mc-0017",
+        "mc-0018",
+        "mc-0019",
+        "mc-0020",
+        "mc-0021",
+        "mc-0022",
+        "mc-0023",
+        "mc-0024",
+        "mc-0025",
+        "mc-0026",
+        "mc-0027"
+      ],
+      "territory_observation": "ヒッタイト王国、ミケーネ王国、カッシート王国、エジプト新王国、殷の色分け。境界線は転写していない。",
+      "legend": [
+        "赤い矢印は民族移動"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する",
+        "印刷ページ番号は判読できずnull"
+      ],
+      "categories": {
+        "states": [
+          "mc-0016",
+          "mc-0017",
+          "mc-0018",
+          "mc-0019",
+          "mc-0020"
+        ],
+        "cities": [],
+        "peoples": [
+          "mc-0021",
+          "mc-0022",
+          "mc-0023",
+          "mc-0024",
+          "mc-0025"
+        ],
+        "movements": [
+          "mc-0026"
+        ],
+        "routes": [],
+        "events": [
+          "mc-0027"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 3,
+      "textbook_page": null,
+      "period": "前10〜前7世紀",
+      "reference_year": -800,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0028",
+        "mc-0029",
+        "mc-0030",
+        "mc-0031",
+        "mc-0032",
+        "mc-0033",
+        "mc-0034",
+        "mc-0035",
+        "mc-0036",
+        "mc-0037",
+        "mc-0038",
+        "mc-0039",
+        "mc-0040"
+      ],
+      "territory_observation": "アッシリア王国、東周、クシュ王国、コーサラ国、マガダ国の色分け。境界線は転写していない。",
+      "legend": [
+        "居住地を異なる模様で表示"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する",
+        "印刷ページ番号は判読できずnull"
+      ],
+      "categories": {
+        "states": [
+          "mc-0028",
+          "mc-0029",
+          "mc-0030",
+          "mc-0031",
+          "mc-0032"
+        ],
+        "cities": [
+          "mc-0033",
+          "mc-0034",
+          "mc-0035",
+          "mc-0036"
+        ],
+        "peoples": [
+          "mc-0037",
+          "mc-0038"
+        ],
+        "movements": [
+          "mc-0039"
+        ],
+        "routes": [],
+        "events": [
+          "mc-0040"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 4,
+      "textbook_page": null,
+      "period": "前6世紀",
+      "reference_year": -550,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0041",
+        "mc-0042",
+        "mc-0043",
+        "mc-0044",
+        "mc-0030",
+        "mc-0031",
+        "mc-0032",
+        "mc-0045",
+        "mc-0046",
+        "mc-0047",
+        "mc-0048",
+        "mc-0049",
+        "mc-0050",
+        "mc-0051"
+      ],
+      "territory_observation": "メディア、リディア、新バビロニア、エジプト、クシュ王国、コーサラ国、マガダ国の色分け。境界線は転写していない。",
+      "legend": [
+        "ギリシア人とフェニキア人の居住地"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する",
+        "印刷ページ番号は判読できずnull"
+      ],
+      "categories": {
+        "states": [
+          "mc-0041",
+          "mc-0042",
+          "mc-0043",
+          "mc-0044",
+          "mc-0030",
+          "mc-0031",
+          "mc-0032"
+        ],
+        "cities": [
+          "mc-0045",
+          "mc-0046",
+          "mc-0047"
+        ],
+        "peoples": [
+          "mc-0048"
+        ],
+        "movements": [
+          "mc-0049"
+        ],
+        "routes": [],
+        "events": [
+          "mc-0050",
+          "mc-0051"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 5,
+      "textbook_page": null,
+      "period": "前5世紀",
+      "reference_year": -450,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0052",
+        "mc-0032",
+        "mc-0030",
+        "mc-0053",
+        "mc-0046",
+        "mc-0054",
+        "mc-0045",
+        "mc-0055",
+        "mc-0056",
+        "mc-0048",
+        "mc-0057",
+        "mc-0058",
+        "mc-0059",
+        "mc-0060"
+      ],
+      "territory_observation": "アケメネス朝ペルシア、マガダ国、クシュ王国の色分け。境界線は転写していない。",
+      "legend": [
+        "王の道を線で表示"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する",
+        "印刷ページ番号は判読できずnull"
+      ],
+      "categories": {
+        "states": [
+          "mc-0052",
+          "mc-0032",
+          "mc-0030"
+        ],
+        "cities": [
+          "mc-0053",
+          "mc-0046",
+          "mc-0054",
+          "mc-0045",
+          "mc-0055",
+          "mc-0056"
+        ],
+        "peoples": [
+          "mc-0048"
+        ],
+        "movements": [
+          "mc-0057",
+          "mc-0058"
+        ],
+        "routes": [
+          "mc-0059"
+        ],
+        "events": [
+          "mc-0060"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 6,
+      "textbook_page": 17,
+      "period": "前4世紀",
+      "reference_year": -350,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0061",
+        "mc-0062",
+        "mc-0030",
+        "mc-0063",
+        "mc-0045",
+        "mc-0064",
+        "mc-0048",
+        "mc-0065",
+        "mc-0066",
+        "mc-0067"
+      ],
+      "territory_observation": "アレクサンドロス大王の帝国、ナンダ朝、クシュ王国の色分け。境界線は転写していない。",
+      "legend": [
+        "遠征の赤矢印・建設都市の点"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0061",
+          "mc-0062",
+          "mc-0030"
+        ],
+        "cities": [
+          "mc-0063",
+          "mc-0045",
+          "mc-0064"
+        ],
+        "peoples": [
+          "mc-0048",
+          "mc-0065"
+        ],
+        "movements": [
+          "mc-0066"
+        ],
+        "routes": [],
+        "events": [
+          "mc-0067"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 7,
+      "textbook_page": null,
+      "period": "前3世紀",
+      "reference_year": -250,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0068",
+        "mc-0069",
+        "mc-0070",
+        "mc-0071",
+        "mc-0072",
+        "mc-0073",
+        "mc-0074",
+        "mc-0033",
+        "mc-0034",
+        "mc-0075",
+        "mc-0076",
+        "mc-0048",
+        "mc-0065",
+        "mc-0077",
+        "mc-0078",
+        "mc-0079",
+        "mc-0080",
+        "mc-0081"
+      ],
+      "territory_observation": "共和政ローマ、セレウコス朝、プトレマイオス朝、パルティア、バクトリア、マウリヤ朝、秦の色分け。境界線は転写していない。",
+      "legend": [
+        "ローマ領・カルタゴ勢力圏・ハンニバルの矢印"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する",
+        "印刷ページ番号は判読できずnull"
+      ],
+      "categories": {
+        "states": [
+          "mc-0068",
+          "mc-0069",
+          "mc-0070",
+          "mc-0071",
+          "mc-0072",
+          "mc-0073",
+          "mc-0074"
+        ],
+        "cities": [
+          "mc-0033",
+          "mc-0034",
+          "mc-0075",
+          "mc-0076"
+        ],
+        "peoples": [
+          "mc-0048",
+          "mc-0065"
+        ],
+        "movements": [
+          "mc-0077",
+          "mc-0078"
+        ],
+        "routes": [
+          "mc-0079"
+        ],
+        "events": [
+          "mc-0080",
+          "mc-0081"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 8,
+      "textbook_page": null,
+      "period": "前2世紀",
+      "reference_year": -150,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0068",
+        "mc-0070",
+        "mc-0071",
+        "mc-0082",
+        "mc-0083",
+        "mc-0084",
+        "mc-0085",
+        "mc-0075",
+        "mc-0086",
+        "mc-0065",
+        "mc-0087",
+        "mc-0088",
+        "mc-0089",
+        "mc-0090",
+        "mc-0091",
+        "mc-0092",
+        "mc-0093"
+      ],
+      "territory_observation": "共和政ローマ、プトレマイオス朝、パルティア、前漢、衛氏朝鮮、シュンガ朝の色分け。境界線は転写していない。",
+      "legend": [
+        "移動矢印と国別の塗り分け"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する",
+        "印刷ページ番号は判読できずnull"
+      ],
+      "categories": {
+        "states": [
+          "mc-0068",
+          "mc-0070",
+          "mc-0071",
+          "mc-0082",
+          "mc-0083",
+          "mc-0084"
+        ],
+        "cities": [
+          "mc-0085",
+          "mc-0075",
+          "mc-0086"
+        ],
+        "peoples": [
+          "mc-0065",
+          "mc-0087",
+          "mc-0088",
+          "mc-0089"
+        ],
+        "movements": [
+          "mc-0090",
+          "mc-0091"
+        ],
+        "routes": [
+          "mc-0092"
+        ],
+        "events": [
+          "mc-0093"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 9,
+      "textbook_page": null,
+      "period": "2世紀",
+      "reference_year": 200,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0094",
+        "mc-0071",
+        "mc-0095",
+        "mc-0096",
+        "mc-0097",
+        "mc-0098",
+        "mc-0099",
+        "mc-0033",
+        "mc-0063",
+        "mc-0085",
+        "mc-0100",
+        "mc-0086",
+        "mc-0101",
+        "mc-0102",
+        "mc-0103",
+        "mc-0104",
+        "mc-0105",
+        "mc-0106",
+        "mc-0107",
+        "mc-0108",
+        "mc-0109"
+      ],
+      "territory_observation": "ローマ帝国、パルティア、クシャーナ朝、後漢、アクスム王国、チャンパー、サータヴァーハナ朝の色分け。境界線は転写していない。",
+      "legend": [
+        "交易路・領域・インドでのローマ貨幣出土地点"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する",
+        "印刷ページ番号は判読できずnull"
+      ],
+      "categories": {
+        "states": [
+          "mc-0094",
+          "mc-0071",
+          "mc-0095",
+          "mc-0096",
+          "mc-0097",
+          "mc-0098",
+          "mc-0099"
+        ],
+        "cities": [
+          "mc-0033",
+          "mc-0063",
+          "mc-0085",
+          "mc-0100",
+          "mc-0086"
+        ],
+        "peoples": [
+          "mc-0101",
+          "mc-0102",
+          "mc-0103"
+        ],
+        "movements": [
+          "mc-0104"
+        ],
+        "routes": [
+          "mc-0105",
+          "mc-0106",
+          "mc-0107"
+        ],
+        "events": [
+          "mc-0108",
+          "mc-0109"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 10,
+      "textbook_page": 22,
+      "period": "3世紀",
+      "reference_year": 300,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0094",
+        "mc-0110",
+        "mc-0095",
+        "mc-0111",
+        "mc-0112",
+        "mc-0113",
+        "mc-0097",
+        "mc-0033",
+        "mc-0114",
+        "mc-0100",
+        "mc-0115",
+        "mc-0101",
+        "mc-0116",
+        "mc-0117",
+        "mc-0118"
+      ],
+      "territory_observation": "ローマ帝国、ササン朝ペルシア、クシャーナ朝、魏、蜀、呉、アクスム王国の色分け。境界線は転写していない。",
+      "legend": [
+        "280年の西晋統一領域と匈奴居住地"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0094",
+          "mc-0110",
+          "mc-0095",
+          "mc-0111",
+          "mc-0112",
+          "mc-0113",
+          "mc-0097"
+        ],
+        "cities": [
+          "mc-0033",
+          "mc-0114",
+          "mc-0100",
+          "mc-0115"
+        ],
+        "peoples": [
+          "mc-0101"
+        ],
+        "movements": [
+          "mc-0116"
+        ],
+        "routes": [],
+        "events": [
+          "mc-0117",
+          "mc-0118"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 11,
+      "textbook_page": null,
+      "period": "5世紀",
+      "reference_year": 500,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0119",
+        "mc-0120",
+        "mc-0121",
+        "mc-0122",
+        "mc-0123",
+        "mc-0110",
+        "mc-0124",
+        "mc-0125",
+        "mc-0126",
+        "mc-0127",
+        "mc-0128",
+        "mc-0129",
+        "mc-0114",
+        "mc-0130",
+        "mc-0100",
+        "mc-0131",
+        "mc-0132",
+        "mc-0133",
+        "mc-0134",
+        "mc-0135",
+        "mc-0136",
+        "mc-0137",
+        "mc-0138",
+        "mc-0139",
+        "mc-0140"
+      ],
+      "territory_observation": "フランク王国、西ゴート王国、ヴァンダル王国、東ゴート王国、ビザンツ帝国、ササン朝ペルシア、グプタ朝、北魏、宋、斉、扶南の色分け。境界線は転写していない。",
+      "legend": [
+        "代表的仏教遺跡・主要石窟寺院所在地"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する",
+        "印刷ページ番号は判読できずnull"
+      ],
+      "categories": {
+        "states": [
+          "mc-0119",
+          "mc-0120",
+          "mc-0121",
+          "mc-0122",
+          "mc-0123",
+          "mc-0110",
+          "mc-0124",
+          "mc-0125",
+          "mc-0126",
+          "mc-0127",
+          "mc-0128"
+        ],
+        "cities": [
+          "mc-0129",
+          "mc-0114",
+          "mc-0130",
+          "mc-0100"
+        ],
+        "peoples": [
+          "mc-0131",
+          "mc-0132",
+          "mc-0133",
+          "mc-0134"
+        ],
+        "movements": [
+          "mc-0135",
+          "mc-0136"
+        ],
+        "routes": [
+          "mc-0137",
+          "mc-0138"
+        ],
+        "events": [
+          "mc-0139",
+          "mc-0140"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 12,
+      "textbook_page": null,
+      "period": "6世紀",
+      "reference_year": 600,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0119",
+        "mc-0120",
+        "mc-0122",
+        "mc-0123",
+        "mc-0110",
+        "mc-0141",
+        "mc-0142",
+        "mc-0143",
+        "mc-0129",
+        "mc-0114",
+        "mc-0144",
+        "mc-0145",
+        "mc-0133",
+        "mc-0146",
+        "mc-0147",
+        "mc-0148"
+      ],
+      "territory_observation": "フランク王国、西ゴート王国、東ゴート王国、ビザンツ帝国、ササン朝ペルシア、隋、陳、高句麗の色分け。境界線は転写していない。",
+      "legend": [
+        "突厥の範囲と583年の分裂を表示"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する",
+        "印刷ページ番号は判読できずnull"
+      ],
+      "categories": {
+        "states": [
+          "mc-0119",
+          "mc-0120",
+          "mc-0122",
+          "mc-0123",
+          "mc-0110",
+          "mc-0141",
+          "mc-0142",
+          "mc-0143"
+        ],
+        "cities": [
+          "mc-0129",
+          "mc-0114",
+          "mc-0144"
+        ],
+        "peoples": [
+          "mc-0145",
+          "mc-0133"
+        ],
+        "movements": [
+          "mc-0146"
+        ],
+        "routes": [],
+        "events": [
+          "mc-0147",
+          "mc-0148"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 13,
+      "textbook_page": null,
+      "period": "7世紀",
+      "reference_year": 700,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0119",
+        "mc-0120",
+        "mc-0123",
+        "mc-0149",
+        "mc-0150",
+        "mc-0151",
+        "mc-0152",
+        "mc-0153",
+        "mc-0154",
+        "mc-0155",
+        "mc-0156",
+        "mc-0157",
+        "mc-0085",
+        "mc-0100",
+        "mc-0158",
+        "mc-0159",
+        "mc-0160",
+        "mc-0161",
+        "mc-0162",
+        "mc-0163",
+        "mc-0164",
+        "mc-0165",
+        "mc-0166",
+        "mc-0167"
+      ],
+      "territory_observation": "フランク王国、西ゴート王国、ビザンツ帝国、ウマイヤ朝、唐、吐蕃、ヴァルダナ朝、新羅、南詔の色分け。境界線は転写していない。",
+      "legend": [
+        "征服・宗教伝播・旅行を別の矢印で表示"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する",
+        "印刷ページ番号は判読できずnull"
+      ],
+      "categories": {
+        "states": [
+          "mc-0119",
+          "mc-0120",
+          "mc-0123",
+          "mc-0149",
+          "mc-0150",
+          "mc-0151",
+          "mc-0152",
+          "mc-0153",
+          "mc-0154"
+        ],
+        "cities": [
+          "mc-0155",
+          "mc-0156",
+          "mc-0157",
+          "mc-0085",
+          "mc-0100"
+        ],
+        "peoples": [
+          "mc-0158",
+          "mc-0159",
+          "mc-0160"
+        ],
+        "movements": [
+          "mc-0161",
+          "mc-0162",
+          "mc-0163"
+        ],
+        "routes": [
+          "mc-0164",
+          "mc-0165"
+        ],
+        "events": [
+          "mc-0166",
+          "mc-0167"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 14,
+      "textbook_page": 30,
+      "period": "8世紀",
+      "reference_year": 800,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0119",
+        "mc-0123",
+        "mc-0168",
+        "mc-0169",
+        "mc-0150",
+        "mc-0151",
+        "mc-0170",
+        "mc-0171",
+        "mc-0172",
+        "mc-0173",
+        "mc-0085",
+        "mc-0174",
+        "mc-0175",
+        "mc-0176",
+        "mc-0177",
+        "mc-0106",
+        "mc-0178",
+        "mc-0179",
+        "mc-0180"
+      ],
+      "territory_observation": "フランク王国、ビザンツ帝国、アッバース朝、後ウマイヤ朝、唐、吐蕃、ウイグル、シュリーヴィジャヤ、シャイレンドラ朝の色分け。境界線は転写していない。",
+      "legend": [
+        "征服・領域・友好同盟関係の矢印"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0119",
+          "mc-0123",
+          "mc-0168",
+          "mc-0169",
+          "mc-0150",
+          "mc-0151",
+          "mc-0170",
+          "mc-0171",
+          "mc-0172"
+        ],
+        "cities": [
+          "mc-0173",
+          "mc-0085",
+          "mc-0174"
+        ],
+        "peoples": [
+          "mc-0175"
+        ],
+        "movements": [
+          "mc-0176",
+          "mc-0177"
+        ],
+        "routes": [
+          "mc-0106"
+        ],
+        "events": [
+          "mc-0178",
+          "mc-0179",
+          "mc-0180"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 15,
+      "textbook_page": 32,
+      "period": "9世紀",
+      "reference_year": 900,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0181",
+        "mc-0182",
+        "mc-0123",
+        "mc-0168",
+        "mc-0183",
+        "mc-0150",
+        "mc-0154",
+        "mc-0184",
+        "mc-0185",
+        "mc-0173",
+        "mc-0085",
+        "mc-0100",
+        "mc-0186",
+        "mc-0187",
+        "mc-0175",
+        "mc-0188",
+        "mc-0189",
+        "mc-0190",
+        "mc-0191",
+        "mc-0192"
+      ],
+      "territory_observation": "西フランク王国、東フランク王国、ビザンツ帝国、アッバース朝、サーマーン朝、唐、南詔、ガーナ王国、カンボジアの色分け。境界線は転写していない。",
+      "legend": [
+        "分裂後の国境・友好同盟関係"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0181",
+          "mc-0182",
+          "mc-0123",
+          "mc-0168",
+          "mc-0183",
+          "mc-0150",
+          "mc-0154",
+          "mc-0184",
+          "mc-0185"
+        ],
+        "cities": [
+          "mc-0173",
+          "mc-0085",
+          "mc-0100",
+          "mc-0186",
+          "mc-0187"
+        ],
+        "peoples": [
+          "mc-0175",
+          "mc-0188"
+        ],
+        "movements": [
+          "mc-0189"
+        ],
+        "routes": [],
+        "events": [
+          "mc-0190",
+          "mc-0191",
+          "mc-0192"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 16,
+      "textbook_page": 34,
+      "period": "10世紀",
+      "reference_year": 1000,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0182",
+        "mc-0181",
+        "mc-0123",
+        "mc-0193",
+        "mc-0194",
+        "mc-0183",
+        "mc-0195",
+        "mc-0196",
+        "mc-0197",
+        "mc-0198",
+        "mc-0199",
+        "mc-0173",
+        "mc-0187",
+        "mc-0200",
+        "mc-0201",
+        "mc-0202",
+        "mc-0203",
+        "mc-0204",
+        "mc-0205",
+        "mc-0206"
+      ],
+      "territory_observation": "東フランク王国、西フランク王国、ビザンツ帝国、ファーティマ朝、ブワイフ朝、サーマーン朝、カラハン朝、キタイ、五代十国、大理の色分け。境界線は転写していない。",
+      "legend": [
+        "進出・侵入経路を色違いの矢印"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0182",
+          "mc-0181",
+          "mc-0123",
+          "mc-0193",
+          "mc-0194",
+          "mc-0183",
+          "mc-0195",
+          "mc-0196",
+          "mc-0197",
+          "mc-0198"
+        ],
+        "cities": [
+          "mc-0199",
+          "mc-0173",
+          "mc-0187",
+          "mc-0200"
+        ],
+        "peoples": [
+          "mc-0201",
+          "mc-0202"
+        ],
+        "movements": [
+          "mc-0203",
+          "mc-0204"
+        ],
+        "routes": [],
+        "events": [
+          "mc-0205",
+          "mc-0206"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 17,
+      "textbook_page": 36,
+      "period": "11世紀",
+      "reference_year": 1100,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0207",
+        "mc-0208",
+        "mc-0123",
+        "mc-0209",
+        "mc-0210",
+        "mc-0211",
+        "mc-0193",
+        "mc-0212",
+        "mc-0213",
+        "mc-0214",
+        "mc-0215",
+        "mc-0173",
+        "mc-0199",
+        "mc-0200",
+        "mc-0216",
+        "mc-0188",
+        "mc-0217",
+        "mc-0218",
+        "mc-0219",
+        "mc-0220",
+        "mc-0221"
+      ],
+      "territory_observation": "神聖ローマ帝国、フランス王国、ビザンツ帝国、セルジューク朝、ガズナ朝、ムラービト朝、ファーティマ朝、北宋、西夏、大越、チョーラ朝の色分け。境界線は転写していない。",
+      "legend": [
+        "宋の五京・府界・市舶司・設置都市"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0207",
+          "mc-0208",
+          "mc-0123",
+          "mc-0209",
+          "mc-0210",
+          "mc-0211",
+          "mc-0193",
+          "mc-0212",
+          "mc-0213",
+          "mc-0214",
+          "mc-0215"
+        ],
+        "cities": [
+          "mc-0173",
+          "mc-0199",
+          "mc-0200",
+          "mc-0216"
+        ],
+        "peoples": [
+          "mc-0188",
+          "mc-0217"
+        ],
+        "movements": [
+          "mc-0218",
+          "mc-0219"
+        ],
+        "routes": [],
+        "events": [
+          "mc-0220",
+          "mc-0221"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 18,
+      "textbook_page": 38,
+      "period": "12世紀",
+      "reference_year": 1200,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0207",
+        "mc-0123",
+        "mc-0222",
+        "mc-0223",
+        "mc-0224",
+        "mc-0225",
+        "mc-0226",
+        "mc-0227",
+        "mc-0228",
+        "mc-0185",
+        "mc-0199",
+        "mc-0229",
+        "mc-0200",
+        "mc-0186",
+        "mc-0188",
+        "mc-0230",
+        "mc-0231",
+        "mc-0232",
+        "mc-0233",
+        "mc-0234"
+      ],
+      "territory_observation": "神聖ローマ帝国、ビザンツ帝国、アイユーブ朝、ムワッヒド朝、カラキタイ、ホラズム=シャー朝、ゴール朝、金、南宋、カンボジアの色分け。境界線は転写していない。",
+      "legend": [
+        "征服・友好関係の矢印"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0207",
+          "mc-0123",
+          "mc-0222",
+          "mc-0223",
+          "mc-0224",
+          "mc-0225",
+          "mc-0226",
+          "mc-0227",
+          "mc-0228",
+          "mc-0185"
+        ],
+        "cities": [
+          "mc-0199",
+          "mc-0229",
+          "mc-0200",
+          "mc-0186"
+        ],
+        "peoples": [
+          "mc-0188"
+        ],
+        "movements": [
+          "mc-0230",
+          "mc-0231"
+        ],
+        "routes": [
+          "mc-0232"
+        ],
+        "events": [
+          "mc-0233",
+          "mc-0234"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 19,
+      "textbook_page": 40,
+      "period": "13世紀",
+      "reference_year": 1300,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0235",
+        "mc-0236",
+        "mc-0237",
+        "mc-0238",
+        "mc-0239",
+        "mc-0240",
+        "mc-0241",
+        "mc-0242",
+        "mc-0214",
+        "mc-0243",
+        "mc-0244",
+        "mc-0199",
+        "mc-0173",
+        "mc-0245",
+        "mc-0246",
+        "mc-0247",
+        "mc-0248",
+        "mc-0249",
+        "mc-0250",
+        "mc-0251",
+        "mc-0252",
+        "mc-0253",
+        "mc-0254"
+      ],
+      "territory_observation": "キプチャク=ハン国、チャガタイ=ハン国、イル=ハン国、元、マムルーク朝、マリ王国、パガン朝、スコータイ朝、大越の色分け。境界線は転写していない。",
+      "legend": [
+        "モンゴル遠征と十字軍経路を区別"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0235",
+          "mc-0236",
+          "mc-0237",
+          "mc-0238",
+          "mc-0239",
+          "mc-0240",
+          "mc-0241",
+          "mc-0242",
+          "mc-0214"
+        ],
+        "cities": [
+          "mc-0243",
+          "mc-0244",
+          "mc-0199",
+          "mc-0173",
+          "mc-0245"
+        ],
+        "peoples": [
+          "mc-0246"
+        ],
+        "movements": [
+          "mc-0247",
+          "mc-0248",
+          "mc-0249"
+        ],
+        "routes": [
+          "mc-0250",
+          "mc-0251",
+          "mc-0252"
+        ],
+        "events": [
+          "mc-0253",
+          "mc-0254"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 20,
+      "textbook_page": 42,
+      "period": "14世紀",
+      "reference_year": 1400,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0255",
+        "mc-0256",
+        "mc-0257",
+        "mc-0239",
+        "mc-0240",
+        "mc-0258",
+        "mc-0259",
+        "mc-0260",
+        "mc-0261",
+        "mc-0186",
+        "mc-0199",
+        "mc-0262",
+        "mc-0245",
+        "mc-0263",
+        "mc-0246",
+        "mc-0264",
+        "mc-0265",
+        "mc-0266",
+        "mc-0267",
+        "mc-0268",
+        "mc-0269"
+      ],
+      "territory_observation": "明、北元、ティムール朝、マムルーク朝、マリ王国、オスマン帝国、ヴィジャヤナガル王国、アユタヤ朝、マジャパヒト王国の色分け。境界線は転写していない。",
+      "legend": [
+        "征服・対立・同盟・旅行路を区別"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0255",
+          "mc-0256",
+          "mc-0257",
+          "mc-0239",
+          "mc-0240",
+          "mc-0258",
+          "mc-0259",
+          "mc-0260",
+          "mc-0261"
+        ],
+        "cities": [
+          "mc-0186",
+          "mc-0199",
+          "mc-0262",
+          "mc-0245",
+          "mc-0263"
+        ],
+        "peoples": [
+          "mc-0246"
+        ],
+        "movements": [
+          "mc-0264",
+          "mc-0265"
+        ],
+        "routes": [
+          "mc-0266",
+          "mc-0267"
+        ],
+        "events": [
+          "mc-0268",
+          "mc-0269"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 21,
+      "textbook_page": 44,
+      "period": "15世紀",
+      "reference_year": 1500,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0255",
+        "mc-0257",
+        "mc-0258",
+        "mc-0239",
+        "mc-0270",
+        "mc-0260",
+        "mc-0271",
+        "mc-0261",
+        "mc-0186",
+        "mc-0262",
+        "mc-0272",
+        "mc-0199",
+        "mc-0263",
+        "mc-0273",
+        "mc-0274",
+        "mc-0275",
+        "mc-0276",
+        "mc-0277",
+        "mc-0278",
+        "mc-0279",
+        "mc-0280",
+        "mc-0281"
+      ],
+      "territory_observation": "明、ティムール朝、オスマン帝国、マムルーク朝、ソンガイ王国、アユタヤ朝、マラッカ王国、マジャパヒト王国の色分け。境界線は転写していない。",
+      "legend": [
+        "明の最大領域・市舶司・鄭和航路"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0255",
+          "mc-0257",
+          "mc-0258",
+          "mc-0239",
+          "mc-0270",
+          "mc-0260",
+          "mc-0271",
+          "mc-0261"
+        ],
+        "cities": [
+          "mc-0186",
+          "mc-0262",
+          "mc-0272",
+          "mc-0199",
+          "mc-0263"
+        ],
+        "peoples": [
+          "mc-0273",
+          "mc-0274"
+        ],
+        "movements": [
+          "mc-0275",
+          "mc-0276",
+          "mc-0277"
+        ],
+        "routes": [
+          "mc-0278",
+          "mc-0279"
+        ],
+        "events": [
+          "mc-0280",
+          "mc-0281"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 22,
+      "textbook_page": 47,
+      "period": "16世紀",
+      "reference_year": 1600,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0258",
+        "mc-0282",
+        "mc-0283",
+        "mc-0255",
+        "mc-0284",
+        "mc-0285",
+        "mc-0286",
+        "mc-0270",
+        "mc-0260",
+        "mc-0287",
+        "mc-0288",
+        "mc-0289",
+        "mc-0263",
+        "mc-0290",
+        "mc-0291",
+        "mc-0292",
+        "mc-0274",
+        "mc-0293",
+        "mc-0294",
+        "mc-0295",
+        "mc-0296",
+        "mc-0297",
+        "mc-0298",
+        "mc-0299",
+        "mc-0300",
+        "mc-0301"
+      ],
+      "territory_observation": "オスマン帝国、サファヴィー朝、ムガル帝国、明、アステカ王国、インカ帝国、コンゴ王国、ソンガイ王国、アユタヤ朝の色分け。境界線は転写していない。",
+      "legend": [
+        "征服経路と欧州の海外領土を色分け"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0258",
+          "mc-0282",
+          "mc-0283",
+          "mc-0255",
+          "mc-0284",
+          "mc-0285",
+          "mc-0286",
+          "mc-0270",
+          "mc-0260"
+        ],
+        "cities": [
+          "mc-0287",
+          "mc-0288",
+          "mc-0289",
+          "mc-0263",
+          "mc-0290",
+          "mc-0291"
+        ],
+        "peoples": [
+          "mc-0292",
+          "mc-0274"
+        ],
+        "movements": [
+          "mc-0293",
+          "mc-0294",
+          "mc-0295",
+          "mc-0296"
+        ],
+        "routes": [
+          "mc-0297",
+          "mc-0298",
+          "mc-0299",
+          "mc-0300"
+        ],
+        "events": [
+          "mc-0301"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 23,
+      "textbook_page": 49,
+      "period": "17世紀",
+      "reference_year": 1700,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0258",
+        "mc-0282",
+        "mc-0283",
+        "mc-0302",
+        "mc-0303",
+        "mc-0286",
+        "mc-0260",
+        "mc-0304",
+        "mc-0305",
+        "mc-0306",
+        "mc-0272",
+        "mc-0307",
+        "mc-0308",
+        "mc-0292",
+        "mc-0309",
+        "mc-0310",
+        "mc-0311",
+        "mc-0312",
+        "mc-0313",
+        "mc-0314",
+        "mc-0315",
+        "mc-0316"
+      ],
+      "territory_observation": "オスマン帝国、サファヴィー朝、ムガル帝国、清、ロシア帝国、コンゴ王国、アユタヤ朝、マタラム王国の色分け。境界線は転写していない。",
+      "legend": [
+        "欧州海外領土の色分け・奴隷交易の矢印"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0258",
+          "mc-0282",
+          "mc-0283",
+          "mc-0302",
+          "mc-0303",
+          "mc-0286",
+          "mc-0260",
+          "mc-0304"
+        ],
+        "cities": [
+          "mc-0305",
+          "mc-0306",
+          "mc-0272",
+          "mc-0307",
+          "mc-0308"
+        ],
+        "peoples": [
+          "mc-0292",
+          "mc-0309"
+        ],
+        "movements": [
+          "mc-0310",
+          "mc-0311"
+        ],
+        "routes": [
+          "mc-0312",
+          "mc-0313"
+        ],
+        "events": [
+          "mc-0314",
+          "mc-0315",
+          "mc-0316"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 24,
+      "textbook_page": 51,
+      "period": "18世紀",
+      "reference_year": 1800,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0302",
+        "mc-0303",
+        "mc-0258",
+        "mc-0317",
+        "mc-0283",
+        "mc-0318",
+        "mc-0260",
+        "mc-0286",
+        "mc-0319",
+        "mc-0320",
+        "mc-0307",
+        "mc-0308",
+        "mc-0309",
+        "mc-0321",
+        "mc-0322",
+        "mc-0323",
+        "mc-0324",
+        "mc-0325",
+        "mc-0326",
+        "mc-0327"
+      ],
+      "territory_observation": "清、ロシア帝国、オスマン帝国、アフシャール朝、ムガル帝国、マラーター王国、アユタヤ朝、コンゴ王国の色分け。境界線は転写していない。",
+      "legend": [
+        "海外領土・商品別交易矢印"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0302",
+          "mc-0303",
+          "mc-0258",
+          "mc-0317",
+          "mc-0283",
+          "mc-0318",
+          "mc-0260",
+          "mc-0286"
+        ],
+        "cities": [
+          "mc-0319",
+          "mc-0320",
+          "mc-0307",
+          "mc-0308"
+        ],
+        "peoples": [
+          "mc-0309"
+        ],
+        "movements": [
+          "mc-0321",
+          "mc-0322",
+          "mc-0323"
+        ],
+        "routes": [
+          "mc-0324"
+        ],
+        "events": [
+          "mc-0325",
+          "mc-0326",
+          "mc-0327"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 25,
+      "textbook_page": 53,
+      "period": "19世紀前半",
+      "reference_year": 1850,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0328",
+        "mc-0302",
+        "mc-0303",
+        "mc-0258",
+        "mc-0389",
+        "mc-0329",
+        "mc-0330",
+        "mc-0331",
+        "mc-0332",
+        "mc-0333",
+        "mc-0334",
+        "mc-0319",
+        "mc-0335",
+        "mc-0336",
+        "mc-0305",
+        "mc-0337",
+        "mc-0338",
+        "mc-0339",
+        "mc-0340",
+        "mc-0341",
+        "mc-0342"
+      ],
+      "territory_observation": "アメリカ合衆国、清、ロシア帝国、オスマン帝国、エジプト、イギリス領インド、ブラジル、ハイチ、アチェ王国の色分け。境界線は転写していない。",
+      "legend": [
+        "欧州海外領土の色分け"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0328",
+          "mc-0302",
+          "mc-0303",
+          "mc-0258",
+          "mc-0389",
+          "mc-0329",
+          "mc-0330",
+          "mc-0331",
+          "mc-0332"
+        ],
+        "cities": [
+          "mc-0333",
+          "mc-0334",
+          "mc-0319",
+          "mc-0335",
+          "mc-0336",
+          "mc-0305"
+        ],
+        "peoples": [],
+        "movements": [
+          "mc-0337",
+          "mc-0338",
+          "mc-0339"
+        ],
+        "routes": [
+          "mc-0340"
+        ],
+        "events": [
+          "mc-0341",
+          "mc-0342"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 26,
+      "textbook_page": 55,
+      "period": "19世紀後半",
+      "reference_year": 1900,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0328",
+        "mc-0303",
+        "mc-0302",
+        "mc-0329",
+        "mc-0258",
+        "mc-0343",
+        "mc-0344",
+        "mc-0345",
+        "mc-0346",
+        "mc-0199",
+        "mc-0347",
+        "mc-0348",
+        "mc-0336",
+        "mc-0272",
+        "mc-0349",
+        "mc-0350",
+        "mc-0351",
+        "mc-0352",
+        "mc-0353",
+        "mc-0354",
+        "mc-0355",
+        "mc-0356",
+        "mc-0357",
+        "mc-0358"
+      ],
+      "territory_observation": "アメリカ合衆国、ロシア帝国、清、イギリス領インド、オスマン帝国、エチオピア帝国、コンゴ自由国、ドイツ帝国の色分け。境界線は転写していない。",
+      "legend": [
+        "獲得時期・植民地・中国勢力範囲を色と模様で表示"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0328",
+          "mc-0303",
+          "mc-0302",
+          "mc-0329",
+          "mc-0258",
+          "mc-0343",
+          "mc-0344",
+          "mc-0345"
+        ],
+        "cities": [
+          "mc-0346",
+          "mc-0199",
+          "mc-0347",
+          "mc-0348",
+          "mc-0336",
+          "mc-0272"
+        ],
+        "peoples": [
+          "mc-0349"
+        ],
+        "movements": [
+          "mc-0350",
+          "mc-0351",
+          "mc-0352",
+          "mc-0353"
+        ],
+        "routes": [
+          "mc-0354",
+          "mc-0355",
+          "mc-0356"
+        ],
+        "events": [
+          "mc-0357",
+          "mc-0358"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 27,
+      "textbook_page": 57,
+      "period": "20世紀前半",
+      "reference_year": 1930,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0359",
+        "mc-0360",
+        "mc-0328",
+        "mc-0361",
+        "mc-0362",
+        "mc-0363",
+        "mc-0364",
+        "mc-0365",
+        "mc-0366",
+        "mc-0367",
+        "mc-0368",
+        "mc-0369",
+        "mc-0370",
+        "mc-0371",
+        "mc-0372"
+      ],
+      "territory_observation": "ソヴィエト連邦、中華民国、アメリカ合衆国、トルコ共和国、インド帝国、モンゴル人民共和国、エチオピアの色分け。境界線は転写していない。",
+      "legend": [
+        "海外領土・経済ブロック・社会主義国家の表示"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0359",
+          "mc-0360",
+          "mc-0328",
+          "mc-0361",
+          "mc-0362",
+          "mc-0363",
+          "mc-0364"
+        ],
+        "cities": [
+          "mc-0365",
+          "mc-0366",
+          "mc-0367"
+        ],
+        "peoples": [],
+        "movements": [
+          "mc-0368",
+          "mc-0369"
+        ],
+        "routes": [],
+        "events": [
+          "mc-0370",
+          "mc-0371",
+          "mc-0372"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    },
+    {
+      "pdf_page": 28,
+      "textbook_page": 59,
+      "period": "20世紀後半・冷戦期",
+      "reference_year": 1960,
+      "status": "reviewed",
+      "extraction_status": "partial",
+      "candidate_ids": [
+        "mc-0328",
+        "mc-0359",
+        "mc-0373",
+        "mc-0374",
+        "mc-0375",
+        "mc-0376",
+        "mc-0377",
+        "mc-0346",
+        "mc-0378",
+        "mc-0379",
+        "mc-0380",
+        "mc-0381",
+        "mc-0382",
+        "mc-0383",
+        "mc-0384",
+        "mc-0385",
+        "mc-0386",
+        "mc-0387",
+        "mc-0388"
+      ],
+      "territory_observation": "アメリカ合衆国、ソヴィエト連邦、中華人民共和国、インド、インドネシア、ガーナ、コンゴ民主共和国の色分け。境界線は転写していない。",
+      "legend": [
+        "NATO・ワルシャワ条約機構・第三世界・EECの模様"
+      ],
+      "uncertain": [
+        "画面操作部と切れた端に隠れる細字は保留",
+        "年代は主図の対象期間。図中には別年代の事件・最大領域も混在する"
+      ],
+      "categories": {
+        "states": [
+          "mc-0328",
+          "mc-0359",
+          "mc-0373",
+          "mc-0374",
+          "mc-0375",
+          "mc-0376",
+          "mc-0377"
+        ],
+        "cities": [
+          "mc-0346",
+          "mc-0378",
+          "mc-0379",
+          "mc-0380"
+        ],
+        "peoples": [],
+        "movements": [
+          "mc-0381",
+          "mc-0382",
+          "mc-0383",
+          "mc-0384"
+        ],
+        "routes": [],
+        "events": [
+          "mc-0385",
+          "mc-0386",
+          "mc-0387",
+          "mc-0388"
+        ]
+      },
+      "reference_year_basis": "アプリ選択用の代表年。PDFから特定の1年として読んだものではない。境界がある場合は外部地理データの時点。"
+    }
+  ]
+}

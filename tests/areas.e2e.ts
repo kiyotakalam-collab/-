@@ -91,7 +91,7 @@ test.describe('二つの独立した学習エリア',()=>{
 
   test('総合ホームと0件の年号全画面が使え、文化史365項目506カードを維持する',async({page,context})=>{
     await routeCatalogs(context);await portal(page);
-    await expect(page.locator('[data-enter-area]')).toHaveCount(3);
+    await expect(page.locator('[data-enter-area]')).toHaveCount(4);
     await enter(page,'years');
     await expect(page.locator('main')).toContainText('0');
     await expect(page.locator('.mobile-nav [data-year-nav]')).toHaveCount(5);
