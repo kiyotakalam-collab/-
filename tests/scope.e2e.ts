@@ -79,6 +79,29 @@ test('公開済みの東洋文化史の追加を保持し、中国の大区分�
   expect((await records(page)).catalog.items).toEqual(catalog.items);
 });
 
+test('公開済みデルタでも作者・作品の両方向を中国文化史で絞り込める',async({page,context})=>{
+  await context.route('**/catalog-delta.json*',route=>route.fulfill({contentType:'application/json',body:JSON.stringify(publishedDelta)}));
+  await setup(page);
+  const catalog=mergeCatalog(seedCatalog,publishedDelta);
+  await expect.poll(async()=>(await records(page)).catalog.version).toBe(catalog.version);
+  const before=await records(page);
+  await page.locator('[name=regionGroups][value=china]').check();
+  for(const direction of ['person-work','work-author'] as const){
+    await page.locator('[name=cardDirection]').selectOption(direction);
+    const cards=selectCards(catalog,[],{...DEFAULT_FILTER,regionGroups:['china'],cardDirection:direction});
+    expect(cards.length).toBeGreaterThan(0);
+    await expect(page.locator('.setup-bottom strong')).toHaveText(`${cards.length} 枚が対象`);
+    await expect(page.locator('#study-options [type=submit]')).toBeEnabled();
+    await page.locator('#study-options [type=submit]').click();
+    await expect(page.locator('.flashcard h1')).toBeVisible();
+    await page.locator('[data-action=end-session]').click();
+    await page.locator('.mobile-nav [data-nav=setup]').click();
+  }
+  const after=await records(page);
+  expect(after.catalog).toEqual(before.catalog);
+  expect(after.events).toEqual(before.events);
+});
+
 test('大区分の時代の和集合と他の条件を組み合わせ、地域変更時に古い時代を残さない',async({page})=>{
   await setup(page);
   const base={regionGroups:['europe']};
