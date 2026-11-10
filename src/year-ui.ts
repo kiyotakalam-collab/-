@@ -2,17 +2,19 @@ import {
   EMPTY_YEARS, fetchYearCatalog, openYearDatabase, selectYearQuestions, yearProgress,
   type YearDB, type YearFilter, type YearQuestion, type YearSnapshot, type YearStudyMode,
 } from './years';
+import { YearChronologyUI } from './year-chronology-ui';
 
 const h = (v: unknown) => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
 const percent = (a: number, b: number) => b ? Math.round(a / b * 100) : 0;
 const directions = {'event-year':'出来事 → 年号', 'year-event':'年号 → 出来事'};
 const defaults = (): YearFilter => ({direction:'event-year', mode:'all', level:'all', region:'all', era:'all'});
-export type YearPage = 'home' | 'quiz' | 'list' | 'history' | 'review';
+export type YearPage = 'home' | 'quiz' | 'list' | 'history' | 'review' | 'ordering' | 'timeline';
 type Stage = 'setup' | 'studying' | 'finished';
 
 export class YearTestUI {
   private database: YearDB | null = null;
-  private state: YearSnapshot = {catalog:structuredClone(EMPTY_YEARS), events:[], lastSyncAt:null};
+  private state: YearSnapshot = {catalog:structuredClone(EMPTY_YEARS), events:[], lastSyncAt:null, orderingEvents:[]};
+  private chronology = new YearChronologyUI(()=>this.state,()=>this.database,async()=>{if(this.database)this.state=await this.database.load();},()=>this.rerender(),(text,error)=>this.notify(text,error),async()=>{if(this.syncPromise)await this.syncPromise;});
   private tab: YearPage = 'home';
   private stage: Stage = 'setup';
   private filter = defaults();
@@ -52,13 +54,14 @@ export class YearTestUI {
   }
   leave() {
     this.generation++;
+    this.chronology.leave();
     this.stage = 'setup'; this.queue = []; this.revealed = false;
     if (this.syncPending) void this.sync();
   }
   async onOnline() { if (this.database) await this.sync(); }
   private sync(): Promise<void> {
     if (!this.database) return Promise.resolve();
-    if (this.stage === 'studying') { this.syncPending = true; return Promise.resolve(); }
+    if (this.stage === 'studying' || this.chronology.isStudying()) { this.syncPending = true; return Promise.resolve(); }
     if (this.syncPromise) return this.syncPromise;
     this.syncPending = false;
     this.syncMessage = '年号教材を確認中…';
@@ -92,10 +95,12 @@ export class YearTestUI {
       list:['年号一覧', '登録した年号・出来事・出典を確認できます。'],
       history:['年号の学習履歴', '思い出した年号と、次に復習する問題を確認。'],
       review:['年号の復習管理', '復習のタイミングと、苦手な問題を確認。'],
+      ordering:['年代整序テスト', '出来事の前後関係を、4件ずつ確かめます。'],
+      timeline:['インタラクティブ年表', '同じ時間軸で、各地域の出来事を比べます。'],
     };
     const [title, description] = titles[this.tab];
     const content = this.tab === 'home' ? this.home() : this.tab === 'list' ? this.list() : this.tab === 'history' ? this.history()
-      : this.tab === 'review' ? this.review() : this.stage === 'setup' ? this.setup() : this.stage === 'studying' ? this.question() : this.finished();
+      : this.tab === 'review' ? this.review() : this.tab === 'ordering' ? this.chronology.ordering() : this.tab === 'timeline' ? this.chronology.timelineView() : this.stage === 'setup' ? this.setup() : this.stage === 'studying' ? this.question() : this.finished();
     return `<div class="year-area" data-year-page="${this.tab}"><section class="page-heading"><div><div class="eyebrow">CHRONOLOGY</div><h1>${title}</h1><p>${description}</p></div></section>${content}</div>`;
   }
   private stat(label: string, value: string | number, unit: string) {
@@ -110,6 +115,7 @@ export class YearTestUI {
   private home() {
     const s = this.summary();
     return `<section class="chronology-hero"><div class="eyebrow">ONE DATE AT A TIME</div><h2>年号を、確かな記憶に。</h2><p>出来事から年号を思い出す。<br>一問ずつ、記憶を確かめましょう。</p><button class="button primary" data-year-start="all">全範囲で学習 <span aria-hidden="true">→</span></button></section>
+      <section class="panel chronology-actions"><h2>前後関係と同時代を学ぶ</h2><button class="chronology-shortcut" data-year-page-link="ordering"><span>年代整序テスト<small>4つの出来事を古い順に</small></span><span aria-hidden="true">→</span></button><button class="chronology-shortcut" data-year-page-link="timeline"><span>インタラクティブ年表<small>同時代の各地域を比較</small></span><span aria-hidden="true">→</span></button></section>
       <section class="chronology-stats" aria-label="年号の学習統計">${this.stat('登録年号',s.count,'件')}${this.stat('学習済み年号',s.learned,'件')}${this.stat('累積回答',s.total,'回')}${this.stat('正答率',percent(s.correct,s.total),'%')}${this.stat('誤答履歴のある問題',s.mistakes,'問')}${this.stat('復習期限到来',s.due,'問')}</section>
       <section class="panel chronology-actions"><div class="section-title"><h2>今日の学習</h2><span class="small muted">出来事 → 年号</span></div>${this.shortcut('unseen','未学習の年号',s.unseen)}${this.shortcut('mistakes','間違えた年号',s.mistakes)}${this.shortcut('due','今日の復習',s.due)}<button class="chronology-shortcut" data-year-page-link="quiz"><span>範囲を指定して学習</span><span aria-hidden="true">→</span></button></section>${s.count ? '' : this.empty()}`;
   }
@@ -175,6 +181,7 @@ export class YearTestUI {
     return `<section class="panel settings-panel year-area chronology-tools"><div class="section-title"><h2>年号のデータ管理</h2><span class="subtle-chip">年号専用</span></div><p>年号教材と回答履歴を、この端末に保存します。</p><p class="small" role="status">${h(this.syncMessage || '保存済みの年号を読み込んでいます。')}</p><p class="small muted">登録 ${this.liveItems().length}件 · 教材v${this.state.catalog.version}<br>最終確認 ${this.state.lastSyncAt ? h(new Date(this.state.lastSyncAt).toLocaleString('ja-JP')) : '未取得'}</p><div class="chronology-tool-buttons"><button class="button secondary" data-year-action="sync" ${this.syncPromise?'disabled':''}>年号教材の最新版を確認</button><button class="button secondary" data-year-action="backup" ${this.database?'':'disabled'}>年号履歴をバックアップ</button><label class="button secondary year-import">年号履歴を復元<input type="file" id="year-restore" accept="application/json,.json"></label></div><p class="small muted">年号用JSONの復元は、年号の履歴に統合します。文化史のデータは別の保存領域で管理します。</p></section>`;
   }
   bind() {
+    this.chronology.bind();
     document.querySelectorAll<HTMLElement>('[data-year-page-link]').forEach(el => el.onclick = () => {this.navigate(el.dataset.yearPageLink as YearPage);this.rerender();});
     document.querySelectorAll<HTMLElement>('[data-year-start]').forEach(el => el.onclick = () => {this.navigate('quiz');this.filter={...defaults(),mode:el.dataset.yearStart as YearStudyMode};this.rerender();});
     const form = document.querySelector<HTMLFormElement>('#year-options');

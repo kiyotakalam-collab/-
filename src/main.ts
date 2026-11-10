@@ -21,7 +21,7 @@ import { DEFAULT_FILTER, type AppState, type Card, type StudyFilter, type Level,
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 type View = 'portal' | 'home' | 'setup' | 'study' | 'years' | 'library' | 'history' | 'review' | 'settings' | 'compare' | 'graph';
-type YearPage = 'home' | 'quiz' | 'list' | 'history' | 'review';
+type YearPage = 'home' | 'quiz' | 'list' | 'history' | 'review' | 'ordering' | 'timeline';
 let area: 'culture' | 'years' | null = null;
 let yearPage: YearPage = 'home';
 let navigationEpoch = 0;
@@ -452,8 +452,10 @@ async function boot(){
     relationData=await db.loadRelations()??structuredClone(EMPTY_RELATIONS);
     dailyPlan=await db.loadDailyPlan();
     const requested=location.hash.match(/^#\/culture\/(compare|graph)$/)?.[1] as View|undefined;
-    view=requested??'portal';area=requested?'culture':null;
-    window.history.replaceState({view,area,yearPage:'home'},'',requested?'#/culture/'+requested:'#/');
+    const requestedYear=location.hash.match(/^#\/years\/(ordering|timeline)$/)?.[1] as YearPage|undefined;
+    view=requestedYear?'years':requested??'portal';area=requestedYear?'years':requested?'culture':null;
+    if(requestedYear){yearPage=requestedYear;yearFeature.navigate(requestedYear);}
+    window.history.replaceState({view,area,yearPage},'',requestedYear?'#/years/'+requestedYear:requested?'#/culture/'+requested:'#/');
     render();void yearFeature.initialize();
     void setupPwa({onUpdate:r=>{updateRegistration=r;updateStatus='新しい公開版が見つかりました。「新しいバージョンに更新」を押してください。';toast('新しいバージョンがあります。データ管理から更新できます。');if(view==='settings')render();},onError:()=>{updateStatus='更新確認で通信エラーが発生しました。';if(view==='settings')render();}}).then(r=>{pwaRegistration=r;});
     if(!navigator.onLine)void refreshCultureFeatures(false);
