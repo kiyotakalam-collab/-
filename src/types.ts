@@ -38,6 +38,7 @@ export interface StudyFilter {
   regions: string[]; eras: string[]; fields: string[];
   regionGroups?: string[]; eraGroups?: string[];
   cardType: 'all' | 'text' | 'image';
+  cardDirection: 'all' | 'person-work' | 'work-author';
 }
 export interface Settings {
   syncUrl: string; lastSyncAt: string | null; lastBackupAt: string | null;
@@ -51,4 +52,4 @@ export interface Backup {
   catalog: Catalog; events: ReviewEvent[]; settings: Settings;
 }
 export const DEFAULT_SETTINGS: Settings = {syncUrl: '', lastSyncAt: null, lastBackupAt: null, dailyGoal: 20};
-export const DEFAULT_FILTER: StudyFilter = {mode: 'all', level: 'all', levelMode: 'cumulative', regions: [], eras: [], fields: [], cardType: 'all'};
+export const DEFAULT_FILTER: StudyFilter = {mode: 'all', level: 'all', levelMode: 'cumulative', regions: [], eras: [], fields: [], cardType: 'all', cardDirection: 'all'};
