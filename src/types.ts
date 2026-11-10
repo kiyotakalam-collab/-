@@ -1,3 +1,4 @@
+import type {ComparisonEvent,CultureRelations} from './culture-feature-types';
 export type Level = 1 | 2 | 3 | 4;
 export interface Source { title: string; url?: string; note?: string }
 export interface ImageAsset {
@@ -46,10 +47,12 @@ export interface Settings {
 }
 export interface AppState {
   catalog: Catalog; events: ReviewEvent[]; settings: Settings;
+  comparisonEvents?: ComparisonEvent[];
 }
 export interface Backup {
-  format: 'cultural-history-master'; schemaVersion: 1; exportedAt: string;
+  format: 'cultural-history-master'; schemaVersion: 1 | 2; exportedAt: string;
   catalog: Catalog; events: ReviewEvent[]; settings: Settings;
+  comparisonEvents?: ComparisonEvent[]; relations?: CultureRelations;
 }
 export const DEFAULT_SETTINGS: Settings = {syncUrl: '', lastSyncAt: null, lastBackupAt: null, dailyGoal: 20};
 export const DEFAULT_FILTER: StudyFilter = {mode: 'all', level: 'all', levelMode: 'cumulative', regions: [], eras: [], fields: [], cardType: 'all', cardDirection: 'all'};

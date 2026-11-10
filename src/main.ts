@@ -2,6 +2,12 @@ import './style.css';
 import './study-areas.css';
 import './year-area.css';
 import './culture-scope.css';
+import './culture-features.css';
+import {CompareUI} from './culture-compare-ui';
+import {GraphUI} from './culture-graph-ui';
+import {EMPTY_RELATIONS,fetchRelationsData,resolveRelations,validateRelations} from './culture-relations';
+import {completedDaily,localDateKey,type DailyPlan} from './culture-daily';
+import type {CultureRelations,FeatureContext} from './culture-feature-types';
 import { renderCultureScope, availableRegionGroups } from './culture-picker';
 import { REGION_GROUPS, eraGroupsForRegions } from './culture-scope';
 import { version as appVersion } from '../package.json';
@@ -14,7 +20,7 @@ import { YearTestUI } from './year-ui';
 import { DEFAULT_FILTER, type AppState, type Card, type StudyFilter, type Level, type ImageAsset } from './types';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
-type View = 'portal' | 'home' | 'setup' | 'study' | 'years' | 'library' | 'history' | 'review' | 'settings';
+type View = 'portal' | 'home' | 'setup' | 'study' | 'years' | 'library' | 'history' | 'review' | 'settings' | 'compare' | 'graph';
 type YearPage = 'home' | 'quiz' | 'list' | 'history' | 'review';
 let area: 'culture' | 'years' | null = null;
 let yearPage: YearPage = 'home';
@@ -31,6 +37,13 @@ let revealed = false;
 let saving = false;
 let sessionCorrect = 0;
 let sessionId = '';
+let sessionKind:'normal'|'daily'|'related'='normal';
+let dailyPlan:DailyPlan|null=null;
+let relationData:CultureRelations=structuredClone(EMPTY_RELATIONS);
+let relationMessage='関係データを確認しています。';
+let relationLoading=false;
+let featureSyncPending=false;
+let featureRefresh:Promise<void>|null=null;
 let syncing = false;
 let syncMessage = '';
 let sessionLimit = '20';
@@ -80,10 +93,16 @@ function toast(message: string, error = false) {
   window.setTimeout(()=>{if(el?.textContent===message)el.className='toast hidden';},5500);
 }
 const yearFeature = new YearTestUI(()=>{if(state&&(view==='years'||view==='portal'||view==='settings'))render();},toast);
+const featureContext=():FeatureContext=>({catalog:state.catalog,events:state.events,comparisonEvents:state.comparisonEvents??[],relations:relationData,catalogSyncing:syncing});
+const compareFeature=new CompareUI(featureContext,async events=>{await db.recordComparisons(events);state=await db.load();},()=>{if(view==='compare')render();},toast,id=>openGraph(id));
+const graphFeature=new GraphUI(featureContext,()=>{if(view==='graph')render();},ids=>{void startRelatedSession(ids);},id=>openCompare(id));
+function cultureSessionActive():boolean{return view==='compare'&&compareFeature.isStudying()||view==='study'&&position<queue.length;}
+function openCompare(id?:string){compareFeature.open(id);go('compare');}
+function openGraph(id?:string){graphFeature.open(id);go('graph');}
 function nav() {
   if(area==='years')return ([['home','ホーム','home'],['quiz','問題演習','calendar'],['list','年号一覧','book'],['history','学習履歴','history'],['review','復習管理','refresh']] as [YearPage,string,string][]).map(([v,t,i])=>`<button class="nav-item ${yearPage===v?'active':''}" data-year-nav="${v}" ${yearPage===v?'aria-current="page"':''}>${icon(i)}<span>${t}</span></button>`).join('');
   const links: [View,string,string][] = [['home','ホーム','home'],['setup','問題演習','study'],['library','用語一覧','book'],['history','学習履歴','history'],['review','復習管理','refresh']];
-  return links.map(([v,t,i])=>`<button class="nav-item ${view===v || (v==='setup' && view==='study')?'active':''}" data-nav="${v}" ${view===v?'aria-current="page"':''}>${icon(i)}<span>${t}</span></button>`).join('');
+  return links.map(([v,t,i])=>`<button class="nav-item ${view===v || (v==='setup' && view==='study')||(v==='home'&&['compare','graph'].includes(view))?'active':''}" data-nav="${v}" ${view===v?'aria-current="page"':''}>${icon(i)}<span>${t}</span></button>`).join('');
 }
 function render() {
   if(view==='years'){
@@ -92,7 +111,7 @@ function render() {
   }
   const inArea=view!=='portal'&&view!=='settings';
   const label=area==='years'?'年号':'文化史';
-  const content=view==='portal'?portal():view==='home'?home():view==='setup'?setup():view==='study'?study():view==='history'?history():view==='review'?cultureReview():view==='library'?library():view==='years'?yearFeature.render():settings()+yearFeature.renderTools();
+  const content=view==='portal'?portal():view==='home'?home():view==='setup'?setup():view==='study'?study():view==='history'?history():view==='review'?cultureReview():view==='library'?library():view==='years'?yearFeature.render():view==='compare'?relationStatus()+compareFeature.render():view==='graph'?relationStatus()+graphFeature.render():settings()+yearFeature.renderTools();
   app.innerHTML=`<div class="main-shell area-shell ${inArea?'with-area-nav':''} ${area==='years'&&inArea?'year-area':''}"><header class="topbar area-topbar"><a class="app-brand" href="#/" data-nav="portal">${icon('book')}<span>世界史学習マスター</span></a><button class="area-settings" data-nav="settings" aria-label="データ管理・設定">${icon('settings')}</button></header>
   ${view!=='portal'?`<div class="area-location"><button class="text-button" data-nav="portal">‹ 総合ホームに戻る</button><span class="area-badge">${view==='settings'?'共通設定':label+'エリア'}</span></div>`:''}
   <main id="main" tabindex="-1">${content}</main><footer class="page-footer"><span>世界史学習マスター</span><span>${navigator.onLine?'学習記録は端末内に保存':'オフライン · 保存済み教材で学習'}</span></footer></div>${inArea?`<nav class="mobile-nav" aria-label="${label}メニュー">${nav()}</nav>`:''}<dialog id="image-dialog"><button class="icon-button dialog-close" aria-label="画像を閉じる" data-action="close-image">${icon('close')}</button><div id="image-dialog-content"></div></dialog>`;
@@ -138,13 +157,29 @@ function home() {
   const days=Math.max(0,Math.ceil((new Date('2027-02-15T00:00:00+09:00').getTime()-Date.now())/86400000));
   const weakList=[...weak.entries()].filter(([,v])=>v.wrong>0).sort((a,b)=>b[1].wrong/b[1].total-a[1].wrong/a[1].total).slice(0,3);
   return `<section class="page-heading"><div><div class="eyebrow">YOUR CULTURAL HISTORY JOURNEY</div><h1>今日も、ひとつ先の知識へ。</h1><p>積み重ねた学びが、確かな力になります。</p></div><div class="exam-count"><span>慶應文学部の入試まで</span><strong>${days}<small>日</small></strong></div></section>
-  <section class="hero"><div class="hero-content"><span class="hero-label">${icon('leaf')} DAILY REVIEW</span><h2>${due?'覚えた知識を、確かな記憶に。':'文化史のつながりを、少しずつ。'}</h2><p>${due?`復習のタイミングを迎えたカードが <strong>${due}枚</strong> あります。`:'人物、作品、思想。今日の学習を始めましょう。'}<br>短い時間の積み重ねが、合格への一歩に。</p><button class="button white" data-start="${due?'due':'all'}">${due?'今日の復習をはじめる':'今日の学習をはじめる'}${icon('arrow')}</button><span class="hero-note">${due?`${due}枚の復習カード`:`${cards.length}枚の初期カード`} · 1問ずつ、自分のペースで</span></div><div class="hero-art" aria-hidden="true"><svg viewBox="0 0 260 230" fill="none"><circle cx="150" cy="108" r="91" stroke="currentColor" stroke-opacity=".25"/><circle cx="150" cy="108" r="76" stroke="currentColor" stroke-opacity=".12"/><path d="m47 77 103-48 103 48H47Zm8 9h190M57 184h187M47 194h207M39 205h223M72 91v87m18-87v87m30-87v87m18-87v87m30-87v87m18-87v87m30-87v87m18-87v87M67 91h28m20 0h28m20 0h28m20 0h28M67 178h28m20 0h28m20 0h28m20 0h28" stroke="currentColor" stroke-width="2"/><path d="m118 65 32-15 32 15h-64Z" stroke="currentColor" stroke-opacity=".5"/></svg><span>ARS LONGA, VITA BREVIS</span></div></section>
+  ${dailyRecommendations()}<section class="panel feature-due-shortcut"><strong>期限が来たカードをまとめて復習</strong><span>${due}枚が対象</span><button class="button secondary" data-start="due" ${due?"":"disabled"}>今日の復習</button></section>
   <section class="stats-grid" aria-label="学習の統計">${stat('総収録項目',items.length,'項目',`${cards.length}枚のフラッシュカード`,'book')}${stat('学習済みカード',studied,'枚',`全カードの ${pct(studied,cards.length)}%`,'check')}${stat('全体の正答率',events.length?pct(correct,events.length):'—',events.length?'%':'',`${events.length}回の回答から集計`,'grid')}${stat('復習期限到来',due,'枚',due?'今が復習のタイミング':'自分のペースで進めましょう','refresh')}</section>
   <div class="dashboard-grid"><section class="panel level-panel"><div class="section-title"><h2>難易度別の学習進捗</h2><span class="muted small">学習済み / カード数</span></div>${([1,2,3,4] as Level[]).map(l=>{const {total,studied:n}=levels.get(l)!;return `<button class="level-row" data-level="${l}"><span class="level-tag l${l}">Lv.${l}</span><span class="level-detail"><span class="level-name">${levelNames[l-1]}</span><span class="progress-track"><span style="width:${pct(n,total)}%"></span></span></span><span class="level-count">${n}<span> / ${total}</span></span>${icon('arrow')}</button>`;}).join('')}<p class="panel-note">初期データの難易度は暫定分類です。</p></section><section class="panel today-panel"><div class="section-title"><h2>今日の学習</h2><span class="subtle-chip">${dateLabel()}</span></div><div class="daily-ring" style="--progress:${Math.min(100,pct(today.length,state.settings.dailyGoal))}%"><div><strong>${today.length}<small> / ${state.settings.dailyGoal}</small></strong><span>回答回数</span></div></div><p class="today-message">${today.length>=state.settings.dailyGoal?'今日の目標を達成しました。':today.length?'いいペースです。その調子で。':'最初の1問から、始めましょう。'}</p><span class="small muted">今日の正答率 ${today.length?`${pct(today.filter(e=>e.correct).length,today.length)}%`:'—'}</span></section></div>
-  <div class="dashboard-grid lower"><section class="panel"><div class="section-title"><h2>苦手分野</h2><button class="text-button" data-start="weak">復習する ${icon('arrow')}</button></div>${weakList.length?weakList.map(([field,v])=>`<div class="weak-row"><span>${esc(field)}</span><span class="muted">正答率 <strong>${pct(v.total-v.wrong,v.total)}%</strong></span></div>`).join(''):`<div class="empty-inline">${icon('leaf')}<p>学習を進めると、苦手分野が見えてきます。<br><span>正答と誤答を記録して、復習に役立てましょう。</span></p></div>`}</section><section class="panel quick-panel"><div class="section-title"><h2>学び方を選ぶ</h2></div><button class="quick-row" data-start="unseen">${icon('book')}<span>未学習のカード<small>新しい知識に出会う</small></span>${icon('arrow')}</button><button class="quick-row" data-nav="setup">${icon('settings')}<span>範囲を指定して学習<small>地域・時代・分野から選ぶ</small></span>${icon('arrow')}</button><button class="quick-row" data-nav="years">${icon('calendar')}<span>年号テスト<small>年号と出来事を別枠で暗記</small></span>${icon('arrow')}</button></section></div>`;
+  <div class="dashboard-grid lower"><section class="panel"><div class="section-title"><h2>苦手分野</h2><button class="text-button" data-start="weak">復習する ${icon('arrow')}</button></div>${weakList.length?weakList.map(([field,v])=>`<div class="weak-row"><span>${esc(field)}</span><span class="muted">正答率 <strong>${pct(v.total-v.wrong,v.total)}%</strong></span></div>`).join(''):`<div class="empty-inline">${icon('leaf')}<p>学習を進めると、苦手分野が見えてきます。<br><span>正答と誤答を記録して、復習に役立てましょう。</span></p></div>`}</section><section class="panel quick-panel"><div class="section-title"><h2>学び方を選ぶ</h2></div><button class="quick-row" data-start="unseen">${icon('book')}<span>未学習のカード<small>新しい知識に出会う</small></span>${icon('arrow')}</button><button class="quick-row" data-nav="setup">${icon('settings')}<span>範囲を指定して学習<small>地域・時代・分野から選ぶ</small></span>${icon('arrow')}</button><button class="quick-row" data-nav="compare">${icon('grid')}<span>類似知識を識別する<small>著者・作品・思想を比較。苦手な組み合わせを確認</small></span>${icon('arrow')}</button><button class="quick-row" data-nav="graph">${icon('leaf')}<span>文化史の関連図<small>人物・作品・思想のつながりを見る</small></span>${icon('arrow')}</button></section></div>`;
 }
 function dateLabel(){return new Date().toLocaleDateString('ja-JP',{month:'numeric',day:'numeric'});}
 function stat(title:string,value:number|string,unit:string,note:string,i:string){return `<article class="stat-card"><div class="stat-title">${title}${icon(i)}</div><div class="stat-value">${value}<small>${unit}</small></div><span class="stat-note">${note}</span></article>`;}
+function dailyRecommendations(){
+  const done=dailyPlan?completedDaily(dailyPlan,state.events):new Set<string>(),total=dailyPlan?.cardIds.length??0;
+  const count=(key:string)=>dailyPlan?.cardIds.filter(id=>dailyPlan!.categories[id]===key).length??0;
+  return `<section id="daily-recommendations" class="panel daily-recommendation"><div class="section-title"><h2>今日のおすすめ</h2><span class="small muted">${esc(localDateKey())}</span></div><h3>${dailyPlan&&!total?'出題できるカードは0問です':`今日の${total||20}問`}</h3><p>復習のタイミングと最近の成績から、今日の問題を選びます。</p><div class="daily-split"><span>復習期限到来 <strong>${count('due')}問</strong></span><span>直近の苦手 <strong>${count('weak')}問</strong></span><span>未学習 <strong>${count('unseen')}問</strong></span>${count('fill')?`<span>既習カード <strong>${count('fill')}問</strong></span>`:''}</div><p class="daily-completion" data-daily-progress>学習済み ${done.size} / ${total}</p><div class="feature-progress-track" role="progressbar" aria-label="今日のおすすめの完了数" aria-valuenow="${done.size}" aria-valuemin="0" aria-valuemax="${total||20}"><span style="width:${pct(done.size,total)}%"></span></div>${dailyPlan?(total?done.size===total?'<p class="daily-finished" role="status">今日のおすすめを全問学習しました。</p>':`<button class="button primary" data-action="start-daily">${done.size?'続きから学習':'今日のおすすめを始める'} ${icon('arrow')}</button>`:'<p role="status">出題できるカードがありません。教材の取得後にもう一度お試しください。</p>'):'<p role="status">今日の問題を準備しています…</p>'}<p class="small muted">同じカードは1問として数えます。1日の目標回答数とは別の進捗です。</p></section>`;
+}
+function relationStatus(){return `<div class="feature-data-status"><p role="status">${esc(relationMessage)}</p><button class="text-button" data-action="feature-sync" ${relationLoading?'disabled':''}>${relationLoading?'確認中…':'関係データを更新'}</button></div>`;}
+function knowledgeActions(id:string){
+  const resolved=resolveRelations(relationData,state.catalog),links=resolved.relations.filter(r=>r.fromId===id||r.toId===id);
+  if(!links.length)return '';
+  const ids=new Set(links.map(r=>r.id)),set=resolved.comparisonSets.find(s=>s.relationIds.some(id=>ids.has(id)));
+  return `<div class="feature-knowledge-actions"><button class="button secondary" data-open-graph="${esc(id)}">この知識の関連図</button>${set?`<button class="button secondary" data-open-compare="${esc(set.id)}">類似知識を識別する</button>`:''}</div>`;
+}
+function bindKnowledgeActions(root:ParentNode=document){
+  root.querySelectorAll<HTMLElement>('[data-open-graph]').forEach(el=>el.onclick=()=>openGraph(el.dataset.openGraph));
+  root.querySelectorAll<HTMLElement>('[data-open-compare]').forEach(el=>el.onclick=()=>openCompare(el.dataset.openCompare));
+}
 function setup(){
   const items=activeItems();
   const choices=(title:string,key:'regions'|'eras'|'fields',values:string[])=>`<fieldset class="filter-field"><legend>${title}<span>複数選択できます</span></legend><div class="choice-chips">${values.map(v=>`<label class="choice-chip"><input type="checkbox" name="${key}" value="${esc(v)}" ${filter[key].includes(v)?'checked':''}><span>${esc(v)}</span></label>`).join('')}</div></fieldset>`;
@@ -165,7 +200,7 @@ function study(){
   const c=queue[position], item=state.catalog.items.find(i=>i.id===c.knowledgeId)!;
   const image=c.imageId?item.images.find(i=>i.id===c.imageId):null;
   const progress=getProgress(state.events).get(c.id);
-  return `<section class="study-heading"><button class="text-button" data-action="end-session">${icon('close')} 学習を終了</button><span>${modeNames[filter.mode]} <span class="muted">·</span> ${position+1} / ${queue.length}</span></section><div class="session-track"><span style="width:${position/queue.length*100}%"></span></div><section class="study-area"><div class="study-meta"><span class="level-tag l${item.level}">Lv.${item.level}</span><span>${esc(item.region)} / ${esc(item.era)} / ${esc(item.field)}</span></div><article class="flashcard ${revealed?'revealed':''}" aria-label="フラッシュカード"><span class="eyebrow">${revealed?'QUESTION & ANSWER':'QUESTION'}</span><h1>${esc(c.question)}</h1>${image?`<button class="image-button" data-action="zoom-image" aria-label="問題の画像を拡大"><img id="question-image" src="${esc(safeUrl(image.url))}" alt="問題の作品画像。タップして拡大" /></button><p id="image-fallback" class="image-fallback hidden">画像を読み込めませんでした。<br>${esc(c.fallbackPrompt||'解答を確認して、知識を復習してください。')}</p>`:''}${revealed?`<div class="answer-area"><span class="answer-label">ANSWER</span><h2>${esc(c.answer)}</h2><p>${esc(c.explanation)}</p></div><details class="source-details"><summary>出典・分類の根拠を見る</summary>${itemSources(item.id)}</details>`:`<button class="reveal-button" data-action="reveal">タップして解答を確認<span>答えを思い浮かべてから、めくりましょう</span></button>`}</article>${revealed?`<div class="grade-buttons"><button class="grade wrong" data-grade="wrong" ${saving?'disabled':''}><span>×</span>思い出せなかった</button><button class="grade correct" data-grade="correct" ${saving?'disabled':''}><span>○</span>正答した</button></div><p class="study-hint">${saving?'回答を保存しています…':'自分の回答を記録すると、次のカードに進みます。'}</p>`:`<p class="study-hint">${image?'画像をタップすると拡大できます。':'1枚に、ひとつの知識。焦らず、確実に。'}</p>`}<div class="card-past"><span>これまでの記録</span><span>正答 ${progress?.correct||0} <span class="muted">/</span> 誤答 ${progress?.wrong||0} <span class="muted">·</span> ${progress?`連続正答 ${progress.streak}回`:'未学習'}</span></div></section>`;
+  return `<section class="study-heading"><button class="text-button" data-action="end-session">${icon('close')} 学習を終了</button><span>${sessionKind==='daily'?'今日のおすすめ':sessionKind==='related'?'関連する問題':modeNames[filter.mode]} <span class="muted">·</span> ${position+1} / ${queue.length}</span></section><div class="session-track"><span style="width:${position/queue.length*100}%"></span></div><section class="study-area"><div class="study-meta"><span class="level-tag l${item.level}">Lv.${item.level}</span><span>${esc(item.region)} / ${esc(item.era)} / ${esc(item.field)}</span></div><article class="flashcard ${revealed?'revealed':''}" aria-label="フラッシュカード"><span class="eyebrow">${revealed?'QUESTION & ANSWER':'QUESTION'}</span><h1>${esc(c.question)}</h1>${image?`<button class="image-button" data-action="zoom-image" aria-label="問題の画像を拡大"><img id="question-image" src="${esc(safeUrl(image.url))}" alt="問題の作品画像。タップして拡大" /></button><p id="image-fallback" class="image-fallback hidden">画像を読み込めませんでした。<br>${esc(c.fallbackPrompt||'解答を確認して、知識を復習してください。')}</p>`:''}${revealed?`<div class="answer-area"><span class="answer-label">ANSWER</span><h2>${esc(c.answer)}</h2><p>${esc(c.explanation)}</p></div><details class="source-details"><summary>出典・分類の根拠を見る</summary>${itemSources(item.id)}</details>`:`<button class="reveal-button" data-action="reveal">タップして解答を確認<span>答えを思い浮かべてから、めくりましょう</span></button>`}</article>${revealed?`<div class="grade-buttons"><button class="grade wrong" data-grade="wrong" ${saving?'disabled':''}><span>×</span>思い出せなかった</button><button class="grade correct" data-grade="correct" ${saving?'disabled':''}><span>○</span>正答した</button></div><p class="study-hint">${saving?'回答を保存しています…':'自分の回答を記録すると、次のカードに進みます。'}</p>`:`<p class="study-hint">${image?'画像をタップすると拡大できます。':'1枚に、ひとつの知識。焦らず、確実に。'}</p>`}<div class="card-past"><span>これまでの記録</span><span>正答 ${progress?.correct||0} <span class="muted">/</span> 誤答 ${progress?.wrong||0} <span class="muted">·</span> ${progress?`連続正答 ${progress.streak}回`:'未学習'}</span></div>${knowledgeActions(item.id)}</section>`;
 }
 function itemSources(id:string){const item=state.catalog.items.find(i=>i.id===id)!;return `<p>${esc(item.description)}</p><p><strong>難易度：暫定分類</strong><br>${esc(item.difficultyEvidence)}</p><p>知識の検証：${item.verification==='verified'?'出典で確認済み':item.verification==='needs-review'?'要確認':'暫定'}</p><ul>${item.sources.map(s=>`<li>${s.url?`<a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>`:esc(s.title)}${s.note?`<br>${esc(s.note)}`:''}</li>`).join('')}</ul>${item.images.map(im=>`<p class="small">画像：${esc(im.author)} / <a href="${esc(safeUrl(im.licenseUrl))}" target="_blank" rel="noopener noreferrer">${esc(im.license)}</a> / <a href="${esc(safeUrl(im.sourceUrl))}" target="_blank" rel="noopener noreferrer">出典</a></p>`).join('')}<p class="small muted">固定ID：${esc(item.id)} · v${item.version} · 更新 ${esc(item.updatedAt.slice(0,10))}</p>`;}
 function history(){
@@ -202,22 +237,27 @@ function rememberRoute(){
 function focusPage(){window.scrollTo({top:0,behavior:'instant'});document.querySelector<HTMLElement>('#main')?.focus({preventScroll:true});}
 function go(next:View,push=true){
   navigationEpoch++;
+  if(view==='compare'&&next!=='compare')compareFeature.leave();
+  if(view==='graph'&&next!=='graph')graphFeature.leave();
   if(view==='years'&&next!=='years')yearFeature.leave();
   view=next;search='';
   if(next==='portal')area=null;
   else if(next==='years'){area='years';yearPage='home';yearFeature.navigate('home');}
   else if(next!=='settings')area='culture';
   if(push)rememberRoute();
-  render();focusPage();if(next!=='study'&&syncPending)void sync();
+  render();focusPage();if(next!=='study'&&next!=='compare'&&syncPending)void sync();
+  else if(next!=='study'&&next!=='compare'&&featureSyncPending)void refreshCultureFeatures(true);
+  if(next==='home'&&dailyPlan?.dateKey!==localDateKey())void refreshCultureFeatures(false);
 }
 function goYear(next:YearPage,push=true){navigationEpoch++;area='years';view='years';yearPage=next;yearFeature.navigate(next);if(push)rememberRoute();render();focusPage();}
 window.addEventListener('popstate',event=>{
   if(!state)return;
   const route=event.state;
   if(route?.view==='years')goYear(route.yearPage||'home',false);
-  else go(route?.view&&['portal','home','setup','library','history','review','settings'].includes(route.view)?route.view:'portal',false);
+  else go(route?.view&&['portal','home','setup','library','history','review','settings','compare','graph'].includes(route.view)?route.view:'portal',false);
 });
 async function start(mode?:StudyFilter['mode']) {
+  if(saving){toast('回答を保存しています。少し待ってから開始してください。');return;}
   const epoch=navigationEpoch;
   if(currentSync)await currentSync; state=await db.load();
   if(epoch!==navigationEpoch)return;
@@ -228,7 +268,51 @@ async function start(mode?:StudyFilter['mode']) {
   const pool=filter.mode==='weak'||filter.mode==='due'?candidates.slice(0,limit):candidates;
   queue=spreadSessionCards(pool,limit);
   if(!queue.length){toast('この条件に合うカードはありません。範囲を変更してください。');go('setup');return;}
-  position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
+  sessionKind='normal';position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
+}
+async function startDailySession(){
+  if(saving)return;
+  const epoch=navigationEpoch;if(currentSync)await currentSync;if(epoch!==navigationEpoch)return;
+  state=await db.load();dailyPlan=await db.getOrCreateDailyPlan();
+  if(epoch!==navigationEpoch)return;
+  const done=completedDaily(dailyPlan,state.events),byId=new Map(activeCards().map(c=>[c.id,c]));
+  queue=dailyPlan.cardIds.filter(id=>!done.has(id)&&byId.has(id)).map(id=>byId.get(id)!);
+  if(!queue.length){toast('今日のおすすめは完了しました。');go('home');return;}
+  sessionKind='daily';position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
+}
+async function startRelatedSession(ids:string[]){
+  if(saving)return;
+  const epoch=navigationEpoch;if(currentSync)await currentSync;if(epoch!==navigationEpoch)return;
+  state=await db.load();if(epoch!==navigationEpoch)return;const owners=new Set(ids);queue=activeCards().filter(c=>owners.has(c.knowledgeId));
+  if(!queue.length){toast('この知識に対応する出題可能なカードはありません。');return;}
+  sessionKind='related';position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
+}
+function refreshCultureFeatures(remote:boolean):Promise<void>{
+  if(cultureSessionActive()){featureSyncPending=true;return Promise.resolve();}
+  if(featureRefresh)return featureRefresh;
+  featureSyncPending=false;
+  featureRefresh=(async()=>{
+    try{
+      dailyPlan=await db.getOrCreateDailyPlan();
+      const saved=await db.loadRelations();if(saved)relationData=saved;
+      if(remote||!saved){
+        relationLoading=true;
+        try{
+          let incoming:CultureRelations;
+          try{if(!navigator.onLine)throw Error('オフラインです。');incoming=await fetchRelationsData();}
+          catch(error){if(saved)throw error;const response=await fetch(new URL('./culture-relations.json',location.href));if(!response.ok)throw error;incoming=validateRelations(await response.json());}
+          // A new matching session takes a snapshot, so cache replacement waits.
+          if(cultureSessionActive()){featureSyncPending=true;return;}
+          await db.applyRelations(incoming);relationData=(await db.loadRelations())!;
+          relationMessage='関係データを確認しました。';
+        }catch(error){relationMessage=`${relationData.relations.length?'保存済みの関係で学習できます。':'関係データは準備中です。'} ${message(error)}`;}
+        finally{relationLoading=false;}
+      }
+      const resolved=resolveRelations(relationData,state.catalog);
+      if(resolved.relations.length)relationMessage=`関係${resolved.relations.length}件・識別セット${resolved.comparisonSets.length}組。暫定の関係は出典で確認できます。${resolved.diagnostics.length?` ${resolved.diagnostics.length}件の参照を確認してください。`:''}`;
+    }catch(error){relationMessage=`関係データを利用できません。${message(error)}`;}
+    finally{featureRefresh=null;if(!cultureSessionActive())render();}
+  })();return featureRefresh;
 }
 function readOptions(form:HTMLFormElement,changedName?:string){
   const f=new FormData(form),regionGroups=f.getAll('regionGroups') as string[];
@@ -244,7 +328,7 @@ function readOptions(form:HTMLFormElement,changedName?:string){
 function sync():Promise<void>{
   if(currentSync)return currentSync;
   // Built-in mirrored catalog is used unless the owner supplies a custom JSON source.
-  if(view==='study'&&position<queue.length){syncPending=true;return Promise.resolve();}
+  if(cultureSessionActive()){syncPending=true;return Promise.resolve();}
   syncing=true;syncPending=false;syncMessage='教材を取得しています…';if(view==='settings')render();
   currentSync=(async()=>{try{
     const preferred=state.settings.syncUrl||DEFAULT_CATALOG_URL;
@@ -260,13 +344,16 @@ function sync():Promise<void>{
     state=await db.load();
     syncMessage=`同期完了：v${r.version} · ${r.itemCount}項目${fallback?'（独自URLが利用できず標準データに切替）':''}`;
     toast('教材を同期しました。学習履歴は保持されています。');
-  }catch(e){syncMessage=`同期できませんでした：${message(e)} 保存済み教材で学習できます。`;toast(syncMessage,true);}finally{syncing=false;currentSync=null;if(view!=='study')render();}})();
+  }catch(e){syncMessage=`同期できませんでした：${message(e)} 保存済み教材で学習できます。`;toast(syncMessage,true);}finally{syncing=false;currentSync=null;if(!cultureSessionActive())render();void refreshCultureFeatures(true);}})();
   return currentSync;
 }
 
 function message(e:unknown){return e instanceof Error?e.message:String(e);}
 function bind(){
   yearFeature.bind();
+  if(view==='compare')compareFeature.bind();
+  if(view==='graph')graphFeature.bind();
+  bindKnowledgeActions();
   document.querySelectorAll<HTMLElement>('[data-enter-area]').forEach(el=>el.onclick=()=>go(el.dataset.enterArea==='years'?'years':'home'));
   document.querySelectorAll<HTMLElement>('[data-year-nav]').forEach(el=>el.onclick=()=>goYear(el.dataset.yearNav as YearPage));
   document.querySelectorAll<HTMLElement>('[data-nav]').forEach(el=>el.onclick=e=>{e.preventDefault();go(el.dataset.nav as View);});
@@ -274,7 +361,7 @@ function bind(){
   document.querySelectorAll<HTMLElement>('[data-level]').forEach(el=>el.onclick=()=>{filter={...structuredClone(DEFAULT_FILTER),level:Number(el.dataset.level) as Level,levelMode:'single'};go('setup');});
   document.querySelectorAll<HTMLDetailsElement>('[data-item-id]').forEach(el=>el.ontoggle=()=>{
     const detail=el.querySelector<HTMLElement>('[data-lazy-detail]');if(!el.open||!detail||detail.dataset.loaded)return;
-    const id=el.dataset.itemId!;detail.dataset.loaded='true';detail.innerHTML=itemSources(id)+`<div class="linked-cards">${state.catalog.cards.filter(c=>c.knowledgeId===id&&!c.deleted).map(c=>`<div><span class="small muted">${c.type==='image'?'画像カード':'問題カード'}</span><p>${esc(c.question)}</p><strong>${esc(c.answer)}</strong></div>`).join('')}</div>`;
+    const id=el.dataset.itemId!;detail.dataset.loaded='true';detail.innerHTML=itemSources(id)+knowledgeActions(id)+`<div class="linked-cards">${state.catalog.cards.filter(c=>c.knowledgeId===id&&!c.deleted).map(c=>`<div><span class="small muted">${c.type==='image'?'画像カード':'問題カード'}</span><p>${esc(c.question)}</p><strong>${esc(c.answer)}</strong></div>`).join('')}</div>`;bindKnowledgeActions(detail);
   });
   const form=document.querySelector<HTMLFormElement>('#study-options');if(form){
     form.onchange=event=>{
@@ -308,13 +395,25 @@ function bind(){
   document.querySelectorAll<HTMLButtonElement>('[data-history-events]').forEach(button=>button.onclick=()=>expandHistory(button.dataset.historyEvents));
   const syncForm=document.querySelector<HTMLFormElement>('#sync-form');if(syncForm)syncForm.onsubmit=async e=>{e.preventDefault();try{const value=String(new FormData(syncForm).get('syncUrl')||'').trim();const url=value?normalizeSyncUrl(value):'';await db.updateSettings({syncUrl:url});state=await db.load();if(url)await sync();else{syncMessage='標準のGitHub同期に戻しました。';await sync();}}catch(e){toast(message(e),true);}};
   const gf=document.querySelector<HTMLFormElement>('#goal-form');if(gf)gf.onsubmit=async e=>{e.preventDefault();const n=Number(new FormData(gf).get('dailyGoal'));if(!Number.isInteger(n)||n<1||n>1000)return;await db.updateSettings({dailyGoal:n});state=await db.load();toast('1日の目標を保存しました。');render();};
-  const restore=document.querySelector<HTMLInputElement>('#restore-file');if(restore)restore.onchange=async()=>{const file=restore.files?.[0];if(!file)return;try{if(file.size>100*1024*1024)throw new Error('100MB以内のバックアップを選択してください。');const data=JSON.parse(await file.text());await db.restoreBackup(data);state=await db.load();toast(`復元しました。${state.events.length}回の回答を保存しています。`);render();}catch(e){toast(`復元できませんでした。現在のデータは保持されています。${message(e)}`,true);}finally{restore.value='';}};
+  const restore=document.querySelector<HTMLInputElement>('#restore-file');if(restore)restore.onchange=async()=>{const file=restore.files?.[0];if(!file)return;try{if(file.size>100*1024*1024)throw new Error('100MB以内のバックアップを選択してください。');const data=JSON.parse(await file.text());await db.restoreBackup(data);state=await db.load();relationData=await db.loadRelations()??structuredClone(EMPTY_RELATIONS);dailyPlan=await db.getOrCreateDailyPlan();toast(`復元しました。${state.events.length}回の回答を保存しています。`);render();}catch(e){toast(`復元できませんでした。現在のデータは保持されています。${message(e)}`,true);}finally{restore.value='';}};
 }
 function rerenderSearch(id:string,value:string){const input=document.getElementById(id) as HTMLInputElement;const start=input.selectionStart;render();const next=document.getElementById(id) as HTMLInputElement;next.focus();if(next.type!=='search')next.setSelectionRange(start,start);else try{next.setSelectionRange(value.length,value.length);}catch{/* browser dependent */}}
-async function grade(correct:boolean){if(saving||!revealed||position>=queue.length)return;saving=true;document.querySelectorAll<HTMLButtonElement>('[data-grade]').forEach(b=>b.disabled=true);try{await db.recordReview(queue[position].id,correct,sessionId);if(correct)sessionCorrect++;position++;revealed=false;state=await db.load();}catch(e){toast(`回答を保存できませんでした。もう一度お試しください。${message(e)}`,true);}finally{saving=false;render();if(position>=queue.length&&syncPending)void sync();}}
+async function grade(correct:boolean){
+  if(saving||!revealed||position>=queue.length)return;
+  saving=true;const activeSession=sessionId,answeredAt=position,cardId=queue[position].id;
+  document.querySelectorAll<HTMLButtonElement>('[data-grade]').forEach(b=>b.disabled=true);
+  try{
+    await db.recordReview(cardId,correct,activeSession);
+    if(sessionId===activeSession&&position===answeredAt){if(correct)sessionCorrect++;position++;revealed=false;}
+    state=await db.load();
+  }catch(e){toast(`回答を保存できませんでした。もう一度お試しください。${message(e)}`,true);}
+  finally{saving=false;render();if(position>=queue.length&&syncPending)void sync();}
+}
 async function action(name:string){try{
   if(name==='reveal'){revealed=true;render();document.querySelector<HTMLElement>('.answer-area')?.scrollIntoView({block:'nearest',behavior:'smooth'});}
   if(name==='end-session'){go('home');}
+  if(name==='start-daily'){await startDailySession();}
+  if(name==='feature-sync'){await refreshCultureFeatures(true);}
   if(name==='library-more'){libraryLimit+=50;render();}
   if(name==='reset-filter'){filter=structuredClone(DEFAULT_FILTER);detailScopeOpen=false;fieldScopeOpen=false;render();}
   if(name==='all-regions'){filter={...filter,regionGroups:[],eraGroups:[],regions:[],eras:[]};render();}
@@ -342,12 +441,23 @@ async function action(name:string){try{
 }catch(e){toast(message(e),true);}}
 function zoom(im:ImageAsset){const d=document.querySelector<HTMLDialogElement>('#image-dialog')!;document.querySelector('#image-dialog-content')!.innerHTML=`<img src="${esc(safeUrl(im.url))}" alt="拡大した問題画像"><p>${revealed?esc(im.caption):'問題の画像'}</p><p class="small">${esc(im.author)} / <a href="${esc(safeUrl(im.licenseUrl))}" target="_blank" rel="noopener noreferrer">${esc(im.license)}</a> / <a href="${esc(safeUrl(im.sourceUrl))}" target="_blank" rel="noopener noreferrer">出典</a></p>`;d.showModal();}
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e as typeof installPrompt;if(view==='settings')render();});
-window.addEventListener('offline',()=>{toast('オフラインになりました。保存済み教材で学習できます。');if(state&&view!=='study')render();});
-window.addEventListener('online',()=>{if(state){if(view!=='study')render();void sync();void yearFeature.onOnline();}});
+window.addEventListener('offline',()=>{toast('オフラインになりました。保存済み教材で学習できます。');if(state&&!cultureSessionActive())render();});
+window.addEventListener('online',()=>{if(state){if(!cultureSessionActive())render();void sync();void yearFeature.onOnline();}});
 window.addEventListener('keydown',e=>{if(view==='study' && !document.querySelector('dialog[open]') && !(e.target instanceof HTMLInputElement)){if(e.key===' '&&!revealed){e.preventDefault();void action('reveal');}else if(revealed&&e.key==='ArrowRight'){e.preventDefault();void grade(true);}else if(revealed&&e.key==='ArrowLeft'){e.preventDefault();void grade(false);}}});
 async function boot(){
   app.innerHTML='<div class="loading-state">学習ノートを開いています…</div>';
-  try{db=await openDatabase();state=await db.load();if(state.catalog.version<seedCatalog.version){await db.applyCatalog(seedCatalog);state=await db.load();}window.history.replaceState({view:'portal',area:null,yearPage:'home'},'','#/');render();void yearFeature.initialize();void setupPwa({onUpdate:r=>{updateRegistration=r;updateStatus='新しい公開版が見つかりました。「新しいバージョンに更新」を押してください。';toast('新しいバージョンがあります。データ管理から更新できます。');if(view==='settings')render();},onError:()=>{updateStatus='更新確認で通信エラーが発生しました。';if(view==='settings')render();}}).then(r=>{pwaRegistration=r;});void sync();}
-  catch(e){app.innerHTML=`<div class="loading-state"><h1>学習データを開けませんでした</h1><p>${esc(message(e))}</p><p>ブラウザの保存容量やプライベートモードの設定をご確認ください。データは削除せず、再読み込みしてください。</p><button class="button primary" onclick="location.reload()">もう一度開く</button></div>`;}
+  try{
+    db=await openDatabase();state=await db.load();
+    if(state.catalog.version<seedCatalog.version){await db.applyCatalog(seedCatalog);state=await db.load();}
+    relationData=await db.loadRelations()??structuredClone(EMPTY_RELATIONS);
+    dailyPlan=await db.loadDailyPlan();
+    const requested=location.hash.match(/^#\/culture\/(compare|graph)$/)?.[1] as View|undefined;
+    view=requested??'portal';area=requested?'culture':null;
+    window.history.replaceState({view,area,yearPage:'home'},'',requested?'#/culture/'+requested:'#/');
+    render();void yearFeature.initialize();
+    void setupPwa({onUpdate:r=>{updateRegistration=r;updateStatus='新しい公開版が見つかりました。「新しいバージョンに更新」を押してください。';toast('新しいバージョンがあります。データ管理から更新できます。');if(view==='settings')render();},onError:()=>{updateStatus='更新確認で通信エラーが発生しました。';if(view==='settings')render();}}).then(r=>{pwaRegistration=r;});
+    if(!navigator.onLine)void refreshCultureFeatures(false);
+    void sync();
+  }catch(e){app.innerHTML=`<div class="loading-state"><h1>学習データを開けませんでした</h1><p>${esc(message(e))}</p><p>ブラウザの保存容量やプライベートモードの設定をご確認ください。データは削除せず、再読み込みしてください。</p><button class="button primary" onclick="location.reload()">もう一度開く</button></div>`;}
 }
 void boot();
