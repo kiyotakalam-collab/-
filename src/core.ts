@@ -215,6 +215,7 @@ export function selectCards(catalog: Catalog, events: ReviewEvent[], filter: Stu
     if (!matchesCultureScope(owner, filter)) return false;
     if (filter.fields.length && !filter.fields.includes(owner.field)) return false;
     if (filter.cardType !== 'all' && (filter.cardType === 'image' ? entry.type !== 'image' : entry.type === 'image')) return false;
+    if (filter.cardDirection && filter.cardDirection !== 'all' && entry.type !== filter.cardDirection) return false;
     const p = progress.get(entry.id);
     if (filter.mode === 'unseen' && p) return false;
     if (filter.mode === 'mistakes' && (!p || p.wrong === 0)) return false;
@@ -225,4 +226,33 @@ export function selectCards(catalog: Catalog, events: ReviewEvent[], filter: Stu
     for (let i = cards.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [cards[i], cards[j]] = [cards[j], cards[i]]; }
   } else if (filter.mode === 'weak' || filter.mode === 'due') cards.sort((a, b) => priority(progress.get(b.id), now) - priority(progress.get(a.id), now) || a.id.localeCompare(b.id));
   return cards;
+}
+
+/**
+ * Spread repeated answers across a study session, avoiding back-to-back cards
+ * about the same knowledge item when alternatives exist.
+ * Card objects/IDs and review events are never modified.
+ */
+export function spreadSessionCards(cards: Card[], limit = cards.length): Card[] {
+  const remaining = [...cards];
+  const result: Card[] = [];
+  const usedAnswers = new Set<string>();
+  const requested = Number.isFinite(limit) ? Math.max(0, Math.trunc(limit)) : remaining.length;
+  const target = Math.min(requested, remaining.length);
+  while (remaining.length && result.length < target) {
+    const last = result[result.length - 1];
+    const nextIsDifferent = (card: Card) => !last || card.knowledgeId !== last.knowledgeId;
+    let index = remaining.findIndex(card => !usedAnswers.has(normalizeName(card.answer)) && nextIsDifferent(card));
+    if (index < 0) index = remaining.findIndex(card => !usedAnswers.has(normalizeName(card.answer)));
+    if (index < 0) {
+      // Every remaining answer has appeared in this round. Begin another round.
+      usedAnswers.clear();
+      index = remaining.findIndex(nextIsDifferent);
+      if (index < 0) index = 0;
+    }
+    const [card] = remaining.splice(index, 1);
+    result.push(card);
+    usedAnswers.add(normalizeName(card.answer));
+  }
+  return result;
 }
