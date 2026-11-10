@@ -1,8 +1,2525 @@
 {
   "schemaVersion": 1,
-  "version": 1,
-  "updatedAt": "2026-11-10T00:00:00.000Z",
-  "terms": [],
-  "groups": [],
-  "cards": []
+  "version": 2,
+  "updatedAt": "2026-11-10T09:18:00.000Z",
+  "terms": [
+    {
+      "id": "at-san-stefano-1878",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『サンステファノ条約』",
+          "url": "https://kotobank.jp/word/さんすてふあの条約-3153412",
+          "note": "山川世界史小辞典・世界大百科事典"
+        }
+      ],
+      "name": "サン＝ステファノ条約",
+      "aliases": [
+        "サンステファノ条約"
+      ],
+      "date": "1878",
+      "region": "ヨーロッパ",
+      "era": "19世紀",
+      "field": "条約・外交",
+      "description": "露土戦争後にロシアとオスマン帝国が締結。大ブルガリア公国構想などロシアに有利な内容。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-berlin-treaty-1878",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『ベルリン条約』",
+          "url": "https://kotobank.jp/word/べるりん条約-3186769",
+          "note": "山川世界史小辞典"
+        }
+      ],
+      "name": "ベルリン条約",
+      "aliases": [],
+      "date": "1878",
+      "region": "ヨーロッパ",
+      "era": "19世紀",
+      "field": "条約・外交",
+      "description": "ベルリン会議でサン＝ステファノ条約を修正し、ブルガリアの領域を縮小。セルビア・ルーマニア・モンテネグロ独立を承認。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-versailles-1919",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "ジャパンナレッジ『第一次世界大戦』",
+          "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+          "note": "講和条約の締結国と日付"
+        }
+      ],
+      "name": "ヴェルサイユ条約",
+      "aliases": [
+        "ベルサイユ条約"
+      ],
+      "date": "1919",
+      "region": "ヨーロッパ",
+      "era": "20世紀",
+      "field": "条約・外交",
+      "description": "連合国とドイツの第一次世界大戦講和条約。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-saint-germain-1919",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        },
+        {
+          "title": "ジャパンナレッジ『第一次世界大戦』",
+          "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+          "note": "講和条約の締結国と日付"
+        }
+      ],
+      "name": "サン＝ジェルマン条約",
+      "aliases": [
+        "サンジェルマン条約"
+      ],
+      "date": "1919",
+      "region": "ヨーロッパ",
+      "era": "20世紀",
+      "field": "条約・外交",
+      "description": "連合国とオーストリアの第一次世界大戦講和条約。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-neuilly-1919",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        },
+        {
+          "title": "ジャパンナレッジ『第一次世界大戦』",
+          "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+          "note": "講和条約の締結国と日付"
+        }
+      ],
+      "name": "ヌイイ条約",
+      "aliases": [
+        "ヌイイー条約"
+      ],
+      "date": "1919",
+      "region": "ヨーロッパ",
+      "era": "20世紀",
+      "field": "条約・外交",
+      "description": "連合国とブルガリアの第一次世界大戦講和条約。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-trianon-1920",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        },
+        {
+          "title": "ジャパンナレッジ『第一次世界大戦』",
+          "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+          "note": "講和条約の締結国と日付"
+        }
+      ],
+      "name": "トリアノン条約",
+      "aliases": [],
+      "date": "1920",
+      "region": "ヨーロッパ",
+      "era": "20世紀",
+      "field": "条約・外交",
+      "description": "連合国とハンガリーの第一次世界大戦講和条約。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-sevres-1920",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        },
+        {
+          "title": "ジャパンナレッジ『第一次世界大戦』",
+          "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+          "note": "講和条約の締結国と日付"
+        },
+        {
+          "title": "外務省『トルコ共和国の成立と日土国交樹立』",
+          "url": "https://www.mofa.go.jp/mofaj/ms/da/page22_001054.html",
+          "note": "ローザンヌ条約によるセーブル条約の破棄"
+        }
+      ],
+      "name": "セーヴル条約",
+      "aliases": [
+        "セーブル条約"
+      ],
+      "date": "1920",
+      "region": "西アジア",
+      "era": "20世紀",
+      "field": "条約・外交",
+      "description": "第一次世界大戦後の連合国とオスマン帝国の講和条約。のちローザンヌ条約に置き換えられた。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-lausanne-1923",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "外務省『トルコ共和国の成立と日土国交樹立』",
+          "url": "https://www.mofa.go.jp/mofaj/ms/da/page22_001054.html",
+          "note": "ローザンヌ条約によるセーブル条約の破棄"
+        }
+      ],
+      "name": "ローザンヌ条約",
+      "aliases": [],
+      "date": "1923",
+      "region": "西アジア",
+      "era": "20世紀",
+      "field": "条約・外交",
+      "description": "トルコと連合国間の講和条約。セーヴル条約に代わり、トルコの主権・領土を再確認した。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-tianjin-1858",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『天津条約』",
+          "url": "https://kotobank.jp/word/天津条約-102479",
+          "note": "旺文社世界史事典ほか"
+        }
+      ],
+      "name": "天津条約（1858年）",
+      "aliases": [],
+      "date": "1858",
+      "region": "東アジア",
+      "era": "19世紀",
+      "field": "条約・外交",
+      "description": "アロー戦争中の清と英・仏・露・米による一連の条約。外国使節の北京駐在などを認めた。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-tianjin-japan-1885",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『天津条約』",
+          "url": "https://kotobank.jp/word/天津条約-102479",
+          "note": "旺文社世界史事典ほか"
+        },
+        {
+          "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+          "url": "https://www.jacar.go.jp/learning/menu02.html",
+          "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+        }
+      ],
+      "name": "天津条約（日清・1885年）",
+      "aliases": [],
+      "date": "1885",
+      "region": "東アジア",
+      "era": "19世紀",
+      "field": "条約・外交",
+      "description": "甲申政変後、日本・清間で朝鮮からの撤兵と将来出兵時の事前通告などを定めた。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-tianjin-france-1885",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『天津条約』",
+          "url": "https://kotobank.jp/word/天津条約-102479",
+          "note": "旺文社世界史事典ほか"
+        },
+        {
+          "title": "国立公文書館『日本とベトナム』年表",
+          "url": "https://www.archives.go.jp/event/jp_vn45/history.html",
+          "note": "1885年の清仏天津条約"
+        }
+      ],
+      "name": "天津条約（清仏・1885年）",
+      "aliases": [],
+      "date": "1885",
+      "region": "東アジア",
+      "era": "19世紀",
+      "field": "条約・外交",
+      "description": "清仏戦争の講和。清がベトナムへの宗主権を放棄し、フランスの保護権を承認した。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-four-power-1921",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立公文書館『ワシントン会議で4国条約が調印される』",
+          "url": "https://www.archives.go.jp/ayumi/kobetsu/t10_1921_01.html",
+          "note": "1921年4か国条約"
+        },
+        {
+          "title": "外務省『ワシントン会議全権時代』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+          "note": "ワシントン体制"
+        }
+      ],
+      "name": "四カ国条約",
+      "aliases": [
+        "四国条約"
+      ],
+      "date": "1921",
+      "region": "世界",
+      "era": "20世紀",
+      "field": "条約・外交",
+      "description": "ワシントン会議で日・英・米・仏が調印。太平洋島嶼の権益尊重と協議などを規定し、日英同盟は廃棄された。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-nine-power-1922",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立公文書館『9か国条約、海軍軍縮条約が調印される』",
+          "url": "https://www.archives.go.jp/ayumi/kobetsu/t11_1922_01.html",
+          "note": "1922年の9か国・海軍軍備制限条約"
+        },
+        {
+          "title": "外務省『ワシントン会議全権時代』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+          "note": "ワシントン体制"
+        }
+      ],
+      "name": "九カ国条約",
+      "aliases": [
+        "九国条約"
+      ],
+      "date": "1922",
+      "region": "東アジア",
+      "era": "20世紀",
+      "field": "条約・外交",
+      "description": "ワシントン会議で締結。中国の主権・領土保全と門戸開放・機会均等などを規定。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-naval-washington-1922",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立公文書館『9か国条約、海軍軍縮条約が調印される』",
+          "url": "https://www.archives.go.jp/ayumi/kobetsu/t11_1922_01.html",
+          "note": "1922年の9か国・海軍軍備制限条約"
+        },
+        {
+          "title": "外務省『ワシントン会議全権時代』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+          "note": "ワシントン体制"
+        }
+      ],
+      "name": "ワシントン海軍軍備制限条約",
+      "aliases": [
+        "ワシントン海軍軍縮条約"
+      ],
+      "date": "1922",
+      "region": "世界",
+      "era": "20世紀",
+      "field": "条約・外交",
+      "description": "米英日仏伊の主力艦保有量を制限。主力艦の米英日比率は5:5:3。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-berlin-congress-1878",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『ベルリン会議』",
+          "url": "https://kotobank.jp/word/べるりん会議-3169381",
+          "note": "1878年と1884-85年の区別"
+        },
+        {
+          "title": "コトバンク『ベルリン条約』",
+          "url": "https://kotobank.jp/word/べるりん条約-3186769",
+          "note": "山川世界史小辞典"
+        }
+      ],
+      "name": "ベルリン会議（1878年）",
+      "aliases": [],
+      "date": "1878",
+      "region": "ヨーロッパ",
+      "era": "19世紀",
+      "field": "条約・外交",
+      "description": "サン＝ステファノ条約を修正し、バルカン問題を調整した国際会議。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-berlin-congo-1884",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『ベルリン会議』",
+          "url": "https://kotobank.jp/word/べるりん会議-3169381",
+          "note": "1878年と1884-85年の区別"
+        },
+        {
+          "title": "コトバンク『アフリカ分割』",
+          "url": "https://kotobank.jp/word/あふりか分割-3177382",
+          "note": "ベルリン・コンゴ会議"
+        }
+      ],
+      "name": "ベルリン会議（1884〜85年）",
+      "aliases": [
+        "ベルリン・コンゴ会議"
+      ],
+      "date": "1884〜1885",
+      "region": "アフリカ",
+      "era": "19世紀",
+      "field": "条約・外交",
+      "description": "ビスマルクの提唱で開かれたアフリカ分割に関する列強の国際会議。コンゴ・ニジェール川の航行や領有原則を協議。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-im-o-1882",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+          "url": "https://www.jacar.go.jp/learning/menu02.html",
+          "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+        }
+      ],
+      "name": "壬午軍乱",
+      "aliases": [],
+      "date": "1882",
+      "region": "東アジア",
+      "era": "19世紀",
+      "field": "条約・外交",
+      "description": "朝鮮で旧式軍人の反乱が発生し、清の影響力拡大などを招いた。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-gapsin-1884",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+          "url": "https://www.jacar.go.jp/learning/menu02.html",
+          "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+        }
+      ],
+      "name": "甲申政変",
+      "aliases": [],
+      "date": "1884",
+      "region": "東アジア",
+      "era": "19世紀",
+      "field": "条約・外交",
+      "description": "朝鮮の急進開化派が日本の支援を受けて政変を起こしたが清軍の介入で失敗した。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-donghak-1894",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+          "url": "https://www.jacar.go.jp/learning/menu02.html",
+          "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+        }
+      ],
+      "name": "甲午農民戦争",
+      "aliases": [
+        "東学農民運動"
+      ],
+      "date": "1894",
+      "region": "東アジア",
+      "era": "19世紀",
+      "field": "条約・外交",
+      "description": "朝鮮で東学系農民などの運動が拡大し、日清両国の派兵や日清戦争につながった。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-portsmouth-1905",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立公文書館『近代国家 日本の登場 日露戦争』",
+          "url": "https://www.archives.go.jp/exhibition/digital/modean_state/contents/nichiro-war/index.html",
+          "note": "ポーツマス条約の内容"
+        }
+      ],
+      "name": "ポーツマス条約",
+      "aliases": [],
+      "date": "1905",
+      "region": "東アジア",
+      "era": "20世紀",
+      "field": "条約・外交",
+      "description": "日露戦争の講和条約。ロシアは南樺太割譲、旅順・大連租借権などを日本へ譲渡。",
+      "relatedEvents": []
+    }
+  ],
+  "groups": [
+    {
+      "id": "ag-balkan-1878",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『サンステファノ条約』",
+          "url": "https://kotobank.jp/word/さんすてふあの条約-3153412",
+          "note": "山川世界史小辞典・世界大百科事典"
+        },
+        {
+          "title": "コトバンク『ベルリン条約』",
+          "url": "https://kotobank.jp/word/べるりん条約-3186769",
+          "note": "山川世界史小辞典"
+        }
+      ],
+      "name": "露土戦争後の講和と修正",
+      "termIds": [
+        "at-san-stefano-1878",
+        "at-berlin-treaty-1878"
+      ],
+      "causes": [
+        "同一戦争・同一事件",
+        "因果関係・前後関係"
+      ],
+      "registrationReason": "混同対策としてChatGPTが初期登録。ユーザーの実際の誤答履歴ではない。",
+      "essentialPoint": "サン＝ステファノ条約はロシアに有利、ベルリン条約は列強がその内容を修正。",
+      "orderingNotes": "1878年3月サン＝ステファノ条約→同年7月ベルリン条約",
+      "description": "サン＝ステファノ条約はロシアに有利、ベルリン条約は列強がその内容を修正。",
+      "comparison": [
+        {
+          "key": "stage",
+          "label": "役割",
+          "values": {
+            "at-san-stefano-1878": "露土戦争の講和",
+            "at-berlin-treaty-1878": "列強による講和内容の修正"
+          }
+        },
+        {
+          "key": "bulgaria",
+          "label": "ブルガリア",
+          "values": {
+            "at-san-stefano-1878": "大ブルガリア公国の構想",
+            "at-berlin-treaty-1878": "自治公国の領域を縮小"
+          }
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ag-wwi-peace",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        },
+        {
+          "title": "ジャパンナレッジ『第一次世界大戦』",
+          "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+          "note": "講和条約の締結国と日付"
+        },
+        {
+          "title": "外務省『トルコ共和国の成立と日土国交樹立』",
+          "url": "https://www.mofa.go.jp/mofaj/ms/da/page22_001054.html",
+          "note": "ローザンヌ条約によるセーブル条約の破棄"
+        }
+      ],
+      "name": "第一次世界大戦後の講和条約",
+      "termIds": [
+        "at-versailles-1919",
+        "at-saint-germain-1919",
+        "at-neuilly-1919",
+        "at-trianon-1920",
+        "at-sevres-1920",
+        "at-lausanne-1923"
+      ],
+      "causes": [
+        "同一戦争・同一事件",
+        "年代近接",
+        "内容・役割類似"
+      ],
+      "registrationReason": "混同対策としてChatGPTが初期登録。ユーザーの実際の誤答履歴ではない。",
+      "essentialPoint": "ヴェルサイユ＝ドイツ、サン＝ジェルマン＝オーストリア、ヌイイ＝ブルガリア、トリアノン＝ハンガリー、セーヴル＝オスマン帝国。ローザンヌはセーヴルに代わる条約。",
+      "orderingNotes": "",
+      "description": "ヴェルサイユ＝ドイツ、サン＝ジェルマン＝オーストリア、ヌイイ＝ブルガリア、トリアノン＝ハンガリー、セーヴル＝オスマン帝国。ローザンヌはセーヴルに代わる条約。",
+      "comparison": [
+        {
+          "key": "partner",
+          "label": "主な講和相手",
+          "values": {
+            "at-versailles-1919": "ドイツ",
+            "at-saint-germain-1919": "オーストリア",
+            "at-neuilly-1919": "ブルガリア",
+            "at-trianon-1920": "ハンガリー",
+            "at-sevres-1920": "オスマン帝国",
+            "at-lausanne-1923": "トルコ"
+          }
+        },
+        {
+          "key": "date",
+          "label": "締結年",
+          "values": {
+            "at-versailles-1919": "1919",
+            "at-saint-germain-1919": "1919",
+            "at-neuilly-1919": "1919",
+            "at-trianon-1920": "1920",
+            "at-sevres-1920": "1920",
+            "at-lausanne-1923": "1923"
+          }
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ag-tianjin",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『天津条約』",
+          "url": "https://kotobank.jp/word/天津条約-102479",
+          "note": "旺文社世界史事典ほか"
+        },
+        {
+          "title": "国立公文書館『日本とベトナム』年表",
+          "url": "https://www.archives.go.jp/event/jp_vn45/history.html",
+          "note": "1885年の清仏天津条約"
+        }
+      ],
+      "name": "3つの天津条約",
+      "termIds": [
+        "at-tianjin-1858",
+        "at-tianjin-japan-1885",
+        "at-tianjin-france-1885"
+      ],
+      "causes": [
+        "名称類似",
+        "同一国家",
+        "年代近接"
+      ],
+      "registrationReason": "混同対策としてChatGPTが初期登録。ユーザーの実際の誤答履歴ではない。",
+      "essentialPoint": "1858年はアロー戦争、1885年の日清間は朝鮮問題、同年の清仏間はベトナム問題。",
+      "orderingNotes": "",
+      "description": "1858年はアロー戦争、1885年の日清間は朝鮮問題、同年の清仏間はベトナム問題。",
+      "comparison": [
+        {
+          "key": "partner",
+          "label": "清の相手",
+          "values": {
+            "at-tianjin-1858": "英・仏・露・米",
+            "at-tianjin-japan-1885": "日本",
+            "at-tianjin-france-1885": "フランス"
+          }
+        },
+        {
+          "key": "topic",
+          "label": "問題地域・背景",
+          "values": {
+            "at-tianjin-1858": "アロー戦争",
+            "at-tianjin-japan-1885": "朝鮮・甲申政変",
+            "at-tianjin-france-1885": "ベトナム・清仏戦争"
+          }
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ag-washington",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立公文書館『ワシントン会議で4国条約が調印される』",
+          "url": "https://www.archives.go.jp/ayumi/kobetsu/t10_1921_01.html",
+          "note": "1921年4か国条約"
+        },
+        {
+          "title": "国立公文書館『9か国条約、海軍軍縮条約が調印される』",
+          "url": "https://www.archives.go.jp/ayumi/kobetsu/t11_1922_01.html",
+          "note": "1922年の9か国・海軍軍備制限条約"
+        },
+        {
+          "title": "外務省『ワシントン会議全権時代』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+          "note": "ワシントン体制"
+        }
+      ],
+      "name": "ワシントン会議の条約",
+      "termIds": [
+        "at-four-power-1921",
+        "at-nine-power-1922",
+        "at-naval-washington-1922"
+      ],
+      "causes": [
+        "年代近接",
+        "同一戦争・同一事件",
+        "内容・役割類似"
+      ],
+      "registrationReason": "混同対策としてChatGPTが初期登録。ユーザーの実際の誤答履歴ではない。",
+      "essentialPoint": "四カ国は太平洋島嶼、九カ国は中国、海軍軍備制限は主力艦保有量。",
+      "orderingNotes": "",
+      "description": "四カ国は太平洋島嶼、九カ国は中国、海軍軍備制限は主力艦保有量。",
+      "comparison": [
+        {
+          "key": "theme",
+          "label": "主要事項",
+          "values": {
+            "at-four-power-1921": "太平洋島嶼の権益と協議",
+            "at-nine-power-1922": "中国の主権・門戸開放",
+            "at-naval-washington-1922": "海軍主力艦の保有制限"
+          }
+        },
+        {
+          "key": "members",
+          "label": "当事国数",
+          "values": {
+            "at-four-power-1921": "4",
+            "at-nine-power-1922": "9",
+            "at-naval-washington-1922": "5"
+          }
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ag-berlin-conferences",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『ベルリン会議』",
+          "url": "https://kotobank.jp/word/べるりん会議-3169381",
+          "note": "1878年と1884-85年の区別"
+        },
+        {
+          "title": "コトバンク『アフリカ分割』",
+          "url": "https://kotobank.jp/word/あふりか分割-3177382",
+          "note": "ベルリン・コンゴ会議"
+        }
+      ],
+      "name": "二つのベルリン会議",
+      "termIds": [
+        "at-berlin-congress-1878",
+        "at-berlin-congo-1884"
+      ],
+      "causes": [
+        "名称類似",
+        "年代近接",
+        "内容・役割類似"
+      ],
+      "registrationReason": "混同対策としてChatGPTが初期登録。ユーザーの実際の誤答履歴ではない。",
+      "essentialPoint": "1878年はバルカン問題、1884〜85年はアフリカ分割に関する列強の会議。",
+      "orderingNotes": "",
+      "description": "1878年はバルカン問題、1884〜85年はアフリカ分割に関する列強の会議。",
+      "comparison": [
+        {
+          "key": "region",
+          "label": "対象地域",
+          "values": {
+            "at-berlin-congress-1878": "バルカン",
+            "at-berlin-congo-1884": "アフリカ"
+          }
+        },
+        {
+          "key": "topic",
+          "label": "議題",
+          "values": {
+            "at-berlin-congress-1878": "サン＝ステファノ条約の修正",
+            "at-berlin-congo-1884": "コンゴや植民地化の原則"
+          }
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ag-korea-1880s",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+          "url": "https://www.jacar.go.jp/learning/menu02.html",
+          "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+        }
+      ],
+      "name": "朝鮮近代の三事件",
+      "termIds": [
+        "at-im-o-1882",
+        "at-gapsin-1884",
+        "at-donghak-1894"
+      ],
+      "causes": [
+        "同一地域",
+        "年代近接",
+        "内容・役割類似"
+      ],
+      "registrationReason": "混同対策としてChatGPTが初期登録。ユーザーの実際の誤答履歴ではない。",
+      "essentialPoint": "壬午軍乱は旧式軍人、甲申政変は急進開化派、甲午農民戦争は東学系農民が中心。",
+      "orderingNotes": "",
+      "description": "壬午軍乱は旧式軍人、甲申政変は急進開化派、甲午農民戦争は東学系農民が中心。",
+      "comparison": [
+        {
+          "key": "principal",
+          "label": "主な主体",
+          "values": {
+            "at-im-o-1882": "旧式軍隊の兵士ら",
+            "at-gapsin-1884": "急進開化派",
+            "at-donghak-1894": "東学系農民ら"
+          }
+        },
+        {
+          "key": "year",
+          "label": "年",
+          "values": {
+            "at-im-o-1882": "1882",
+            "at-gapsin-1884": "1884",
+            "at-donghak-1894": "1894"
+          }
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ag-ottoman-peace",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        },
+        {
+          "title": "外務省『トルコ共和国の成立と日土国交樹立』",
+          "url": "https://www.mofa.go.jp/mofaj/ms/da/page22_001054.html",
+          "note": "ローザンヌ条約によるセーブル条約の破棄"
+        }
+      ],
+      "name": "セーヴルとローザンヌ",
+      "termIds": [
+        "at-sevres-1920",
+        "at-lausanne-1923"
+      ],
+      "causes": [
+        "同一国家",
+        "因果関係・前後関係"
+      ],
+      "registrationReason": "混同対策としてChatGPTが初期登録。ユーザーの実際の誤答履歴ではない。",
+      "essentialPoint": "セーヴル条約は第一次世界大戦後のオスマン帝国への講和、ローザンヌ条約はトルコが新たに結び直した条約。",
+      "orderingNotes": "1920年セーヴル条約→1923年ローザンヌ条約",
+      "description": "セーヴル条約は第一次世界大戦後のオスマン帝国への講和、ローザンヌ条約はトルコが新たに結び直した条約。",
+      "comparison": [
+        {
+          "key": "year",
+          "label": "締結年",
+          "values": {
+            "at-sevres-1920": "1920",
+            "at-lausanne-1923": "1923"
+          }
+        },
+        {
+          "key": "status",
+          "label": "位置付け",
+          "values": {
+            "at-sevres-1920": "旧講和条約",
+            "at-lausanne-1923": "旧条約を破棄・置換"
+          }
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ag-saint-name",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『サンステファノ条約』",
+          "url": "https://kotobank.jp/word/さんすてふあの条約-3153412",
+          "note": "山川世界史小辞典・世界大百科事典"
+        },
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        }
+      ],
+      "name": "サン＝ステファノとサン＝ジェルマン",
+      "termIds": [
+        "at-san-stefano-1878",
+        "at-saint-germain-1919"
+      ],
+      "causes": [
+        "名称類似",
+        "内容・役割類似"
+      ],
+      "registrationReason": "混同対策としてChatGPTが初期登録。ユーザーの実際の誤答履歴ではない。",
+      "essentialPoint": "サン＝ステファノは1878年の露土戦争、サン＝ジェルマンは1919年の対オーストリア講和。",
+      "orderingNotes": "",
+      "description": "サン＝ステファノは1878年の露土戦争、サン＝ジェルマンは1919年の対オーストリア講和。",
+      "comparison": [
+        {
+          "key": "war",
+          "label": "戦争",
+          "values": {
+            "at-san-stefano-1878": "1877〜78年の露土戦争",
+            "at-saint-germain-1919": "第一次世界大戦"
+          }
+        },
+        {
+          "key": "partner",
+          "label": "講和の相手",
+          "values": {
+            "at-san-stefano-1878": "オスマン帝国とロシア",
+            "at-saint-germain-1919": "連合国とオーストリア"
+          }
+        }
+      ],
+      "relationships": []
+    }
+  ],
+  "cards": [
+    {
+      "id": "ac-balkan-san",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『サンステファノ条約』",
+          "url": "https://kotobank.jp/word/さんすてふあの条約-3153412",
+          "note": "山川世界史小辞典・世界大百科事典"
+        },
+        {
+          "title": "コトバンク『ベルリン条約』",
+          "url": "https://kotobank.jp/word/べるりん条約-3186769",
+          "note": "山川世界史小辞典"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-balkan-1878",
+      "termIds": [
+        "at-san-stefano-1878"
+      ],
+      "prompt": "1878年の露土戦争の講和で、大ブルガリア公国の構想を盛り込んだ条約は？",
+      "answer": "サン＝ステファノ条約",
+      "explanation": "ロシアとオスマン帝国間の当初の講和条約。",
+      "optionTermIds": [
+        "at-san-stefano-1878",
+        "at-berlin-treaty-1878"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-san-stefano-1878",
+      "distractors": [
+        {
+          "termId": "at-berlin-treaty-1878",
+          "explanation": "ベルリン条約はベルリン会議でサン＝ステファノ条約を修正し、ブルガリアの領域を縮小。セルビア・ルーマニア・モンテネグロ独立を承認。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『ベルリン条約』",
+              "url": "https://kotobank.jp/word/べるりん条約-3186769",
+              "note": "山川世界史小辞典"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-balkan-berlin",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『ベルリン条約』",
+          "url": "https://kotobank.jp/word/べるりん条約-3186769",
+          "note": "山川世界史小辞典"
+        },
+        {
+          "title": "コトバンク『サンステファノ条約』",
+          "url": "https://kotobank.jp/word/さんすてふあの条約-3153412",
+          "note": "山川世界史小辞典・世界大百科事典"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-balkan-1878",
+      "termIds": [
+        "at-berlin-treaty-1878"
+      ],
+      "prompt": "1878年、列強が大ブルガリア公国の領域を縮小した修正条約は？",
+      "answer": "ベルリン条約",
+      "explanation": "ベルリン会議後に締結された。",
+      "optionTermIds": [
+        "at-berlin-treaty-1878",
+        "at-san-stefano-1878"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-berlin-treaty-1878",
+      "distractors": [
+        {
+          "termId": "at-san-stefano-1878",
+          "explanation": "サン＝ステファノ条約は露土戦争後にロシアとオスマン帝国が締結。大ブルガリア公国構想などロシアに有利な内容。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『サンステファノ条約』",
+              "url": "https://kotobank.jp/word/さんすてふあの条約-3153412",
+              "note": "山川世界史小辞典・世界大百科事典"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-balkan-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『サンステファノ条約』",
+          "url": "https://kotobank.jp/word/さんすてふあの条約-3153412",
+          "note": "山川世界史小辞典・世界大百科事典"
+        },
+        {
+          "title": "コトバンク『ベルリン条約』",
+          "url": "https://kotobank.jp/word/べるりん条約-3186769",
+          "note": "山川世界史小辞典"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-balkan-1878",
+      "termIds": [
+        "at-san-stefano-1878",
+        "at-berlin-treaty-1878"
+      ],
+      "prompt": "サン＝ステファノ条約とベルリン条約でブルガリアの扱いはどう変わった？",
+      "answer": "前者はロシアに有利な大ブルガリア公国の構想、後者はその領域を縮小しロシアの影響力を抑制した。",
+      "explanation": "前者はロシアに有利な大ブルガリア公国の構想、後者はその領域を縮小しロシアの影響力を抑制した。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    },
+    {
+      "id": "ac-wwi-austria",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        },
+        {
+          "title": "ジャパンナレッジ『第一次世界大戦』",
+          "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+          "note": "講和条約の締結国と日付"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-wwi-peace",
+      "termIds": [
+        "at-saint-germain-1919"
+      ],
+      "prompt": "第一次世界大戦後、オーストリアとの講和条約は？",
+      "answer": "サン＝ジェルマン条約",
+      "explanation": "1919年9月のサン＝ジェルマン条約。",
+      "optionTermIds": [
+        "at-saint-germain-1919",
+        "at-versailles-1919",
+        "at-neuilly-1919",
+        "at-trianon-1920"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-saint-germain-1919",
+      "distractors": [
+        {
+          "termId": "at-versailles-1919",
+          "explanation": "ヴェルサイユ条約は連合国とドイツの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-neuilly-1919",
+          "explanation": "ヌイイ条約は連合国とブルガリアの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+              "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+              "note": "岩波講座世界歴史25 p.36 の紹介"
+            },
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-trianon-1920",
+          "explanation": "トリアノン条約は連合国とハンガリーの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+              "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+              "note": "岩波講座世界歴史25 p.36 の紹介"
+            },
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-wwi-hungary",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        },
+        {
+          "title": "ジャパンナレッジ『第一次世界大戦』",
+          "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+          "note": "講和条約の締結国と日付"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-wwi-peace",
+      "termIds": [
+        "at-trianon-1920"
+      ],
+      "prompt": "第一次世界大戦後、ハンガリーとの講和条約は？",
+      "answer": "トリアノン条約",
+      "explanation": "1920年のトリアノン条約。",
+      "optionTermIds": [
+        "at-trianon-1920",
+        "at-saint-germain-1919",
+        "at-neuilly-1919",
+        "at-versailles-1919"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-trianon-1920",
+      "distractors": [
+        {
+          "termId": "at-saint-germain-1919",
+          "explanation": "サン＝ジェルマン条約は連合国とオーストリアの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+              "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+              "note": "岩波講座世界歴史25 p.36 の紹介"
+            },
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-neuilly-1919",
+          "explanation": "ヌイイ条約は連合国とブルガリアの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+              "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+              "note": "岩波講座世界歴史25 p.36 の紹介"
+            },
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-versailles-1919",
+          "explanation": "ヴェルサイユ条約は連合国とドイツの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-wwi-bulgaria",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        },
+        {
+          "title": "ジャパンナレッジ『第一次世界大戦』",
+          "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+          "note": "講和条約の締結国と日付"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-wwi-peace",
+      "termIds": [
+        "at-neuilly-1919"
+      ],
+      "prompt": "第一次世界大戦後、ブルガリアとの講和条約は？",
+      "answer": "ヌイイ条約",
+      "explanation": "1919年のヌイイ条約。",
+      "optionTermIds": [
+        "at-neuilly-1919",
+        "at-trianon-1920",
+        "at-saint-germain-1919",
+        "at-versailles-1919"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-neuilly-1919",
+      "distractors": [
+        {
+          "termId": "at-trianon-1920",
+          "explanation": "トリアノン条約は連合国とハンガリーの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+              "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+              "note": "岩波講座世界歴史25 p.36 の紹介"
+            },
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-saint-germain-1919",
+          "explanation": "サン＝ジェルマン条約は連合国とオーストリアの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+              "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+              "note": "岩波講座世界歴史25 p.36 の紹介"
+            },
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-versailles-1919",
+          "explanation": "ヴェルサイユ条約は連合国とドイツの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-wwi-germany",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "ジャパンナレッジ『第一次世界大戦』",
+          "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+          "note": "講和条約の締結国と日付"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-wwi-peace",
+      "termIds": [
+        "at-versailles-1919"
+      ],
+      "prompt": "第一次世界大戦後、ドイツとの講和条約は？",
+      "answer": "ヴェルサイユ条約",
+      "explanation": "1919年のヴェルサイユ条約。",
+      "optionTermIds": [
+        "at-versailles-1919",
+        "at-saint-germain-1919",
+        "at-neuilly-1919",
+        "at-trianon-1920"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-versailles-1919",
+      "distractors": [
+        {
+          "termId": "at-saint-germain-1919",
+          "explanation": "サン＝ジェルマン条約は連合国とオーストリアの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+              "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+              "note": "岩波講座世界歴史25 p.36 の紹介"
+            },
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-neuilly-1919",
+          "explanation": "ヌイイ条約は連合国とブルガリアの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+              "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+              "note": "岩波講座世界歴史25 p.36 の紹介"
+            },
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-trianon-1920",
+          "explanation": "トリアノン条約は連合国とハンガリーの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+              "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+              "note": "岩波講座世界歴史25 p.36 の紹介"
+            },
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-wwi-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        },
+        {
+          "title": "ジャパンナレッジ『第一次世界大戦』",
+          "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+          "note": "講和条約の締結国と日付"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-wwi-peace",
+      "termIds": [
+        "at-versailles-1919",
+        "at-saint-germain-1919",
+        "at-neuilly-1919",
+        "at-trianon-1920",
+        "at-sevres-1920"
+      ],
+      "prompt": "ヴェルサイユ・サン＝ジェルマン・ヌイイ・トリアノン・セーヴルの講和相手を順に答えよ。",
+      "answer": "ドイツ／オーストリア／ブルガリア／ハンガリー／オスマン帝国。",
+      "explanation": "ドイツ／オーストリア／ブルガリア／ハンガリー／オスマン帝国。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    },
+    {
+      "id": "ac-tianjin-japan",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『天津条約』",
+          "url": "https://kotobank.jp/word/天津条約-102479",
+          "note": "旺文社世界史事典ほか"
+        },
+        {
+          "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+          "url": "https://www.jacar.go.jp/learning/menu02.html",
+          "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-tianjin",
+      "termIds": [
+        "at-tianjin-japan-1885"
+      ],
+      "prompt": "甲申政変後、朝鮮からの日清両軍の撤兵と再出兵の事前通告を定めた条約は？",
+      "answer": "天津条約（日清・1885年）",
+      "explanation": "1885年の日清天津条約。",
+      "optionTermIds": [
+        "at-tianjin-japan-1885",
+        "at-tianjin-france-1885",
+        "at-tianjin-1858"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-tianjin-japan-1885",
+      "distractors": [
+        {
+          "termId": "at-tianjin-france-1885",
+          "explanation": "天津条約（清仏・1885年）は清仏戦争の講和。清がベトナムへの宗主権を放棄し、フランスの保護権を承認した。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『天津条約』",
+              "url": "https://kotobank.jp/word/天津条約-102479",
+              "note": "旺文社世界史事典ほか"
+            },
+            {
+              "title": "国立公文書館『日本とベトナム』年表",
+              "url": "https://www.archives.go.jp/event/jp_vn45/history.html",
+              "note": "1885年の清仏天津条約"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-tianjin-1858",
+          "explanation": "天津条約（1858年）はアロー戦争中の清と英・仏・露・米による一連の条約。外国使節の北京駐在などを認めた。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『天津条約』",
+              "url": "https://kotobank.jp/word/天津条約-102479",
+              "note": "旺文社世界史事典ほか"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-tianjin-france",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『天津条約』",
+          "url": "https://kotobank.jp/word/天津条約-102479",
+          "note": "旺文社世界史事典ほか"
+        },
+        {
+          "title": "国立公文書館『日本とベトナム』年表",
+          "url": "https://www.archives.go.jp/event/jp_vn45/history.html",
+          "note": "1885年の清仏天津条約"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-tianjin",
+      "termIds": [
+        "at-tianjin-france-1885"
+      ],
+      "prompt": "清がベトナムの宗主権を放棄した、清仏戦争後の講和条約は？",
+      "answer": "天津条約（清仏・1885年）",
+      "explanation": "1885年の清仏天津条約。",
+      "optionTermIds": [
+        "at-tianjin-france-1885",
+        "at-tianjin-japan-1885",
+        "at-tianjin-1858"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-tianjin-france-1885",
+      "distractors": [
+        {
+          "termId": "at-tianjin-japan-1885",
+          "explanation": "天津条約（日清・1885年）は甲申政変後、日本・清間で朝鮮からの撤兵と将来出兵時の事前通告などを定めた。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『天津条約』",
+              "url": "https://kotobank.jp/word/天津条約-102479",
+              "note": "旺文社世界史事典ほか"
+            },
+            {
+              "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+              "url": "https://www.jacar.go.jp/learning/menu02.html",
+              "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-tianjin-1858",
+          "explanation": "天津条約（1858年）はアロー戦争中の清と英・仏・露・米による一連の条約。外国使節の北京駐在などを認めた。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『天津条約』",
+              "url": "https://kotobank.jp/word/天津条約-102479",
+              "note": "旺文社世界史事典ほか"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-tianjin-1858",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『天津条約』",
+          "url": "https://kotobank.jp/word/天津条約-102479",
+          "note": "旺文社世界史事典ほか"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-tianjin",
+      "termIds": [
+        "at-tianjin-1858"
+      ],
+      "prompt": "アロー戦争中、外国公使の北京駐在などを清に認めさせた条約は？",
+      "answer": "天津条約（1858年）",
+      "explanation": "1858年の天津条約。",
+      "optionTermIds": [
+        "at-tianjin-1858",
+        "at-tianjin-japan-1885",
+        "at-tianjin-france-1885"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-tianjin-1858",
+      "distractors": [
+        {
+          "termId": "at-tianjin-japan-1885",
+          "explanation": "天津条約（日清・1885年）は甲申政変後、日本・清間で朝鮮からの撤兵と将来出兵時の事前通告などを定めた。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『天津条約』",
+              "url": "https://kotobank.jp/word/天津条約-102479",
+              "note": "旺文社世界史事典ほか"
+            },
+            {
+              "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+              "url": "https://www.jacar.go.jp/learning/menu02.html",
+              "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-tianjin-france-1885",
+          "explanation": "天津条約（清仏・1885年）は清仏戦争の講和。清がベトナムへの宗主権を放棄し、フランスの保護権を承認した。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『天津条約』",
+              "url": "https://kotobank.jp/word/天津条約-102479",
+              "note": "旺文社世界史事典ほか"
+            },
+            {
+              "title": "国立公文書館『日本とベトナム』年表",
+              "url": "https://www.archives.go.jp/event/jp_vn45/history.html",
+              "note": "1885年の清仏天津条約"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-tianjin-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『天津条約』",
+          "url": "https://kotobank.jp/word/天津条約-102479",
+          "note": "旺文社世界史事典ほか"
+        },
+        {
+          "title": "国立公文書館『日本とベトナム』年表",
+          "url": "https://www.archives.go.jp/event/jp_vn45/history.html",
+          "note": "1885年の清仏天津条約"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-tianjin",
+      "termIds": [
+        "at-tianjin-1858",
+        "at-tianjin-japan-1885",
+        "at-tianjin-france-1885"
+      ],
+      "prompt": "1858年と1885年2種類の天津条約の相手国・問題地域を区別せよ。",
+      "answer": "1858年＝清と英仏露米、アロー戦争。1885年日清＝朝鮮問題。1885年清仏＝ベトナム問題。",
+      "explanation": "1858年＝清と英仏露米、アロー戦争。1885年日清＝朝鮮問題。1885年清仏＝ベトナム問題。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    },
+    {
+      "id": "ac-washington-four",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立公文書館『ワシントン会議で4国条約が調印される』",
+          "url": "https://www.archives.go.jp/ayumi/kobetsu/t10_1921_01.html",
+          "note": "1921年4か国条約"
+        },
+        {
+          "title": "外務省『ワシントン会議全権時代』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+          "note": "ワシントン体制"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-washington",
+      "termIds": [
+        "at-four-power-1921"
+      ],
+      "prompt": "太平洋の島嶼に関する権益尊重と協議を規定し、日英同盟廃棄につながった条約は？",
+      "answer": "四カ国条約",
+      "explanation": "1921年の四カ国条約。",
+      "optionTermIds": [
+        "at-four-power-1921",
+        "at-nine-power-1922",
+        "at-naval-washington-1922"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-four-power-1921",
+      "distractors": [
+        {
+          "termId": "at-nine-power-1922",
+          "explanation": "九カ国条約はワシントン会議で締結。中国の主権・領土保全と門戸開放・機会均等などを規定。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立公文書館『9か国条約、海軍軍縮条約が調印される』",
+              "url": "https://www.archives.go.jp/ayumi/kobetsu/t11_1922_01.html",
+              "note": "1922年の9か国・海軍軍備制限条約"
+            },
+            {
+              "title": "外務省『ワシントン会議全権時代』",
+              "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+              "note": "ワシントン体制"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-naval-washington-1922",
+          "explanation": "ワシントン海軍軍備制限条約は米英日仏伊の主力艦保有量を制限。主力艦の米英日比率は5:5:3。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立公文書館『9か国条約、海軍軍縮条約が調印される』",
+              "url": "https://www.archives.go.jp/ayumi/kobetsu/t11_1922_01.html",
+              "note": "1922年の9か国・海軍軍備制限条約"
+            },
+            {
+              "title": "外務省『ワシントン会議全権時代』",
+              "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+              "note": "ワシントン体制"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-washington-nine",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立公文書館『9か国条約、海軍軍縮条約が調印される』",
+          "url": "https://www.archives.go.jp/ayumi/kobetsu/t11_1922_01.html",
+          "note": "1922年の9か国・海軍軍備制限条約"
+        },
+        {
+          "title": "外務省『ワシントン会議全権時代』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+          "note": "ワシントン体制"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-washington",
+      "termIds": [
+        "at-nine-power-1922"
+      ],
+      "prompt": "中国の主権・領土保全と門戸開放を規定したワシントン会議の条約は？",
+      "answer": "九カ国条約",
+      "explanation": "1922年の九カ国条約。",
+      "optionTermIds": [
+        "at-nine-power-1922",
+        "at-four-power-1921",
+        "at-naval-washington-1922"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-nine-power-1922",
+      "distractors": [
+        {
+          "termId": "at-four-power-1921",
+          "explanation": "四カ国条約はワシントン会議で日・英・米・仏が調印。太平洋島嶼の権益尊重と協議などを規定し、日英同盟は廃棄された。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立公文書館『ワシントン会議で4国条約が調印される』",
+              "url": "https://www.archives.go.jp/ayumi/kobetsu/t10_1921_01.html",
+              "note": "1921年4か国条約"
+            },
+            {
+              "title": "外務省『ワシントン会議全権時代』",
+              "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+              "note": "ワシントン体制"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-naval-washington-1922",
+          "explanation": "ワシントン海軍軍備制限条約は米英日仏伊の主力艦保有量を制限。主力艦の米英日比率は5:5:3。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立公文書館『9か国条約、海軍軍縮条約が調印される』",
+              "url": "https://www.archives.go.jp/ayumi/kobetsu/t11_1922_01.html",
+              "note": "1922年の9か国・海軍軍備制限条約"
+            },
+            {
+              "title": "外務省『ワシントン会議全権時代』",
+              "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+              "note": "ワシントン体制"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-washington-naval",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立公文書館『9か国条約、海軍軍縮条約が調印される』",
+          "url": "https://www.archives.go.jp/ayumi/kobetsu/t11_1922_01.html",
+          "note": "1922年の9か国・海軍軍備制限条約"
+        },
+        {
+          "title": "外務省『ワシントン会議全権時代』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+          "note": "ワシントン体制"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-washington",
+      "termIds": [
+        "at-naval-washington-1922"
+      ],
+      "prompt": "主力艦の保有比率を米英日5:5:3とした条約は？",
+      "answer": "ワシントン海軍軍備制限条約",
+      "explanation": "1922年のワシントン海軍軍備制限条約。",
+      "optionTermIds": [
+        "at-naval-washington-1922",
+        "at-four-power-1921",
+        "at-nine-power-1922"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-naval-washington-1922",
+      "distractors": [
+        {
+          "termId": "at-four-power-1921",
+          "explanation": "四カ国条約はワシントン会議で日・英・米・仏が調印。太平洋島嶼の権益尊重と協議などを規定し、日英同盟は廃棄された。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立公文書館『ワシントン会議で4国条約が調印される』",
+              "url": "https://www.archives.go.jp/ayumi/kobetsu/t10_1921_01.html",
+              "note": "1921年4か国条約"
+            },
+            {
+              "title": "外務省『ワシントン会議全権時代』",
+              "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+              "note": "ワシントン体制"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-nine-power-1922",
+          "explanation": "九カ国条約はワシントン会議で締結。中国の主権・領土保全と門戸開放・機会均等などを規定。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立公文書館『9か国条約、海軍軍縮条約が調印される』",
+              "url": "https://www.archives.go.jp/ayumi/kobetsu/t11_1922_01.html",
+              "note": "1922年の9か国・海軍軍備制限条約"
+            },
+            {
+              "title": "外務省『ワシントン会議全権時代』",
+              "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+              "note": "ワシントン体制"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-washington-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立公文書館『ワシントン会議で4国条約が調印される』",
+          "url": "https://www.archives.go.jp/ayumi/kobetsu/t10_1921_01.html",
+          "note": "1921年4か国条約"
+        },
+        {
+          "title": "国立公文書館『9か国条約、海軍軍縮条約が調印される』",
+          "url": "https://www.archives.go.jp/ayumi/kobetsu/t11_1922_01.html",
+          "note": "1922年の9か国・海軍軍備制限条約"
+        },
+        {
+          "title": "外務省『ワシントン会議全権時代』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/01.html",
+          "note": "ワシントン体制"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-washington",
+      "termIds": [
+        "at-four-power-1921",
+        "at-nine-power-1922",
+        "at-naval-washington-1922"
+      ],
+      "prompt": "四カ国・九カ国・海軍軍備制限条約の目的を対応させよ。",
+      "answer": "四カ国＝太平洋の島嶼。九カ国＝中国の主権・門戸開放。海軍軍備制限＝主力艦比率。",
+      "explanation": "四カ国＝太平洋の島嶼。九カ国＝中国の主権・門戸開放。海軍軍備制限＝主力艦比率。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    },
+    {
+      "id": "ac-berlin-balkan",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『ベルリン会議』",
+          "url": "https://kotobank.jp/word/べるりん会議-3169381",
+          "note": "1878年と1884-85年の区別"
+        },
+        {
+          "title": "コトバンク『ベルリン条約』",
+          "url": "https://kotobank.jp/word/べるりん条約-3186769",
+          "note": "山川世界史小辞典"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-berlin-conferences",
+      "termIds": [
+        "at-berlin-congress-1878"
+      ],
+      "prompt": "サン＝ステファノ条約の修正とバルカン問題を協議したベルリン会議は？",
+      "answer": "ベルリン会議（1878年）",
+      "explanation": "1878年のベルリン会議。",
+      "optionTermIds": [
+        "at-berlin-congress-1878",
+        "at-berlin-congo-1884"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-berlin-congress-1878",
+      "distractors": [
+        {
+          "termId": "at-berlin-congo-1884",
+          "explanation": "ベルリン会議（1884〜85年）はビスマルクの提唱で開かれたアフリカ分割に関する列強の国際会議。コンゴ・ニジェール川の航行や領有原則を協議。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『ベルリン会議』",
+              "url": "https://kotobank.jp/word/べるりん会議-3169381",
+              "note": "1878年と1884-85年の区別"
+            },
+            {
+              "title": "コトバンク『アフリカ分割』",
+              "url": "https://kotobank.jp/word/あふりか分割-3177382",
+              "note": "ベルリン・コンゴ会議"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-berlin-africa",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『ベルリン会議』",
+          "url": "https://kotobank.jp/word/べるりん会議-3169381",
+          "note": "1878年と1884-85年の区別"
+        },
+        {
+          "title": "コトバンク『アフリカ分割』",
+          "url": "https://kotobank.jp/word/あふりか分割-3177382",
+          "note": "ベルリン・コンゴ会議"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-berlin-conferences",
+      "termIds": [
+        "at-berlin-congo-1884"
+      ],
+      "prompt": "コンゴ地域などのアフリカ分割の原則を議論したベルリン会議は？",
+      "answer": "ベルリン会議（1884〜85年）",
+      "explanation": "1884〜1885年のベルリン・コンゴ会議。",
+      "optionTermIds": [
+        "at-berlin-congo-1884",
+        "at-berlin-congress-1878"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-berlin-congo-1884",
+      "distractors": [
+        {
+          "termId": "at-berlin-congress-1878",
+          "explanation": "ベルリン会議（1878年）はサン＝ステファノ条約を修正し、バルカン問題を調整した国際会議。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『ベルリン会議』",
+              "url": "https://kotobank.jp/word/べるりん会議-3169381",
+              "note": "1878年と1884-85年の区別"
+            },
+            {
+              "title": "コトバンク『ベルリン条約』",
+              "url": "https://kotobank.jp/word/べるりん条約-3186769",
+              "note": "山川世界史小辞典"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-berlin-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『ベルリン会議』",
+          "url": "https://kotobank.jp/word/べるりん会議-3169381",
+          "note": "1878年と1884-85年の区別"
+        },
+        {
+          "title": "コトバンク『アフリカ分割』",
+          "url": "https://kotobank.jp/word/あふりか分割-3177382",
+          "note": "ベルリン・コンゴ会議"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-berlin-conferences",
+      "termIds": [
+        "at-berlin-congress-1878",
+        "at-berlin-congo-1884"
+      ],
+      "prompt": "1878年と1884〜85年のベルリン会議はそれぞれ何を協議したか？",
+      "answer": "1878年＝バルカン問題・サン＝ステファノ条約の修正。1884〜85年＝アフリカ分割とコンゴ問題。",
+      "explanation": "1878年＝バルカン問題・サン＝ステファノ条約の修正。1884〜85年＝アフリカ分割とコンゴ問題。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    },
+    {
+      "id": "ac-korea-im-o",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+          "url": "https://www.jacar.go.jp/learning/menu02.html",
+          "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-korea-1880s",
+      "termIds": [
+        "at-im-o-1882"
+      ],
+      "prompt": "1882年、朝鮮の旧式軍隊の反乱として発生した事件は？",
+      "answer": "壬午軍乱",
+      "explanation": "壬午軍乱。",
+      "optionTermIds": [
+        "at-im-o-1882",
+        "at-gapsin-1884",
+        "at-donghak-1894"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-im-o-1882",
+      "distractors": [
+        {
+          "termId": "at-gapsin-1884",
+          "explanation": "甲申政変は朝鮮の急進開化派が日本の支援を受けて政変を起こしたが清軍の介入で失敗した。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+              "url": "https://www.jacar.go.jp/learning/menu02.html",
+              "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-donghak-1894",
+          "explanation": "甲午農民戦争は朝鮮で東学系農民などの運動が拡大し、日清両国の派兵や日清戦争につながった。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+              "url": "https://www.jacar.go.jp/learning/menu02.html",
+              "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-korea-gapsin",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+          "url": "https://www.jacar.go.jp/learning/menu02.html",
+          "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-korea-1880s",
+      "termIds": [
+        "at-gapsin-1884"
+      ],
+      "prompt": "1884年、朝鮮の急進開化派が起こした政変は？",
+      "answer": "甲申政変",
+      "explanation": "甲申政変。",
+      "optionTermIds": [
+        "at-gapsin-1884",
+        "at-im-o-1882",
+        "at-donghak-1894"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-gapsin-1884",
+      "distractors": [
+        {
+          "termId": "at-im-o-1882",
+          "explanation": "壬午軍乱は朝鮮で旧式軍人の反乱が発生し、清の影響力拡大などを招いた。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+              "url": "https://www.jacar.go.jp/learning/menu02.html",
+              "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-donghak-1894",
+          "explanation": "甲午農民戦争は朝鮮で東学系農民などの運動が拡大し、日清両国の派兵や日清戦争につながった。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+              "url": "https://www.jacar.go.jp/learning/menu02.html",
+              "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-korea-donghak",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+          "url": "https://www.jacar.go.jp/learning/menu02.html",
+          "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-korea-1880s",
+      "termIds": [
+        "at-donghak-1894"
+      ],
+      "prompt": "1894年、朝鮮で東学系農民らが起こした戦争は？",
+      "answer": "甲午農民戦争",
+      "explanation": "甲午農民戦争。",
+      "optionTermIds": [
+        "at-donghak-1894",
+        "at-im-o-1882",
+        "at-gapsin-1884"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-donghak-1894",
+      "distractors": [
+        {
+          "termId": "at-im-o-1882",
+          "explanation": "壬午軍乱は朝鮮で旧式軍人の反乱が発生し、清の影響力拡大などを招いた。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+              "url": "https://www.jacar.go.jp/learning/menu02.html",
+              "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-gapsin-1884",
+          "explanation": "甲申政変は朝鮮の急進開化派が日本の支援を受けて政変を起こしたが清軍の介入で失敗した。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+              "url": "https://www.jacar.go.jp/learning/menu02.html",
+              "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-korea-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "アジア歴史資料センター『アジア歴史資料ラーニング 明治期（前半）』",
+          "url": "https://www.jacar.go.jp/learning/menu02.html",
+          "note": "1882年壬午軍乱、1884年甲申政変、1894年甲午農民戦争"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-korea-1880s",
+      "termIds": [
+        "at-im-o-1882",
+        "at-gapsin-1884",
+        "at-donghak-1894"
+      ],
+      "prompt": "壬午軍乱・甲申政変・甲午農民戦争の年代と主な主体の違いを答えよ。",
+      "answer": "壬午軍乱＝1882年・旧式軍人。甲申政変＝1884年・急進開化派。甲午農民戦争＝1894年・東学系農民。",
+      "explanation": "壬午軍乱＝1882年・旧式軍人。甲申政変＝1884年・急進開化派。甲午農民戦争＝1894年・東学系農民。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    },
+    {
+      "id": "ac-turkey-lausanne",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "外務省『トルコ共和国の成立と日土国交樹立』",
+          "url": "https://www.mofa.go.jp/mofaj/ms/da/page22_001054.html",
+          "note": "ローザンヌ条約によるセーブル条約の破棄"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-ottoman-peace",
+      "termIds": [
+        "at-lausanne-1923"
+      ],
+      "prompt": "セーヴル条約に代わり、1923年にトルコと連合国が結んだ条約は？",
+      "answer": "ローザンヌ条約",
+      "explanation": "ローザンヌ条約。",
+      "optionTermIds": [
+        "at-lausanne-1923",
+        "at-sevres-1920"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-lausanne-1923",
+      "distractors": [
+        {
+          "termId": "at-sevres-1920",
+          "explanation": "セーヴル条約は第一次世界大戦後の連合国とオスマン帝国の講和条約。のちローザンヌ条約に置き換えられた。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+              "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+              "note": "岩波講座世界歴史25 p.36 の紹介"
+            },
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            },
+            {
+              "title": "外務省『トルコ共和国の成立と日土国交樹立』",
+              "url": "https://www.mofa.go.jp/mofaj/ms/da/page22_001054.html",
+              "note": "ローザンヌ条約によるセーブル条約の破棄"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-turkey-sevres",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        },
+        {
+          "title": "外務省『トルコ共和国の成立と日土国交樹立』",
+          "url": "https://www.mofa.go.jp/mofaj/ms/da/page22_001054.html",
+          "note": "ローザンヌ条約によるセーブル条約の破棄"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-ottoman-peace",
+      "termIds": [
+        "at-sevres-1920"
+      ],
+      "prompt": "第一次世界大戦後、1920年にオスマン帝国が連合国と結んだ条約は？",
+      "answer": "セーヴル条約",
+      "explanation": "セーヴル条約。",
+      "optionTermIds": [
+        "at-sevres-1920",
+        "at-lausanne-1923"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-sevres-1920",
+      "distractors": [
+        {
+          "termId": "at-lausanne-1923",
+          "explanation": "ローザンヌ条約はトルコと連合国間の講和条約。セーヴル条約に代わり、トルコの主権・領土を再確認した。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "外務省『トルコ共和国の成立と日土国交樹立』",
+              "url": "https://www.mofa.go.jp/mofaj/ms/da/page22_001054.html",
+              "note": "ローザンヌ条約によるセーブル条約の破棄"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-turkey-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "外務省『トルコ共和国の成立と日土国交樹立』",
+          "url": "https://www.mofa.go.jp/mofaj/ms/da/page22_001054.html",
+          "note": "ローザンヌ条約によるセーブル条約の破棄"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-ottoman-peace",
+      "termIds": [
+        "at-sevres-1920",
+        "at-lausanne-1923"
+      ],
+      "prompt": "セーヴル条約とローザンヌ条約の関係を説明せよ。",
+      "answer": "1920年のセーヴル条約はトルコ独立戦争などを経て破棄され、1923年のローザンヌ条約で新たな講和が成立した。",
+      "explanation": "1920年のセーヴル条約はトルコ独立戦争などを経て破棄され、1923年のローザンヌ条約で新たな講和が成立した。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    },
+    {
+      "id": "ac-saint-san-stefano",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『サンステファノ条約』",
+          "url": "https://kotobank.jp/word/さんすてふあの条約-3153412",
+          "note": "山川世界史小辞典・世界大百科事典"
+        },
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-saint-name",
+      "termIds": [
+        "at-san-stefano-1878"
+      ],
+      "prompt": "1878年の露土戦争の講和条約は、どちらの「サン」で始まる条約か？",
+      "answer": "サン＝ステファノ条約",
+      "explanation": "サン＝ステファノ条約。",
+      "optionTermIds": [
+        "at-san-stefano-1878",
+        "at-saint-germain-1919"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-san-stefano-1878",
+      "distractors": [
+        {
+          "termId": "at-saint-germain-1919",
+          "explanation": "サン＝ジェルマン条約は連合国とオーストリアの第一次世界大戦講和条約。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+              "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+              "note": "岩波講座世界歴史25 p.36 の紹介"
+            },
+            {
+              "title": "ジャパンナレッジ『第一次世界大戦』",
+              "url": "https://japanknowledge.com/introduction/keyword.html?i=314",
+              "note": "講和条約の締結国と日付"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-saint-san-germain",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        },
+        {
+          "title": "コトバンク『サンステファノ条約』",
+          "url": "https://kotobank.jp/word/さんすてふあの条約-3153412",
+          "note": "山川世界史小辞典・世界大百科事典"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-saint-name",
+      "termIds": [
+        "at-saint-germain-1919"
+      ],
+      "prompt": "1919年のオーストリアとの講和条約は、どちらの「サン」で始まる条約か？",
+      "answer": "サン＝ジェルマン条約",
+      "explanation": "サン＝ジェルマン条約。",
+      "optionTermIds": [
+        "at-saint-germain-1919",
+        "at-san-stefano-1878"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-saint-germain-1919",
+      "distractors": [
+        {
+          "termId": "at-san-stefano-1878",
+          "explanation": "サン＝ステファノ条約は露土戦争後にロシアとオスマン帝国が締結。大ブルガリア公国構想などロシアに有利な内容。。設問条件と異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『サンステファノ条約』",
+              "url": "https://kotobank.jp/word/さんすてふあの条約-3153412",
+              "note": "山川世界史小辞典・世界大百科事典"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-saint-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T09:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『サンステファノ条約』",
+          "url": "https://kotobank.jp/word/さんすてふあの条約-3153412",
+          "note": "山川世界史小辞典・世界大百科事典"
+        },
+        {
+          "title": "国立国会図書館 レファレンス協同データベース『サンジェルマン条約』",
+          "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000216611&page=ref_view",
+          "note": "岩波講座世界歴史25 p.36 の紹介"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-saint-name",
+      "termIds": [
+        "at-san-stefano-1878",
+        "at-saint-germain-1919"
+      ],
+      "prompt": "サン＝ステファノ条約とサン＝ジェルマン条約の年・戦争・当事国を区別せよ。",
+      "answer": "サン＝ステファノ＝1878年・露土戦争・ロシアとオスマン帝国。サン＝ジェルマン＝1919年・第一次世界大戦・連合国とオーストリア。",
+      "explanation": "サン＝ステファノ＝1878年・露土戦争・ロシアとオスマン帝国。サン＝ジェルマン＝1919年・第一次世界大戦・連合国とオーストリア。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    }
+  ]
 }
