@@ -25,6 +25,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm run validate:ambiguous
       - run: npm test
       - run: npm run build
       - run: npx playwright install --with-deps chromium
