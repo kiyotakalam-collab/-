@@ -203,9 +203,37 @@ export function priority(progress: CardProgress | undefined, now: number | Date 
   const idleDays = Math.max(0, (time - Date.parse(progress.lastStudiedAt ?? new Date(time).toISOString())) / DAY);
   return recentFailure * 10 + Math.min(20, overdueDays) + Math.min(5, idleDays / 14) + Math.min(1, progress.wrong / 20) - Math.min(3, progress.streak * 0.4);
 }
+/**
+ * Older synced textbooks use broad card types (context/achievement-person) even
+ * for author/work recall. Identify the clearly attributable pairs at query time
+ * instead of rewriting card IDs, catalog versions, or existing review events.
+ */
+const CREATOR_TO_WORK_CUES = /著した|著わした|著述した|執筆した|編纂した|編集した|書いた|詠んだ|作成した|制定した|漢訳した|翻訳した|風刺した|が残した|が記録した|が(?:編んだ|まとめた)|をまとめた|の(?:著作|作品|詩集|戯曲|絵画|絵巻|著書|学術随筆|長編詩|元曲|四行詩集|回想録)|による(?:著作|絵画|作品|書作品|行書)|の作と伝えられる|が描いた/;
+function matchesDirection(card: Card, owner: KnowledgeItem, direction: StudyFilter['cardDirection'], creatorNames: string[]): boolean {
+  if (direction === 'all') return true;
+  if (card.type === direction) return true;
+  if (direction === 'work-author') {
+    // A named work provides a real cue. Do not count rulers who only ordered compilation.
+    return card.type === 'achievement-person' && owner.kind === 'person'
+      && /『[^』]+』/.test(card.question)
+      && !/(?:編纂|作成)を命じた/.test(card.question);
+  }
+  if (direction === 'person-work') {
+    if (card.type !== 'context' || owner.kind !== 'work') return false;
+    // Remove the generic suffix present on most textbook cards before classifying.
+    const question = card.question.replace(/(?:この)?作品・文献は何か[？?]?/g, '');
+    if (/作者不詳|の命で(?:編纂|作成)された/.test(question) || !CREATOR_TO_WORK_CUES.test(question)) return false;
+    return creatorNames.some(name => question.includes(name));
+  }
+  return false;
+}
+
 export function selectCards(catalog: Catalog, events: ReviewEvent[], filter: StudyFilter, now: number | Date = Date.now()): Card[] {
   const items = new Map(catalog.items.filter(entry => !entry.deleted).map(entry => [entry.id, entry]));
   const progress = getProgress(events);
+  const creatorNames = filter.cardDirection === 'person-work'
+    ? [...new Set(catalog.items.filter(item => !item.deleted && item.kind === 'person').flatMap(item => [item.canonicalName, ...item.aliases]))].filter(name => name.length >= 2)
+    : [];
   const cards = catalog.cards.filter(entry => {
     const owner = items.get(entry.knowledgeId);
     if (entry.deleted || !owner) return false;
@@ -215,7 +243,7 @@ export function selectCards(catalog: Catalog, events: ReviewEvent[], filter: Stu
     if (!matchesCultureScope(owner, filter)) return false;
     if (filter.fields.length && !filter.fields.includes(owner.field)) return false;
     if (filter.cardType !== 'all' && (filter.cardType === 'image' ? entry.type !== 'image' : entry.type === 'image')) return false;
-    if (filter.cardDirection && filter.cardDirection !== 'all' && entry.type !== filter.cardDirection) return false;
+    if (filter.cardDirection && !matchesDirection(entry, owner, filter.cardDirection, creatorNames)) return false;
     const p = progress.get(entry.id);
     if (filter.mode === 'unseen' && p) return false;
     if (filter.mode === 'mistakes' && (!p || p.wrong === 0)) return false;
