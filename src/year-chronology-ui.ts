@@ -22,7 +22,7 @@ export class YearChronologyUI {
   private rangeError='';
   private timelineMode:'story'|'full'='story';
   private storyId='voyages';
-  constructor(private read:()=>YearSnapshot,private db:()=>YearDB|null,private reload:()=>Promise<void>,private render:()=>void,private notify:(text:string,error?:boolean)=>void,private ready:()=>Promise<void>){}
+  constructor(private read:()=>YearSnapshot,private db:()=>YearDB|null,private reload:()=>Promise<void>,private render:()=>void,private notify:(text:string,error?:boolean)=>void,private ready:()=>Promise<void>,private onWrong:(eventId:string)=>void=()=>{}){}
   isStudying(){return this.active&&this.index<this.queue.length;}
   leave(){this.generation++;this.active=false;this.queue=[];this.starting=false;}
   private classifications(prefix:string,current:{level:string|number;region?:string;era:string}){
@@ -85,6 +85,13 @@ export class YearChronologyUI {
     if(timeline)timeline.onsubmit=event=>{event.preventDefault();const d=new FormData(timeline),start=Number(d.get('timelineStart')),end=Number(d.get('timelineEnd'));if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||!start||!end||start>end){this.rangeError='開始年と終了年を確認してください。0年は指定できません。';}else{this.timeline={start,end,regions:d.getAll('timelineRegion').map(String),level:String(d.get('timelineLevel')),era:String(d.get('timelineEra')),scale:Number(d.get('timelineScale'))};this.rangeError='';this.detailId='';}this.render();};
     document.querySelectorAll<HTMLButtonElement>('[data-timeline-id]').forEach(button=>button.onclick=()=>{const scroll=document.querySelector('.timeline-scroll'),left=scroll?.scrollLeft??0,top=window.scrollY;this.detailId=button.dataset.timelineId!;this.render();const next=document.querySelector('.timeline-scroll');if(next)next.scrollLeft=left;window.scrollTo(0,top);const title=document.querySelector<HTMLElement>('#timeline-detail-title');title?.focus({preventScroll:true});title?.scrollIntoView({block:'nearest'});});
   }
+  async startSelected(ids:string[]){
+    if(this.busy||this.starting||!this.db())return;const generation=this.generation;this.starting=true;
+    try{await this.ready();if(generation!==this.generation)return;const state=this.read(),items=new Map(state.catalog.items.filter(i=>!i.deleted).map(i=>[i.id,i]));
+      const byId=new Map(state.orderingEvents.map(e=>[e.questionId,e]));this.queue=[...new Set(ids)].flatMap(id=>{const event=byId.get(id);if(!event)return [];const terms=event.itemIds.map(id=>items.get(id));if(terms.some(i=>!i))return [];try{correctOrdering(terms as YearItem[]);}catch{return [];}return [{id,items:[...(terms as YearItem[])].reverse()}];});
+      if(!this.queue.length){this.notify('この組合せは現在出題できません。');return;}this.index=0;this.active=true;this.sessionId=crypto.randomUUID();this.prepare();
+    }finally{this.starting=false;this.render();}
+  }
   private async start(){
     if(this.starting||this.busy||!this.db())return;const generation=this.generation;this.starting=true;this.render();
     try{await this.ready();if(generation!==this.generation)return;const state=this.read();this.queue=selectOrderingQuestions(state.catalog,state.orderingEvents,this.filter,this.count);if(!this.queue.length)return;this.index=0;this.active=true;this.sessionId=crypto.randomUUID();this.prepare();}
@@ -97,7 +104,7 @@ export class YearChronologyUI {
     if(action==='next'&&this.graded){this.index++;this.prepare();this.render();return;}
     if(action!=='grade'||!this.active||this.graded||!this.db())return;
     const generation=this.generation;this.busy=true;this.render();
-    try{const q=this.queue[this.index];correctOrdering(q.items);await this.db()!.addOrderingReview(this.reviewId,q.items.map(x=>x.id),[...this.order],this.sessionId);await this.reload();if(generation===this.generation)this.graded=true;}
+    try{const q=this.queue[this.index];correctOrdering(q.items);await this.db()!.addOrderingReview(this.reviewId,q.items.map(x=>x.id),[...this.order],this.sessionId);await this.reload();if(generation===this.generation){this.graded=true;if(!this.read().orderingEvents.find(e=>e.id===this.reviewId)?.correct)this.onWrong(this.reviewId);}}
     catch(error){this.notify(String(error),true);}finally{this.busy=false;this.render();}
   }
 }

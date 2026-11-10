@@ -1,3 +1,4 @@
+import type {CauseArea} from './error-causes';
 import {
   EMPTY_YEARS, fetchYearCatalog, openYearDatabase, selectYearQuestions, yearProgress,
   type YearDB, type YearFilter, type YearQuestion, type YearSnapshot, type YearStudyMode,
@@ -15,7 +16,7 @@ export class YearTestUI {
   private database: YearDB | null = null;
   private loaded = false;
   private state: YearSnapshot = {catalog:structuredClone(EMPTY_YEARS), events:[], lastSyncAt:null, orderingEvents:[]};
-  private chronology = new YearChronologyUI(()=>this.state,()=>this.database,async()=>{if(this.database)this.state=await this.database.load();},()=>this.rerender(),(text,error)=>this.notify(text,error),async()=>{if(this.syncPromise)await this.syncPromise;});
+  private chronology = new YearChronologyUI(()=>this.state,()=>this.database,async()=>{if(this.database)this.state=await this.database.load();},()=>this.rerender(),(text,error)=>this.notify(text,error),async()=>{if(this.syncPromise)await this.syncPromise;},id=>this.onWrong('ordering',id));
   private tab: YearPage = 'home';
   private stage: Stage = 'setup';
   private filter = defaults();
@@ -35,7 +36,7 @@ export class YearTestUI {
   private listFilter = {level:'all', region:'all', era:'all'};
   private listLimit = 50;
   private historyLimit = 50;
-  constructor(private rerender: () => void, private notify: (message: string, error?: boolean) => void) {}
+  constructor(private rerender: () => void, private notify: (message: string, error?: boolean) => void, private onWrong:(area:CauseArea,eventId:string)=>void=()=>{}) {}
 
   async initialize() {
     try {
@@ -50,6 +51,8 @@ export class YearTestUI {
     }
   }
   currentPage(): YearPage { return this.tab; }
+  async refreshSnapshot(){if(this.database)this.state=await this.database.load();}
+  async startOrderingQuestions(ids:string[]){await this.chronology.startSelected(ids);}
   insightSnapshot():YearSnapshot|null { return this.loaded?this.state:null; }
   async startSelectedQuestions(ids:string[]) {
     if(this.starting||this.busy||!this.database)return;
@@ -244,7 +247,7 @@ export class YearTestUI {
       if((key==='correct'||key==='wrong')&&this.stage==='studying'&&this.revealed&&!this.busy){
         if(!this.database)throw Error('保存領域が利用できません。');
         const generation=this.generation, id=this.queue[this.index].id;
-        this.busy=true;document.querySelectorAll<HTMLButtonElement>('.chronology-grade button').forEach(x=>x.disabled=true);const correct=key==='correct';await this.database.addReview(id,correct,this.sessionId);this.state=await this.database.load();
+        this.busy=true;document.querySelectorAll<HTMLButtonElement>('.chronology-grade button').forEach(x=>x.disabled=true);const correct=key==='correct';const event=await this.database.addReview(id,correct,this.sessionId);this.state=await this.database.load();if(!correct)this.onWrong('years',event.id);
         if(generation!==this.generation){this.busy=false;this.rerender();return;}
         if(correct)this.correctInSession++;this.index++;this.revealed=false;this.stage=this.index>=this.queue.length?'finished':'studying';this.busy=false;this.rerender();if(this.stage==='finished'&&this.syncPending)void this.sync();
       }

@@ -1,3 +1,5 @@
+import {advanceRetention} from './retention';
+import {validateErrorCauses} from './error-causes';
 import { DEFAULT_SETTINGS, type Backup, type Card, type CardProgress, type Catalog, type ImageAsset, type KnowledgeItem, type ReviewEvent, type Settings, type StudyFilter } from './types';
 import { matchesCultureScope } from './culture-scope';
 import {validateComparisonEvent} from './culture-compare';
@@ -181,13 +183,15 @@ export function validateBackup(input: unknown): Backup {
   const knowledgeIds=new Set(result.catalog.items.map(item=>item.id));
   for(const event of result.comparisonEvents)for(const id of [event.sourceKnowledgeId,event.targetKnowledgeId,event.selectedTargetId].filter(Boolean) as string[])if(!knowledgeIds.has(id))fail(`識別履歴の参照先がありません: ${id}`);
   if(value.schemaVersion===2&&value.relations!==undefined)result.relations=validateRelations(value.relations);
+  result.errorCauses=validateErrorCauses(value.errorCauses);
   return result;
 }
 
 export function getProgress(events: ReviewEvent[]): Map<string, CardProgress> {
   const result = new Map<string, CardProgress>();
   for (const event of [...events].sort((a, b) => Date.parse(a.reviewedAt) - Date.parse(b.reviewedAt) || a.id.localeCompare(b.id))) {
-    const p = result.get(event.cardId) ?? {cardId: event.cardId, correct: 0, wrong: 0, attempts: 0, streak: 0, lastStudiedAt: null, nextReviewAt: null, recent: []};
+    const p:CardProgress = result.get(event.cardId) ?? {cardId: event.cardId, correct: 0, wrong: 0, attempts: 0, streak: 0, lastStudiedAt: null, nextReviewAt: null, recent: []};
+    p.retention=advanceRetention(p.retention,event.correct,event.reviewedAt,p.lastStudiedAt,p.nextReviewAt);
     p.attempts++;
     if (event.correct) { p.correct++; p.streak++; } else { p.wrong++; p.streak = 0; }
     p.recent = [...p.recent.slice(-4), event.correct];

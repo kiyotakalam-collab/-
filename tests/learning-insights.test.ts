@@ -38,31 +38,29 @@ describe('Japan-time review calendar',()=>{
 });
 describe('mastery is a read-only classification, not a replacement repetition algorithm',()=>{
   const learned={attempts:1,recent:[true],streak:1,lastAt:now-1000,dueAt:now+DAY};
-  it('classifies all four states with clear precedence',()=>{
-    expect(classifyMastery({...learned,attempts:0},now)).toBe('unseen');expect(classifyMastery(learned,now)).toBe('learning');
-    expect(classifyMastery({...learned,recent:[true,true,true],streak:3},now)).toBe('stable');
-    expect(classifyMastery({...learned,recent:[true,true,true],streak:3,dueAt:now},now)).toBe('review');
-    expect(classifyMastery({...learned,recent:[true,false]},now)).toBe('review');expect(classifyMastery({...learned,recent:[false,false,true]},now)).toBe('review');
-    expect(classifyMastery({...learned,lastAt:now-30*DAY},now)).toBe('review');expect(classifyMastery({...learned,lastAt:now-30*DAY,streak:5,recent:[true,true,true]},now)).toBe('learning');
+  it('does not invent long-term retention from aggregate counts without interval evidence',()=>{
+    expect(classifyMastery({...learned,attempts:0},now)).toBe('unseen');
+    expect(classifyMastery(learned,now)).toBe('unknown');
+    expect(classifyMastery({...learned,streak:100,recent:[true,true,true],dueAt:now-1},now)).toBe('unknown');
   });
-  it('allows a recovered learner to be stable without deleting old lifetime mistakes',()=>{
+  it('does not call rapid recovered answers stable and does not delete lifetime mistakes',()=>{
     const s=source();s.events=Array.from({length:20},(_,i)=>({...makeEvent('wrong-'+i,false),reviewedAt:new Date(now-(30-i)*DAY).toISOString()}));
     s.events.push(...Array.from({length:3},(_,i)=>({...makeEvent('right-'+i,true),reviewedAt:new Date(now-(3-i)*1000).toISOString()})));
-    expect(learningRows(s,now)[0]).toMatchObject({mastery:'stable',correct:3,wrong:20,streak:3});
+    expect(learningRows(s,now)[0]).toMatchObject({mastery:'initial',correct:3,wrong:20,streak:3});
   });
   it('keeps area namespaces separate and excludes ordering and old reverse answers from normal statistics',()=>{
     const s=source();s.catalog.cards=[makeCard('year-a::event-year')];s.events=[makeEvent('c',false,9,'year-a::event-year')];
     s.years!.events=[{id:'old-reverse',questionId:'year-a::year-event',correct:true,at:'2026-11-09T03:00:00.000Z',sessionId:'test'}];
     s.years!.orderingEvents=[{id:'order',questionId:'test',itemIds:[],submittedIds:[],correctOrderIds:[],correct:false,at:'2026-11-09T03:00:00.000Z',sessionId:'test'}];
     const before=JSON.stringify(s),rows=learningRows(s,now);
-    expect(rows[0]).toMatchObject({area:'culture',mastery:'review',wrong:1});expect(rows[1]).toMatchObject({area:'years',mastery:'unseen',attempts:0});expect(reviewCalendar(rows,s).actual.get('2026-11-09')).toEqual({culture:1,years:0,total:1});expect(JSON.stringify(s)).toBe(before);
+    expect(rows[0]).toMatchObject({area:'culture',mastery:'initial',wrong:1});expect(rows[1]).toMatchObject({area:'years',mastery:'unseen',attempts:0});expect(reviewCalendar(rows,s).actual.get('2026-11-09')).toEqual({culture:1,years:0,total:1});expect(JSON.stringify(s)).toBe(before);
   });
   it('counts and sorts weaker ranges first, with broad culture regions and exact year classifications',()=>{
     const s=source();s.catalog.items.push(makeItem('roman',{region:'ローマ',level:4}));s.catalog.cards.push(makeCard('roman-card',{knowledgeId:'roman'}));
-    const rows=learningRows(s,now);expect(masteryCounts(rows)).toEqual({unseen:3,review:0,learning:0,stable:0});
+    const rows=learningRows(s,now);expect(masteryCounts(rows)).toEqual({unseen:3,initial:0,learning:0,stable:0,unknown:0});
     expect(masteryGroups(rows.filter(row=>row.area==='culture'),'region')).toMatchObject([{value:'ヨーロッパ',total:2}]);
     expect(masteryGroups(rows.filter(row=>row.area==='years'),'era')[0].value).toBe('試験時代');
-    const mixed=rows.map((row,i)=>({...row,region:i?'strong':'weak',mastery:i?'stable' as const:'review' as const}));expect(masteryGroups(mixed,'region')[0].value).toBe('weak');
+    const mixed=rows.map((row,i)=>({...row,region:i?'strong':'weak',mastery:i?'stable' as const:'initial' as const}));expect(masteryGroups(mixed,'region')[0].value).toBe('weak');
   });
   it('excludes deleted knowledge/cards from future schedules, retains actual past answers, and tolerates an unloaded year DB',()=>{
     const s=source();s.events=[makeEvent('old',false)];s.catalog.items[0].deleted=true;s.years=null;

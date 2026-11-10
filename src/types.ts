@@ -1,3 +1,5 @@
+import type {RetentionEvidence} from './retention';
+import type {ErrorAnnotation} from './error-causes';
 import type {ComparisonEvent,CultureRelations} from './culture-feature-types';
 export type Level = 1 | 2 | 3 | 4;
 export interface Source { title: string; url?: string; note?: string }
@@ -29,6 +31,7 @@ export interface ReviewEvent {
   id: string; cardId: string; correct: boolean; reviewedAt: string; sessionId: string;
 }
 export interface CardProgress {
+  retention?: RetentionEvidence;
   cardId: string; correct: number; wrong: number; attempts: number;
   streak: number; lastStudiedAt: string | null; nextReviewAt: string | null;
   recent: boolean[];
@@ -47,11 +50,13 @@ export interface Settings {
 }
 export interface AppState {
   catalog: Catalog; events: ReviewEvent[]; settings: Settings;
+  errorCauses?: ErrorAnnotation[];
   comparisonEvents?: ComparisonEvent[];
 }
 export interface Backup {
   format: 'cultural-history-master'; schemaVersion: 1 | 2; exportedAt: string;
   catalog: Catalog; events: ReviewEvent[]; settings: Settings;
+  errorCauses?: ErrorAnnotation[];
   comparisonEvents?: ComparisonEvent[]; relations?: CultureRelations;
 }
 export const DEFAULT_SETTINGS: Settings = {syncUrl: '', lastSyncAt: null, lastBackupAt: null, dailyGoal: 20};

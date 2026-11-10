@@ -1,17 +1,13 @@
+import {retentionFromEvidence,RETENTION_LABELS,RETENTION_RULES,type Retention,type RetentionEvidence} from './retention';
 import { getProgress } from './core';
 import { REGION_GROUPS, regionGroup } from './culture-scope';
 import { questionId, yearProgress, type YearSnapshot } from './years';
 import type { Catalog, ReviewEvent } from './types';
 
 export type LearningArea='culture'|'years';
-export type Mastery='unseen'|'review'|'learning'|'stable';
-export const MASTERY_LABELS:Record<Mastery,string>={unseen:'未学習',review:'要復習',learning:'定着途中',stable:'安定'};
-export const MASTERY_RULES=[
-  '未学習：この問題の回答履歴がない。',
-  '要復習：期限到来、直近が誤答、直近3回答で2回以上誤答、または最終回答から30日以上経過し連続正答が3未満。',
-  '安定：上記に該当せず、連続正答3回以上・直近3回答がすべて正答・最終回答から30日未満・復習期限は未来。',
-  '定着途中：学習済みで、要復習にも安定にも該当しない。',
-];
+export type Mastery=Retention;
+export const MASTERY_LABELS=RETENTION_LABELS;
+export const MASTERY_RULES=RETENTION_RULES;
 const DAY=86400000;
 const jstFormatter=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'});
 export function japanDateKey(at:number|string|Date=Date.now()):string {
@@ -28,14 +24,8 @@ export function shiftMonth(month:string,offset:number){
   monthDays(month);const [year,m]=month.split('-').map(Number),date=new Date(Date.UTC(year,m-1+offset,1));
   return `${date.getUTCFullYear()}-${String(date.getUTCMonth()+1).padStart(2,'0')}`;
 }
-interface LearningState {attempts:number;recent:boolean[];streak:number;lastAt:number|null;dueAt:number|null}
-export function classifyMastery(p:LearningState,now=Date.now()):Mastery {
-  if(!p.attempts)return 'unseen';
-  const age=p.lastAt===null?Infinity:Math.max(0,now-p.lastAt),recent=p.recent.slice(-3);
-  if(p.dueAt!==null&&p.dueAt<=now || p.recent.at(-1)===false || recent.filter(x=>!x).length>=2 || age>=30*DAY&&p.streak<3)return 'review';
-  if(p.streak>=3&&recent.length===3&&recent.every(Boolean)&&age<30*DAY&&p.dueAt!==null&&p.dueAt>now)return 'stable';
-  return 'learning';
-}
+interface LearningState {retention?:RetentionEvidence;attempts:number;recent:boolean[];streak:number;lastAt:number|null;dueAt:number|null}
+export function classifyMastery(p:LearningState,_now=Date.now()):Mastery{return retentionFromEvidence(p.retention,p.attempts);}
 export interface LearningRow extends LearningState {
   area:LearningArea; id:string; title:string; name:string; region:string; era:string; level:number;
   correct:number;wrong:number;mastery:Mastery;
@@ -46,14 +36,14 @@ export function learningRows(source:InsightsSource,now=Date.now()):LearningRow[]
   const rows:LearningRow[]=[];
   for(const card of source.catalog.cards){
     const item=items.get(card.knowledgeId);if(card.deleted||!item)continue;
-    const p=progress.get(card.id),state:LearningState={attempts:p?.attempts??0,recent:p?.recent??[],streak:p?.streak??0,lastAt:p?.lastStudiedAt?Date.parse(p.lastStudiedAt):null,dueAt:p?.nextReviewAt?Date.parse(p.nextReviewAt):null};
+    const p=progress.get(card.id),state:LearningState={retention:p?.retention,attempts:p?.attempts??0,recent:p?.recent??[],streak:p?.streak??0,lastAt:p?.lastStudiedAt?Date.parse(p.lastStudiedAt):null,dueAt:p?.nextReviewAt?Date.parse(p.nextReviewAt):null};
     rows.push({...state,area:'culture',id:card.id,title:card.question,name:item.canonicalName,region:REGION_GROUPS.find(group=>group.id===regionGroup(item))?.label??item.region,era:item.era,level:item.level,correct:p?.correct??0,wrong:p?.wrong??0,mastery:classifyMastery(state,now)});
   }
   if(source.years){
     const progress=yearProgress(source.years.events);
     for(const item of source.years.catalog.items){
       if(item.deleted)continue;const id=questionId(item.id,'event-year'),p=progress.get(id);
-      const state:LearningState={attempts:p?.attempts??0,recent:p?.recent??[],streak:p?.streak??0,lastAt:p?.lastAt?Date.parse(p.lastAt):null,dueAt:p?p.dueAt:null};
+      const state:LearningState={retention:p?.retention,attempts:p?.attempts??0,recent:p?.recent??[],streak:p?.streak??0,lastAt:p?.lastAt?Date.parse(p.lastAt):null,dueAt:p?p.dueAt:null};
       rows.push({...state,area:'years',id,title:item.event,name:item.event,region:item.region,era:item.era,level:item.level,correct:p?.correct??0,wrong:p?.wrong??0,mastery:classifyMastery(state,now)});
     }
   }
@@ -76,11 +66,11 @@ export function reviewCalendar(rows:LearningRow[],source:InsightsSource,area:Lea
   return {scheduled,actual};
 }
 export function masteryCounts(rows:LearningRow[]){
-  const counts:Record<Mastery,number>={unseen:0,review:0,learning:0,stable:0};for(const row of rows)counts[row.mastery]++;return counts;
+  const counts:Record<Mastery,number>={unseen:0,initial:0,learning:0,stable:0,unknown:0};for(const row of rows)counts[row.mastery]++;return counts;
 }
 export type Dimension='region'|'era'|'level';
 export function masteryGroups(rows:LearningRow[],dimension:Dimension){
   const groups=new Map<string,LearningRow[]>();for(const row of rows){const key=String(row[dimension]);const values=groups.get(key)??[];values.push(row);groups.set(key,values);}
-  return [...groups].map(([value,rows])=>{const counts=masteryCounts(rows);return {value,total:rows.length,counts,weakness:(counts.review*2+counts.unseen+counts.learning*.5)/(2*rows.length)};})
-    .sort((a,b)=>b.weakness-a.weakness||b.counts.review-a.counts.review||b.total-a.total||a.value.localeCompare(b.value,'ja'));
+  return [...groups].map(([value,rows])=>{const counts=masteryCounts(rows);return {value,total:rows.length,counts,weakness:(counts.initial*2+counts.unseen+counts.learning*.5+counts.unknown)/(2*rows.length)};})
+    .sort((a,b)=>b.weakness-a.weakness||b.counts.initial-a.counts.initial||b.total-a.total||a.value.localeCompare(b.value,'ja'));
 }
