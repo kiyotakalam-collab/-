@@ -1,0 +1,1944 @@
+{
+  "schemaVersion": 1,
+  "kind": "modern-city-center-expansion-source-only",
+  "created_at": "2026-11-11",
+  "source": {
+    "title": "Natural Earth 1:50m Populated Places (simple)",
+    "url": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_populated_places_simple.geojson",
+    "license": "Public domain",
+    "terms": "https://www.naturalearthdata.com/about/terms-of-use/"
+  },
+  "notes": [
+    "Standalone candidate file: current app does not load it yet.",
+    "Only modern city centers are verified, not historical affiliations.",
+    "Empty source_pdf_page means no claim of extraction from the 28-page PDF.",
+    "Do not use these as historical-location quiz questions without additional verification."
+  ],
+  "regions": [
+    {
+      "id": "東南アジア",
+      "center": [
+        110,
+        10
+      ],
+      "zoom": 3
+    },
+    {
+      "id": "中国・東アジア",
+      "center": [
+        105,
+        35
+      ],
+      "zoom": 4
+    },
+    {
+      "id": "ヨーロッパ",
+      "center": [
+        15,
+        50
+      ],
+      "zoom": 4
+    }
+  ],
+  "features": [
+    {
+      "id": "city-ne50-1159151251",
+      "name_ja": "ハノイ",
+      "name_en": "Hanoi",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.848068,
+          21.035273
+        ]
+      },
+      "modern_country": "Vietnam",
+      "source_record": {
+        "ne_id": 1159151251,
+        "name": "Hanoi",
+        "adm0name": "Vietnam"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151253",
+      "name_ja": "ホーチミン",
+      "name_en": "Ho Chi Minh City",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.702985,
+          10.762125
+        ]
+      },
+      "modern_country": "Vietnam",
+      "source_record": {
+        "ne_id": 1159151253,
+        "name": "Ho Chi Minh City",
+        "adm0name": "Vietnam"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159149351",
+      "name_ja": "ダナン",
+      "name_en": "Da Nang",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.249971,
+          16.060039
+        ]
+      },
+      "modern_country": "Vietnam",
+      "source_record": {
+        "ne_id": 1159149351,
+        "name": "Da Nang",
+        "adm0name": "Vietnam"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151509",
+      "name_ja": "バンコク",
+      "name_en": "Bangkok",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.514699,
+          13.751945
+        ]
+      },
+      "modern_country": "Thailand",
+      "source_record": {
+        "ne_id": 1159151509,
+        "name": "Bangkok",
+        "adm0name": "Thailand"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159149407",
+      "name_ja": "チェンマイ",
+      "name_en": "Chiang Mai",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.980046,
+          18.799975
+        ]
+      },
+      "modern_country": "Thailand",
+      "source_record": {
+        "ne_id": 1159149407,
+        "name": "Chiang Mai",
+        "adm0name": "Thailand"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151127",
+      "name_ja": "プノンペン",
+      "name_en": "Phnom Penh",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.914689,
+          11.551976
+        ]
+      },
+      "modern_country": "Cambodia",
+      "source_record": {
+        "ne_id": 1159151127,
+        "name": "Phnom Penh",
+        "adm0name": "Cambodia"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150325",
+      "name_ja": "シェムリアップ",
+      "name_en": "Siem Reap",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.850033,
+          13.366638
+        ]
+      },
+      "modern_country": "Cambodia",
+      "source_record": {
+        "ne_id": 1159150325,
+        "name": "Siem Reap",
+        "adm0name": "Cambodia"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150991",
+      "name_ja": "ヴィエンチャン",
+      "name_en": "Vientiane",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.59998,
+          17.966693
+        ]
+      },
+      "modern_country": "Laos",
+      "source_record": {
+        "ne_id": 1159150991,
+        "name": "Vientiane",
+        "adm0name": "Laos"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151477",
+      "name_ja": "ヤンゴン",
+      "name_en": "Yangon",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.164732,
+          16.7853
+        ]
+      },
+      "modern_country": "Myanmar",
+      "source_record": {
+        "ne_id": 1159151477,
+        "name": "Yangon",
+        "adm0name": "Myanmar"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150423",
+      "name_ja": "マンダレー",
+      "name_en": "Mandalay",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.083083,
+          21.971934
+        ]
+      },
+      "modern_country": "Myanmar",
+      "source_record": {
+        "ne_id": 1159150423,
+        "name": "Mandalay",
+        "adm0name": "Myanmar"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151179",
+      "name_ja": "ネーピードー",
+      "name_en": "Naypyidaw",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.116673,
+          19.768503
+        ]
+      },
+      "modern_country": "Myanmar",
+      "source_record": {
+        "ne_id": 1159151179,
+        "name": "Naypyidaw",
+        "adm0name": "Myanmar"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151317",
+      "name_ja": "クアラルンプール",
+      "name_en": "Kuala Lumpur",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.688699,
+          3.139797
+        ]
+      },
+      "modern_country": "Malaysia",
+      "source_record": {
+        "ne_id": 1159151317,
+        "name": "Kuala Lumpur",
+        "adm0name": "Malaysia"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151627",
+      "name_ja": "シンガポール",
+      "name_en": "Singapore",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.853875,
+          1.294979
+        ]
+      },
+      "modern_country": "Singapore",
+      "source_record": {
+        "ne_id": 1159151627,
+        "name": "Singapore",
+        "adm0name": "Singapore"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151599",
+      "name_ja": "ジャカルタ",
+      "name_en": "Jakarta",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.827492,
+          -6.172472
+        ]
+      },
+      "modern_country": "Indonesia",
+      "source_record": {
+        "ne_id": 1159151599,
+        "name": "Jakarta",
+        "adm0name": "Indonesia"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151339",
+      "name_ja": "スラバヤ",
+      "name_en": "Surabaya",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.748887,
+          -7.24729
+        ]
+      },
+      "modern_country": "Indonesia",
+      "source_record": {
+        "ne_id": 1159151339,
+        "name": "Surabaya",
+        "adm0name": "Indonesia"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151335",
+      "name_ja": "バンドン",
+      "name_en": "Bandung",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.568067,
+          -6.948083
+        ]
+      },
+      "modern_country": "Indonesia",
+      "source_record": {
+        "ne_id": 1159151335,
+        "name": "Bandung",
+        "adm0name": "Indonesia"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150839",
+      "name_ja": "パレンバン",
+      "name_en": "Palembang",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.748084,
+          -2.978093
+        ]
+      },
+      "modern_country": "Indonesia",
+      "source_record": {
+        "ne_id": 1159150839,
+        "name": "Palembang",
+        "adm0name": "Indonesia"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151307",
+      "name_ja": "メダン",
+      "name_en": "Medan",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.648094,
+          3.58192
+        ]
+      },
+      "modern_country": "Indonesia",
+      "source_record": {
+        "ne_id": 1159151307,
+        "name": "Medan",
+        "adm0name": "Indonesia"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151525",
+      "name_ja": "マニラ",
+      "name_en": "Manila",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.980271,
+          14.606105
+        ]
+      },
+      "modern_country": "Philippines",
+      "source_record": {
+        "ne_id": 1159151525,
+        "name": "Manila",
+        "adm0name": "Philippines"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150721",
+      "name_ja": "セブ",
+      "name_en": "Cebu",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.898129,
+          10.321922
+        ]
+      },
+      "modern_country": "Philippines",
+      "source_record": {
+        "ne_id": 1159150721,
+        "name": "Cebu",
+        "adm0name": "Philippines"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150727",
+      "name_ja": "ダバオ",
+      "name_en": "Davao",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.62805,
+          7.111963
+        ]
+      },
+      "modern_country": "Philippines",
+      "source_record": {
+        "ne_id": 1159150727,
+        "name": "Davao",
+        "adm0name": "Philippines"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150843",
+      "name_ja": "マカッサル",
+      "name_en": "Makassar",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.430082,
+          -5.138013
+        ]
+      },
+      "modern_country": "Indonesia",
+      "source_record": {
+        "ne_id": 1159150843,
+        "name": "Makassar",
+        "adm0name": "Indonesia"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151083",
+      "name_ja": "バンダルスリブガワン",
+      "name_en": "Bandar Seri Begawan",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.933284,
+          4.883331
+        ]
+      },
+      "modern_country": "Brunei",
+      "source_record": {
+        "ne_id": 1159151083,
+        "name": "Bandar Seri Begawan",
+        "adm0name": "Brunei"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150577",
+      "name_ja": "ディリ",
+      "name_en": "Dili",
+      "region": "東南アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.579456,
+          -8.559388
+        ]
+      },
+      "modern_country": "East Timor",
+      "source_record": {
+        "ne_id": 1159150577,
+        "name": "Dili",
+        "adm0name": "East Timor"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151595",
+      "name_ja": "北京",
+      "name_en": "Beijing",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.394201,
+          39.90172
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151595,
+        "name": "Beijing",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151385",
+      "name_ja": "南京",
+      "name_en": "Nanjing",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.778029,
+          32.051965
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151385,
+        "name": "Nanjing",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151387",
+      "name_ja": "杭州",
+      "name_en": "Hangzhou",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.168073,
+          30.25192
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151387,
+        "name": "Hangzhou",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151331",
+      "name_ja": "広州",
+      "name_en": "Guangzhou",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.261785,
+          23.124723
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151331,
+        "name": "Guangzhou",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159149791",
+      "name_ja": "泉州",
+      "name_en": "Quanzhou",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.578041,
+          24.901962
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159149791,
+        "name": "Quanzhou",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151533",
+      "name_ja": "成都",
+      "name_en": "Chengdu",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.068074,
+          30.671946
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151533,
+        "name": "Chengdu",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151327",
+      "name_ja": "重慶",
+      "name_en": "Chongqing",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.593036,
+          29.566923
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151327,
+        "name": "Chongqing",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151371",
+      "name_ja": "昆明",
+      "name_en": "Kunming",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.69744,
+          25.042859
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151371,
+        "name": "Kunming",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150879",
+      "name_ja": "ラサ",
+      "name_en": "Lhasa",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.10001,
+          29.645024
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159150879,
+        "name": "Lhasa",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159149773",
+      "name_ja": "敦煌",
+      "name_en": "Dunhuang",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.662015,
+          40.142678
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159149773,
+        "name": "Dunhuang",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151321",
+      "name_ja": "蘭州",
+      "name_en": "Lanzhou",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.790054,
+          36.057974
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151321,
+        "name": "Lanzhou",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151397",
+      "name_ja": "ハルビン",
+      "name_en": "Harbin",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.648039,
+          45.75193
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151397,
+        "name": "Harbin",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151605",
+      "name_ja": "上海",
+      "name_en": "Shanghai",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.434559,
+          31.218398
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151605,
+        "name": "Shanghai",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151367",
+      "name_ja": "武漢",
+      "name_en": "Wuhan",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.268071,
+          30.581977
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151367,
+        "name": "Wuhan",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151369",
+      "name_ja": "長沙",
+      "name_en": "Changsha",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.968047,
+          28.201916
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151369,
+        "name": "Changsha",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151329",
+      "name_ja": "福州",
+      "name_en": "Fuzhou",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2981,
+          26.081942
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151329,
+        "name": "Fuzhou",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159149129",
+      "name_ja": "厦門",
+      "name_en": "Xiamen",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.078071,
+          24.451938
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159149129,
+        "name": "Xiamen",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159149917",
+      "name_ja": "青島",
+      "name_en": "Qingdao",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.328063,
+          36.091925
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159149917,
+        "name": "Qingdao",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151381",
+      "name_ja": "天津",
+      "name_en": "Tianjin",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.196607,
+          39.082772
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151381,
+        "name": "Tianjin",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151379",
+      "name_ja": "済南",
+      "name_en": "Jinan",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.993073,
+          36.676928
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151379,
+        "name": "Jinan",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151531",
+      "name_ja": "ウルムチ",
+      "name_en": "Urumqi",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.57306,
+          43.806958
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159151531,
+        "name": "Ürümqi",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150885",
+      "name_ja": "カシュガル",
+      "name_en": "Kashgar",
+      "region": "中国・東アジア",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.969926,
+          39.476336
+        ]
+      },
+      "modern_country": "China",
+      "source_record": {
+        "ne_id": 1159150885,
+        "name": "Kashgar",
+        "adm0name": "China"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151577",
+      "name_ja": "ロンドン",
+      "name_en": "London",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.118668,
+          51.501941
+        ]
+      },
+      "modern_country": "United Kingdom",
+      "source_record": {
+        "ne_id": 1159151577,
+        "name": "London",
+        "adm0name": "United Kingdom"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151613",
+      "name_ja": "パリ",
+      "name_en": "Paris",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.352992,
+          48.858092
+        ]
+      },
+      "modern_country": "France",
+      "source_record": {
+        "ne_id": 1159151613,
+        "name": "Paris",
+        "adm0name": "France"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151529",
+      "name_ja": "ベルリン",
+      "name_en": "Berlin",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.399603,
+          52.523764
+        ]
+      },
+      "modern_country": "Germany",
+      "source_record": {
+        "ne_id": 1159151529,
+        "name": "Berlin",
+        "adm0name": "Germany"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151563",
+      "name_ja": "ウィーン",
+      "name_en": "Vienna",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.364693,
+          48.201961
+        ]
+      },
+      "modern_country": "Austria",
+      "source_record": {
+        "ne_id": 1159151563,
+        "name": "Vienna",
+        "adm0name": "Austria"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151359",
+      "name_ja": "プラハ",
+      "name_en": "Prague",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.422939,
+          50.086967
+        ]
+      },
+      "modern_country": "Czechia",
+      "source_record": {
+        "ne_id": 1159151359,
+        "name": "Prague",
+        "adm0name": "Czechia"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151257",
+      "name_ja": "ブダペスト",
+      "name_en": "Budapest",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.081375,
+          47.501952
+        ]
+      },
+      "modern_country": "Hungary",
+      "source_record": {
+        "ne_id": 1159151257,
+        "name": "Budapest",
+        "adm0name": "Hungary"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151299",
+      "name_ja": "ワルシャワ",
+      "name_en": "Warsaw",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.005347,
+          52.230872
+        ]
+      },
+      "modern_country": "Poland",
+      "source_record": {
+        "ne_id": 1159151299,
+        "name": "Warsaw",
+        "adm0name": "Poland"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159149709",
+      "name_ja": "クラクフ",
+      "name_en": "Krakow",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958066,
+          50.061925
+        ]
+      },
+      "modern_country": "Poland",
+      "source_record": {
+        "ne_id": 1159149709,
+        "name": "Kraków",
+        "adm0name": "Poland"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151585",
+      "name_ja": "モスクワ",
+      "name_en": "Moscow",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.613577,
+          55.75411
+        ]
+      },
+      "modern_country": "Russia",
+      "source_record": {
+        "ne_id": 1159151585,
+        "name": "Moscow",
+        "adm0name": "Russia"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150277",
+      "name_ja": "ヴェネツィア",
+      "name_en": "Venice",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.334999,
+          45.438659
+        ]
+      },
+      "modern_country": "Italy",
+      "source_record": {
+        "ne_id": 1159150277,
+        "name": "Venice",
+        "adm0name": "Italy"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159149751",
+      "name_ja": "フィレンツェ",
+      "name_en": "Florence",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.25,
+          43.780001
+        ]
+      },
+      "modern_country": "Italy",
+      "source_record": {
+        "ne_id": 1159149751,
+        "name": "Florence",
+        "adm0name": "Italy"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151315",
+      "name_ja": "ミラノ",
+      "name_en": "Milan",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.203063,
+          45.471921
+        ]
+      },
+      "modern_country": "Italy",
+      "source_record": {
+        "ne_id": 1159151315,
+        "name": "Milan",
+        "adm0name": "Italy"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151313",
+      "name_ja": "ナポリ",
+      "name_en": "Naples",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.243066,
+          40.841971
+        ]
+      },
+      "modern_country": "Italy",
+      "source_record": {
+        "ne_id": 1159151313,
+        "name": "Naples",
+        "adm0name": "Italy"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159148297",
+      "name_ja": "ジェノヴァ",
+      "name_en": "Genoa",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.930039,
+          44.409988
+        ]
+      },
+      "modern_country": "Italy",
+      "source_record": {
+        "ne_id": 1159148297,
+        "name": "Genoa",
+        "adm0name": "Italy"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151273",
+      "name_ja": "リスボン",
+      "name_en": "Lisbon",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.146812,
+          38.724669
+        ]
+      },
+      "modern_country": "Portugal",
+      "source_record": {
+        "ne_id": 1159151273,
+        "name": "Lisbon",
+        "adm0name": "Portugal"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151503",
+      "name_ja": "マドリード",
+      "name_en": "Madrid",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.685297,
+          40.401972
+        ]
+      },
+      "modern_country": "Spain",
+      "source_record": {
+        "ne_id": 1159151503,
+        "name": "Madrid",
+        "adm0name": "Spain"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150601",
+      "name_ja": "セビリア",
+      "name_en": "Seville",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.980007,
+          37.405015
+        ]
+      },
+      "modern_country": "Spain",
+      "source_record": {
+        "ne_id": 1159150601,
+        "name": "Seville",
+        "adm0name": "Spain"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151261",
+      "name_ja": "バルセロナ",
+      "name_en": "Barcelona",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.181424,
+          41.385245
+        ]
+      },
+      "modern_country": "Spain",
+      "source_record": {
+        "ne_id": 1159151261,
+        "name": "Barcelona",
+        "adm0name": "Spain"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151465",
+      "name_ja": "ブリュッセル",
+      "name_en": "Brussels",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.331371,
+          50.835263
+        ]
+      },
+      "modern_country": "Belgium",
+      "source_record": {
+        "ne_id": 1159151465,
+        "name": "Brussels",
+        "adm0name": "Belgium"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151519",
+      "name_ja": "アムステルダム",
+      "name_en": "Amsterdam",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.914694,
+          52.351914
+        ]
+      },
+      "modern_country": "Netherlands",
+      "source_record": {
+        "ne_id": 1159151519,
+        "name": "Amsterdam",
+        "adm0name": "Netherlands"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151507",
+      "name_ja": "ストックホルム",
+      "name_en": "Stockholm",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0663,
+          59.324127
+        ]
+      },
+      "modern_country": "Sweden",
+      "source_record": {
+        "ne_id": 1159151507,
+        "name": "Stockholm",
+        "adm0name": "Sweden"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151281",
+      "name_ja": "オスロ",
+      "name_en": "Oslo",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.748033,
+          59.918636
+        ]
+      },
+      "modern_country": "Norway",
+      "source_record": {
+        "ne_id": 1159151281,
+        "name": "Oslo",
+        "adm0name": "Norway"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151419",
+      "name_ja": "ヘルシンキ",
+      "name_en": "Helsinki",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.932457,
+          60.163804
+        ]
+      },
+      "modern_country": "Finland",
+      "source_record": {
+        "ne_id": 1159151419,
+        "name": "Helsinki",
+        "adm0name": "Finland"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151545",
+      "name_ja": "アテネ",
+      "name_en": "Athens",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.731375,
+          37.985272
+        ]
+      },
+      "modern_country": "Greece",
+      "source_record": {
+        "ne_id": 1159151545,
+        "name": "Athens",
+        "adm0name": "Greece"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159150955",
+      "name_ja": "テッサロニキ",
+      "name_en": "Thessaloniki",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.883055,
+          40.698052
+        ]
+      },
+      "modern_country": "Greece",
+      "source_record": {
+        "ne_id": 1159150955,
+        "name": "Thessaloniki",
+        "adm0name": "Greece"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151147",
+      "name_ja": "ソフィア",
+      "name_en": "Sofia",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.314708,
+          42.685295
+        ]
+      },
+      "modern_country": "Bulgaria",
+      "source_record": {
+        "ne_id": 1159151147,
+        "name": "Sofia",
+        "adm0name": "Bulgaria"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151079",
+      "name_ja": "ベオグラード",
+      "name_en": "Belgrade",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.466045,
+          44.820591
+        ]
+      },
+      "modern_country": "Serbia",
+      "source_record": {
+        "ne_id": 1159151079,
+        "name": "Belgrade",
+        "adm0name": "Serbia"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151177",
+      "name_ja": "サラエボ",
+      "name_en": "Sarajevo",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.383002,
+          43.850022
+        ]
+      },
+      "modern_country": "Bosnia and Herzegovina",
+      "source_record": {
+        "ne_id": 1159151177,
+        "name": "Sarajevo",
+        "adm0name": "Bosnia and Herzegovina"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151263",
+      "name_ja": "ブカレスト",
+      "name_en": "Bucharest",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.098001,
+          44.435318
+        ]
+      },
+      "modern_country": "Romania",
+      "source_record": {
+        "ne_id": 1159151263,
+        "name": "Bucharest",
+        "adm0name": "Romania"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151495",
+      "name_ja": "キーウ",
+      "name_en": "Kyiv",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.514682,
+          50.435313
+        ]
+      },
+      "modern_country": "Ukraine",
+      "source_record": {
+        "ne_id": 1159151495,
+        "name": "Kyiv",
+        "adm0name": "Ukraine"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151353",
+      "name_ja": "ハンブルク",
+      "name_en": "Hamburg",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.998053,
+          53.551971
+        ]
+      },
+      "modern_country": "Germany",
+      "source_record": {
+        "ne_id": 1159151353,
+        "name": "Hamburg",
+        "adm0name": "Germany"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159147229",
+      "name_ja": "ストラスブール",
+      "name_en": "Strasbourg",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.750007,
+          48.579966
+        ]
+      },
+      "modern_country": "France",
+      "source_record": {
+        "ne_id": 1159147229,
+        "name": "Strasbourg",
+        "adm0name": "France"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151271",
+      "name_ja": "チューリヒ",
+      "name_en": "Zurich",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.548064,
+          47.381934
+        ]
+      },
+      "modern_country": "Switzerland",
+      "source_record": {
+        "ne_id": 1159151271,
+        "name": "Zürich",
+        "adm0name": "Switzerland"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151505",
+      "name_ja": "ジュネーヴ",
+      "name_en": "Geneva",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.140028,
+          46.210008
+        ]
+      },
+      "modern_country": "Switzerland",
+      "source_record": {
+        "ne_id": 1159151505,
+        "name": "Geneva",
+        "adm0name": "Switzerland"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159146365",
+      "name_ja": "エディンバラ",
+      "name_en": "Edinburgh",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.219091,
+          55.948328
+        ]
+      },
+      "modern_country": "United Kingdom",
+      "source_record": {
+        "ne_id": 1159146365,
+        "name": "Edinburgh",
+        "adm0name": "United Kingdom"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    },
+    {
+      "id": "city-ne50-1159151309",
+      "name_ja": "ダブリン",
+      "name_en": "Dublin",
+      "region": "ヨーロッパ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.25698,
+          53.346731
+        ]
+      },
+      "modern_country": "Ireland",
+      "source_record": {
+        "ne_id": 1159151309,
+        "name": "Dublin",
+        "adm0name": "Ireland"
+      },
+      "verification_scope": "現代都市中心座標のみ。歴史的所属・古代都市位置は未検証",
+      "historical_affiliations": [],
+      "source_pdf_page": [],
+      "verification_status": "A-modern-location-only"
+    }
+  ],
+  "unresolved": [
+    {
+      "name": "Suzhou",
+      "matches": [
+        "China",
+        "China"
+      ]
+    },
+    {
+      "name": "Shenyang",
+      "matches": []
+    }
+  ]
+}
