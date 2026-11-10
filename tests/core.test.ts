@@ -114,6 +114,33 @@ describe('combined filters and modes', () => {
   });
 });
 
+describe('synced textbook author/work directions', () => {
+  const catalog = makeCatalog();
+  catalog.items.push(makeItem('poet', {canonicalName: 'フィルドゥスィー', kind: 'person'}));
+  catalog.items.push(makeItem('poem', {canonicalName: 'シャー＝ナーメ', kind: 'work'}));
+  catalog.items.push(makeItem('anonymous', {canonicalName: 'ギルガメシュ叙事詩', kind: 'work'}));
+  catalog.items.push(makeItem('sponsor', {canonicalName: '永楽帝', kind: 'person'}));
+  catalog.cards = [
+    makeCard('poem-by-author', {knowledgeId:'poem', type:'context', question:'フィルドゥスィーが著した叙事詩は？', answer:'シャー＝ナーメ'}),
+    makeCard('poet-from-work', {knowledgeId:'poet', type:'achievement-person', question:'『シャー＝ナーメ』を著した詩人は？', answer:'フィルドゥスィー'}),
+    makeCard('anonymous-work', {knowledgeId:'anonymous', type:'context', question:'古代メソポタミアの洪水伝説を伝える叙事詩は？', answer:'ギルガメシュ叙事詩'}),
+    makeCard('work-sponsor', {knowledgeId:'sponsor', type:'achievement-person', question:'『四書大全』の編纂を命じた皇帝は？', answer:'永楽帝'}),
+  ];
+  it('keeps source types intact and recognizes both directions', () => {
+    const before=structuredClone(catalog);
+    expect(selectCards(catalog,[],{...DEFAULT_FILTER,cardDirection:'person-work'}).map(c=>c.id)).toEqual(['poem-by-author']);
+    expect(selectCards(catalog,[],{...DEFAULT_FILTER,cardDirection:'work-author'}).map(c=>c.id)).toEqual(['poet-from-work']);
+    expect(selectCards(catalog,[],DEFAULT_FILTER)).toHaveLength(4);
+    expect(catalog).toEqual(before);
+  });
+  it('preserves existing review counts and mode filters across directions', () => {
+    const events=[makeEvent('direction-missed',false,9,'poem-by-author')];
+    expect(selectCards(catalog,events,{...DEFAULT_FILTER,cardDirection:'person-work',mode:'mistakes'}).map(c=>c.id)).toEqual(['poem-by-author']);
+    expect(selectCards(catalog,events,{...DEFAULT_FILTER,cardDirection:'work-author',mode:'mistakes'})).toEqual([]);
+    expect(getProgress(events).get('poem-by-author')?.wrong).toBe(1);
+  });
+});
+
 describe('backup validation', () => {
   const backup = () => ({format: 'cultural-history-master', schemaVersion: 1, exportedAt: TIME, catalog: makeCatalog(), events: [makeEvent('event', false)], settings: DEFAULT_SETTINGS});
   it('rejects corrupted, duplicate or orphaned events before any database writes', () => {
