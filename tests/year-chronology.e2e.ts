@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { comparableYear, timelineItems } from '../src/year-chronology';
 import { validateYearCatalog, type YearSnapshot } from '../src/years';
+import { resolveYearStories } from '../src/year-timeline-stories';
 
 const catalog=validateYearCatalog(JSON.parse(readFileSync(new URL('../public/year-events.json',import.meta.url),'utf8')));
 async function routes(context:BrowserContext){
@@ -46,7 +47,7 @@ test('整序を採点・再読込・同期・バックアップ復元しても�
   await page.locator('[data-order-action=next]').click();await sortAnswer(page);await page.locator('[data-order-action=grade]').click();await expect(page.locator('.ordering-result')).toContainText('○ 正解');
   await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>undefined));await page.waitForFunction(()=>Boolean(navigator.serviceWorker.controller));
   await context.setOffline(true);await page.reload();await expect(page.locator('#ordering-options')).toBeVisible();await expect(page.locator('.ordering-history')).toContainText('累積正答 1 ／ 累積誤答 1');
-  await home(page);await page.locator('[data-year-page-link=timeline]').click();await expect(page.locator('.timeline-event')).toHaveCount(460);await context.setOffline(false);
+  await home(page);await page.locator('[data-year-page-link=timeline]').click();await page.locator('[data-timeline-mode=full]').click();await expect(page.locator('.timeline-event')).toHaveCount(460);await context.setOffline(false);
   await page.locator('header [data-nav=settings]').click();await page.locator('[data-year-action=sync]').click();
   const download=page.waitForEvent('download');await page.locator('[data-year-action=backup]').click();const bytes=await readFile((await (await download).path())!);
   const backup=JSON.parse(bytes.toString());expect(backup.schemaVersion).toBe(2);expect(backup.events).toEqual(old);expect(backup.orderingEvents).toHaveLength(2);
@@ -59,7 +60,7 @@ test('整序を採点・再読込・同期・バックアップ復元しても�
 });
 
 test('年表は同年を省略せず表示し、範囲・複数地域・時代・レベルと詳細を正しく参照する',async({page,context})=>{
-  await boot(page,context);await page.locator('[data-year-page-link=timeline]').click();await expect(page.locator('.timeline-event')).toHaveCount(460);
+  await boot(page,context);await page.locator('[data-year-page-link=timeline]').click();await page.locator('[data-timeline-mode=full]').click();await expect(page.locator('.timeline-event')).toHaveCount(460);
   const years=catalog.items.map(x=>Number(x.year));const same=years.find(year=>years.filter(y=>y===year).length>=2)!;
   await expect(page.locator('.timeline-event time').filter({hasText:new RegExp(`^${same}$`)})).toHaveCount(years.filter(y=>y===same).length);
   await page.locator('[name=timelineStart]').fill('1800');await page.locator('[name=timelineEnd]').fill('1850');
@@ -68,7 +69,7 @@ test('年表は同年を省略せず表示し、範囲・複数地域・時代�
   const expected=timelineItems(catalog,{regions:['ヨーロッパ','東アジア'],region:'all',era:'19世紀',level:2,start:1800,end:1850});
   expect(expected.length).toBeGreaterThan(0);await expect(page.locator('.timeline-event')).toHaveCount(expected.length);
   const item=expected[0];await page.locator(`.timeline-event[data-timeline-id="${item.id}"]`).click();await expect(page.locator('.timeline-detail')).toContainText(item.event);await expect(page.locator('.timeline-detail')).toContainText(item.explanation);await expect(page.locator('.timeline-detail')).toContainText(item.sources[0].title);
-  await page.reload();await expect(page.locator('#timeline-options')).toBeVisible();await page.goBack();await expect(page.getByRole('heading',{name:'年号ホーム',exact:true})).toBeVisible();
+  await page.reload();await expect(page.locator('.year-story')).toBeVisible();await page.locator('[data-timeline-mode=full]').click();await expect(page.locator('#timeline-options')).toBeVisible();await page.goBack();await expect(page.getByRole('heading',{name:'年号ホーム',exact:true})).toBeVisible();
 });
 
 test('360px・393pxで整序と年表を操作でき、対象不足も安全に表示する',async({page,context})=>{
@@ -79,7 +80,7 @@ test('360px・393pxで整序と年表を操作でき、対象不足も安全に�
     await page.locator('[name=orderRegion]').selectOption('ヨーロッパ');await page.locator('[name=orderCount]').selectOption('10');await page.locator('#ordering-options button').click();
     await expect(page.locator('[data-order-item]')).toHaveCount(4);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     const buttons=await page.locator('[data-order-move]').evaluateAll(els=>els.map(el=>el.getBoundingClientRect().height));expect(buttons.every(height=>height>=44)).toBe(true);
-    await home(page);await page.locator('[data-year-page-link=timeline]').click();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    await home(page);await page.locator('[data-year-page-link=timeline]').click();await page.locator('[data-timeline-mode=full]').click();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     const overlaps=await page.locator('.timeline-lane-events').evaluateAll(lanes=>lanes.some(lane=>{const rects=[...lane.querySelectorAll('.timeline-event')].map(el=>el.getBoundingClientRect());return rects.some((a,i)=>rects.slice(i+1).some(b=>a.left<b.right&&b.left<a.right&&a.top<b.bottom&&b.top<a.bottom));}));expect(overlaps).toBe(false);
   }
   expect((await snapshot(page)).orderingEvents).toHaveLength(0);
@@ -89,5 +90,27 @@ test('年号0件でも整序・年表の空状態を表示できる',async({page
   await routes(context);await context.route('**/year-events.json*',route=>route.fulfill({contentType:'application/json',body:JSON.stringify({...catalog,version:1,items:[]})}));
   await page.goto('/');await page.locator('[data-enter-area=years]').click();
   await page.locator('[data-year-page-link=ordering]').click();await expect(page.locator('#ordering-options button')).toBeDisabled();await expect(page.locator('#ordering-options')).toContainText('不足');
-  await home(page);await page.locator('[data-year-page-link=timeline]').click();await expect(page.locator('#timeline-options button')).toBeDisabled();await expect(page.locator('.timeline-event')).toHaveCount(0);await expect(page.locator('.timeline-panel')).toContainText('0件');
+  await home(page);await page.locator('[data-year-page-link=timeline]').click();await expect(page.locator('.year-story-empty')).toBeVisible();await page.locator('[data-timeline-mode=full]').click();await expect(page.locator('#timeline-options button')).toBeDisabled();await expect(page.locator('.timeline-event')).toHaveCount(0);await expect(page.locator('.timeline-panel')).toContainText('0件');
+});
+
+test('重要年号の流れを縦に読み、全8章・説明・出典を360pxと393pxで確認できる',async({page,context})=>{
+  await boot(page,context);const before=await snapshot(page),beforeCulture=await culture(page);
+  await page.locator('[data-year-page-link=timeline]').click();
+  await expect(page.locator('[data-timeline-mode=story]')).toHaveAttribute('aria-pressed','true');await expect(page.locator('#timeline-options')).toHaveCount(0);
+  await expect(page.locator('[data-story-item]')).toHaveCount(8);await expect(page.locator('.year-story-connection').first()).toContainText('コンスタンティノープル');
+  const stories=resolveYearStories(catalog);
+  for(const width of [360,393]){
+    await page.setViewportSize({width,height:851});
+    for(const story of stories){
+      await page.locator('#year-story-select').selectOption(story.id);await expect(page.locator('#year-story-title')).toHaveText(story.title);await expect(page.locator('[data-story-item]')).toHaveCount(story.stops.length);
+      const ids=await page.locator('[data-story-item]').evaluateAll(els=>els.map(el=>(el as HTMLElement).dataset.storyItem));expect(ids).toEqual(story.stops.map(stop=>stop.item.id));
+      expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    }
+  }
+  await page.locator('#year-story-select').selectOption('cold-war');await expect(page.locator('.year-story-date small')).toContainText(['同じ年の動き','同じ年の動き','同じ年の動き']);
+  await page.locator('.year-story-detail').first().locator('summary').click();await expect(page.locator('.year-story-detail').first()).toContainText(stories.find(story=>story.id==='cold-war')!.stops[0].item.sources[0].title);
+  await page.locator('[data-year-story=new-order]').click();await expect(page.locator('#year-story-title')).toContainText('世界の再編');
+  await page.locator('[data-year-story=cold-war]').click();await expect(page.locator('#year-story-title')).toContainText('冷戦と');
+  await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>undefined));await page.waitForFunction(()=>Boolean(navigator.serviceWorker.controller));await context.setOffline(true);await page.reload();await expect(page.locator('[data-story-item]')).toHaveCount(8);
+  const after=await snapshot(page);expect(after.events).toEqual(before.events);expect(after.orderingEvents).toEqual(before.orderingEvents);expect(after.catalog).toEqual(before.catalog);expect(await culture(page)).toEqual(beforeCulture);
 });
