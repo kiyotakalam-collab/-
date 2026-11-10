@@ -545,7 +545,7 @@
       "aliases": [],
       "date": "1689",
       "region": "東アジア",
-      "era": "中近世・近代",
+      "era": "近世",
       "field": "条約",
       "description": "清とロシアがアルグン川・外興安嶺などを境界とした条約。",
       "relatedEvents": []
@@ -572,7 +572,7 @@
       "aliases": [],
       "date": "1727",
       "region": "東アジア",
-      "era": "中近世・近代",
+      "era": "近世",
       "field": "条約",
       "description": "清とロシアのモンゴル方面の国境と交易を定めた条約。",
       "relatedEvents": []
@@ -599,7 +599,7 @@
       "aliases": [],
       "date": "1858",
       "region": "東アジア",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "条約",
       "description": "清がロシアにアムール川左岸の領有を認め、ウスリー川東方を共同管理とした条約。",
       "relatedEvents": []
@@ -636,7 +636,7 @@
       "aliases": [],
       "date": "1860",
       "region": "東アジア",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "条約",
       "description": "アロー戦争の講和条約。英仏との条約で天津条約の諸条項を確認・追加し、対露条約で沿海州をロシアに割譲した。",
       "relatedEvents": []
@@ -668,7 +668,7 @@
       "aliases": [],
       "date": "1881",
       "region": "中央アジア",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "条約",
       "description": "清とロシアがイリ地方の返還・国境調整などを定めた条約。",
       "relatedEvents": []
@@ -695,7 +695,7 @@
       "aliases": [],
       "date": "1842",
       "region": "東アジア",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "条約",
       "description": "アヘン戦争の講和。清が香港島割譲・5港開港などを認めた。",
       "relatedEvents": []
@@ -717,7 +717,7 @@
       "aliases": [],
       "date": "1843",
       "region": "東アジア",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "条約",
       "description": "南京条約の追加条約。イギリスへの片務的最恵国待遇などを定めた。",
       "relatedEvents": []
@@ -744,7 +744,7 @@
       "aliases": [],
       "date": "1901",
       "region": "東アジア",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "条約",
       "description": "義和団事件後の最終議定書。巨額の賠償金、公使館区域の警備などを認めた。",
       "relatedEvents": []
@@ -766,7 +766,7 @@
       "aliases": [],
       "date": "1864",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "条約",
       "description": "普丁戦争後にデンマークがシュレスヴィヒ・ホルシュタインをプロイセンとオーストリアに割譲した講和条約。",
       "relatedEvents": []
@@ -788,7 +788,7 @@
       "aliases": [],
       "date": "1866",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "条約",
       "description": "普墺戦争の講和。オーストリアは旧ドイツ連邦の解体を認め、ドイツ問題から排除された。",
       "relatedEvents": []
@@ -810,7 +810,7 @@
       "aliases": [],
       "date": "1871",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "条約",
       "description": "普仏戦争の講和。フランスはアルザスとロレーヌの一部をドイツに割譲した。",
       "relatedEvents": []
@@ -832,7 +832,7 @@
       "aliases": [],
       "date": "1913",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "条約",
       "description": "第一次バルカン戦争の講和。オスマン帝国はヨーロッパ領土の大半を失った。",
       "relatedEvents": []
@@ -854,7 +854,7 @@
       "aliases": [],
       "date": "1913",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "条約",
       "description": "第二次バルカン戦争の講和。ブルガリアが敗れて領土配分が修正された。",
       "relatedEvents": []
@@ -881,7 +881,7 @@
       "aliases": [],
       "date": "1713",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近世",
       "field": "条約",
       "description": "スペイン継承戦争の講和条約群の一部。スペイン王位と領土・植民地の処理を定めた。",
       "relatedEvents": []
@@ -908,7 +908,7 @@
       "aliases": [],
       "date": "1748",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近世",
       "field": "条約",
       "description": "オーストリア継承戦争の講和。プロイセンのシュレージエン領有が認められた。",
       "relatedEvents": []
@@ -935,7 +935,7 @@
       "aliases": [],
       "date": "1763",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近世",
       "field": "条約",
       "description": "七年戦争のプロイセン・オーストリア間の講和。プロイセンのシュレージエン領有を再確認。",
       "relatedEvents": []
@@ -962,7 +962,7 @@
       "aliases": [],
       "date": "1763",
       "region": "ヨーロッパ・北米",
-      "era": "中近世・近代",
+      "era": "近世",
       "field": "条約",
       "description": "七年戦争の英仏などの講和。フランスはカナダなど北米の領土を失った。",
       "relatedEvents": []
@@ -984,7 +984,7 @@
       "aliases": [],
       "date": "1783",
       "region": "北米・ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近世",
       "field": "条約",
       "description": "アメリカ独立戦争の講和。イギリスがアメリカ合衆国の独立を承認。",
       "relatedEvents": []
@@ -1006,7 +1006,7 @@
       "aliases": [],
       "date": "1814",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "条約",
       "description": "ナポレオン戦争後、フランスと対仏同盟諸国が結んだ講和。ウィーン会議開催への道を開いた。",
       "relatedEvents": []
@@ -1028,7 +1028,7 @@
       "aliases": [],
       "date": "1915〜1916",
       "region": "西アジア",
-      "era": "中近世・近代",
+      "era": "現代",
       "field": "外交",
       "description": "イギリスがアラブのオスマン帝国への反乱協力と引き換えに戦後のアラブ独立支持を約した書簡。",
       "relatedEvents": []
@@ -1050,7 +1050,7 @@
       "aliases": [],
       "date": "1916",
       "region": "西アジア",
-      "era": "中近世・近代",
+      "era": "現代",
       "field": "外交",
       "description": "英仏露が戦後のオスマン帝国領の分割について結んだ秘密協定。",
       "relatedEvents": []
@@ -1072,7 +1072,7 @@
       "aliases": [],
       "date": "1917",
       "region": "西アジア",
-      "era": "中近世・近代",
+      "era": "現代",
       "field": "外交",
       "description": "イギリスがパレスチナにユダヤ人の民族的郷土の樹立を支持すると表明した宣言。",
       "relatedEvents": []
@@ -1094,7 +1094,7 @@
       "aliases": [],
       "date": "1860年代〜1890年代",
       "region": "東アジア",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "改革",
       "description": "清末に曾国藩・李鴻章らが西洋の軍事・産業技術を採り入れた富国強兵運動。",
       "relatedEvents": []
@@ -1116,7 +1116,7 @@
       "aliases": [],
       "date": "1898",
       "region": "東アジア",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "改革",
       "description": "康有為・梁啓超らが光緒帝と進めた政治制度にも及ぶ改革で、西太后派の政変により挫折。",
       "relatedEvents": []
@@ -1143,7 +1143,7 @@
       "aliases": [],
       "date": "1901年以降",
       "region": "東アジア",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "改革",
       "description": "義和団事件後の清朝の近代化政策。新式学校制度、科挙の廃止、立憲準備などが進められた。",
       "relatedEvents": []
@@ -1165,7 +1165,7 @@
       "aliases": [],
       "date": "1839",
       "region": "西アジア",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "改革",
       "description": "オスマン帝国でアブデュルメジト1世のもと改革を宣言し、タンジマート開始の契機となった。",
       "relatedEvents": []
@@ -1187,7 +1187,7 @@
       "aliases": [],
       "date": "1876",
       "region": "西アジア",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "改革",
       "description": "オスマン帝国初の近代的憲法。のち停止され、1908年に復活した。",
       "relatedEvents": []
@@ -1209,7 +1209,7 @@
       "aliases": [],
       "date": "1908",
       "region": "西アジア",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "革命",
       "description": "青年トルコ人がオスマン帝国で専制に反対し、1876年憲法の復活・議会再開を実現した革命。",
       "relatedEvents": []
@@ -1231,7 +1231,7 @@
       "aliases": [],
       "date": "1924",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "現代",
       "field": "経済",
       "description": "第一次大戦後ドイツ賠償の支払い方式を緩和し、アメリカ資本の導入を促した支払計画。",
       "relatedEvents": []
@@ -1253,7 +1253,7 @@
       "aliases": [],
       "date": "1929",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "現代",
       "field": "経済",
       "description": "ドーズ案に代わるドイツ賠償の修正計画。1929年立案、1930年採択。",
       "relatedEvents": []
@@ -1275,7 +1275,7 @@
       "aliases": [],
       "date": "1905",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "革命",
       "description": "血の日曜日事件を契機に始まった革命。帝政は続くが十月宣言・ドゥーマ設置に至った。",
       "relatedEvents": []
@@ -1297,7 +1297,7 @@
       "aliases": [],
       "date": "1917",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "現代",
       "field": "革命",
       "description": "ロシア旧暦2月・新暦3月に起こり、ロマノフ朝を倒して臨時政府が成立した。",
       "relatedEvents": []
@@ -1319,7 +1319,7 @@
       "aliases": [],
       "date": "1917",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "現代",
       "field": "革命",
       "description": "ロシア旧暦10月・新暦11月にボリシェヴィキが臨時政府を打倒し、ソヴィエト政権を樹立。",
       "relatedEvents": []
@@ -1341,7 +1341,7 @@
       "aliases": [],
       "date": "1905",
       "region": "アフリカ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "外交",
       "description": "ドイツ皇帝ヴィルヘルム2世がタンジールを訪問し仏のモロッコ進出に対抗した事件。",
       "relatedEvents": []
@@ -1363,7 +1363,7 @@
       "aliases": [],
       "date": "1911",
       "region": "アフリカ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "外交",
       "description": "ドイツが軍艦をアガディールへ派遣して仏に圧力をかけた事件。",
       "relatedEvents": []
@@ -1385,7 +1385,7 @@
       "aliases": [],
       "date": "1922",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "現代",
       "field": "外交",
       "description": "ドイツとソヴィエト＝ロシアが国交回復・賠償請求放棄などを取り決めた条約。",
       "relatedEvents": []
@@ -1407,7 +1407,7 @@
       "aliases": [],
       "date": "1925",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "現代",
       "field": "外交",
       "description": "ドイツ西部国境の保障などに関する欧州諸国間の条約群。",
       "relatedEvents": []
@@ -1429,7 +1429,7 @@
       "aliases": [],
       "date": "1928",
       "region": "世界",
-      "era": "中近世・近代",
+      "era": "現代",
       "field": "外交",
       "description": "国家政策の手段として戦争を放棄し、国際紛争の平和的解決を約した多国間条約。",
       "relatedEvents": []
@@ -1456,7 +1456,7 @@
       "aliases": [],
       "date": "1954",
       "region": "東南アジア",
-      "era": "中近世・近代",
+      "era": "現代",
       "field": "外交",
       "description": "第一次インドシナ戦争後の停戦を規定。北緯17度線付近の暫定軍事境界線を設定した。",
       "relatedEvents": []
@@ -1483,7 +1483,7 @@
       "aliases": [],
       "date": "1973",
       "region": "東南アジア",
-      "era": "中近世・近代",
+      "era": "現代",
       "field": "外交",
       "description": "ベトナム戦争の和平協定。アメリカ軍撤退や停戦などを定めた。",
       "relatedEvents": []
@@ -1510,7 +1510,7 @@
       "aliases": [],
       "date": "1830",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "革命",
       "description": "シャルル10世の反動政治を倒し、ルイ＝フィリップの七月王政を成立させた革命。",
       "relatedEvents": []
@@ -1537,7 +1537,7 @@
       "aliases": [],
       "date": "1848",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "革命",
       "description": "ルイ＝フィリップの七月王政を倒し、第二共和政を成立させた革命。",
       "relatedEvents": []
@@ -1559,7 +1559,7 @@
       "aliases": [],
       "date": "1871",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "革命",
       "description": "普仏戦争後のパリで労働者・民衆が樹立した自治政府。政府軍に鎮圧された。",
       "relatedEvents": []
@@ -1581,7 +1581,7 @@
       "aliases": [],
       "date": "1848",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "革命",
       "description": "1848年ドイツ諸邦で自由主義・国民統一を求めた運動。フランクフルト国民議会につながった。",
       "relatedEvents": []
@@ -1603,7 +1603,7 @@
       "aliases": [],
       "date": "1848",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近代",
       "field": "革命",
       "description": "1848年ウィーンなどでの革命。メッテルニヒが失脚し、帝国内諸民族の運動が強まった。",
       "relatedEvents": []
@@ -1625,7 +1625,7 @@
       "aliases": [],
       "date": "1122",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "中世",
       "field": "宗教",
       "description": "神聖ローマ皇帝と教皇の叙任権闘争に妥協をもたらした協約。",
       "relatedEvents": []
@@ -1647,7 +1647,7 @@
       "aliases": [],
       "date": "1521",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近世",
       "field": "宗教",
       "description": "カール5世がルターを喚問し、教説撤回を要求した帝国議会。",
       "relatedEvents": []
@@ -1669,9 +1669,141 @@
       "aliases": [],
       "date": "1555",
       "region": "ヨーロッパ",
-      "era": "中近世・近代",
+      "era": "近世",
       "field": "宗教",
       "description": "神聖ローマ帝国内で諸侯にルター派かカトリックかの選択を認めた和議。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-rapallo-1920",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "山川『世界史小辞典』ラパロ条約（Historist）",
+          "url": "https://www.historist.jp/word_w_ra/entry/047939/",
+          "note": "1920年イタリア・ユーゴスラヴィアと1922年独ソの両条約を区別"
+        }
+      ],
+      "name": "ラパロ条約（1920年）",
+      "aliases": [],
+      "date": "1920",
+      "region": "ヨーロッパ",
+      "era": "現代",
+      "field": "外交",
+      "description": "イタリアとユーゴスラヴィアがフィウメ問題などの領土問題を処理した条約。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-prague-1635",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『プラハ条約』ブリタニカ国際大百科事典",
+          "url": "https://kotobank.jp/word/ぷらは条約-3168439",
+          "note": "1635年と1866年の同名条約"
+        }
+      ],
+      "name": "プラハ条約（1635年）",
+      "aliases": [],
+      "date": "1635",
+      "region": "ヨーロッパ",
+      "era": "近世",
+      "field": "条約",
+      "description": "三十年戦争中、神聖ローマ皇帝とザクセンなどドイツ諸侯との和解を目指して結ばれた条約。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-aachen-1668",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『アーヘンの和約』日本大百科全書・ブリタニカ",
+          "url": "https://kotobank.jp/word/あーへんの和約-3142650",
+          "note": "1668年と1748年の同名条約"
+        }
+      ],
+      "name": "アーヘンの和約（1668年）",
+      "aliases": [],
+      "date": "1668",
+      "region": "ヨーロッパ",
+      "era": "近世",
+      "field": "条約",
+      "description": "ルイ14世の南ネーデルラント継承戦争（フランドル戦争）を終結させた講和条約。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-shimonoseki-1895",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "外務省『史料と解説 日清講和会議』",
+          "url": "https://www.mofa.go.jp/mofaj/ms/da/page25_001749.html",
+          "note": "1895年下関条約の台湾・澎湖列島・遼東半島・賠償金・朝鮮独立"
+        }
+      ],
+      "name": "下関条約",
+      "aliases": [],
+      "date": "1895",
+      "region": "東アジア",
+      "era": "近代",
+      "field": "条約",
+      "description": "日清戦争の講和。清が朝鮮の独立を認め、台湾・澎湖諸島・遼東半島の割譲と賠償金を約束。遼東半島は三国干渉を受け返還された。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-shimoda-1855",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "在ロシア日本国大使館『日露関係 共同作成資料集』",
+          "url": "https://www.ru.emb-japan.go.jp/japan/JRELATIONSHIP/1992.html",
+          "note": "1855年下田・1875年樺太千島交換・1905年ポーツマスの領土事項"
+        }
+      ],
+      "name": "日露和親条約（下田条約）",
+      "aliases": [],
+      "date": "1855",
+      "region": "東アジア",
+      "era": "近代",
+      "field": "条約",
+      "description": "日本とロシアの国境を択捉島と得撫島の間に定め、樺太の国境は未確定とした条約。",
+      "relatedEvents": []
+    },
+    {
+      "id": "at-sakhalin-kuril-1875",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "在ロシア日本国大使館『日露関係 共同作成資料集』",
+          "url": "https://www.ru.emb-japan.go.jp/japan/JRELATIONSHIP/1992.html",
+          "note": "1855年下田・1875年樺太千島交換・1905年ポーツマスの領土事項"
+        }
+      ],
+      "name": "樺太・千島交換条約",
+      "aliases": [],
+      "date": "1875",
+      "region": "東アジア",
+      "era": "近代",
+      "field": "条約",
+      "description": "日本が樺太での権利をロシアに譲る代わりに、得撫島以北の千島列島を得た条約。",
       "relatedEvents": []
     }
   ],
@@ -3104,6 +3236,250 @@
             "at-worms-concordat-1122": "1122年、神聖ローマ皇帝と教皇間の叙任権闘争を調整した協約",
             "at-worms-diet-1521": "1521年、ルターが教説撤回を拒否した神聖ローマ帝国の会議",
             "at-augsburg-peace-1555": "1555年、神聖ローマ帝国で諸侯のルター派選択を認めた和議"
+          }
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ag-rapallo-same-name",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "山川『世界史小辞典』ラパロ条約（Historist）",
+          "url": "https://www.historist.jp/word_w_ra/entry/047939/",
+          "note": "1920年イタリア・ユーゴスラヴィアと1922年独ソの両条約を区別"
+        }
+      ],
+      "name": "二つのラパロ条約",
+      "termIds": [
+        "at-rapallo-1920",
+        "at-rapallo-1922"
+      ],
+      "causes": [
+        "名称類似",
+        "年代近接"
+      ],
+      "registrationReason": "混同防止用の教材として初期登録。学習履歴や誤答実績の登録ではない。",
+      "essentialPoint": "同じ地名に由来するが1920年はイタリア・ユーゴスラヴィア、1922年はドイツ・ソヴィエト＝ロシア。",
+      "orderingNotes": "",
+      "description": "同じ地名に由来するが1920年はイタリア・ユーゴスラヴィア、1922年はドイツ・ソヴィエト＝ロシア。",
+      "comparison": [
+        {
+          "key": "years",
+          "label": "年代",
+          "values": {
+            "at-rapallo-1920": "1920",
+            "at-rapallo-1922": "1922"
+          }
+        },
+        {
+          "key": "difference",
+          "label": "識別ポイント",
+          "values": {
+            "at-rapallo-1920": "1920年、イタリアとユーゴスラヴィアのフィウメ問題などの領土調整",
+            "at-rapallo-1922": "1922年、ドイツとソヴィエト＝ロシアが相互請求権の放棄と外交関係の再開を約束"
+          }
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ag-prague-same-name",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『プラハ条約』ブリタニカ国際大百科事典",
+          "url": "https://kotobank.jp/word/ぷらは条約-3168439",
+          "note": "1635年と1866年の同名条約"
+        }
+      ],
+      "name": "二つのプラハ条約",
+      "termIds": [
+        "at-prague-1635",
+        "at-prague-1866"
+      ],
+      "causes": [
+        "名称類似",
+        "同一地域"
+      ],
+      "registrationReason": "混同防止用の教材として初期登録。学習履歴や誤答実績の登録ではない。",
+      "essentialPoint": "1635年は三十年戦争、1866年は普墺戦争。",
+      "orderingNotes": "",
+      "description": "1635年は三十年戦争、1866年は普墺戦争。",
+      "comparison": [
+        {
+          "key": "years",
+          "label": "年代",
+          "values": {
+            "at-prague-1635": "1635",
+            "at-prague-1866": "1866"
+          }
+        },
+        {
+          "key": "difference",
+          "label": "識別ポイント",
+          "values": {
+            "at-prague-1635": "1635年、三十年戦争中に神聖ローマ皇帝とドイツ諸侯が和解を図った条約",
+            "at-prague-1866": "1866年、普墺戦争の講和でオーストリアがドイツ連邦解体などを認めた条約"
+          }
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ag-aachen-same-name",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『アーヘンの和約』日本大百科全書・ブリタニカ",
+          "url": "https://kotobank.jp/word/あーへんの和約-3142650",
+          "note": "1668年と1748年の同名条約"
+        }
+      ],
+      "name": "二つのアーヘンの和約",
+      "termIds": [
+        "at-aachen-1668",
+        "at-aachen-1748"
+      ],
+      "causes": [
+        "名称類似",
+        "内容・役割類似"
+      ],
+      "registrationReason": "混同防止用の教材として初期登録。学習履歴や誤答実績の登録ではない。",
+      "essentialPoint": "1668年フランスのネーデルラント継承戦争と1748年オーストリア継承戦争を区別。",
+      "orderingNotes": "",
+      "description": "1668年フランスのネーデルラント継承戦争と1748年オーストリア継承戦争を区別。",
+      "comparison": [
+        {
+          "key": "years",
+          "label": "年代",
+          "values": {
+            "at-aachen-1668": "1668",
+            "at-aachen-1748": "1748"
+          }
+        },
+        {
+          "key": "difference",
+          "label": "識別ポイント",
+          "values": {
+            "at-aachen-1668": "1668年、ルイ14世の南ネーデルラント継承戦争を終結させた和約",
+            "at-aachen-1748": "1748年、オーストリア継承戦争を終結させプロイセンのシュレージエン領有を承認した和約"
+          }
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ag-sino-russo-japanese-peace",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "外務省『史料と解説 日清講和会議』",
+          "url": "https://www.mofa.go.jp/mofaj/ms/da/page25_001749.html",
+          "note": "1895年下関条約の台湾・澎湖列島・遼東半島・賠償金・朝鮮独立"
+        },
+        {
+          "title": "外務省『日露戦争期』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_3.html",
+          "note": "1905年ポーツマス条約・講和全権"
+        }
+      ],
+      "name": "日清戦争と日露戦争の講和",
+      "termIds": [
+        "at-shimonoseki-1895",
+        "at-portsmouth-1905"
+      ],
+      "causes": [
+        "同一国家",
+        "内容・役割類似"
+      ],
+      "registrationReason": "混同防止用の教材として初期登録。学習履歴や誤答実績の登録ではない。",
+      "essentialPoint": "下関条約では清から台湾・澎湖列島など、ポーツマス条約ではロシアから南樺太など。日露戦争では賠償金を得ていない。",
+      "orderingNotes": "",
+      "description": "下関条約では清から台湾・澎湖列島など、ポーツマス条約ではロシアから南樺太など。日露戦争では賠償金を得ていない。",
+      "comparison": [
+        {
+          "key": "years",
+          "label": "年代",
+          "values": {
+            "at-shimonoseki-1895": "1895",
+            "at-portsmouth-1905": "1905"
+          }
+        },
+        {
+          "key": "difference",
+          "label": "識別ポイント",
+          "values": {
+            "at-shimonoseki-1895": "1895年、日清戦争の講和で清が台湾・澎湖列島割譲などを認めた条約",
+            "at-portsmouth-1905": "1905年、日露戦争の講和でロシアが南樺太を割譲し朝鮮での日本の優越的地位を承認した条約"
+          }
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ag-japan-russia-territory",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "在ロシア日本国大使館『日露関係 共同作成資料集』",
+          "url": "https://www.ru.emb-japan.go.jp/japan/JRELATIONSHIP/1992.html",
+          "note": "1855年下田・1875年樺太千島交換・1905年ポーツマスの領土事項"
+        },
+        {
+          "title": "外務省『日露戦争期』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_3.html",
+          "note": "1905年ポーツマス条約・講和全権"
+        }
+      ],
+      "name": "近代日露の国境・領土条約",
+      "termIds": [
+        "at-shimoda-1855",
+        "at-sakhalin-kuril-1875",
+        "at-portsmouth-1905"
+      ],
+      "causes": [
+        "同一国家",
+        "同一地域",
+        "因果関係・前後関係"
+      ],
+      "registrationReason": "混同防止用の教材として初期登録。学習履歴や誤答実績の登録ではない。",
+      "essentialPoint": "1855年下田、1875年樺太・千島交換、1905年ポーツマスを区別。",
+      "orderingNotes": "",
+      "description": "1855年下田、1875年樺太・千島交換、1905年ポーツマスを区別。",
+      "comparison": [
+        {
+          "key": "years",
+          "label": "年代",
+          "values": {
+            "at-shimoda-1855": "1855",
+            "at-sakhalin-kuril-1875": "1875",
+            "at-portsmouth-1905": "1905"
+          }
+        },
+        {
+          "key": "difference",
+          "label": "識別ポイント",
+          "values": {
+            "at-shimoda-1855": "1855年、択捉島と得撫島の間に日露国境を定め、樺太の国境は未画定とした条約",
+            "at-sakhalin-kuril-1875": "1875年、日本の樺太での権利と引き換えに得撫島以北の千島列島を日本へ譲った条約",
+            "at-portsmouth-1905": "1905年、日露戦争後にロシアが樺太南部を日本へ譲った講和条約"
           }
         }
       ],
@@ -9011,6 +9387,683 @@
       "prompt": "「ウォルムスと宗教改革の協約・議会」に含まれる各用語の年代と相違点を説明せよ。",
       "answer": "ウォルムス協約（1122）：1122年、神聖ローマ皇帝と教皇間の叙任権闘争を調整した協約／ウォルムス帝国議会（1521年）（1521）：1521年、ルターが教説撤回を拒否した神聖ローマ帝国の会議／アウクスブルクの和議（1555）：1555年、神聖ローマ帝国で諸侯のルター派選択を認めた和議",
       "explanation": "ウォルムス協約1122年は叙任権問題、1521年ウォルムス帝国議会はルター、1555年はルター派容認。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    },
+    {
+      "id": "ac-rapallo-same-name-1",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "山川『世界史小辞典』ラパロ条約（Historist）",
+          "url": "https://www.historist.jp/word_w_ra/entry/047939/",
+          "note": "1920年イタリア・ユーゴスラヴィアと1922年独ソの両条約を区別"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-rapallo-same-name",
+      "termIds": [
+        "at-rapallo-1920"
+      ],
+      "prompt": "1920年、イタリアとユーゴスラヴィアのフィウメ問題などの領土調整。これに該当する条約・和約を選べ。",
+      "answer": "ラパロ条約（1920年）",
+      "explanation": "イタリアとユーゴスラヴィアがフィウメ問題などの領土問題を処理した条約。",
+      "optionTermIds": [
+        "at-rapallo-1920",
+        "at-rapallo-1922"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-rapallo-1920",
+      "distractors": [
+        {
+          "termId": "at-rapallo-1922",
+          "explanation": "ドイツとソヴィエト＝ロシアが国交回復・賠償請求放棄などを取り決めた条約。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "世界大百科事典『ラパロ条約』",
+              "url": "https://kotobank.jp/word/らぱろ条約-3174705",
+              "note": "1922年独ソ条約"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-rapallo-same-name-2",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "山川『世界史小辞典』ラパロ条約（Historist）",
+          "url": "https://www.historist.jp/word_w_ra/entry/047939/",
+          "note": "1920年イタリア・ユーゴスラヴィアと1922年独ソの両条約を区別"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-rapallo-same-name",
+      "termIds": [
+        "at-rapallo-1922"
+      ],
+      "prompt": "1922年、ドイツとソヴィエト＝ロシアが相互請求権の放棄と外交関係の再開を約束。これに該当する条約・和約を選べ。",
+      "answer": "ラパロ条約（1922年）",
+      "explanation": "ドイツとソヴィエト＝ロシアが国交回復・賠償請求放棄などを取り決めた条約。",
+      "optionTermIds": [
+        "at-rapallo-1922",
+        "at-rapallo-1920"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-rapallo-1922",
+      "distractors": [
+        {
+          "termId": "at-rapallo-1920",
+          "explanation": "イタリアとユーゴスラヴィアがフィウメ問題などの領土問題を処理した条約。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "山川『世界史小辞典』ラパロ条約（Historist）",
+              "url": "https://www.historist.jp/word_w_ra/entry/047939/",
+              "note": "1920年イタリア・ユーゴスラヴィアと1922年独ソの両条約を区別"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-rapallo-same-name-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "山川『世界史小辞典』ラパロ条約（Historist）",
+          "url": "https://www.historist.jp/word_w_ra/entry/047939/",
+          "note": "1920年イタリア・ユーゴスラヴィアと1922年独ソの両条約を区別"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-rapallo-same-name",
+      "termIds": [
+        "at-rapallo-1920",
+        "at-rapallo-1922"
+      ],
+      "prompt": "二つのラパロ条約について、対応する年号・戦争または外交問題・条約の内容を区別して説明せよ。",
+      "answer": "ラパロ条約（1920年）（1920）：1920年、イタリアとユーゴスラヴィアのフィウメ問題などの領土調整／ラパロ条約（1922年）（1922）：1922年、ドイツとソヴィエト＝ロシアが相互請求権の放棄と外交関係の再開を約束",
+      "explanation": "同じ地名に由来するが1920年はイタリア・ユーゴスラヴィア、1922年はドイツ・ソヴィエト＝ロシア。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    },
+    {
+      "id": "ac-prague-same-name-1",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『プラハ条約』ブリタニカ国際大百科事典",
+          "url": "https://kotobank.jp/word/ぷらは条約-3168439",
+          "note": "1635年と1866年の同名条約"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-prague-same-name",
+      "termIds": [
+        "at-prague-1635"
+      ],
+      "prompt": "1635年、三十年戦争中に神聖ローマ皇帝とドイツ諸侯が和解を図った条約。これに該当する条約・和約を選べ。",
+      "answer": "プラハ条約（1635年）",
+      "explanation": "三十年戦争中、神聖ローマ皇帝とザクセンなどドイツ諸侯との和解を目指して結ばれた条約。",
+      "optionTermIds": [
+        "at-prague-1635",
+        "at-prague-1866"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-prague-1635",
+      "distractors": [
+        {
+          "termId": "at-prague-1866",
+          "explanation": "普墺戦争の講和。オーストリアは旧ドイツ連邦の解体を認め、ドイツ問題から排除された。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "山川ほか『プラハ条約』（コトバンク）",
+              "url": "https://kotobank.jp/word/ぷらは条約-3168439",
+              "note": "1866年普墺戦争の講和"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-prague-same-name-2",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『プラハ条約』ブリタニカ国際大百科事典",
+          "url": "https://kotobank.jp/word/ぷらは条約-3168439",
+          "note": "1635年と1866年の同名条約"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-prague-same-name",
+      "termIds": [
+        "at-prague-1866"
+      ],
+      "prompt": "1866年、普墺戦争の講和でオーストリアがドイツ連邦解体などを認めた条約。これに該当する条約・和約を選べ。",
+      "answer": "プラハ条約（1866年）",
+      "explanation": "普墺戦争の講和。オーストリアは旧ドイツ連邦の解体を認め、ドイツ問題から排除された。",
+      "optionTermIds": [
+        "at-prague-1866",
+        "at-prague-1635"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-prague-1866",
+      "distractors": [
+        {
+          "termId": "at-prague-1635",
+          "explanation": "三十年戦争中、神聖ローマ皇帝とザクセンなどドイツ諸侯との和解を目指して結ばれた条約。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『プラハ条約』ブリタニカ国際大百科事典",
+              "url": "https://kotobank.jp/word/ぷらは条約-3168439",
+              "note": "1635年と1866年の同名条約"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-prague-same-name-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『プラハ条約』ブリタニカ国際大百科事典",
+          "url": "https://kotobank.jp/word/ぷらは条約-3168439",
+          "note": "1635年と1866年の同名条約"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-prague-same-name",
+      "termIds": [
+        "at-prague-1635",
+        "at-prague-1866"
+      ],
+      "prompt": "二つのプラハ条約について、対応する年号・戦争または外交問題・条約の内容を区別して説明せよ。",
+      "answer": "プラハ条約（1635年）（1635）：1635年、三十年戦争中に神聖ローマ皇帝とドイツ諸侯が和解を図った条約／プラハ条約（1866年）（1866）：1866年、普墺戦争の講和でオーストリアがドイツ連邦解体などを認めた条約",
+      "explanation": "1635年は三十年戦争、1866年は普墺戦争。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    },
+    {
+      "id": "ac-aachen-same-name-1",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『アーヘンの和約』日本大百科全書・ブリタニカ",
+          "url": "https://kotobank.jp/word/あーへんの和約-3142650",
+          "note": "1668年と1748年の同名条約"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-aachen-same-name",
+      "termIds": [
+        "at-aachen-1668"
+      ],
+      "prompt": "1668年、ルイ14世の南ネーデルラント継承戦争を終結させた和約。これに該当する条約・和約を選べ。",
+      "answer": "アーヘンの和約（1668年）",
+      "explanation": "ルイ14世の南ネーデルラント継承戦争（フランドル戦争）を終結させた講和条約。",
+      "optionTermIds": [
+        "at-aachen-1668",
+        "at-aachen-1748"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-aachen-1668",
+      "distractors": [
+        {
+          "termId": "at-aachen-1748",
+          "explanation": "オーストリア継承戦争の講和。プロイセンのシュレージエン領有が認められた。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "Historist・山川世界史小辞典『アーヘンの和約』",
+              "url": "https://www.historist.jp/word_w_a/entry/039137/",
+              "note": "1748年オーストリア継承戦争の講和"
+            },
+            {
+              "title": "世界史リンク工房『18世紀の継承戦争と七年戦争』",
+              "url": "https://history-link-bottega.com/archives/38547376.html",
+              "note": "継承戦争・七年戦争と講和"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-aachen-same-name-2",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『アーヘンの和約』日本大百科全書・ブリタニカ",
+          "url": "https://kotobank.jp/word/あーへんの和約-3142650",
+          "note": "1668年と1748年の同名条約"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-aachen-same-name",
+      "termIds": [
+        "at-aachen-1748"
+      ],
+      "prompt": "1748年、オーストリア継承戦争を終結させプロイセンのシュレージエン領有を承認した和約。これに該当する条約・和約を選べ。",
+      "answer": "アーヘンの和約（1748年）",
+      "explanation": "オーストリア継承戦争の講和。プロイセンのシュレージエン領有が認められた。",
+      "optionTermIds": [
+        "at-aachen-1748",
+        "at-aachen-1668"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-aachen-1748",
+      "distractors": [
+        {
+          "termId": "at-aachen-1668",
+          "explanation": "ルイ14世の南ネーデルラント継承戦争（フランドル戦争）を終結させた講和条約。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "コトバンク『アーヘンの和約』日本大百科全書・ブリタニカ",
+              "url": "https://kotobank.jp/word/あーへんの和約-3142650",
+              "note": "1668年と1748年の同名条約"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-aachen-same-name-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "コトバンク『アーヘンの和約』日本大百科全書・ブリタニカ",
+          "url": "https://kotobank.jp/word/あーへんの和約-3142650",
+          "note": "1668年と1748年の同名条約"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-aachen-same-name",
+      "termIds": [
+        "at-aachen-1668",
+        "at-aachen-1748"
+      ],
+      "prompt": "二つのアーヘンの和約について、対応する年号・戦争または外交問題・条約の内容を区別して説明せよ。",
+      "answer": "アーヘンの和約（1668年）（1668）：1668年、ルイ14世の南ネーデルラント継承戦争を終結させた和約／アーヘンの和約（1748年）（1748）：1748年、オーストリア継承戦争を終結させプロイセンのシュレージエン領有を承認した和約",
+      "explanation": "1668年フランスのネーデルラント継承戦争と1748年オーストリア継承戦争を区別。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    },
+    {
+      "id": "ac-sino-russo-japanese-peace-1",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "外務省『史料と解説 日清講和会議』",
+          "url": "https://www.mofa.go.jp/mofaj/ms/da/page25_001749.html",
+          "note": "1895年下関条約の台湾・澎湖列島・遼東半島・賠償金・朝鮮独立"
+        },
+        {
+          "title": "外務省『日露戦争期』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_3.html",
+          "note": "1905年ポーツマス条約・講和全権"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-sino-russo-japanese-peace",
+      "termIds": [
+        "at-shimonoseki-1895"
+      ],
+      "prompt": "1895年、日清戦争の講和で清が台湾・澎湖列島割譲などを認めた条約。これに該当する条約・和約を選べ。",
+      "answer": "下関条約",
+      "explanation": "日清戦争の講和。清が朝鮮の独立を認め、台湾・澎湖諸島・遼東半島の割譲と賠償金を約束。遼東半島は三国干渉を受け返還された。",
+      "optionTermIds": [
+        "at-shimonoseki-1895",
+        "at-portsmouth-1905"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-shimonoseki-1895",
+      "distractors": [
+        {
+          "termId": "at-portsmouth-1905",
+          "explanation": "日露戦争の講和条約。ロシアは南樺太割譲、旅順・大連租借権などを日本へ譲渡。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "国立公文書館『近代国家 日本の登場 日露戦争』",
+              "url": "https://www.archives.go.jp/exhibition/digital/modean_state/contents/nichiro-war/index.html",
+              "note": "ポーツマス条約の内容"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-sino-russo-japanese-peace-2",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "外務省『史料と解説 日清講和会議』",
+          "url": "https://www.mofa.go.jp/mofaj/ms/da/page25_001749.html",
+          "note": "1895年下関条約の台湾・澎湖列島・遼東半島・賠償金・朝鮮独立"
+        },
+        {
+          "title": "外務省『日露戦争期』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_3.html",
+          "note": "1905年ポーツマス条約・講和全権"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-sino-russo-japanese-peace",
+      "termIds": [
+        "at-portsmouth-1905"
+      ],
+      "prompt": "1905年、日露戦争の講和でロシアが南樺太を割譲し朝鮮での日本の優越的地位を承認した条約。これに該当する条約・和約を選べ。",
+      "answer": "ポーツマス条約",
+      "explanation": "日露戦争の講和条約。ロシアは南樺太割譲、旅順・大連租借権などを日本へ譲渡。",
+      "optionTermIds": [
+        "at-portsmouth-1905",
+        "at-shimonoseki-1895"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-portsmouth-1905",
+      "distractors": [
+        {
+          "termId": "at-shimonoseki-1895",
+          "explanation": "日清戦争の講和。清が朝鮮の独立を認め、台湾・澎湖諸島・遼東半島の割譲と賠償金を約束。遼東半島は三国干渉を受け返還された。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "外務省『史料と解説 日清講和会議』",
+              "url": "https://www.mofa.go.jp/mofaj/ms/da/page25_001749.html",
+              "note": "1895年下関条約の台湾・澎湖列島・遼東半島・賠償金・朝鮮独立"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-sino-russo-japanese-peace-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "外務省『史料と解説 日清講和会議』",
+          "url": "https://www.mofa.go.jp/mofaj/ms/da/page25_001749.html",
+          "note": "1895年下関条約の台湾・澎湖列島・遼東半島・賠償金・朝鮮独立"
+        },
+        {
+          "title": "外務省『日露戦争期』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_3.html",
+          "note": "1905年ポーツマス条約・講和全権"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-sino-russo-japanese-peace",
+      "termIds": [
+        "at-shimonoseki-1895",
+        "at-portsmouth-1905"
+      ],
+      "prompt": "日清戦争と日露戦争の講和について、対応する年号・戦争または外交問題・条約の内容を区別して説明せよ。",
+      "answer": "下関条約（1895）：1895年、日清戦争の講和で清が台湾・澎湖列島割譲などを認めた条約／ポーツマス条約（1905）：1905年、日露戦争の講和でロシアが南樺太を割譲し朝鮮での日本の優越的地位を承認した条約",
+      "explanation": "下関条約では清から台湾・澎湖列島など、ポーツマス条約ではロシアから南樺太など。日露戦争では賠償金を得ていない。",
+      "optionTermIds": [],
+      "optionLabels": {},
+      "correctTermId": null,
+      "distractors": []
+    },
+    {
+      "id": "ac-japan-russia-territory-1",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "在ロシア日本国大使館『日露関係 共同作成資料集』",
+          "url": "https://www.ru.emb-japan.go.jp/japan/JRELATIONSHIP/1992.html",
+          "note": "1855年下田・1875年樺太千島交換・1905年ポーツマスの領土事項"
+        },
+        {
+          "title": "外務省『日露戦争期』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_3.html",
+          "note": "1905年ポーツマス条約・講和全権"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-japan-russia-territory",
+      "termIds": [
+        "at-shimoda-1855"
+      ],
+      "prompt": "1855年、択捉島と得撫島の間に日露国境を定め、樺太の国境は未画定とした条約。これに該当する条約・和約を選べ。",
+      "answer": "日露和親条約（下田条約）",
+      "explanation": "日本とロシアの国境を択捉島と得撫島の間に定め、樺太の国境は未確定とした条約。",
+      "optionTermIds": [
+        "at-shimoda-1855",
+        "at-sakhalin-kuril-1875",
+        "at-portsmouth-1905"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-shimoda-1855",
+      "distractors": [
+        {
+          "termId": "at-sakhalin-kuril-1875",
+          "explanation": "日本が樺太での権利をロシアに譲る代わりに、得撫島以北の千島列島を得た条約。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "在ロシア日本国大使館『日露関係 共同作成資料集』",
+              "url": "https://www.ru.emb-japan.go.jp/japan/JRELATIONSHIP/1992.html",
+              "note": "1855年下田・1875年樺太千島交換・1905年ポーツマスの領土事項"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-portsmouth-1905",
+          "explanation": "日露戦争の講和条約。ロシアは南樺太割譲、旅順・大連租借権などを日本へ譲渡。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "国立公文書館『近代国家 日本の登場 日露戦争』",
+              "url": "https://www.archives.go.jp/exhibition/digital/modean_state/contents/nichiro-war/index.html",
+              "note": "ポーツマス条約の内容"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-japan-russia-territory-2",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "在ロシア日本国大使館『日露関係 共同作成資料集』",
+          "url": "https://www.ru.emb-japan.go.jp/japan/JRELATIONSHIP/1992.html",
+          "note": "1855年下田・1875年樺太千島交換・1905年ポーツマスの領土事項"
+        },
+        {
+          "title": "外務省『日露戦争期』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_3.html",
+          "note": "1905年ポーツマス条約・講和全権"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-japan-russia-territory",
+      "termIds": [
+        "at-sakhalin-kuril-1875"
+      ],
+      "prompt": "1875年、日本の樺太での権利と引き換えに得撫島以北の千島列島を日本へ譲った条約。これに該当する条約・和約を選べ。",
+      "answer": "樺太・千島交換条約",
+      "explanation": "日本が樺太での権利をロシアに譲る代わりに、得撫島以北の千島列島を得た条約。",
+      "optionTermIds": [
+        "at-sakhalin-kuril-1875",
+        "at-shimoda-1855",
+        "at-portsmouth-1905"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-sakhalin-kuril-1875",
+      "distractors": [
+        {
+          "termId": "at-shimoda-1855",
+          "explanation": "日本とロシアの国境を択捉島と得撫島の間に定め、樺太の国境は未確定とした条約。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "在ロシア日本国大使館『日露関係 共同作成資料集』",
+              "url": "https://www.ru.emb-japan.go.jp/japan/JRELATIONSHIP/1992.html",
+              "note": "1855年下田・1875年樺太千島交換・1905年ポーツマスの領土事項"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-portsmouth-1905",
+          "explanation": "日露戦争の講和条約。ロシアは南樺太割譲、旅順・大連租借権などを日本へ譲渡。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "国立公文書館『近代国家 日本の登場 日露戦争』",
+              "url": "https://www.archives.go.jp/exhibition/digital/modean_state/contents/nichiro-war/index.html",
+              "note": "ポーツマス条約の内容"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-japan-russia-territory-3",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "在ロシア日本国大使館『日露関係 共同作成資料集』",
+          "url": "https://www.ru.emb-japan.go.jp/japan/JRELATIONSHIP/1992.html",
+          "note": "1855年下田・1875年樺太千島交換・1905年ポーツマスの領土事項"
+        },
+        {
+          "title": "外務省『日露戦争期』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_3.html",
+          "note": "1905年ポーツマス条約・講和全権"
+        }
+      ],
+      "kind": "identify",
+      "groupId": "ag-japan-russia-territory",
+      "termIds": [
+        "at-portsmouth-1905"
+      ],
+      "prompt": "1905年、日露戦争後にロシアが樺太南部を日本へ譲った講和条約。これに該当する条約・和約を選べ。",
+      "answer": "ポーツマス条約",
+      "explanation": "日露戦争の講和条約。ロシアは南樺太割譲、旅順・大連租借権などを日本へ譲渡。",
+      "optionTermIds": [
+        "at-portsmouth-1905",
+        "at-shimoda-1855",
+        "at-sakhalin-kuril-1875"
+      ],
+      "optionLabels": {},
+      "correctTermId": "at-portsmouth-1905",
+      "distractors": [
+        {
+          "termId": "at-shimoda-1855",
+          "explanation": "日本とロシアの国境を択捉島と得撫島の間に定め、樺太の国境は未確定とした条約。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "在ロシア日本国大使館『日露関係 共同作成資料集』",
+              "url": "https://www.ru.emb-japan.go.jp/japan/JRELATIONSHIP/1992.html",
+              "note": "1855年下田・1875年樺太千島交換・1905年ポーツマスの領土事項"
+            }
+          ],
+          "verification": "verified"
+        },
+        {
+          "termId": "at-sakhalin-kuril-1875",
+          "explanation": "日本が樺太での権利をロシアに譲る代わりに、得撫島以北の千島列島を得た条約。。設問条件とは異なる。",
+          "sources": [
+            {
+              "title": "在ロシア日本国大使館『日露関係 共同作成資料集』",
+              "url": "https://www.ru.emb-japan.go.jp/japan/JRELATIONSHIP/1992.html",
+              "note": "1855年下田・1875年樺太千島交換・1905年ポーツマスの領土事項"
+            }
+          ],
+          "verification": "verified"
+        }
+      ]
+    },
+    {
+      "id": "ac-japan-russia-territory-compare",
+      "version": 1,
+      "updatedAt": "2026-11-10T11:18:00.000Z",
+      "deleted": false,
+      "verification": "verified",
+      "sources": [
+        {
+          "title": "在ロシア日本国大使館『日露関係 共同作成資料集』",
+          "url": "https://www.ru.emb-japan.go.jp/japan/JRELATIONSHIP/1992.html",
+          "note": "1855年下田・1875年樺太千島交換・1905年ポーツマスの領土事項"
+        },
+        {
+          "title": "外務省『日露戦争期』",
+          "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_3.html",
+          "note": "1905年ポーツマス条約・講和全権"
+        }
+      ],
+      "kind": "compare",
+      "groupId": "ag-japan-russia-territory",
+      "termIds": [
+        "at-shimoda-1855",
+        "at-sakhalin-kuril-1875",
+        "at-portsmouth-1905"
+      ],
+      "prompt": "近代日露の国境・領土条約について、対応する年号・戦争または外交問題・条約の内容を区別して説明せよ。",
+      "answer": "日露和親条約（下田条約）（1855）：1855年、択捉島と得撫島の間に日露国境を定め、樺太の国境は未画定とした条約／樺太・千島交換条約（1875）：1875年、日本の樺太での権利と引き換えに得撫島以北の千島列島を日本へ譲った条約／ポーツマス条約（1905）：1905年、日露戦争後にロシアが樺太南部を日本へ譲った講和条約",
+      "explanation": "1855年下田、1875年樺太・千島交換、1905年ポーツマスを区別。",
       "optionTermIds": [],
       "optionLabels": {},
       "correctTermId": null,
