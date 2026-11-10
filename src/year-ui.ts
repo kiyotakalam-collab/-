@@ -96,7 +96,7 @@ export class YearTestUI {
       history:['年号の学習履歴', '思い出した年号と、次に復習する問題を確認。'],
       review:['年号の復習管理', '復習のタイミングと、苦手な問題を確認。'],
       ordering:['年代整序テスト', '出来事の前後関係を、4件ずつ確かめます。'],
-      timeline:['インタラクティブ年表', '同じ時間軸で、各地域の出来事を比べます。'],
+      timeline:['インタラクティブ年表', '重要な年号を、歴史の流れでつなげます。'],
     };
     const [title, description] = titles[this.tab];
     const content = this.tab === 'home' ? this.home() : this.tab === 'list' ? this.list() : this.tab === 'history' ? this.history()
@@ -115,7 +115,7 @@ export class YearTestUI {
   private home() {
     const s = this.summary();
     return `<section class="chronology-hero"><div class="eyebrow">ONE DATE AT A TIME</div><h2>年号を、確かな記憶に。</h2><p>出来事から年号を思い出す。<br>一問ずつ、記憶を確かめましょう。</p><button class="button primary" data-year-start="all">全範囲で学習 <span aria-hidden="true">→</span></button></section>
-      <section class="panel chronology-actions"><h2>前後関係と同時代を学ぶ</h2><button class="chronology-shortcut" data-year-page-link="ordering"><span>年代整序テスト<small>4つの出来事を古い順に</small></span><span aria-hidden="true">→</span></button><button class="chronology-shortcut" data-year-page-link="timeline"><span>インタラクティブ年表<small>同時代の各地域を比較</small></span><span aria-hidden="true">→</span></button></section>
+      <section class="panel chronology-actions"><h2>前後関係と同時代を学ぶ</h2><button class="chronology-shortcut" data-year-page-link="ordering"><span>年代整序テスト<small>4つの出来事を古い順に</small></span><span aria-hidden="true">→</span></button><button class="chronology-shortcut" data-year-page-link="timeline"><span>インタラクティブ年表<small>重要年号と歴史の流れ</small></span><span aria-hidden="true">→</span></button></section>
       <section class="chronology-stats" aria-label="年号の学習統計">${this.stat('登録年号',s.count,'件')}${this.stat('学習済み年号',s.learned,'件')}${this.stat('累積回答',s.total,'回')}${this.stat('正答率',percent(s.correct,s.total),'%')}${this.stat('誤答履歴のある問題',s.mistakes,'問')}${this.stat('復習期限到来',s.due,'問')}</section>
       <section class="panel chronology-actions"><div class="section-title"><h2>今日の学習</h2><span class="small muted">出来事 → 年号</span></div>${this.shortcut('unseen','未学習の年号',s.unseen)}${this.shortcut('mistakes','間違えた年号',s.mistakes)}${this.shortcut('due','今日の復習',s.due)}<button class="chronology-shortcut" data-year-page-link="quiz"><span>範囲を指定して学習</span><span aria-hidden="true">→</span></button></section>${s.count ? '' : this.empty()}`;
   }

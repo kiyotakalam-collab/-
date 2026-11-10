@@ -1,5 +1,6 @@
 import { comparableYear, correctOrdering, orderingCandidates, orderingProgress, selectOrderingQuestions, timelineItems, timelineLayout, yearLabel, type OrderingFilter, type OrderingQuestion } from './year-chronology';
 import type { YearDB, YearItem, YearSnapshot } from './years';
+import { resolveYearStories } from './year-timeline-stories';
 
 const h=(value:unknown)=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
 const options=(values:[string,string][],current:string)=>values.map(([value,label])=>`<option value="${h(value)}" ${value===current?'selected':''}>${h(label)}</option>`).join('');
@@ -19,6 +20,8 @@ export class YearChronologyUI {
   private timeline={start:0,end:0,regions:[] as string[],level:'all',era:'all',scale:4};
   private detailId='';
   private rangeError='';
+  private timelineMode:'story'|'full'='story';
+  private storyId='voyages';
   constructor(private read:()=>YearSnapshot,private db:()=>YearDB|null,private reload:()=>Promise<void>,private render:()=>void,private notify:(text:string,error?:boolean)=>void,private ready:()=>Promise<void>){}
   isStudying(){return this.active&&this.index<this.queue.length;}
   leave(){this.generation++;this.active=false;this.queue=[];this.starting=false;}
@@ -43,6 +46,20 @@ export class YearChronologyUI {
     if(years.length){this.timeline.start=Math.min(...years);this.timeline.end=Math.max(...years);}
   }
   timelineView(){
+    const switcher=`<div class="year-timeline-modes" role="group" aria-label="年表の読み方"><button data-timeline-mode="story" aria-pressed="${this.timelineMode==='story'}">重要年号で流れをつかむ</button><button data-timeline-mode="full" aria-pressed="${this.timelineMode==='full'}">全件の年表</button></div>`;
+    return switcher+(this.timelineMode==='story'?this.storyView():this.fullTimelineView());
+  }
+  private storyView(){
+    const stories=resolveYearStories(this.read().catalog), available=stories.filter(story=>story.stops.length);
+    const story=available.find(story=>story.id===this.storyId)??available[0];
+    if(!story)return `<section class="panel year-story-empty"><h2>重要年号の流れは準備中です</h2><p>対応する年号がまだ登録されていません。「全件の年表」では保存済みの教材を確認できます。</p></section>`;
+    this.storyId=story.id;
+    const index=available.indexOf(story),first=story.stops[0].item,last=story.stops.at(-1)!.item;
+    return `<section class="panel year-story-intro"><label class="form-field" for="year-story-select">流れを選ぶ（${available.length}テーマ）<select id="year-story-select">${options(available.map((s,i)=>[s.id,`${i+1}. ${s.title}`]),story.id)}</select></label><p>大きな転換を、年号と短い説明でたどります。</p></section>
+      <section class="year-story" aria-labelledby="year-story-title"><div class="year-story-heading"><span>${h(first.year)}〜${h(last.year)} ／ ${story.stops.length}の節目</span><h2 id="year-story-title" tabindex="-1">${h(story.title)}</h2><p>${h(story.overview)}</p></div><ol class="year-story-stops">${story.stops.map(({item,connection},i)=>`<li class="year-story-stop" data-story-item="${h(item.id)}"><div class="year-story-date"><time>${h(yearLabel(comparableYear(item.year)!))}</time><span>${h(item.region)}</span>${i>0&&item.year===story.stops[i-1].item.year?'<small>同じ年の動き</small>':''}</div><h3>${h(item.event)}</h3><p class="year-story-connection">${h(connection)}</p><details class="year-story-detail"><summary>教材の解説・出典</summary><p>${h(item.explanation||'教材の解説は登録されていません。')}</p><ul>${item.sources.map(source=>`<li><a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.title)}</a></li>`).join('')||'<li>出典は登録されていません。</li>'}</ul></details></li>`).join('')}</ol>
+      <details class="panel year-story-references"><summary>流れの補足の参考資料</summary><p class="small muted">つなぎの説明は学習用に作成した要約です。出来事・年号は登録教材を参照しています。</p><ul>${story.references.map(source=>`<li><a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.title)}</a></li>`).join('')}</ul></details><nav class="year-story-navigation" aria-label="前後の流れ"><button class="button secondary" data-year-story="${h(available[index-1]?.id??'')}" ${index===0?'disabled':''}>← 前の流れ</button><button class="button primary" data-year-story="${h(available[index+1]?.id??'')}" ${index===available.length-1?'disabled':''}>次の流れ →</button></nav></section>`;
+  }
+  private fullTimelineView(){
     this.initRange();const state=this.read(), all=state.catalog.items.filter(x=>!x.deleted), dates=all.map(x=>comparableYear(x.year)).filter((x):x is number=>x!==null);
     const min=dates.length?Math.min(...dates):0,max=dates.length?Math.max(...dates):0;
     const regions=[...new Set(all.map(x=>x.region))].sort(), t=this.timeline;
@@ -55,6 +72,11 @@ export class YearChronologyUI {
   }
   private detail(item:YearItem){return `<section class="panel timeline-detail" aria-labelledby="timeline-detail-title"><h2 id="timeline-detail-title" tabindex="-1">${h(item.event)}</h2><p><strong>${h(item.year)}</strong> ／ ${h(item.region)} ／ ${h(item.era)} ／ Lv.${item.level}</p><p>${h(item.explanation||'解説は登録されていません。')}</p><h3>登録済みの出典</h3><ul>${item.sources.map(source=>`<li><a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.title)}</a></li>`).join('')||'<li>出典は登録されていません。</li>'}</ul><p class="small muted">固定ID：${h(item.id)}</p></section>`;}
   bind(){
+    const selectStory=(id:string)=>{this.storyId=id;this.render();document.querySelector<HTMLElement>('#year-story-select')?.focus({preventScroll:true});document.querySelector('.year-story-intro')?.scrollIntoView({block:'start'});};
+    const storySelect=document.querySelector<HTMLSelectElement>('#year-story-select');
+    if(storySelect)storySelect.onchange=()=>selectStory(storySelect.value);
+    document.querySelectorAll<HTMLButtonElement>('[data-year-story]').forEach(button=>button.onclick=()=>selectStory(button.dataset.yearStory!));
+    document.querySelectorAll<HTMLButtonElement>('[data-timeline-mode]').forEach(button=>button.onclick=()=>{this.timelineMode=button.dataset.timelineMode==='full'?'full':'story';this.render();document.querySelector<HTMLButtonElement>(`[data-timeline-mode="${this.timelineMode}"]`)?.focus({preventScroll:true});});
     const form=document.querySelector<HTMLFormElement>('#ordering-options');
     if(form){form.onchange=event=>{const name=(event.target as HTMLSelectElement).name,d=new FormData(form);this.filter={level:d.get('orderLevel')==='all'?'all':Number(d.get('orderLevel')) as 1|2|3|4,region:String(d.get('orderRegion')),era:String(d.get('orderEra')),mode:String(d.get('orderMode')) as OrderingFilter['mode']};this.count=Number(d.get('orderCount'));this.render();document.querySelector<HTMLElement>(`#ordering-options [name="${name}"]`)?.focus({preventScroll:true});};form.onsubmit=event=>{event.preventDefault();void this.start();};}
     document.querySelectorAll<HTMLButtonElement>('[data-order-move]').forEach(button=>button.onclick=()=>{if(this.graded||this.busy)return;const i=Number(button.dataset.orderMove),j=i+Number(button.dataset.step);if(j<0||j>=4)return;[this.order[i],this.order[j]]=[this.order[j],this.order[i]];this.render();document.querySelector<HTMLElement>(`[data-order-move="${j}"][data-step="${button.dataset.step}"]`)?.focus({preventScroll:true});});
