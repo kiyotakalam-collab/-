@@ -22,7 +22,7 @@ async function endpoints(context:BrowserContext,options:{relations?:CultureRelat
   await context.route('**/catalog-delta.json*',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(delta)}));
   await context.route('**/culture-relations.json*',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(options.badRelations?.()?{schemaVersion:999}:options.relations??relations)}));
   // Existing year synchronisation must not mutate the sentinel database in these tests.
-  await context.route('**/year-events.json*',r=>r.fulfill({status:503,body:'year fixture unavailable'}));
+  await context.route('https://raw.githubusercontent.com/**/year-events.json*',r=>r.fulfill({status:503,body:'year fixture unavailable'}));
 }
 async function snapshot(page:Page):Promise<Snapshot>{
   return page.evaluate(async()=>{
