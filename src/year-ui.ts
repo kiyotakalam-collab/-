@@ -13,6 +13,7 @@ type Stage = 'setup' | 'studying' | 'finished';
 
 export class YearTestUI {
   private database: YearDB | null = null;
+  private loaded = false;
   private state: YearSnapshot = {catalog:structuredClone(EMPTY_YEARS), events:[], lastSyncAt:null, orderingEvents:[]};
   private chronology = new YearChronologyUI(()=>this.state,()=>this.database,async()=>{if(this.database)this.state=await this.database.load();},()=>this.rerender(),(text,error)=>this.notify(text,error),async()=>{if(this.syncPromise)await this.syncPromise;});
   private tab: YearPage = 'home';
@@ -40,6 +41,7 @@ export class YearTestUI {
     try {
       this.database = await openYearDatabase();
       this.state = await this.database.load();
+      this.loaded = true;
       this.rerender();
       void this.sync();
     } catch (error) {
@@ -48,6 +50,19 @@ export class YearTestUI {
     }
   }
   currentPage(): YearPage { return this.tab; }
+  insightSnapshot():YearSnapshot|null { return this.loaded?this.state:null; }
+  async startSelectedQuestions(ids:string[]) {
+    if(this.starting||this.busy||!this.database)return;
+    const generation=this.generation;this.starting=true;this.rerender();
+    try{
+      if(this.syncPromise)await this.syncPromise;
+      const latest=await this.database.load();if(generation!==this.generation)return;this.state=latest;
+      const available=new Map(this.questions(defaults()).map(question=>[question.id,question]));
+      const selected=[...new Set(ids)].flatMap(id=>available.has(id)?[available.get(id)!]:[]);
+      if(!selected.length){this.notify('現在、この範囲に出題可能な年号はありません。');return;}
+      this.filter=defaults();this.queue=selected;this.index=0;this.revealed=false;this.correctInSession=0;this.sessionId=crypto.randomUUID();this.stage='studying';
+    }catch(error){this.notify(String(error),true);}finally{this.starting=false;this.rerender();}
+  }
   navigate(tab: YearPage) {
     if (this.tab !== tab) this.leave();
     this.tab = tab;
