@@ -1,3 +1,5 @@
+import {advanceRetention,retentionFromEvidence,aggregateRetention,RETENTION_LABELS,type RetentionEvidence,type Retention} from './retention.ts';
+import type {ErrorAnnotation} from './error-causes';
 /** Independent content and pure learning rules for the ambiguous-terms area. */
 export const AMBIGUOUS_CAUSES=['名称類似','同一戦争・同一事件','同一国家','年代近接','同一地域','内容・役割類似','因果関係・前後関係','その他'] as const;
 export type AmbiguousKind='recall'|'identify'|'compare';
@@ -17,7 +19,7 @@ export interface AmbCard extends Managed {
 }
 export interface AmbCatalog {schemaVersion:1;version:number;updatedAt:string;terms:AmbTerm[];groups:AmbGroup[];cards:AmbCard[]}
 export interface AmbReview {id:string;questionId:string;groupId:string;termIds:string[];kind:AmbiguousKind;correct:boolean;selectedTermId:string|null;at:string;sessionId:string}
-export interface AmbSnapshot {catalog:AmbCatalog;events:AmbReview[];lastSyncAt:string|null}
+export interface AmbSnapshot {catalog:AmbCatalog;events:AmbReview[];lastSyncAt:string|null;errorCauses?:ErrorAnnotation[]}
 export const EMPTY_AMBIGUOUS:AmbCatalog={schemaVersion:1,version:1,updatedAt:'2026-11-10T00:00:00.000Z',terms:[],groups:[],cards:[]};
 export const AMBIGUOUS_URL='https://raw.githubusercontent.com/kiyotakalam-collab/-/main/public/ambiguous-terms.json';
 const record=(x:unknown):x is Record<string,unknown>=>!!x&&typeof x==='object'&&!Array.isArray(x);
@@ -81,20 +83,14 @@ export function activeAmbiguous(catalog:AmbCatalog){
   const cards=catalog.cards.filter(c=>!c.deleted&&groups.has(c.groupId)&&[...c.termIds,...c.optionTermIds].every(id=>terms.has(id)));
   return {terms,groups,cards};
 }
-export interface AmbProgress {correct:number;wrong:number;attempts:number;streak:number;recent:boolean[];lastAt:string;nextReviewAt:string}
+export interface AmbProgress {retention?:RetentionEvidence;correct:number;wrong:number;attempts:number;streak:number;recent:boolean[];lastAt:string;nextReviewAt:string}
 export function ambiguousProgress(events:AmbReview[]){
-  const map=new Map<string,AmbProgress>();for(const event of [...events].sort((a,b)=>a.at.localeCompare(b.at)||a.id.localeCompare(b.id))){const p=map.get(event.questionId)??{correct:0,wrong:0,attempts:0,streak:0,recent:[],lastAt:'',nextReviewAt:''};p.attempts++;if(event.correct){p.correct++;p.streak++;}else{p.wrong++;p.streak=0;}p.recent=[...p.recent.slice(-4),event.correct];p.lastAt=event.at;p.nextReviewAt=new Date(Date.parse(event.at)+(event.correct?[1,3,7,14,30,60][Math.min(5,p.streak-1)]*86400000:600000)).toISOString();map.set(event.questionId,p);}return map;
+  const map=new Map<string,AmbProgress>();for(const event of [...events].sort((a,b)=>a.at.localeCompare(b.at)||a.id.localeCompare(b.id))){const p:AmbProgress=map.get(event.questionId)??{correct:0,wrong:0,attempts:0,streak:0,recent:[],lastAt:'',nextReviewAt:''};p.retention=advanceRetention(p.retention,event.correct,event.at,p.lastAt||null,p.nextReviewAt||null);p.attempts++;if(event.correct){p.correct++;p.streak++;}else{p.wrong++;p.streak=0;}p.recent=[...p.recent.slice(-4),event.correct];p.lastAt=event.at;p.nextReviewAt=new Date(Date.parse(event.at)+(event.correct?[1,3,7,14,30,60][Math.min(5,p.streak-1)]*86400000:600000)).toISOString();map.set(event.questionId,p);}return map;
 }
-export type AmbMastery='unseen'|'review'|'learning'|'stable';
-export const AMB_MASTERY_LABELS:Record<AmbMastery,string>={unseen:'未学習',review:'要復習',learning:'定着途中',stable:'安定'};
-export function ambiguousMastery(p:AmbProgress|undefined,now=Date.now()):AmbMastery {
-  if(!p)return 'unseen';const age=Math.max(0,now-Date.parse(p.lastAt)),recent=p.recent.slice(-3);
-  if(Date.parse(p.nextReviewAt)<=now||p.recent.at(-1)===false||recent.filter(v=>!v).length>=2||age>=30*86400000&&p.streak<3)return 'review';
-  return p.streak>=3&&recent.length===3&&recent.every(Boolean)&&age<30*86400000?'stable':'learning';
-}
-export function aggregateAmbiguousMastery(cards:AmbCard[],progress:Map<string,AmbProgress>,now=Date.now()):AmbMastery {
-  const states=cards.map(card=>ambiguousMastery(progress.get(card.id),now));if(!states.length||states.every(s=>s==='unseen'))return 'unseen';if(states.includes('review'))return 'review';return states.every(s=>s==='stable')?'stable':'learning';
-}
+export type AmbMastery=Retention;
+export const AMB_MASTERY_LABELS=RETENTION_LABELS;
+export function ambiguousMastery(p:AmbProgress|undefined,_now=Date.now()):AmbMastery{return retentionFromEvidence(p?.retention,p?.attempts??0);}
+export function aggregateAmbiguousMastery(cards:AmbCard[],progress:Map<string,AmbProgress>,now=Date.now()):AmbMastery{return aggregateRetention(cards.map(card=>ambiguousMastery(progress.get(card.id),now)));}
 export function ambiguousStatus(catalog:AmbCatalog,events:AmbReview[],now=Date.now()){
   const active=activeAmbiguous(catalog),p=ambiguousProgress(events),terms=new Map<string,AmbMastery>(),groups=new Map<string,AmbMastery>();
   const byTerm=new Map<string,AmbCard[]>(),byGroup=new Map<string,AmbCard[]>();

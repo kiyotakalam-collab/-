@@ -1,3 +1,6 @@
+import {WeaknessUI} from './weakness-ui';
+import {ErrorCauseUI} from './error-cause-ui';
+import {saveErrorCause,type CauseArea,type ErrorCause} from './error-causes';
 import './style.css';
 import './study-areas.css';
 import './year-area.css';
@@ -98,9 +101,11 @@ function toast(message: string, error = false) {
   el.textContent=message; el.className=error?'toast error':'toast';
   window.setTimeout(()=>{if(el?.textContent===message)el.className='toast hidden';},5500);
 }
-const yearFeature = new YearTestUI(()=>{if(state&&['years','portal','settings','calendar','mastery'].includes(view))render();},toast);
-const ambiguousFeature=new AmbiguousUI(()=>{if(state&&['ambiguous','portal','settings'].includes(view))render();},toast);
-const insightsFeature=new LearningInsightsUI(()=>({catalog:state.catalog,events:state.events,years:yearFeature.insightSnapshot()}),()=>render(),(area,ids)=>{void startInsightSession(area,ids);});
+const causeFeature=new ErrorCauseUI(saveCauseAndReload,()=>render(),toast);
+const yearFeature = new YearTestUI(()=>{if(state&&['years','portal','settings','calendar','mastery'].includes(view))render();},toast,(area,id)=>causeFeature.offer(area,id));
+const ambiguousFeature=new AmbiguousUI(()=>{if(state&&['ambiguous','portal','settings','mastery'].includes(view))render();},toast,id=>causeFeature.offer('ambiguous',id));
+const weaknessFeature=new WeaknessUI(()=>({catalog:state.catalog,events:state.events,years:yearFeature.insightSnapshot(),ambiguous:ambiguousFeature.insightSnapshot(),errorCauses:[...(state.errorCauses??[]),...(yearFeature.insightSnapshot()?.errorCauses??[]),...(ambiguousFeature.insightSnapshot()?.errorCauses??[])]}),()=>render(),(area,ids)=>{void startAnalysisSession(area,ids);},saveCauseAndReload,toast);
+const insightsFeature=new LearningInsightsUI(()=>({catalog:state.catalog,events:state.events,years:yearFeature.insightSnapshot()}),()=>render(),(area,ids)=>{void startInsightSession(area,ids);},()=>weaknessFeature.render());
 const featureContext=():FeatureContext=>({catalog:state.catalog,events:state.events,comparisonEvents:state.comparisonEvents??[],relations:relationData,catalogSyncing:syncing});
 const compareFeature=new CompareUI(featureContext,async events=>{await db.recordComparisons(events);state=await db.load();},()=>{if(view==='compare')render();},toast,id=>openGraph(id));
 const graphFeature=new GraphUI(featureContext,()=>{if(view==='graph')render();},ids=>{void startRelatedSession(ids);},id=>openCompare(id));
@@ -124,7 +129,7 @@ function render() {
   const content=view==='ambiguous'?ambiguousFeature.render():view==='calendar'?insightsFeature.calendar():view==='mastery'?insightsFeature.mastery():view==='portal'?portal():view==='home'?home():view==='setup'?setup():view==='study'?study():view==='history'?history():view==='review'?cultureReview():view==='library'?library():view==='years'?yearFeature.render():view==='compare'?relationStatus()+compareFeature.render():view==='graph'?relationStatus()+graphFeature.render():settings()+yearFeature.renderTools()+ambiguousFeature.renderTools();
   app.innerHTML=`<div class="main-shell area-shell ${inArea?'with-area-nav':''} ${area==='years'&&inArea?'year-area':''}"><header class="topbar area-topbar"><a class="app-brand" href="#/" data-nav="portal">${icon('book')}<span>世界史学習マスター</span></a><button class="area-settings" data-nav="settings" aria-label="データ管理・設定">${icon('settings')}</button></header>
   ${view!=='portal'?`<div class="area-location"><button class="text-button" data-nav="portal">‹ 総合ホームに戻る</button><span class="area-badge">${view==='settings'?'共通設定':['calendar','mastery'].includes(view)?'共通の学習管理':label+'エリア'}</span></div>`:''}
-  <main id="main" tabindex="-1">${content}</main><footer class="page-footer"><span>世界史学習マスター</span><span>${navigator.onLine?'学習記録は端末内に保存':'オフライン · 保存済み教材で学習'}</span></footer></div>${inArea?`<nav class="mobile-nav ${area==='ambiguous'?'ambiguous-nav':''}" aria-label="${label}メニュー">${nav()}</nav>`:''}<dialog id="image-dialog"><button class="icon-button dialog-close" aria-label="画像を閉じる" data-action="close-image">${icon('close')}</button><div id="image-dialog-content"></div></dialog>`;
+  <main id="main" tabindex="-1">${causeFeature.html()}${content}</main><footer class="page-footer"><span>世界史学習マスター</span><span>${navigator.onLine?'学習記録は端末内に保存':'オフライン · 保存済み教材で学習'}</span></footer></div>${inArea?`<nav class="mobile-nav ${area==='ambiguous'?'ambiguous-nav':''}" aria-label="${label}メニュー">${nav()}</nav>`:''}<dialog id="image-dialog"><button class="icon-button dialog-close" aria-label="画像を閉じる" data-action="close-image">${icon('close')}</button><div id="image-dialog-content"></div></dialog>`;
   bind();
 }
 function portal(){
@@ -269,6 +274,15 @@ window.addEventListener('popstate',event=>{
   else if(route?.view==='years')goYear(route.yearPage||'home',false);
   else go(route?.view&&['portal','home','setup','library','history','review','settings','compare','graph','calendar','mastery'].includes(route.view)?route.view:'portal',false);
 });
+async function saveCauseAndReload(area:CauseArea,eventId:string,cause:ErrorCause|null){
+  await saveErrorCause(area,eventId,cause);
+  if(area==='culture')state=await db.load();else if(area==='ambiguous')await ambiguousFeature.refreshSnapshot();else await yearFeature.refreshSnapshot();
+}
+async function startAnalysisSession(area:CauseArea,ids:string[]){
+  if(area==='ordering'){goYear('ordering');await yearFeature.startOrderingQuestions(ids);return;}
+  if(area==='ambiguous'){go('ambiguous',false);ambiguousFeature.navigate('quiz');ambiguousRoute='quiz';rememberRoute();render();focusPage();await ambiguousFeature.startSelectedQuestions(ids);return;}
+  await startInsightSession(area,ids);
+}
 async function startInsightSession(target:LearningArea,ids:string[]){
   if(saving){toast('回答を保存しています。少し待ってください。');return;}
   if(target==='years'){goYear('quiz');await yearFeature.startSelectedQuestions(ids);return;}
@@ -372,6 +386,8 @@ function sync():Promise<void>{
 
 function message(e:unknown){return e instanceof Error?e.message:String(e);}
 function bind(){
+  causeFeature.bind();
+  if(view==='mastery')weaknessFeature.bind();
   yearFeature.bind();
   ambiguousFeature.bind();
   if(view==='calendar'||view==='mastery')insightsFeature.bind();
@@ -427,7 +443,7 @@ async function grade(correct:boolean){
   saving=true;const activeSession=sessionId,answeredAt=position,cardId=queue[position].id;
   document.querySelectorAll<HTMLButtonElement>('[data-grade]').forEach(b=>b.disabled=true);
   try{
-    await db.recordReview(cardId,correct,activeSession);
+    const event=await db.recordReview(cardId,correct,activeSession);if(!correct)causeFeature.offer('culture',event.id);
     if(sessionId===activeSession&&position===answeredAt){if(correct)sessionCorrect++;position++;revealed=false;}
     state=await db.load();
   }catch(e){toast(`回答を保存できませんでした。もう一度お試しください。${message(e)}`,true);}

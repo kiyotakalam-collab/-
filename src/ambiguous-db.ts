@@ -1,3 +1,4 @@
+import {readErrorCauses,restoreErrorCauses} from './error-causes';
 import { activeAmbiguous, AMBIGUOUS_URL, EMPTY_AMBIGUOUS, mergeAmbiguousCatalog, validateAmbiguousCatalog, validateAmbiguousReview, type AmbCatalog, type AmbReview, type AmbSnapshot } from './ambiguous';
 
 export class AmbiguousDB {
@@ -10,7 +11,7 @@ export class AmbiguousDB {
   }
   async load():Promise<AmbSnapshot>{
     const tx=this.database.transaction(['meta','events'],'readonly'),[catalog,events,lastSyncAt]=await Promise.all([this.req<AmbCatalog|undefined>(tx.objectStore('meta').get('catalog')),this.req<AmbReview[]>(tx.objectStore('events').getAll()),this.req<string|undefined>(tx.objectStore('meta').get('lastSyncAt'))]);
-    return {catalog:catalog??structuredClone(EMPTY_AMBIGUOUS),events,lastSyncAt:lastSyncAt??null};
+    return {catalog:catalog??structuredClone(EMPTY_AMBIGUOUS),events,lastSyncAt:lastSyncAt??null,errorCauses:await readErrorCauses(tx.objectStore('meta'))};
   }
   async applyCatalog(input:unknown){const incoming=validateAmbiguousCatalog(input);await this.write(async tx=>{const meta=tx.objectStore('meta'),old=await this.req<AmbCatalog|undefined>(meta.get('catalog'));const merged=mergeAmbiguousCatalog(old??structuredClone(EMPTY_AMBIGUOUS),incoming);await this.req(meta.put(merged,'catalog'));await this.req(meta.put(new Date().toISOString(),'lastSyncAt'));});}
   async grade(id:string,questionId:string,sessionId:string,selfCorrect:boolean|null,selectedTermId:string|null){
@@ -38,6 +39,7 @@ export class AmbiguousDB {
       const saved=await this.req<AmbReview[]>(store.getAll());for(const event of saved)validateAmbiguousReview(event,merged);
       let latest=await this.req<string|undefined>(meta.get('lastReviewAt'));
       for(const event of events){validateAmbiguousReview(event,merged);const existing=await this.req<AmbReview|undefined>(store.get(event.id));if(existing&&JSON.stringify(existing)!==JSON.stringify(event))throw Error('曖昧用語の履歴が競合しています。');if(!existing)await this.req(store.add(event));if(!latest||event.at>latest)latest=event.at;}
+      const allEvents=await this.req<AmbReview[]>(store.getAll());await restoreErrorCauses(meta,input.errorCauses,allEvents.map(e=>({area:'ambiguous' as const,id:e.id,correct:e.correct})));
       await this.req(meta.put(merged,'catalog'));if(latest)await this.req(meta.put(latest,'lastReviewAt'));
     });
   }

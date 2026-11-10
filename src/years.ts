@@ -1,3 +1,5 @@
+import {advanceRetention,type RetentionEvidence} from './retention';
+import {readErrorCauses,restoreErrorCauses,type ErrorAnnotation} from './error-causes';
 /** Separate year-quiz data and history. The culture database and its cards are never modified. */
 import { correctOrdering, orderingKey, validateOrderingReview, type OrderingReview } from './year-chronology';
 export type YearDirection = 'event-year' | 'year-event';
@@ -33,6 +35,7 @@ export interface YearSnapshot {
   events: YearReview[];
   lastSyncAt: string | null;
   orderingEvents: OrderingReview[];
+  errorCauses?: ErrorAnnotation[];
 }
 export interface YearQuestion {
   id: string;
@@ -92,13 +95,15 @@ export function mergeYearCatalog(current: YearCatalog, incoming: YearCatalog): Y
 }
 export function questionId(id:string, direction:YearDirection):string {return id + '::' + direction;}
 export interface YearProgress {
+  retention?:RetentionEvidence;
   correct:number; wrong:number; attempts:number; streak:number;
   lastAt:string|null; dueAt:number; recent:boolean[];
 }
 export function yearProgress(events:YearReview[]) {
   const map = new Map<string,YearProgress>();
   for(const ev of [...events].sort((a,b)=>Date.parse(a.at)-Date.parse(b.at)||a.id.localeCompare(b.id))) {
-    const value=map.get(ev.questionId)||{correct:0,wrong:0,attempts:0,streak:0,lastAt:null,dueAt:0,recent:[]};
+    const value:YearProgress=map.get(ev.questionId)||{correct:0,wrong:0,attempts:0,streak:0,lastAt:null,dueAt:0,recent:[]};
+    value.retention=advanceRetention(value.retention,ev.correct,ev.at,value.lastAt,value.attempts?value.dueAt:null);
     value.attempts++;
     if(ev.correct){value.correct++;value.streak++;}else{value.wrong++;value.streak=0;}
     value.recent=[...value.recent.slice(-4),ev.correct];
@@ -180,7 +185,7 @@ export class YearDB {
   async load():Promise<YearSnapshot>{
     const t=this.tx('readonly');
     const [c,e,at,orderingEvents]=await Promise.all([this.req<YearCatalog|undefined>(t.objectStore('meta').get('catalog')),this.req<YearReview[]>(t.objectStore('reviews').getAll()),this.req<string|null|undefined>(t.objectStore('meta').get('lastSyncAt')),this.req<OrderingReview[]>(t.objectStore('orderingReviews').getAll())]);
-    return {catalog:c??structuredClone(EMPTY_YEARS),events:e,lastSyncAt:at??null,orderingEvents};
+    return {catalog:c??structuredClone(EMPTY_YEARS),events:e,lastSyncAt:at??null,orderingEvents,errorCauses:await readErrorCauses(t.objectStore('meta'))};
   }
   async applyCatalog(input:YearCatalog):Promise<void>{
     const incoming=validateYearCatalog(input);
@@ -192,18 +197,18 @@ export class YearDB {
       await this.req(store.put(new Date().toISOString(),'lastSyncAt'));
     });
   }
-  async addReview(questionId:string,correct:boolean,sessionId:string):Promise<void>{
+  async addReview(questionId:string,correct:boolean,sessionId:string):Promise<YearReview>{
     const itemId=questionItemId(questionId);
     if(typeof correct!=='boolean'||!validId(sessionId))throw Error('年号回答が不正です。');
-    await this.write(async t=>{
+    return this.write(async t=>{
       const meta=t.objectStore('meta'),reviews=t.objectStore('reviews');
       const catalog=await this.req<YearCatalog|undefined>(meta.get('catalog'));
       if(!catalog?.items.some(item=>item.id===itemId&&!item.deleted))throw Error('出題できる年号が見つかりません。');
       let latest=await this.req<string|undefined>(meta.get('lastReviewAt'));
       if(!latest){const old=await this.req<YearReview[]>(reviews.getAll());latest=old.reduce((max,event)=>event.at>max?event.at:max,'');}
       const at=new Date(Math.max(Date.now(),latest?Date.parse(latest)+1:0)).toISOString();
-      await this.req(reviews.add({id:crypto.randomUUID(),questionId,correct,at,sessionId} satisfies YearReview));
-      await this.req(meta.put(at,'lastReviewAt'));
+      const event={id:crypto.randomUUID(),questionId,correct,at,sessionId} satisfies YearReview;
+      await this.req(reviews.add(event));await this.req(meta.put(at,'lastReviewAt'));return event;
     });
   }
   async exportBackup():Promise<string>{
@@ -265,6 +270,8 @@ export class YearDB {
         if(!lastOrdering||event.at>lastOrdering)lastOrdering=event.at;
       }
       if(lastOrdering)await this.req(meta.put(lastOrdering,'lastOrderingAt'));
+      const allReviews=await this.req<YearReview[]>(reviews.getAll()),allOrders=await this.req<import('./year-chronology').OrderingReview[]>(ordering.getAll());
+      await restoreErrorCauses(meta,parsed.errorCauses,[...allReviews.map(e=>({area:'years' as const,id:e.id,correct:e.correct})),...allOrders.map(e=>({area:'ordering' as const,id:e.id,correct:e.correct}))]);
     });
   }
 }

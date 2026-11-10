@@ -1,3 +1,4 @@
+import {readErrorCauses,restoreErrorCauses} from './error-causes';
 import { EMPTY_CATALOG, mergeCatalog, sameValue, validateBackup, validateCatalog, validateEvent, validateSettings } from './core';
 import { DEFAULT_SETTINGS, type AppState, type Backup, type Catalog, type ReviewEvent, type Settings } from './types';
 import type {ComparisonEvent,CultureRelations} from './culture-feature-types';
@@ -32,7 +33,7 @@ export class HistoryDB {
     return this.transaction('readonly', async tx => {
       const meta = tx.objectStore('meta');
       const [catalog, settings, events,comparisonEvents] = await Promise.all([request(meta.get('catalog')), request(meta.get('settings')), request(tx.objectStore('events').getAll()),request(tx.objectStore('comparisonEvents').getAll())]);
-      return {catalog: catalog ? validateCatalog(catalog) : structuredClone(EMPTY_CATALOG), settings: settings ? validateSettings(settings) : {...DEFAULT_SETTINGS}, events: events.map(validateEvent),comparisonEvents:comparisonEvents.map(validateComparisonEvent)};
+      return {catalog: catalog ? validateCatalog(catalog) : structuredClone(EMPTY_CATALOG), settings: settings ? validateSettings(settings) : {...DEFAULT_SETTINGS}, events: events.map(validateEvent),comparisonEvents:comparisonEvents.map(validateComparisonEvent),errorCauses:await readErrorCauses(meta)};
     });
   }
   async applyCatalog(incoming: Catalog): Promise<void> {
@@ -105,6 +106,7 @@ export class HistoryDB {
         if(!currentRelations||backup.relations.version>currentRelations.version)await request(meta.put(backup.relations,'cultureRelations'));
         else if(backup.relations.version===currentRelations.version&&!sameValue(currentRelations,backup.relations))throw new Error('バックアップの関係データが競合しています。');
       }
+      await restoreErrorCauses(meta,backup.errorCauses,[...byId.values()].map(e=>({area:'culture' as const,id:e.id,correct:e.correct})));
       await request(meta.put(catalog, 'catalog'));
       // Preserve the current endpoint when this device was already configured.
       await request(meta.put(savedSettings ? {...backup.settings, ...savedSettings} : backup.settings, 'settings'));
