@@ -71,6 +71,18 @@ export class GraphUI {
     }
     return this.graphCache!.value;
   }
+  private centerPicker(relations: CultureRelation[]) {
+    const ids = new Set(relations.flatMap(relation => [relation.fromId, relation.toId]));
+    const groups = new Map<string, KnowledgeItem[]>();
+    for (const id of ids) {
+      const item = this.items.get(id);
+      if (!item) continue;
+      const group = groups.get(item.region) ?? [];
+      group.push(item); groups.set(item.region, group);
+    }
+    if (!groups.size) return '';
+    return `<label class="form-field" for="culture-graph-center">関連図のある項目から選ぶ（${ids.size}項目）<select id="culture-graph-center"><option value="" ${ids.has(this.centerId) ? '' : 'selected'} disabled>人物・作品・思想を選択</option>${[...groups].map(([region, items]) => `<optgroup label="${h(region)}">${items.sort((a,b) => a.canonicalName.localeCompare(b.canonicalName,'ja')).map(item => `<option value="${h(item.id)}" ${item.id === this.centerId ? 'selected' : ''}>${h(item.canonicalName)}</option>`).join('')}</optgroup>`).join('')}</select></label>`;
+  }
   private status(id: string) {
     const cards = this.cards.get(id) ?? [], live = cards.filter(card => !card.deleted);
     let correct = 0, wrong = 0, studied = 0, due = 0, next: string | null = null;
@@ -93,7 +105,7 @@ export class GraphUI {
     const text = this.query.trim().normalize('NFKC').toLocaleLowerCase('ja');
     const matches = text ? [...this.items.values()].filter(item => `${item.canonicalName} ${item.aliases.join(' ')}`.normalize('NFKC').toLocaleLowerCase('ja').includes(text)).slice(0,20) : [];
     const heading = `<section class="page-heading"><div><div class="eyebrow">CONNECT YOUR KNOWLEDGE</div><h1>文化史の関連図</h1><p>確認できた関係から、人物・作品・思想のつながりをたどります。</p></div></section>`;
-    return `<div id="culture-graph" class="culture-feature">${heading}<section class="panel graph-search-panel"><label class="form-field" for="culture-graph-search">人物・作品・思想を検索<input id="culture-graph-search" type="search" value="${h(this.query)}" placeholder="例：朱熹、プラトン、作品名" autocomplete="off" aria-controls="graph-search-results"></label><div id="graph-search-results" aria-live="polite">${text ? matches.length ? `<p class="small muted">${matches.length}件を表示（最大20件）</p><div class="graph-search-results">${matches.map(item => `<button class="graph-search-choice" data-graph-center="${h(item.id)}"><strong>${h(item.canonicalName)}</strong><small>${h(item.region)} · ${h(broadEra(item))}</small></button>`).join('')}</div>` : '<p class="feature-empty-inline">一致する用語はありません。</p>' : ''}</div></section>
+    return `<div id="culture-graph" class="culture-feature">${heading}<section class="panel graph-search-panel">${this.centerPicker(available.relations)}<label class="form-field" for="culture-graph-search">人物・作品・思想を検索<input id="culture-graph-search" type="search" value="${h(this.query)}" placeholder="例：朱熹、プラトン、作品名" autocomplete="off" aria-controls="graph-search-results"></label><div id="graph-search-results" aria-live="polite">${text ? matches.length ? `<p class="small muted">${matches.length}件を表示（最大20件）</p><div class="graph-search-results">${matches.map(item => `<button class="graph-search-choice" data-graph-center="${h(item.id)}"><strong>${h(item.canonicalName)}</strong><small>${h(item.region)} · ${h(broadEra(item))}</small></button>`).join('')}</div>` : '<p class="feature-empty-inline">一致する用語はありません。</p>' : ''}</div></section>
       ${!available.relations.length ? '<section class="panel feature-empty"><h2>関係データは準備中です</h2><p>取得済みの関係データがない場合も、通常の文化史演習は利用できます。オンラインで教材を確認してから、もう一度開いてください。</p></section>' : ''}
       ${center ? `<section class="panel graph-panel"><div class="section-title"><h2>選択中：${h(center.canonicalName)}</h2></div><div class="feature-segmented" role="group" aria-label="関係をたどる範囲"><button data-graph-hop="1" aria-pressed="${this.hops === 1}">1段階</button><button data-graph-hop="2" aria-pressed="${this.hops === 2}">2段階</button></div><div class="feature-segmented graph-display-switch" role="group" aria-label="関連図の表示形式"><button data-graph-display="diagram" aria-pressed="${this.display === 'diagram'}">関連図</button><button data-graph-display="list" aria-pressed="${this.display === 'list'}">関係の一覧</button></div><p class="small muted">${graph.nodes.length}項目・${graph.edges.length}関係を表示。矢印は関係の向きを表します。</p>
       ${this.display === 'diagram' ? this.diagram(graph.nodes,graph.edges) : this.edgeList(graph.edges)}${!graph.edges.length ? '<p class="feature-empty-inline">この項目の関係は、まだ収録されていません。関係を推測して追加することはありません。</p>' : ''}${graph.omitted ? `<p class="small muted" role="status">さらに${graph.omitted}項目あります。画面の見やすさのため一部を省略しています。</p>${this.limit < 20 ? '<button class="button secondary" data-graph-action="expand">最大20項目まで表示</button>' : ''}` : ''}<button class="button secondary graph-study-all" data-graph-action="study-visible" ${graph.nodes.some(item => (this.cards.get(item.id) ?? []).some(card => !card.deleted)) ? '' : 'disabled'}>この関係の通常カードを復習する</button></section>` : ''}
@@ -151,6 +163,8 @@ export class GraphUI {
     if (!center) { const title = document.querySelector<HTMLElement>('#graph-detail-title'); title?.focus({preventScroll:true}); title?.scrollIntoView({block:'nearest'}); }
   }
   bind() {
+    const picker = document.querySelector<HTMLSelectElement>('#culture-graph-center');
+    if (picker) picker.onchange = () => { this.choose(picker.value,true); document.querySelector<HTMLSelectElement>('#culture-graph-center')?.focus({preventScroll:true}); };
     const search = document.querySelector<HTMLInputElement>('#culture-graph-search');
     if (search) search.oninput = () => { this.query = search.value; const cursor = search.selectionStart; this.refresh('culture-graph-search'); const next = document.querySelector<HTMLInputElement>('#culture-graph-search'); try { next?.setSelectionRange(cursor,cursor); } catch { /* Browser-specific search selection support. */ } };
     document.querySelectorAll<HTMLButtonElement>('[data-graph-center]').forEach(button => button.onclick = () => this.choose(button.dataset.graphCenter!,true));

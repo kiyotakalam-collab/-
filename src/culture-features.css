@@ -61,6 +61,7 @@
 .feature-button-stack>.button{width:100%}
 .graph-search-panel{padding-bottom:19px!important}
 .graph-search-panel .form-field{font-size:13px}
+.graph-search-panel .form-field + .form-field{margin-top:16px}
 .graph-search-results{display:grid;gap:7px;margin-top:12px}
 .graph-search-choice{display:flex;flex-direction:column;align-items:flex-start;gap:5px;padding:12px 14px;border:1px solid #e2e8dc;border-radius:9px;background:#fafcf7;text-align:left;color:#49663e}
 .graph-search-choice strong{font-size:14px;line-height:1.7;font-weight:550}
