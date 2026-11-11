@@ -34,7 +34,7 @@ test('教材0件の第3エリアが正常に開き、既存エリアと独立し
   const before=await others(page);
   for(const route of ['quiz','groups','terms','review']){await page.locator(`.mobile-nav [data-amb-route=${route}]`).click();await expect(page.locator(`[data-amb-page=${route}]`)).toBeVisible();}
   await page.locator('[data-amb-route=history]').click();await expect(page.locator('[data-amb-page=history]')).toContainText('演習履歴はまだ');await home(page);await page.locator('.mobile-nav [data-amb-route=quiz]').click();await expect(page.locator('#amb-options button:not([type=button])')).toBeDisabled();
-  expect(await others(page)).toEqual(before);expect((await snapshot(page)).events).toEqual([]);await page.locator('header [data-nav=portal]').click();await expect(page.locator('[data-enter-area]')).toHaveCount(4);
+  expect(await others(page)).toEqual(before);expect((await snapshot(page)).events).toEqual([]);await page.locator('header [data-nav=portal]').click();await expect(page.locator('[data-enter-area]')).toHaveCount(5);
 });
 
 test('3形式を採点し、比較表と用語別・グループ別定着度、累積誤答を独立して保持する',async({page,context})=>{
