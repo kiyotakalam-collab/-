@@ -1,4 +1,5 @@
 import {MapUI,type MapPage} from './map-ui';
+import {ChronologyErrorUI} from './chronology-error-ui';
 import './map-area.css';
 import {WeaknessUI} from './weakness-ui';
 import {ErrorCauseUI} from './error-cause-ui';
@@ -30,9 +31,9 @@ import { YearTestUI } from './year-ui';
 import { DEFAULT_FILTER, type AppState, type Card, type StudyFilter, type Level, type ImageAsset } from './types';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
-type View = 'portal' | 'home' | 'setup' | 'study' | 'years' | 'library' | 'history' | 'review' | 'settings' | 'compare' | 'graph' | 'calendar' | 'mastery' | 'ambiguous' | 'maps';
+type View = 'chronology-errors' | 'portal' | 'home' | 'setup' | 'study' | 'years' | 'library' | 'history' | 'review' | 'settings' | 'compare' | 'graph' | 'calendar' | 'mastery' | 'ambiguous' | 'maps';
 type YearPage = 'home' | 'quiz' | 'list' | 'history' | 'review' | 'ordering' | 'timeline';
-let area: 'culture' | 'years' | 'ambiguous' | null = null;
+let area: 'culture' | 'years' | 'ambiguous' | 'chronology-errors' | null = null;
 let ambiguousRoute='home';
 let mapRoute:MapPage='map';
 let yearPage: YearPage = 'home';
@@ -104,6 +105,8 @@ function toast(message: string, error = false) {
   el.textContent=message; el.className=error?'toast error':'toast';
   window.setTimeout(()=>{if(el?.textContent===message)el.className='toast hidden';},5500);
 }
+const chronologyErrorsFeature=new ChronologyErrorUI(()=>{if(view==='chronology-errors'||view==='portal')render();},toast);
+chronologyErrorsFeature.init();
 const mapFeature=new MapUI(()=>{if(state&&['maps','portal'].includes(view))render();},toast);
 const causeFeature=new ErrorCauseUI(saveCauseAndReload,()=>render(),toast);
 const yearFeature = new YearTestUI(()=>{if(state&&['years','portal','settings','calendar','mastery'].includes(view))render();},toast,(area,id)=>causeFeature.offer(area,id));
@@ -130,11 +133,11 @@ function render() {
     const next=yearFeature.currentPage();
     if(next!==yearPage){yearPage=next;rememberRoute();}
   }
-  const inArea=!['portal','settings','calendar','mastery','maps'].includes(view);
+  const inArea=!['portal','settings','calendar','mastery','maps','chronology-errors'].includes(view);
   const label=area==='ambiguous'?'曖昧用語':area==='years'?'年号':'文化史';
-  const content=view==='maps'?mapFeature.render():view==='ambiguous'?ambiguousFeature.render():view==='calendar'?insightsFeature.calendar():view==='mastery'?insightsFeature.mastery():view==='portal'?portal():view==='home'?home():view==='setup'?setup():view==='study'?study():view==='history'?history():view==='review'?cultureReview():view==='library'?library():view==='years'?yearFeature.render():view==='compare'?relationStatus()+compareFeature.render():view==='graph'?relationStatus()+graphFeature.render():settings()+yearFeature.renderTools()+ambiguousFeature.renderTools();
+  const content=view==='chronology-errors'?chronologyErrorsFeature.render():view==='maps'?mapFeature.render():view==='ambiguous'?ambiguousFeature.render():view==='calendar'?insightsFeature.calendar():view==='mastery'?insightsFeature.mastery():view==='portal'?portal():view==='home'?home():view==='setup'?setup():view==='study'?study():view==='history'?history():view==='review'?cultureReview():view==='library'?library():view==='years'?yearFeature.render():view==='compare'?relationStatus()+compareFeature.render():view==='graph'?relationStatus()+graphFeature.render():settings()+yearFeature.renderTools()+ambiguousFeature.renderTools();
   app.innerHTML=`<div class="main-shell area-shell ${inArea?'with-area-nav':''} ${area==='years'&&inArea?'year-area':''}"><header class="topbar area-topbar"><a class="app-brand" href="#/" data-nav="portal">${icon('book')}<span>世界史学習マスター</span></a><button class="area-settings" data-nav="settings" aria-label="データ管理・設定">${icon('settings')}</button></header>
-  ${view!=='portal'?`<div class="area-location"><button class="text-button" data-nav="portal">‹ 総合ホームに戻る</button><span class="area-badge">${view==='maps'?'地図エリア':view==='settings'?'共通設定':['calendar','mastery'].includes(view)?'共通の学習管理':label+'エリア'}</span></div>`:''}
+  ${view!=='portal'?`<div class="area-location"><button class="text-button" data-nav="portal">‹ 総合ホームに戻る</button><span class="area-badge">${view==='chronology-errors'?'通史の誤答ノート':view==='maps'?'地図エリア':view==='settings'?'共通設定':['calendar','mastery'].includes(view)?'共通の学習管理':label+'エリア'}</span></div>`:''}
   <main id="main" tabindex="-1">${causeFeature.html()}${content}</main><footer class="page-footer"><span>世界史学習マスター</span><span>${navigator.onLine?'学習記録は端末内に保存':'オフライン · 保存済み教材で学習'}</span></footer></div>${inArea?`<nav class="mobile-nav ${area==='ambiguous'?'ambiguous-nav':''}" aria-label="${label}メニュー">${nav()}</nav>`:''}<dialog id="image-dialog"><button class="icon-button dialog-close" aria-label="画像を閉じる" data-action="close-image">${icon('close')}</button><div id="image-dialog-content"></div></dialog>`;
   bind();
   if(regionalSearch){const input=document.querySelector<HTMLInputElement>('#map-region-search');if(input){input.value=regionalSearch.value;input.focus({preventScroll:true});if(regionalSearch.start!==null)input.setSelectionRange(regionalSearch.start,regionalSearch.end);}}
@@ -143,7 +146,7 @@ function portal(){
   const progress=getProgress(state.events);
   const due=activeCards().filter(c=>{const p=progress.get(c.id);return p?.nextReviewAt&&Date.parse(p.nextReviewAt)<=Date.now();}).length;
   const years=yearFeature.summary(),ambiguous=ambiguousFeature.summary();
-  return `<section class="portal-heading"><div class="eyebrow">YOUR WORLD HISTORY STUDY</div><h1>世界史学習マスター</h1><p>大学受験に向けて、今日の学びを積み重ねる。<br>学習するエリアを選んで始めましょう。</p></section><div class="area-choices"><section class="area-choice culture-choice"><div class="area-choice-heading"><span class="area-symbol">${icon('book')}</span><div><span class="eyebrow">CULTURAL HISTORY</span><h2>文化史</h2></div></div><p>文化史の問題演習<br><span>人物・作品・思想・画像</span></p><dl><div><dt>登録項目</dt><dd>${activeItems().length}<small>項目</small></dd></div><div><dt>復習対象</dt><dd>${due}<small>枚</small></dd></div></dl><button class="button primary" data-enter-area="culture">文化史を学習する ${icon('arrow')}</button></section><section class="area-choice chronology-choice"><div class="area-choice-heading"><span class="area-symbol">${icon('calendar')}</span><div><span class="eyebrow">CHRONOLOGY</span><h2>年号</h2></div></div><p>年号の暗記・問題演習<br><span>出来事と年号の対応</span></p><dl><div><dt>登録年号</dt><dd>${years.count}<small>件</small></dd></div><div><dt>復習対象</dt><dd>${years.due}<small>問</small></dd></div></dl><button class="button primary" data-enter-area="years">年号を学習する ${icon('arrow')}</button></section><section class="area-choice ambiguous-choice"><div class="area-choice-heading"><span class="area-symbol">${icon('book')}</span><div><span class="eyebrow">DISTINGUISH &amp; CONNECT</span><h2>曖昧用語</h2></div></div><p>似た用語を比較して識別<br><span>用語・背景・前後関係の違い</span></p><dl><div><dt>登録用語</dt><dd>${ambiguous.terms}<small>件</small></dd></div><div><dt>復習対象</dt><dd>${ambiguous.due}<small>問</small></dd></div></dl><button class="button primary" data-enter-area="ambiguous">曖昧用語を学習する ${icon('arrow')}</button></section><section class="area-choice map-choice"><div class="area-choice-heading"><span class="area-symbol">${icon('book')}</span><div><span class="eyebrow">HISTORICAL GEOGRAPHY</span><h2>地図</h2></div></div><p>場所と時代を確かめる<br><span>都市・国家の概略領域・資料の確認</span></p><dl><div><dt>検証済み地理項目</dt><dd>${mapFeature.summary().verified}<small>件</small></dd></div><div><dt>復習対象</dt><dd>${mapFeature.summary().due}<small>問</small></dd></div></dl><button class="button primary" data-enter-area="maps">地図を学習する ${icon('arrow')}</button></section></div><div class="insight-portal-links"><button class="button secondary" data-nav="calendar">復習カレンダー</button><button class="button secondary" data-nav="mastery">定着度ダッシュボード</button></div><p class="portal-note">学習記録と復習は、それぞれのエリアで管理します。</p><button class="button secondary portal-settings" data-nav="settings">${icon('settings')} データ管理・設定</button>`;
+  return `<section class="portal-heading"><div class="eyebrow">YOUR WORLD HISTORY STUDY</div><h1>世界史学習マスター</h1><p>大学受験に向けて、今日の学びを積み重ねる。<br>学習するエリアを選んで始めましょう。</p></section><div class="area-choices"><section class="area-choice culture-choice"><div class="area-choice-heading"><span class="area-symbol">${icon('book')}</span><div><span class="eyebrow">CULTURAL HISTORY</span><h2>文化史</h2></div></div><p>文化史の問題演習<br><span>人物・作品・思想・画像</span></p><dl><div><dt>登録項目</dt><dd>${activeItems().length}<small>項目</small></dd></div><div><dt>復習対象</dt><dd>${due}<small>枚</small></dd></div></dl><button class="button primary" data-enter-area="culture">文化史を学習する ${icon('arrow')}</button></section><section class="area-choice chronology-choice"><div class="area-choice-heading"><span class="area-symbol">${icon('calendar')}</span><div><span class="eyebrow">CHRONOLOGY</span><h2>年号</h2></div></div><p>年号の暗記・問題演習<br><span>出来事と年号の対応</span></p><dl><div><dt>登録年号</dt><dd>${years.count}<small>件</small></dd></div><div><dt>復習対象</dt><dd>${years.due}<small>問</small></dd></div></dl><button class="button primary" data-enter-area="years">年号を学習する ${icon('arrow')}</button></section><section class="area-choice ambiguous-choice"><div class="area-choice-heading"><span class="area-symbol">${icon('book')}</span><div><span class="eyebrow">DISTINGUISH &amp; CONNECT</span><h2>曖昧用語</h2></div></div><p>似た用語を比較して識別<br><span>用語・背景・前後関係の違い</span></p><dl><div><dt>登録用語</dt><dd>${ambiguous.terms}<small>件</small></dd></div><div><dt>復習対象</dt><dd>${ambiguous.due}<small>問</small></dd></div></dl><button class="button primary" data-enter-area="ambiguous">曖昧用語を学習する ${icon('arrow')}</button></section><section class="area-choice map-choice"><div class="area-choice-heading"><span class="area-symbol">${icon('book')}</span><div><span class="eyebrow">HISTORICAL GEOGRAPHY</span><h2>地図</h2></div></div><p>場所と時代を確かめる<br><span>都市・国家の概略領域・資料の確認</span></p><dl><div><dt>検証済み地理項目</dt><dd>${mapFeature.summary().verified}<small>件</small></dd></div><div><dt>復習対象</dt><dd>${mapFeature.summary().due}<small>問</small></dd></div></dl><button class="button primary" data-enter-area="maps">地図を学習する ${icon('arrow')}</button></section><section class="area-choice chronology-choice"><div class="area-choice-heading"><span class="area-symbol">${icon('history')}</span><div><span class="eyebrow">ERROR NOTEBOOK</span><h2>通史の誤答ノート</h2></div></div><p>演習で見つけた知識の穴を集約<br><span>出典・地域・時代・誤答原因を管理</span></p><dl><div><dt>登録した穴</dt><dd>${chronologyErrorsFeature.summary().count}<small>件</small></dd></div><div><dt>復習対象</dt><dd>${chronologyErrorsFeature.summary().due}<small>件</small></dd></div></dl><button class="button primary" data-enter-area="chronology-errors">誤答ノートを開く ${icon('arrow')}</button></section></div><div class="insight-portal-links"><button class="button secondary" data-nav="calendar">復習カレンダー</button><button class="button secondary" data-nav="mastery">定着度ダッシュボード</button></div><p class="portal-note">学習記録と復習は、それぞれのエリアで管理します。</p><button class="button secondary portal-settings" data-nav="settings">${icon('settings')} データ管理・設定</button>`;
 }
 function cultureReview(){
   const cards=activeCards(), p=getProgress(state.events), now=Date.now();
@@ -266,6 +269,7 @@ function go(next:View,push=true){
   if(view==='ambiguous'&&next!=='ambiguous')ambiguousFeature.leave();
   view=next;search='';
   if(['portal','calendar','mastery','maps'].includes(next))area=null;
+   else if(next==='chronology-errors')area='chronology-errors';
   else if(next==='ambiguous'){area='ambiguous';ambiguousRoute='home';ambiguousFeature.navigate('home');}
   else if(next==='years'){area='years';yearPage='home';yearFeature.navigate('home');}
   else if(next!=='settings')area='culture';
@@ -281,7 +285,7 @@ window.addEventListener('popstate',event=>{
   if(route?.view==='maps'){mapFeature.navigate(route.mapRoute||'map');mapRoute=mapFeature.currentPage();go('maps',false);}
   else if(route?.view==='ambiguous'){if(view==='years')yearFeature.leave();if(view==='compare')compareFeature.leave();navigationEpoch++;view='ambiguous';area='ambiguous';ambiguousFeature.navigate(route.ambiguousRoute||'home');ambiguousRoute=ambiguousFeature.currentRoute();render();focusPage();}
   else if(route?.view==='years')goYear(route.yearPage||'home',false);
-  else go(route?.view&&['portal','home','setup','library','history','review','settings','compare','graph','calendar','mastery'].includes(route.view)?route.view:'portal',false);
+  else go(route?.view&&['chronology-errors','portal','home','setup','library','history','review','settings','compare','graph','calendar','mastery'].includes(route.view)?route.view:'portal',false);
 });
 async function saveCauseAndReload(area:CauseArea,eventId:string,cause:ErrorCause|null){
   await saveErrorCause(area,eventId,cause);
@@ -396,6 +400,7 @@ function sync():Promise<void>{
 function message(e:unknown){return e instanceof Error?e.message:String(e);}
 function bind(){
   if(view==='maps')mapFeature.bind();
+  if(view==='chronology-errors')chronologyErrorsFeature.bind();
   causeFeature.bind();
   if(view==='mastery')weaknessFeature.bind();
   yearFeature.bind();
@@ -404,7 +409,7 @@ function bind(){
   if(view==='compare')compareFeature.bind();
   if(view==='graph')graphFeature.bind();
   bindKnowledgeActions();
-  document.querySelectorAll<HTMLElement>('[data-enter-area]').forEach(el=>el.onclick=()=>go(el.dataset.enterArea==='maps'?'maps':el.dataset.enterArea==='ambiguous'?'ambiguous':el.dataset.enterArea==='years'?'years':'home'));
+  document.querySelectorAll<HTMLElement>('[data-enter-area]').forEach(el=>el.onclick=()=>go(el.dataset.enterArea==='chronology-errors'?'chronology-errors':el.dataset.enterArea==='maps'?'maps':el.dataset.enterArea==='ambiguous'?'ambiguous':el.dataset.enterArea==='years'?'years':'home'));
   document.querySelectorAll<HTMLElement>('[data-year-nav]').forEach(el=>el.onclick=()=>goYear(el.dataset.yearNav as YearPage));
   document.querySelectorAll<HTMLElement>('[data-nav]').forEach(el=>el.onclick=e=>{e.preventDefault();go(el.dataset.nav as View);});
   document.querySelectorAll<HTMLElement>('[data-start]').forEach(el=>el.onclick=()=>{void start(el.dataset.start as StudyFilter['mode']);});
