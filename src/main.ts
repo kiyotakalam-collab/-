@@ -497,7 +497,8 @@ async function action(name:string){try{
 function zoom(im:ImageAsset){const d=document.querySelector<HTMLDialogElement>('#image-dialog')!;document.querySelector('#image-dialog-content')!.innerHTML=`<img src="${esc(safeUrl(im.url))}" alt="拡大した問題画像"><p>${revealed?esc(im.caption):'問題の画像'}</p><p class="small">${esc(im.author)} / <a href="${esc(safeUrl(im.licenseUrl))}" target="_blank" rel="noopener noreferrer">${esc(im.license)}</a> / <a href="${esc(safeUrl(im.sourceUrl))}" target="_blank" rel="noopener noreferrer">出典</a></p>`;d.showModal();}
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e as typeof installPrompt;if(view==='settings')render();});
 window.addEventListener('offline',()=>{toast('オフラインになりました。保存済み教材で学習できます。');if(state&&!cultureSessionActive())render();});
-window.addEventListener('online',()=>{if(state){if(!cultureSessionActive())render();void sync();void yearFeature.onOnline();void ambiguousFeature.onOnline();}});
+window.addEventListener('online',()=>{if(state){if(!cultureSessionActive())render();void sync();void yearFeature.onOnline();void ambiguousFeature.onOnline();void chronologyErrorsFeature.sync();}});
+window.addEventListener('focus',()=>void chronologyErrorsFeature.sync());
 window.addEventListener('keydown',e=>{if(view==='study' && !document.querySelector('dialog[open]') && !(e.target instanceof HTMLInputElement)){if(e.key===' '&&!revealed){e.preventDefault();void action('reveal');}else if(revealed&&e.key==='ArrowRight'){e.preventDefault();void grade(true);}else if(revealed&&e.key==='ArrowLeft'){e.preventDefault();void grade(false);}}});
 async function boot(){
   app.innerHTML='<div class="loading-state">学習ノートを開いています…</div>';
@@ -517,7 +518,7 @@ async function boot(){
     if(requestedAmbiguous){ambiguousFeature.navigate(requestedAmbiguous);ambiguousRoute=ambiguousFeature.currentRoute();}
     if(requestedYear){yearPage=requestedYear;yearFeature.navigate(requestedYear);}
     window.history.replaceState({view,area,yearPage,ambiguousRoute,mapRoute},'',requestedNotebook?'#/chronology-errors':requestedMap?'#/maps/'+mapRoute:requestedAmbiguous?'#/ambiguous/'+ambiguousRoute:requestedInsight?'#/'+requestedInsight:requestedYear?'#/years/'+requestedYear:requested?'#/culture/'+requested:'#/');
-    render();void yearFeature.initialize();void ambiguousFeature.initialize();void mapFeature.initialize();
+    render();void chronologyErrorsFeature.sync();void yearFeature.initialize();void ambiguousFeature.initialize();void mapFeature.initialize();
     void setupPwa({onUpdate:r=>{updateRegistration=r;updateStatus='新しい公開版が見つかりました。「新しいバージョンに更新」を押してください。';toast('新しいバージョンがあります。データ管理から更新できます。');if(view==='settings')render();},onError:()=>{updateStatus='更新確認で通信エラーが発生しました。';if(view==='settings')render();}}).then(r=>{pwaRegistration=r;});
     if(!navigator.onLine)void refreshCultureFeatures(false);
     void sync();
