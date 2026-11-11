@@ -50,7 +50,7 @@ export function addChronology(s:ChronologyCollection,raw:Omit<ChronologyNote,'id
  if(s.notes.some(n=>canonicalHole(n.question)===canonicalHole(question)&&canonicalHole(n.answer)===canonicalHole(answer)))
    throw Error('同じ知識の穴が登録済みです。既存の記録から誤答回数を更新してください。');
  const item=validateNote({...raw,question,answer,id:crypto.randomUUID(),createdAt:now,updatedAt:now,
-   lastReviewedAt:null,nextReviewAt:now,stage:0,wrongCount:1,correctCount:0});
+   lastReviewedAt:null,nextReviewAt:new Date(Date.parse(now)+DAY).toISOString(),stage:0,wrongCount:1,correctCount:0});
  return validateChronology({...s,notes:[...s.notes,item]});
 }
 export function gradeChronology(s:ChronologyCollection,id:string,correct:boolean,now=new Date().toISOString()):ChronologyCollection{
