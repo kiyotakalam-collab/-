@@ -85,6 +85,7 @@ describe('通史演習・既存93問と履歴の保護',()=>{
   const f=structuredClone(feed) as any;f.version++;f.problems[0].knowledge_id='knowledge-fixture';f.problems[0].question_type='basic';f.problems[0].verification='verified';f.problems[0].verification_sources=[{title:'試験用の検証資料'}];
   f.problems[1].knowledge_id='knowledge-fixture';f.problems[1].question_type='distinction';f.problems[1].verification='provisional';
   const s=applyChronologyFeed(base(),f,now);expect(s.notes[0].knowledgeId).toBe(s.notes[1].knowledgeId);
+  const changed=structuredClone(s);changed.notes[0].knowledgeId='different-knowledge';expect(()=>mergeChronology(s,changed)).toThrow('固定知識ID');
   expect(filterPractice(s).map(n=>n.id)).not.toContain(ids()[1]);expect(()=>startPractice(s,'single',[ids()[1]])).toThrow();
   delete f.problems[0].verification_sources;expect(()=>validateChronologyFeed(f)).toThrow('確認資料');delete f.problems[0].verification;expect(()=>validateChronologyFeed(f)).toThrow('検証状態');
  });

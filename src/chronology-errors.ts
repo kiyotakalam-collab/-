@@ -82,6 +82,7 @@ export function mergeChronology(local:ChronologyCollection,incoming:ChronologyCo
  for(const n of incoming.notes){
   const old=byId.get(n.id);
   if(!old){byId.set(n.id,n);continue;}
+  if(old.knowledgeId&&n.knowledgeId&&old.knowledgeId!==n.knowledgeId)throw Error('固定知識IDが競合しています。');
   if((old.question!==n.question||old.answer!==n.answer)&&(!old.masterUpdatedAt||!n.masterUpdatedAt))throw Error('同じIDの知識内容が競合しています。');
   const learned=(x:ChronologyNote)=>x.lastReviewedAt??(x.correctCount+x.wrongCount+(x.ambiguousCount??0)>0?x.updatedAt:'');
   const a=learned(old),b=learned(n);
