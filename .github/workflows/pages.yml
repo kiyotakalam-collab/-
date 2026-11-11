@@ -29,7 +29,22 @@ jobs:
       - run: npm run validate:maps
       - run: npm test
       - run: npm run build
-      - run: npx playwright install --with-deps chromium
+      - name: Prepare browser
+        shell: bash
+        run: |
+          # Hosted runners already include Chrome and its runtime libraries.
+          # Reuse it instead of requiring Ubuntu mirrors for extra fonts.
+          if command -v google-chrome > /dev/null 2>&1; then
+            browser_path="$(command -v google-chrome)"
+            "$browser_path" --version
+            printf 'CHROMIUM_PATH=%s\n' "$browser_path" >> "$GITHUB_ENV"
+          elif command -v chromium > /dev/null 2>&1; then
+            browser_path="$(command -v chromium)"
+            "$browser_path" --version
+            printf 'CHROMIUM_PATH=%s\n' "$browser_path" >> "$GITHUB_ENV"
+          else
+            npx playwright install --with-deps chromium
+          fi
       - name: Browser regression tests
         run: npm run test:e2e
       - name: Verify static files exist before publication
