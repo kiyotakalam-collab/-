@@ -2,13 +2,14 @@ import {describe,it,expect,vi} from 'vitest';
 import feed from '../public/chronology-errors.json';
 import {applyChronologyFeed,fetchChronologyFeed,validateChronologyFeed,InvalidChronologyFeedError} from '../src/chronology-sync';
 import {EMPTY_CHRONOLOGY,addChronology,gradeChronology,loadChronology,mergeChronology,CHRONOLOGY_NOTE_KEY,validateChronology} from '../src/chronology-errors';
-const now='2026-11-11T10:00:00.000Z';
+const now=new Date(Math.max(...feed.problems.map(p=>Date.parse(p.updated_at)))+86400000).toISOString();
 const empty=()=>structuredClone(EMPTY_CHRONOLOGY);
 describe('通史Sheets配信と履歴の分離',()=>{
- it('実シート読み戻し18件・空の出典と原因を検証し、登録を回答として扱わない',()=>{
+ it('実シート読戻しで慶應過去問の出典・設問番号を保持し、登録を回答として扱わない',()=>{
   const checked=validateChronologyFeed(feed),s=applyChronologyFeed(empty(),checked,now);
   expect(checked.problems).toHaveLength(feed.problems.length);
-  expect(checked.problems.every(p=>p.source===''&&p.source_detail===''&&p.cause==='')).toBe(true);
+  expect(checked.problems.some(p=>p.source==='慶應文学部過去問'&&p.source_detail.includes('年度'))).toBe(true);
+  expect(checked.problems.every(p=>p.cause==='')).toBe(true);
   expect(s.notes.every(n=>n.wrongCount===0&&n.correctCount===0&&n.nextReviewAt===null&&n.lastReviewedAt===null)).toBe(true);
  });
  it('再同期・本文修正・停止・削除行の同期でも既存回数と復習予定を保持する',()=>{
