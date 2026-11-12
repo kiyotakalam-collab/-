@@ -2,7 +2,7 @@ import {ERROR_CAUSES,type ErrorCause} from './error-causes';
 
 export const CHRONOLOGY_NOTE_KEY='world-history-chronology-errors-v1';
 export type PracticeResult='correct'|'wrong'|'ambiguous';
-export type PracticeMode='due'|'weak'|'random'|'range'|'single'|'selected'|'retry';
+export type PracticeMode='due'|'weak'|'incorrect'|'random'|'range'|'single'|'selected'|'retry';
 export interface PracticeEvent {id:string;sessionId:string;noteId:string;result:PracticeResult;mode:PracticeMode;answeredAt:string;dueBefore:string|null}
 export interface PracticeSession {id:string;mode:PracticeMode;questionIds:string[];position:number;startedAt:string;updatedAt:string;finishedAt:string|null}
 export interface ChronologyVerificationSource {title:string;url?:string}
@@ -100,7 +100,7 @@ export function dueChronology(s:ChronologyCollection,at=new Date().toISOString()
  return s.notes.filter(x=>x.active!==false&&x.nextReviewAt&&x.nextReviewAt<=at);
 }
 
-const MODES=['due','weak','random','range','single','selected','retry'];
+const MODES=['due','weak','incorrect','random','range','single','selected','retry'];
 function validatePracticeData(v:Record<string,unknown>,notes:ChronologyNote[]){
  const events=v.practiceEvents as PracticeEvent[]|undefined,sessions=v.practiceSessions as PracticeSession[]|undefined;
  if(events===undefined&&sessions===undefined&&v.activePracticeId===undefined)return {};
