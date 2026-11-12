@@ -2,7 +2,7 @@ import {describe,it,expect} from 'vitest';
 import feed from '../public/chronology-errors.json';
 import {applyChronologyFeed,validateChronologyFeed} from '../src/chronology-sync';
 import {gradeChronology,mergeChronology,validateChronology,type ChronologyCollection} from '../src/chronology-errors';
-import {startPractice,recordPractice,updatePractice,sessionResults,notePractice,selectPractice,filterPractice,weaknessScore,japanDate} from '../src/chronology-practice';
+import {startPractice,recordPractice,updatePractice,sessionResults,notePractice,selectPractice,filterPractice,lastPracticeResult,weaknessScore,japanDate} from '../src/chronology-practice';
 const now='2026-11-20T00:00:00.000Z',base=()=>applyChronologyFeed({version:1,notes:[]},feed,now);
 const ids=()=>feed.problems.slice(0,5).map(n=>n.id);
 function answer(s:ChronologyCollection,id:string,result:'correct'|'wrong'|'ambiguous',at=now,sessionId:string=crypto.randomUUID()){
@@ -48,6 +48,28 @@ describe('通史演習・既存93問と履歴の保護',()=>{
   s=answer(s,ids()[1],'wrong','2026-11-24T01:00:00.000Z');s=answer(s,ids()[1],'wrong','2026-11-24T01:20:00.000Z');
   expect(weaknessScore(s.notes[1],s.practiceEvents)).toBeGreaterThan(weaknessScore(s.notes[0],s.practiceEvents));
   expect(selectPractice(s,'weak',5)[0].id).toBe(ids()[1]);expect(s.notes[0].wrongCount).toBe(10);
+ });
+ it('直近不正解のみ：正解で除外・再失点で復帰し、曖昧/未回答/旧履歴は混ぜない',()=>{
+  let s=base();
+  const [a,b,c,d,e]=ids();
+  s=answer(s,a,'wrong','2026-11-20T00:01:00.000Z');
+  s=answer(s,b,'wrong','2026-11-20T00:02:00.000Z');
+  s=answer(s,b,'correct','2026-11-20T00:03:00.000Z');
+  s=answer(s,c,'wrong','2026-11-20T00:04:00.000Z');
+  s=answer(s,c,'ambiguous','2026-11-20T00:05:00.000Z');
+  s=answer(s,d,'correct','2026-11-20T00:06:00.000Z');
+  s.notes.find(n=>n.id===e)!.wrongCount=7; // Legacy accumulated mistakes have no last-result evidence.
+  expect(selectPractice(s,'incorrect',0).map(n=>n.id)).toEqual([a]);
+  expect(filterPractice(s,{answerStatus:'wrong'}).map(n=>n.id)).toEqual([a]);
+  expect(lastPracticeResult(s.notes.find(n=>n.id===b)!,s.practiceEvents)).toBe('correct');
+  expect(selectPractice(s,'weak',0).map(n=>n.id)).toContain(b); // Historical weakness stays available.
+  s=answer(s,b,'wrong','2026-11-20T00:07:00.000Z');
+  expect(selectPractice(s,'incorrect',0).map(n=>n.id)).toEqual([b,a]);
+  s=answer(s,b,'correct','2026-11-20T00:08:00.000Z');
+  expect(selectPractice(s,'incorrect',0).map(n=>n.id)).toEqual([a]);
+  const round=startPractice(s,'incorrect',[a],'2026-11-20T00:09:00.000Z','incorrect-session');
+  expect(validateChronology(JSON.parse(JSON.stringify(round))).practiceSessions!.at(-1)?.mode).toBe('incorrect');
+  expect(round.notes.find(n=>n.id===b)!.wrongCount).toBe(2);
  });
  it('短時間の繰り返しは安定にならず、実際の間隔と期限後正答を必要とする',()=>{
   let s=base();for(let i=0;i<4;i++)s=answer(s,ids()[0],'correct',`2026-11-20T00:00:0${i}.000Z`);

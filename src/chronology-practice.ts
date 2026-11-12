@@ -1,9 +1,9 @@
 import {gradeChronology,validateChronology,type ChronologyCollection,type ChronologyNote,type PracticeEvent,type PracticeSession,type PracticeMode,type PracticeResult} from './chronology-errors';
-export const PRACTICE_MODES:Record<PracticeMode,string>={due:'今日の復習',weak:'苦手集中',random:'ランダム演習',range:'範囲指定演習',single:'個別演習',selected:'選択問題の演習',retry:'間違い直し'};
+export const PRACTICE_MODES:Record<PracticeMode,string>={due:'今日の復習',weak:'苦手集中',incorrect:'直近不正解のみ',random:'ランダム演習',range:'範囲指定演習',single:'個別演習',selected:'選択問題の演習',retry:'間違い直し'};
 export const MASTERY_LABELS={unlearned:'未演習',initial:'定着初期',developing:'定着途中',stable:'安定',unknown:'再判定待ち'} as const;
 export type Mastery=keyof typeof MASTERY_LABELS;
-export interface PracticeFilter {query:string;region:string;era:string;cause:string;mastery:string;from:string;to:string;source:string}
-export const EMPTY_PRACTICE_FILTER:PracticeFilter={query:'',region:'',era:'',cause:'',mastery:'',from:'',to:'',source:''};
+export interface PracticeFilter {query:string;region:string;era:string;cause:string;mastery:string;from:string;to:string;source:string;answerStatus:string}
+export const EMPTY_PRACTICE_FILTER:PracticeFilter={query:'',region:'',era:'',cause:'',mastery:'',from:'',to:'',source:'',answerStatus:''};
 const DAY=86400000;
 export function notePractice(note:ChronologyNote,events:PracticeEvent[]=[]){
  const history=events.filter(e=>e.noteId===note.id).sort((a,b)=>a.answeredAt.localeCompare(b.answeredAt));
@@ -17,10 +17,14 @@ export function notePractice(note:ChronologyNote,events:PracticeEvent[]=[]){
  if(streak>=3&&spaced.length>=2&&Date.parse(last!.answeredAt)-Date.parse(trail[0].answeredAt)>=7*DAY)mastery='stable';
  return {history,recent,last,streak,missStreak,mastery,attempts,recentAccuracy:recent.length?recent.filter(e=>e.result==='correct').length/recent.length:null};
 }
+export function lastPracticeResult(n:ChronologyNote,events:PracticeEvent[]=[]):PracticeResult|null {
+ // Do not guess from cumulative counters: imported/legacy records have no last-answer status.
+ return notePractice(n,events).last?.result??null;
+}
 export function filterPractice(s:ChronologyCollection,f:Partial<PracticeFilter>={},at=new Date().toISOString()):ChronologyNote[]{
  const q=(f.query??'').trim().normalize('NFKC').toLowerCase();
  return s.notes.filter(n=>n.active!==false&&n.verification!=='provisional'&&(!f.region||n.region===f.region)&&(!f.era||n.era===f.era)&&(!f.source||n.source===f.source)&&
-  (!f.cause||(f.cause==='unrecorded'?n.cause==='':n.cause===f.cause))&&(!f.mastery||notePractice(n,s.practiceEvents).mastery===f.mastery)&&
+  (!f.cause||(f.cause==='unrecorded'?n.cause==='':n.cause===f.cause))&&(!f.answerStatus||lastPracticeResult(n,s.practiceEvents)===f.answerStatus)&&(!f.mastery||notePractice(n,s.practiceEvents).mastery===f.mastery)&&
   (!q||[n.term,n.question,n.answer,n.explanation].join(' ').normalize('NFKC').toLowerCase().includes(q))&&
   (!f.from||japanDate(n.createdAt)>=f.from)&&(!f.to||japanDate(n.createdAt)<=f.to));
 }
@@ -40,6 +44,10 @@ export function selectPractice(s:ChronologyCollection,mode:PracticeMode,limit:nu
  if(ids){const set=new Set(ids);rows=rows.filter(n=>set.has(n.id));}
  if(mode==='due')rows=rows.filter(n=>n.nextReviewAt!==null&&n.nextReviewAt<=at).sort((a,b)=>a.nextReviewAt!.localeCompare(b.nextReviewAt!));
  else if(mode==='weak')rows=rows.filter(n=>n.wrongCount>0||(n.ambiguousCount??0)>0).sort((a,b)=>weaknessScore(b,s.practiceEvents,at)-weaknessScore(a,s.practiceEvents,at)||a.id.localeCompare(b.id));
+ else if(mode==='incorrect')rows=rows.filter(n=>lastPracticeResult(n,s.practiceEvents)==='wrong').sort((a,b)=>{
+  const la=notePractice(a,s.practiceEvents).last!.answeredAt,lb=notePractice(b,s.practiceEvents).last!.answeredAt;
+  return lb.localeCompare(la)||a.id.localeCompare(b.id);
+ });
  else rows=shufflePractice(rows,random);
  const unique=[...new Map(rows.map(n=>[n.id,n])).values()];return limit===0?unique:unique.slice(0,limit);
 }
