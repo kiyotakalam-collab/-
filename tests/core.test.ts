@@ -175,15 +175,35 @@ describe('author/work direction and answer variety', () => {
     expect(selectCards(catalog, [], DEFAULT_FILTER)).toHaveLength(7);
     expect(selectCards(catalog, [], {...DEFAULT_FILTER, cardDirection:'work-author', cardType:'image'})).toEqual([]);
   });
-  it('spreads repeated authors, preserves every ID and does not mutate the catalog', () => {
+  it('suppresses repeated answers in a session without mutating the catalog or losing distinct facts', () => {
     const original = [...catalog.cards];
     const arranged = spreadSessionCards(original, 3);
     expect(arranged.map(c=>c.id)).toEqual(['aeneid-author','iliad-author','virgil-work']);
     expect(new Set(arranged.map(c=>c.answer)).size).toBe(3);
     expect(original.map(c=>c.id)).toEqual(catalog.cards.map(c=>c.id));
     expect(spreadSessionCards(original, 0)).toEqual([]);
-    expect(spreadSessionCards(original, 99)).toHaveLength(original.length);
-    expect(new Set(spreadSessionCards(original, 99).map(c=>c.id)).size).toBe(original.length);
+    const unique = new Set(original.map(c=>normalizeName(c.answer))).size;
+    expect(spreadSessionCards(original, 99)).toHaveLength(unique);
+    expect(new Set(spreadSessionCards(original, 99).map(c=>normalizeName(c.answer))).size).toBe(unique);
+  });
+  it('removes exact question-and-answer duplicates across knowledge IDs from selectable text questions', () => {
+    const catalog = makeCatalog();
+    catalog.items.push(makeItem('other', {canonicalName:'プラトン'}));
+    catalog.cards.push(makeCard('copied-question', {knowledgeId:'other', question:catalog.cards[0].question, answer:catalog.cards[0].answer}));
+    expect(selectCards(catalog, [], DEFAULT_FILTER).map(c=>c.id)).toEqual([catalog.cards[0].id]);
+    expect(catalog.cards).toHaveLength(2);
+  });
+  it('revisits different facts in future sessions without repeating the answer within one session', () => {
+    const cards = [
+      makeCard('work-a',{knowledgeId:'artist',question:'作品Aの作者は？',answer:'画家A'}),
+      makeCard('work-b',{knowledgeId:'artist',question:'作品Bの作者は？',answer:'画家A'}),
+      makeCard('work-c',{knowledgeId:'writer',question:'作品Cの作者は？',answer:'作家B'}),
+    ];
+    const first = spreadSessionCards(cards,20);
+    expect(first).toHaveLength(2);
+    expect(first[0].id).toBe('work-a');
+    const progress = new Map([[ 'work-a', {cardId:'work-a',correct:1,wrong:0,attempts:1,streak:1,lastStudiedAt:TIME,nextReviewAt:null,recent:[true]} ]]);
+    expect(spreadSessionCards(cards,20,progress).map(c=>c.id)).toEqual(['work-b','work-c']);
   });
   it('does not place both sides of one knowledge item consecutively when alternatives exist', () => {
     const cards = [
