@@ -99,7 +99,7 @@ const levelNames = ['共通テスト', '日東駒専', 'MARCH', '早慶'];
 const modeNames = {all:'全範囲', unseen:'未学習のみ', mistakes:'誤答履歴あり', due:'復習期限到来', weak:'苦手優先', random:'ランダム'};
 const directionNames = {all:'全種類を混合', 'person-work':'作者・人物 → 作品', 'work-author':'作品 → 作者・人物'};
 function activeItems() {return state.catalog.items.filter(x=>!x.deleted);}
-function activeCards() {const ids=new Set(activeItems().map(i=>i.id));return state.catalog.cards.filter(c=>!c.deleted && ids.has(c.knowledgeId));}
+function activeCards() {return selectCards(state.catalog,state.events,{...structuredClone(DEFAULT_FILTER),mode:'all'});}
 function toast(message: string, error = false) {
   let el=document.querySelector('#toast'); if(!el){el=document.createElement('div');el.id='toast';el.setAttribute('role','status');document.body.append(el);}
   el.textContent=message; el.className=error?'toast error':'toast';
@@ -302,7 +302,7 @@ async function startInsightSession(target:LearningArea,ids:string[]){
   if(target==='years'){goYear('quiz');await yearFeature.startSelectedQuestions(ids);return;}
   const epoch=navigationEpoch;if(currentSync)await currentSync;if(epoch!==navigationEpoch)return;
   state=await db.load();if(epoch!==navigationEpoch)return;
-  const available=new Map(activeCards().map(card=>[card.id,card]));queue=[...new Set(ids)].flatMap(id=>available.has(id)?[available.get(id)!]:[]);
+  const available=new Map(activeCards().map(card=>[card.id,card]));queue=spreadSessionCards([...new Set(ids)].flatMap(id=>available.has(id)?[available.get(id)!]:[]));
   if(!queue.length){toast('現在、この範囲に出題可能なカードはありません。');return;}
   sessionKind='related';position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
 }
@@ -315,8 +315,8 @@ async function start(mode?:StudyFilter['mode']) {
   const candidates=selectCards(state.catalog,state.events,filter);
   const limit=sessionLimit==='all'?candidates.length:Number(sessionLimit);
   // Keep highest-priority due/weak candidates, and diversify other sessions across all eligible cards.
-  const pool=filter.mode==='weak'||filter.mode==='due'?candidates.slice(0,limit):candidates;
-  queue=spreadSessionCards(pool,limit);
+  const pool=candidates;
+  queue=spreadSessionCards(pool,limit,getProgress(state.events));
   if(!queue.length){toast('この条件に合うカードはありません。範囲を変更してください。');go('setup');return;}
   sessionKind='normal';position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
 }
@@ -326,14 +326,14 @@ async function startDailySession(){
   state=await db.load();dailyPlan=await db.getOrCreateDailyPlan();
   if(epoch!==navigationEpoch)return;
   const done=completedDaily(dailyPlan,state.events),byId=new Map(activeCards().map(c=>[c.id,c]));
-  queue=dailyPlan.cardIds.filter(id=>!done.has(id)&&byId.has(id)).map(id=>byId.get(id)!);
+  queue=spreadSessionCards(dailyPlan.cardIds.filter(id=>!done.has(id)&&byId.has(id)).map(id=>byId.get(id)!),dailyPlan.cardIds.length,getProgress(state.events));
   if(!queue.length){toast('今日のおすすめは完了しました。');go('home');return;}
   sessionKind='daily';position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
 }
 async function startRelatedSession(ids:string[]){
   if(saving)return;
   const epoch=navigationEpoch;if(currentSync)await currentSync;if(epoch!==navigationEpoch)return;
-  state=await db.load();if(epoch!==navigationEpoch)return;const owners=new Set(ids);queue=activeCards().filter(c=>owners.has(c.knowledgeId));
+  state=await db.load();if(epoch!==navigationEpoch)return;const owners=new Set(ids);queue=spreadSessionCards(activeCards().filter(c=>owners.has(c.knowledgeId)),Infinity,getProgress(state.events));
   if(!queue.length){toast('この知識に対応する出題可能なカードはありません。');return;}
   sessionKind='related';position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
 }
@@ -417,7 +417,7 @@ function bind(){
   document.querySelectorAll<HTMLElement>('[data-level]').forEach(el=>el.onclick=()=>{filter={...structuredClone(DEFAULT_FILTER),level:Number(el.dataset.level) as Level,levelMode:'single'};go('setup');});
   document.querySelectorAll<HTMLDetailsElement>('[data-item-id]').forEach(el=>el.ontoggle=()=>{
     const detail=el.querySelector<HTMLElement>('[data-lazy-detail]');if(!el.open||!detail||detail.dataset.loaded)return;
-    const id=el.dataset.itemId!;detail.dataset.loaded='true';detail.innerHTML=itemSources(id)+knowledgeActions(id)+`<div class="linked-cards">${state.catalog.cards.filter(c=>c.knowledgeId===id&&!c.deleted).map(c=>`<div><span class="small muted">${c.type==='image'?'画像カード':'問題カード'}</span><p>${esc(c.question)}</p><strong>${esc(c.answer)}</strong></div>`).join('')}</div>`;bindKnowledgeActions(detail);
+    const id=el.dataset.itemId!;detail.dataset.loaded='true';detail.innerHTML=itemSources(id)+knowledgeActions(id)+`<div class="linked-cards">${activeCards().filter(c=>c.knowledgeId===id).map(c=>`<div><span class="small muted">${c.type==='image'?'画像カード':'問題カード'}</span><p>${esc(c.question)}</p><strong>${esc(c.answer)}</strong></div>`).join('')}</div>`;bindKnowledgeActions(detail);
   });
   const form=document.querySelector<HTMLFormElement>('#study-options');if(form){
     form.onchange=event=>{

@@ -73,7 +73,7 @@ describe('broad culture display groups',()=>{
 
   it('selects overlapping eras as a union without duplicating cards and preserves raw filters',()=>{
     const items=[makeItem('spanning',{era:'18〜19世紀文学',region:'ヨーロッパ'}),makeItem('ancient',{era:'古代ギリシア',region:'ギリシア'})];
-    const cards=items.map(item=>makeCard(item.id+'-card',{knowledgeId:item.id}));
+    const cards=items.map(item=>makeCard(item.id+'-card',{knowledgeId:item.id,question:`${item.id}について問う問題`,answer:item.canonicalName}));
     const catalog:Catalog={schemaVersion:1,version:1,updatedAt:TIME,items,cards};
     const broad={...DEFAULT_FILTER,regionGroups:['europe'],eraGroups:['eu-17-18','eu-19']};
     expect(selectCards(catalog,[],broad).map(x=>x.id)).toEqual(['spanning-card']);

@@ -261,10 +261,22 @@ export function selectCards(catalog: Catalog, events: ReviewEvent[], filter: Stu
     if (filter.mode === 'due' && (!p?.nextReviewAt || Date.parse(p.nextReviewAt) > Number(now))) return false;
     return true;
   });
+  // Ignore repeated text questions with equivalent question and answer, including
+  // copies registered under different knowledge IDs. Distinct image assets are
+  // separate identification exercises, even when their prompts are generic.
+  const seenQuestions = new Set<string>();
+  const uniqueCards = cards.filter(entry => {
+    const key = entry.type === 'image'
+      ? `image|${entry.imageId || entry.id}|${normalizeName(entry.question)}|${normalizeName(entry.answer)}`
+      : `text|${normalizeName(entry.question)}|${normalizeName(entry.answer)}`;
+    if (seenQuestions.has(key)) return false;
+    seenQuestions.add(key);
+    return true;
+  });
   if (filter.mode === 'random') {
-    for (let i = cards.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [cards[i], cards[j]] = [cards[j], cards[i]]; }
-  } else if (filter.mode === 'weak' || filter.mode === 'due') cards.sort((a, b) => priority(progress.get(b.id), now) - priority(progress.get(a.id), now) || a.id.localeCompare(b.id));
-  return cards;
+    for (let i = uniqueCards.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [uniqueCards[i], uniqueCards[j]] = [uniqueCards[j], uniqueCards[i]]; }
+  } else if (filter.mode === 'weak' || filter.mode === 'due') uniqueCards.sort((a, b) => priority(progress.get(b.id), now) - priority(progress.get(a.id), now) || a.id.localeCompare(b.id));
+  return uniqueCards;
 }
 
 /**
@@ -272,24 +284,30 @@ export function selectCards(catalog: Catalog, events: ReviewEvent[], filter: Stu
  * about the same knowledge item when alternatives exist.
  * Card objects/IDs and review events are never modified.
  */
-export function spreadSessionCards(cards: Card[], limit = cards.length): Card[] {
+export function spreadSessionCards(cards: Card[], limit = cards.length, progress = new Map<string, CardProgress>()): Card[] {
+  // A session never asks for the same answer twice, even when the underlying
+  // cards refer to different works. Keep their distinct knowledge for future
+  // sessions and preserve IDs/history. Rotate towards unstudied/oldest cards.
   const remaining = [...cards];
   const result: Card[] = [];
   const usedAnswers = new Set<string>();
   const requested = Number.isFinite(limit) ? Math.max(0, Math.trunc(limit)) : remaining.length;
-  const target = Math.min(requested, remaining.length);
+  const target = Math.min(requested, new Set(remaining.map(card => normalizeName(card.answer))).size);
+  const freshness = (card: Card): number => progress.get(card.id)?.lastStudiedAt
+    ? Date.parse(progress.get(card.id)!.lastStudiedAt!)
+    : Number.NEGATIVE_INFINITY;
   while (remaining.length && result.length < target) {
     const last = result[result.length - 1];
-    const nextIsDifferent = (card: Card) => !last || card.knowledgeId !== last.knowledgeId;
-    let index = remaining.findIndex(card => !usedAnswers.has(normalizeName(card.answer)) && nextIsDifferent(card));
-    if (index < 0) index = remaining.findIndex(card => !usedAnswers.has(normalizeName(card.answer)));
-    if (index < 0) {
-      // Every remaining answer has appeared in this round. Begin another round.
-      usedAnswers.clear();
-      index = remaining.findIndex(nextIsDifferent);
-      if (index < 0) index = 0;
-    }
-    const [card] = remaining.splice(index, 1);
+    const available = remaining.map((card, i) => ({card, i})).filter(({card}) => !usedAnswers.has(normalizeName(card.answer)));
+    if (!available.length) break;
+    const best = available.filter(({card}) => !last || card.knowledgeId !== last.knowledgeId);
+    const candidates = best.length ? best : available;
+    // Preserve original answer-group order, but choose the least recently
+    // practiced variation when that answer appears on multiple cards.
+    const firstAnswer = normalizeName(candidates[0].card.answer);
+    const group = candidates.filter(({card}) => normalizeName(card.answer) === firstAnswer);
+    const chosen = group.reduce((best, next) => freshness(next.card) < freshness(best.card) ? next : best);
+    const [card] = remaining.splice(chosen.i, 1);
     result.push(card);
     usedAnswers.add(normalizeName(card.answer));
   }
