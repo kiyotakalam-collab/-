@@ -99,7 +99,7 @@ const levelNames = ['共通テスト', '日東駒専', 'MARCH', '早慶'];
 const modeNames = {all:'全範囲', unseen:'未学習のみ', mistakes:'誤答履歴あり', due:'復習期限到来', weak:'苦手優先', random:'ランダム'};
 const directionNames = {all:'全種類を混合', 'person-work':'作者・人物 → 作品', 'work-author':'作品 → 作者・人物'};
 function activeItems() {return state.catalog.items.filter(x=>!x.deleted);}
-function activeCards() {const ids=new Set(activeItems().map(i=>i.id));return state.catalog.cards.filter(c=>!c.deleted && ids.has(c.knowledgeId));}
+function activeCards() {return selectCards(state.catalog,state.events,{...structuredClone(DEFAULT_FILTER),mode:'all'});}
 function toast(message: string, error = false) {
   let el=document.querySelector('#toast'); if(!el){el=document.createElement('div');el.id='toast';el.setAttribute('role','status');document.body.append(el);}
   el.textContent=message; el.className=error?'toast error':'toast';
@@ -417,7 +417,7 @@ function bind(){
   document.querySelectorAll<HTMLElement>('[data-level]').forEach(el=>el.onclick=()=>{filter={...structuredClone(DEFAULT_FILTER),level:Number(el.dataset.level) as Level,levelMode:'single'};go('setup');});
   document.querySelectorAll<HTMLDetailsElement>('[data-item-id]').forEach(el=>el.ontoggle=()=>{
     const detail=el.querySelector<HTMLElement>('[data-lazy-detail]');if(!el.open||!detail||detail.dataset.loaded)return;
-    const id=el.dataset.itemId!;detail.dataset.loaded='true';detail.innerHTML=itemSources(id)+knowledgeActions(id)+`<div class="linked-cards">${state.catalog.cards.filter(c=>c.knowledgeId===id&&!c.deleted).map(c=>`<div><span class="small muted">${c.type==='image'?'画像カード':'問題カード'}</span><p>${esc(c.question)}</p><strong>${esc(c.answer)}</strong></div>`).join('')}</div>`;bindKnowledgeActions(detail);
+    const id=el.dataset.itemId!;detail.dataset.loaded='true';detail.innerHTML=itemSources(id)+knowledgeActions(id)+`<div class="linked-cards">${activeCards().filter(c=>c.knowledgeId===id).map(c=>`<div><span class="small muted">${c.type==='image'?'画像カード':'問題カード'}</span><p>${esc(c.question)}</p><strong>${esc(c.answer)}</strong></div>`).join('')}</div>`;bindKnowledgeActions(detail);
   });
   const form=document.querySelector<HTMLFormElement>('#study-options');if(form){
     form.onchange=event=>{
