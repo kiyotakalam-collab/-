@@ -302,7 +302,7 @@ async function startInsightSession(target:LearningArea,ids:string[]){
   if(target==='years'){goYear('quiz');await yearFeature.startSelectedQuestions(ids);return;}
   const epoch=navigationEpoch;if(currentSync)await currentSync;if(epoch!==navigationEpoch)return;
   state=await db.load();if(epoch!==navigationEpoch)return;
-  const available=new Map(activeCards().map(card=>[card.id,card]));queue=[...new Set(ids)].flatMap(id=>available.has(id)?[available.get(id)!]:[]);
+  const available=new Map(activeCards().map(card=>[card.id,card]));queue=spreadSessionCards([...new Set(ids)].flatMap(id=>available.has(id)?[available.get(id)!]:[]));
   if(!queue.length){toast('現在、この範囲に出題可能なカードはありません。');return;}
   sessionKind='related';position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
 }
@@ -315,8 +315,8 @@ async function start(mode?:StudyFilter['mode']) {
   const candidates=selectCards(state.catalog,state.events,filter);
   const limit=sessionLimit==='all'?candidates.length:Number(sessionLimit);
   // Keep highest-priority due/weak candidates, and diversify other sessions across all eligible cards.
-  const pool=filter.mode==='weak'||filter.mode==='due'?candidates.slice(0,limit):candidates;
-  queue=spreadSessionCards(pool,limit);
+  const pool=candidates;
+  queue=spreadSessionCards(pool,limit,getProgress(state.events));
   if(!queue.length){toast('この条件に合うカードはありません。範囲を変更してください。');go('setup');return;}
   sessionKind='normal';position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
 }
@@ -326,14 +326,14 @@ async function startDailySession(){
   state=await db.load();dailyPlan=await db.getOrCreateDailyPlan();
   if(epoch!==navigationEpoch)return;
   const done=completedDaily(dailyPlan,state.events),byId=new Map(activeCards().map(c=>[c.id,c]));
-  queue=dailyPlan.cardIds.filter(id=>!done.has(id)&&byId.has(id)).map(id=>byId.get(id)!);
+  queue=spreadSessionCards(dailyPlan.cardIds.filter(id=>!done.has(id)&&byId.has(id)).map(id=>byId.get(id)!),dailyPlan.cardIds.length,getProgress(state.events));
   if(!queue.length){toast('今日のおすすめは完了しました。');go('home');return;}
   sessionKind='daily';position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
 }
 async function startRelatedSession(ids:string[]){
   if(saving)return;
   const epoch=navigationEpoch;if(currentSync)await currentSync;if(epoch!==navigationEpoch)return;
-  state=await db.load();if(epoch!==navigationEpoch)return;const owners=new Set(ids);queue=activeCards().filter(c=>owners.has(c.knowledgeId));
+  state=await db.load();if(epoch!==navigationEpoch)return;const owners=new Set(ids);queue=spreadSessionCards(activeCards().filter(c=>owners.has(c.knowledgeId)),Infinity,getProgress(state.events));
   if(!queue.length){toast('この知識に対応する出題可能なカードはありません。');return;}
   sessionKind='related';position=0;sessionCorrect=0;revealed=false;sessionId=crypto.randomUUID();go('study');
 }
