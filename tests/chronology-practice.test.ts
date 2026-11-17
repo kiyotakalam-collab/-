@@ -1,7 +1,7 @@
 import {describe,it,expect} from 'vitest';
 import feed from '../public/chronology-errors.json';
 import {applyChronologyFeed,validateChronologyFeed} from '../src/chronology-sync';
-import {gradeChronology,mergeChronology,validateChronology,type ChronologyCollection} from '../src/chronology-errors';
+import {gradeChronology,mergeChronology,validateChronology,setChronologyStars,type ChronologyCollection} from '../src/chronology-errors';
 import {startPractice,recordPractice,updatePractice,sessionResults,notePractice,selectPractice,filterPractice,lastPracticeResult,weaknessScore,japanDate} from '../src/chronology-practice';
 const now='2026-11-20T00:00:00.000Z',base=()=>applyChronologyFeed({version:1,notes:[]},feed,now);
 const ids=()=>feed.problems.slice(0,5).map(n=>n.id);
@@ -110,5 +110,30 @@ describe('通史演習・既存93問と履歴の保護',()=>{
   const changed=structuredClone(s);changed.notes[0].knowledgeId='different-knowledge';expect(()=>mergeChronology(s,changed)).toThrow('固定知識ID');
   expect(filterPractice(s).map(n=>n.id)).not.toContain(ids()[1]);expect(()=>startPractice(s,'single',[ids()[1]])).toThrow();
   delete f.problems[0].verification_sources;expect(()=>validateChronologyFeed(f)).toThrow('確認資料');delete f.problems[0].verification;expect(()=>validateChronologyFeed(f)).toThrow('検証状態');
+ });
+});
+
+describe('星1〜3による手動分類',()=>{
+ it('既存データは未分類のまま、星で抽出して出題できる',()=>{
+  let s=base();const [a,b,c]=ids();
+  expect(s.notes.find(n=>n.id===a)?.stars).toBeUndefined();
+  s=setChronologyStars(s,a,1);s=setChronologyStars(s,b,2);s=setChronologyStars(s,c,3);
+  expect(filterPractice(s,{stars:'1'}).map(n=>n.id)).toEqual([a]);
+  expect(filterPractice(s,{stars:'2'}).map(n=>n.id)).toEqual([b]);
+  expect(selectPractice(s,'random',0,{stars:'3'}).map(n=>n.id)).toEqual([c]);
+  expect(setChronologyStars(s,a,undefined).notes.find(n=>n.id===a)?.stars).toBeUndefined();
+  expect(()=>setChronologyStars(s,a,4 as 1)).toThrow();
+ });
+ it('同期と誤答の採点を経ても星と既存の履歴を保持する',()=>{
+  let s=base(),id=ids()[0];
+  s=setChronologyStars(s,id,3);
+  s=answer(s,id,'wrong');
+  const before=s.practiceEvents;
+  s=applyChronologyFeed(s,feed,now);
+  expect(s.notes.find(n=>n.id===id)?.stars).toBe(3);
+  expect(s.practiceEvents).toEqual(before);
+  const restored=mergeChronology(s,base());
+  expect(restored.notes.find(n=>n.id===id)?.stars).toBe(3);
+  expect(restored.practiceEvents).toEqual(before);
  });
 });
