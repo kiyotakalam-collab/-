@@ -7,6 +7,7 @@ export interface PracticeEvent {id:string;sessionId:string;noteId:string;result:
 export interface PracticeSession {id:string;mode:PracticeMode;questionIds:string[];position:number;startedAt:string;updatedAt:string;finishedAt:string|null}
 export interface ChronologyVerificationSource {title:string;url?:string}
 export type ChronologyNote={
+ stars?:1|2|3;
  id:string;verificationSources?:ChronologyVerificationSource[];knowledgeId?:string;questionType?:'basic'|'distinction'|'related';verification?:'verified'|'provisional';ambiguousCount?:number;term?:string;active?:boolean;masterUpdatedAt?:string;question:string;answer:string;explanation:string;source:string;sourceDetail:string;
  region:string;era:string;cause:ErrorCause|'';createdAt:string;updatedAt:string;
  lastReviewedAt:string|null;nextReviewAt:string|null;stage:number;
@@ -22,7 +23,7 @@ const date=(s:unknown)=>typeof s==='string'&&Number.isFinite(Date.parse(s))&&new
 function validateNote(v:unknown):ChronologyNote{
  if(!v||typeof v!=='object'||Array.isArray(v))throw Error('誤答記録が不正です。');
  const x=v as Record<string,unknown>;
- if((x.verificationSources!==undefined&&(!Array.isArray(x.verificationSources)||x.verificationSources.length<1||x.verificationSources.length>30||x.verificationSources.some(s=>!s||!text(s.title,500)||(s.url!==undefined&&(typeof s.url!=='string'||!/^https?:\/\/[^\s]+$/.test(s.url))))))||(x.knowledgeId!==undefined&&!text(x.knowledgeId,100))||(x.questionType!==undefined&&!['basic','distinction','related'].includes(String(x.questionType)))||(x.verification!==undefined&&!['verified','provisional'].includes(String(x.verification)))||(x.ambiguousCount!==undefined&&(!Number.isSafeInteger(x.ambiguousCount)||Number(x.ambiguousCount)<0))||(x.term!==undefined&&!text(x.term,250))||(x.active!==undefined&&typeof x.active!=='boolean')||(x.masterUpdatedAt!==undefined&&!date(x.masterUpdatedAt))||!text(x.id,100)||!text(x.question)||!text(x.answer)||(x.source!==''&&!text(x.source,100))||
+ if((x.stars!==undefined&&![1,2,3].includes(x.stars as number))||(x.verificationSources!==undefined&&(!Array.isArray(x.verificationSources)||x.verificationSources.length<1||x.verificationSources.length>30||x.verificationSources.some(s=>!s||!text(s.title,500)||(s.url!==undefined&&(typeof s.url!=='string'||!/^https?:\/\/[^\s]+$/.test(s.url))))))||(x.knowledgeId!==undefined&&!text(x.knowledgeId,100))||(x.questionType!==undefined&&!['basic','distinction','related'].includes(String(x.questionType)))||(x.verification!==undefined&&!['verified','provisional'].includes(String(x.verification)))||(x.ambiguousCount!==undefined&&(!Number.isSafeInteger(x.ambiguousCount)||Number(x.ambiguousCount)<0))||(x.term!==undefined&&!text(x.term,250))||(x.active!==undefined&&typeof x.active!=='boolean')||(x.masterUpdatedAt!==undefined&&!date(x.masterUpdatedAt))||!text(x.id,100)||!text(x.question)||!text(x.answer)||(x.source!==''&&!text(x.source,100))||
    !text(x.region,100)||!text(x.era,100)||(x.cause!==''&&!Object.hasOwn(ERROR_CAUSES,String(x.cause)))||
    (x.explanation!==''&&!text(x.explanation,1400))||
    (x.sourceDetail!==''&&!text(x.sourceDetail,250))||
@@ -60,6 +61,13 @@ export function addChronology(s:ChronologyCollection,raw:Omit<ChronologyNote,'id
    lastReviewedAt:null,nextReviewAt:new Date(Date.parse(now)+DAY).toISOString(),stage:0,wrongCount:1,correctCount:0});
  return validateChronology({...s,notes:[...s.notes,item]});
 }
+export function setChronologyStars(s:ChronologyCollection,id:string,stars:1|2|3|undefined):ChronologyCollection{
+ if(stars!==undefined&&![1,2,3].includes(stars))throw Error('星は1〜3のいずれかです。');
+ let found=false;
+ const notes=s.notes.map(note=>{if(note.id!==id)return note;found=true;const next={...note};if(stars===undefined)delete next.stars;else next.stars=stars;return next;});
+ if(!found)throw Error('対象の記録がありません。');
+ return validateChronology({...s,notes});
+}
 export function gradeChronology(s:ChronologyCollection,id:string,correct:boolean,now=new Date().toISOString()):ChronologyCollection{
  if(!date(now))throw Error('復習時刻が不正です。');
  let found=false;
@@ -88,7 +96,7 @@ export function mergeChronology(local:ChronologyCollection,incoming:ChronologyCo
   const a=learned(old),b=learned(n);
   const latest=b>a?n:b<a?old:!a?(n.createdAt<old.createdAt?n:old):n.updatedAt>old.updatedAt?n:old;
   const master=old.masterUpdatedAt&&n.masterUpdatedAt?(n.masterUpdatedAt>old.masterUpdatedAt?n:old):latest;
-  byId.set(n.id,{...latest,createdAt:old.createdAt<n.createdAt?old.createdAt:n.createdAt,verificationSources:master.verificationSources,knowledgeId:master.knowledgeId,questionType:master.questionType,verification:master.verification,term:master.term,active:master.active,masterUpdatedAt:master.masterUpdatedAt,
+  byId.set(n.id,{...latest,...((old.stars??n.stars)!==undefined?{stars:old.stars??n.stars}:{}),createdAt:old.createdAt<n.createdAt?old.createdAt:n.createdAt,verificationSources:master.verificationSources,knowledgeId:master.knowledgeId,questionType:master.questionType,verification:master.verification,term:master.term,active:master.active,masterUpdatedAt:master.masterUpdatedAt,
    question:master.question,answer:master.answer,explanation:master.explanation,region:master.region,era:master.era,source:master.source,sourceDetail:master.sourceDetail,cause:master.cause,
    wrongCount:Math.max(old.wrongCount-count(local.practiceEvents,n.id,'wrong'),n.wrongCount-count(incoming.practiceEvents,n.id,'wrong'))+count([...events.values()],n.id,'wrong'),correctCount:Math.max(old.correctCount-count(local.practiceEvents,n.id,'correct'),n.correctCount-count(incoming.practiceEvents,n.id,'correct'))+count([...events.values()],n.id,'correct'),...((old.ambiguousCount!==undefined||n.ambiguousCount!==undefined)?{ambiguousCount:Math.max((old.ambiguousCount??0)-count(local.practiceEvents,n.id,'ambiguous'),(n.ambiguousCount??0)-count(incoming.practiceEvents,n.id,'ambiguous'))+count([...events.values()],n.id,'ambiguous')}:{})});
  }

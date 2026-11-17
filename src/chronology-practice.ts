@@ -2,8 +2,8 @@ import {gradeChronology,validateChronology,type ChronologyCollection,type Chrono
 export const PRACTICE_MODES:Record<PracticeMode,string>={due:'今日の復習',weak:'苦手集中',incorrect:'直近不正解のみ',random:'ランダム演習',range:'範囲指定演習',single:'個別演習',selected:'選択問題の演習',retry:'間違い直し'};
 export const MASTERY_LABELS={unlearned:'未演習',initial:'定着初期',developing:'定着途中',stable:'安定',unknown:'再判定待ち'} as const;
 export type Mastery=keyof typeof MASTERY_LABELS;
-export interface PracticeFilter {query:string;region:string;era:string;cause:string;mastery:string;from:string;to:string;source:string;answerStatus:string}
-export const EMPTY_PRACTICE_FILTER:PracticeFilter={query:'',region:'',era:'',cause:'',mastery:'',from:'',to:'',source:'',answerStatus:''};
+export interface PracticeFilter {query:string;region:string;era:string;cause:string;mastery:string;from:string;to:string;source:string;answerStatus:string;stars:string}
+export const EMPTY_PRACTICE_FILTER:PracticeFilter={query:'',region:'',era:'',cause:'',mastery:'',from:'',to:'',source:'',answerStatus:'',stars:''};
 const DAY=86400000;
 export function notePractice(note:ChronologyNote,events:PracticeEvent[]=[]){
  const history=events.filter(e=>e.noteId===note.id).sort((a,b)=>a.answeredAt.localeCompare(b.answeredAt));
@@ -23,7 +23,7 @@ export function lastPracticeResult(n:ChronologyNote,events:PracticeEvent[]=[]):P
 }
 export function filterPractice(s:ChronologyCollection,f:Partial<PracticeFilter>={},at=new Date().toISOString()):ChronologyNote[]{
  const q=(f.query??'').trim().normalize('NFKC').toLowerCase();
- return s.notes.filter(n=>n.active!==false&&n.verification!=='provisional'&&(!f.region||n.region===f.region)&&(!f.era||n.era===f.era)&&(!f.source||n.source===f.source)&&
+ return s.notes.filter(n=>n.active!==false&&n.verification!=='provisional'&&(!f.stars||String(n.stars??'')===f.stars)&&(!f.region||n.region===f.region)&&(!f.era||n.era===f.era)&&(!f.source||n.source===f.source)&&
   (!f.cause||(f.cause==='unrecorded'?n.cause==='':n.cause===f.cause))&&(!f.answerStatus||lastPracticeResult(n,s.practiceEvents)===f.answerStatus)&&(!f.mastery||notePractice(n,s.practiceEvents).mastery===f.mastery)&&
   (!q||[n.term,n.question,n.answer,n.explanation].join(' ').normalize('NFKC').toLowerCase().includes(q))&&
   (!f.from||japanDate(n.createdAt)>=f.from)&&(!f.to||japanDate(n.createdAt)<=f.to));
